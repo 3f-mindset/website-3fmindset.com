@@ -1,4 +1,4 @@
-Momentum Institute — Hugo content guide
+3F Mindset — Hugo content guide
 
 This README explains how to add long-form newsletters (central index + individual pages) and static pages (About, Contact, Programs, subpages, and a private mentorship application draft) to this Hugo site.
 
@@ -35,7 +35,7 @@ slug: "newsletter-slug"
 ---
 ```
 
-- Central index (section list): By default Hugo will list content placed under `content/letters` at the section URL `/letters/`. If you want a custom index page (title, intro, ordering), create [content/letters/_index.md](content/letters/_index.md) with front matter like:
+- Central index (section list): By default Hugo will list content placed under `content/letters` at the section URL `/letters/`. If you want a custom index page (title, intro, ordering), create [content/letters/\_index.md](content/letters/_index.md) with front matter like:
 
 ```yaml
 ---
@@ -66,10 +66,10 @@ menu:
 ---
 ```
 
-- Contact: Create [content/contact/_index.md](content/contact/_index.md) for a contact landing page (or `content/contact.md`).
+- Contact: Create [content/contact/\_index.md](content/contact/_index.md) for a contact landing page (or `content/contact.md`).
 
 - Programs: Use a folder for program landing page and subpages:
-  - [content/program/_index.md](content/program/_index.md) — programs overview
+  - [content/program/\_index.md](content/program/_index.md) — programs overview
   - [content/program/ignition.md](content/program/ignition.md) — Ignition program page
   - [content/program/crucible.md](content/program/crucible.md) — Crucible program page
 

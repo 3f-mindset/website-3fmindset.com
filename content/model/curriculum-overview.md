@@ -54,6 +54,6 @@ To Your Best,
 
 - Dave Mainville
 
-    _Founder & Education Director, Momentum Institute_
+  _Founder & Education Director, 3F Mindset_
 
 _P.S. We keep squads small and you must be on the waiting list to be be considered for an invitation. [Secure your spot today.](https://accelerate.thrivecart.com/12-week-momentum-sprint/)._

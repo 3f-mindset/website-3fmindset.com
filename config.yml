@@ -1,5 +1,5 @@
-baseURL: "https://momentum.institute/"
-title: Momentum Institute
+baseURL: "https://3fmindset.com/"
+title: 3F Mindset
 pagination:
   pagerSize: 20
 theme: hugo-PaperMod
@@ -46,7 +46,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Momentum Institute - Live with Momentum"
+  description: "3F Mindset - Live with Momentum"
   author: David Mainville
   # author: ["Me", "You"] # multiple authors
 
