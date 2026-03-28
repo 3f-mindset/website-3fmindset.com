@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11in" height="8.5in" viewBox="0 0 1100 850"
+    role="img" aria-label="SB13 worksheet: Embrace Discipline, Do it Regardless">
+    <!-- WHITE BACKGROUND (full bleed) -->
+    <rect x="0" y="0" width="1100" height="850" fill="#ffffff" />
+
+    <!-- HEADER -->
+    <text x="60" y="80" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700"
+        fill="#111111">SB13 | Embrace Discipline: Do It Regardless</text>
+    <text x="60" y="112" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#333333">
+        Choice: Keep negotiating with your mood (the hard way), or set a rule and obey it (the way
+        forward).
+    </text>
+
+    <!-- TOP INFO STRIP -->
+    <rect x="60" y="135" width="980" height="58" fill="#ffffff" stroke="#111111" stroke-width="2" />
+    <text x="78" y="168" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#111111">My
+        Discipline Test (one avoided task):</text>
+    <line x1="330" y1="172" x2="1030" y2="172" stroke="#111111" stroke-width="1" />
+    <text x="78" y="188" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#111111">My
+        Non-Negotiable Rule (clear, measurable):</text>
+    <line x1="410" y1="192" x2="1030" y2="192" stroke="#111111" stroke-width="1" />
+
+    <!-- CENTRAL GRID: COMMAND -->
+    <text x="60" y="232" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700"
+        fill="#111111">COMMAND</text>
+    <text x="170" y="232" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#333333">
+        Fill fast. Small answers beat perfect answers. Keep it concrete.
+    </text>
+
+    <!-- LEFT COLUMN (C O M) -->
+    <rect x="60" y="255" width="490" height="160" fill="#ffffff" stroke="#111111" stroke-width="2" />
+    <text x="78" y="282" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700"
+        fill="#111111">C — Choose the Test</text>
+    <text x="78" y="304" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">
+        What exact action do I avoid? Make it measurable (time, reps, dollars, words).
+    </text>
+    <line x1="78" y1="330" x2="530" y2="330" stroke="#111111" stroke-width="1" />
+    <line x1="78" y1="352" x2="530" y2="352" stroke="#111111" stroke-width="1" />
+    <line x1="78" y1="374" x2="530" y2="374" stroke="#111111" stroke-width="1" />
+    <text x="78" y="404" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">When
+        I will do it (days + time):</text>
+    <line x1="260" y1="408" x2="530" y2="408" stroke="#111111" stroke-width="1" />
+
+    <rect x="60" y="425" width="490" height="160" fill="#ffffff" stroke="#111111" stroke-width="2" />
+    <text x="78" y="452" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700"
+        fill="#111111">O — Outline the Rule</text>
+    <text x="78" y="474" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">
+        Write the rule as an order. No wiggle words. No “try”.
+    </text>
+    <text x="78" y="498" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">My
+        rule:</text>
+    <line x1="140" y1="502" x2="530" y2="502" stroke="#111111" stroke-width="1" />
+    <line x1="78" y1="524" x2="530" y2="524" stroke="#111111" stroke-width="1" />
+    <text x="78" y="550" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">Common
+        excuse I expect:</text>
+    <line x1="240" y1="554" x2="530" y2="554" stroke="#111111" stroke-width="1" />
+    <text x="78" y="576" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">My
+        counter command (one sentence):</text>
+    <line x1="318" y1="580" x2="530" y2="580" stroke="#111111" stroke-width="1" />
+
+    <rect x="60" y="595" width="490" height="190" fill="#ffffff" stroke="#111111" stroke-width="2" />
+    <text x="78" y="622" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700"
+        fill="#111111">M — Map the Trigger</text>
+    <text x="78" y="644" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">
+        Where does resistance hit? Identify the moment and pre-decide the move.
+    </text>
+    <text x="78" y="668" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">Trigger
+        moment (alarm, after dinner, after work):</text>
+    <line x1="410" y1="672" x2="530" y2="672" stroke="#111111" stroke-width="1" />
+    <text x="78" y="694" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">If-Then
+        plan (If resistance, then I...):</text>
+    <line x1="320" y1="698" x2="530" y2="698" stroke="#111111" stroke-width="1" />
+    <line x1="78" y1="720" x2="530" y2="720" stroke="#111111" stroke-width="1" />
+    <text x="78" y="746" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">Environment
+        set (clothes ready, app blocked, tools placed):</text>
+    <line x1="468" y1="750" x2="530" y2="750" stroke="#111111" stroke-width="1" />
+
+    <!-- RIGHT COLUMN (M A N D) -->
+    <rect x="570" y="255" width="470" height="160" fill="#ffffff" stroke="#111111" stroke-width="2" />
+    <text x="588" y="282" font-family="Arial, Helvetica, sans-serif" font-size="14"
+        font-weight="700" fill="#111111">M — Move Without Debate</text>
+    <text x="588" y="304" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">
+        What is my first physical move that starts the action in under 5 seconds?
+    </text>
+    <text x="588" y="328" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">First
+        move:</text>
+    <line x1="660" y1="332" x2="1020" y2="332" stroke="#111111" stroke-width="1" />
+    <text x="588" y="356" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">Second
+        move:</text>
+    <line x1="676" y1="360" x2="1020" y2="360" stroke="#111111" stroke-width="1" />
+    <text x="588" y="388" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">
+        When I feel resistance, I will act anyway. No negotiation.
+    </text>
+
+    <rect x="570" y="425" width="470" height="160" fill="#ffffff" stroke="#111111" stroke-width="2" />
+    <text x="588" y="452" font-family="Arial, Helvetica, sans-serif" font-size="14"
+        font-weight="700" fill="#111111">A — Acknowledge the Win</text>
+    <text x="588" y="474" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">
+        Proof beats hype. Track the streak. Keep it visible.
+    </text>
+    <text x="588" y="498" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">How
+        I will track (calendar, notes, checklist):</text>
+    <line x1="870" y1="502" x2="1020" y2="502" stroke="#111111" stroke-width="1" />
+    <text x="588" y="526" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">Reward
+        after completion (simple, clean):</text>
+    <line x1="840" y1="530" x2="1020" y2="530" stroke="#111111" stroke-width="1" />
+    <text x="588" y="556" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">What
+        I will say to myself after I finish:</text>
+    <line x1="882" y1="560" x2="1020" y2="560" stroke="#111111" stroke-width="1" />
+
+    <rect x="570" y="595" width="470" height="100" fill="#ffffff" stroke="#111111" stroke-width="2" />
+    <text x="588" y="622" font-family="Arial, Helvetica, sans-serif" font-size="14"
+        font-weight="700" fill="#111111">N — Neutralize Failure</text>
+    <text x="588" y="644" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">
+        If I miss once, I resume the next day. No drama. No quitting.
+    </text>
+    <text x="588" y="670" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">If
+        I fail, my reset plan is:</text>
+    <line x1="770" y1="674" x2="1020" y2="674" stroke="#111111" stroke-width="1" />
+
+    <rect x="570" y="705" width="470" height="80" fill="#ffffff" stroke="#111111" stroke-width="2" />
+    <text x="588" y="732" font-family="Arial, Helvetica, sans-serif" font-size="14"
+        font-weight="700" fill="#111111">D — Define Identity</text>
+    <text x="588" y="754" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">After
+        7 days, the proof says I am the kind of man who:</text>
+    <line x1="930" y1="758" x2="1020" y2="758" stroke="#111111" stroke-width="1" />
+
+    <!-- FOOTNOTE SUMMARY -->
+    <rect x="60" y="800" width="980" height="40" fill="#ffffff" stroke="#111111" stroke-width="2" />
+    <text x="78" y="825" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#111111">
+        Action steps summary: Define the Rule. Execute on Cue. Track the Proof.
+    </text>
+    <text x="588" y="825" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#333333">
+        (Reflection: When I wanted to quit, what did I do anyway?)
+    </text>
+</svg>
