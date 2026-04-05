@@ -7,6 +7,7 @@
         .header { font: 700 38px 'Arial', 'Helvetica', sans-serif; fill: #ffffff; }
         .cell { font: 600 36px 'Arial', 'Helvetica', sans-serif; fill: #111111; }
         .small { font: 500 32px 'Arial', 'Helvetica', sans-serif; fill: #111111; }
+        .tiny { font: 500 28px 'Arial', 'Helvetica', sans-serif; fill: #374151; }
         .label { font: 700 34px 'Arial', 'Helvetica', sans-serif; fill: #111111; }
     </style>
 
@@ -25,8 +26,7 @@
     <line x1="120" y1="1086" x2="2260" y2="1086" stroke="#d1d5db" stroke-width="3" />
     <line x1="120" y1="1300" x2="2260" y2="1300" stroke="#d1d5db" stroke-width="3" />
 
-    <line x1="360" y1="360" x2="360" y2="1300" stroke="#d1d5db" stroke-width="3" />
-    <line x1="696" y1="360" x2="696" y2="1300" stroke="#d1d5db" stroke-width="3" />
+    <line x1="782.8889" y1="360" x2="782.8889" y2="1300" stroke="#d1d5db" stroke-width="3" />
     <line x1="869.7778" y1="360" x2="869.7778" y2="1300" stroke="#d1d5db" stroke-width="3" />
     <line x1="1043.5556" y1="360" x2="1043.5556" y2="1300" stroke="#d1d5db" stroke-width="3" />
     <line x1="1217.3333" y1="360" x2="1217.3333" y2="1300" stroke="#d1d5db" stroke-width="3" />
@@ -37,9 +37,8 @@
     <line x1="2086.2222" y1="360" x2="2086.2222" y2="1300" stroke="#d1d5db" stroke-width="3" />
     <line x1="2260" y1="360" x2="2260" y2="1300" stroke="#d1d5db" stroke-width="3" />
 
-    <text x="240" y="420" text-anchor="middle" class="header">Phase</text>
-    <text x="528" y="420" text-anchor="middle" class="header">Habit</text>
-    <text x="782.8889" y="420" text-anchor="middle" class="header">Pts</text>
+    <text x="451.4445" y="420" text-anchor="middle" class="header">Habit</text>
+    <text x="826.3334" y="420" text-anchor="middle" class="header">Pts</text>
     <text x="956.6667" y="420" text-anchor="middle" class="header">M</text>
     <text x="1130.4445" y="420" text-anchor="middle" class="header">T</text>
     <text x="1304.2222" y="420" text-anchor="middle" class="header">W</text>
@@ -54,21 +53,25 @@
     <rect x="120" y="876" width="2140" height="210" fill="#f5f7fa" />
     <rect x="120" y="1086" width="2140" height="214" fill="#fbfbfb" />
 
-    <text x="150" y="540" class="cell">Furnace</text>
-    <text x="390" y="540" class="cell">Core Fire</text>
-    <text x="782.8889" y="540" text-anchor="middle" class="cell">10</text>
+    <text x="150" y="530" class="cell">Core</text>
+    <text x="150" y="568" class="tiny">Hearth and furnace stack.</text>
+    <text x="150" y="600" class="tiny">These keep life-support systems alive.</text>
+    <text x="826.3334" y="540" text-anchor="middle" class="cell">10</text>
 
-    <text x="150" y="750" class="cell">Forge</text>
-    <text x="390" y="750" class="cell">Build Strength</text>
-    <text x="782.8889" y="750" text-anchor="middle" class="cell">5</text>
+    <text x="150" y="740" class="cell">Build</text>
+    <text x="150" y="778" class="tiny">Deliberate actions that shape</text>
+    <text x="150" y="810" class="tiny">your discipline.</text>
+    <text x="826.3334" y="750" text-anchor="middle" class="cell">5</text>
 
-    <text x="150" y="960" class="cell">Forge</text>
-    <text x="390" y="960" class="cell">Sharpen Edge</text>
-    <text x="782.8889" y="960" text-anchor="middle" class="cell">2</text>
+    <text x="150" y="950" class="cell">Sharpen</text>
+    <text x="150" y="988" class="tiny">Small refinements that</text>
+    <text x="150" y="1020" class="tiny">sharpen your edge.</text>
+    <text x="826.3334" y="960" text-anchor="middle" class="cell">2</text>
 
-    <text x="150" y="1170" class="cell">Furnace</text>
-    <text x="390" y="1170" class="cell">Keep Clean</text>
-    <text x="782.8889" y="1170" text-anchor="middle" class="cell">1</text>
+    <text x="150" y="1160" class="cell">Clean</text>
+    <text x="150" y="1198" class="tiny">Micro-maintenance that keeps</text>
+    <text x="150" y="1230" class="tiny">the system clean.</text>
+    <text x="826.3334" y="1170" text-anchor="middle" class="cell">1</text>
 
     <rect x="893.7778" y="494" width="125.7778" height="134" rx="12" fill="#ffffff" stroke="#cbd5e1"
         stroke-width="3" />
