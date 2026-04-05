@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="2550"
+    height="2050"
+    viewBox="0 0 2550 2050">
+    <rect
+        width="2550"
+        height="2050"
+        fill="#ffffff" />
+    <style>
+        .title { font: 700 78px Georgia, 'Times New Roman', serif; fill: #1f1f1f; }
+        .subtitle { font: 400 34px Arial, Helvetica, sans-serif; fill: #6b7280; }
+        .section { font: 700 34px Arial, Helvetica, sans-serif; fill: #1f1f1f; }
+        .header { font: 700 27px Arial, Helvetica, sans-serif; fill: #ffffff; }
+        .cell { font: 600 24px Arial, Helvetica, sans-serif; fill: #1f1f1f; }
+        .small { font: 400 22px Arial, Helvetica, sans-serif; fill: #1f1f1f; }
+        .tiny { font: 400 20px Arial, Helvetica, sans-serif; fill: #6b7280; }
+        .label { font: 700 24px Arial, Helvetica, sans-serif; fill: #1f1f1f; }
+        .targetHead { font: 700 24px Arial, Helvetica, sans-serif; fill: #1f1f1f; }
+    </style>
+
+    <text x="120" y="120" class="title">The 3F Weekly Life Scorecard</text>
+    <text x="120" y="178" class="subtitle">Track the fire. Shape the steel. Sharpen the edge.</text>
+    <text x="120" y="248" class="section">Week of:</text>
+    <line x1="290" y1="240" x2="1050" y2="240" stroke="#1f2937" stroke-width="3" />
+    <text x="120" y="306" class="small">A scorecard turns life into feedback. The 10s keep the
+        furnace hot, the 5s shape the steel, the 2s sharpen the edge, and the 1s keep the system
+        clean.</text>
+    <rect x="120" y="361" width="2310" height="66" rx="10" fill="#1f2937" />
+    <line x1="120" y1="361" x2="120" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="340" y1="361" x2="340" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="770" y1="361" x2="770" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="880" y1="361" x2="880" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="1073.75" y1="361" x2="1073.75" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="1267.5" y1="361" x2="1267.5" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="1461.25" y1="361" x2="1461.25" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="1655.0" y1="361" x2="1655.0" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="1848.75" y1="361" x2="1848.75" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="2042.5" y1="361" x2="2042.5" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="2236.25" y1="361" x2="2236.25" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="2430.0" y1="361" x2="2430.0" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="120" y1="427" x2="2430" y2="427" stroke="#d1d5db" stroke-width="2" />
+    <line x1="120" y1="582" x2="2430" y2="582" stroke="#d1d5db" stroke-width="2" />
+    <line x1="120" y1="737" x2="2430" y2="737" stroke="#d1d5db" stroke-width="2" />
+    <line x1="120" y1="892" x2="2430" y2="892" stroke="#d1d5db" stroke-width="2" />
+    <line x1="120" y1="1047" x2="2430" y2="1047" stroke="#d1d5db" stroke-width="2" />
+    <line x1="120" y1="1202" x2="2430" y2="1202" stroke="#d1d5db" stroke-width="2" />
+    <rect x="120" y="361" width="2310" height="686" rx="10" fill="none" stroke="#1f2937"
+        stroke-width="3" />
+    <text x="230.0" y="403" text-anchor="middle" class="header">3F Phase</text>
+    <text x="555.0" y="403" text-anchor="middle" class="header">Category</text>
+    <text x="825.0" y="403" text-anchor="middle" class="header">Pts</text>
+    <text x="976.875" y="403" text-anchor="middle" class="header">M</text>
+    <text x="1170.625" y="403" text-anchor="middle" class="header">T</text>
+    <text x="1364.375" y="403" text-anchor="middle" class="header">W</text>
+    <text x="1558.125" y="403" text-anchor="middle" class="header">T</text>
+    <text x="1751.875" y="403" text-anchor="middle" class="header">F</text>
+    <text x="1945.625" y="403" text-anchor="middle" class="header">S</text>
+    <text x="2139.375" y="403" text-anchor="middle" class="header">S</text>
+    <text x="2333.125" y="403" text-anchor="middle" class="header">Total</text>
+    <rect x="120" y="427" width="2310" height="155" fill="#fef3e7" />
+    <rect x="120" y="582" width="2310" height="155" fill="#eef2f7" />
+    <rect x="120" y="737" width="2310" height="155" fill="#f5f7fa" />
+    <rect x="120" y="892" width="2310" height="155" fill="#fbfbfb" />
+    <text x="138" y="475" class="cell">🔥 Furnace</text>
+    <text x="358" y="475" class="cell">The 10s — Core Fire</text>
+    <text x="358" y="509" class="tiny">Sleep 7+ hrs · Emotional check-in · Deep talk</text>
+    <text x="358" y="535" class="tiny">with wife · Floor time with daughter</text>
+    <text x="825.0" y="515" text-anchor="middle" class="cell">10</text>
+    <text x="138" y="630" class="cell">⚒️ Forge</text>
+    <text x="358" y="630" class="cell">The 5s — Shaping the Steel</text>
+    <text x="358" y="664" class="tiny">Workout · Meal prep · Act of service ·</text>
+    <text x="358" y="690" class="tiny">Community involvement</text>
+    <text x="825.0" y="670" text-anchor="middle" class="cell">5</text>
+    <text x="138" y="785" class="cell">⚒️ Forge</text>
+    <text x="358" y="785" class="cell">The 2s — Sharpening the Edge</text>
+    <text x="358" y="819" class="tiny">Reading · Hobby · Teaching daughter ·</text>
+    <text x="358" y="845" class="tiny">Thoughtful text</text>
+    <text x="825.0" y="825" text-anchor="middle" class="cell">2</text>
+    <text x="138" y="940" class="cell">🔥 Furnace</text>
+    <text x="358" y="940" class="cell">The 1s — Keep the Fire Clean</text>
+    <text x="358" y="974" class="tiny">Hydration · Saying hello · Short rest · Light</text>
+    <text x="358" y="1000" class="tiny">connection</text>
+    <text x="825.0" y="980" text-anchor="middle" class="cell">1</text>
+    <rect x="898.0" y="455" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1091.75" y="455" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1285.5" y="455" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1479.25" y="455" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1673.0" y="455" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1866.75" y="455" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="2060.5" y="455" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="2254.25" y="455" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="898.0" y="610" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1091.75" y="610" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1285.5" y="610" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1479.25" y="610" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1673.0" y="610" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1866.75" y="610" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="2060.5" y="610" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="2254.25" y="610" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="898.0" y="765" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1091.75" y="765" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1285.5" y="765" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1479.25" y="765" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1673.0" y="765" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1866.75" y="765" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="2060.5" y="765" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="2254.25" y="765" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="898.0" y="920" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1091.75" y="920" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1285.5" y="920" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1479.25" y="920" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1673.0" y="920" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1866.75" y="920" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="2060.5" y="920" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="2254.25" y="920" width="157.75" height="99" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="120" y="1065" width="2310" height="95" rx="10" fill="#1f2937" />
+    <text x="144" y="1123" class="header">Daily Totals</text>
+    <rect x="898.0" y="1083" width="157.75" height="59" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1091.75" y="1083" width="157.75" height="59" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1285.5" y="1083" width="157.75" height="59" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1479.25" y="1083" width="157.75" height="59" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1673.0" y="1083" width="157.75" height="59" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="1866.75" y="1083" width="157.75" height="59" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="2060.5" y="1083" width="157.75" height="59" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <text x="2333.125" y="1123" text-anchor="middle" class="header">WEEKLY</text>
+    <rect x="2254.25" y="1083" width="157.75" height="59" rx="10" fill="#ffffff" stroke="#cbd5e1"
+        stroke-width="2" />
+    <rect x="120" y="1215" width="1480" height="620" rx="18" fill="#faf7f2" stroke="#e5e7eb"
+        stroke-width="3" />
+    <text x="150" y="1267" class="section">How to Play</text>
+    <text x="158" y="1317" class="small">• Set a winning score: 120+ = stable fire, 150+ = strong
+        forging</text>
+    <text x="158" y="1350" class="small">week, 200+ = elite discipline.</text>
+    <text x="158" y="1393" class="small">• Stack the points when one action truly hits two
+        categories.</text>
+    <text x="158" y="1436" class="small">• Perfection is not the goal. Consistent heat is.</text>
+    <text x="158" y="1479" class="small">• If you end a day with zero 10s, relight the fire first
+        thing</text>
+    <text x="158" y="1512" class="small">tomorrow.</text>
+    <text x="150" y="1570" class="section">What the Scores Mean</text>
+    <text x="158" y="1620" class="label">10</text>
+    <text x="210" y="1620" class="small">Core Fire — Hearth and Furnace Stack. These keep
+        life-support</text>
+    <text x="210" y="1650" class="small">systems alive.</text>
+    <text x="158" y="1695" class="label">5</text>
+    <text x="210" y="1695" class="small">Hammer Strikes — deliberate actions that shape your
+        discipline.</text>
+    <text x="158" y="1750" class="label">2</text>
+    <text x="210" y="1750" class="small">Grindstone Work — small refinements that sharpen your edge.</text>
+    <text x="158" y="1805" class="label">1</text>
+    <text x="210" y="1805" class="small">Slag Control — micro-maintenance that keeps the system
+        clean.</text>
+    <rect x="1640" y="1215" width="790" height="620" rx="18" fill="#f8fafc" stroke="#e5e7eb"
+        stroke-width="3" />
+    <text x="1670" y="1267" class="section">Weekly Reflection</text>
+    <text x="1670" y="1335" class="label">Best moment (Where the fire burned brightest)</text>
+    <line x1="1670" y1="1357" x2="2400" y2="1357" stroke="#94a3b8" stroke-width="2" />
+    <line x1="1670" y1="1393" x2="2400" y2="1393" stroke="#94a3b8" stroke-width="2" />
+    <line x1="1670" y1="1429" x2="2400" y2="1429" stroke="#94a3b8" stroke-width="2" />
+    <text x="1670" y="1460" class="label">Where did I strike the most hammer blows?</text>
+    <line x1="1670" y1="1482" x2="2400" y2="1482" stroke="#94a3b8" stroke-width="2" />
+    <line x1="1670" y1="1518" x2="2400" y2="1518" stroke="#94a3b8" stroke-width="2" />
+    <line x1="1670" y1="1554" x2="2400" y2="1554" stroke="#94a3b8" stroke-width="2" />
+    <text x="1670" y="1585" class="label">What slag needs clearing next week?</text>
+    <line x1="1670" y1="1607" x2="2400" y2="1607" stroke="#94a3b8" stroke-width="2" />
+    <line x1="1670" y1="1643" x2="2400" y2="1643" stroke="#94a3b8" stroke-width="2" />
+    <line x1="1670" y1="1679" x2="2400" y2="1679" stroke="#94a3b8" stroke-width="2" />
+    <text x="1670" y="1710" class="label">One adjustment I will make immediately</text>
+    <line x1="1670" y1="1732" x2="2400" y2="1732" stroke="#94a3b8" stroke-width="2" />
+    <line x1="1670" y1="1768" x2="2400" y2="1768" stroke="#94a3b8" stroke-width="2" />
+    <line x1="1670" y1="1804" x2="2400" y2="1804" stroke="#94a3b8" stroke-width="2" />
+    <line x1="120" y1="1905" x2="2430" y2="1905" stroke="#d1d5db" stroke-width="3" />
+    <text x="120" y="1963" class="section">Challenge: Run this for 14 days. Not to judge yourself —
+        to see where your fire actually burns.</text>
+    <text x="120" y="2011" class="subtitle">Manage the fire. Strike the steel. Sharpen the edge.</text>
+</svg>
