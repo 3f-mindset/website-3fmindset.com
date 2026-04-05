@@ -211,29 +211,46 @@
     <text x="2430" y="950" class="label">Do not miss:</text>
     <line x1="2630" y1="958" x2="3110" y2="958" stroke="#94a3b8" stroke-width="4" />
 
-    <rect x="2380" y="1090" width="800" height="760" rx="20" fill="#f8fafc" stroke="#e5e7eb"
+    <rect x="2380" y="1090" width="800" height="1330" rx="20" fill="#f8fafc" stroke="#e5e7eb"
         stroke-width="4" />
     <text x="2430" y="1160" class="section">Weekly Reflection</text>
-    <text x="2430" y="1240" class="label">Best moment:</text>
+    <text x="2430" y="1230" class="label">Best moment:</text>
     <line x1="2430" y1="1270" x2="3110" y2="1270" stroke="#94a3b8" stroke-width="3" />
-    <line x1="2430" y1="1310" x2="3110" y2="1310" stroke="#94a3b8" stroke-width="3" />
-    <text x="2430" y="1390" class="label">Hardest moment:</text>
-    <line x1="2430" y1="1420" x2="3110" y2="1420" stroke="#94a3b8" stroke-width="3" />
-    <line x1="2430" y1="1460" x2="3110" y2="1460" stroke="#94a3b8" stroke-width="3" />
-    <text x="2430" y="1540" class="label">Fix next week:</text>
+    <line x1="2430" y1="1330" x2="3110" y2="1330" stroke="#94a3b8" stroke-width="3" />
+    <line x1="2430" y1="1390" x2="3110" y2="1390" stroke="#94a3b8" stroke-width="3" />
+    <line x1="2430" y1="1450" x2="3110" y2="1450" stroke="#94a3b8" stroke-width="3" />
+    <text x="2430" y="1530" class="label">Hardest moment:</text>
     <line x1="2430" y1="1570" x2="3110" y2="1570" stroke="#94a3b8" stroke-width="3" />
-    <line x1="2430" y1="1610" x2="3110" y2="1610" stroke="#94a3b8" stroke-width="3" />
-    <text x="2430" y="1690" class="label">One promise:</text>
-    <line x1="2430" y1="1720" x2="3110" y2="1720" stroke="#94a3b8" stroke-width="3" />
-    <line x1="2430" y1="1760" x2="3110" y2="1760" stroke="#94a3b8" stroke-width="3" />
+    <line x1="2430" y1="1630" x2="3110" y2="1630" stroke="#94a3b8" stroke-width="3" />
+    <line x1="2430" y1="1690" x2="3110" y2="1690" stroke="#94a3b8" stroke-width="3" />
+    <line x1="2430" y1="1750" x2="3110" y2="1750" stroke="#94a3b8" stroke-width="3" />
+    <text x="2430" y="1830" class="label">Fix next week:</text>
+    <line x1="2430" y1="1870" x2="3110" y2="1870" stroke="#94a3b8" stroke-width="3" />
+    <line x1="2430" y1="1930" x2="3110" y2="1930" stroke="#94a3b8" stroke-width="3" />
+    <line x1="2430" y1="1990" x2="3110" y2="1990" stroke="#94a3b8" stroke-width="3" />
+    <line x1="2430" y1="2050" x2="3110" y2="2050" stroke="#94a3b8" stroke-width="3" />
+    <text x="2430" y="2130" class="label">One promise:</text>
+    <line x1="2430" y1="2170" x2="3110" y2="2170" stroke="#94a3b8" stroke-width="3" />
+    <line x1="2430" y1="2230" x2="3110" y2="2230" stroke="#94a3b8" stroke-width="3" />
+    <line x1="2430" y1="2290" x2="3110" y2="2290" stroke="#94a3b8" stroke-width="3" />
+    <line x1="2430" y1="2350" x2="3110" y2="2350" stroke="#94a3b8" stroke-width="3" />
 
-    <rect x="120" y="1520" width="2140" height="330" rx="20" fill="#faf7f2" stroke="#e5e7eb"
+    <rect x="120" y="1520" width="2140" height="900" rx="20" fill="#faf7f2" stroke="#e5e7eb"
         stroke-width="4" />
     <text x="170" y="1590" class="section">Notes</text>
     <line x1="170" y1="1660" x2="2210" y2="1660" stroke="#cbd5e1" stroke-width="3" />
-    <line x1="170" y1="1710" x2="2210" y2="1710" stroke="#cbd5e1" stroke-width="3" />
-    <line x1="170" y1="1760" x2="2210" y2="1760" stroke="#cbd5e1" stroke-width="3" />
-    <line x1="170" y1="1810" x2="2210" y2="1810" stroke="#cbd5e1" stroke-width="3" />
+    <line x1="170" y1="1720" x2="2210" y2="1720" stroke="#cbd5e1" stroke-width="3" />
+    <line x1="170" y1="1780" x2="2210" y2="1780" stroke="#cbd5e1" stroke-width="3" />
+    <line x1="170" y1="1840" x2="2210" y2="1840" stroke="#cbd5e1" stroke-width="3" />
+    <line x1="170" y1="1900" x2="2210" y2="1900" stroke="#cbd5e1" stroke-width="3" />
+    <line x1="170" y1="1960" x2="2210" y2="1960" stroke="#cbd5e1" stroke-width="3" />
+    <line x1="170" y1="2020" x2="2210" y2="2020" stroke="#cbd5e1" stroke-width="3" />
+    <line x1="170" y1="2080" x2="2210" y2="2080" stroke="#cbd5e1" stroke-width="3" />
+    <line x1="170" y1="2140" x2="2210" y2="2140" stroke="#cbd5e1" stroke-width="3" />
+    <line x1="170" y1="2200" x2="2210" y2="2200" stroke="#cbd5e1" stroke-width="3" />
+    <line x1="170" y1="2260" x2="2210" y2="2260" stroke="#cbd5e1" stroke-width="3" />
+    <line x1="170" y1="2320" x2="2210" y2="2320" stroke="#cbd5e1" stroke-width="3" />
+    <line x1="170" y1="2380" x2="2210" y2="2380" stroke="#cbd5e1" stroke-width="3" />
 
     <line x1="120" y1="2450" x2="3180" y2="2450" stroke="#d1d5db" stroke-width="4" />
     <text x="120" y="2500" class="subtitle">Stay consistent. Review weekly. Adjust fast.</text>
