@@ -1,14 +1,54 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="3300" height="2550" viewBox="0 0 3300 2550">
     <rect width="100%" height="100%" fill="#ffffff" />
     <style>
-        .title { font: 700 96px 'Arial', 'Helvetica', sans-serif; fill: #111111; }
-        .subtitle { font: 400 48px 'Arial', 'Helvetica', sans-serif; fill: #4b5563; }
-        .section { font: 700 52px 'Arial', 'Helvetica', sans-serif; fill: #111111; }
-        .header { font: 700 38px 'Arial', 'Helvetica', sans-serif; fill: #ffffff; }
-        .cell { font: 600 36px 'Arial', 'Helvetica', sans-serif; fill: #111111; }
-        .small { font: 500 32px 'Arial', 'Helvetica', sans-serif; fill: #111111; }
-        .tiny { font: 500 28px 'Arial', 'Helvetica', sans-serif; fill: #374151; }
-        .label { font: 700 34px 'Arial', 'Helvetica', sans-serif; fill: #111111; }
+        .title {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 96px;
+        font-weight: 700;
+        fill: #111111;
+        }
+        .subtitle {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 48px;
+        font-weight: 400;
+        fill: #4b5563;
+        }
+        .section {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 52px;
+        font-weight: 700;
+        fill: #111111;
+        }
+        .header {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 38px;
+        font-weight: 700;
+        fill: #ffffff;
+        }
+        .cell {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 36px;
+        font-weight: 600;
+        fill: #111111;
+        }
+        .small {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        fill: #111111;
+        }
+        .tiny {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        fill: #374151;
+        }
+        .label {
+        font-family: 'Arial', 'Helvetica', sans-serif;
+        font-size: 34px;
+        font-weight: 700;
+        fill: #111111;
+        }
     </style>
 
     <text x="120" y="132" class="title">3F Weekly Life Scorecard</text>
@@ -68,7 +108,7 @@
     <text x="150" y="1020" class="tiny">sharpen your edge.</text>
     <text x="826.3334" y="960" text-anchor="middle" class="cell">2</text>
 
-    <text x="150" y="1160" class="cell">Clean</text>
+    <text x="150" y="1160" class="cell">Maintain</text>
     <text x="150" y="1198" class="tiny">Micro-maintenance that keeps</text>
     <text x="150" y="1230" class="tiny">the system clean.</text>
     <text x="826.3334" y="1170" text-anchor="middle" class="cell">1</text>
