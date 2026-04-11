@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+  aria-labelledby="title desc">
+  <title id="title">SB15 Worksheet, Measure Your Progress and Refine</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable
+    sections built around the SHARPEN action model, and a three step summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill:
+      #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill:
+      #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill:
+      #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill:
+      #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill:
+      #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill:
+      #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+  <!-- Header -->
+  <rect class="box" x="28" y="24" width="1044" height="122" />
+  <text class="label" x="48" y="52">SB15</text>
+  <text class="title" x="48" y="86">MEASURE YOUR PROGRESS AND REFINE</text>
+  <text class="small" x="48" y="111">Choice: Keep working off feeling alone and repeat the same
+    effort with no proof, or face the truth, measure what is real,</text>
+  <text class="small" x="48" y="128">and make one clean adjustment that sharpens your results.</text>
+
+  <!-- Right header callout -->
+  <rect class="mini" x="815" y="42" width="225" height="82" />
+  <text class="label" x="832" y="64">ONE AREA ONLY</text>
+  <text class="tiny" x="832" y="82">Fitness, skill, routine, discipline, work output,</text>
+  <text class="tiny" x="832" y="95">or any area where progress can be observed.</text>
+  <text class="tiny" x="832" y="112">Pick one. Go deep. Do not scatter.</text>
+
+  <!-- Center spine -->
+  <line class="line" x1="550" y1="165" x2="550" y2="730" />
+  <circle class="dot" cx="550" cy="205" r="4" />
+  <circle class="dot" cx="550" cy="275" r="4" />
+  <circle class="dot" cx="550" cy="350" r="4" />
+  <circle class="dot" cx="550" cy="420" r="4" />
+  <circle class="dot" cx="550" cy="490" r="4" />
+  <circle class="dot" cx="550" cy="560" r="4" />
+  <circle class="dot" cx="550" cy="635" r="4" />
+
+  <text class="verb" x="600" y="200">SHARPEN</text>
+
+  <!-- S -->
+  <rect class="box" x="48" y="168" width="455" height="82" />
+  <circle class="mini" cx="82" cy="205" r="22" />
+  <text class="letter" x="72" y="216">S</text>
+  <text class="label" x="118" y="194">SELECT ONE AREA</text>
+  <text class="tiny" x="118" y="210">What part of your life are you auditing this week?</text>
+  <line class="fillline" x1="118" y1="230" x2="483" y2="230" />
+  <line class="fillline" x1="118" y1="242" x2="483" y2="242" />
+
+  <!-- H -->
+  <rect class="box" x="597" y="238" width="455" height="82" />
+  <circle class="mini" cx="631" cy="275" r="22" />
+  <text class="letter" x="620" y="286">H</text>
+  <text class="label" x="667" y="264">HIGHLIGHT THE METRIC</text>
+  <text class="tiny" x="667" y="280">What number, signal, or proof will show real progress?</text>
+  <line class="fillline" x1="667" y1="300" x2="1032" y2="300" />
+  <line class="fillline" x1="667" y1="312" x2="1032" y2="312" />
+
+  <!-- A -->
+  <rect class="box" x="48" y="308" width="455" height="96" />
+  <circle class="mini" cx="82" cy="350" r="22" />
+  <text class="letter" x="71" y="361">A</text>
+  <text class="label" x="118" y="336">ASSESS NOW VS THEN</text>
+  <text class="tiny" x="118" y="352">Compare your current reality with an earlier point in time.</text>
+  <text class="tiny" x="118" y="368">Past baseline:</text>
+  <line class="fillline" x1="190" y1="364" x2="483" y2="364" />
+  <text class="tiny" x="118" y="384">Current result:</text>
+  <line class="fillline" x1="190" y1="380" x2="483" y2="380" />
+  <line class="fillline" x1="118" y1="394" x2="483" y2="394" />
+
+  <!-- R -->
+  <rect class="box" x="597" y="378" width="455" height="96" />
+  <circle class="mini" cx="631" cy="420" r="22" />
+  <text class="letter" x="621" y="431">R</text>
+  <text class="label" x="667" y="406">REPORT THE TRUTH</text>
+  <text class="tiny" x="667" y="422">State it plainly. Improved, stalled, or regressed?</text>
+  <line class="fillline" x1="667" y1="442" x2="1032" y2="442" />
+  <line class="fillline" x1="667" y1="454" x2="1032" y2="454" />
+  <line class="fillline" x1="667" y1="466" x2="1032" y2="466" />
+
+  <!-- P -->
+  <rect class="box" x="48" y="448" width="455" height="96" />
+  <circle class="mini" cx="82" cy="490" r="22" />
+  <text class="letter" x="71" y="501">P</text>
+  <text class="label" x="118" y="476">PICK ONE ADJUSTMENT</text>
+  <text class="tiny" x="118" y="492">What single change will sharpen your next result?</text>
+  <line class="fillline" x1="118" y1="512" x2="483" y2="512" />
+  <line class="fillline" x1="118" y1="524" x2="483" y2="524" />
+  <line class="fillline" x1="118" y1="536" x2="483" y2="536" />
+
+  <!-- E -->
+  <rect class="box" x="597" y="518" width="455" height="96" />
+  <circle class="mini" cx="631" cy="560" r="22" />
+  <text class="letter" x="621" y="571">E</text>
+  <text class="label" x="667" y="546">EXECUTE NOW</text>
+  <text class="tiny" x="667" y="562">When will you apply the refinement?</text>
+  <text class="tiny" x="667" y="578">Date / time:</text>
+  <line class="fillline" x1="735" y1="574" x2="1032" y2="574" />
+  <text class="tiny" x="667" y="594">First action:</text>
+  <line class="fillline" x1="735" y1="590" x2="1032" y2="590" />
+
+  <!-- N -->
+  <rect class="box" x="48" y="588" width="455" height="112" />
+  <circle class="mini" cx="82" cy="635" r="22" />
+  <text class="letter" x="69" y="646">N</text>
+  <text class="label" x="118" y="620">NOTE THE NEXT RESULT</text>
+  <text class="tiny" x="118" y="636">What will you check next to see if the adjustment worked?</text>
+  <line class="fillline" x1="118" y1="656" x2="483" y2="656" />
+  <line class="fillline" x1="118" y1="668" x2="483" y2="668" />
+  <line class="fillline" x1="118" y1="680" x2="483" y2="680" />
+
+  <!-- Right lower reflection -->
+  <rect class="box" x="597" y="648" width="455" height="92" />
+  <text class="label" x="618" y="674">REFLECTION</text>
+  <text class="tiny" x="618" y="690">What changed when you looked at your effort through proof
+    instead of feeling?</text>
+  <line class="fillline" x1="618" y1="708" x2="1032" y2="708" />
+  <line class="fillline" x1="618" y1="720" x2="1032" y2="720" />
+  <line class="fillline" x1="618" y1="732" x2="1032" y2="732" />
+
+  <!-- Footer -->
+  <rect class="box" x="28" y="760" width="1044" height="62" />
+  <text class="label" x="48" y="784">ACTION STEPS SUMMARY</text>
+  <text class="tiny" x="48" y="801">1. Track It: pick one area and one metric so progress becomes
+    visible.</text>
+  <text class="tiny" x="385" y="801">2. Face It: compare now to before and tell the truth without
+    emotion.</text>
+  <text class="tiny" x="722" y="801">3. Fix It: make one adjustment and apply it immediately.</text>
+</svg>
