@@ -24,6 +24,8 @@ cover:
 draft: false
 ---
 
+{{< audio src="audio/sb15.mp3" >}}
+
 ## The Work That Looks Finished Until You Look Closer
 
 Late in the evening, when the gym has mostly emptied out, the pace slows enough to notice details. A man reracks his weights and checks his phone. Another wipes down a bench, pauses, then leaves. The mirrors reflect bodies in motion, but also habits in repetition. Sets are completed. Routines are followed. The work appears finished.
