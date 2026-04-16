@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">SB16 Worksheet, Face Your Fear Head-On</title>
+    <desc id="desc">Landscape worksheet on a white background with large title, introduction,
+        fillable sections built around the BRAVE action model, and a three step summary footer.</desc>
+
+    <defs>
+        <style>
+            .bg { fill: #ffffff; }
+            .line { stroke: #111111; stroke-width: 2; fill: none; }
+            .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+            .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+            .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+            .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700;
+            fill: #111111; }
+            .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+            .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+            .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700;
+            fill: #111111; }
+            .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700;
+            fill: #111111; }
+            .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700;
+            fill: #111111; letter-spacing: 2px; }
+            .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700;
+            fill: #111111; }
+            .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700;
+            fill: #111111; }
+            .fillline { stroke: #9a9a9a; stroke-width: 1; }
+        </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <!-- Header -->
+    <rect class="box" x="36" y="28" width="1028" height="116" />
+    <text class="label" x="58" y="58">SB16</text>
+    <text class="title" x="58" y="94">FACE YOUR FEAR HEAD-ON</text>
+    <text class="small" x="58" y="118">Choice: Keep delaying the hard thing and let fear keep
+        deciding your life, or take one direct action this week and prove you can move before
+        certainty arrives.</text>
+    <text class="tiny" x="58" y="136">Use this page to name one real fear, choose one direct action,
+        schedule it, do it, and record what actually happened.</text>
+
+    <!-- BRAVE banner -->
+    <rect class="mini" x="36" y="158" width="1028" height="46" />
+    <text class="verb" x="503" y="190" text-anchor="middle">B R A V E</text>
+
+    <!-- Row 1 -->
+    <rect class="box" x="36" y="220" width="320" height="232" />
+    <text class="letter" x="58" y="258">B</text>
+    <text class="sub" x="98" y="258">BOX THE FEAR</text>
+    <text class="tiny" x="58" y="278">Write the exact fear in one sentence. Keep it plain and
+        honest.</text>
+    <text class="label" x="58" y="306">I am afraid of:</text>
+    <line class="fillline" x1="58" y1="324" x2="334" y2="324" />
+    <line class="fillline" x1="58" y1="342" x2="334" y2="342" />
+    <text class="label" x="58" y="374">It stops me from:</text>
+    <line class="fillline" x1="58" y1="392" x2="334" y2="392" />
+    <line class="fillline" x1="58" y1="410" x2="334" y2="410" />
+    <text class="tiny" x="58" y="438">Make it specific enough that someone else could see the cost.</text>
+
+    <rect class="box" x="390" y="220" width="320" height="232" />
+    <text class="letter" x="412" y="258">R</text>
+    <text class="sub" x="452" y="258">REDUCE TO ONE ACTION</text>
+    <text class="tiny" x="412" y="278">Choose one direct move that hits the fear on purpose.</text>
+    <text class="label" x="412" y="306">The one action I will take:</text>
+    <line class="fillline" x1="412" y1="324" x2="688" y2="324" />
+    <line class="fillline" x1="412" y1="342" x2="688" y2="342" />
+    <line class="fillline" x1="412" y1="360" x2="688" y2="360" />
+    <text class="label" x="412" y="392">Why this action matters:</text>
+    <line class="fillline" x1="412" y1="410" x2="688" y2="410" />
+    <line class="fillline" x1="412" y1="428" x2="688" y2="428" />
+    <text class="tiny" x="412" y="446">Not research. Not planning. A visible action.</text>
+
+    <rect class="box" x="744" y="220" width="320" height="232" />
+    <text class="letter" x="766" y="258">A</text>
+    <text class="sub" x="806" y="258">ASSIGN TIME AND PLACE</text>
+    <text class="tiny" x="766" y="278">Fear grows in open time. Put the action on the calendar.</text>
+    <text class="label" x="766" y="308">Date</text>
+    <line class="fillline" x1="766" y1="326" x2="864" y2="326" />
+    <text class="label" x="884" y="308">Time</text>
+    <line class="fillline" x1="884" y1="326" x2="980" y2="326" />
+    <text class="label" x="766" y="360">Place</text>
+    <line class="fillline" x1="766" y1="378" x2="1040" y2="378" />
+    <text class="label" x="766" y="410">What could make me delay:</text>
+    <line class="fillline" x1="766" y1="428" x2="1040" y2="428" />
+    <line class="fillline" x1="766" y1="446" x2="1040" y2="446" />
+
+    <!-- Row 2 -->
+    <rect class="box" x="36" y="474" width="498" height="242" />
+    <text class="letter" x="58" y="512">V</text>
+    <text class="sub" x="98" y="512">VENTURE WITHOUT DELAY</text>
+    <text class="tiny" x="58" y="532">When the moment arrives, move before your mind starts
+        bargaining.</text>
+    <text class="label" x="58" y="562">My rule for the moment:</text>
+    <line class="fillline" x1="58" y1="580" x2="512" y2="580" />
+    <line class="fillline" x1="58" y1="598" x2="512" y2="598" />
+    <text class="label" x="58" y="628">What I will do in the first 10 seconds:</text>
+    <line class="fillline" x1="58" y1="646" x2="512" y2="646" />
+    <line class="fillline" x1="58" y1="664" x2="512" y2="664" />
+    <text class="tiny" x="58" y="696">Examples: dial, stand, speak first, walk in, send, ask,
+        answer.</text>
+
+    <rect class="box" x="566" y="474" width="498" height="242" />
+    <text class="letter" x="588" y="512">E</text>
+    <text class="sub" x="628" y="512">EVALUATE THE RESULT</text>
+    <text class="tiny" x="588" y="532">Record facts after the action. Use reality, not drama.</text>
+    <text class="label" x="588" y="560">What I predicted would happen:</text>
+    <line class="fillline" x1="588" y1="578" x2="1042" y2="578" />
+    <line class="fillline" x1="588" y1="596" x2="1042" y2="596" />
+    <text class="label" x="588" y="626">What actually happened:</text>
+    <line class="fillline" x1="588" y1="644" x2="1042" y2="644" />
+    <line class="fillline" x1="588" y1="662" x2="1042" y2="662" />
+    <text class="label" x="588" y="692">What this proves about me now:</text>
+    <line class="fillline" x1="588" y1="710" x2="1042" y2="710" />
+
+    <!-- Side reflection rail -->
+    <rect class="mini" x="36" y="730" width="1028" height="48" />
+    <text class="tiny" x="52" y="750">Reflection: What part of the fear was real, what part was
+        theater, and where else in my life have I been obeying prediction instead of testing
+        reality?</text>
+    <line class="fillline" x1="52" y1="766" x2="1048" y2="766" />
+
+    <!-- Footer summary -->
+    <rect class="box" x="36" y="790" width="1028" height="44" />
+    <text class="small" x="56" y="808">1. DEFINE IT</text>
+    <text class="tiny" x="56" y="822">Name the fear and the cost.</text>
+
+    <text class="small" x="388" y="808">2. DO IT</text>
+    <text class="tiny" x="388" y="822">Take one direct action on schedule.</text>
+
+    <text class="small" x="704" y="808">3. PROVE IT</text>
+    <text class="tiny" x="704" y="822">Use facts to build earned confidence.</text>
+</svg>
