@@ -1,3 +1,7 @@
-hugo serve \
+hugo server \
     --poll 100 \
-    --buildFuture
+    --buildFuture \
+    --buildDrafts \
+    --renderToMemory \
+    --printPathWarnings \
+    --minify \
