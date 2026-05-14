@@ -28,7 +28,7 @@ languages:
       series: series
     menu:
       main:
-        - name: IGNITION
+        - name: What is IGNITION?
           url: program/ignition
           weight: 1
         - name: Essays
@@ -68,11 +68,16 @@ params:
   # comments: false
   images: []
 
+  homeInfoParams:
+    Title: "Learn to focus on what actually matters"
+    Content: >
+      _Eliminate energy leaks, and forge a clear identity, even if you feel scattered, exhausted, or stuck, so you can live with confidence, direction, and integrity._
+
   profileMode:
-    enabled: true # needs to be explicitly set
+    enabled: false # needs to be explicitly set
     title: "From Pressure to Consistent Action"
     subtitle: "Learn to focus on what actually matters, eliminate energy leaks, and forge a clear identity, even if you feel scattered, exhausted, or stuck, so you can live with confidence, direction, and integrity."
-    imageUrl: "../assets/images/icon-logo.jpg"
+    imageUrl: "../assets/images/burn.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: The Momentum Map
@@ -81,11 +86,6 @@ params:
         url: program/ignition
       # - name: Tags
       #   url: tags
-
-  homeInfoParams:
-    Title: "How To Live a Life of Meaning"
-    Content: >
-      _Without losing your sense of identitity_
 
   socialIcons:
     # - name: github
