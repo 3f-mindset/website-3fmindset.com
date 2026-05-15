@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">SB20 Worksheet, Learn from the Burns</title>
+    <desc id="desc">Landscape worksheet on a white background with large title, introduction,
+        fillable sections built around the REFINE action model, and a three step summary footer.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 3px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <!-- Header -->
+    <text x="60" y="60" class="title">SB20 | LEARN FROM THE BURNS</text>
+    <text x="62" y="92" class="sub">Failure becomes useful when you stop protecting your pride and
+        start studying the lesson.</text>
+
+    <!-- Choice Intro -->
+    <rect class="box" x="55" y="115" width="990" height="72" />
+    <text x="75" y="140" class="label">CHOICE</text>
+    <text x="75" y="160" class="small">
+        Keep treating failure like proof you are limited, or study the burn, adjust the process,
+    </text>
+    <text x="75" y="176" class="small">
+        and return sharper. One path protects ego. The other builds growth.
+    </text>
+
+    <!-- Center Verb -->
+    <text x="475" y="235" class="verb">REFINE</text>
+
+    <!-- R -->
+    <rect class="box" x="40" y="260" width="300" height="160" />
+    <text x="58" y="295" class="letter">R</text>
+    <text x="95" y="292" class="label">REVIEW THE FAILURE</text>
+    <text x="58" y="315" class="tiny">Write the cold facts only. What actually happened?</text>
+    <line class="fillline" x1="60" y1="340" x2="315" y2="340" />
+    <line class="fillline" x1="60" y1="360" x2="315" y2="360" />
+    <line class="fillline" x1="60" y1="380" x2="315" y2="380" />
+    <line class="fillline" x1="60" y1="400" x2="315" y2="400" />
+
+    <!-- E -->
+    <rect class="box" x="395" y="260" width="300" height="160" />
+    <text x="413" y="295" class="letter">E</text>
+    <text x="450" y="292" class="label">EXPOSE THE WEAKNESS</text>
+    <text x="413" y="315" class="tiny">What part of you or your system broke down?</text>
+    <line class="fillline" x1="415" y1="340" x2="670" y2="340" />
+    <line class="fillline" x1="415" y1="360" x2="670" y2="360" />
+    <line class="fillline" x1="415" y1="380" x2="670" y2="380" />
+    <line class="fillline" x1="415" y1="400" x2="670" y2="400" />
+
+    <!-- F -->
+    <rect class="box" x="750" y="260" width="300" height="160" />
+    <text x="768" y="295" class="letter">F</text>
+    <text x="805" y="292" class="label">FIND THE LESSON</text>
+    <text x="768" y="315" class="tiny">What is this setback trying to teach you?</text>
+    <line class="fillline" x1="770" y1="340" x2="1025" y2="340" />
+    <line class="fillline" x1="770" y1="360" x2="1025" y2="360" />
+    <line class="fillline" x1="770" y1="380" x2="1025" y2="380" />
+    <line class="fillline" x1="770" y1="400" x2="1025" y2="400" />
+
+    <!-- I -->
+    <rect class="box" x="40" y="455" width="300" height="160" />
+    <text x="58" y="490" class="letter">I</text>
+    <text x="95" y="487" class="label">INSTALL A BETTER SYSTEM</text>
+    <text x="58" y="510" class="tiny">What new structure or habit will you build?</text>
+    <line class="fillline" x1="60" y1="535" x2="315" y2="535" />
+    <line class="fillline" x1="60" y1="555" x2="315" y2="555" />
+    <line class="fillline" x1="60" y1="575" x2="315" y2="575" />
+    <line class="fillline" x1="60" y1="595" x2="315" y2="595" />
+
+    <!-- N -->
+    <rect class="box" x="395" y="455" width="300" height="160" />
+    <text x="413" y="490" class="letter">N</text>
+    <text x="450" y="487" class="label">NAVIGATE THE NEXT ATTEMPT</text>
+    <text x="413" y="510" class="tiny">How will you approach the next rep differently?</text>
+    <line class="fillline" x1="415" y1="535" x2="670" y2="535" />
+    <line class="fillline" x1="415" y1="555" x2="670" y2="555" />
+    <line class="fillline" x1="415" y1="575" x2="670" y2="575" />
+    <line class="fillline" x1="415" y1="595" x2="670" y2="595" />
+
+    <!-- E -->
+    <rect class="box" x="750" y="455" width="300" height="160" />
+    <text x="768" y="490" class="letter">E</text>
+    <text x="805" y="487" class="label">EVOLVE THROUGH REPETITION</text>
+    <text x="768" y="510" class="tiny">What lesson must become a long term practice?</text>
+    <line class="fillline" x1="770" y1="535" x2="1025" y2="535" />
+    <line class="fillline" x1="770" y1="555" x2="1025" y2="555" />
+    <line class="fillline" x1="770" y1="575" x2="1025" y2="575" />
+    <line class="fillline" x1="770" y1="595" x2="1025" y2="595" />
+
+    <!-- Reflection Area -->
+    <rect class="box" x="55" y="645" width="990" height="90" />
+    <text x="75" y="670" class="label">POST MORTEM REFLECTION</text>
+    <text x="75" y="690" class="tiny">How has one past failure secretly shaped the way you act
+        today?</text>
+    <line class="fillline" x1="75" y1="710" x2="1015" y2="710" />
+    <line class="fillline" x1="75" y1="728" x2="1015" y2="728" />
+
+    <!-- Footer -->
+    <rect class="mini" x="55" y="760" width="300" height="60" />
+    <text x="70" y="782" class="label">1. FACE IT</text>
+    <text x="70" y="800" class="tiny">Study the failure honestly instead of avoiding it.</text>
+
+    <rect class="mini" x="400" y="760" width="300" height="60" />
+    <text x="415" y="782" class="label">2. FIX IT</text>
+    <text x="415" y="800" class="tiny">Build one clear adjustment from the lesson.</text>
+
+    <rect class="mini" x="745" y="760" width="300" height="60" />
+    <text x="760" y="782" class="label">3. FORGE FORWARD</text>
+    <text x="760" y="800" class="tiny">Return to action sharper and more prepared.</text>
+
+</svg>
