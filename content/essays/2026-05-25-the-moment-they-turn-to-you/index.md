@@ -5,8 +5,13 @@ title: "The Moment They Turn To You"
 summary: "Why calm leadership is built long before the emergency arrives and how steady habits become strength when others need you most."
 
 tags:
-  - tag1
-  - tag2
+  - leadership
+  - responsibility
+  - crisis
+  - fatherhood
+  - discipline
+  - presence
+  - resilience
 
 cover:
   image: "cover.png"
@@ -211,13 +216,9 @@ In difficult moments, calm leadership is rarely dramatic.
 
 More often, it is quiet, direct, and practiced long before the emergency arrives.
 
----
-
 You can continue reacting emotionally every time pressure enters the room. You can keep letting stress control your tone, your thinking, and your decisions. That path slowly weakens trust in yourself and in the people depending on you.
 
-Or you can build steadiness before life demands it from you.
-
-You can practice calm during ordinary moments so that when real pressure arrives, your response is already trained. You can become the person who lowers the emotional temperature instead of raising it.
+Or you can build steadiness before life demands it from you. You can practice calm during ordinary moments so that when real pressure arrives, your response is already trained. You can become the person who lowers the emotional temperature instead of raising it.
 
 One path keeps repeating panic.
 
