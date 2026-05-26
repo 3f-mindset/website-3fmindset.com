@@ -31,7 +31,7 @@ Parents know this instinctively. There are certain sounds that bypass conscious 
 
 Then I heard my daughter cry.
 
-When I stepped into the hallway, my wife was carrying our daughter toward me. Our nanny, beside them, looked pale and frightened as she held my daughters arm high.
+When I stepped into the hallway, my wife was carrying our daughter toward me. Our nanny, beside them, looked pale and frightened as she held my daughter's arm high.
 
 My daughter looked confused more than anything else, crying hard in the disoriented way children do when pain arrives too quickly for them to process it.
 
