@@ -4,7 +4,7 @@ date: 2026-02-13
 draft: false
 summary: "Before you build discipline, you must decide who you are becoming. Strength without definition scatters; clarity gathers force."
 
-categories: essay
+categories: letter
 
 tags: []
 slug: "clarity-precedes-strength"

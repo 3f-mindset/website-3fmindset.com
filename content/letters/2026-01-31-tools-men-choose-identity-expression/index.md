@@ -4,7 +4,7 @@ date: 2026-01-31
 draft: false
 summary: "Why men reveal their identity through tools—and what happens when they finally speak their preferences without apology."
 
-categories: essay
+categories: letter
 
 tags: []
 slug: "tools-men-choose"

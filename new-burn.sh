@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Usage: new-post "Post Title"
+# Usage: new-burn "Letter Title"
 # Creates a new directory named YYYY-MM-DD under this script's folder,
 # writes an index.md with frontmatter, and writes a cover.png placeholder.
 
-TITLE="${1:-POST TITLE GOES HERE}"
+TITLE="${1:-LETTER TITLE GOES HERE}"
 SLUG="$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g' | sed -E 's/^-|-$//g')"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 if [[ "$(date +%u)" -eq 5 ]]; then
@@ -13,7 +13,7 @@ if [[ "$(date +%u)" -eq 5 ]]; then
 else
   DATE="$(date -d 'next friday' +%F)"
 fi
-DIR="$SCRIPT_DIR/content/essays/$DATE-$SLUG"
+DIR="$SCRIPT_DIR/content/letters/$DATE-$SLUG"
 
 mkdir -p "$DIR"
 

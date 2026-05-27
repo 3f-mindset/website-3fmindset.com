@@ -11,7 +11,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["essays", "series"]
+mainsections: ["letters", "series"]
 googleAnalytics: G-TZ0JVYWKWW
 
 minify:
@@ -31,8 +31,8 @@ languages:
         - name: Steady Burn Series
           url: series/steadyburn
           weight: 1
-        - name: All Essays
-          url: essays
+        - name: All Letters
+          url: letters
           weight: 5
         # - name: Tags
         #   url: tags/
@@ -80,7 +80,7 @@ params:
       series: true
       categories: false
     sections:
-      essays: true
+      letters: true
       marriage: true
       program: true
 

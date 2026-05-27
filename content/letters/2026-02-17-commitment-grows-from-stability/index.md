@@ -4,7 +4,7 @@ slug: "commitment-grows-from-stability"
 title: "Why Commitment Grows from Stability, Not Flexibility"
 summary: "Endless rescheduling feels inclusive, but it quietly erodes commitment. Strong groups are built on fixed structures that allow participation to compound over time."
 
-categories: essay
+categories: letter
 
 tags:
   - commitment

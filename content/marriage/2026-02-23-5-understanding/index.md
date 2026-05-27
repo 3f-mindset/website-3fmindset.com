@@ -17,7 +17,7 @@ draft: false
 
 > _You are reading Principle **5 of 7** in this Marriage Series. Each builds on the one before it. These are structural commitments that form the framework of a marriage that does not drift when emotion shifts._
 >
-> _Start here: [A Letter to the Man Who Knows Something Is Off](/essays/a-letter-to-the-man-who-knows-something-is-off/)._
+> _Start here: [A Letter to the Man Who Knows Something Is Off](/letters/a-letter-to-the-man-who-knows-something-is-off/)._
 
 ---
 

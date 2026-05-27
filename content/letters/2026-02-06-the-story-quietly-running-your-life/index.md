@@ -4,7 +4,7 @@ date: 2026-02-06
 draft: false
 slug: "the-story-quietly-running-your-life"
 
-categories: essay
+categories: letter
 
 tags:
   ["mindset", "identity", "decision-making", "habits", "men", "self-leadership"]
