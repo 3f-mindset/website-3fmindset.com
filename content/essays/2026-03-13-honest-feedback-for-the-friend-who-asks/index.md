@@ -4,6 +4,8 @@ slug: "honest-feedback-for-a-friend"
 title: "Honest Feedback for a Friend"
 summary: "A reflection on a friend’s life creed and why vision alone isn’t enough."
 
+categories: essay
+
 tags:
   - personal-development
   - life-design

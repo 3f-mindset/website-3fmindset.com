@@ -4,6 +4,8 @@ slug: "the-unified-horizon-system"
 title: "The Unified Horizon System"
 summary: "I thought productivity meant finding the perfect method. The perfect app. The perfect review cadence. The perfect notebook layout. What I actually needed was operational honesty."
 
+categories: essay
+
 tags:
   - productivity
   - task-management

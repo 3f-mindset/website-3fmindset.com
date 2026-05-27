@@ -4,6 +4,8 @@ slug: "the-sunday-ritual-i-almost-lost"
 title: "The Sunday Ritual I Almost Lost"
 summary: "A weekly planning ritual is less about productivity and more about authorship; when the standard slips through small renegotiations, direction turns reactive until the line is restored."
 
+categories: essay
+
 tags:
   - "calibration"
   - "consistency"
@@ -20,7 +22,7 @@ cover:
 draft: false
 ---
 
-On Sunday evenings, I sit at the same desk with the same notebook and the same question *Where am I actually headed this week?*
+On Sunday evenings, I sit at the same desk with the same notebook and the same question _Where am I actually headed this week?_
 
 The ritual is simple. A review of the past seven days. A calibration of direction. A deliberate setting of intention before the noise of Monday begins its assault. When I honor it, something settles in me. My breathing slows. The week stops feeling like a storm I must survive and starts feeling like terrain I intend to cross.
 
@@ -70,7 +72,7 @@ The mind reframes it as practicality.
 
 But direction matters.
 
-When a Sunday commitment becomes Monday afternoon, the change feels small but the lesson you leave with is that *resistance should result in delay rather than adaptation*.
+When a Sunday commitment becomes Monday afternoon, the change feels small but the lesson you leave with is that _resistance should result in delay rather than adaptation_.
 
 There is another option, though less comfortable. If Sunday is constrained, move the ritual to Saturday. Or Friday. Advance it rather than postpone it. Preserve the standard even if the container shifts.
 

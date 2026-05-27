@@ -20,6 +20,10 @@ slug: "$SLUG"
 title: "$TITLE"
 summary: "SUMMARY GOES HERE"
 
+
+categories: essay
+
+
 tags:
     - tag1
     - tag2

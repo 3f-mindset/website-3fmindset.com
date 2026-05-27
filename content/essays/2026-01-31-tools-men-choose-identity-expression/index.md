@@ -3,6 +3,9 @@ title: "The Tools Men Choose"
 date: 2026-01-31
 draft: false
 summary: "Why men reveal their identity through tools—and what happens when they finally speak their preferences without apology."
+
+categories: essay
+
 tags: []
 slug: "tools-men-choose"
 
@@ -18,13 +21,13 @@ Then someone mentions a tool.
 
 A drill they swear by.  
 A knife they trust.  
-A piece of gear they’ve used long enough to *know*.
+A piece of gear they’ve used long enough to _know_.
 
 And something changes.
 
-The conversation firms up.  
+The conversation firms up.
 
-The words get precise.  
+The words get precise.
 
 Details start to matter—steel type, balance, torque, warranty, where it’s made, how it feels in the hand.
 
@@ -38,11 +41,11 @@ Today I'm writing about why men care so deeply about tools, why we often hide th
 
 My name is **Dave Mainville**. I’m the curriculum designer at **The Iron Crucible**, and developed the **3F System: Furnace, Forge, Form** for men who feel the pressure of a demanding life but don’t yet have a structure to convert it into clarity, strength, and impact.
 
-And what I want to talk about today sits at the *end* of that process.
+And what I want to talk about today sits at the _end_ of that process.
 
 Not motivation.
 
-Not discipline.  
+Not discipline.
 
 But expression.
 
@@ -54,7 +57,7 @@ Men love tools because tools are how **force becomes effect**.
 
 A tool is frozen intention.  
 It’s effort made repeatable.  
-It’s the promise that when you apply yourself, something *will happen*.
+It’s the promise that when you apply yourself, something _will happen_.
 
 That’s why the details matter.
 
@@ -84,10 +87,10 @@ Your internal steel no longer matches your external presence.
 
 Over time, that gap shows up as:
 
-- Passivity  
-- Resentment  
-- Dullness  
-- The feeling that you’re never quite seen  
+- Passivity
+- Resentment
+- Dullness
+- The feeling that you’re never quite seen
 
 Not because others aren’t paying attention—but because you’re not letting anything sharp come through.
 
@@ -101,8 +104,8 @@ Strength they don’t know how to show.
 
 The system gives structure to that process:
 
-- **The Furnace** teaches you how to burn clean instead of numbing out.  
-- **The Forge** teaches you how to turn effort into capability.  
+- **The Furnace** teaches you how to burn clean instead of numbing out.
+- **The Forge** teaches you how to turn effort into capability.
 - **Form** is where identity finally meets the world.
 
 And this lesson lives squarely in **Form**.
@@ -116,13 +119,13 @@ This is the **Blade of Expression**.
 The blade the world actually sees.
 
 It’s not about talking more.  
-It’s about talking *truer*.
+It’s about talking _truer_.
 
 The Blade of Expression is your willingness to say:
 
-- *This is what I trust.*  
-- *This is what I value.*  
-- *This is what I choose.*
+- _This is what I trust._
+- _This is what I value._
+- _This is what I choose._
 
 Without apology.  
 Without performance.  

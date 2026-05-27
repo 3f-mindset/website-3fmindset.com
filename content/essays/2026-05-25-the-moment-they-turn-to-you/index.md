@@ -4,6 +4,8 @@ slug: "the-moment-they-turn-to-you"
 title: "The Moment They Turn To You"
 summary: "Why calm leadership is built long before the emergency arrives and how steady habits become strength when others need you most."
 
+categories: essay
+
 tags:
   - leadership
   - responsibility
