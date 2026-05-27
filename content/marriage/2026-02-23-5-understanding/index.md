@@ -4,6 +4,8 @@ slug: "understanding"
 title: "Understanding"
 summary: "Most marital arguments collapse not because of what was said, but because neither person stopped long enough to measure what was actually happening."
 
+series: marriage
+
 tags:
 
 cover:

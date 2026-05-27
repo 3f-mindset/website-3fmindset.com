@@ -4,6 +4,8 @@ slug: "repair"
 title: "Repair"
 summary: "A man who throws away a jacket because it has torn at the elbow has misunderstood what made it valuable in the first place."
 
+series: marriage
+
 tags:
 
 cover:

@@ -4,6 +4,8 @@ slug: "kindness"
 title: "Kindness"
 summary: "Kindness is the climate of a marriage, and climate decides what can live."
 
+series: marriage
+
 tags:
 
 cover:

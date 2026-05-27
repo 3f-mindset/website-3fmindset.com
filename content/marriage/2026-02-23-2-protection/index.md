@@ -4,6 +4,8 @@ slug: "protection"
 title: "Protection"
 summary: "A castle does not fall because it is attacked once. It falls because defenses are treated as optional."
 
+series: marriage
+
 tags:
 
 cover:

@@ -2,9 +2,10 @@
 date: 2026-02-23 01:00:00
 slug: "continuity"
 title: "Continuity"
-series: marriage
 summary: "A man does not abandon his marriage in a single dramatic moment. He begins by dimming."
 hide: true
+
+series: marriage
 
 tags:
 
