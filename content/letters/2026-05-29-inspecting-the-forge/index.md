@@ -1,6 +1,8 @@
 ---
 date: 2026-05-27
 slug: "inspecting-the-forge"
+aliases:
+  - /essays/inspecting-the-forge/
 title: "Inspecting the Forge"
 summary: "A new phase of the Steady Burn series focused on examining the influences, habits, relationships, and environments that shape a man's character, discipline, and direction."
 

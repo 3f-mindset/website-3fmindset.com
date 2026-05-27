@@ -1,6 +1,8 @@
 ---
 date: 2026-05-08
 slug: "the-hard-things-that-make-life-easier"
+aliases:
+  - /essays/the-hard-things-that-make-life-easier/
 title: "The Hard Things That Make Life Easier"
 summary: "Modern life removes friction almost everywhere but the easier daily life becomes, the harder ordinary stress can feel."
 

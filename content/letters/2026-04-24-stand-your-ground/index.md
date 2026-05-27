@@ -1,6 +1,8 @@
 ---
 date: 2026-04-24
 slug: "stand-your-ground"
+aliases:
+  - /essays/stand-your-ground/
 title: "Stand Your Ground"
 summary: "Most conflict is not the problem. Avoidance is. Learn how to address hard conversations early with clear boundaries so pressure does not turn into resentment or damage."
 tags:

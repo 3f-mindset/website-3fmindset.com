@@ -1,6 +1,8 @@
 ---
 date: 2026-03-27
 slug: "do-it-regardless"
+aliases:
+  - /essays/do-it-regardless/
 title: "Do It Regardless"
 summary: "Discipline is not motivation, it is structure. Learn how keeping one non negotiable rule builds self command, turns effort into identity, and creates freedom through consistent action."
 series:

@@ -3,7 +3,8 @@ title: "The Story Quietly Running Your Life"
 date: 2026-02-06
 draft: false
 slug: "the-story-quietly-running-your-life"
-
+aliases:
+  - /essays/the-story-quietly-running-your-life/
 categories: letter
 
 tags:

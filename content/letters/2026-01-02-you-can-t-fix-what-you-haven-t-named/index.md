@@ -4,7 +4,8 @@ date: 2026-01-02
 draft: false
 summary: "Lasting change starts with a baseline. Until you name the real structure of your life, effort stays scattered and progress stays unstable."
 slug: "you-cant-fix-what-you-havent-named"
-
+aliases:
+  - /essays/you-cant-fix-what-you-havent-named/
 series:
   - SteadyBurn
 

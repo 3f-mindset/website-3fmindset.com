@@ -1,6 +1,8 @@
 ---
 date: 2026-04-10
 slug: "stop-guessing"
+aliases:
+  - /essays/stop-guessing/
 title: "Stop Guessing If You’re Improving"
 summary: "Use real proof to see what’s working, fix what’s not, and move forward faster"
 series:

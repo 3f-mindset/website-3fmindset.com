@@ -9,6 +9,7 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+cleanDestinationDir: true
 enableEmoji: true
 pygmentsUseClasses: true
 mainsections: ["letters", "series"]

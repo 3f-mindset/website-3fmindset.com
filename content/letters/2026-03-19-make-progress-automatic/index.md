@@ -1,6 +1,8 @@
 ---
 date: 2026-03-20
 slug: "make-progress-automatic"
+aliases:
+  - /essays/make-progress-automatic/
 title: "Make Progress Automatic"
 summary: "Small, repeated actions shape identity more than intention ever will. Daily habits act as the structural surface that turns effort into lasting change."
 series:

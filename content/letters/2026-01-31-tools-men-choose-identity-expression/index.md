@@ -8,7 +8,8 @@ categories: letter
 
 tags: []
 slug: "tools-men-choose"
-
+aliases:
+  - /essays/tools-men-choose/
 cover:
   image: "cover.png"
   relative: true

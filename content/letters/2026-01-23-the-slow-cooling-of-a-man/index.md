@@ -1,6 +1,8 @@
 ---
 date: 2026-01-23
 slug: "the-slow-cooling-of-a-man"
+aliases:
+  - /essays/the-slow-cooling-of-a-man/
 title: "The Slow Cooling of a Man"
 summary: "Men often mistake their stagnation for a discipline problem, but the deeper issue is lost internal heat; passion is the fuel that makes structure sustainable and effort alive."
 

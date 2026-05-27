@@ -1,6 +1,8 @@
 ---
 date: 2026-05-15
 slug: "learn-from-the-burns"
+aliases:
+  - /essays/learn-from-the-burns/
 title: "Learn From the Burns"
 summary: "Failure is not what stops most men. Refusing to study it is. Learn how to turn mistakes into smarter action instead of repeated pain."
 

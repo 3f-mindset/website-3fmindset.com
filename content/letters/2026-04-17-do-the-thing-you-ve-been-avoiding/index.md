@@ -1,6 +1,8 @@
 ---
 date: 2026-04-17
 slug: "do-the-thing-you-ve-been-avoiding"
+aliases:
+  - /essays/do-the-thing-you-ve-been-avoiding/
 title: "Do the Thing You’ve Been Avoiding"
 summary: "One direct action can break the fear that has been holding you still"
 series:

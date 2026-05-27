@@ -1,6 +1,8 @@
 ---
 date: 2026-02-16
 slug: "the-sunday-ritual-i-almost-lost"
+aliases:
+  - /essays/the-sunday-ritual-i-almost-lost/
 title: "The Sunday Ritual I Almost Lost"
 summary: "A weekly planning ritual is less about productivity and more about authorship; when the standard slips through small renegotiations, direction turns reactive until the line is restored."
 

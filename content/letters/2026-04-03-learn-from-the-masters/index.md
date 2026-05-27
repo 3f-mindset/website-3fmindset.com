@@ -1,6 +1,8 @@
 ---
 date: 2026-04-03
 slug: "model-the-masters"
+aliases:
+  - /essays/model-the-masters/
 title: "Model the Masters"
 summary: "Progress speeds up when you stop guessing alone and start learning from those who already earned the lessons you need."
 series:

@@ -1,6 +1,8 @@
 ---
 date: 2026-01-30
 slug: "the-sentence-before-the-step"
+aliases:
+  - /essays/the-sentence-before-the-step/
 title: "The Sentence Before the Step"
 summary: "Progress stalls less from lack of skill than from the hidden sentence about identity that shapes risk, effort, and follow-through before action begins."
 

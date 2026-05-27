@@ -1,6 +1,8 @@
 ---
 date: 2026-03-13
 slug: "train-your-mind-before-pressure-tests-it"
+aliases:
+  - /essays/train-your-mind-before-pressure-tests-it/
 title: "Train Your Mind Before Pressure Tests It"
 summary: "Most men don't lose control because life is stressful. They lose control because they never trained a response to it."
 series:

@@ -1,6 +1,8 @@
 ---
 date: 2026-03-13
 slug: "honest-feedback-for-a-friend"
+aliases:
+  - /essays/honest-feedback-for-a-friend/
 title: "Honest Feedback for a Friend"
 summary: "A reflection on a friend’s life creed and why vision alone isn’t enough."
 

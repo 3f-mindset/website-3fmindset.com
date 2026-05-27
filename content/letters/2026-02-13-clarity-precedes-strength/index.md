@@ -8,7 +8,8 @@ categories: letter
 
 tags: []
 slug: "clarity-precedes-strength"
-
+aliases:
+  - /essays/clarity-precedes-strength/
 cover:
   image: "cover.png"
   relative: true

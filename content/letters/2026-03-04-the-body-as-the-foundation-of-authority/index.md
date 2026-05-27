@@ -1,6 +1,8 @@
 ---
 date: 2026-03-06
 slug: "the-body-as-the-foundation-of-authority"
+aliases:
+  - /essays/the-body-as-the-foundation-of-authority/
 title: "The Body as the Foundation of Authority"
 summary: "Why physical discipline, not motivation, is the real foundation of confidence, focus, and authority."
 series:

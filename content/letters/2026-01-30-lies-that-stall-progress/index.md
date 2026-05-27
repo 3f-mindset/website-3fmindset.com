@@ -12,7 +12,8 @@ tags:
   - "action"
   - "personal development"
 slug: "break-the-lies-that-stall-your-progress"
-
+aliases:
+  - /essays/break-the-lies-that-stall-your-progress/
 cover:
   image: "cover.png"
   relative: true

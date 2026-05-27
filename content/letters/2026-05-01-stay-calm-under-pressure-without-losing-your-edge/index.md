@@ -1,6 +1,8 @@
 ---
 date: 2026-05-01
 slug: "stay-calm-under-pressure-without-losing-your-edge"
+aliases:
+  - /essays/stay-calm-under-pressure-without-losing-your-edge/
 title: "Stay Calm Under Pressure Without Losing Your Edge"
 summary: "Real composure requires a working relationship with anger, not a performance of permanent calm."
 

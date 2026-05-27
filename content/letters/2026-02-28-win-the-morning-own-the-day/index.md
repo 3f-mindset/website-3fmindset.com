@@ -1,6 +1,8 @@
 ---
 date: 2026-02-27
 slug: "win-the-morning-own-the-day"
+aliases:
+  - /essays/win-the-morning-own-the-day/
 title: "Win the Morning. Own the Day."
 summary: "The first hour after waking determines whether your day unfolds in reaction or in control. A simple, disciplined morning routine converts daily pressure into usable energy."
 series:

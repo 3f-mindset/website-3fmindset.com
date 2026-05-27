@@ -1,6 +1,8 @@
 ---
 date: 2026-01-09
 slug: "the-quiet-compromise"
+aliases:
+  - /essays/the-quiet-compromise/
 title: "The Quiet Compromise"
 summary: "The real threat to growth is not low motivation but repeated compromises against undefined values; lasting strength comes from naming and enforcing clear standards."
 
