@@ -6,6 +6,7 @@ summary: "A man does not abandon his marriage in a single dramatic moment. He be
 hide: true
 
 series: marriage
+categories: marriage
 
 tags:
 

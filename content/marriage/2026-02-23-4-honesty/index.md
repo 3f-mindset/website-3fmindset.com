@@ -5,6 +5,7 @@ title: "Honesty"
 summary: "A marriage can survive conflict. It cannot survive distortion."
 
 series: marriage
+categories: marriage
 
 tags:
 

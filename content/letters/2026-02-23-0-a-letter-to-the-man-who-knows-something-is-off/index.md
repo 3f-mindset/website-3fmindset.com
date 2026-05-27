@@ -4,6 +4,7 @@ slug: "a-letter-to-the-man-who-knows-something-is-off"
 aliases:
   - /essays/a-letter-to-the-man-who-knows-something-is-off/
 series: marriage
+categories: marriage
 title: "A Letter to the Man Who Knows Something Is Off"
 summary: "An invitation to men who feel quiet dissatisfaction in their marriage to examine their own leadership, reclaim responsibility, and rebuild strength through continuity, protection, kindness, honesty, understanding, acceptance, and repair."
 

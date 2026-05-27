@@ -5,6 +5,7 @@ title: "Acceptance"
 summary: "Growth collapses under pressure when structure becomes coercion rather than support."
 
 series: marriage
+categories: marriage
 
 tags:
 
