@@ -45,14 +45,38 @@
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
 {{- end }}
 
+{{- if and (eq .Kind "term") (eq .Data.Plural "series") }}
+{{- $pages = $pages.ByDate }}
+{{- end }}
+
 {{- $paginator := .Paginate $pages }}
 
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
 {{- partial "home_info.html" . }}
 {{- end }}
 
+{{- $listCoverParams := site.Params.listCovers | default dict }}
+{{- $showListCover := true }}
+{{- if isset $listCoverParams "default" }}
+{{- $showListCover = index $listCoverParams "default" }}
+{{- end }}
+{{- if isset $listCoverParams .Kind }}
+{{- $showListCover = index $listCoverParams .Kind }}
+{{- end }}
+{{- $sectionCovers := index $listCoverParams "sections" | default dict }}
+{{- with .Section }}
+{{- if isset $sectionCovers . }}
+{{- $showListCover = index $sectionCovers . }}
+{{- end }}
+{{- end }}
+{{- $taxonomyCovers := index $listCoverParams "taxonomies" | default dict }}
+{{- with .Data.Plural }}
+{{- if isset $taxonomyCovers . }}
+{{- $showListCover = index $taxonomyCovers . }}
+{{- end }}
+{{- end }}
+
 {{- $term := .Data.Term }}
-{{- $showTermCovers := and $term (eq .Type "series") }}
 {{- range $index, $page := $paginator.Pages }}
 
 {{- $class := "post-entry" }}
@@ -60,12 +84,12 @@
 {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams }}
 {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) }}
 {{- $class = "first-entry" }}
-{{- else if and $term (not $showTermCovers) }}
+{{- else if and $term (not $showListCover) }}
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
 
 <article class="{{ $class }}">
-  {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+  {{- $isHidden := or (not $showListCover) ((.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false) }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
     <h2 class="entry-hint-parent">

@@ -69,6 +69,21 @@ params:
   # comments: false
   images: []
 
+  # Controls cover images on list result pages. More specific settings override broader ones.
+  listCovers:
+    default: true
+    home: true
+    section: true
+    term: false
+    taxonomies:
+      tags: false
+      series: true
+      categories: false
+    sections:
+      essays: true
+      marriage: true
+      program: true
+
   homeInfoParams:
     Title: "Learn to focus on what actually matters"
     Content: >
