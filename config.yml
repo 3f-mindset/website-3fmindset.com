@@ -28,10 +28,10 @@ languages:
       series: series
     menu:
       main:
-        - name: What is IGNITION?
-          url: program/ignition
+        - name: Steady Burn Series
+          url: series/steadyburn
           weight: 1
-        - name: Essays
+        - name: All Essays
           url: essays
           weight: 5
         # - name: Tags
