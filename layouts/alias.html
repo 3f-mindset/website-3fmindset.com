@@ -1,13 +1,60 @@
 <!doctype html>
-<html lang="{{ site.LanguageCode | default "en" }}">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ .Page.Title }}</title>
-    <link rel="canonical" href="{{ .Page.RelPermalink }}">
-    <meta name="robots" content="noindex">
-    <meta http-equiv="refresh" content="0; url={{ .Page.RelPermalink }}">
-  </head>
-  <body>
-    <a href="{{ .Page.RelPermalink }}">Redirecting...</a>
-  </body>
+<html lang="{{ site.LanguageCode | default " en" }}">
+{{- $page := .Page }}
+{{- $description := "" }}
+{{- with $page.Description }}
+{{- $description = . }}
+{{- else }}
+{{- if or $page.IsPage $page.IsSection }}
+{{- $description = $page.Summary | default (printf "%s - %s" $page.Title site.Title) }}
+{{- else }}
+{{- $description = site.Params.description | default "" }}
+{{- end }}
+{{- end }}
+{{- $image := "" }}
+{{- with $page.Params.cover.image }}
+{{- if ne $page.Params.cover.relative true }}
+{{- $image = . | absURL }}
+{{- else }}
+{{- $image = path.Join $page.RelPermalink . | absURL }}
+{{- end }}
+{{- end }}
+{{- if not $image }}
+{{- with partial "templates/_funcs/get-page-images" $page }}
+{{- if gt (len .) 0 }}
+{{- with index . 0 }}
+{{- $image = .Permalink }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ if $page.IsHome }}{{ else }}{{ if $page.Title }}{{ $page.Title }} | {{ end }}{{ end }}{{ site.Title }}
+  </title>
+  <meta name="description" content="{{ $description | plainify | htmlUnescape | chomp }}">
+  <link rel="canonical" href="{{ $page.Permalink }}">
+  <meta name="robots" content="noindex">
+  <meta property="og:url" content="{{ $page.Permalink }}">
+  <meta property="og:site_name" content="{{ site.Title | plainify }}">
+  <meta property="og:title" content="{{ $page.Title | plainify }}">
+  <meta property="og:description" content="{{ $description | plainify | htmlUnescape | chomp }}">
+  <meta property="og:type" content="{{ if $page.IsPage }}article{{ else }}website{{ end }}">
+  {{- with $image }}
+  <meta property="og:image" content="{{ . }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ . }}">
+  {{- else }}
+  <meta name="twitter:card" content="summary">
+  {{- end }}
+  <meta name="twitter:title" content="{{ $page.Title | plainify }}">
+  <meta name="twitter:description" content="{{ $description | plainify | htmlUnescape | chomp }}">
+  <meta http-equiv="refresh" content="0; url={{ $page.Permalink }}">
+</head>
+
+<body>
+  <a href="{{ $page.Permalink }}">Redirecting...</a>
+</body>
+
 </html>
