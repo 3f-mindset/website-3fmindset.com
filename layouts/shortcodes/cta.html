@@ -1,0 +1,12 @@
+{{- if site.Params.showCTAs }}
+<aside class="newsletter-cta">
+    <div class="newsletter-cta__body">
+        {{ .Inner | markdownify }}
+    </div>
+    {{- $buttonSrc := .Get "button_src" -}}
+    {{- $buttonText := .Get "button_text" -}}
+    {{- if and $buttonSrc $buttonText }}
+    <a class="newsletter-cta__button" href="{{ $buttonSrc | relURL }}">{{ $buttonText }}</a>
+    {{- end }}
+</aside>
+{{- end }}

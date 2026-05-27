@@ -5,3 +5,60 @@
 .entry-cover img {
     border: 1px solid var(--border);
 }
+
+.post-content .newsletter-cta {
+    margin: 30px 0;
+    padding: 18px 20px 20px;
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-inline-start: 5px solid var(--primary);
+    border-radius: var(--radius);
+}
+
+.post-content .newsletter-cta__body > :last-child {
+    margin-bottom: 0;
+}
+
+.post-content .newsletter-cta__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    padding: 9px 16px;
+    min-height: 40px;
+    color: var(--theme);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius);
+    box-shadow: none;
+}
+
+.post-content .newsletter-cta__button:hover,
+.post-content .newsletter-cta__button:focus {
+    color: var(--theme);
+    opacity: 0.86;
+    box-shadow: none;
+}
+
+.post-content .newsletter-cta__button:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+[data-theme="dark"] .post-content .newsletter-cta {
+    background: var(--entry);
+}
+
+@media (max-width: 480px) {
+    .post-content .newsletter-cta {
+        padding: 16px;
+    }
+
+    .post-content .newsletter-cta__button {
+        display: flex;
+        width: 100%;
+    }
+}

@@ -51,6 +51,7 @@ params:
   # author: ["Me", "You"] # multiple authors
 
   hideAuthor: true
+  showCTAs: false
 
   defaultTheme: light
   disableThemeToggle: true
