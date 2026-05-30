@@ -9,10 +9,14 @@ from __future__ import annotations
 
 import argparse
 import html
+import subprocess
 import sys
 from pathlib import Path
 
 from weasyprint import HTML
+
+
+SVG_MARKER = "CHOICE"
 
 
 PRINT_CSS = """
@@ -48,7 +52,15 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Render an SVG image as a full-page landscape PDF."
     )
-    parser.add_argument("svg_file", type=Path, help="SVG file to render.")
+    parser.add_argument(
+        "svg_file",
+        type=Path,
+        nargs="?",
+        help=(
+            "SVG file to render. If omitted, the script searches uncommitted "
+            "git changes for the SVG containing 'CHOICE'."
+        ),
+    )
     parser.add_argument(
         "-o",
         "--output",
@@ -67,6 +79,59 @@ def validate_input(svg_file: Path) -> Path:
         raise ValueError(f"Input file must be an SVG: {svg_file}")
 
     return svg_file
+
+
+def git_changed_paths() -> list[Path]:
+    changed = subprocess.run(
+        ["git", "diff", "--name-only", "--diff-filter=ACMRTUXB", "HEAD", "--"],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    untracked = subprocess.run(
+        ["git", "ls-files", "--others", "--exclude-standard"],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+
+    paths: list[Path] = []
+    seen: set[str] = set()
+    for line in [*changed.stdout.splitlines(), *untracked.stdout.splitlines()]:
+        if not line or line in seen:
+            continue
+        seen.add(line)
+        paths.append(Path(line))
+    return paths
+
+
+def find_uncommitted_choice_svg() -> Path:
+    matches = []
+    for path in git_changed_paths():
+        if path.suffix.lower() != ".svg" or not path.is_file():
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue
+        if SVG_MARKER in text:
+            matches.append(path)
+
+    if not matches:
+        raise FileNotFoundError(
+            f"No uncommitted SVG file contains {SVG_MARKER!r}."
+        )
+    if len(matches) > 1:
+        formatted = "\n".join(f"  - {path}" for path in matches)
+        raise ValueError(
+            f"Multiple uncommitted SVG files contain {SVG_MARKER!r}:\n"
+            f"{formatted}\nPass svg_file explicitly."
+        )
+    return matches[0]
+
+
+def resolve_input(args: argparse.Namespace) -> Path:
+    return args.svg_file if args.svg_file else find_uncommitted_choice_svg()
 
 
 def default_output_path(svg_file: Path) -> Path:
@@ -102,7 +167,7 @@ def main() -> int:
     args = parse_args()
 
     try:
-        svg_file = validate_input(args.svg_file)
+        svg_file = validate_input(resolve_input(args))
         output_pdf = (
             args.output.expanduser().resolve()
             if args.output
