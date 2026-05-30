@@ -39,6 +39,7 @@
 </script>
 {{- end }}
 
+{{- if not (.Param "hideHeader") }}
 <header class="header">
     {{ if not .IsHome }}
     <nav class="nav">
@@ -149,3 +150,4 @@
     </nav>
     {{ end }}
 </header>
+{{- end }}

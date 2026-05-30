@@ -39,10 +39,14 @@
 {{- end }}
 
 {{- $pages := union .RegularPages .Sections }}
+{{- $pages = where $pages "Params.hiddenInList" "!=" true }}
+{{- $pages = where $pages "Params.hiddenInList" "!=" "true" }}
 
 {{- if .IsHome }}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+{{- $pages = where $pages "Params.hiddenInList" "!=" true }}
+{{- $pages = where $pages "Params.hiddenInList" "!=" "true" }}
 {{- end }}
 
 {{- if and (eq .Kind "term") (eq .Data.Plural "series") }}

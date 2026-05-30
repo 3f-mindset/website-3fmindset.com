@@ -1,0 +1,46 @@
+{{- $page := .Page -}}
+{{- $worksheet := .Worksheet | default dict -}}
+{{- $imageWrap := index $worksheet "image-wrap" | default dict -}}
+{{- $image := index $imageWrap "hero-image" | default dict -}}
+{{- $copy := index $worksheet "copy" | default dict -}}
+{{- $form := index $copy "form" | default dict -}}
+{{- $input := index $form "input" | default dict -}}
+{{- $button := index $form "button" | default dict -}}
+{{- $title := index $copy "hero-title" | default $page.Title -}}
+
+<section class="hero" aria-labelledby="hero-title">
+    <div class="image-wrap">
+        <img class="hero-image" src="{{ index $image "src" | default "" }}" alt="{{ index $image "alt" | default "" }}">
+    </div>
+
+    <div class="copy">
+        {{- with index $copy "eyebrow" }}
+        <p class="eyebrow">{{ . }}</p>
+        {{- end }}
+
+        <h1 id="hero-title">{{ $title }}</h1>
+
+        {{- with index $copy "subhead" }}
+        <p class="subhead">{{ . }}</p>
+        {{- end }}
+
+        {{- with index $copy "benefits" }}
+        <ul class="benefits">
+            {{- range . }}
+            <li><span></span> {{ . }}</li>
+            {{- end }}
+        </ul>
+        {{- end }}
+
+        {{- if $form }}
+        <form{{ with index $form "action" }} action="{{ . }}"{{ end }}{{ with index $form "method" }} method="{{ . }}"{{ end }}>
+            <input type="{{ index $input "type" | default "email" }}" name="{{ index $input "name" | default "email" }}" placeholder="{{ index $input "placeholder" | default "Enter your email" }}" aria-label="{{ index $input "aria-label" | default "Email address" }}"{{ if (index $input "required" | default true) }} required{{ end }}>
+            <button type="{{ index $button "type" | default "submit" }}">{{ index $button "text" | default "Get The Plan" }}</button>
+        </form>
+        {{- end }}
+
+        {{- with index $copy "microcopy" }}
+        <p class="microcopy">{{ . }}</p>
+        {{- end }}
+    </div>
+</section>
