@@ -38,6 +38,8 @@ cover:
 draft: false
 ---
 
+{{< audio >}}
+
 For a long time, I thought ...
 EOF
 
