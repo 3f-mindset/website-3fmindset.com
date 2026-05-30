@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import html
 import re
+import subprocess
 import sys
 import tempfile
 from pathlib import Path
@@ -25,6 +26,9 @@ FRONT_MATTER_RE = re.compile(
     r"\A(?:---\s*\n.*?\n---\s*\n?|\+\+\+\s*\n.*?\n\+\+\+\s*\n?)",
     re.DOTALL,
 )
+DEFAULT_COVER_PDF = Path("static") / "worksheets" / "SB-cover.pdf"
+LESSON_MARKER = "# THE LESSON"
+MARKDOWN_SUFFIXES = {".md", ".markdown"}
 
 
 PRINT_CSS = """
@@ -139,8 +143,24 @@ def parse_args() -> argparse.Namespace:
             "Create a PDF by placing a cover PDF before rendered markdown content."
         )
     )
-    parser.add_argument("cover_pdf", type=Path, help="PDF to use as the cover page.")
-    parser.add_argument("markdown_file", type=Path, help="Markdown file to render.")
+    parser.add_argument(
+        "cover_pdf",
+        type=Path,
+        nargs="?",
+        help=(
+            "PDF to use as the cover page. Defaults to "
+            "static/worksheets/SB-cover.pdf when markdown is auto-detected."
+        ),
+    )
+    parser.add_argument(
+        "markdown_file",
+        type=Path,
+        nargs="?",
+        help=(
+            "Markdown file to render. If omitted with cover_pdf, the script searches "
+            "uncommitted git changes for the markdown file containing '# THE LESSON'."
+        ),
+    )
     parser.add_argument(
         "-o",
         "--output",
@@ -150,7 +170,10 @@ def parse_args() -> argparse.Namespace:
             "file's directory."
         ),
     )
-    return parser.parse_args()
+    args = parser.parse_args()
+    if bool(args.cover_pdf) != bool(args.markdown_file):
+        parser.error("provide both cover_pdf and markdown_file, or omit both")
+    return args
 
 
 def validate_inputs(cover_pdf: Path, markdown_file: Path) -> tuple[Path, Path]:
@@ -164,10 +187,66 @@ def validate_inputs(cover_pdf: Path, markdown_file: Path) -> tuple[Path, Path]:
 
     if not markdown_file.is_file():
         raise FileNotFoundError(f"Markdown file not found: {markdown_file}")
-    if markdown_file.suffix.lower() not in {".md", ".markdown"}:
+    if markdown_file.suffix.lower() not in MARKDOWN_SUFFIXES:
         raise ValueError(f"Markdown file must end in .md or .markdown: {markdown_file}")
 
     return cover_pdf, markdown_file
+
+
+def git_changed_paths() -> list[Path]:
+    changed = subprocess.run(
+        ["git", "diff", "--name-only", "--diff-filter=ACMRTUXB", "HEAD", "--"],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    untracked = subprocess.run(
+        ["git", "ls-files", "--others", "--exclude-standard"],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+
+    paths: list[Path] = []
+    seen: set[str] = set()
+    for line in [*changed.stdout.splitlines(), *untracked.stdout.splitlines()]:
+        if not line or line in seen:
+            continue
+        seen.add(line)
+        paths.append(Path(line))
+    return paths
+
+
+def find_uncommitted_lesson_markdown() -> Path:
+    matches = []
+    for path in git_changed_paths():
+        if path.suffix.lower() not in MARKDOWN_SUFFIXES or not path.is_file():
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue
+        if LESSON_MARKER in text:
+            matches.append(path)
+
+    if not matches:
+        raise FileNotFoundError(
+            f"No uncommitted markdown file contains {LESSON_MARKER!r}."
+        )
+    if len(matches) > 1:
+        formatted = "\n".join(f"  - {path}" for path in matches)
+        raise ValueError(
+            "Multiple uncommitted markdown files contain "
+            f"{LESSON_MARKER!r}:\n{formatted}\n"
+            "Pass cover_pdf and markdown_file explicitly."
+        )
+    return matches[0]
+
+
+def resolve_inputs(args: argparse.Namespace) -> tuple[Path, Path]:
+    if args.cover_pdf and args.markdown_file:
+        return args.cover_pdf, args.markdown_file
+    return DEFAULT_COVER_PDF, find_uncommitted_lesson_markdown()
 
 
 def strip_front_matter(markdown_text: str) -> str:
@@ -228,7 +307,8 @@ def main() -> int:
     args = parse_args()
 
     try:
-        cover_pdf, markdown_file = validate_inputs(args.cover_pdf, args.markdown_file)
+        cover_pdf_arg, markdown_file_arg = resolve_inputs(args)
+        cover_pdf, markdown_file = validate_inputs(cover_pdf_arg, markdown_file_arg)
         output_pdf = (
             args.output.expanduser().resolve()
             if args.output
