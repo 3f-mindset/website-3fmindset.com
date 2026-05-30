@@ -26,6 +26,8 @@ cover:
 draft: false
 ---
 
+{{< audio >}}
+
 ## A New _Steady Burn_ Focus
 
 {{< cta button_src="/invite/" button_text="Start the Steady Burn" >}}
