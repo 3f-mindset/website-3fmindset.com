@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">SB23 Worksheet, Your Origin Story</title>
+    <desc id="desc">Landscape worksheet on a white background with large title, introduction,
+        fillable
+        sections built around the TRACE action model, and a three step summary footer.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <text class="small" x="40" y="38">SB23</text>
+    <text class="title" x="40" y="72">YOUR ORIGIN STORY</text>
+    <text class="sub" x="40" y="100">TRACE the events, lessons, patterns, and beliefs that forged
+        who you are.</text>
+
+    <rect class="mini" x="40" y="118" width="1020" height="66" />
+    <text class="label" x="60" y="143">CHOICE</text>
+    <text class="small" x="60" y="163">Keep living from an old script you never studied, or name the
+        past clearly and choose what gets carried forward.</text>
+
+    <text class="verb" x="457" y="224">TRACE</text>
+    <line class="soft" x1="120" y1="234" x2="980" y2="234" />
+
+    <rect class="box" x="40" y="255" width="198" height="410" />
+    <text class="letter" x="60" y="296">T</text>
+    <text class="label" x="100" y="286">TRACK</text>
+    <text class="small" x="100" y="304">the chapters</text>
+    <text class="tiny" x="60" y="328">List key life stages and major moments.</text>
+    <text class="tiny" x="60" y="346">Childhood, teen years, early adult life,</text>
+    <text class="tiny" x="60" y="364">and recent years.</text>
+    <line class="fillline" x1="60" y1="392" x2="218" y2="392" />
+    <line class="fillline" x1="60" y1="426" x2="218" y2="426" />
+    <line class="fillline" x1="60" y1="460" x2="218" y2="460" />
+    <line class="fillline" x1="60" y1="494" x2="218" y2="494" />
+    <line class="fillline" x1="60" y1="528" x2="218" y2="528" />
+    <line class="fillline" x1="60" y1="562" x2="218" y2="562" />
+    <text class="tiny" x="60" y="610">What works: “Moved at 12.”</text>
+    <text class="tiny" x="60" y="628">Avoid: “Stuff happened.”</text>
+
+    <rect class="box" x="248" y="255" width="198" height="410" />
+    <text class="letter" x="268" y="296">R</text>
+    <text class="label" x="308" y="286">REMEMBER</text>
+    <text class="small" x="308" y="304">the lessons</text>
+    <text class="tiny" x="268" y="328">Write what each event taught you.</text>
+    <text class="tiny" x="268" y="346">Focus on beliefs, not feelings.</text>
+    <line class="fillline" x1="268" y1="392" x2="426" y2="392" />
+    <line class="fillline" x1="268" y1="426" x2="426" y2="426" />
+    <line class="fillline" x1="268" y1="460" x2="426" y2="460" />
+    <line class="fillline" x1="268" y1="494" x2="426" y2="494" />
+    <line class="fillline" x1="268" y1="528" x2="426" y2="528" />
+    <line class="fillline" x1="268" y1="562" x2="426" y2="562" />
+    <text class="tiny" x="268" y="610">What works: “People leave.”</text>
+    <text class="tiny" x="268" y="628">Avoid: “I felt bad.”</text>
+
+    <rect class="box" x="456" y="255" width="198" height="410" />
+    <text class="letter" x="476" y="296">A</text>
+    <text class="label" x="516" y="286">ANALYZE</text>
+    <text class="small" x="516" y="304">the effects</text>
+    <text class="tiny" x="476" y="328">Connect then to now.</text>
+    <text class="tiny" x="476" y="346">Name habits, reactions, and choices.</text>
+    <line class="fillline" x1="476" y1="392" x2="634" y2="392" />
+    <line class="fillline" x1="476" y1="426" x2="634" y2="426" />
+    <line class="fillline" x1="476" y1="460" x2="634" y2="460" />
+    <line class="fillline" x1="476" y1="494" x2="634" y2="494" />
+    <line class="fillline" x1="476" y1="528" x2="634" y2="528" />
+    <line class="fillline" x1="476" y1="562" x2="634" y2="562" />
+    <text class="tiny" x="476" y="610">What works: “I avoid asking.”</text>
+    <text class="tiny" x="476" y="628">Avoid: “It does not matter.”</text>
+
+    <rect class="box" x="664" y="255" width="198" height="410" />
+    <text class="letter" x="684" y="296">C</text>
+    <text class="label" x="724" y="286">CLARIFY</text>
+    <text class="small" x="724" y="304">the pattern</text>
+    <text class="tiny" x="684" y="328">Find the belief that repeats.</text>
+    <text class="tiny" x="684" y="346">Name the script behind the choices.</text>
+    <line class="fillline" x1="684" y1="392" x2="842" y2="392" />
+    <line class="fillline" x1="684" y1="426" x2="842" y2="426" />
+    <line class="fillline" x1="684" y1="460" x2="842" y2="460" />
+    <line class="fillline" x1="684" y1="494" x2="842" y2="494" />
+    <line class="fillline" x1="684" y1="528" x2="842" y2="528" />
+    <line class="fillline" x1="684" y1="562" x2="842" y2="562" />
+    <text class="tiny" x="684" y="610">What works: “Handle it alone.”</text>
+    <text class="tiny" x="684" y="628">Avoid: “Life is hard.”</text>
+
+    <rect class="box" x="872" y="255" width="188" height="410" />
+    <text class="letter" x="892" y="296">E</text>
+    <text class="label" x="932" y="286">EDIT</text>
+    <text class="small" x="932" y="304">the ending</text>
+    <text class="tiny" x="892" y="328">Choose one belief to replace.</text>
+    <text class="tiny" x="892" y="346">Write the new rule clearly.</text>
+    <text class="tiny" x="892" y="384">Old belief:</text>
+    <line class="fillline" x1="892" y1="408" x2="1040" y2="408" />
+    <text class="tiny" x="892" y="442">Cost:</text>
+    <line class="fillline" x1="892" y1="466" x2="1040" y2="466" />
+    <text class="tiny" x="892" y="500">New belief:</text>
+    <line class="fillline" x1="892" y1="524" x2="1040" y2="524" />
+    <line class="fillline" x1="892" y1="558" x2="1040" y2="558" />
+    <text class="tiny" x="892" y="610">What works: “I can ask for help.”</text>
+    <text class="tiny" x="892" y="628">Avoid: “Be better.”</text>
+
+    <rect class="mini" x="40" y="690" width="1020" height="82" />
+    <text class="label" x="60" y="718">ACTION STEPS SUMMARY</text>
+
+    <circle class="line" cx="78" cy="746" r="13" />
+    <text class="num" x="71" y="754">1</text>
+    <text class="label" x="102" y="740">MAP IT</text>
+    <text class="tiny" x="102" y="758">List the chapters and events that shaped you.</text>
+
+    <circle class="line" cx="410" cy="746" r="13" />
+    <text class="num" x="403" y="754">2</text>
+    <text class="label" x="434" y="740">FIND IT</text>
+    <text class="tiny" x="434" y="758">Connect events to beliefs, habits, and reactions.</text>
+
+    <circle class="line" cx="750" cy="746" r="13" />
+    <text class="num" x="743" y="754">3</text>
+    <text class="label" x="774" y="740">REWRITE IT</text>
+    <text class="tiny" x="774" y="758">Choose one old belief to replace with a better rule.</text>
+
+    <rect class="mini" x="40" y="790" width="1020" height="36" />
+    <text class="label" x="60" y="813">REFLECTION:</text>
+    <text class="small" x="148" y="813">What belief from your past still affects you, and will you
+        keep it or change it?</text>
+</svg>
