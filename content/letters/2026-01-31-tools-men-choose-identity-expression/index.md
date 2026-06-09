@@ -15,6 +15,8 @@ cover:
   relative: true
 ---
 
+{{< audio >}}
+
 There’s a moment I’ve noticed over and over again when men talk.
 
 The conversation is casual. Safe. Predictable.  

@@ -19,6 +19,8 @@ cover:
   relative: true
 ---
 
+{{< audio >}}
+
 For a long time, I thought hesitation was a sign of intelligence. The pause before acting felt like maturity—evidence that I was careful, reflective, unwilling to rush into mistakes. I told myself I was gathering information, waiting for clarity, refining my plan. From the outside, it looked like patience. From the inside, it felt like restraint. Only later did it become obvious that what I called patience was _avoidance dressed up as virtue_.
 
 Most stalled lives do not look lazy. They look busy. They are filled with notes, revisions, research, and preparation. The calendar is full, the mind is active, and yet nothing quite tips over into irreversible action. Something keeps pulling the hand back from the door just before it opens.

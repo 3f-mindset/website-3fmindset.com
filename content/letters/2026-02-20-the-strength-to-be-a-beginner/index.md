@@ -22,6 +22,8 @@ cover:
 draft: false
 ---
 
+{{< audio >}}
+
 ## The Quiet Panic of Being New
 
 There is a specific kind of silence that settles over a grown man when he realizes he is the least capable person in the room.

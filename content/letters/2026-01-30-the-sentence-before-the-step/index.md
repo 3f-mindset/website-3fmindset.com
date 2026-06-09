@@ -24,6 +24,8 @@ cover:
 draft: false
 ---
 
+{{< audio >}}
+
 He had the resume. He had the training. He had even rehearsed the conversation in his car three times before walking into the building. Yet when the moment came to ask for the promotion, he shifted course. He softened his request. He framed it as curiosity instead of ambition. Later, he would describe the meeting as fine. Productive. A step forward.
 
 It was not.

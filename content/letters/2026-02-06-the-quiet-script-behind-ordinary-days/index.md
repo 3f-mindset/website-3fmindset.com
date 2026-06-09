@@ -24,6 +24,8 @@ cover:
 draft: false
 ---
 
+{{< audio >}}
+
 A man sits at his kitchen table long after the house has gone quiet. The dishes are done. His phone is face down. Tomorrow’s obligations are already lining up in his head. He tells himself he is tired. That is true. He tells himself he will start fresh next week. That is also familiar.
 
 If pressed, he could list his goals. He wants to lead better at work. He wants to be more present at home. He wants to get back in shape, to take risks he once talked about. He has read enough books to know what discipline looks like. He has listened to enough advice to understand what confidence sounds like.

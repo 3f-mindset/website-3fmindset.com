@@ -21,6 +21,8 @@ cover:
 draft: false
 ---
 
+{{< audio >}}
+
 ## The Morning Argument No One Wins
 
 At 5:59 a.m., the alarm goes off and the debate begins.
