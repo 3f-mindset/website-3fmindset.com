@@ -105,8 +105,8 @@ def git_changed_paths() -> list[Path]:
     return paths
 
 
-def find_uncommitted_choice_svg() -> Path:
-    matches = []
+def find_uncommitted_choice_svgs() -> list[Path]:
+    matches: list[Path] = []
     for path in git_changed_paths():
         if path.suffix.lower() != ".svg" or not path.is_file():
             continue
@@ -119,19 +119,13 @@ def find_uncommitted_choice_svg() -> Path:
 
     if not matches:
         raise FileNotFoundError(
-            f"No uncommitted SVG file contains {SVG_MARKER!r}."
+            f"No uncommitted SVG files contain {SVG_MARKER!r}."
         )
-    if len(matches) > 1:
-        formatted = "\n".join(f"  - {path}" for path in matches)
-        raise ValueError(
-            f"Multiple uncommitted SVG files contain {SVG_MARKER!r}:\n"
-            f"{formatted}\nPass svg_file explicitly."
-        )
-    return matches[0]
+    return matches
 
 
-def resolve_input(args: argparse.Namespace) -> Path:
-    return args.svg_file if args.svg_file else find_uncommitted_choice_svg()
+def resolve_inputs(args: argparse.Namespace) -> list[Path]:
+    return [args.svg_file] if args.svg_file else find_uncommitted_choice_svgs()
 
 
 def default_output_path(svg_file: Path) -> Path:
@@ -167,15 +161,20 @@ def main() -> int:
     args = parse_args()
 
     try:
-        svg_file = validate_input(resolve_input(args))
-        output_pdf = (
-            args.output.expanduser().resolve()
-            if args.output
-            else default_output_path(svg_file)
-        )
+        svg_files = [validate_input(svg_file) for svg_file in resolve_inputs(args)]
+        if args.output and len(svg_files) > 1:
+            raise ValueError(
+                "--output can only be used when rendering a single SVG file."
+            )
 
-        render_svg_pdf(svg_file, output_pdf)
-        print(f"Wrote {output_pdf}")
+        for svg_file in svg_files:
+            output_pdf = (
+                args.output.expanduser().resolve()
+                if args.output
+                else default_output_path(svg_file)
+            )
+            render_svg_pdf(svg_file, output_pdf)
+            print(f"Wrote {output_pdf}")
         return 0
     except Exception as exc:
         print(f"error: {exc}", file=sys.stderr)
