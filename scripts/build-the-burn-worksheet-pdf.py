@@ -114,7 +114,7 @@ def find_uncommitted_choice_svg() -> Path:
             text = path.read_text(encoding="utf-8")
         except UnicodeDecodeError:
             continue
-        if SVG_MARKER in text:
+        if SVG_MARKER.lower() in text.lower():
             matches.append(path)
 
     if not matches:
