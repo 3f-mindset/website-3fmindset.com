@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">SB24 Worksheet, Audit Your Environment</title>
+    <desc id="desc">Landscape worksheet on a white background with a large title, choice statement,
+        fillable sections built around the ANCHOR action model, and a three step summary footer.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .black { fill: #111111; }
+      .paper { fill: #ffffff; stroke: #111111; stroke-width: 2; }
+      .softbox { fill: #ffffff; stroke: #555555; stroke-width: 1.2; }
+      .stepBar { fill: #d9d9d9; stroke: #777777; stroke-width: 1.5; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .titleText { font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; fill: #111111; letter-spacing: 0.5px; }
+      .kicker { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; fill: #111111; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .micro { font-family: Arial, Helvetica, sans-serif; font-size: 8px; fill: #111111; }
+      .barLetter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .barWord { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: 700; fill: #111111; letter-spacing: 1.2px; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; letter-spacing: 4px; }
+      .footerHead { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; fill: #111111; }
+      .dot { fill: #111111; }
+    </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <text class="kicker" x="48" y="38">52W STEADY BURN</text>
+    <text class="titleText" x="48" y="78">SB24 | AUDIT YOUR ENVIRONMENT</text>
+    <text class="verb" x="818" y="72">ANCHOR</text>
+
+    <rect class="paper" x="48" y="98" width="1004" height="70" rx="18" ry="18" />
+    <text class="sub" x="70" y="122">Choice</text>
+    <text class="small" x="70" y="143">Keep living in spaces that feed drift, clutter, poor choices,
+        and distraction. Or inspect the forge, remove one obstacle, add one support,</text>
+    <text class="small" x="70" y="158">and make the right action easier than the wrong one.</text>
+
+    <line class="line" x1="48" y1="184" x2="1052" y2="184" />
+    <text class="kicker" x="48" y="203">FILL EACH BOX WITH VISIBLE, SPECIFIC, CHANGEABLE ANSWERS</text>
+
+    <!-- A -->
+    <rect class="paper" x="48" y="222" width="318" height="207" rx="18" ry="18" />
+    <rect class="stepBar" x="60" y="232" width="52" height="187" rx="16" ry="16" />
+    <text class="barLetter" x="86" y="276" text-anchor="middle">A</text>
+    <text class="barWord" x="86" y="302" text-anchor="middle">AUDIT</text>
+    <text class="label" x="130" y="252">Audit the friction</text>
+    <text class="small" x="130" y="273">List spaces, objects, apps, or signals that</text>
+    <text class="small" x="130" y="288">pull you off course.</text>
+    <circle class="dot" cx="136" cy="313" r="2.4" />
+    <text class="tiny" x="146" y="316">Avoid: “I get distracted.”</text>
+    <circle class="dot" cx="136" cy="331" r="2.4" />
+    <text class="tiny" x="146" y="334">Works: “Phone beside bed leads to scrolling.”</text>
+    <text class="tiny" x="130" y="360">1.</text>
+    <line class="fillline" x1="148" y1="360" x2="340" y2="360" />
+    <text class="tiny" x="130" y="384">2.</text>
+    <line class="fillline" x1="148" y1="384" x2="340" y2="384" />
+    <text class="tiny" x="130" y="408">3.</text>
+    <line class="fillline" x1="148" y1="408" x2="340" y2="408" />
+
+    <!-- N -->
+    <rect class="paper" x="391" y="222" width="318" height="207" rx="18" ry="18" />
+    <rect class="stepBar" x="403" y="232" width="52" height="187" rx="16" ry="16" />
+    <text class="barLetter" x="429" y="276" text-anchor="middle">N</text>
+    <text class="barWord" x="429" y="302" text-anchor="middle">NAME</text>
+    <text class="label" x="473" y="252">Name the cost</text>
+    <text class="small" x="473" y="273">Write what each friction costs in time,</text>
+    <text class="small" x="473" y="288">energy, action, or standards.</text>
+    <circle class="dot" cx="479" cy="313" r="2.4" />
+    <text class="tiny" x="489" y="316">Avoid: “It stresses me out.”</text>
+    <circle class="dot" cx="479" cy="331" r="2.4" />
+    <text class="tiny" x="489" y="334">Works: “Costs me 30 minutes each night.”</text>
+    <text class="tiny" x="473" y="360">Cost one</text>
+    <line class="fillline" x1="519" y1="360" x2="683" y2="360" />
+    <text class="tiny" x="473" y="384">Cost two</text>
+    <line class="fillline" x1="519" y1="384" x2="683" y2="384" />
+    <text class="tiny" x="473" y="408">Cost three</text>
+    <line class="fillline" x1="527" y1="408" x2="683" y2="408" />
+
+    <!-- C -->
+    <rect class="paper" x="734" y="222" width="318" height="207" rx="18" ry="18" />
+    <rect class="stepBar" x="746" y="232" width="52" height="187" rx="16" ry="16" />
+    <text class="barLetter" x="772" y="276" text-anchor="middle">C</text>
+    <text class="barWord" x="772" y="302" text-anchor="middle">CLEAR</text>
+    <text class="label" x="816" y="252">Clear one obstacle</text>
+    <text class="small" x="816" y="273">Choose one obstacle and remove it this</text>
+    <text class="small" x="816" y="288">week. Make the wrong action harder.</text>
+    <circle class="dot" cx="822" cy="313" r="2.4" />
+    <text class="tiny" x="832" y="316">Avoid: “Use my phone less.”</text>
+    <circle class="dot" cx="822" cy="331" r="2.4" />
+    <text class="tiny" x="832" y="334">Works: “Charge phone in kitchen after 9 PM.”</text>
+    <text class="tiny" x="816" y="360">Obstacle</text>
+    <line class="fillline" x1="860" y1="360" x2="1026" y2="360" />
+    <text class="tiny" x="816" y="384">Removal</text>
+    <line class="fillline" x1="860" y1="384" x2="1026" y2="384" />
+    <text class="tiny" x="816" y="408">When</text>
+    <line class="fillline" x1="845" y1="408" x2="1026" y2="408" />
+
+    <!-- H -->
+    <rect class="paper" x="48" y="456" width="318" height="207" rx="18" ry="18" />
+    <rect class="stepBar" x="60" y="466" width="52" height="187" rx="16" ry="16" />
+    <text class="barLetter" x="86" y="510" text-anchor="middle">H</text>
+    <text class="barWord" x="86" y="536" text-anchor="middle">HOUSE</text>
+    <text class="label" x="130" y="486">House the right tool</text>
+    <text class="small" x="130" y="507">Place one support where the right action</text>
+    <text class="small" x="130" y="522">starts before resistance shows up.</text>
+    <circle class="dot" cx="136" cy="547" r="2.4" />
+    <text class="tiny" x="146" y="550">Avoid: “I will remember to train.”</text>
+    <circle class="dot" cx="136" cy="565" r="2.4" />
+    <text class="tiny" x="146" y="568">Works: “Shoes and water by the door.”</text>
+    <text class="tiny" x="130" y="594">Goal</text>
+    <line class="fillline" x1="158" y1="594" x2="340" y2="594" />
+    <text class="tiny" x="130" y="618">Tool or cue</text>
+    <line class="fillline" x1="184" y1="618" x2="340" y2="618" />
+    <text class="tiny" x="130" y="642">Placement</text>
+    <line class="fillline" x1="178" y1="642" x2="340" y2="642" />
+
+    <!-- O -->
+    <rect class="paper" x="391" y="456" width="318" height="207" rx="18" ry="18" />
+    <rect class="stepBar" x="403" y="466" width="52" height="187" rx="16" ry="16" />
+    <text class="barLetter" x="429" y="510" text-anchor="middle">O</text>
+    <text class="barWord" x="429" y="536" text-anchor="middle">ORDER</text>
+    <text class="label" x="473" y="486">Order the digital forge</text>
+    <text class="small" x="473" y="507">Set one rule for apps, feeds, alerts,</text>
+    <text class="small" x="473" y="522">screens, or digital access.</text>
+    <circle class="dot" cx="479" cy="547" r="2.4" />
+    <text class="tiny" x="489" y="550">Avoid: “Less screen time.”</text>
+    <circle class="dot" cx="479" cy="565" r="2.4" />
+    <text class="tiny" x="489" y="568">Works: “No social apps before noon.”</text>
+    <text class="tiny" x="473" y="594">Trigger</text>
+    <line class="fillline" x1="509" y1="594" x2="683" y2="594" />
+    <text class="tiny" x="473" y="618">Rule</text>
+    <line class="fillline" x1="499" y1="618" x2="683" y2="618" />
+    <text class="tiny" x="473" y="642">Block or limit</text>
+    <line class="fillline" x1="536" y1="642" x2="683" y2="642" />
+
+    <!-- R -->
+    <rect class="paper" x="734" y="456" width="318" height="207" rx="18" ry="18" />
+    <rect class="stepBar" x="746" y="466" width="52" height="187" rx="16" ry="16" />
+    <text class="barLetter" x="772" y="510" text-anchor="middle">R</text>
+    <text class="barWord" x="772" y="536" text-anchor="middle">REVIEW</text>
+    <text class="label" x="816" y="486">Review the result</text>
+    <text class="small" x="816" y="507">After 7 days, record proof. Keep what</text>
+    <text class="small" x="816" y="522">worked. Adjust what still pulls you back.</text>
+    <circle class="dot" cx="822" cy="547" r="2.4" />
+    <text class="tiny" x="832" y="550">Avoid: “It helped.”</text>
+    <circle class="dot" cx="822" cy="565" r="2.4" />
+    <text class="tiny" x="832" y="568">Works: “Started work 20 minutes faster.”</text>
+    <text class="tiny" x="816" y="594">Change</text>
+    <line class="fillline" x1="856" y1="594" x2="1026" y2="594" />
+    <text class="tiny" x="816" y="618">Proof</text>
+    <line class="fillline" x1="846" y1="618" x2="1026" y2="618" />
+    <text class="tiny" x="816" y="642">Next adjustment</text>
+    <line class="fillline" x1="893" y1="642" x2="1026" y2="642" />
+
+    <line class="line" x1="48" y1="690" x2="1052" y2="690" />
+    <text class="kicker" x="48" y="713">ACTION STEPS SUMMARY</text>
+
+    <rect class="softbox" x="48" y="728" width="318" height="76" rx="14" ry="14" />
+    <text class="footerHead" x="68" y="752">1. Inspect the Surface</text>
+    <text class="tiny" x="68" y="772">Find the 3 to 5 things in your home, work,</text>
+    <text class="tiny" x="68" y="787">and phone that create the most friction.</text>
+
+    <rect class="softbox" x="391" y="728" width="318" height="76" rx="14" ry="14" />
+    <text class="footerHead" x="411" y="752">2. Remove the Drag</text>
+    <text class="tiny" x="411" y="772">Take one obstacle out of your daily path.</text>
+    <text class="tiny" x="411" y="787">Make the wrong action harder to start.</text>
+
+    <rect class="softbox" x="734" y="728" width="318" height="76" rx="14" ry="14" />
+    <text class="footerHead" x="754" y="752">3. Set the Standard</text>
+    <text class="tiny" x="754" y="772">Add one cue, tool, or reminder that makes</text>
+    <text class="tiny" x="754" y="787">the right action easier to repeat.</text>
+
+    <text class="micro" x="48" y="828">Final check: Is this answer visible, specific, and
+        changeable? If not, rewrite it until the environment can be acted on.</text>
+    <text class="micro" x="887" y="828">Name:</text>
+    <line class="fillline" x1="920" y1="828" x2="1052" y2="828" />
+</svg>
