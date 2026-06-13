@@ -26,3 +26,4 @@ _testmain.go
 .DS_Store
 .hugo_build.lock
 resources/_gen/
+scripts/__pycache__/
