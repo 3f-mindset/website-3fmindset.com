@@ -43,8 +43,21 @@ draft: false
 For a long time, I thought ...
 EOF
 
+for MD in LESSON INSTRUCTIONS; do cat > "$DIR/$MD.md" <<EOF
+---
+# Placeholder for $MD content
+EOF
+done
+
+for SVG in WORKSHEET WORKSHEET_MASKED; do cat > "$DIR/$SVG.svg" <<EOF
+<>
+EOF
+done
+
 # Create a simple portrait placeholder image 720x480 if ImageMagick is available,
 convert -size 720x480 xc:lightgray -gravity center -pointsize 72 -fill darkgray -annotate 0 "cover image" "$DIR/cover.png"
 
 
 echo "Created: $DIR/index.md and $DIR/cover.png"
+echo "Created: $DIR"
+tree $DIR
