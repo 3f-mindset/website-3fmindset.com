@@ -27,7 +27,6 @@ FRONT_MATTER_RE = re.compile(
     re.DOTALL,
 )
 DEFAULT_COVER_PDF = Path("static") / "worksheets" / "SB-cover.pdf"
-LESSON_MARKER = "# THE LESSON"
 MARKDOWN_SUFFIXES = {".md", ".markdown"}
 
 
@@ -144,21 +143,19 @@ def parse_args() -> argparse.Namespace:
         )
     )
     parser.add_argument(
-        "cover_pdf",
+        "--cover-pdf",
         type=Path,
-        nargs="?",
         help=(
             "PDF to use as the cover page. Defaults to "
             "static/worksheets/SB-cover.pdf when markdown is auto-detected."
         ),
     )
     parser.add_argument(
-        "markdown_file",
+        "--markdown-file",
         type=Path,
-        nargs="?",
         help=(
-            "Markdown file to render. If omitted with cover_pdf, the script searches "
-            "uncommitted git changes for the markdown file containing '# THE LESSON'."
+            "Markdown file to render. If omitted, the script searches uncommitted "
+            "git changes for new markdown files."
         ),
     )
     parser.add_argument(
@@ -167,13 +164,10 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         help=(
             "Output PDF path. Defaults to <markdown-file-stem>.pdf in the markdown "
-            "file's directory."
+            "file's directory. Only valid when rendering a single markdown file."
         ),
     )
-    args = parser.parse_args()
-    if bool(args.cover_pdf) != bool(args.markdown_file):
-        parser.error("provide both cover_pdf and markdown_file, or omit both")
-    return args
+    return parser.parse_args()
 
 
 def validate_inputs(cover_pdf: Path, markdown_file: Path) -> tuple[Path, Path]:
@@ -193,9 +187,9 @@ def validate_inputs(cover_pdf: Path, markdown_file: Path) -> tuple[Path, Path]:
     return cover_pdf, markdown_file
 
 
-def git_changed_paths() -> list[Path]:
+def git_new_paths() -> list[Path]:
     changed = subprocess.run(
-        ["git", "diff", "--name-only", "--diff-filter=ACMRTUXB", "HEAD", "--"],
+        ["git", "diff", "--name-only", "--diff-filter=A", "HEAD", "--"],
         check=True,
         capture_output=True,
         text=True,
@@ -217,36 +211,28 @@ def git_changed_paths() -> list[Path]:
     return paths
 
 
-def find_uncommitted_lesson_markdown() -> Path:
-    matches = []
-    for path in git_changed_paths():
+def find_uncommitted_lesson_markdowns() -> list[Path]:
+    matches: list[Path] = []
+    for path in git_new_paths():
         if path.suffix.lower() not in MARKDOWN_SUFFIXES or not path.is_file():
             continue
-        try:
-            text = path.read_text(encoding="utf-8")
-        except UnicodeDecodeError:
+        if path.name.lower() == "index.md":
             continue
-        if LESSON_MARKER in text:
-            matches.append(path)
+        matches.append(path)
 
     if not matches:
         raise FileNotFoundError(
-            f"No uncommitted markdown file contains {LESSON_MARKER!r}."
+            "No uncommitted markdown files were found."
         )
-    if len(matches) > 1:
-        formatted = "\n".join(f"  - {path}" for path in matches)
-        raise ValueError(
-            "Multiple uncommitted markdown files contain "
-            f"{LESSON_MARKER!r}:\n{formatted}\n"
-            "Pass cover_pdf and markdown_file explicitly."
-        )
-    return matches[0]
+    return matches
 
 
-def resolve_inputs(args: argparse.Namespace) -> tuple[Path, Path]:
-    if args.cover_pdf and args.markdown_file:
-        return args.cover_pdf, args.markdown_file
-    return DEFAULT_COVER_PDF, find_uncommitted_lesson_markdown()
+def resolve_inputs(args: argparse.Namespace) -> tuple[Path, list[Path]]:
+    cover_pdf = args.cover_pdf if args.cover_pdf else DEFAULT_COVER_PDF
+    markdown_files = (
+        [args.markdown_file] if args.markdown_file else find_uncommitted_lesson_markdowns()
+    )
+    return cover_pdf, markdown_files
 
 
 def strip_front_matter(markdown_text: str) -> str:
@@ -307,23 +293,33 @@ def main() -> int:
     args = parse_args()
 
     try:
-        cover_pdf_arg, markdown_file_arg = resolve_inputs(args)
-        cover_pdf, markdown_file = validate_inputs(cover_pdf_arg, markdown_file_arg)
-        output_pdf = (
-            args.output.expanduser().resolve()
-            if args.output
-            else default_output_path(markdown_file)
-        )
+        cover_pdf_arg, markdown_file_args = resolve_inputs(args)
+        cover_pdf = cover_pdf_arg.expanduser().resolve()
+        markdown_files = [markdown_file.expanduser().resolve() for markdown_file in markdown_file_args]
+        if args.output and len(markdown_files) > 1:
+            raise ValueError(
+                "--output can only be used when rendering a single markdown file."
+            )
 
-        if output_pdf == cover_pdf:
-            raise ValueError("Output path would overwrite the cover PDF.")
+        for markdown_file in markdown_files:
+            validated_cover_pdf, validated_markdown_file = validate_inputs(
+                cover_pdf, markdown_file
+            )
+            output_pdf = (
+                args.output.expanduser().resolve()
+                if args.output
+                else default_output_path(validated_markdown_file)
+            )
 
-        with tempfile.TemporaryDirectory() as temp_dir:
-            content_pdf = Path(temp_dir) / "markdown-content.pdf"
-            render_markdown_pdf(markdown_file, content_pdf)
-            merge_pdfs(cover_pdf, content_pdf, output_pdf)
+            if output_pdf == validated_cover_pdf:
+                raise ValueError("Output path would overwrite the cover PDF.")
 
-        print(f"Wrote {output_pdf}")
+            with tempfile.TemporaryDirectory() as temp_dir:
+                content_pdf = Path(temp_dir) / "markdown-content.pdf"
+                render_markdown_pdf(validated_markdown_file, content_pdf)
+                merge_pdfs(validated_cover_pdf, content_pdf, output_pdf)
+
+            print(f"Wrote {output_pdf}")
         return 0
     except Exception as exc:
         print(f"error: {exc}", file=sys.stderr)

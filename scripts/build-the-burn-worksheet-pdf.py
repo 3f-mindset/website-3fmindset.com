@@ -1,6 +1,8 @@
 #!/usr/bin/env -S uv run --script
 # /// script
 # dependencies = [
+#   "cairosvg>=2.8.0",
+#   "pillow>=10.0.0",
 #   "weasyprint>=62.0",
 # ]
 # ///
@@ -11,12 +13,16 @@ import argparse
 import html
 import subprocess
 import sys
+from io import BytesIO
 from pathlib import Path
 
+import cairosvg
+from PIL import Image
 from weasyprint import HTML
 
 
 SVG_MARKER = "CHOICE"
+JPEG_QUALITY = 75
 
 
 PRINT_CSS = """
@@ -65,7 +71,10 @@ def parse_args() -> argparse.Namespace:
         "-o",
         "--output",
         type=Path,
-        help="Output PDF path. Defaults to <svg-file-stem>.pdf next to the SVG.",
+        help=(
+            "Output PDF path. Defaults to <svg-file-stem>.pdf next to the SVG. "
+            "A JPEG copy is always written alongside the PDF."
+        ),
     )
     return parser.parse_args()
 
@@ -157,6 +166,23 @@ def render_svg_pdf(svg_file: Path, output_pdf: Path) -> None:
     )
 
 
+def render_svg_jpeg(svg_file: Path, output_jpeg: Path) -> None:
+    output_jpeg.parent.mkdir(parents=True, exist_ok=True)
+    png_bytes = cairosvg.svg2png(url=str(svg_file))
+
+    with Image.open(BytesIO(png_bytes)) as image:
+        rgba_image = image.convert("RGBA")
+        flattened = Image.new("RGB", image.size, "white")
+        flattened.paste(rgba_image, mask=rgba_image.getchannel("A"))
+        flattened.save(
+            output_jpeg,
+            format="JPEG",
+            quality=JPEG_QUALITY,
+            optimize=True,
+            progressive=True,
+        )
+
+
 def main() -> int:
     args = parse_args()
 
@@ -173,8 +199,11 @@ def main() -> int:
                 if args.output
                 else default_output_path(svg_file)
             )
+            output_jpeg = output_pdf.with_suffix(".jpg")
             render_svg_pdf(svg_file, output_pdf)
+            render_svg_jpeg(svg_file, output_jpeg)
             print(f"Wrote {output_pdf}")
+            print(f"Wrote {output_jpeg}")
         return 0
     except Exception as exc:
         print(f"error: {exc}", file=sys.stderr)
