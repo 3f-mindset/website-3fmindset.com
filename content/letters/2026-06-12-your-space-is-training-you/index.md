@@ -2,14 +2,22 @@
 date: 2026-06-12
 slug: "your-space-is-training-you"
 title: "Your Space Is Training You"
-summary: "SUMMARY GOES HERE"
+summary: "Audit your environment, remove the friction that keeps pulling you backward, and build a space that makes discipline, focus, and follow-through easier."
 
 series:
   - SteadyBurn
 
 tags:
-  - tag1
-  - tag2
+  - environment
+  - discipline
+  - focus
+  - structure
+  - behavior change
+  - habits
+  - consistency
+  - identity
+  - action
+  - self-mastery
 
 cover:
   image: "cover.png"
