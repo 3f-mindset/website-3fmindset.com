@@ -54,7 +54,7 @@ params:
   hideAuthor: true
   showCTAs: false
 
-  defaultTheme: light
+  defaultTheme: dark
   disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
