@@ -23,6 +23,8 @@ cover:
 draft: false
 ---
 
+{{< audio >}}
+
 For years, I treated productivity systems the way some people treat diets. I’d commit hard, evangelize them to friends, buy the notebooks, rebuild my workflows, then quietly abandon the whole thing six weeks later when reality returned.
 
 I went through the canonical sequence.
