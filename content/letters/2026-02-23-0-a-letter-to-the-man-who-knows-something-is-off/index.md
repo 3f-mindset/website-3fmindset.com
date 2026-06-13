@@ -22,8 +22,6 @@ cover:
 draft: false
 ---
 
-{{< audio >}}
-
 It is easier to catalog her shortcomings than to examine your posture. Easier to replay her tone, her habits, her absences, than to interrogate your own withdrawal. I have done it myself. I have sat in the quiet after an argument and built a careful internal case. I am reasonable. I am trying. She is difficult. She has changed. This is not what I expected.
 
 That narrative can sound like honesty. It is often a way of staying comfortable while the relationship slowly deteriorates.

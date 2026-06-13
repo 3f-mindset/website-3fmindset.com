@@ -24,8 +24,6 @@ cover:
 draft: false
 ---
 
-{{< audio >}}
-
 This past weekend, I found myself standing in a hotel bathroom, holding my daughter’s hand under running water while blood moved steadily between my fingers.
 
 We had made this trip many times before.

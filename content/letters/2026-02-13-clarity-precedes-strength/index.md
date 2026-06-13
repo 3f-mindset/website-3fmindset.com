@@ -15,8 +15,6 @@ cover:
   relative: true
 ---
 
-{{< audio >}}
-
 A man stands at the edge of his own week the way a blacksmith stands before an anvil- surrounded by tools, raw material within reach, heat available on command. He has read the books, bought the journal, set the alarm earlier than necessary. He has circled habits in red ink and highlighted virtues in yellow. Yet by Thursday, something loosens. By Sunday, something slips. The heat was real. The intention was sincere. But the steel remains unshaped.
 
 We like to believe that effort alone changes a life. We admire intensity. We celebrate grind. But effort without definition diffuses. Energy without identity disperses. Before a man grows stronger, he must decide what he is strengthening into.

@@ -25,8 +25,6 @@ cover:
 draft: false
 ---
 
-{{< audio >}}
-
 There is a certain kind of exhaustion that sleep does not fix.
 
 It shows up on a Tuesday afternoon, somewhere between the third meeting and the fifth email thread. A man sits at his desk, moves tasks from one column to another, answers what needs answering, and tells himself he is making progress. Nothing is collapsing. Bills are paid. Deadlines are met. From the outside, it looks stable.

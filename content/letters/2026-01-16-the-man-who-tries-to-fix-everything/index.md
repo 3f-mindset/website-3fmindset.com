@@ -25,8 +25,6 @@ cover:
 draft: false
 ---
 
-{{< audio >}}
-
 ## The Man Who Tries to Fix Everything
 
 He sits at his desk long after the others leave, staring at a list of what needs work. Improve communication. Get better at sales. Be more patient. Learn new software. Wake up earlier. Stop procrastinating. The list grows each week, and with it, a quiet sense that he is always behind.

@@ -22,8 +22,6 @@ cover:
 draft: false
 ---
 
-{{< audio >}}
-
 ## When Life Starts Asking Hard Questions
 
 A man can sit down and write a beautiful vision for his life.

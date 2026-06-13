@@ -22,8 +22,6 @@ cover:
 draft: false
 ---
 
-{{< audio >}}
-
 For years, my Saturday mornings belonged to a patch of grass, a set of chains, and a loose circle of men who knew exactly where they were supposed to be.
 
 At 10:00 a.m., we teed off.

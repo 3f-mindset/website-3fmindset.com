@@ -24,8 +24,6 @@ cover:
 draft: false
 ---
 
-{{< audio >}}
-
 On Sunday evenings, I sit at the same desk with the same notebook and the same question _Where am I actually headed this week?_
 
 The ritual is simple. A review of the past seven days. A calibration of direction. A deliberate setting of intention before the noise of Monday begins its assault. When I honor it, something settles in me. My breathing slows. The week stops feeling like a storm I must survive and starts feeling like terrain I intend to cross.

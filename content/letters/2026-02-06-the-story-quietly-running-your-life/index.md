@@ -15,8 +15,6 @@ cover:
   relative: true
 ---
 
-{{< audio >}}
-
 _Change the script you live by, and your actions start changing on their own._
 
 ## The Weight You Wake Up With

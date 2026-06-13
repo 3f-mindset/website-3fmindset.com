@@ -25,8 +25,6 @@ cover:
 draft: false
 ---
 
-{{< audio >}}
-
 He did not notice the first time he crossed his own line.
 
 It was small. A promise pushed to next week. A truth softened to avoid tension. A standard adjusted because the moment felt inconvenient. Nothing dramatic. No public collapse. Just a quiet trade.

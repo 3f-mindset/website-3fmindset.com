@@ -24,8 +24,6 @@ cover:
 draft: false
 ---
 
-{{< audio >}}
-
 On Monday morning he deletes the apps.
 
 He writes a plan. He wakes early. He says no to sugar. He speaks more patiently to his kids. He makes a promise to himself that this time will be different.

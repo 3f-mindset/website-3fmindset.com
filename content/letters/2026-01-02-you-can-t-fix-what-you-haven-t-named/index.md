@@ -24,8 +24,6 @@ cover:
   relative: true
 ---
 
-{{< audio >}}
-
 He sat at the kitchen table long after everyone else had gone to bed, laptop open, a productivity video playing at half volume. The speaker on the screen promised clarity, discipline, a new morning routine that would change everything. He nodded along. It all made sense.
 
 The next day he woke up tired, rushed through breakfast, snapped at his kids, skimmed emails in traffic, and ended the night on his phone again.

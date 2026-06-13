@@ -22,8 +22,6 @@ cover:
 draft: false
 ---
 
-{{< audio >}}
-
 The alarm rings in the dark, and for a moment there is stillness. Then comes the reflex. A hand reaches out, not to stand, but to silence. The screen lights up. Messages. Headlines. Weather. A small flood of other people’s priorities enters the room before the feet touch the floor.
 
 Nothing dramatic happens in that moment. No catastrophe. No visible failure. The coffee will still brew. The commute will still begin. Work will still demand attention.
