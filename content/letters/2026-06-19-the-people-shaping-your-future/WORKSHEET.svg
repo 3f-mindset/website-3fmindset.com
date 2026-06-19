@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">SB25 Worksheet, Relationships Audit, Friends and Influences</title>
+    <desc id="desc">Landscape worksheet on a white background with large title, introduction,
+        fillable sections built around the REFINE action model, and a three step summary footer.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+    </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <text class="label" x="45" y="42">SB25</text>
+    <text class="title" x="45" y="78">RELATIONSHIPS AUDIT</text>
+    <text class="sub" x="45" y="104">Friends and Influences</text>
+
+    <rect class="box" x="45" y="125" width="1010" height="82" />
+    <text class="label" x="65" y="151">CHOICE</text>
+    <text class="small" x="65" y="174">Keep letting the same people, feeds, and voices shape your
+        old patterns, or choose one cleaner influence</text>
+    <text class="small" x="65" y="191">and one stronger boundary that protects the man you are
+        becoming.</text>
+
+    <text class="verb" x="470" y="247">REFINE</text>
+    <line class="soft" x1="160" y1="262" x2="940" y2="262" />
+
+    <rect class="box" x="45" y="290" width="315" height="165" />
+    <text class="letter" x="65" y="330">R</text>
+    <text class="label" x="105" y="318">REVIEW</text>
+    <text class="tiny" x="105" y="336">List the five strongest influences.</text>
+    <text class="small" x="65" y="366">1.</text>
+    <line class="fillline" x1="88" y1="363" x2="335" y2="363" />
+    <text class="small" x="65" y="391">2.</text>
+    <line class="fillline" x1="88" y1="388" x2="335" y2="388" />
+    <text class="small" x="65" y="416">3.</text>
+    <line class="fillline" x1="88" y1="413" x2="335" y2="413" />
+    <text class="small" x="65" y="441">4.</text>
+    <line class="fillline" x1="88" y1="438" x2="335" y2="438" />
+
+    <rect class="box" x="392" y="290" width="315" height="165" />
+    <text class="letter" x="412" y="330">E</text>
+    <text class="label" x="452" y="318">EVALUATE</text>
+    <text class="tiny" x="452" y="336">Do they make you stronger or weaker?</text>
+    <text class="small" x="412" y="366">Stronger signs:</text>
+    <line class="fillline" x1="500" y1="363" x2="680" y2="363" />
+    <text class="small" x="412" y="397">Weaker signs:</text>
+    <line class="fillline" x1="500" y1="394" x2="680" y2="394" />
+    <text class="small" x="412" y="428">Pattern I notice:</text>
+    <line class="fillline" x1="508" y1="425" x2="680" y2="425" />
+
+    <rect class="box" x="740" y="290" width="315" height="165" />
+    <text class="letter" x="760" y="330">F</text>
+    <text class="label" x="800" y="318">FILTER</text>
+    <text class="tiny" x="800" y="336">Decide who gets more or less access.</text>
+    <text class="small" x="760" y="366">More access:</text>
+    <line class="fillline" x1="835" y1="363" x2="1030" y2="363" />
+    <text class="small" x="760" y="397">Less access:</text>
+    <line class="fillline" x1="832" y1="394" x2="1030" y2="394" />
+    <text class="small" x="760" y="428">Boundary needed:</text>
+    <line class="fillline" x1="858" y1="425" x2="1030" y2="425" />
+
+    <rect class="box" x="45" y="485" width="315" height="165" />
+    <text class="letter" x="65" y="525">I</text>
+    <text class="label" x="105" y="513">INVEST</text>
+    <text class="tiny" x="105" y="531">Strengthen one positive influence.</text>
+    <text class="small" x="65" y="561">Person:</text>
+    <line class="fillline" x1="115" y1="558" x2="335" y2="558" />
+    <text class="small" x="65" y="592">Action:</text>
+    <line class="fillline" x1="115" y1="589" x2="335" y2="589" />
+    <text class="small" x="65" y="623">When:</text>
+    <line class="fillline" x1="115" y1="620" x2="335" y2="620" />
+
+    <rect class="box" x="392" y="485" width="315" height="165" />
+    <text class="letter" x="412" y="525">N</text>
+    <text class="label" x="452" y="513">NAVIGATE</text>
+    <text class="tiny" x="452" y="531">Create one respectful boundary.</text>
+    <text class="small" x="412" y="561">Influence:</text>
+    <line class="fillline" x1="475" y1="558" x2="680" y2="558" />
+    <text class="small" x="412" y="592">Limit:</text>
+    <line class="fillline" x1="455" y1="589" x2="680" y2="589" />
+    <text class="small" x="412" y="623">Exact words:</text>
+    <line class="fillline" x1="490" y1="620" x2="680" y2="620" />
+
+    <rect class="box" x="740" y="485" width="315" height="165" />
+    <text class="letter" x="760" y="525">E</text>
+    <text class="label" x="800" y="513">EXPAND</text>
+    <text class="tiny" x="800" y="531">Repeat the audit so growth stays clean.</text>
+    <text class="small" x="760" y="561">Monthly review date:</text>
+    <line class="fillline" x1="878" y1="558" x2="1030" y2="558" />
+    <text class="small" x="760" y="592">Reminder system:</text>
+    <line class="fillline" x1="858" y1="589" x2="1030" y2="589" />
+    <text class="small" x="760" y="623">Next upgrade:</text>
+    <line class="fillline" x1="842" y1="620" x2="1030" y2="620" />
+
+    <rect class="mini" x="45" y="690" width="1010" height="105" />
+    <text class="label" x="65" y="717">ACTION STEPS SUMMARY</text>
+
+    <text class="label" x="65" y="746">1. AUDIT YOUR CIRCLE</text>
+    <text class="tiny" x="65" y="765">Name the people and media shaping your life.</text>
+
+    <text class="label" x="395" y="746">2. PROTECT YOUR FIRE</text>
+    <text class="tiny" x="395" y="765">Set one clean boundary that removes drag.</text>
+
+    <text class="label" x="725" y="746">3. BUILD BETTER COMPANY</text>
+    <text class="tiny" x="725" y="765">Invest in one influence that sharpens growth.</text>
+
+    <text class="tiny" x="45" y="823">Final check: one influence to limit, one influence to deepen,
+        one date to review again.</text>
+</svg>
