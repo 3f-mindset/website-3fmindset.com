@@ -21,7 +21,6 @@ from PIL import Image
 from weasyprint import HTML
 
 
-SVG_MARKER = "CHOICE"
 JPEG_QUALITY = 75
 
 
@@ -63,8 +62,8 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         nargs="?",
         help=(
-            "SVG file to render. If omitted, the script searches uncommitted "
-            "git changes for the SVG containing 'CHOICE'."
+            "SVG file to render. If omitted, the script renders every new or "
+            "updated SVG in the working tree."
         ),
     )
     parser.add_argument(
@@ -114,27 +113,20 @@ def git_changed_paths() -> list[Path]:
     return paths
 
 
-def find_uncommitted_choice_svgs() -> list[Path]:
-    matches: list[Path] = []
-    for path in git_changed_paths():
-        if path.suffix.lower() != ".svg" or not path.is_file():
-            continue
-        try:
-            text = path.read_text(encoding="utf-8")
-        except UnicodeDecodeError:
-            continue
-        if SVG_MARKER.lower() in text.lower():
-            matches.append(path)
+def find_changed_svgs() -> list[Path]:
+    matches = [
+        path
+        for path in git_changed_paths()
+        if path.suffix.lower() == ".svg" and path.is_file()
+    ]
 
     if not matches:
-        raise FileNotFoundError(
-            f"No uncommitted SVG files contain {SVG_MARKER!r}."
-        )
-    return matches
+        raise FileNotFoundError("No new or updated SVG files found.")
+    return sorted(matches)
 
 
 def resolve_inputs(args: argparse.Namespace) -> list[Path]:
-    return [args.svg_file] if args.svg_file else find_uncommitted_choice_svgs()
+    return [args.svg_file] if args.svg_file else find_changed_svgs()
 
 
 def default_output_path(svg_file: Path) -> Path:
