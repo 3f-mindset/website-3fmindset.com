@@ -1,0 +1,59 @@
+[context]
+title = "LETTER TITLE GOES HERE"
+slug = "letter-title-goes-here"
+date = "YYYY-MM-DD"
+
+[[steps]]
+id = "lesson"
+format = "markdown"
+prompt_file = "prompts/burn/lesson.md"
+inputs = ["content/letters/YYYY-MM-DD-slug/index.md"]
+output = "content/letters/YYYY-MM-DD-slug/LESSON.md"
+
+[[steps]]
+id = "instructions"
+format = "markdown"
+prompt_file = "prompts/burn/instructions.md"
+depends_on = ["lesson"]
+inputs = ["content/letters/YYYY-MM-DD-slug/LESSON.md"]
+output = "content/letters/YYYY-MM-DD-slug/INSTRUCTIONS.md"
+
+[[steps]]
+id = "context"
+format = "markdown"
+prompt_file = "prompts/burn/context.md"
+depends_on = ["lesson"]
+inputs = ["content/letters/YYYY-MM-DD-slug/LESSON.md"]
+output = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
+
+[[steps]]
+id = "gpt"
+format = "markdown"
+prompt_file = "prompts/burn/gpt.md"
+depends_on = ["context"]
+inputs = ["content/letters/YYYY-MM-DD-slug/CONTEXT.md"]
+output = "content/letters/YYYY-MM-DD-slug/GPT.md"
+
+[[steps]]
+id = "worksheet"
+format = "svg"
+prompt_file = "prompts/burn/worksheet-svg.md"
+depends_on = ["lesson"]
+inputs = ["content/letters/YYYY-MM-DD-slug/LESSON.md"]
+output = "content/letters/YYYY-MM-DD-slug/WORKSHEET.svg"
+
+[[steps]]
+id = "worksheet_masked"
+format = "svg"
+prompt_file = "prompts/burn/worksheet-masked-svg.md"
+depends_on = ["worksheet"]
+inputs = ["content/letters/YYYY-MM-DD-slug/WORKSHEET.svg"]
+output = "content/letters/YYYY-MM-DD-slug/WORKSHEET_MASKED.svg"
+
+[[steps]]
+id = "index"
+format = "markdown"
+prompt_file = "prompts/burn/index.md"
+depends_on = ["lesson"]
+inputs = ["content/letters/YYYY-MM-DD-slug/LESSON.md"]
+output = "content/letters/YYYY-MM-DD-slug/index.md"

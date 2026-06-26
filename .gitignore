@@ -21,9 +21,12 @@ _testmain.go
 
 *.exe
 *.test
+*.egg-info/
 
 /public
+.venv/
 .DS_Store
 .hugo_build.lock
 resources/_gen/
-scripts/__pycache__/
+__pycache__/
+tmp/
