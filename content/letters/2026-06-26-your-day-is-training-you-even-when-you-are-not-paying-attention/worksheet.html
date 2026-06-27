@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Forge Audit</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            min-height: 100%;
+            background: #070809;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Arial Narrow", "Roboto Condensed", Impact, Arial, sans-serif;
+            color: #f2f0ea;
+            background:
+                radial-gradient(circle at 76% 28%, rgba(231, 88, 20, 0.22), transparent 28%),
+                radial-gradient(circle at 18% 88%, rgba(255, 119, 28, 0.12), transparent 22%),
+                linear-gradient(135deg, #050607 0%, #10151a 48%, #08090a 100%);
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+            background-size: 44px 44px;
+            opacity: 0.45;
+            mask-image: radial-gradient(circle at center, black, transparent 82%);
+        }
+
+        .page {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px;
+        }
+
+        .shell {
+            width: min(1180px, 100%);
+            min-height: calc(100vh - 36px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px;
+            border: 1px solid rgba(218, 231, 238, 0.12);
+            background:
+                linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
+                rgba(9, 12, 15, 0.88);
+            box-shadow:
+                0 34px 90px rgba(0, 0, 0, 0.58),
+                inset 0 0 80px rgba(227, 96, 24, 0.055);
+        }
+
+        main {
+            width: 100%;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .visual {
+            width: min(100%, 510px);
+            position: relative;
+            padding: 10px;
+            border: 1px solid rgba(236, 104, 28, 0.42);
+            background:
+                linear-gradient(145deg, rgba(23, 31, 38, 0.95), rgba(9, 11, 13, 0.98));
+            box-shadow:
+                0 24px 70px rgba(0, 0, 0, 0.62),
+                0 0 42px rgba(232, 90, 20, 0.18);
+        }
+
+        .visual::before {
+            content: "";
+            position: absolute;
+            inset: -1px;
+            border: 1px solid rgba(255, 137, 45, 0.28);
+            transform: translate(8px, 8px);
+            z-index: -1;
+        }
+
+        .visual::after {
+            content: "";
+            position: absolute;
+            left: 12%;
+            right: 12%;
+            bottom: -12px;
+            height: 20px;
+            background: radial-gradient(ellipse, rgba(255, 94, 18, 0.38), transparent 68%);
+            filter: blur(8px);
+            z-index: -1;
+        }
+
+        .visual img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            background: #14191d;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .copy {
+            width: min(100%, 560px);
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 0 12px;
+            color: #f27a2c;
+            font-size: 12px;
+            line-height: 1;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 32px;
+            height: 2px;
+            background: #f27a2c;
+            box-shadow: 0 0 16px rgba(242, 122, 44, 0.8);
+        }
+
+        h1 {
+            margin: 0;
+            color: #f7f4ee;
+            font-size: clamp(42px, 11vw, 82px);
+            line-height: 0.9;
+            letter-spacing: -0.045em;
+            text-transform: uppercase;
+            text-wrap: balance;
+        }
+
+        .lead {
+            margin: 16px auto 0;
+            max-width: 520px;
+            color: #cdd7df;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: clamp(18px, 4vw, 25px);
+            line-height: 1.28;
+            font-weight: 700;
+            text-wrap: balance;
+        }
+
+        .support {
+            margin: 14px auto 0;
+            max-width: 500px;
+            color: #9eabb5;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 1.55;
+        }
+
+        .form-card {
+            margin: 20px auto 0;
+            width: min(100%, 500px);
+            padding: 12px;
+            border: 1px solid rgba(242, 122, 44, 0.36);
+            background:
+                linear-gradient(135deg, rgba(32, 42, 50, 0.95), rgba(11, 14, 17, 0.98));
+            box-shadow:
+                0 18px 44px rgba(0, 0, 0, 0.42),
+                inset 0 0 34px rgba(242, 122, 44, 0.055);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        input {
+            width: 100%;
+            min-height: 54px;
+            border: 1px solid rgba(220, 231, 237, 0.18);
+            border-radius: 2px;
+            background: rgba(245, 247, 248, 0.96);
+            color: #101214;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            padding: 0 16px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #f27a2c;
+            box-shadow: 0 0 0 3px rgba(242, 122, 44, 0.18);
+        }
+
+        button {
+            min-height: 56px;
+            border: 1px solid rgba(255, 184, 94, 0.62);
+            border-radius: 2px;
+            background:
+                linear-gradient(180deg, #ff8a2f 0%, #e85b16 48%, #ba3909 100%);
+            color: #130904;
+            font-family: "Arial Narrow", Impact, Arial, sans-serif;
+            font-size: 20px;
+            line-height: 1;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            font-weight: 900;
+            cursor: pointer;
+            box-shadow:
+                0 0 28px rgba(242, 122, 44, 0.36),
+                inset 0 1px 0 rgba(255, 255, 255, 0.35);
+        }
+
+        .micro {
+            margin: 10px 0 0;
+            color: #d7dedf;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .benefits {
+            width: min(100%, 900px);
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin: 20px auto 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .benefits li {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            padding: 12px 14px;
+            border: 1px solid rgba(216, 228, 236, 0.1);
+            background: rgba(14, 19, 23, 0.76);
+            color: #dce3e8;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 1.35;
+            text-align: left;
+        }
+
+        .benefits li::before {
+            content: "";
+            flex: 0 0 auto;
+            width: 12px;
+            height: 12px;
+            margin-top: 3px;
+            border: 2px solid #f27a2c;
+            box-shadow: 0 0 12px rgba(242, 122, 44, 0.55);
+            transform: rotate(45deg);
+        }
+
+        .accent-word {
+            color: #f27a2c;
+            text-shadow: 0 0 22px rgba(242, 122, 44, 0.32);
+        }
+
+        .frame-line {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            border-color: rgba(242, 122, 44, 0.48);
+            pointer-events: none;
+        }
+
+        .top-left {
+            top: 18px;
+            left: 18px;
+            border-top: 2px solid;
+            border-left: 2px solid;
+        }
+
+        .bottom-right {
+            right: 18px;
+            bottom: 18px;
+            border-right: 2px solid;
+            border-bottom: 2px solid;
+        }
+
+        @media (min-width: 760px) {
+            .page {
+                padding: 26px;
+            }
+
+            .shell {
+                min-height: calc(100vh - 52px);
+                padding: 34px;
+            }
+
+            .hero {
+                display: grid;
+                grid-template-columns: minmax(330px, 0.95fr) minmax(360px, 1.05fr);
+                gap: 44px;
+                align-items: center;
+                text-align: left;
+            }
+
+            .visual {
+                width: 100%;
+                max-width: 560px;
+                order: 2;
+            }
+
+            .copy {
+                order: 1;
+                width: 100%;
+            }
+
+            .lead,
+            .support,
+            .form-card {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            form {
+                flex-direction: row;
+            }
+
+            input {
+                flex: 1 1 auto;
+            }
+
+            button {
+                flex: 0 0 190px;
+            }
+
+            .micro {
+                text-align: left;
+            }
+
+            .benefits {
+                grid-template-columns: repeat(3, 1fr);
+                margin-top: 28px;
+            }
+        }
+
+        @media (max-height: 760px) {
+            .shell {
+                align-items: flex-start;
+            }
+
+            .visual {
+                width: min(100%, 420px);
+            }
+
+            h1 {
+                font-size: clamp(36px, 9vw, 64px);
+            }
+
+            .lead {
+                font-size: clamp(16px, 3vw, 21px);
+            }
+
+            .benefits {
+                margin-top: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <span class="frame-line top-left" aria-hidden="true"></span>
+        <span class="frame-line bottom-right" aria-hidden="true"></span>
+
+        <div class="shell">
+            <main>
+                <section class="hero" aria-labelledby="hero-title">
+                    <div class="visual" aria-label="Forged tactical paper artifact">
+                        <img src="promo.png"
+                            alt="Forged tactical paper artifact with masked form blocks and ember glow">
+                    </div>
+
+                    <div class="copy">
+                        <p class="eyebrow">Daily Forge Audit</p>
+
+                        <h1 id="hero-title">
+                            Stop Losing Ground When <span class="accent-word">Life Gets Heavy</span>
+                        </h1>
+
+                        <p class="lead">
+                            Build a day that holds your focus, your discipline, and the man you are becoming.
+                        </p>
+
+                        <p class="support">
+                            Find the weak block. Protect your best hour. Turn pressure into order.
+                        </p>
+
+                        <div class="form-card">
+                            <form action="#" method="post">
+                                <label for="email">Email address</label>
+                                <input id="email" name="email" type="email" placeholder="Enter your email"
+                                    autocomplete="email" required>
+                                <button type="submit">Send The Audit</button>
+                            </form>
+                            <p class="micro">Free download. Instant access.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <ul class="benefits" aria-label="Benefits">
+                    <li>Spot the hidden time leaks that leave you behind.</li>
+                    <li>Protect the hour where your strongest work happens.</li>
+                    <li>Run a simple reset that makes follow-through easier.</li>
+                </ul>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
