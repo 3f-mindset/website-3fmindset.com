@@ -45,6 +45,12 @@ outputs:
     - RSS
     - JSON
 
+images:
+  formats:
+    - webp
+    - avif
+  resize: x200
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "3F Mindset - Live with Momentum"
