@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">12-Week Season Design Snapshot Worksheet</title>
+    <desc id="desc">Landscape personal development worksheet with white background, structured
+        fillable areas for aim, containers, roles, refusals, and end of season success.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 16; ry: 16; }
+      .softbox { fill: #f7f7f7; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #111111; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 10.5px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; fill: #111111; }
+      .containerTitle { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #111111; }
+    </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <text class="title" x="40" y="45">12-WEEK SEASON DESIGN SNAPSHOT</text>
+    <text class="subtitle" x="40" y="70">Build containers before outside demands fill the space</text>
+    <text class="subtitle" x="875" y="50">FIRE FURNACE FORGE</text>
+
+    <rect class="box" x="40" y="88" width="1020" height="72" />
+    <text class="label" x="60" y="113">Choice</text>
+    <text class="small" x="60" y="132">A season becomes useful when aim becomes structure. Name what
+        matters, give it space, and make the proof visible.</text>
+    <text class="small" x="60" y="148">This worksheet turns intention into containers, roles,
+        refusals, and weekly action.</text>
+
+    <rect class="box" x="40" y="178" width="300" height="145" />
+    <text class="containerTitle" x="60" y="205">Season Frame</text>
+    <text class="small" x="60" y="232">Season name:</text>
+    <line class="fillline" x1="150" y1="232" x2="315" y2="232" />
+    <text class="small" x="60" y="263">Start:</text>
+    <line class="fillline" x1="105" y1="263" x2="190" y2="263" />
+    <text class="small" x="205" y="263">End:</text>
+    <line class="fillline" x1="240" y1="263" x2="315" y2="263" />
+    <text class="small" x="60" y="294">Core question: What is this in service to?</text>
+    <line class="fillline" x1="60" y1="310" x2="315" y2="310" />
+
+    <rect class="box" x="365" y="178" width="330" height="145" />
+    <text class="containerTitle" x="385" y="205">Aim</text>
+    <text class="small" x="385" y="226">My aim for this season is:</text>
+    <line class="fillline" x1="385" y1="250" x2="670" y2="250" />
+    <line class="fillline" x1="385" y1="278" x2="670" y2="278" />
+    <line class="fillline" x1="385" y1="306" x2="670" y2="306" />
+
+    <rect class="box" x="720" y="178" width="340" height="145" />
+    <text class="containerTitle" x="740" y="205">Primary Focus</text>
+    <text class="small" x="740" y="229">This season is about building containers</text>
+    <text class="small" x="740" y="246">around what matters before outside demands</text>
+    <text class="small" x="740" y="263">fill the space.</text>
+    <line class="fillline" x1="740" y1="292" x2="1035" y2="292" />
+    <text class="tiny" x="740" y="310">One sentence focus for this exact season</text>
+
+    <text class="containerTitle" x="40" y="354">Top 4 Season Containers</text>
+
+    <rect class="softbox" x="40" y="370" width="245" height="150" />
+    <text class="num" x="58" y="400">1</text>
+    <text class="containerTitle" x="88" y="397">Rest</text>
+    <text class="small" x="58" y="424">What I am protecting:</text>
+    <line class="fillline" x1="58" y1="443" x2="265" y2="443" />
+    <text class="small" x="58" y="467">Main rhythm:</text>
+    <line class="fillline" x1="58" y1="486" x2="265" y2="486" />
+    <text class="small" x="58" y="510">Visible proof:</text>
+    <line class="fillline" x1="138" y1="510" x2="265" y2="510" />
+
+    <rect class="softbox" x="305" y="370" width="245" height="150" />
+    <text class="num" x="323" y="400">2</text>
+    <text class="containerTitle" x="353" y="397">Restoration</text>
+    <text class="small" x="323" y="424">What builds my capacity:</text>
+    <line class="fillline" x1="323" y1="443" x2="530" y2="443" />
+    <text class="small" x="323" y="467">Main rhythm:</text>
+    <line class="fillline" x1="323" y1="486" x2="530" y2="486" />
+    <text class="small" x="323" y="510">Visible proof:</text>
+    <line class="fillline" x1="403" y1="510" x2="530" y2="510" />
+
+    <rect class="softbox" x="570" y="370" width="245" height="150" />
+    <text class="num" x="588" y="400">3</text>
+    <text class="containerTitle" x="618" y="397">Relief</text>
+    <text class="small" x="588" y="424">Pressure without distraction:</text>
+    <line class="fillline" x1="588" y1="443" x2="795" y2="443" />
+    <text class="small" x="588" y="467">Main rhythm:</text>
+    <line class="fillline" x1="588" y1="486" x2="795" y2="486" />
+    <text class="small" x="588" y="510">Visible proof:</text>
+    <line class="fillline" x1="668" y1="510" x2="795" y2="510" />
+
+    <rect class="softbox" x="835" y="370" width="225" height="150" />
+    <text class="num" x="853" y="400">4</text>
+    <text class="containerTitle" x="883" y="397">Responsibility</text>
+    <text class="small" x="853" y="424">Roles needing structure:</text>
+    <line class="fillline" x1="853" y1="443" x2="1040" y2="443" />
+    <text class="small" x="853" y="467">Main rhythm:</text>
+    <line class="fillline" x1="853" y1="486" x2="1040" y2="486" />
+    <text class="small" x="853" y="510">Visible proof:</text>
+    <line class="fillline" x1="933" y1="510" x2="1040" y2="510" />
+
+    <rect class="box" x="40" y="545" width="645" height="170" />
+    <text class="containerTitle" x="60" y="572">Primary Roles for This Season</text>
+
+    <line class="soft" x1="60" y1="590" x2="665" y2="590" />
+    <text class="tiny" x="65" y="606">ROLE</text>
+    <text class="tiny" x="160" y="606">CURRENT CONDITION</text>
+    <text class="tiny" x="350" y="606">12-WEEK INTENTION</text>
+    <text class="tiny" x="545" y="606">WEEKLY ACTION</text>
+
+    <text class="small" x="65" y="633">1.</text>
+    <line class="fillline" x1="90" y1="633" x2="145" y2="633" />
+    <line class="fillline" x1="160" y1="633" x2="325" y2="633" />
+    <line class="fillline" x1="350" y1="633" x2="520" y2="633" />
+    <line class="fillline" x1="545" y1="633" x2="665" y2="633" />
+
+    <text class="small" x="65" y="663">2.</text>
+    <line class="fillline" x1="90" y1="663" x2="145" y2="663" />
+    <line class="fillline" x1="160" y1="663" x2="325" y2="663" />
+    <line class="fillline" x1="350" y1="663" x2="520" y2="663" />
+    <line class="fillline" x1="545" y1="663" x2="665" y2="663" />
+
+    <text class="small" x="65" y="693">3.</text>
+    <line class="fillline" x1="90" y1="693" x2="145" y2="693" />
+    <line class="fillline" x1="160" y1="693" x2="325" y2="693" />
+    <line class="fillline" x1="350" y1="693" x2="520" y2="693" />
+    <line class="fillline" x1="545" y1="693" x2="665" y2="693" />
+
+    <rect class="box" x="710" y="545" width="350" height="170" />
+    <text class="containerTitle" x="730" y="572">Boundaries for the Season</text>
+    <text class="small" x="730" y="603">Stop carrying:</text>
+    <line class="fillline" x1="830" y1="603" x2="1035" y2="603" />
+    <text class="small" x="730" y="633">Delay:</text>
+    <line class="fillline" x1="780" y1="633" x2="1035" y2="633" />
+    <text class="small" x="730" y="663">Refuse:</text>
+    <line class="fillline" x1="785" y1="663" x2="1035" y2="663" />
+    <text class="small" x="730" y="693">Protect:</text>
+    <line class="fillline" x1="790" y1="693" x2="1035" y2="693" />
+
+    <rect class="box" x="40" y="735" width="645" height="75" />
+    <text class="containerTitle" x="60" y="762">End of Season Success Statement</text>
+    <text class="small" x="60" y="787">At the end of this season, I will know I advanced because:</text>
+    <line class="fillline" x1="380" y1="787" x2="665" y2="787" />
+    <line class="fillline" x1="60" y1="804" x2="665" y2="804" />
+
+    <rect class="box" x="710" y="735" width="350" height="75" />
+    <text class="label" x="730" y="760">Action Steps Summary</text>
+    <text class="tiny" x="730" y="781">1. Name the aim. 2. Build the containers. 3. Assign roles.</text>
+    <text class="tiny" x="730" y="798">4. Refuse leaks. 5. Review visible proof every week.</text>
+</svg>

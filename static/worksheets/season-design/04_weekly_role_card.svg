@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">Weekly Role Scorecard Worksheet</title>
+  <desc id="desc">US letter landscape worksheet with white background, weekly momentum rating, role ratings, evidence fields, completion checks, and next week repair prompts.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.3; rx: 8; ry: 8; }
+      .softbox { fill: #f7f7f7; stroke: #111111; stroke-width: 1.4; rx: 14; ry: 14; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.1; fill: none; }
+      .fillline { stroke: #999999; stroke-width: 1.1; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 31px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #111111; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 11.5px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 9.8px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 8.2px; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 19px; font-weight: 700; fill: #111111; }
+      .bigword { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #111111; letter-spacing: 1.4px; }
+      .rating { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: 700; fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="title" x="40" y="45">WEEKLY ROLE SCORECARD</text>
+  <text class="sub" x="40" y="70">Measure Behavior, Evidence, and Repair</text>
+  <text class="bigword" x="780" y="55">MAKE IT VISIBLE</text>
+
+  <rect class="box" x="40" y="88" width="1020" height="76"/>
+  <text class="label" x="60" y="113">Choice</text>
+  <text class="small" x="60" y="132">A role becomes stronger when action leaves evidence. Use this scorecard to inspect the week without excuses.</text>
+  <text class="small" x="60" y="149">Rate each role, name the proof, mark what was completed, and choose the one repair that will make next week cleaner.</text>
+
+  <rect class="softbox" x="735" y="103" width="295" height="45"/>
+  <text class="label" x="752" y="122">Week Number:</text>
+  <line class="fillline" x1="848" y1="122" x2="1012" y2="122"/>
+  <text class="label" x="752" y="143">Momentum:</text>
+  <text class="tiny" x="825" y="143">1  2  3  4  5  6  7  8  9  10</text>
+
+  <rect class="box" x="40" y="184" width="330" height="115"/>
+  <text class="num" x="60" y="216">1</text>
+  <text class="label" x="92" y="203">MOMENTUM RATING</text>
+  <text class="tiny" x="92" y="220">What moved because you brought structure to it?</text>
+  <text class="small" x="65" y="248">Why:</text>
+  <line class="fillline" x1="102" y1="248" x2="345" y2="248"/>
+  <line class="fillline" x1="65" y1="274" x2="345" y2="274"/>
+  <text class="tiny" x="65" y="291">Score the week by evidence, not mood.</text>
+
+  <rect class="box" x="400" y="184" width="660" height="115"/>
+  <text class="num" x="420" y="216">2</text>
+  <text class="label" x="452" y="203">ROLE RATING SCALE</text>
+  <text class="tiny" x="452" y="220">Use the same scale for every role. This keeps the review honest and comparable.</text>
+  <rect class="mini" x="425" y="240" width="112" height="36"/>
+  <text class="rating" x="438" y="262">1 Neglected</text>
+  <rect class="mini" x="548" y="240" width="112" height="36"/>
+  <text class="rating" x="558" y="256">2 Struggling</text>
+  <text class="tiny" x="565" y="270">but trying</text>
+  <rect class="mini" x="671" y="240" width="112" height="36"/>
+  <text class="rating" x="681" y="262">3 Meeting</text>
+  <rect class="mini" x="794" y="240" width="112" height="36"/>
+  <text class="rating" x="804" y="256">4 Excelling</text>
+  <text class="tiny" x="813" y="270">and growing</text>
+  <rect class="mini" x="917" y="240" width="112" height="36"/>
+  <text class="rating" x="927" y="256">5 Clear</text>
+  <text class="tiny" x="936" y="270">strength</text>
+
+  <rect class="box" x="40" y="320" width="240" height="155"/>
+  <text class="num" x="60" y="352">3</text>
+  <text class="label" x="92" y="340">SON</text>
+  <text class="tiny" x="92" y="357">Rating: 1  2  3  4  5</text>
+  <text class="small" x="65" y="383">Evidence:</text>
+  <line class="fillline" x1="125" y1="383" x2="255" y2="383"/>
+  <line class="fillline" x1="65" y1="407" x2="255" y2="407"/>
+  <text class="small" x="65" y="433">Action completed:</text>
+  <line class="fillline" x1="170" y1="433" x2="255" y2="433"/>
+  <text class="small" x="65" y="458">Boundary protected:</text>
+  <line class="fillline" x1="180" y1="458" x2="255" y2="458"/>
+
+  <rect class="box" x="300" y="320" width="240" height="155"/>
+  <text class="num" x="320" y="352">4</text>
+  <text class="label" x="352" y="340">PARTNER</text>
+  <text class="tiny" x="352" y="357">Rating: 1  2  3  4  5</text>
+  <text class="small" x="325" y="383">Evidence:</text>
+  <line class="fillline" x1="385" y1="383" x2="515" y2="383"/>
+  <line class="fillline" x1="325" y1="407" x2="515" y2="407"/>
+  <text class="small" x="325" y="433">Action completed:</text>
+  <line class="fillline" x1="430" y1="433" x2="515" y2="433"/>
+  <text class="small" x="325" y="458">Connection protected:</text>
+  <line class="fillline" x1="452" y1="458" x2="515" y2="458"/>
+
+  <rect class="box" x="560" y="320" width="240" height="155"/>
+  <text class="num" x="580" y="352">5</text>
+  <text class="label" x="612" y="340">PUBLISHER</text>
+  <text class="tiny" x="612" y="357">Rating: 1  2  3  4  5</text>
+  <text class="small" x="585" y="383">Evidence:</text>
+  <line class="fillline" x1="645" y1="383" x2="775" y2="383"/>
+  <line class="fillline" x1="585" y1="407" x2="775" y2="407"/>
+  <text class="small" x="585" y="433">Action completed:</text>
+  <line class="fillline" x1="690" y1="433" x2="775" y2="433"/>
+  <text class="small" x="585" y="458">Boundary protected:</text>
+  <line class="fillline" x1="700" y1="458" x2="775" y2="458"/>
+
+  <rect class="box" x="820" y="320" width="240" height="155"/>
+  <text class="num" x="840" y="352">6</text>
+  <text class="label" x="872" y="340">EMPLOYEE / CAREER</text>
+  <text class="tiny" x="872" y="357">Rating: 1  2  3  4  5</text>
+  <text class="small" x="845" y="383">Evidence:</text>
+  <line class="fillline" x1="905" y1="383" x2="1035" y2="383"/>
+  <line class="fillline" x1="845" y1="407" x2="1035" y2="407"/>
+  <text class="small" x="845" y="433">Action completed:</text>
+  <line class="fillline" x1="950" y1="433" x2="1035" y2="433"/>
+  <text class="small" x="845" y="458">Support requested:</text>
+  <line class="fillline" x1="952" y1="458" x2="1035" y2="458"/>
+
+  <rect class="box" x="40" y="500" width="240" height="155"/>
+  <text class="num" x="60" y="532">7</text>
+  <text class="label" x="92" y="520">FRIEND</text>
+  <text class="tiny" x="92" y="537">Rating: 1  2  3  4  5</text>
+  <text class="small" x="65" y="563">Evidence:</text>
+  <line class="fillline" x1="125" y1="563" x2="255" y2="563"/>
+  <line class="fillline" x1="65" y1="587" x2="255" y2="587"/>
+  <text class="small" x="65" y="613">Action completed:</text>
+  <line class="fillline" x1="170" y1="613" x2="255" y2="613"/>
+  <text class="tiny" x="65" y="640">Calls returned in 24 hrs: Y / N</text>
+
+  <rect class="box" x="300" y="500" width="240" height="155"/>
+  <text class="num" x="320" y="532">8</text>
+  <text class="label" x="352" y="520">DRIVER</text>
+  <text class="tiny" x="352" y="537">Rating: 1  2  3  4  5</text>
+  <text class="small" x="325" y="563">Evidence:</text>
+  <line class="fillline" x1="385" y1="563" x2="515" y2="563"/>
+  <line class="fillline" x1="325" y1="587" x2="515" y2="587"/>
+  <text class="tiny" x="325" y="613">Planning block completed: Y / N</text>
+  <text class="tiny" x="325" y="636">Review block completed: Y / N</text>
+  <text class="tiny" x="325" y="650">Calendar reflected aim: Y / N</text>
+
+  <rect class="box" x="560" y="500" width="240" height="155"/>
+  <text class="num" x="580" y="532">9</text>
+  <text class="label" x="612" y="520">SELF</text>
+  <text class="tiny" x="612" y="537">Rating: 1  2  3  4  5</text>
+  <text class="small" x="585" y="563">Evidence:</text>
+  <line class="fillline" x1="645" y1="563" x2="775" y2="563"/>
+  <line class="fillline" x1="585" y1="587" x2="775" y2="587"/>
+  <text class="tiny" x="585" y="613">Walks: 0  1  2  3  4  5  6  7</text>
+  <text class="tiny" x="585" y="636">Strength / mobility: 0  1  2  3  4</text>
+  <text class="tiny" x="585" y="650">Sleep blocks: 0  1  2  3  4  5  6  7</text>
+
+  <rect class="box" x="820" y="500" width="240" height="155"/>
+  <text class="num" x="840" y="532">10</text>
+  <text class="label" x="880" y="520">NEXT ADJUSTMENTS</text>
+  <text class="tiny" x="880" y="537">Choose repair before the next week begins.</text>
+  <text class="small" x="845" y="563">Role needing repair:</text>
+  <line class="fillline" x1="965" y1="563" x2="1035" y2="563"/>
+  <text class="small" x="845" y="589">Role showing growth:</text>
+  <line class="fillline" x1="965" y1="589" x2="1035" y2="589"/>
+  <text class="small" x="845" y="615">Role creating pressure:</text>
+  <line class="fillline" x1="978" y1="615" x2="1035" y2="615"/>
+  <text class="small" x="845" y="641">Cleaner action:</text>
+  <line class="fillline" x1="935" y1="641" x2="1035" y2="641"/>
+
+  <rect class="box" x="40" y="680" width="1020" height="38"/>
+  <text class="label" x="60" y="704">One Action That Would Make Next Week Cleaner:</text>
+  <line class="fillline" x1="360" y1="704" x2="1035" y2="704"/>
+
+  <rect class="box" x="40" y="735" width="1020" height="75"/>
+  <text class="label" x="60" y="760">Action Steps Summary</text>
+
+  <circle class="line" cx="80" cy="785" r="17"/>
+  <text class="num" x="75" y="792">1</text>
+  <text class="label" x="110" y="780">Rate Each Role</text>
+  <text class="tiny" x="110" y="797">Score by proof, not by intent.</text>
+
+  <circle class="line" cx="405" cy="785" r="17"/>
+  <text class="num" x="400" y="792">2</text>
+  <text class="label" x="435" y="780">Name the Evidence</text>
+  <text class="tiny" x="435" y="797">Write the behavior that made the score true.</text>
+
+  <circle class="line" cx="730" cy="785" r="17"/>
+  <text class="num" x="725" y="792">3</text>
+  <text class="label" x="760" y="780">Choose the Repair</text>
+  <text class="tiny" x="760" y="797">Pick one action that makes next week cleaner.</text>
+</svg>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">Monthly Alignment Review Worksheet</title>
+  <desc id="desc">US letter landscape worksheet with white background, title, choice commitment anchor, fillable monthly review sections, and action summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.4; rx: 10; ry: 10; }
+      .softbox { fill: #f7f7f7; stroke: #111111; stroke-width: 1.4; rx: 14; ry: 14; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.1; fill: none; }
+      .fillline { stroke: #999999; stroke-width: 1.1; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 31px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #111111; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 700; fill: #111111; }
+      .bigword { font-family: Arial, Helvetica, sans-serif; font-size: 26px; font-weight: 700; fill: #111111; letter-spacing: 1.5px; }
+      .circleText { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="title" x="40" y="45">MONTHLY ALIGNMENT REVIEW</text>
+  <text class="sub" x="40" y="70">Choice Anchored to Commitment</text>
+  <text class="bigword" x="808" y="55">SHAPE THE MONTH</text>
+
+  <rect class="box" x="40" y="88" width="1020" height="78"/>
+  <text class="label" x="60" y="113">Choice</text>
+  <text class="small" x="60" y="132">Review the month as proof. Your calendar shows what received structure, time, and protection.</text>
+  <text class="small" x="60" y="149">Choose one clear adjustment for next month. Keep the aim visible. Protect capacity. Restore on purpose. Contain relief.</text>
+
+  <rect class="softbox" x="760" y="103" width="270" height="45"/>
+  <text class="label" x="778" y="122">Month:</text>
+  <line class="fillline" x1="830" y1="122" x2="1012" y2="122"/>
+  <text class="label" x="778" y="143">Weeks:</text>
+  <line class="fillline" x1="830" y1="143" x2="895" y2="143"/>
+  <text class="small" x="902" y="146">through</text>
+  <line class="fillline" x1="950" y1="143" x2="1012" y2="143"/>
+
+  <rect class="box" x="40" y="185" width="315" height="170"/>
+  <text class="num" x="60" y="220">1</text>
+  <text class="label" x="92" y="207">AIM CHECK</text>
+  <text class="tiny" x="92" y="224">How well did I live inside my aim this month?</text>
+  <text class="small" x="65" y="254">Rating:</text>
+  <circle class="soft" cx="130" cy="250" r="13"/><text class="circleText" x="126" y="254">1</text>
+  <circle class="soft" cx="170" cy="250" r="13"/><text class="circleText" x="166" y="254">2</text>
+  <circle class="soft" cx="210" cy="250" r="13"/><text class="circleText" x="206" y="254">3</text>
+  <circle class="soft" cx="250" cy="250" r="13"/><text class="circleText" x="246" y="254">4</text>
+  <circle class="soft" cx="290" cy="250" r="13"/><text class="circleText" x="286" y="254">5</text>
+  <text class="small" x="65" y="287">Why:</text>
+  <line class="fillline" x1="105" y1="287" x2="330" y2="287"/>
+  <line class="fillline" x1="65" y1="316" x2="330" y2="316"/>
+  <text class="small" x="65" y="342">Did my calendar reflect what mattered?</text>
+
+  <rect class="box" x="392" y="185" width="315" height="170"/>
+  <text class="num" x="412" y="220">2</text>
+  <text class="label" x="444" y="207">REST REVIEW</text>
+  <text class="tiny" x="444" y="224">Protect capacity before pressure chooses for you.</text>
+  <text class="small" x="417" y="254">What protected capacity?</text>
+  <line class="fillline" x1="417" y1="274" x2="682" y2="274"/>
+  <text class="small" x="417" y="303">What compromised capacity?</text>
+  <line class="fillline" x1="417" y1="323" x2="682" y2="323"/>
+  <text class="small" x="417" y="344">Next adjustment:</text>
+  <line class="fillline" x1="520" y1="344" x2="682" y2="344"/>
+
+  <rect class="box" x="745" y="185" width="315" height="170"/>
+  <text class="num" x="765" y="220">3</text>
+  <text class="label" x="797" y="207">RESTORATION REVIEW</text>
+  <text class="tiny" x="797" y="224">Name what rebuilt you instead of what only numbed you.</text>
+  <text class="small" x="770" y="254">What actually restored me?</text>
+  <line class="fillline" x1="770" y1="274" x2="1035" y2="274"/>
+  <text class="small" x="770" y="303">What did I confuse with restoration?</text>
+  <line class="fillline" x1="770" y1="323" x2="1035" y2="323"/>
+  <text class="small" x="770" y="344">Rhythm to continue:</text>
+  <line class="fillline" x1="890" y1="344" x2="1035" y2="344"/>
+
+  <rect class="box" x="40" y="380" width="315" height="180"/>
+  <text class="num" x="60" y="415">4</text>
+  <text class="label" x="92" y="402">RELIEF REVIEW</text>
+  <text class="tiny" x="92" y="419">Relief needs a container so it does not become drift.</text>
+  <text class="small" x="65" y="450">Where did relief stay contained?</text>
+  <line class="fillline" x1="65" y1="470" x2="330" y2="470"/>
+  <text class="small" x="65" y="499">Where did relief leak into distraction?</text>
+  <line class="fillline" x1="65" y1="519" x2="330" y2="519"/>
+  <text class="small" x="65" y="548">Boundary to add:</text>
+  <line class="fillline" x1="165" y1="548" x2="330" y2="548"/>
+
+  <rect class="box" x="392" y="380" width="315" height="180"/>
+  <text class="num" x="412" y="415">5</text>
+  <text class="label" x="444" y="402">RESPONSIBILITY REVIEW</text>
+  <text class="tiny" x="444" y="419">Roles reveal where strength grew and where repair is needed.</text>
+  <text class="small" x="417" y="446">Strongest role:</text>
+  <line class="fillline" x1="512" y1="446" x2="682" y2="446"/>
+  <text class="small" x="417" y="474">Evidence:</text>
+  <line class="fillline" x1="482" y1="474" x2="682" y2="474"/>
+  <text class="small" x="417" y="502">Role needing repair:</text>
+  <line class="fillline" x1="545" y1="502" x2="682" y2="502"/>
+  <text class="small" x="417" y="530">Role needing clearer boundary:</text>
+  <line class="fillline" x1="610" y1="530" x2="682" y2="530"/>
+  <text class="small" x="417" y="550">Boundary:</text>
+  <line class="fillline" x1="482" y1="550" x2="682" y2="550"/>
+
+  <rect class="box" x="745" y="380" width="315" height="180"/>
+  <text class="num" x="765" y="415">6</text>
+  <text class="label" x="797" y="402">AGENCY REVIEW</text>
+  <text class="tiny" x="797" y="419">Find where you chose clearly and where pressure chose for you.</text>
+  <text class="small" x="770" y="450">Where did I choose clearly?</text>
+  <line class="fillline" x1="770" y1="470" x2="1035" y2="470"/>
+  <text class="small" x="770" y="499">Where did outside pressure choose?</text>
+  <line class="fillline" x1="770" y1="519" x2="1035" y2="519"/>
+  <text class="small" x="770" y="548">Decision to increase agency:</text>
+  <line class="fillline" x1="930" y1="548" x2="1035" y2="548"/>
+
+  <rect class="box" x="40" y="585" width="665" height="105"/>
+  <text class="label" x="60" y="610">Next Month Focus</text>
+  <text class="small" x="60" y="638">Role to strengthen:</text>
+  <line class="fillline" x1="172" y1="638" x2="350" y2="638"/>
+  <text class="small" x="375" y="638">Rhythm to protect:</text>
+  <line class="fillline" x1="488" y1="638" x2="680" y2="638"/>
+  <text class="small" x="60" y="665">Request to refuse or renegotiate:</text>
+  <line class="fillline" x1="250" y1="665" x2="430" y2="665"/>
+  <text class="small" x="455" y="665">Physical commitment:</text>
+  <line class="fillline" x1="580" y1="665" x2="680" y2="665"/>
+  <text class="small" x="60" y="683">Friendship action:</text>
+  <line class="fillline" x1="168" y1="683" x2="350" y2="683"/>
+  <text class="small" x="375" y="683">Career clarity action:</text>
+  <line class="fillline" x1="500" y1="683" x2="680" y2="683"/>
+
+  <rect class="box" x="745" y="585" width="315" height="105"/>
+  <text class="label" x="765" y="610">Monthly Closing Statement</text>
+  <text class="small" x="765" y="638">This month taught me:</text>
+  <line class="fillline" x1="895" y1="638" x2="1035" y2="638"/>
+  <line class="fillline" x1="765" y1="662" x2="1035" y2="662"/>
+  <text class="small" x="765" y="683">Next month I will shape the week by:</text>
+  <line class="fillline" x1="975" y1="683" x2="1035" y2="683"/>
+
+  <path class="line" d="M355 270 C372 270 375 270 392 270"/>
+  <path class="line" d="M707 270 C724 270 728 270 745 270"/>
+  <path class="line" d="M355 470 C372 470 375 470 392 470"/>
+  <path class="line" d="M707 470 C724 470 728 470 745 470"/>
+  <circle cx="374" cy="270" r="4" fill="#111111"/>
+  <circle cx="727" cy="270" r="4" fill="#111111"/>
+  <circle cx="374" cy="470" r="4" fill="#111111"/>
+  <circle cx="727" cy="470" r="4" fill="#111111"/>
+
+  <rect class="box" x="40" y="715" width="1020" height="95"/>
+  <text class="label" x="60" y="740">Action Steps Summary</text>
+
+  <circle class="line" cx="80" cy="772" r="19"/>
+  <text class="num" x="74" y="780">1</text>
+  <text class="label" x="112" y="765">Read the Calendar</text>
+  <text class="tiny" x="112" y="783">Use the month as evidence. Mark what your time actually protected.</text>
+
+  <circle class="line" cx="405" cy="772" r="19"/>
+  <text class="num" x="399" y="780">2</text>
+  <text class="label" x="437" y="765">Name the Leak</text>
+  <text class="tiny" x="437" y="783">Find the place where capacity, relief, or responsibility lost structure.</text>
+
+  <circle class="line" cx="730" cy="772" r="19"/>
+  <text class="num" x="724" y="780">3</text>
+  <text class="label" x="762" y="765">Choose One Next Form</text>
+  <text class="tiny" x="762" y="783">Commit to one role, one rhythm, one boundary, and one visible action.</text>
+
+  <text class="tiny" x="60" y="802">Final check: Aim reviewed. Capacity protected. Relief contained. Responsibility named. Next month shaped with one clear commitment.</text>
+</svg>
