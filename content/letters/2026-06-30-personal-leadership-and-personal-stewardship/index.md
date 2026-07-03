@@ -2,13 +2,22 @@
 date: 2026-06-30
 slug: "personal-leadership-and-personal-stewardship"
 title: "Personal leadership and personal stewardship"
-summary: "SUMMARY GOES HERE"
+summary: "Leadership sets your direction. Stewardship protects the time, health, habits, and relationships that let you keep moving without burning out."
 
 categories: letter
 
 tags:
-  - tag1
-  - tag2
+  - leadership
+  - self-leadership
+  - stewardship
+  - discipline
+  - purpose
+  - habits
+  - consistency
+  - personal-growth
+  - furnace
+  - forge
+  - 3f
 
 cover:
   image: "cover.png"
