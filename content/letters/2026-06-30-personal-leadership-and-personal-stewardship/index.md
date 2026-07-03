@@ -1,7 +1,7 @@
 ---
 date: 2026-06-30
 slug: "personal-leadership-and-personal-stewardship"
-title: "Personal leadership and personal stewardship"
+title: "Leadership and stewardship"
 summary: "Leadership sets your direction. Stewardship protects the time, health, habits, and relationships that let you keep moving without burning out."
 
 categories: letter
@@ -34,13 +34,13 @@ Every field needs a direction before it can produce anything. But the decision i
 
 The field still needs to be watered. Weeds need to be pulled. Fences need repair. The soil needs care. Day after day, the farmer returns to work that rarely feels exciting. Most of the harvest depends on what happens long after the decision has been made.
 
-I think personal leadership and personal stewardship work the same way.
+I think leadership and stewardship work the same way.
 
 They are closely connected, but they are not the same.
 
-Personal leadership is about choosing your direction.
+Leadership is about choosing your direction.
 
-Personal stewardship is about caring for what helps you stay on that path.
+Stewardship is about caring for what helps you stay on that path.
 
 Leadership asks questions like:
 
