@@ -16,5 +16,6 @@ hugo server \
     --poll 100ms \
     --buildFuture \
     --buildDrafts \
+    --disableFastRender \
     --printPathWarnings \
     --minify

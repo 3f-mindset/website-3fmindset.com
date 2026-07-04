@@ -16,4 +16,6 @@ else
   echo "Preview process not running"
 fi
 
+pkill -f "hugo server" 2>/dev/null || true
+
 rm -f "$PID_FILE"

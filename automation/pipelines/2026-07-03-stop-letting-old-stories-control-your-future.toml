@@ -1,8 +1,8 @@
 [context]
-title = "Placeholder Title"
-slug = "placeholder-title"
+title = "Stop Letting Old Stories Control Your Future"
+slug = "stop-letting-old-stories-control-your-future"
 date = "2026-07-03"
-target_dir = "content/letters/2026-07-03-placeholder-title"
+target_dir = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future"
 
 [providers.text]
 kind = "openai-compatible"
@@ -27,14 +27,14 @@ audience = "men who need structure, ownership, and steady action"
 id = "lesson"
 format = "markdown"
 prompt_file = "automation/prompts/burn/lesson.md"
-output = "content/letters/2026-07-03-placeholder-title/LESSON.md"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/LESSON.md"
 
 [[steps.inputs]]
-path = "content/letters/2026-07-03-placeholder-title/PRODUCTION_BRIEF.md"
+path = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/PRODUCTION_BRIEF.md"
 alias = "brief"
 
 [[steps.inputs]]
-path = "content/letters/2026-07-03-placeholder-title/index.md"
+path = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/index.md"
 alias = "draft_index"
 
 [[steps]]
@@ -42,14 +42,14 @@ id = "instructions"
 format = "markdown"
 prompt_file = "automation/prompts/burn/instructions.md"
 depends_on = ["lesson"]
-output = "content/letters/2026-07-03-placeholder-title/INSTRUCTIONS.md"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/INSTRUCTIONS.md"
 
 [[steps.inputs]]
 step = "lesson"
 alias = "lesson"
 
 [[steps.inputs]]
-path = "content/letters/2026-07-03-placeholder-title/PRODUCTION_BRIEF.md"
+path = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/PRODUCTION_BRIEF.md"
 alias = "brief"
 
 [[steps]]
@@ -57,14 +57,14 @@ id = "context"
 format = "markdown"
 prompt_file = "automation/prompts/burn/context.md"
 depends_on = ["lesson"]
-output = "content/letters/2026-07-03-placeholder-title/CONTEXT.md"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/CONTEXT.md"
 
 [[steps.inputs]]
 step = "lesson"
 alias = "lesson"
 
 [[steps.inputs]]
-path = "content/letters/2026-07-03-placeholder-title/PRODUCTION_BRIEF.md"
+path = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/PRODUCTION_BRIEF.md"
 alias = "brief"
 
 [[steps]]
@@ -72,7 +72,7 @@ id = "gpt"
 format = "markdown"
 prompt_file = "automation/prompts/burn/gpt.md"
 depends_on = ["context", "instructions"]
-output = "content/letters/2026-07-03-placeholder-title/GPT.md"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/GPT.md"
 
 [[steps.inputs]]
 step = "context"
@@ -87,7 +87,7 @@ id = "worksheet"
 format = "svg"
 prompt_file = "automation/prompts/burn/worksheet-svg.md"
 depends_on = ["lesson", "instructions"]
-output = "content/letters/2026-07-03-placeholder-title/WORKSHEET.svg"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/WORKSHEET.svg"
 
 [[steps.inputs]]
 step = "lesson"
@@ -102,7 +102,7 @@ id = "worksheet_masked"
 format = "svg"
 prompt_file = "automation/prompts/burn/worksheet-masked-svg.md"
 depends_on = ["worksheet"]
-output = "content/letters/2026-07-03-placeholder-title/WORKSHEET_MASKED.svg"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/WORKSHEET_MASKED.svg"
 
 [[steps.inputs]]
 step = "worksheet"
@@ -113,7 +113,7 @@ id = "promo"
 format = "markdown"
 prompt_file = "automation/prompts/burn/promo-image.md"
 depends_on = ["context", "worksheet_masked"]
-output = "content/letters/2026-07-03-placeholder-title/PROMO_PROMPT.md"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/PROMO_PROMPT.md"
 
 [[steps.inputs]]
 step = "context"
@@ -128,7 +128,7 @@ id = "banner"
 format = "markdown"
 prompt_file = "automation/prompts/burn/banner-image.md"
 depends_on = ["context", "worksheet_masked", "promo"]
-output = "content/letters/2026-07-03-placeholder-title/BANNER_PROMPT.md"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/BANNER_PROMPT.md"
 
 [[steps.inputs]]
 step = "context"
@@ -147,7 +147,7 @@ id = "page_copy"
 format = "markdown"
 prompt_file = "automation/prompts/burn/page-copy.md"
 depends_on = ["context", "promo", "banner"]
-output = "content/letters/2026-07-03-placeholder-title/PAGE_COPY.md"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/PAGE_COPY.md"
 
 [[steps.inputs]]
 step = "context"
@@ -166,7 +166,7 @@ id = "landing_page"
 format = "html"
 prompt_file = "automation/prompts/burn/landing-page-html.md"
 depends_on = ["context", "banner", "page_copy"]
-output = "content/letters/2026-07-03-placeholder-title/LANDING_PAGE.html"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/LANDING_PAGE.html"
 
 [[steps.inputs]]
 step = "context"
@@ -185,7 +185,7 @@ id = "worksheet_page"
 format = "markdown"
 prompt_file = "automation/prompts/burn/worksheet-page-prototype.md"
 depends_on = ["context", "promo", "page_copy"]
-output = "content/letters/2026-07-03-placeholder-title/WORKSHEET_PAGE.md"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/WORKSHEET_PAGE.md"
 
 [[steps.inputs]]
 step = "context"
@@ -204,10 +204,10 @@ id = "index"
 format = "markdown"
 prompt_file = "automation/prompts/burn/index.md"
 depends_on = ["lesson", "context"]
-output = "content/letters/2026-07-03-placeholder-title/index.md"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/index.md"
 
 [[steps.inputs]]
-path = "content/letters/2026-07-03-placeholder-title/index.md"
+path = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/index.md"
 alias = "draft_index"
 
 [[steps.inputs]]
@@ -219,7 +219,7 @@ step = "context"
 alias = "context"
 
 [[steps.inputs]]
-path = "content/letters/2026-07-03-placeholder-title/PRODUCTION_BRIEF.md"
+path = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/PRODUCTION_BRIEF.md"
 alias = "brief"
 
 [[steps]]
@@ -227,7 +227,7 @@ id = "newsletter_email"
 format = "markdown"
 prompt_file = "automation/prompts/burn/newsletter-email.md"
 depends_on = ["index", "lesson", "instructions", "gpt", "context"]
-output = "content/letters/2026-07-03-placeholder-title/NEWSLETTER_EMAIL.md"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/NEWSLETTER_EMAIL.md"
 
 [[steps.inputs]]
 step = "index"
@@ -254,7 +254,7 @@ id = "community_post"
 format = "markdown"
 prompt_file = "automation/prompts/burn/community-post.md"
 depends_on = ["index", "context"]
-output = "content/letters/2026-07-03-placeholder-title/COMMUNITY_POST.md"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/COMMUNITY_POST.md"
 
 [[steps.inputs]]
 step = "index"
