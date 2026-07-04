@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Assisted Production"
+  short_description: "Generate SteadyBurn production artifacts"
+  default_prompt: "Use $ai-assisted-production to create or finish a SteadyBurn production from a letter draft."

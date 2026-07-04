@@ -1,15 +1,24 @@
 from __future__ import annotations
 
+import json
+import re
 from enum import Enum
 from pathlib import Path
-from typing import Protocol
+from typing import Any, Protocol
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 
 class OutputFormat(str, Enum):
     MARKDOWN = "markdown"
     SVG = "svg"
+    HTML = "html"
+
+
+class GenerationModality(str, Enum):
+    TEXT = "text"
+    IMAGE = "image"
+    AUDIO = "audio"
 
 
 class ProviderKind(str, Enum):
@@ -22,6 +31,30 @@ class BurnContext(BaseModel):
     title: str = ""
     slug: str = ""
     date: str = ""
+    target_dir: str = ""
+
+
+class InputSource(BaseModel):
+    path: Path | None = None
+    step: str | None = None
+    alias: str = ""
+    optional: bool = False
+
+    @model_validator(mode="after")
+    def validate_source(self) -> "InputSource":
+        if bool(self.path) == bool(self.step):
+            raise ValueError("Exactly one of 'path' or 'step' must be set for each input")
+        return self
+
+    @property
+    def resolved_alias(self) -> str:
+        if self.alias:
+            return self.alias
+        if self.step:
+            return self.step
+        if self.path is None:
+            raise ValueError("Input source has neither alias nor path")
+        return self.path.stem or self.path.name
 
 
 class StepSpec(BaseModel):
@@ -29,17 +62,71 @@ class StepSpec(BaseModel):
     format: OutputFormat
     prompt_file: Path
     output: Path
-    inputs: list[Path] = Field(default_factory=list)
+    modality: GenerationModality = GenerationModality.TEXT
+    inputs: list[InputSource] = Field(default_factory=list)
     depends_on: list[str] = Field(default_factory=list)
+
+    @field_validator("inputs", mode="before")
+    @classmethod
+    def normalize_inputs(cls, value: Any) -> list[Any]:
+        if value is None:
+            return []
+        normalized: list[Any] = []
+        for item in value:
+            if isinstance(item, (str, Path)):
+                normalized.append({"path": item})
+                continue
+            normalized.append(item)
+        return normalized
 
 
 class PipelineSpec(BaseModel):
     context: BurnContext = Field(default_factory=BurnContext)
+    variables: dict[str, Any] = Field(default_factory=dict)
+    providers: dict[GenerationModality, "ProviderConfig"] = Field(default_factory=dict)
     steps: list[StepSpec]
 
 
+class DevelopedModelEntry(BaseModel):
+    verb: str
+    title: str = ""
+    slug: str = ""
+    date: str = ""
+    source_path: str = ""
+
+
+class ModelRegistry(BaseModel):
+    entries: list[DevelopedModelEntry] = Field(default_factory=list)
+
+    def used_verbs(self) -> list[str]:
+        unique = {entry.verb.upper(): entry.verb.upper() for entry in self.entries if entry.verb.strip()}
+        return sorted(unique.values())
+
+
+class VerbTrackingStatus(str, Enum):
+    CONFIRMED = "confirmed"
+    INFERRED = "inferred"
+    MISSING = "missing"
+
+
+class SteadyBurnVerbIndexEntry(BaseModel):
+    sequence: int
+    date: str
+    folder: str
+    title: str
+    slug: str
+    verb: str = ""
+    status: VerbTrackingStatus = VerbTrackingStatus.MISSING
+    evidence_path: str = ""
+    note: str = ""
+
+
+class SteadyBurnVerbIndex(BaseModel):
+    entries: list[SteadyBurnVerbIndexEntry] = Field(default_factory=list)
+
+
 class ProviderConfig(BaseModel):
-    kind: ProviderKind = ProviderKind.CODEX_CLI
+    kind: ProviderKind = ProviderKind.OPENAI_COMPATIBLE
     model: str | None = None
     base_url: str | None = None
     api_key_env: str = "OPENAI_API_KEY"
@@ -76,6 +163,39 @@ class FileStorePort(Protocol):
     def exists(self, path: Path) -> bool:
         """Return whether a path exists."""
 
+    def glob(self, pattern: str) -> list[Path]:
+        """Return paths matching a workspace-relative glob pattern."""
+
+
+TEMPLATE_PATTERN = re.compile(r"{{\s*([A-Za-z0-9_.-]+)\s*}}")
+ACTIONABLE_VERB_HEADER_PATTERN = re.compile(
+    r"^\s*(?:#{1,6}\s*)?Actionable\s+VERB\s*$",
+    re.IGNORECASE | re.MULTILINE,
+)
+ATX_HEADER_PATTERN = re.compile(r"^\s*#{1,6}\s+")
+EMPHASIS_ONLY_PATTERN = re.compile(r"^\*{1,2}(.*?)\*{1,2}$")
+
+
+def render_prompt_template(template: str, data: dict[str, Any]) -> str:
+    def replace(match: re.Match[str]) -> str:
+        key = match.group(1).strip()
+        value = resolve_template_value(data, key)
+        if isinstance(value, (dict, list)):
+            return json.dumps(value, indent=2, ensure_ascii=True)
+        return str(value)
+
+    return TEMPLATE_PATTERN.sub(replace, template)
+
+
+def resolve_template_value(data: dict[str, Any], key: str) -> Any:
+    current: Any = data
+    for part in key.split("."):
+        if isinstance(current, dict) and part in current:
+            current = current[part]
+            continue
+        raise ValueError(f"Missing template value: {key}")
+    return current
+
 
 def build_generation_prompt(command: GenerateCommand) -> str:
     lines = [
@@ -102,6 +222,17 @@ def build_generation_prompt(command: GenerateCommand) -> str:
                 "",
             ]
         )
+    elif command.step.format == OutputFormat.HTML:
+        lines.extend(
+            [
+                "HTML constraints:",
+                "- Return a complete HTML document.",
+                "- Start with <!doctype html> or <html.",
+                "- Do not wrap the HTML in a Markdown code block.",
+                "- Do not include prose before or after the HTML.",
+                "",
+            ]
+        )
     else:
         lines.extend(
             [
@@ -115,10 +246,10 @@ def build_generation_prompt(command: GenerateCommand) -> str:
 
     lines.extend(
         [
-            "Prompt template:",
-            "--- BEGIN PROMPT TEMPLATE ---",
+            "Prompt instructions:",
+            "--- BEGIN PROMPT INSTRUCTIONS ---",
             command.prompt_template,
-            "--- END PROMPT TEMPLATE ---",
+            "--- END PROMPT INSTRUCTIONS ---",
             "",
         ]
     )
@@ -144,5 +275,68 @@ def validate_generated_content(content: str, output_format: OutputFormat) -> Non
     if content.lstrip().startswith("```"):
         raise ValueError("Generated output starts with a Markdown fence")
 
-    if output_format == OutputFormat.SVG and not content.lstrip().startswith("<svg"):
-        raise ValueError("Generated SVG does not start with <svg")
+    if output_format == OutputFormat.SVG:
+        stripped = content.lstrip().lower()
+        if not (stripped.startswith("<svg") or stripped.startswith("<?xml")):
+            raise ValueError("Generated SVG does not start with <svg or <?xml")
+
+    if output_format == OutputFormat.HTML:
+        stripped = content.lstrip().lower()
+        if not (stripped.startswith("<!doctype html") or stripped.startswith("<html")):
+            raise ValueError("Generated HTML does not start with <!doctype html> or <html")
+
+
+def sanitize_generated_content(content: str, output_format: OutputFormat) -> str:
+    cleaned = content.strip()
+    if cleaned.startswith("```"):
+        lines = cleaned.splitlines()
+        if len(lines) >= 3 and lines[-1].strip() == "```":
+            cleaned = "\n".join(lines[1:-1]).strip()
+
+    if output_format == OutputFormat.SVG:
+        lowered = cleaned.lower()
+        xml_index = lowered.find("<?xml")
+        svg_index = lowered.find("<svg")
+        start_indexes = [index for index in (xml_index, svg_index) if index >= 0]
+        if start_indexes:
+            cleaned = cleaned[min(start_indexes) :].strip()
+
+    if output_format == OutputFormat.HTML:
+        lowered = cleaned.lower()
+        doctype_index = lowered.find("<!doctype html")
+        html_index = lowered.find("<html")
+        start_indexes = [index for index in (doctype_index, html_index) if index >= 0]
+        if start_indexes:
+            cleaned = cleaned[min(start_indexes) :].strip()
+
+    return cleaned
+
+
+def extract_actionable_verb(content: str) -> str | None:
+    match = ACTIONABLE_VERB_HEADER_PATTERN.search(content)
+    if not match:
+        return None
+
+    remainder = content[match.end() :].splitlines()
+    for line in remainder:
+        candidate = normalize_actionable_verb_line(line)
+        if candidate:
+            return candidate
+        if line.strip():
+            return None
+    return None
+
+
+def normalize_actionable_verb_line(line: str) -> str | None:
+    value = line.strip()
+    if not value:
+        return None
+    value = ATX_HEADER_PATTERN.sub("", value).strip()
+    emphasis_match = EMPHASIS_ONLY_PATTERN.match(value)
+    if emphasis_match:
+        value = emphasis_match.group(1).strip()
+    value = value.strip("`").strip()
+    value = re.sub(r"\s+", " ", value)
+    if not value:
+        return None
+    return value.upper()
