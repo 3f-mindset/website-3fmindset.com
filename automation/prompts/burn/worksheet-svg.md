@@ -1,6 +1,6 @@
 Design `WORKSHEET.svg` for "{{context.title}}".
 
-Use the appended inputs named `lesson` and `instructions`.
+Use the appended inputs named `context`, `lesson`, and `instructions`.
 
 Return a complete raw SVG document only. Do not wrap it in a code block.
 
@@ -8,6 +8,17 @@ This prompt must adhere strictly to the SVG document standard shown below. Do no
 
 The SVG file format, page size, typography classes, and full-page worksheet intent are fixed.
 The internal worksheet layout is not fixed.
+
+Model source of truth:
+- Treat `context` as the binding source for the worksheet action model.
+- Extract the exact `## Actionable VERB` and the complete `## Model` from `context`.
+- The large centered verb heading must use that exact `Actionable VERB`.
+- Every letter in the verb must appear visibly as a model letter marker.
+- Every model step from `## Model` must receive its own actionable fillable area.
+- Preserve repeated letters as separate steps when the verb repeats a letter.
+- Do not rename, replace, combine, summarize, or skip any model letter.
+- Do not build the worksheet from the three-step `Action Steps Summary`; that summary may only support a footer recap.
+- If `lesson`, `instructions`, and `context` disagree about the verb or step sequence, `context` wins.
 
 The model has full creative authority to adapt the internal worksheet composition to the chosen verb and process.
 That includes:
@@ -40,9 +51,9 @@ Content mapping requirements:
 - Use the topic as the large title.
 - Use the topic subtitle or lesson framing as the subtitle.
 - Use the `Choice` content as the top-right intro box.
-- Use the actionable verb/model from the content as the large centered verb heading.
-- Use the verb letters and process steps as the primary driver of the worksheet architecture.
-- The number of content blocks may expand or contract to fit the verb and the lesson.
+- Use the actionable verb/model from `context` as the large centered verb heading.
+- Use the verb letters and full process steps from `context` as the primary driver of the worksheet architecture.
+- The number of content blocks must expand or contract to fit the full verb and model from `context`.
 - The order of blocks may change if the process becomes clearer that way.
 - The footer structure may change if the content needs a different closing pattern.
 - Use short box labels, one short instruction line, one short helper line, and clear fillable lines or numbered slots where appropriate.
@@ -67,7 +78,7 @@ Do not:
 
 Creative authority rule:
 - You may redesign the internal worksheet composition completely for each new verb.
-- You may change block count, order, and grouping.
+- You may change block count, order, and grouping only if every model letter remains visible and every model step still has its own fillable area.
 - You may make the page asymmetrical, modular, linear, radial, laddered, or staged if it still prints cleanly and remains easy to fill out by hand.
 - Creativity is encouraged inside the page. Sloppiness is not.
 

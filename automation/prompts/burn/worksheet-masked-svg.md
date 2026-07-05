@@ -13,7 +13,8 @@ Hard constraints:
 - Preserve the title block in place.
 - Preserve the model letters in place.
 - Preserve each letter box or letter marker in place.
-- Preserve the overall “full worksheet page” appearance. Do not collapse the page into fragments or sparse blocks.
+- Preserve every model letter marker from the source worksheet, including repeated letters.
+- Preserve the overall "full worksheet page" appearance. Do not collapse the page into fragments or sparse blocks.
 - The masked file must inherit whatever creative structure the main worksheet used.
 - Do not normalize or simplify the source worksheet layout.
 

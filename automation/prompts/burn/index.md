@@ -16,6 +16,11 @@ Frontmatter content rules:
 - Set the final frontmatter `summary` from the `## Promise` value in `CONTEXT.md`.
 - If the Promise is too long for a summary line, compress it to one sharp sentence without changing the core promise.
 - Do not leave the scaffold placeholder title in the final file.
+- Set `tags` to at least 10 single-word tags that are directly related to the article's topic, tensions, themes, and transformation.
+- Keep every tag to a single word only.
+- Prefer plain lowercase tags.
+- Do not use placeholder tags.
+- Do not use multi-word tags, hyphenated phrases, or generic filler tags that could fit any article.
 
 Keep `{{< audio >}}` immediately after the frontmatter.
 

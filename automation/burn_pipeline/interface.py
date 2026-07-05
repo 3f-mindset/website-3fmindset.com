@@ -506,8 +506,16 @@ series:
   - SteadyBurn
 
 tags:
-  - tag1
-  - tag2
+  - tag01
+  - tag02
+  - tag03
+  - tag04
+  - tag05
+  - tag06
+  - tag07
+  - tag08
+  - tag09
+  - tag10
 
 cover:
   image: "cover.png"
@@ -564,11 +572,11 @@ path = "{target_dir_string}/index.md"
 alias = "draft_index"
 
 [[steps]]
-id = "instructions"
+id = "context"
 format = "markdown"
-prompt_file = "automation/prompts/burn/instructions.md"
+prompt_file = "automation/prompts/burn/context.md"
 depends_on = ["lesson"]
-output = "{target_dir_string}/INSTRUCTIONS.md"
+output = "{target_dir_string}/CONTEXT.md"
 
 [[steps.inputs]]
 step = "lesson"
@@ -579,15 +587,19 @@ path = "{target_dir_string}/PRODUCTION_BRIEF.md"
 alias = "brief"
 
 [[steps]]
-id = "context"
+id = "instructions"
 format = "markdown"
-prompt_file = "automation/prompts/burn/context.md"
-depends_on = ["lesson"]
-output = "{target_dir_string}/CONTEXT.md"
+prompt_file = "automation/prompts/burn/instructions.md"
+depends_on = ["lesson", "context"]
+output = "{target_dir_string}/INSTRUCTIONS.md"
 
 [[steps.inputs]]
 step = "lesson"
 alias = "lesson"
+
+[[steps.inputs]]
+step = "context"
+alias = "context"
 
 [[steps.inputs]]
 path = "{target_dir_string}/PRODUCTION_BRIEF.md"
@@ -612,8 +624,12 @@ alias = "instructions"
 id = "worksheet"
 format = "svg"
 prompt_file = "automation/prompts/burn/worksheet-svg.md"
-depends_on = ["lesson", "instructions"]
+depends_on = ["context", "lesson", "instructions"]
 output = "{target_dir_string}/WORKSHEET.svg"
+
+[[steps.inputs]]
+step = "context"
+alias = "context"
 
 [[steps.inputs]]
 step = "lesson"

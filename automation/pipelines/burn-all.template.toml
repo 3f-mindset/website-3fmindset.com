@@ -38,11 +38,11 @@ path = "content/letters/YYYY-MM-DD-slug/index.md"
 alias = "draft_index"
 
 [[steps]]
-id = "instructions"
+id = "context"
 format = "markdown"
-prompt_file = "automation/prompts/burn/instructions.md"
+prompt_file = "automation/prompts/burn/context.md"
 depends_on = ["lesson"]
-output = "content/letters/YYYY-MM-DD-slug/INSTRUCTIONS.md"
+output = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 
 [[steps.inputs]]
 step = "lesson"
@@ -53,15 +53,19 @@ path = "content/letters/YYYY-MM-DD-slug/PRODUCTION_BRIEF.md"
 alias = "brief"
 
 [[steps]]
-id = "context"
+id = "instructions"
 format = "markdown"
-prompt_file = "automation/prompts/burn/context.md"
-depends_on = ["lesson"]
-output = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
+prompt_file = "automation/prompts/burn/instructions.md"
+depends_on = ["lesson", "context"]
+output = "content/letters/YYYY-MM-DD-slug/INSTRUCTIONS.md"
 
 [[steps.inputs]]
 step = "lesson"
 alias = "lesson"
+
+[[steps.inputs]]
+step = "context"
+alias = "context"
 
 [[steps.inputs]]
 path = "content/letters/YYYY-MM-DD-slug/PRODUCTION_BRIEF.md"
@@ -78,21 +82,6 @@ output = "content/letters/YYYY-MM-DD-slug/GPT.md"
 step = "context"
 alias = "context"
 
-[[steps]]
-id = "community_post"
-format = "markdown"
-prompt_file = "automation/prompts/burn/community-post.md"
-depends_on = ["index", "context"]
-output = "content/letters/YYYY-MM-DD-slug/COMMUNITY_POST.md"
-
-[[steps.inputs]]
-step = "index"
-alias = "index"
-
-[[steps.inputs]]
-step = "context"
-alias = "context"
-
 [[steps.inputs]]
 step = "instructions"
 alias = "instructions"
@@ -101,8 +90,12 @@ alias = "instructions"
 id = "worksheet"
 format = "svg"
 prompt_file = "automation/prompts/burn/worksheet-svg.md"
-depends_on = ["lesson", "instructions"]
+depends_on = ["context", "lesson", "instructions"]
 output = "content/letters/YYYY-MM-DD-slug/WORKSHEET.svg"
+
+[[steps.inputs]]
+step = "context"
+alias = "context"
 
 [[steps.inputs]]
 step = "lesson"
@@ -259,6 +252,21 @@ alias = "instructions"
 [[steps.inputs]]
 step = "gpt"
 alias = "gpt"
+
+[[steps.inputs]]
+step = "context"
+alias = "context"
+
+[[steps]]
+id = "community_post"
+format = "markdown"
+prompt_file = "automation/prompts/burn/community-post.md"
+depends_on = ["index", "context"]
+output = "content/letters/YYYY-MM-DD-slug/COMMUNITY_POST.md"
+
+[[steps.inputs]]
+step = "index"
+alias = "index"
 
 [[steps.inputs]]
 step = "context"

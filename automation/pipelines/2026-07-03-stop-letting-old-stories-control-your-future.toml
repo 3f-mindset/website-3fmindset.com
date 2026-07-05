@@ -38,11 +38,11 @@ path = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/
 alias = "draft_index"
 
 [[steps]]
-id = "instructions"
+id = "context"
 format = "markdown"
-prompt_file = "automation/prompts/burn/instructions.md"
+prompt_file = "automation/prompts/burn/context.md"
 depends_on = ["lesson"]
-output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/INSTRUCTIONS.md"
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/CONTEXT.md"
 
 [[steps.inputs]]
 step = "lesson"
@@ -53,15 +53,19 @@ path = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/
 alias = "brief"
 
 [[steps]]
-id = "context"
+id = "instructions"
 format = "markdown"
-prompt_file = "automation/prompts/burn/context.md"
-depends_on = ["lesson"]
-output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/CONTEXT.md"
+prompt_file = "automation/prompts/burn/instructions.md"
+depends_on = ["lesson", "context"]
+output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/INSTRUCTIONS.md"
 
 [[steps.inputs]]
 step = "lesson"
 alias = "lesson"
+
+[[steps.inputs]]
+step = "context"
+alias = "context"
 
 [[steps.inputs]]
 path = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/PRODUCTION_BRIEF.md"
@@ -86,8 +90,12 @@ alias = "instructions"
 id = "worksheet"
 format = "svg"
 prompt_file = "automation/prompts/burn/worksheet-svg.md"
-depends_on = ["lesson", "instructions"]
+depends_on = ["context", "lesson", "instructions"]
 output = "content/letters/2026-07-03-stop-letting-old-stories-control-your-future/WORKSHEET.svg"
+
+[[steps.inputs]]
+step = "context"
+alias = "context"
 
 [[steps.inputs]]
 step = "lesson"
