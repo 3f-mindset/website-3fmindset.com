@@ -5,6 +5,8 @@ import json
 import subprocess
 import tempfile
 import re
+import base64
+import time
 from pathlib import Path
 from typing import Any
 
@@ -17,6 +19,8 @@ except ModuleNotFoundError:  # pragma: no cover - Python < 3.11
 
 from .domain import (
     DevelopedModelEntry,
+    GeneratedArtifact,
+    GenerationModality,
     InferenceRequest,
     ModelRegistry,
     PipelineSpec,
@@ -44,6 +48,15 @@ class LocalFileStore:
         resolved.parent.mkdir(parents=True, exist_ok=True)
         resolved.write_text(content, encoding="utf-8")
 
+    def write_bytes(self, path: Path, content: bytes, force: bool) -> None:
+        resolved = self._resolve(path)
+        if resolved.exists() and not force:
+            raise FileExistsError(f"Output exists. Use --force to overwrite: {path}")
+        if resolved.is_dir():
+            raise IsADirectoryError(f"Output path is a directory: {path}")
+        resolved.parent.mkdir(parents=True, exist_ok=True)
+        resolved.write_bytes(content)
+
     def exists(self, path: Path) -> bool:
         return self._resolve(path).exists()
 
@@ -63,7 +76,7 @@ class CodexCliAgent:
         self._model = model
         self._cwd = cwd or Path.cwd()
 
-    def generate(self, request: InferenceRequest) -> str:
+    def generate(self, request: InferenceRequest) -> GeneratedArtifact:
         with tempfile.TemporaryDirectory() as tmp_dir_name:
             tmp_dir = Path(tmp_dir_name)
             output_file = tmp_dir / "last-message.txt"
@@ -103,7 +116,7 @@ class CodexCliAgent:
                 )
             if not output_file.exists():
                 raise RuntimeError("Codex CLI did not write the last-message output file")
-            return output_file.read_text(encoding="utf-8")
+            return GeneratedArtifact(text=output_file.read_text(encoding="utf-8"))
 
 
 class OpenAICompatibleLLM:
@@ -113,14 +126,18 @@ class OpenAICompatibleLLM:
         base_url: str,
         api_key: str | None,
         model: str | None,
-        timeout_seconds: float = 120.0,
+        timeout_seconds: float = 300.0,
+        retry_attempts: int = 4,
+        retry_wait_seconds: float = 75.0,
     ) -> None:
         self._base_url = normalize_openai_base_url(base_url)
         self._api_key = api_key
         self._model = model
         self._timeout_seconds = timeout_seconds
+        self._retry_attempts = max(1, retry_attempts)
+        self._retry_wait_seconds = max(0.0, retry_wait_seconds)
 
-    def generate(self, request: InferenceRequest) -> str:
+    def generate(self, request: InferenceRequest) -> GeneratedArtifact:
         headers = {"Content-Type": "application/json"}
         if self._api_key:
             headers["Authorization"] = f"Bearer {self._api_key}"
@@ -132,13 +149,12 @@ class OpenAICompatibleLLM:
                 "messages": [{"role": "user", "content": request.prompt}],
                 "temperature": 0,
             }
-            response = client.post(
+            data = self._post_with_retries(
+                client,
                 f"{self._base_url}/chat/completions",
                 headers=headers,
-                json=payload,
+                payload=payload,
             )
-            response.raise_for_status()
-            data = response.json()
 
         try:
             content = data["choices"][0]["message"]["content"]
@@ -146,7 +162,7 @@ class OpenAICompatibleLLM:
             raise RuntimeError(f"Unexpected LLM response shape: {data}") from exc
         if not isinstance(content, str):
             raise RuntimeError(f"Unexpected LLM content type: {type(content).__name__}")
-        return content
+        return GeneratedArtifact(text=content)
 
     def _resolve_model(self, client: httpx.Client, headers: dict[str, str]) -> str:
         response = client.get(f"{self._base_url}/models", headers=headers)
@@ -159,6 +175,174 @@ class OpenAICompatibleLLM:
         if not isinstance(first, dict) or not isinstance(first.get("id"), str) or not first["id"].strip():
             raise RuntimeError(f"Unexpected model entry from {self._base_url}/models: {first}")
         return first["id"].strip()
+
+    def _post_with_retries(
+        self,
+        client: httpx.Client,
+        url: str,
+        *,
+        headers: dict[str, str],
+        payload: dict[str, Any],
+    ) -> dict[str, Any]:
+        last_error: Exception | None = None
+        for attempt in range(1, self._retry_attempts + 1):
+            try:
+                response = client.post(url, headers=headers, json=payload)
+                if response.status_code in {502, 503, 504}:
+                    raise httpx.HTTPStatusError(
+                        f"Transient upstream status: {response.status_code}",
+                        request=response.request,
+                        response=response,
+                    )
+                response.raise_for_status()
+                return response.json()
+            except (httpx.ReadTimeout, httpx.ConnectError, httpx.HTTPStatusError) as exc:
+                last_error = exc
+                if not is_retryable_http_error(exc) or attempt >= self._retry_attempts:
+                    raise
+                time.sleep(self._retry_wait_seconds)
+        if last_error:
+            raise last_error
+        raise RuntimeError("Unexpected retry state")
+
+
+IMAGE_SECTION_PATTERN = re.compile(r"(?ms)^# ([^\n]+)\n(.*?)(?=^# |\Z)")
+IMAGE_DIMENSIONS_PATTERN = re.compile(
+    r"(?im)^- Dimensions:\s*([0-9]+)\s*(?:px)?\s*x\s*([0-9]+)\s*(?:px)?\s*$"
+)
+
+
+class OpenAICompatibleImageModel:
+    def __init__(
+        self,
+        *,
+        base_url: str,
+        api_key: str | None,
+        model: str | None,
+        timeout_seconds: float = 900.0,
+        retry_attempts: int = 4,
+        retry_wait_seconds: float = 75.0,
+    ) -> None:
+        self._base_url = normalize_openai_base_url(base_url)
+        self._api_key = api_key
+        self._model = model
+        self._timeout_seconds = timeout_seconds
+        self._retry_attempts = max(1, retry_attempts)
+        self._retry_wait_seconds = max(0.0, retry_wait_seconds)
+
+    def generate(self, request: InferenceRequest) -> GeneratedArtifact:
+        headers = {"Content-Type": "application/json"}
+        if self._api_key:
+            headers["Authorization"] = f"Bearer {self._api_key}"
+
+        prompt, negative_prompt, size = parse_image_brief(request.prompt)
+        payload: dict[str, Any] = {
+            "model": request.model or self._model,
+            "prompt": prompt,
+            "size": size or "1024x1024",
+            "n": 1,
+            "output_format": request.output_format.value,
+        }
+        if not payload["model"]:
+            raise ValueError("Image model is required for image generation")
+        if negative_prompt:
+            payload["negative_prompt"] = negative_prompt
+
+        with httpx.Client(timeout=self._timeout_seconds) as client:
+            data = self._post_with_retries(
+                client,
+                f"{self._base_url}/images/generations",
+                headers=headers,
+                payload=payload,
+            )
+
+        try:
+            encoded = data["data"][0]["b64_json"]
+        except (KeyError, IndexError, TypeError) as exc:
+            raise RuntimeError(f"Unexpected image response shape: {data}") from exc
+        if not isinstance(encoded, str) or not encoded.strip():
+            raise RuntimeError(f"Image response did not include b64_json: {data}")
+        return GeneratedArtifact(binary=base64.b64decode(encoded))
+
+    def _post_with_retries(
+        self,
+        client: httpx.Client,
+        url: str,
+        *,
+        headers: dict[str, str],
+        payload: dict[str, Any],
+    ) -> dict[str, Any]:
+        last_error: Exception | None = None
+        for attempt in range(1, self._retry_attempts + 1):
+            try:
+                response = client.post(url, headers=headers, json=payload)
+                if response.status_code in {502, 503, 504}:
+                    raise httpx.HTTPStatusError(
+                        f"Transient upstream status: {response.status_code}",
+                        request=response.request,
+                        response=response,
+                    )
+                response.raise_for_status()
+                return response.json()
+            except (httpx.ReadTimeout, httpx.ConnectError, httpx.HTTPStatusError) as exc:
+                last_error = exc
+                if not is_retryable_http_error(exc) or attempt >= self._retry_attempts:
+                    raise
+                time.sleep(self._retry_wait_seconds)
+        if last_error:
+            raise last_error
+        raise RuntimeError("Unexpected retry state")
+
+
+def parse_image_brief(markdown: str) -> tuple[str, str | None, str | None]:
+    sections: dict[str, str] = {}
+    for match in IMAGE_SECTION_PATTERN.finditer(markdown):
+        sections[match.group(1).strip().lower()] = match.group(2).strip()
+
+    image_prompt = sections.get("image prompt")
+    if not image_prompt:
+        raise ValueError("Image brief is missing a '# Image Prompt' section")
+
+    prompt_parts = [image_prompt]
+    required_copy = sections.get("required on-image copy")
+    if required_copy:
+        copy_lines = clean_markdown_bullets(required_copy)
+        if not is_no_copy_instruction(copy_lines):
+            prompt_parts.append("Render the following on-image copy exactly:")
+            prompt_parts.extend(copy_lines)
+
+    negative_prompt = sections.get("negative prompt")
+    dimensions_match = IMAGE_DIMENSIONS_PATTERN.search(markdown)
+    size = None
+    if dimensions_match:
+        size = f"{dimensions_match.group(1)}x{dimensions_match.group(2)}"
+
+    return "\n\n".join(prompt_parts), negative_prompt.strip() if negative_prompt else None, size
+
+
+def clean_markdown_bullets(block: str) -> list[str]:
+    lines: list[str] = []
+    for raw_line in block.splitlines():
+        stripped = raw_line.strip()
+        if not stripped:
+            continue
+        lines.append(stripped[2:].strip() if stripped.startswith("- ") else stripped)
+    return lines
+
+
+def is_no_copy_instruction(lines: list[str]) -> bool:
+    if not lines:
+        return True
+    normalized = " ".join(line.strip().lower() for line in lines)
+    return "no on-image copy" in normalized or normalized.startswith("none")
+
+
+def is_retryable_http_error(exc: Exception) -> bool:
+    if isinstance(exc, (httpx.ReadTimeout, httpx.ConnectError)):
+        return True
+    if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code in {502, 503, 504}:
+        return True
+    return False
 
 
 def normalize_openai_base_url(base_url: str) -> str:
@@ -388,8 +572,10 @@ def render_steadyburn_verb_index_markdown(index: SteadyBurnVerbIndex) -> str:
     return "\n".join(lines) + "\n"
 
 
-def build_inference(config: ProviderConfig, cwd: Path):
+def build_inference(config: ProviderConfig, cwd: Path, modality: GenerationModality = GenerationModality.TEXT):
     if config.kind.value == "codex-cli":
+        if modality == GenerationModality.IMAGE:
+            raise ValueError("codex-cli is not supported for binary image generation")
         return CodexCliAgent(command=config.command, model=config.model, cwd=cwd)
 
     if config.kind.value == "openai":
@@ -402,15 +588,30 @@ def build_inference(config: ProviderConfig, cwd: Path):
             base_url=config.base_url or "https://api.openai.com/v1",
             api_key=api_key,
             model=config.model,
+            timeout_seconds=config.timeout_seconds or 300.0,
+            retry_attempts=config.retry_attempts,
+            retry_wait_seconds=config.retry_wait_seconds,
         )
 
     if config.kind.value == "openai-compatible":
         if not config.base_url:
             raise ValueError("--base-url or provider.base_url is required for openai-compatible")
+        if modality == GenerationModality.IMAGE:
+            return OpenAICompatibleImageModel(
+                base_url=config.base_url,
+                api_key=os.environ.get(config.api_key_env),
+                model=config.model,
+                timeout_seconds=config.timeout_seconds or 900.0,
+                retry_attempts=config.retry_attempts,
+                retry_wait_seconds=config.retry_wait_seconds,
+            )
         return OpenAICompatibleLLM(
             base_url=config.base_url,
             api_key=os.environ.get(config.api_key_env),
             model=config.model,
+            timeout_seconds=config.timeout_seconds or 300.0,
+            retry_attempts=config.retry_attempts,
+            retry_wait_seconds=config.retry_wait_seconds,
         )
 
     raise ValueError(f"Unsupported provider: {config.kind}")

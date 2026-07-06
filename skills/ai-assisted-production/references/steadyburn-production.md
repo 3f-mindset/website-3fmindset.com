@@ -249,6 +249,7 @@ python scripts/burn-pipeline.py run \
 The default text inference route is `openai-compatible` at `http://localhost:11434` with model `active`.
 Pipeline files may also include separate `providers.text`, `providers.image`, and `providers.audio`
 blocks. Use that split when the local text model cannot generate raster images or audio.
+The default local image model is `unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m`.
 
 ## Validation Checklist
 

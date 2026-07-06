@@ -13,6 +13,16 @@ class OutputFormat(str, Enum):
     MARKDOWN = "markdown"
     SVG = "svg"
     HTML = "html"
+    PNG = "png"
+    JPEG = "jpeg"
+
+    @property
+    def is_text(self) -> bool:
+        return self in {OutputFormat.MARKDOWN, OutputFormat.SVG, OutputFormat.HTML}
+
+    @property
+    def is_image(self) -> bool:
+        return self in {OutputFormat.PNG, OutputFormat.JPEG}
 
 
 class GenerationModality(str, Enum):
@@ -131,6 +141,9 @@ class ProviderConfig(BaseModel):
     base_url: str | None = None
     api_key_env: str = "OPENAI_API_KEY"
     command: str = "codex"
+    timeout_seconds: float | None = None
+    retry_attempts: int = 4
+    retry_wait_seconds: float = 75.0
 
 
 class GenerateCommand(BaseModel):
@@ -148,9 +161,14 @@ class InferenceRequest(BaseModel):
     model: str | None = None
 
 
+class GeneratedArtifact(BaseModel):
+    text: str | None = None
+    binary: bytes | None = None
+
+
 class InferencePort(Protocol):
-    def generate(self, request: InferenceRequest) -> str:
-        """Return only generated file contents."""
+    def generate(self, request: InferenceRequest) -> GeneratedArtifact:
+        """Return a generated text or binary artifact."""
 
 
 class FileStorePort(Protocol):
@@ -159,6 +177,9 @@ class FileStorePort(Protocol):
 
     def write_text(self, path: Path, content: str, force: bool) -> None:
         """Write UTF-8 text to a path."""
+
+    def write_bytes(self, path: Path, content: bytes, force: bool) -> None:
+        """Write bytes to a path."""
 
     def exists(self, path: Path) -> bool:
         """Return whether a path exists."""
@@ -198,6 +219,9 @@ def resolve_template_value(data: dict[str, Any], key: str) -> Any:
 
 
 def build_generation_prompt(command: GenerateCommand) -> str:
+    if command.step.modality == GenerationModality.IMAGE and command.step.format.is_image:
+        return command.prompt_template.strip()
+
     lines = [
         "You are generating one file for the 3F Mindset SteadyBurn content pipeline.",
         "",
@@ -269,6 +293,8 @@ def build_generation_prompt(command: GenerateCommand) -> str:
 
 
 def validate_generated_content(content: str, output_format: OutputFormat) -> None:
+    if not output_format.is_text:
+        return
     if not content.strip():
         raise ValueError("Generated output is empty")
 
@@ -287,6 +313,8 @@ def validate_generated_content(content: str, output_format: OutputFormat) -> Non
 
 
 def sanitize_generated_content(content: str, output_format: OutputFormat) -> str:
+    if not output_format.is_text:
+        return content
     cleaned = content.strip()
     if cleaned.startswith("```"):
         lines = cleaned.splitlines()

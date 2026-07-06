@@ -103,3 +103,5 @@ Output shape:
 - `# Negative Prompt`
 - `# Required On-Image Copy`
 - `# Visual Checklist`
+
+Set the dimensions line to `1440px x 1080px`.

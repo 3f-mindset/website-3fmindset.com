@@ -22,6 +22,7 @@ from .infrastructure import (
 DEFAULT_PROVIDER = ProviderKind.OPENAI_COMPATIBLE.value
 DEFAULT_OPENAI_COMPATIBLE_BASE_URL = "http://localhost:11434"
 DEFAULT_TEXT_MODEL = "active"
+DEFAULT_IMAGE_MODEL = "unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m"
 
 
 def main() -> None:
@@ -76,6 +77,7 @@ def main() -> None:
         step = step_from_paths(
             step_id=args.step_id,
             output_format=args.format,
+            modality=GenerationModality(args.modality),
             prompt_file=Path(args.prompt_file),
             output=Path(args.output),
             inputs=[Path(value) for value in args.input],
@@ -90,7 +92,10 @@ def main() -> None:
             force=args.force,
             variables=parse_key_value_pairs(args.var),
         )
-        print(f"Wrote: {step.output} ({len(content)} chars)")
+        if content:
+            print(f"Wrote: {step.output} ({len(content)} chars)")
+        else:
+            print(f"Wrote: {step.output}")
         return
 
     if args.command == "run":
@@ -169,7 +174,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="Default image inference provider.",
     )
-    parser.add_argument("--image-model", default=None, help="Default image model.")
+    parser.add_argument("--image-model", default=DEFAULT_IMAGE_MODEL, help="Default image model.")
     parser.add_argument("--image-base-url", default=None, help="Default image OpenAI-compatible API base URL.")
     parser.add_argument("--image-api-key-env", default=None, help="Image API key environment variable.")
     parser.add_argument("--image-codex-bin", default=None, help="Codex CLI executable when using codex-cli for image.")
@@ -221,7 +226,8 @@ def build_parser() -> argparse.ArgumentParser:
     step = subparsers.add_parser("generate-step", help="Generate one artifact.")
     add_context_args(step)
     step.add_argument("--step-id", default="manual")
-    step.add_argument("--format", choices=["markdown", "svg", "html"], required=True)
+    step.add_argument("--modality", choices=[mode.value for mode in GenerationModality], default=GenerationModality.TEXT.value)
+    step.add_argument("--format", choices=["markdown", "svg", "html", "png", "jpeg"], required=True)
     step.add_argument("--prompt-file", required=True)
     step.add_argument("--input", action="append", default=[], help="Input file. Repeatable.")
     step.add_argument("--output", required=True)
@@ -295,7 +301,7 @@ def build_pipeline(
     registry = load_model_registry(files, registry_path)
     return BurnPipeline(
         files=files,
-        inference_factory=lambda provider: build_inference(provider, cwd),
+        inference_factory=lambda provider, modality: build_inference(provider, cwd, modality),
         providers=providers,
         registry=registry,
         registry_path=registry_path,
@@ -542,11 +548,17 @@ target_dir = "{escape_toml_string(target_dir_string)}"
 kind = "openai-compatible"
 base_url = "http://localhost:11434"
 model = "active"
+timeout_seconds = 300
+retry_attempts = 4
+retry_wait_seconds = 75
 
 [providers.image]
 kind = "openai-compatible"
 base_url = "http://localhost:11434"
-model = "IMAGE_MODEL_NAME"
+model = "unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m"
+timeout_seconds = 900
+retry_attempts = 4
+retry_wait_seconds = 75
 
 [providers.audio]
 kind = "openai-compatible"
@@ -666,6 +678,18 @@ step = "worksheet_masked"
 alias = "worksheet_masked"
 
 [[steps]]
+id = "promo_image"
+format = "png"
+modality = "image"
+prompt_file = "automation/prompts/burn/render-image.md"
+depends_on = ["promo"]
+output = "{target_dir_string}/promo.png"
+
+[[steps.inputs]]
+step = "promo"
+alias = "asset_prompt"
+
+[[steps]]
 id = "banner"
 format = "markdown"
 prompt_file = "automation/prompts/burn/banner-image.md"
@@ -683,6 +707,49 @@ alias = "worksheet_masked"
 [[steps.inputs]]
 step = "promo"
 alias = "promo"
+
+[[steps]]
+id = "banner_image"
+format = "png"
+modality = "image"
+prompt_file = "automation/prompts/burn/render-image.md"
+depends_on = ["banner"]
+output = "{target_dir_string}/banner.png"
+
+[[steps.inputs]]
+step = "banner"
+alias = "asset_prompt"
+
+[[steps]]
+id = "cover"
+format = "markdown"
+prompt_file = "automation/prompts/burn/cover-image.md"
+depends_on = ["context", "lesson", "banner"]
+output = "{target_dir_string}/COVER_PROMPT.md"
+
+[[steps.inputs]]
+step = "context"
+alias = "context"
+
+[[steps.inputs]]
+step = "lesson"
+alias = "lesson"
+
+[[steps.inputs]]
+step = "banner"
+alias = "banner"
+
+[[steps]]
+id = "cover_image"
+format = "png"
+modality = "image"
+prompt_file = "automation/prompts/burn/render-image.md"
+depends_on = ["cover"]
+output = "{target_dir_string}/cover.png"
+
+[[steps.inputs]]
+step = "cover"
+alias = "asset_prompt"
 
 [[steps]]
 id = "page_copy"

@@ -38,8 +38,10 @@ Before generating content, read `references/steadyburn-production.md`. It define
 8. Treat `CONTEXT.md` as the model-definition step. Its `Actionable VERB` must be new; the pipeline injects previously used verbs as forbidden constraints and then records the newly generated verb back into the registry after success.
 9. Use the marketing-assets phase after Content Crusher so promotional creative prompt assets inherit the same topic, pain, promise, and worksheet silhouette before downstream `png/jpeg` rendering.
 10. Render production derivatives:
-   - lesson/instructions/context/GPT PDFs with `scripts/build-the-burn-lesson-pdf.py`
-   - worksheet PDFs and JPGs with `scripts/build-the-burn-worksheet-pdf.py`
+
+- lesson/instructions/context/GPT PDFs with `scripts/build-the-burn-lesson-pdf.py`
+- worksheet PDFs and JPGs with `scripts/build-the-burn-worksheet-pdf.py`
+
 11. Validate that Markdown files contain plain Markdown only and SVG files start with `<svg`.
 
 ## Generation Routes
@@ -97,6 +99,7 @@ uv run burn-pipeline generate-step \
 The default text inference route is `openai-compatible` at `http://localhost:11434` with model `active`.
 Pipeline files can also define separate `providers.text`, `providers.image`, and `providers.audio`
 blocks so future image or audio steps can run on different models without changing the text flow.
+The default local image model is `unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m`.
 
 ## Guardrails
 

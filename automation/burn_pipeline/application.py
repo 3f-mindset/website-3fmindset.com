@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
@@ -60,7 +61,6 @@ class BurnPipeline:
         )
         named_inputs = self._load_inputs(step, state=state or {}, steps_by_id=steps_by_id or {})
         output_path = self._resolve_output_path(step=step, steps_by_id=steps_by_id or {})
-        prompt_template = self._files.read_text(step.prompt_file)
         prompt = build_generation_prompt(
             GenerateCommand(
                 step=step.model_copy(update={"output": output_path}),
@@ -69,20 +69,43 @@ class BurnPipeline:
                 named_inputs=named_inputs,
             )
         )
-        content = self._inference_for_step(step).generate(
+        artifact = self._inference_for_step(step).generate(
             InferenceRequest(prompt=prompt, output_format=step.format)
         )
-        content = sanitize_generated_content(content, step.format)
-        validate_generated_content(content, step.format)
-        self._files.write_text(output_path, content, force=force)
-        self._update_registry_for_step(step=step, context=context, output_path=output_path, content=content)
-        return content
+        if step.format.is_text:
+            content = sanitize_generated_content(artifact.text or "", step.format)
+            validate_generated_content(content, step.format)
+            self._files.write_text(output_path, content, force=force)
+            self._update_registry_for_step(step=step, context=context, output_path=output_path, content=content)
+            return content
+
+        binary = artifact.binary or b""
+        if not binary:
+            raise ValueError(f"Generated binary output is empty for step: {step.id}")
+        self._files.write_bytes(output_path, binary, force=force)
+        return ""
 
     def run_pipeline(self, spec: PipelineSpec, force: bool) -> None:
         steps_by_id = {step.id: step for step in spec.steps}
+        step_order = {step.id: index for index, step in enumerate(spec.steps)}
         state: dict[str, dict[str, str]] = {}
+        pending = list(spec.steps)
+        current_provider_key: tuple[str, ...] | None = None
 
-        for step in spec.steps:
+        while pending:
+            ready = [step for step in pending if all(step_id in state for step_id in step.depends_on)]
+            if not ready:
+                unresolved = ", ".join(step.id for step in pending)
+                raise ValueError(f"No runnable steps remain. Pending: {unresolved}")
+
+            unknown_dependencies: list[str] = []
+            for step in ready:
+                unknown_dependencies.extend(step_id for step_id in step.depends_on if step_id not in steps_by_id)
+            if unknown_dependencies:
+                raise ValueError(f"Unknown dependency step(s): {', '.join(sorted(set(unknown_dependencies)))}")
+
+            step = self._choose_next_step(ready, current_provider_key=current_provider_key, step_order=step_order)
+            pending.remove(step)
             missing = [step_id for step_id in step.depends_on if step_id not in state]
             unknown = [step_id for step_id in step.depends_on if step_id not in steps_by_id]
             if unknown:
@@ -102,6 +125,29 @@ class BurnPipeline:
                 steps_by_id=steps_by_id,
             )
             state[step.id] = {"content": content, "path": str(output_path)}
+            current_provider_key = self._provider_key_for_step(step)
+
+    def _choose_next_step(
+        self,
+        ready: list[StepSpec],
+        *,
+        current_provider_key: tuple[str, ...] | None,
+        step_order: dict[str, int],
+    ) -> StepSpec:
+        if current_provider_key is not None:
+            same_provider = [step for step in ready if self._provider_key_for_step(step) == current_provider_key]
+            if same_provider:
+                return min(same_provider, key=lambda step: step_order[step.id])
+
+        grouped: dict[tuple[str, ...], list[StepSpec]] = defaultdict(list)
+        for step in ready:
+            grouped[self._provider_key_for_step(step)].append(step)
+
+        best_key = min(
+            grouped,
+            key=lambda key: (-len(grouped[key]), min(step_order[step.id] for step in grouped[key])),
+        )
+        return min(grouped[best_key], key=lambda step: step_order[step.id])
 
     def render_step_prompt(
         self,
@@ -254,9 +300,21 @@ class BurnPipeline:
         provider = self._providers.get(modality)
         if provider is None:
             raise ValueError(f"No provider configured for step modality: {modality.value}")
-        inference = self._inference_factory(provider)
+        inference = self._inference_factory(provider, step.modality)
         self._inference_cache[modality] = inference
         return inference
+
+    def _provider_key_for_step(self, step: StepSpec) -> tuple[str, ...]:
+        provider = self._providers.get(step.modality)
+        if provider is None:
+            return (step.modality.value, "missing")
+        return (
+            step.modality.value,
+            provider.kind.value,
+            provider.base_url or "",
+            provider.model or "",
+            provider.command or "",
+        )
 
     def _serialize_registry(self) -> str:
         import json
@@ -268,6 +326,7 @@ def step_from_paths(
     *,
     step_id: str,
     output_format: str,
+    modality: GenerationModality = GenerationModality.TEXT,
     prompt_file: Path,
     output: Path,
     inputs: list[Path],
@@ -275,6 +334,7 @@ def step_from_paths(
     return StepSpec(
         id=step_id,
         format=output_format,
+        modality=modality,
         prompt_file=prompt_file,
         output=output,
         inputs=inputs,

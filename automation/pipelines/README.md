@@ -19,6 +19,8 @@ infrastructure layer.
 
 Default text provider: OpenAI-compatible inference at `http://localhost:11434`.
 Default text model: `active`.
+Default image provider: OpenAI-compatible inference at `http://localhost:11434`.
+Default image model: `unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m`.
 
 ```sh
 uv run burn-pipeline generate-step \
@@ -60,7 +62,7 @@ model = "active"
 [providers.image]
 kind = "openai-compatible"
 base_url = "http://localhost:11434"
-model = "IMAGE_MODEL_NAME"
+model = "unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m"
 
 [providers.audio]
 kind = "openai-compatible"
