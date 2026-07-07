@@ -8,8 +8,16 @@ series:
   - SteadyBurn
 
 tags:
-  - tag1
-  - tag2
+  - beliefs
+  - alignment
+  - integrity
+  - discipline
+  - habits
+  - values
+  - identity
+  - purpose
+  - structure
+  - consistency
 
 cover:
   image: "cover.png"

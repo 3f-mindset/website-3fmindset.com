@@ -8,8 +8,16 @@ series:
   - SteadyBurn
 
 tags:
-  - tag1
-  - tag2
+  - values
+  - accountability
+  - habits
+  - repetition
+  - discipline
+  - structure
+  - attention
+  - environment
+  - commitment
+  - consistency
 
 cover:
   image: "cover.png"
