@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">SB28 Worksheet, Values Alignment Check Censored Heat Map</title>
+    <desc id="desc">Landscape worksheet on a white background with the original layout, visible
+        title and ALIGN letters, and all other content replaced by grayscale censor blocks.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .c1 { fill: #eeeeee; }
+      .c2 { fill: #e2e2e2; }
+      .c3 { fill: #d4d4d4; }
+      .c4 { fill: #c7c7c7; }
+      .c5 { fill: #b8b8b8; }
+      .c6 { fill: #a9a9a9; }
+    </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <text id="mainTitle" class="title" x="40" y="48">SB28 | Values Alignment Check</text>
+    <rect class="c3" x="40" y="64" width="286" height="16" rx="3" />
+    <text class="verb" x="928" y="58">ALIGN</text>
+
+    <rect class="box" x="40" y="98" width="1020" height="78" />
+    <rect class="c5" x="62" y="114" width="62" height="14" rx="3" />
+    <rect class="c2" x="62" y="138" width="820" height="11" rx="3" />
+    <rect class="c3" x="62" y="157" width="700" height="11" rx="3" />
+
+    <rect class="mini" x="40" y="198" width="200" height="220" />
+    <text class="letter" x="62" y="236">A</text>
+    <rect class="c5" x="102" y="210" width="118" height="14" rx="3" />
+    <rect class="c2" x="102" y="232" width="96" height="9" rx="3" />
+    <rect class="c3" x="62" y="262" width="48" height="12" rx="3" />
+    <rect class="c1" x="62" y="284" width="156" height="10" rx="3" />
+    <rect class="c4" x="62" y="315" width="104" height="12" rx="3" />
+    <rect class="c2" x="62" y="340" width="156" height="10" rx="3" />
+    <rect class="c2" x="62" y="366" width="156" height="10" rx="3" />
+    <rect class="c2" x="62" y="392" width="156" height="10" rx="3" />
+
+    <rect class="mini" x="260" y="198" width="260" height="220" />
+    <text class="letter" x="282" y="236">L</text>
+    <rect class="c6" x="322" y="210" width="158" height="14" rx="3" />
+    <rect class="c2" x="322" y="232" width="126" height="9" rx="3" />
+    <rect class="c4" x="282" y="258" width="176" height="12" rx="3" />
+    <rect class="c1" x="282" y="282" width="216" height="10" rx="3" />
+    <rect class="c1" x="282" y="307" width="216" height="10" rx="3" />
+    <rect class="c1" x="282" y="332" width="216" height="10" rx="3" />
+    <rect class="c5" x="282" y="360" width="184" height="12" rx="3" />
+    <rect class="c2" x="282" y="384" width="216" height="10" rx="3" />
+    <rect class="c2" x="282" y="399" width="216" height="10" rx="3" />
+
+    <rect class="mini" x="540" y="198" width="250" height="220" />
+    <text class="letter" x="562" y="236">I</text>
+    <rect class="c6" x="602" y="210" width="148" height="14" rx="3" />
+    <rect class="c2" x="602" y="232" width="156" height="9" rx="3" />
+    <rect class="c4" x="562" y="260" width="92" height="12" rx="3" />
+    <rect class="c1" x="562" y="284" width="206" height="10" rx="3" />
+    <rect class="c5" x="562" y="312" width="146" height="12" rx="3" />
+    <rect class="c2" x="562" y="336" width="206" height="10" rx="3" />
+    <rect class="c2" x="562" y="362" width="206" height="10" rx="3" />
+    <rect class="c3" x="562" y="390" width="198" height="9" rx="3" />
+
+    <rect class="mini" x="810" y="198" width="250" height="220" />
+    <text class="letter" x="832" y="236">G</text>
+    <rect class="c6" x="872" y="210" width="146" height="14" rx="3" />
+    <rect class="c2" x="872" y="232" width="156" height="9" rx="3" />
+    <rect class="c4" x="832" y="260" width="112" height="12" rx="3" />
+    <rect class="c1" x="832" y="284" width="206" height="10" rx="3" />
+    <rect class="c1" x="832" y="310" width="206" height="10" rx="3" />
+    <rect class="c5" x="832" y="340" width="138" height="12" rx="3" />
+    <rect class="c2" x="832" y="364" width="206" height="10" rx="3" />
+    <rect class="c2" x="832" y="390" width="206" height="10" rx="3" />
+
+    <rect class="box" x="40" y="448" width="1020" height="180" />
+    <text class="letter" x="62" y="493">N</text>
+    <rect class="c6" x="105" y="466" width="146" height="14" rx="3" />
+    <rect class="c2" x="105" y="492" width="762" height="10" rx="3" />
+
+    <rect class="mini" x="62" y="522" width="300" height="80" />
+    <rect class="c5" x="82" y="538" width="104" height="13" rx="3" />
+    <rect class="c2" x="82" y="560" width="136" height="9" rx="3" />
+    <rect class="c1" x="82" y="580" width="258" height="10" rx="3" />
+
+    <rect class="mini" x="400" y="522" width="300" height="80" />
+    <rect class="c5" x="420" y="538" width="122" height="13" rx="3" />
+    <rect class="c2" x="420" y="560" width="156" height="9" rx="3" />
+    <rect class="c1" x="420" y="580" width="258" height="10" rx="3" />
+
+    <rect class="mini" x="738" y="522" width="300" height="80" />
+    <rect class="c5" x="758" y="538" width="128" height="13" rx="3" />
+    <rect class="c2" x="758" y="560" width="166" height="9" rx="3" />
+    <rect class="c1" x="758" y="580" width="258" height="10" rx="3" />
+
+    <rect class="box" x="40" y="652" width="1020" height="95" />
+    <rect class="c6" x="62" y="670" width="118" height="13" rx="3" />
+    <rect class="c4" x="62" y="698" width="232" height="11" rx="3" />
+    <rect class="c1" x="310" y="698" width="728" height="10" rx="3" />
+    <rect class="c4" x="62" y="724" width="164" height="11" rx="3" />
+    <rect class="c2" x="240" y="724" width="798" height="10" rx="3" />
+
+    <rect class="mini" x="40" y="770" width="320" height="48" />
+    <text class="num" x="58" y="802">1</text>
+    <rect class="c6" x="88" y="782" width="146" height="12" rx="3" />
+    <rect class="c2" x="88" y="802" width="188" height="8" rx="3" />
+
+    <rect class="mini" x="390" y="770" width="320" height="48" />
+    <text class="num" x="408" y="802">2</text>
+    <rect class="c6" x="438" y="782" width="136" height="12" rx="3" />
+    <rect class="c2" x="438" y="802" width="206" height="8" rx="3" />
+
+    <rect class="mini" x="740" y="770" width="320" height="48" />
+    <text class="num" x="758" y="802">3</text>
+    <rect class="c6" x="788" y="782" width="156" height="12" rx="3" />
+    <rect class="c2" x="788" y="802" width="222" height="8" rx="3" />
+
+    <circle class="c5" cx="250" cy="308" r="3" />
+    <circle class="c5" cx="530" cy="308" r="3" />
+    <circle class="c5" cx="800" cy="308" r="3" />
+    <rect class="c3" x="240" y="306" width="20" height="4" rx="2" />
+    <rect class="c3" x="520" y="306" width="20" height="4" rx="2" />
+    <rect class="c3" x="790" y="306" width="20" height="4" rx="2" />
+</svg>
