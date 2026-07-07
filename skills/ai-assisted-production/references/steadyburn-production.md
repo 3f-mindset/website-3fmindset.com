@@ -7,10 +7,11 @@ Use these repo locations:
 - `content/letters/`: SteadyBurn letter folders.
 - `automation/prompts/burn/`: prompt templates for the generation harness. Many may be placeholders.
 - `automation/pipelines/burn-all.template.toml`: canonical step order and file mapping.
-- `automation/pipelines/YYYY-MM-DD-slug.toml`: per-letter pipeline plans created by `init-production`.
+- `content/letters/YYYY-MM-DD-slug/pipeline.toml`: per-letter pipeline plans created by `init-production`.
 - `automation/pipelines/model-registry.json`: tracked registry of previously used worksheet models and actionable verbs.
 - `automation/pipelines/steadyburn-verb-index.md`: numbered SteadyBurn series index starting at 1, including confirmed, inferred, and missing verb slots.
-- `content/letters/YYYY-MM-DD-slug/PRODUCTION_BRIEF.md`: the intake file that stores the user's inspiration and becomes the root pipeline input.
+- `content/letters/YYYY-MM-DD-slug/SEED.md`: the intake file that stores the user's inspiration before context generation.
+- `content/letters/YYYY-MM-DD-slug/CONTEXT.md`: the generated content-crusher context that becomes the root source of truth for the rest of the pipeline.
 - `scripts/codex-generate-burn-file.sh`: older single-file Codex generation harness.
 - `scripts/build-the-burn-lesson-pdf.py`: renders Markdown artifacts to PDFs.
 - `scripts/build-the-burn-worksheet-pdf.py`: renders worksheet SVGs to PDF and JPG.
@@ -34,7 +35,7 @@ As of the current repo state, the most complete recent examples are:
 
 A completed AI-assisted production usually contains:
 
-- `PRODUCTION_BRIEF.md`: structured intake document holding the user's inspiration, notes, and constraints.
+- `SEED.md`: structured intake document holding the user's inspiration, notes, and constraints.
 - `index.md`: public Hugo letter with frontmatter, `{{< audio >}}`, body sections, and cover metadata.
 - `LESSON.md`: core teaching script, usually headed `# THE LESSON`, `# THE SYSTEM`, and `# THE COMPONENT`.
 - `INSTRUCTIONS.md`: guided worksheet process with an introduction and one section per model letter or step.
@@ -57,14 +58,14 @@ Some older folders use week-specific names such as `SB19-lesson.md` or `FORGED.s
 
 Follow this order unless the user gives a narrower task:
 
-1. Start from the target `index.md` draft or topic brief.
-2. Write or revise `PRODUCTION_BRIEF.md` from the user's inspiration.
-3. Generate `LESSON.md`.
-4. Generate `INSTRUCTIONS.md` from `LESSON.md`.
-5. Generate `CONTEXT.md` from `LESSON.md`.
-6. Use the registry as a hard constraint during `CONTEXT.md` generation so the new `Actionable VERB` is not reused.
-7. Record the new `Actionable VERB` back into the registry after `CONTEXT.md` is generated.
-8. Generate `WORKSHEET.svg` from `LESSON.md` and `INSTRUCTIONS.md`.
+1. Start from the user's seed document or the target `index.md` draft.
+2. Write or revise `SEED.md` from the user's inspiration.
+3. Generate `CONTEXT.md` from `SEED.md`.
+4. Use the registry as a hard constraint during `CONTEXT.md` generation so the new `Actionable VERB` is not reused.
+5. Record the new `Actionable VERB` back into the registry after `CONTEXT.md` is generated.
+6. Generate `LESSON.md` from `CONTEXT.md`, `SEED.md`, and the draft `index.md`.
+7. Generate `INSTRUCTIONS.md` from `LESSON.md` and `CONTEXT.md`.
+8. Generate `WORKSHEET.svg` from `CONTEXT.md`, `LESSON.md`, and `INSTRUCTIONS.md`.
 9. Generate `WORKSHEET_MASKED.svg` from `WORKSHEET.svg`.
 10. Generate `PROMO_PROMPT.md` in the marketing-assets phase from `CONTEXT.md` and `WORKSHEET_MASKED.svg`.
 11. Generate `BANNER_PROMPT.md` in the marketing-assets phase from `CONTEXT.md`, `WORKSHEET_MASKED.svg`, and the promo brief so the landing-page hero continues the same campaign.
@@ -72,7 +73,7 @@ Follow this order unless the user gives a narrower task:
 13. Generate `LANDING_PAGE.html` in the marketing-assets phase from `CONTEXT.md`, the banner brief, and the page-copy brief.
 14. Generate `WORKSHEET_PAGE.md` in the marketing-assets phase as the Hugo worksheet-page prototype from `CONTEXT.md`, the promo brief, and the page-copy brief.
 15. Generate `GPT.md` from `CONTEXT.md` and `INSTRUCTIONS.md`.
-16. Regenerate or refine final `index.md` from `LESSON.md` while preserving Hugo frontmatter.
+16. Regenerate or refine final `index.md` from `LESSON.md` and `CONTEXT.md` while preserving Hugo frontmatter.
 17. Generate `NEWSLETTER_EMAIL.md` after the public letter so the email reflects the finished essay, packet, and weekly coach.
 18. Generate `COMMUNITY_POST.md` after the public letter so the group teaser reflects the essay opening and the coming lesson.
 19. Render PDFs/JPGs and downstream raster assets as needed.
@@ -163,7 +164,7 @@ After frontmatter, include `{{< audio >}}`, then the public-facing letter. The p
 
 ## Local Commands
 
-Create a new letter folder:
+Create a blank seed-first letter folder:
 
 ```sh
 uv run burn-pipeline init-production --title "Letter Title"
@@ -173,6 +174,18 @@ Backup path:
 
 ```sh
 python scripts/burn-pipeline.py init-production --title "Letter Title"
+```
+
+Create a real production from a seed document:
+
+```sh
+uv run burn-pipeline seed-production --seed-file path/to/seed.md
+```
+
+Backup path:
+
+```sh
+python scripts/burn-pipeline.py seed-production --seed-file path/to/seed.md
 ```
 
 Refresh the developed-model registry from historical productions:
@@ -203,7 +216,7 @@ Inspect the rendered prompt for one step:
 
 ```sh
 uv run burn-pipeline render-prompt \
-  --pipeline automation/pipelines/YYYY-MM-DD-slug.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
   --step-id lesson
 ```
 
@@ -211,7 +224,7 @@ Backup path:
 
 ```sh
 python scripts/burn-pipeline.py render-prompt \
-  --pipeline automation/pipelines/YYYY-MM-DD-slug.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
   --step-id lesson
 ```
 
@@ -234,7 +247,7 @@ Run the pipeline dry-run:
 
 ```sh
 uv run burn-pipeline run \
-  --pipeline automation/pipelines/YYYY-MM-DD-slug.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
   --dry-run
 ```
 
@@ -242,7 +255,7 @@ Backup path:
 
 ```sh
 python scripts/burn-pipeline.py run \
-  --pipeline automation/pipelines/YYYY-MM-DD-slug.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
   --dry-run
 ```
 
@@ -254,7 +267,8 @@ The default local image model is `unsloth-qwen-image-2512-gguf-qwen-image-2512-q
 ## Validation Checklist
 
 - The target folder has the expected Markdown and SVG source files.
-- `PRODUCTION_BRIEF.md` reflects the latest user direction.
+- `SEED.md` reflects the latest user direction.
+- `CONTEXT.md` matches the intended title, promise, slug, and worksheet model.
 - `automation/pipelines/model-registry.json` includes the current set of developed verbs.
 - `automation/pipelines/steadyburn-verb-index.md` numbers the SteadyBurn letters correctly and shows confirmed vs inferred vs missing verbs.
 - Markdown source files do not start with a Markdown fence.

@@ -1,6 +1,6 @@
 Write the final public `index.md` for "{{context.title}}".
 
-Use the appended inputs named `draft_index`, `lesson`, `brief`, and `context`.
+Use the appended inputs named `draft_index`, `lesson`, `context`, and `seed`.
 
 Return the complete file, including frontmatter.
 
@@ -112,3 +112,5 @@ Style:
 
 Final requirement:
 - Each expanded section should end with stronger clarity and authority than it began with.
+- Treat `context` as the primary source of truth for final frontmatter title, summary, and transformation arc.
+- Use `seed` only to sharpen specifics, scenes, and grounded details where it strengthens the public letter.

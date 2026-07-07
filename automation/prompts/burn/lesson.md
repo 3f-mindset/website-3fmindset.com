@@ -1,8 +1,13 @@
 Write `LESSON.md` for "{{context.title}}" dated {{context.date}}.
 
-Use the appended inputs named `brief` and `draft_index`.
+Use the appended inputs named `context`, `seed`, and `draft_index`.
 
 Return finished Markdown only.
+
+Source-of-truth rule:
+- Treat `context` as the primary source of truth for the title, promise, audience tension, action model, and transformation.
+- Use `seed` to deepen specificity, scenes, raw language, and constraints.
+- If `context`, `seed`, and `draft_index` disagree, `context` wins.
 
 Use these visible output sections unless the user explicitly asks for something else:
 - `# THE LESSON`
@@ -106,8 +111,8 @@ Before finishing confirm: one lesson, one component, one transformation, no drif
 
 Additional lesson-step requirements:
 - Use {{variables.voice}} prose.
-- Build from the production brief's actual tension, scenes, and language wherever they are strong.
-- Clean up fragments and repetition from the brief rather than copying them raw.
+- Build from the seed document's actual tension, scenes, and language wherever they are strong.
+- Clean up fragments and repetition from the seed rather than copying them raw.
 - Make the system section place the lesson inside the 3F worldview only after the human problem is clear.
 - Make the component section define the chosen component as both metaphor and mechanism.
 - Make `THE CHALLENGE` concrete and executable now, not someday.

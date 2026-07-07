@@ -92,12 +92,33 @@ python scripts/burn-pipeline.py init-production \
 
 This creates:
 
-- `content/letters/YYYY-MM-DD-slug/PRODUCTION_BRIEF.md`
+- `content/letters/YYYY-MM-DD-slug/SEED.md`
 - `content/letters/YYYY-MM-DD-slug/index.md`
-- `automation/pipelines/YYYY-MM-DD-slug.toml`
+- `content/letters/YYYY-MM-DD-slug/pipeline.toml`
 
-Fill `PRODUCTION_BRIEF.md` with the inspiration, scenes, constraints, and worksheet intent.
-The skill should populate that file after talking with the user.
+Fill `SEED.md` with the inspiration, scenes, constraints, and worksheet intent.
+That seed document is the first human input to the workflow.
+
+To turn a real seed document into a final letter folder with generated `CONTEXT.md`:
+
+```sh
+uv run burn-pipeline seed-production \
+  --seed-file path/to/seed.md \
+  --date 2026-07-10
+```
+
+Backup path:
+
+```sh
+python scripts/burn-pipeline.py seed-production \
+  --seed-file path/to/seed.md \
+  --date 2026-07-10
+```
+
+That route generates `CONTEXT.md` first, derives the final title and slug from it,
+then writes `SEED.md`, `CONTEXT.md`, `index.md`, and `pipeline.toml` into the final
+letter folder. After that, `CONTEXT.md` becomes the primary source of truth for the
+rest of the pipeline.
 
 The generated pipeline now also includes a marketing-assets phase. That phase emits
 prompt/spec files such as `PROMO_PROMPT.md`, which are intended to feed downstream
@@ -129,8 +150,8 @@ python scripts/burn-pipeline.py sync-steadyburn-verb-index
 The model registry now merges confirmed `CONTEXT.md` verbs with verb evidence from the
 series-wide SteadyBurn index, so older or inferred verbs can still be treated as used.
 Normal pipeline runs also load this registry automatically before prompt rendering.
-When the `context` step succeeds, the newly generated `Actionable VERB` is written back
-into the registry so future Content Crusher prompts can forbid it.
+When `seed-production` generates `CONTEXT.md`, the newly generated `Actionable VERB`
+is written back into the registry so future Content Crusher prompts can forbid it.
 
 ## Step Dependencies And Composable Inputs
 
@@ -170,7 +191,7 @@ Use prompt rendering to inspect what one step will see before calling a model:
 
 ```sh
 uv run burn-pipeline render-prompt \
-  --pipeline automation/pipelines/YYYY-MM-DD-slug.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
   --step-id lesson
 ```
 
@@ -178,6 +199,6 @@ Backup path:
 
 ```sh
 python scripts/burn-pipeline.py render-prompt \
-  --pipeline automation/pipelines/YYYY-MM-DD-slug.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
   --step-id lesson
 ```

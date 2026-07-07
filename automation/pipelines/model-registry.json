@@ -69,6 +69,20 @@
       "slug": "stop-letting-old-stories-control-your-future",
       "date": "2026-07-03",
       "source_path": "content\\letters\\2026-07-03-stop-letting-old-stories-control-your-future\\CONTEXT.md"
+    },
+    {
+      "verb": "ALIGN",
+      "title": "When Your Life Stops Matching Your Principles",
+      "slug": "when-your-life-stops-matching-your-principles",
+      "date": "2026-07-10",
+      "source_path": "content\\letters\\2026-07-10-when-your-life-stops-matching-your-principles\\CONTEXT.md"
+    },
+    {
+      "verb": "BRIDGE",
+      "title": "Values Alignment Check",
+      "slug": "values-alignment-check",
+      "date": "2026-07-10",
+      "source_path": "tmp\\seed-production\\2026-07-10-values-alignment-check\\CONTEXT.md"
     }
   ]
 }

@@ -36,33 +36,22 @@ prompt_file = "automation/prompts/burn/lesson.md"
 output = "content/letters/YYYY-MM-DD-slug/LESSON.md"
 
 [[steps.inputs]]
-path = "content/letters/YYYY-MM-DD-slug/PRODUCTION_BRIEF.md"
-alias = "brief"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
+alias = "context"
+
+[[steps.inputs]]
+path = "content/letters/YYYY-MM-DD-slug/SEED.md"
+alias = "seed"
 
 [[steps.inputs]]
 path = "content/letters/YYYY-MM-DD-slug/index.md"
 alias = "draft_index"
 
 [[steps]]
-id = "context"
-format = "markdown"
-prompt_file = "automation/prompts/burn/context.md"
-depends_on = ["lesson"]
-output = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
-
-[[steps.inputs]]
-step = "lesson"
-alias = "lesson"
-
-[[steps.inputs]]
-path = "content/letters/YYYY-MM-DD-slug/PRODUCTION_BRIEF.md"
-alias = "brief"
-
-[[steps]]
 id = "instructions"
 format = "markdown"
 prompt_file = "automation/prompts/burn/instructions.md"
-depends_on = ["lesson", "context"]
+depends_on = ["lesson"]
 output = "content/letters/YYYY-MM-DD-slug/INSTRUCTIONS.md"
 
 [[steps.inputs]]
@@ -70,22 +59,22 @@ step = "lesson"
 alias = "lesson"
 
 [[steps.inputs]]
-step = "context"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
-path = "content/letters/YYYY-MM-DD-slug/PRODUCTION_BRIEF.md"
-alias = "brief"
+path = "content/letters/YYYY-MM-DD-slug/SEED.md"
+alias = "seed"
 
 [[steps]]
 id = "gpt"
 format = "markdown"
 prompt_file = "automation/prompts/burn/gpt.md"
-depends_on = ["context", "instructions"]
+depends_on = ["instructions"]
 output = "content/letters/YYYY-MM-DD-slug/GPT.md"
 
 [[steps.inputs]]
-step = "context"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -96,11 +85,11 @@ alias = "instructions"
 id = "worksheet"
 format = "svg"
 prompt_file = "automation/prompts/burn/worksheet-svg.md"
-depends_on = ["context", "lesson", "instructions"]
+depends_on = ["lesson", "instructions"]
 output = "content/letters/YYYY-MM-DD-slug/WORKSHEET.svg"
 
 [[steps.inputs]]
-step = "context"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -126,11 +115,11 @@ alias = "worksheet"
 id = "promo"
 format = "markdown"
 prompt_file = "automation/prompts/burn/promo-image.md"
-depends_on = ["context", "worksheet_masked"]
+depends_on = ["worksheet_masked"]
 output = "content/letters/YYYY-MM-DD-slug/PROMO_PROMPT.md"
 
 [[steps.inputs]]
-step = "context"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -153,11 +142,11 @@ alias = "asset_prompt"
 id = "banner"
 format = "markdown"
 prompt_file = "automation/prompts/burn/banner-image.md"
-depends_on = ["context", "worksheet_masked", "promo"]
+depends_on = ["worksheet_masked", "promo"]
 output = "content/letters/YYYY-MM-DD-slug/BANNER_PROMPT.md"
 
 [[steps.inputs]]
-step = "context"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -184,11 +173,11 @@ alias = "asset_prompt"
 id = "cover"
 format = "markdown"
 prompt_file = "automation/prompts/burn/cover-image.md"
-depends_on = ["context", "lesson", "banner"]
+depends_on = ["lesson", "banner"]
 output = "content/letters/YYYY-MM-DD-slug/COVER_PROMPT.md"
 
 [[steps.inputs]]
-step = "context"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -215,11 +204,11 @@ alias = "asset_prompt"
 id = "page_copy"
 format = "markdown"
 prompt_file = "automation/prompts/burn/page-copy.md"
-depends_on = ["context", "promo", "banner"]
+depends_on = ["promo", "banner"]
 output = "content/letters/YYYY-MM-DD-slug/PAGE_COPY.md"
 
 [[steps.inputs]]
-step = "context"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -234,11 +223,11 @@ alias = "banner"
 id = "landing_page"
 format = "html"
 prompt_file = "automation/prompts/burn/landing-page-html.md"
-depends_on = ["context", "banner", "page_copy"]
+depends_on = ["banner", "page_copy"]
 output = "content/letters/YYYY-MM-DD-slug/LANDING_PAGE.html"
 
 [[steps.inputs]]
-step = "context"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -253,11 +242,11 @@ alias = "page_copy"
 id = "worksheet_page"
 format = "markdown"
 prompt_file = "automation/prompts/burn/worksheet-page-prototype.md"
-depends_on = ["context", "promo", "page_copy"]
+depends_on = ["promo", "page_copy"]
 output = "content/letters/YYYY-MM-DD-slug/WORKSHEET_PAGE.md"
 
 [[steps.inputs]]
-step = "context"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -272,7 +261,7 @@ alias = "page_copy"
 id = "index"
 format = "markdown"
 prompt_file = "automation/prompts/burn/index.md"
-depends_on = ["lesson", "context"]
+depends_on = ["lesson"]
 output = "content/letters/YYYY-MM-DD-slug/index.md"
 
 [[steps.inputs]]
@@ -284,18 +273,18 @@ step = "lesson"
 alias = "lesson"
 
 [[steps.inputs]]
-step = "context"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
-path = "content/letters/YYYY-MM-DD-slug/PRODUCTION_BRIEF.md"
-alias = "brief"
+path = "content/letters/YYYY-MM-DD-slug/SEED.md"
+alias = "seed"
 
 [[steps]]
 id = "newsletter_email"
 format = "markdown"
 prompt_file = "automation/prompts/burn/newsletter-email.md"
-depends_on = ["index", "lesson", "instructions", "gpt", "context"]
+depends_on = ["index", "lesson", "instructions", "gpt"]
 output = "content/letters/YYYY-MM-DD-slug/NEWSLETTER_EMAIL.md"
 
 [[steps.inputs]]
@@ -315,14 +304,14 @@ step = "gpt"
 alias = "gpt"
 
 [[steps.inputs]]
-step = "context"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
 
 [[steps]]
 id = "community_post"
 format = "markdown"
 prompt_file = "automation/prompts/burn/community-post.md"
-depends_on = ["index", "context"]
+depends_on = ["index"]
 output = "content/letters/YYYY-MM-DD-slug/COMMUNITY_POST.md"
 
 [[steps.inputs]]
@@ -330,5 +319,5 @@ step = "index"
 alias = "index"
 
 [[steps.inputs]]
-step = "context"
+path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"

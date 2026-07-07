@@ -1,6 +1,6 @@
 Write `CONTEXT.md` for "{{context.title}}".
 
-Use the appended inputs named `lesson` and `brief`.
+Use the appended input named `seed`.
 
 If there is no topic provided directly in this prompt, use existing content from the inputs above and start your response by referencing what topic is being discussed first.
 
@@ -57,6 +57,6 @@ Use this exact response template and fill every part:
 Additional requirements:
 - Limit the response to a 7th grade reading level.
 - Keep the language specific to this week's idea, not generic content-marketing copy.
-- Let the lesson determine the model name and the model breakdown.
+- Let the seed document's actual topic, tension, and promise determine the model name and the model breakdown.
 - Make the promise tangible and the frustrations recognizable.
 - Write FAQ entries that answer the most likely hesitations without getting soft or defensive.

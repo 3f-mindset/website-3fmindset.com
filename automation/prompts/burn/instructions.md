@@ -1,6 +1,6 @@
 Write `INSTRUCTIONS.md` for "{{context.title}}".
 
-Use the appended inputs named `lesson`, `context`, and `brief`.
+Use the appended inputs named `lesson`, `context`, and `seed`.
 
 Return Markdown only.
 
