@@ -1,0 +1,383 @@
+{{- define "main" }}
+{{- $hero := .Resources.GetMatch "blade-inspection-placeholder.svg" -}}
+
+<article class="bitp-product">
+  <section class="bitp-hero" aria-labelledby="bitp-title">
+    <div class="bitp-hero__copy">
+      <p class="bitp-eyebrow">A weekly review for men who want their actions to match their aim</p>
+      <h1 id="bitp-title">
+        <span>Inspect the edge.</span>
+        <span class="bitp-title-accent">Temper the steel.</span>
+        <span>Return to the work.</span>
+      </h1>
+      <p class="bitp-hero__lead">
+        Stop carrying the same friction into another week. Inspect what your actions
+        revealed, correct what weakened the system, and choose the next useful strike.
+      </p>
+      <div class="bitp-hero__actions">
+        <a class="bitp-button bitp-button--primary" href="#the-process">See the weekly process</a>
+        <a class="bitp-text-link" href="#what-you-receive">View what’s included <span aria-hidden="true">↓</span></a>
+      </div>
+      <ul class="bitp-traits" aria-label="Product details">
+        <li>20–30 minutes</li>
+        <li>Weekly</li>
+        <li>Printable</li>
+      </ul>
+    </div>
+
+    <figure class="bitp-hero__visual">
+      {{- with $hero }}
+      <img src="{{ .RelPermalink }}"
+        alt="Placeholder worksheet preview showing a blade inspection, friction review, slag-clearing exercise, and three-strike plan."
+        width="1200" height="920">
+      {{- end }}
+      <figcaption>Placeholder worksheet preview · final landscape companion imagery to come</figcaption>
+    </figure>
+  </section>
+
+  <section class="bitp-opening bitp-section">
+    <div>
+      <p class="bitp-eyebrow">Every week leaves marks</p>
+      <h2>Some actions sharpen you. Others dull the edge.</h2>
+    </div>
+    <div class="bitp-opening__body">
+      <p>
+        Pressure reveals the condition of the blade you carry. Work, marriage,
+        fatherhood, health, habits, money, leadership, and private choices all give
+        you feedback.
+      </p>
+      <p>
+        Without a process for studying that feedback, experience does not always
+        become wisdom. A hard moment ends, but the pattern remains. The same week
+        returns in a different form.
+      </p>
+    </div>
+  </section>
+
+  <section class="bitp-contact" aria-labelledby="contact-title">
+    <div class="bitp-contact__heading">
+      <p class="bitp-eyebrow">Life is tested through contact</p>
+      <h2 id="contact-title">The week already gave you feedback.</h2>
+    </div>
+    <div class="bitp-contact__grid">
+      <article>
+        <span>01</span>
+        <h3>A difficult conversation ends.</h3>
+        <p>Did the pattern underneath it change?</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>A promise gets broken.</h3>
+        <p>Did you uncover the condition that caused it?</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>A strong moment creates hope.</h3>
+        <p>Did you capture what made that action possible?</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="bitp-section bitp-inspection" id="the-process" aria-labelledby="inspection-title">
+    <div class="bitp-section-heading">
+      <p class="bitp-eyebrow">Inspection comes before correction</p>
+      <h2 id="inspection-title">Study the structure beneath your results.</h2>
+      <p>
+        A smith does not strike steel at random. He studies the material first. Your
+        weekly review follows the same discipline.
+      </p>
+    </div>
+
+    <ol class="bitp-inspection__list">
+      <li><span>01</span>
+        <div><strong>Aim</strong>
+          <p>The direction that guided your choices.</p>
+        </div>
+      </li>
+      <li><span>02</span>
+        <div><strong>Momentum</strong>
+          <p>The movement your actions actually produced.</p>
+        </div>
+      </li>
+      <li><span>03</span>
+        <div><strong>Meaning</strong>
+          <p>The moments that carried weight and significance.</p>
+        </div>
+      </li>
+      <li><span>04</span>
+        <div><strong>Values</strong>
+          <p>The principles your behavior protected—or compromised.</p>
+        </div>
+      </li>
+      <li><span>05</span>
+        <div><strong>Responsibilities</strong>
+          <p>The roles you carried and the care each one received.</p>
+        </div>
+      </li>
+      <li><span>06</span>
+        <div><strong>Friction</strong>
+          <p>The drag that slowed or scattered your movement.</p>
+        </div>
+      </li>
+      <li><span>07</span>
+        <div><strong>Waste</strong>
+          <p>What is consuming energy without producing value.</p>
+        </div>
+      </li>
+      <li><span>08</span>
+        <div><strong>Next strikes</strong>
+          <p>The actions that deserve repeated, deliberate force.</p>
+        </div>
+      </li>
+      <li><span>09</span>
+        <div><strong>Recovery</strong>
+          <p>The tempering required to remain strong and useful.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bitp-edge-review" aria-labelledby="edge-title">
+    <div class="bitp-edge-review__heading">
+      <p class="bitp-eyebrow">Read the edge honestly</p>
+      <h2 id="edge-title">Build on what held. Correct what dragged.</h2>
+    </div>
+    <div class="bitp-edge-columns">
+      <article class="bitp-edge-card bitp-edge-card--held">
+        <p class="bitp-edge-card__label"><span aria-hidden="true">✓</span> Where the blade held</p>
+        <h3>Find the conditions behind clean action.</h3>
+        <ul>
+          <li>You kept a promise.</li>
+          <li>You handled pressure with restraint.</li>
+          <li>You gave time to what mattered.</li>
+          <li>You stayed present when escape was easier.</li>
+        </ul>
+        <p class="bitp-edge-card__result">Name what supported these moments so strength becomes repeatable.</p>
+      </article>
+      <article class="bitp-edge-card bitp-edge-card--dragged">
+        <p class="bitp-edge-card__label"><span aria-hidden="true">↘</span> Where the blade dragged</p>
+        <h3>Move from vague frustration to practical correction.</h3>
+        <dl>
+          <div>
+            <dt>Delay</dt>
+            <dd>may reveal an unclear aim.</dd>
+          </div>
+          <div>
+            <dt>Overthinking</dt>
+            <dd>may reveal too many open choices.</dd>
+          </div>
+          <div>
+            <dt>Irritability</dt>
+            <dd>may reveal poor recovery.</dd>
+          </div>
+          <div>
+            <dt>Avoidance</dt>
+            <dd>may reveal fear.</dd>
+          </div>
+          <div>
+            <dt>Repeated failure</dt>
+            <dd>may reveal weak structure.</dd>
+          </div>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <section class="bitp-section bitp-slag" aria-labelledby="slag-title">
+    <div class="bitp-slag__copy">
+      <p class="bitp-eyebrow">Clear what blocks the system</p>
+      <h2 id="slag-title">Remove the slag before it becomes obstruction.</h2>
+      <p>
+        Every working furnace produces waste. In life, it looks like resentment,
+        guilt, comparison, unfinished conflict, broken promises, mental noise, and
+        repeated excuses.
+      </p>
+      <p>
+        The plan gives you a place to name what is consuming energy, choose the
+        correction, and stop carrying unnecessary weight forward.
+      </p>
+    </div>
+    <div class="bitp-slag__flow" aria-label="Slag-clearing process">
+      <div><span>01</span><strong>Name it</strong>
+        <p>What is consuming energy?</p>
+      </div>
+      <div><span>02</span><strong>Correct it</strong>
+        <p>What action clears the blockage?</p>
+      </div>
+      <div><span>03</span><strong>Release it</strong>
+        <p>What does not enter next week?</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bitp-plan" aria-labelledby="plan-title">
+    <div class="bitp-plan__heading">
+      <p class="bitp-eyebrow">Turn review into a tempering plan</p>
+      <h2 id="plan-title">Choose one area. Define three strikes.</h2>
+      <p>
+        Broad intentions do not reshape a life. Each action needs a point of contact,
+        a time or trigger, and a specific result.
+      </p>
+    </div>
+    <div class="bitp-strikes">
+      <article>
+        <span>Strike 01</span>
+        <h3>Choose the contact</h3>
+        <p>The conversation, boundary, routine, repair, or focused block that matters now.</p>
+      </article>
+      <article>
+        <span>Strike 02</span>
+        <h3>Fix the trigger</h3>
+        <p>Give the action a day, time, place, or event that makes execution clear.</p>
+      </article>
+      <article>
+        <span>Strike 03</span>
+        <h3>Name the formation</h3>
+        <p>Define what this repeated action is intended to strengthen in you or your life.</p>
+      </article>
+    </div>
+    <ul class="bitp-action-examples" aria-label="Examples of weekly actions">
+      <li>Protect one hour of focused work</li>
+      <li>Have the delayed conversation</li>
+      <li>Put the phone away during dinner</li>
+      <li>Review money at a fixed time</li>
+      <li>Train on scheduled days</li>
+      <li>Repair a broken promise</li>
+      <li>Strengthen one boundary</li>
+      <li>Give one role full presence</li>
+    </ul>
+  </section>
+
+  <section class="bitp-section bitp-tempering" aria-labelledby="tempering-title">
+    <div class="bitp-tempering__copy">
+      <p class="bitp-eyebrow">Why tempering matters</p>
+      <h2 id="tempering-title">Strength must be able to hold.</h2>
+      <p>
+        Steel can become hard and still remain weak. Too much force without recovery
+        creates brittleness. Short-term output rises while the structure that carries
+        the work begins to fail.
+      </p>
+      <p>
+        Tempering helps you protect the conditions that allow you to return. It
+        separates discipline from self-destruction and keeps pressure useful.
+      </p>
+    </div>
+    <blockquote>
+      <span aria-hidden="true">“</span>
+      <p>Recovery is not the absence of formation. It is part of the process that makes formation sustainable.</p>
+    </blockquote>
+  </section>
+
+  <section class="bitp-builds" aria-labelledby="builds-title">
+    <div class="bitp-builds__heading">
+      <p class="bitp-eyebrow">What consistent use builds</p>
+      <h2 id="builds-title">Steady formation you can see in behavior.</h2>
+    </div>
+    <ul class="bitp-build-list">
+      <li>Actions connected to a clear aim</li>
+      <li>Progress measured by results, not motion</li>
+      <li>Behavior aligned with stated values</li>
+      <li>Roles carried with greater care</li>
+      <li>Repeated friction traced to its source</li>
+      <li>Waste removed before it obstructs</li>
+      <li>Specific action for the week ahead</li>
+      <li>Recovery built into the process</li>
+      <li>Visible patterns tracked over time</li>
+      <li>Greater trust in your own word</li>
+    </ul>
+  </section>
+
+  <section class="bitp-section bitp-rhythm" aria-labelledby="rhythm-title">
+    <div class="bitp-section-heading">
+      <p class="bitp-eyebrow">Built for weekly use</p>
+      <h2 id="rhythm-title">Give reflection a fixed surface.</h2>
+      <p>Set aside twenty to thirty minutes. Use the same day and place. Answer with facts.</p>
+    </div>
+    <ol class="bitp-rhythm__steps">
+      <li><span>01</span><strong>Review</strong>
+        <p>Study what happened without defending it.</p>
+      </li>
+      <li><span>02</span><strong>Correct</strong>
+        <p>Choose what leaves or changes in the system.</p>
+      </li>
+      <li><span>03</span><strong>Plan</strong>
+        <p>Define the next useful strikes and their triggers.</p>
+      </li>
+      <li><span>04</span><strong>Return</strong>
+        <p>Enter the next week with a clearer edge.</p>
+      </li>
+    </ol>
+    <p class="bitp-rhythm__note">
+      Over time, the record becomes evidence: where you are stronger, which roles
+      receive your best energy, whether your values shape your calendar, and where
+      the blade still bends.
+    </p>
+  </section>
+
+  <section class="bitp-fit-receive" id="what-you-receive">
+    <article class="bitp-fit">
+      <p class="bitp-eyebrow">This is for you if</p>
+      <h2>You want structure, not another burst of motivation.</h2>
+      <ul>
+        <li>You carry real responsibility.</li>
+        <li>You feel the weight of unfinished change.</li>
+        <li>Your actions do not always match your values.</li>
+        <li>You want to become more reliable under pressure.</li>
+        <li>You are willing to study patterns without defending them.</li>
+        <li>You want progress that can be seen in behavior.</li>
+      </ul>
+      <p class="bitp-fit__close">You do not need a perfect week. You need an honest inspection and the next useful
+        strike.</p>
+    </article>
+
+    <article class="bitp-receive">
+      <p class="bitp-eyebrow">What you receive</p>
+      <h2>A complete weekly inspection system.</h2>
+      <ul>
+        <li><span>01</span>Complete weekly review process</li>
+        <li><span>02</span>Nine-point Momentum Scale</li>
+        <li><span>03</span>Values and alignment review</li>
+        <li><span>04</span>Responsibility rating system</li>
+        <li><span>05</span>Friction and structure assessment</li>
+        <li><span>06</span>Slag-clearing exercise</li>
+        <li><span>07</span>Three-strike action plan</li>
+        <li><span>08</span>Fixed anvil planning section</li>
+        <li><span>09</span>Recovery and tempering section</li>
+        <li><span>10</span>Final weekly calibration summary</li>
+        <li><span>11</span>Printable landscape companion worksheet</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="bitp-framework" aria-labelledby="framework-title">
+    <div class="bitp-framework__heading">
+      <p class="bitp-eyebrow">One connected framework</p>
+      <h2 id="framework-title">From aim to action to formation.</h2>
+    </div>
+    <div class="bitp-framework__grid">
+      <article><span>Fire</span>
+        <p>Reveals your aim and meaning.</p>
+      </article>
+      <article><span>Furnace</span>
+        <p>Holds values, roles, boundaries, and pressure.</p>
+      </article>
+      <article><span>Forge</span>
+        <p>Turns reflection into repeated action.</p>
+      </article>
+      <article><span>Blade</span>
+        <p>Reveals what your formation produces in real life.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="bitp-closing" aria-labelledby="closing-title">
+    <p class="bitp-eyebrow">Blade Inspection and Tempering Plan</p>
+    <h2 id="closing-title">
+      <span>Inspect what the week revealed.</span>
+      <span>Choose the next strike.</span>
+    </h2>
+    <p>Return to the work with a stronger edge.</p>
+    <a class="bitp-button bitp-button--primary" href="#the-process">Explore the process</a>
+  </section>
+</article>
+{{- end }}

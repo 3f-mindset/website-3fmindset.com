@@ -1,0 +1,226 @@
+{{- define "main" }}
+{{- $hero := .Resources.GetMatch "weekly-calibration-review-placeholder.svg" -}}
+
+<article class="wcr-product">
+  <section class="wcr-hero" aria-labelledby="wcr-title">
+    <div class="wcr-hero__copy">
+      <p class="wcr-eyebrow">A personalized member artifact · delivered weekly</p>
+      <h1 id="wcr-title">
+        <span class="wcr-title-line">See the week you lived.</span>
+        <span class="wcr-title-line wcr-title-accent">Understand the direction you’re moving.</span>
+      </h1>
+      <p class="wcr-hero__lead">
+        The Weekly Calibration Review turns your completed calibration into a guided,
+        comparative reflection—revealing the patterns, momentum, and meaning that are
+        easy to miss in day-to-day life.
+      </p>
+      <div class="wcr-hero__actions">
+        <a class="wcr-button wcr-button--primary" href="#inside-the-review">Explore the review</a>
+        <a class="wcr-text-link" href="#long-view">See the long view <span aria-hidden="true">↓</span></a>
+      </div>
+      <ul class="wcr-traits" aria-label="Review qualities">
+        <li>Personalized</li>
+        <li>Comparative</li>
+        <li>Reflective</li>
+      </ul>
+    </div>
+
+    <figure class="wcr-hero__visual">
+      {{- with $hero }}
+      <img src="{{ .RelPermalink }}"
+        alt="Placeholder product preview showing a weekly review with momentum, values, and week-over-week insights."
+        width="1200" height="920">
+      {{- end }}
+      <figcaption>Placeholder product preview · final member report imagery to come</figcaption>
+    </figure>
+  </section>
+
+  <section class="wcr-intro wcr-section">
+    <div>
+      <p class="wcr-eyebrow">Reflection, with context</p>
+      <h2>A journal captures a moment.<br>A calibration reveals a trajectory.</h2>
+    </div>
+    <div class="wcr-intro__body">
+      <p>
+        An isolated win or setback rarely tells the whole story. Each review compares
+        the current week against the one before it, then places both inside the longer
+        arc of your development.
+      </p>
+      <p>
+        You begin to see what is strengthening, what is quietly drifting, and what
+        keeps returning under different circumstances—without relying on memory or
+        emotion alone.
+      </p>
+    </div>
+  </section>
+
+  <section class="wcr-comparison" aria-labelledby="comparison-title">
+    <div class="wcr-comparison__heading">
+      <p class="wcr-eyebrow">The comparative difference</p>
+      <h2 id="comparison-title">Not “How did this week go?”</h2>
+      <p>Something more useful: <strong>What is this week showing you?</strong></p>
+    </div>
+    <ol class="wcr-comparison__steps">
+      <li>
+        <span>01</span>
+        <div>
+          <h3>This week</h3>
+          <p>What happened, what mattered, and where your attention went.</p>
+        </div>
+      </li>
+      <li>
+        <span>02</span>
+        <div>
+          <h3>Last week</h3>
+          <p>What changed, what held steady, and which intentions carried forward.</p>
+        </div>
+      </li>
+      <li>
+        <span>03</span>
+        <div>
+          <h3>The longer arc</h3>
+          <p>The habits, beliefs, and recurring themes shaping who you are becoming.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="wcr-section wcr-lenses" id="inside-the-review" aria-labelledby="lenses-title">
+    <div class="wcr-section-heading">
+      <p class="wcr-eyebrow">Inside every review</p>
+      <h2 id="lenses-title">Seven lenses. One coherent picture.</h2>
+      <p>
+        Every section of your Weekly Calibration is revisited—not as a scorecard,
+        but as evidence of movement.
+      </p>
+    </div>
+
+    <div class="wcr-lens-grid">
+      <article class="wcr-lens-card">
+        <span>01</span>
+        <h3>Aim</h3>
+        <p>See whether your direction is becoming clearer or competing priorities are pulling you off course.</p>
+      </article>
+      <article class="wcr-lens-card">
+        <span>02</span>
+        <h3>Momentum</h3>
+        <p>Recognize whether progress is becoming sustainable, holding steady, or beginning to drift.</p>
+      </article>
+      <article class="wcr-lens-card">
+        <span>03</span>
+        <h3>Meaning</h3>
+        <p>Understand what shaped the week and how those experiences connect to the larger story of your life.</p>
+      </article>
+      <article class="wcr-lens-card">
+        <span>04</span>
+        <h3>Values</h3>
+        <p>Notice which values drove your decisions—and which quietly slipped into the background.</p>
+      </article>
+      <article class="wcr-lens-card">
+        <span>05</span>
+        <h3>Responsibilities</h3>
+        <p>Review every major life role to identify where growth, consistency, or neglect is emerging.</p>
+      </article>
+      <article class="wcr-lens-card">
+        <span>06</span>
+        <h3>Friction</h3>
+        <p>Name recurring obstacles early, before a difficult moment hardens into a familiar pattern.</p>
+      </article>
+      <article class="wcr-lens-card wcr-lens-card--wide">
+        <span>07</span>
+        <div>
+          <h3>Cultivation</h3>
+          <p>Compare next week’s commitments with the intentions you set before, creating accountability and continuous
+            improvement.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="wcr-questions" aria-labelledby="questions-title">
+    <div class="wcr-questions__intro">
+      <p class="wcr-eyebrow">Patterns become visible</p>
+      <h2 id="questions-title">The questions that reveal change.</h2>
+      <p>
+        The review looks beyond events to find the beliefs, behaviors, and repeated
+        choices underneath them.
+      </p>
+    </div>
+    <ul class="wcr-question-list">
+      <li><span aria-hidden="true">↗</span> What changed?</li>
+      <li><span aria-hidden="true">→</span> What stayed consistent?</li>
+      <li><span aria-hidden="true">◇</span> What beliefs are evolving?</li>
+      <li><span aria-hidden="true">+</span> What habits are becoming part of your identity?</li>
+      <li><span aria-hidden="true">↻</span> What challenges keep returning in a different form?</li>
+    </ul>
+  </section>
+
+  <section class="wcr-section wcr-coaching" aria-labelledby="coaching-title">
+    <div class="wcr-section-heading">
+      <p class="wcr-eyebrow">A conversation, not a verdict</p>
+      <h2 id="coaching-title">Written to help you see clearly—and choose deliberately.</h2>
+    </div>
+    <div class="wcr-coaching__grid">
+      <article>
+        <span class="wcr-coaching__mark" aria-hidden="true">01</span>
+        <h3>Celebrate real progress</h3>
+        <p>Meaningful movement is named so you can recognize what is working and repeat it with intention.</p>
+      </article>
+      <article>
+        <span class="wcr-coaching__mark" aria-hidden="true">02</span>
+        <h3>Surface blind spots</h3>
+        <p>Tensions and contradictions are approached with honesty, without reducing the week to success or failure.</p>
+      </article>
+      <article>
+        <span class="wcr-coaching__mark" aria-hidden="true">03</span>
+        <h3>Invite deeper insight</h3>
+        <p>Every section closes with a reflective question that prepares you for the conversations and decisions ahead.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="wcr-long-view" id="long-view" aria-labelledby="long-view-title">
+    <div class="wcr-long-view__copy">
+      <p class="wcr-eyebrow">Built to compound</p>
+      <h2 id="long-view-title">A living record of your growth.</h2>
+      <p>
+        One review brings clarity to a week. A collection of them makes development
+        visible across seasons.
+      </p>
+      <p>
+        Over time, you can trace how priorities shift, how recurring challenges lose
+        their influence, and how consistent actions begin producing meaningful
+        momentum.
+      </p>
+    </div>
+    <div class="wcr-timeline" aria-label="How insight compounds over time">
+      <div>
+        <span>Week 01</span>
+        <strong>Notice</strong>
+        <p>Name what is happening now.</p>
+      </div>
+      <div>
+        <span>Week 04</span>
+        <strong>Recognize</strong>
+        <p>See repetition and early patterns.</p>
+      </div>
+      <div>
+        <span>Week 12+</span>
+        <strong>Understand</strong>
+        <p>Connect your choices to lasting change.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wcr-closing" aria-labelledby="closing-title">
+    <p class="wcr-eyebrow">Weekly Calibration Review</p>
+    <h2 id="closing-title">
+      <span class="wcr-title-line">Your week is already telling a story.</span>
+      <span class="wcr-title-line">See it clearly.</span>
+    </h2>
+    <p>Turn weekly reflection into a structured view of the person you are becoming.</p>
+    <a class="wcr-button wcr-button--primary" href="#inside-the-review">See what the review reveals</a>
+  </section>
+</article>
+{{- end }}

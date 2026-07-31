@@ -1,0 +1,94 @@
+<svg width="1200" height="920" viewBox="0 0 1200 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Placeholder preview of the Blade Inspection and Tempering Plan</title>
+  <desc>A stylized weekly worksheet with a blade inspection, friction assessment, three-strike action plan, and recovery section.</desc>
+  <defs>
+    <linearGradient id="bitp-bg" x1="94" y1="40" x2="1094" y2="894" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#30302E"/>
+      <stop offset="1" stop-color="#161616"/>
+    </linearGradient>
+    <linearGradient id="bitp-steel" x1="175" y1="260" x2="980" y2="676" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F5EF"/>
+      <stop offset=".45" stop-color="#BFBAB0"/>
+      <stop offset=".72" stop-color="#F1EEE6"/>
+      <stop offset="1" stop-color="#88837C"/>
+    </linearGradient>
+    <linearGradient id="bitp-heat" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F0B062"/>
+      <stop offset="1" stop-color="#AE4E28"/>
+    </linearGradient>
+    <filter id="bitp-shadow" x="-100" y="-100" width="1400" height="1120" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="34" stdDeviation="38" flood-color="#000000" flood-opacity=".38"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="920" rx="38" fill="url(#bitp-bg)"/>
+  <circle cx="1075" cy="92" r="238" fill="#E28C47" fill-opacity=".08"/>
+  <circle cx="118" cy="864" r="260" fill="#E28C47" fill-opacity=".05"/>
+
+  <path d="M93 754L1066 151" stroke="#E28C47" stroke-opacity=".08" stroke-width="2"/>
+  <path d="M182 830L1155 227" stroke="#E28C47" stroke-opacity=".06" stroke-width="2"/>
+
+  <g filter="url(#bitp-shadow)">
+    <rect x="112" y="84" width="976" height="752" rx="24" fill="#EEEAE1"/>
+    <rect x="112" y="84" width="976" height="92" rx="24" fill="#242422"/>
+    <path d="M112 150H1088V176H112V150Z" fill="#242422"/>
+
+    <text x="166" y="126" fill="#F1EEE8" font-family="Arial, sans-serif" font-size="22" font-weight="700">BLADE INSPECTION</text>
+    <text x="166" y="151" fill="#9D9992" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">WEEKLY TEMPERING PLAN</text>
+    <rect x="800" y="112" width="236" height="36" rx="18" fill="#E28C47" fill-opacity=".18"/>
+    <text x="918" y="136" text-anchor="middle" fill="#F0B062" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">WORKSHEET PREVIEW</text>
+
+    <text x="166" y="226" fill="#817B72" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">01 · INSPECT THE EDGE</text>
+    <path d="M184 283L760 245L959 284L760 323L184 283Z" fill="url(#bitp-steel)"/>
+    <path d="M760 245L959 284L760 286L184 283L760 245Z" fill="#FFFFFF" fill-opacity=".64"/>
+    <rect x="166" y="348" width="254" height="116" rx="15" fill="#FFFFFF"/>
+    <text x="190" y="380" fill="#A54F2C" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">AIM</text>
+    <text x="190" y="412" fill="#292724" font-family="Arial, sans-serif" font-size="18" font-weight="700">The edge held.</text>
+    <text x="190" y="439" fill="#777168" font-family="Arial, sans-serif" font-size="14">Clear direction · clean action</text>
+
+    <rect x="438" y="348" width="254" height="116" rx="15" fill="#FFFFFF"/>
+    <text x="462" y="380" fill="#A54F2C" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">FRICTION</text>
+    <text x="462" y="412" fill="#292724" font-family="Arial, sans-serif" font-size="18" font-weight="700">Name the drag.</text>
+    <text x="462" y="439" fill="#777168" font-family="Arial, sans-serif" font-size="14">Delay · avoidance · weak structure</text>
+
+    <rect x="710" y="348" width="326" height="116" rx="15" fill="#292826"/>
+    <text x="734" y="380" fill="#E8AA60" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">MOMENTUM</text>
+    <g fill="#55514C">
+      <circle cx="742" cy="430" r="7"/><circle cx="774" cy="430" r="7"/><circle cx="806" cy="430" r="7"/>
+      <circle cx="838" cy="430" r="7"/><circle cx="870" cy="430" r="7"/><circle cx="902" cy="430" r="7"/>
+      <circle cx="934" cy="430" r="7"/><circle cx="966" cy="430" r="7"/><circle cx="998" cy="430" r="7"/>
+    </g>
+    <g fill="url(#bitp-heat)">
+      <circle cx="742" cy="430" r="7"/><circle cx="774" cy="430" r="7"/><circle cx="806" cy="430" r="7"/>
+      <circle cx="838" cy="430" r="7"/><circle cx="870" cy="430" r="7"/><circle cx="902" cy="430" r="7"/>
+    </g>
+
+    <text x="166" y="516" fill="#817B72" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">02 · CLEAR THE SLAG</text>
+    <rect x="166" y="538" width="870" height="78" rx="14" fill="#DDD6CA"/>
+    <rect x="188" y="559" width="36" height="36" rx="8" fill="#B65C32"/>
+    <path d="M199 577L206 584L216 569" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="246" y="568" fill="#777168" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.6">REMOVE FROM THE SYSTEM</text>
+    <text x="246" y="594" fill="#292724" font-family="Arial, sans-serif" font-size="16" font-weight="700">Unfinished conflict → schedule the conversation</text>
+
+    <text x="166" y="666" fill="#817B72" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">03 · CHOOSE THE NEXT STRIKES</text>
+    <g>
+      <rect x="166" y="688" width="250" height="88" rx="14" fill="#FFFFFF"/>
+      <circle cx="194" cy="716" r="14" fill="#E28C47"/>
+      <text x="194" y="721" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="13" font-weight="700">1</text>
+      <text x="218" y="721" fill="#292724" font-family="Arial, sans-serif" font-size="15" font-weight="700">Protect the hour</text>
+      <text x="190" y="752" fill="#777168" font-family="Arial, sans-serif" font-size="13">Mon · 7:00 AM · desk</text>
+
+      <rect x="432" y="688" width="250" height="88" rx="14" fill="#FFFFFF"/>
+      <circle cx="460" cy="716" r="14" fill="#CF713C"/>
+      <text x="460" y="721" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="13" font-weight="700">2</text>
+      <text x="484" y="721" fill="#292724" font-family="Arial, sans-serif" font-size="15" font-weight="700">Repair the promise</text>
+      <text x="456" y="752" fill="#777168" font-family="Arial, sans-serif" font-size="13">Tue · after dinner</text>
+
+      <rect x="698" y="688" width="338" height="88" rx="14" fill="#292826"/>
+      <circle cx="726" cy="716" r="14" fill="#B65C32"/>
+      <text x="726" y="721" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="13" font-weight="700">3</text>
+      <text x="750" y="721" fill="#F1EEE8" font-family="Arial, sans-serif" font-size="15" font-weight="700">Temper: protect recovery</text>
+      <text x="722" y="752" fill="#AAA49B" font-family="Arial, sans-serif" font-size="13">Lights out · 10:30 PM</text>
+    </g>
+  </g>
+</svg>
