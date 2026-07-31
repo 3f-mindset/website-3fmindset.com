@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">SB30 Worksheet, Lock In the Three Changes That Matter Most</title>
+    <desc id="desc">Landscape worksheet on a white background with a large title, a choice
+        statement,
+        six fillable sections built around the CEMENT action process, and a three-step action
+        summary footer.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill:
+      #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill:
+      #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill:
+      #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill:
+      #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill:
+      #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill:
+      #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <!-- Header -->
+    <text class="label" x="45" y="38">SB30 | CEMENT YOUR IMPROVEMENT PLAN</text>
+    <text class="title" x="45" y="76">LOCK IN THE THREE CHANGES THAT MATTER MOST</text>
+    <text class="small" x="45" y="101">Turn what you learned into three clear rules you can follow,
+        support, and track this week.</text>
+
+    <rect class="mini" x="825" y="28" width="230" height="76" />
+    <text class="label" x="842" y="51">THE CHOICE</text>
+    <text class="tiny" x="842" y="69">Keep carrying insight without changing</text>
+    <text class="tiny" x="842" y="82">your behavior, or turn three findings</text>
+    <text class="tiny" x="842" y="95">into visible proof through action.</text>
+
+    <!-- Process band -->
+    <rect class="box" x="45" y="122" width="1010" height="62" />
+    <text class="verb" x="74" y="163">CEMENT</text>
+    <line class="soft" x1="246" y1="136" x2="246" y2="170" />
+    <text class="small" x="266" y="148">Collect evidence. Evaluate impact. Mark three priorities.</text>
+    <text class="small" x="266" y="165">Establish rules. Name support. Track the first proof.</text>
+
+    <!-- Connector line -->
+    <line class="soft" x1="90" y1="207" x2="1010" y2="207" />
+    <circle class="dot" cx="90" cy="207" r="4" />
+    <circle class="dot" cx="274" cy="207" r="4" />
+    <circle class="dot" cx="458" cy="207" r="4" />
+    <circle class="dot" cx="642" cy="207" r="4" />
+    <circle class="dot" cx="826" cy="207" r="4" />
+    <circle class="dot" cx="1010" cy="207" r="4" />
+
+    <!-- C -->
+    <rect class="box" x="45" y="225" width="320" height="202" />
+    <text class="letter" x="63" y="264">C</text>
+    <text class="sub" x="104" y="254">COLLECT THE EVIDENCE</text>
+    <text class="tiny" x="104" y="270">Name repeated causes and visible results.</text>
+
+    <text class="label" x="64" y="295">What keeps happening?</text>
+    <line class="fillline" x1="64" y1="312" x2="346" y2="312" />
+    <line class="fillline" x1="64" y1="331" x2="346" y2="331" />
+
+    <text class="label" x="64" y="355">What causes it?</text>
+    <line class="fillline" x1="64" y1="372" x2="346" y2="372" />
+
+    <text class="label" x="64" y="395">What result does it create?</text>
+    <line class="fillline" x1="64" y1="412" x2="346" y2="412" />
+
+    <!-- E1 -->
+    <rect class="box" x="390" y="225" width="320" height="202" />
+    <text class="letter" x="408" y="264">E</text>
+    <text class="sub" x="449" y="254">EVALUATE THE IMPACT</text>
+    <text class="tiny" x="449" y="270">Score each issue from 1 to 5.</text>
+
+    <text class="label" x="409" y="296">ISSUE</text>
+    <text class="label" x="550" y="296">FREQ.</text>
+    <text class="label" x="604" y="296">COST</text>
+    <text class="label" x="654" y="296">REACH</text>
+
+    <line class="fillline" x1="409" y1="315" x2="534" y2="315" />
+    <rect class="mini" x="551" y="303" width="36" height="22" />
+    <rect class="mini" x="605" y="303" width="36" height="22" />
+    <rect class="mini" x="657" y="303" width="36" height="22" />
+
+    <line class="fillline" x1="409" y1="349" x2="534" y2="349" />
+    <rect class="mini" x="551" y="337" width="36" height="22" />
+    <rect class="mini" x="605" y="337" width="36" height="22" />
+    <rect class="mini" x="657" y="337" width="36" height="22" />
+
+    <line class="fillline" x1="409" y1="383" x2="534" y2="383" />
+    <rect class="mini" x="551" y="371" width="36" height="22" />
+    <rect class="mini" x="605" y="371" width="36" height="22" />
+    <rect class="mini" x="657" y="371" width="36" height="22" />
+
+    <text class="tiny" x="409" y="413">Highest total scores deserve the strongest attention.</text>
+
+    <!-- M -->
+    <rect class="box" x="735" y="225" width="320" height="202" />
+    <text class="letter" x="753" y="264">M</text>
+    <text class="sub" x="798" y="254">MARK THE TOP THREE</text>
+    <text class="tiny" x="798" y="270">Choose only what deserves action now.</text>
+
+    <circle class="line" cx="776" cy="310" r="15" />
+    <text class="num" x="769" y="318">1</text>
+    <line class="fillline" x1="803" y1="310" x2="1036" y2="310" />
+    <text class="tiny" x="803" y="325">Why it matters:</text>
+    <line class="fillline" x1="865" y1="325" x2="1036" y2="325" />
+
+    <circle class="line" cx="776" cy="355" r="15" />
+    <text class="num" x="769" y="363">2</text>
+    <line class="fillline" x1="803" y1="355" x2="1036" y2="355" />
+    <text class="tiny" x="803" y="370">Why it matters:</text>
+    <line class="fillline" x1="865" y1="370" x2="1036" y2="370" />
+
+    <circle class="line" cx="776" cy="400" r="15" />
+    <text class="num" x="769" y="408">3</text>
+    <line class="fillline" x1="803" y1="400" x2="1036" y2="400" />
+    <text class="tiny" x="803" y="415">Why it matters:</text>
+    <line class="fillline" x1="865" y1="415" x2="1036" y2="415" />
+
+    <!-- E2 -->
+    <rect class="box" x="45" y="448" width="320" height="238" />
+    <text class="letter" x="63" y="487">E</text>
+    <text class="sub" x="104" y="477">ESTABLISH THE RULES</text>
+    <text class="tiny" x="104" y="493">Give each priority a clear instruction.</text>
+
+    <text class="label" x="64" y="521">RULE 1</text>
+    <text class="tiny" x="64" y="538">When:</text>
+    <line class="fillline" x1="97" y1="538" x2="346" y2="538" />
+    <text class="tiny" x="64" y="555">I will:</text>
+    <line class="fillline" x1="96" y1="555" x2="346" y2="555" />
+
+    <text class="label" x="64" y="581">RULE 2</text>
+    <text class="tiny" x="64" y="598">When:</text>
+    <line class="fillline" x1="97" y1="598" x2="346" y2="598" />
+    <text class="tiny" x="64" y="615">I will:</text>
+    <line class="fillline" x1="96" y1="615" x2="346" y2="615" />
+
+    <text class="label" x="64" y="641">RULE 3</text>
+    <text class="tiny" x="64" y="658">When:</text>
+    <line class="fillline" x1="97" y1="658" x2="346" y2="658" />
+    <text class="tiny" x="64" y="675">I will:</text>
+    <line class="fillline" x1="96" y1="675" x2="346" y2="675" />
+
+    <!-- N -->
+    <rect class="box" x="390" y="448" width="320" height="238" />
+    <text class="letter" x="408" y="487">N</text>
+    <text class="sub" x="449" y="477">NAME THE SUPPORT</text>
+    <text class="tiny" x="449" y="493">Match support to the reason each rule may fail.</text>
+
+    <text class="label" x="409" y="522">RULE 1 BLOCKER</text>
+    <line class="fillline" x1="409" y1="540" x2="692" y2="540" />
+    <text class="tiny" x="409" y="556">Support:</text>
+    <line class="fillline" x1="450" y1="556" x2="692" y2="556" />
+
+    <text class="label" x="409" y="582">RULE 2 BLOCKER</text>
+    <line class="fillline" x1="409" y1="600" x2="692" y2="600" />
+    <text class="tiny" x="409" y="616">Support:</text>
+    <line class="fillline" x1="450" y1="616" x2="692" y2="616" />
+
+    <text class="label" x="409" y="642">RULE 3 BLOCKER</text>
+    <line class="fillline" x1="409" y1="660" x2="692" y2="660" />
+    <text class="tiny" x="409" y="676">Support:</text>
+    <line class="fillline" x1="450" y1="676" x2="692" y2="676" />
+
+    <!-- T -->
+    <rect class="box" x="735" y="448" width="320" height="238" />
+    <text class="letter" x="753" y="487">T</text>
+    <text class="sub" x="794" y="477">TRACK THE FIRST PROOF</text>
+    <text class="tiny" x="794" y="493">Set a visible seven-day target.</text>
+
+    <text class="label" x="754" y="520">TARGET 1</text>
+    <line class="fillline" x1="818" y1="520" x2="1036" y2="520" />
+    <text class="tiny" x="754" y="538">Goal number:</text>
+    <line class="fillline" x1="815" y1="538" x2="878" y2="538" />
+    <text class="tiny" x="893" y="538">Record in:</text>
+    <line class="fillline" x1="940" y1="538" x2="1036" y2="538" />
+
+    <text class="label" x="754" y="565">TARGET 2</text>
+    <line class="fillline" x1="818" y1="565" x2="1036" y2="565" />
+    <text class="tiny" x="754" y="583">Goal number:</text>
+    <line class="fillline" x1="815" y1="583" x2="878" y2="583" />
+    <text class="tiny" x="893" y="583">Record in:</text>
+    <line class="fillline" x1="940" y1="583" x2="1036" y2="583" />
+
+    <text class="label" x="754" y="610">TARGET 3</text>
+    <line class="fillline" x1="818" y1="610" x2="1036" y2="610" />
+    <text class="tiny" x="754" y="628">Goal number:</text>
+    <line class="fillline" x1="815" y1="628" x2="878" y2="628" />
+    <text class="tiny" x="893" y="628">Record in:</text>
+    <line class="fillline" x1="940" y1="628" x2="1036" y2="628" />
+
+    <text class="label" x="754" y="658">REVIEW DATE</text>
+    <line class="fillline" x1="837" y1="658" x2="925" y2="658" />
+    <text class="label" x="939" y="658">FIRST ACTION</text>
+    <line class="fillline" x1="939" y1="676" x2="1036" y2="676" />
+
+    <!-- Footer summary -->
+    <rect class="box" x="45" y="706" width="1010" height="104" />
+
+    <circle class="line" cx="82" cy="752" r="22" />
+    <text class="num" x="75" y="760">1</text>
+    <text class="label" x="118" y="739">CHOOSE THE THREE</text>
+    <text class="tiny" x="118" y="755">Select the three changes with the strongest</text>
+    <text class="tiny" x="118" y="768">effect on your daily life.</text>
+
+    <line class="soft" x1="360" y1="724" x2="360" y2="792" />
+
+    <circle class="line" cx="407" cy="752" r="22" />
+    <text class="num" x="400" y="760">2</text>
+    <text class="label" x="443" y="739">WRITE THE RULES</text>
+    <text class="tiny" x="443" y="755">Turn each choice into a clear action with</text>
+    <text class="tiny" x="443" y="768">a trigger, frequency, and proof.</text>
+
+    <line class="soft" x1="705" y1="724" x2="705" y2="792" />
+
+    <circle class="line" cx="752" cy="752" r="22" />
+    <text class="num" x="745" y="760">3</text>
+    <text class="label" x="788" y="739">START THE SCORECARD</text>
+    <text class="tiny" x="788" y="755">Track seven days of action, review the evidence,</text>
+    <text class="tiny" x="788" y="768">and adjust the plan without dropping the goal.</text>
+
+    <text class="tiny" x="45" y="834">The worksheet is complete when the first action has begun, not
+        when every box contains writing.</text>
+    <text class="tiny" x="1000" y="834">SB30</text>
+</svg>
