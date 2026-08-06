@@ -41,7 +41,6 @@
 
 {{- if not (.Param "hideHeader") }}
 <header class="header">
-    {{ if not .IsHome }}
     <nav class="nav">
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
@@ -148,6 +147,5 @@
             {{- end }}
         </ul>
     </nav>
-    {{ end }}
 </header>
 {{- end }}
