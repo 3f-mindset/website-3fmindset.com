@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Reacting, Start Leading: Master Your Tasks and Time</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0b0c10;
+            color: #e0e0e0;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1, h2, h3 {
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+        }
+
+        h2 {
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+            color: #a0a0a0;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #b0b0b0;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-split {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (min-width: 900px) {
+            .hero-split {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 107, 53, 0.15);
+            border: 1px solid #2a2a2a;
+        }
+
+        .hero-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            filter: contrast(1.1) saturate(0.9);
+        }
+
+        .hero-image-wrapper::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(11, 12, 16, 0.6), transparent);
+            pointer-events: none;
+        }
+
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .subheadline {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: #d0d0d0;
+            font-weight: 500;
+            border-left: 3px solid #ff6b35;
+            padding-left: 1rem;
+        }
+
+        .benefits-list {
+            list-style: none;
+            margin: 1rem 0 2rem 0;
+        }
+
+        .benefits-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+            color: #c0c0c0;
+        }
+
+        .benefits-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #ff6b35;
+            font-weight: bold;
+        }
+
+        .download-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            background: #15161a;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid #2a2a2a;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .email-input {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            background: #0b0c10;
+            border: 1px solid #333;
+            border-radius: 4px;
+            color: #ffffff;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .email-input:focus {
+            outline: none;
+            border-color: #ff6b35;
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.2);
+        }
+
+        .cta-button {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, #ff6b35 0%, #d94d1e 100%);
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: transform 0.1s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        .footer-microcopy {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        @media (max-width: 899px) {
+            .container {
+                padding: 1.5rem 1rem;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            .hero-image-wrapper {
+                margin-bottom: 1rem;
+            }
+            .download-form {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="hero-split">
+            <div class="hero-image-wrapper">
+                <img src="https://placehold.it/1200x900" alt="Forged tactical paper artifact representing structure and command" width="1200" height="900">
+            </div>
+            <div class="content-area">
+                <h1>Stop Drowning in Loud Tasks. Start Leading Your Day.</h1>
+                <p class="subheadline">Clear the noise. Pick what moves you forward. Reclaim your hours.</p>
+
+                <ul class="benefits-list">
+                    <li>Finish your top three high-impact tasks before lunch while keeping your inbox under 50 unread messages.</li>
+                    <li>Walk out the door at 5:30 PM with zero weekend catch-up and full mental energy for your family.</li>
+                    <li>Replace daily guilt with quiet confidence as your long-term goals finally advance on a predictable schedule.</li>
+                </ul>
+
+                <form class="download-form" action="#" method="POST">
+                    <label for="email" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Email Address</label>
+                    <input type="email" id="email" name="email" class="email-input" placeholder="Enter your email address" required autocomplete="email">
+                    <button type="submit" class="cta-button">Get Instant Access</button>
+                </form>
+            </div>
+        </div>
+        <footer class="footer-microcopy">
+            Free download. Instant access.
+        </footer>
+    </main>
+</body>
+</html>
