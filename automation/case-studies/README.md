@@ -12,3 +12,42 @@ These are comparison artifacts, not publishable site content. They stay under `a
 
 - [Linear scale](weekly-bundle-costs.svg): preserves absolute cost differences.
 - [Logarithmic scale](weekly-bundle-costs-log.svg): makes the lower-cost models easier to compare.
+
+![Weekly bundle costs on a linear scale](weekly-bundle-costs.svg)
+
+![Weekly bundle costs on a logarithmic scale](weekly-bundle-costs-log.svg)
+
+## Readability measurements
+
+analyze_readability.py provides apples-to-apples readability measurements for
+every LESSON.md, index.md, and INSTRUCTIONS.md bundle in this directory. It
+removes Markdown presentation syntax and applies one deterministic English
+syllable heuristic to all model output.
+
+From WSL, run:
+
+~~~
+cd automation/case-studies
+uv run python analyze_readability.py
+~~~
+
+The generated [readability report](readability-report.md) has bundle and
+per-document tables. The matching JSON file preserves all raw measurements for
+further comparison or charting.
+
+## Refresh after a new case study
+
+After adding a completed case study to a PR, run both generators before opening
+or updating that PR:
+
+~~~
+cd automation/case-studies
+uv run python analyze_readability.py
+uv run python generate_cost_charts.py
+~~~
+
+The chart generator uses only the cost values in each OPENROUTER_USAGE.jsonl
+file. It writes [cost-chart-data.json](cost-chart-data.json) plus the linear
+and logarithmic cost SVGs.
+Local runs remain deliberately unpriced because they have no OpenRouter usage
+record.

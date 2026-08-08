@@ -1,84 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1140" viewBox="0 0 1200 1140" role="img" aria-labelledby="title description">
-  <title id="title">SteadyBurn weekly bundle cost comparison on a logarithmic scale</title>
-  <desc id="description">Provider-reported OpenRouter costs for the 2026-08-07 weekly SteadyBurn content bundle, grouped by company and ordered by model class and generation. Bar length follows a base-10 logarithmic scale.</desc>
-  <style>
-    .bg { fill: #111827; }
-    .title { fill: #f9fafb; font: 700 30px Arial, sans-serif; }
-    .subtitle { fill: #9ca3af; font: 16px Arial, sans-serif; }
-    .group { fill: #f9fafb; font: 700 19px Arial, sans-serif; }
-    .label { fill: #e5e7eb; font: 16px Arial, sans-serif; }
-    .value { fill: #f9fafb; font: 700 16px Arial, sans-serif; text-anchor: end; }
-    .axis { fill: #9ca3af; font: 13px Arial, sans-serif; text-anchor: middle; }
-    .note { fill: #9ca3af; font: 14px Arial, sans-serif; }
-    .grid { stroke: #374151; stroke-width: 1; }
-    .bar-openai { fill: #10b981; }
-    .bar-google { fill: #60a5fa; }
-    .bar-deepseek { fill: #c084fc; }
-  </style>
-  <rect class="bg" width="1200" height="1140" rx="18"/>
-
-  <text class="title" x="60" y="62">SteadyBurn weekly bundle: recorded model cost</text>
-  <text class="subtitle" x="60" y="91">2026-08-07 run · complete text bundle plus one hero cover · base-10 logarithmic scale in USD</text>
-
-  <line class="grid" x1="420" y1="145" x2="420" y2="1025"/>
-  <line class="grid" x1="494" y1="145" x2="494" y2="1025"/>
-  <line class="grid" x1="592" y1="145" x2="592" y2="1025"/>
-  <line class="grid" x1="666" y1="145" x2="666" y2="1025"/>
-  <line class="grid" x1="741" y1="145" x2="741" y2="1025"/>
-  <line class="grid" x1="839" y1="145" x2="839" y2="1025"/>
-  <line class="grid" x1="913" y1="145" x2="913" y2="1025"/>
-  <text class="axis" x="420" y="132">$0.01</text>
-  <text class="axis" x="494" y="132">$0.02</text>
-  <text class="axis" x="592" y="132">$0.05</text>
-  <text class="axis" x="666" y="132">$0.10</text>
-  <text class="axis" x="741" y="132">$0.20</text>
-  <text class="axis" x="839" y="132">$0.50</text>
-  <text class="axis" x="913" y="132">$1.00</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1040" viewBox="0 0 1200 1040" role="img" aria-labelledby="title description">
+  <title id="title">SteadyBurn weekly bundle: recorded model cost (log scale)</title>
+  <desc id="description">Costs are calculated from OpenRouter usage JSONL records for each completed weekly SteadyBurn case study.</desc>
+  <style>.bg{fill:#111827}.title{fill:#f9fafb;font:700 30px Arial,sans-serif}.subtitle,.axis,.note{fill:#9ca3af;font:16px Arial,sans-serif}.group{fill:#f9fafb;font:700 19px Arial,sans-serif}.label{fill:#e5e7eb;font:16px Arial,sans-serif}.value{fill:#f9fafb;font:700 16px Arial,sans-serif;text-anchor:end}.axis{font-size:13px;text-anchor:middle}.note{font-size:14px}.grid{stroke:#374151;stroke-width:1}</style>
+  <rect class="bg" width="1200" height="1040" rx="18"/>
+  <text class="title" x="60" y="62">SteadyBurn weekly bundle: recorded model cost (log scale)</text>
+  <text class="subtitle" x="60" y="91">Complete text bundle plus one hero cover · base-10 logarithmic scale in USD</text>
+  <line class="grid" x1="420" y1="145" x2="420" y2="890"/>
+  <text class="axis" x="420" y="132">$0.010000</text>
+  <line class="grid" x1="488" y1="145" x2="488" y2="890"/>
+  <text class="axis" x="488" y="132">$0.020000</text>
+  <line class="grid" x1="578" y1="145" x2="578" y2="890"/>
+  <text class="axis" x="578" y="132">$0.050000</text>
+  <line class="grid" x1="646" y1="145" x2="646" y2="890"/>
+  <text class="axis" x="646" y="132">$0.100000</text>
+  <line class="grid" x1="714" y1="145" x2="714" y2="890"/>
+  <text class="axis" x="714" y="132">$0.200000</text>
+  <line class="grid" x1="804" y1="145" x2="804" y2="890"/>
+  <text class="axis" x="804" y="132">$0.500000</text>
+  <line class="grid" x1="872" y1="145" x2="872" y2="890"/>
+  <text class="axis" x="872" y="132">$1.000000</text>
+  <line class="grid" x1="940" y1="145" x2="940" y2="890"/>
+  <text class="axis" x="940" y="132">$2.000000</text>
   <text class="group" x="60" y="187">OpenAI</text>
   <text class="label" x="90" y="228">GPT-4.1</text>
-  <rect class="bar-openai" x="420" y="207" width="328" height="27" rx="4"/>
+  <rect fill="#10b981" x="420" y="207" width="299" height="27" rx="4"/>
   <text class="value" x="1130" y="228">$0.209664</text>
   <text class="label" x="90" y="283">GPT-5.4</text>
-  <rect class="bar-openai" x="420" y="262" width="415" height="27" rx="4"/>
+  <rect fill="#10b981" x="420" y="262" width="378" height="27" rx="4"/>
   <text class="value" x="1130" y="283">$0.470669</text>
   <text class="label" x="90" y="338">GPT-5.5</text>
-  <rect class="bar-openai" x="420" y="317" width="517" height="27" rx="4"/>
+  <rect fill="#10b981" x="420" y="317" width="472" height="27" rx="4"/>
   <text class="value" x="1130" y="338">$1.228162</text>
   <text class="label" x="90" y="393">GPT-5.6 Luna</text>
-  <rect class="bar-openai" x="420" y="372" width="135" height="27" rx="4"/>
+  <rect fill="#10b981" x="420" y="372" width="123" height="27" rx="4"/>
   <text class="value" x="1130" y="393">$0.035006</text>
-
-  <text class="group" x="60" y="474">Google</text>
-  <text class="label" x="90" y="515">Gemma 3 12B</text>
-  <rect class="bar-google" x="420" y="494" width="110" height="27" rx="4"/>
-  <text class="value" x="1130" y="515">$0.027780†</text>
-  <text class="label" x="90" y="570">Gemma 4 26B A4B</text>
-  <rect class="bar-google" x="420" y="549" width="40" height="27" rx="4"/>
-  <text class="value" x="1130" y="570">$0.014510</text>
-  <text class="label" x="90" y="625">Gemma 4 31B</text>
-  <rect class="bar-google" x="420" y="604" width="44" height="27" rx="4"/>
-  <text class="value" x="1130" y="625">$0.015143</text>
-  <text class="label" x="90" y="680">Gemini 3.5 Flash Lite</text>
-  <rect class="bar-google" x="420" y="659" width="208" height="27" rx="4"/>
-  <text class="value" x="1130" y="680">$0.069015</text>
-  <text class="label" x="90" y="735">Gemini 3.6 Flash</text>
-  <rect class="bar-google" x="420" y="714" width="418" height="27" rx="4"/>
-  <text class="value" x="1130" y="735">$0.486699</text>
-
-  <text class="group" x="60" y="816">DeepSeek</text>
-  <text class="label" x="90" y="857">DeepSeek V3.2</text>
-  <rect class="bar-deepseek" x="420" y="836" width="85" height="27" rx="4"/>
-  <text class="value" x="1130" y="857">$0.022567</text>
-  <text class="label" x="90" y="912">DeepSeek V4 Flash</text>
-  <rect class="bar-deepseek" x="420" y="891" width="52" height="27" rx="4"/>
-  <text class="value" x="1130" y="912">$0.016322</text>
-  <text class="label" x="90" y="967">DeepSeek V4 Pro</text>
-  <rect class="bar-deepseek" x="420" y="946" width="96" height="27" rx="4"/>
-  <text class="value" x="1130" y="967">$0.024889</text>
-
-  <line class="grid" x1="60" y1="1002" x2="1140" y2="1002"/>
-  <text class="note" x="60" y="1035">Local baseline: Gemma 4 E4B text + local Qwen image; no provider-reported API charge.</text>
-  <text class="note" x="60" y="1063">† Gemma 3 was an earlier, non-equivalent comparison.</text>
-  <text class="note" x="60" y="1090">Sources: each case study’s MODEL_COMPARISON.md and OPENROUTER_USAGE.jsonl.</text>
+  <text class="group" x="60" y="483">Google</text>
+  <text class="label" x="90" y="524">Gemma 3 12B</text>
+  <rect fill="#60a5fa" x="420" y="503" width="100" height="27" rx="4"/>
+  <text class="value" x="1130" y="524">$0.027780†</text>
+  <text class="label" x="90" y="579">Gemma 4 26B A4B</text>
+  <rect fill="#60a5fa" x="420" y="558" width="37" height="27" rx="4"/>
+  <text class="value" x="1130" y="579">$0.014510</text>
+  <text class="label" x="90" y="634">Gemma 4 31B</text>
+  <rect fill="#60a5fa" x="420" y="613" width="41" height="27" rx="4"/>
+  <text class="value" x="1130" y="634">$0.015143</text>
+  <text class="label" x="90" y="689">Gemini 3.5 Flash Lite</text>
+  <rect fill="#60a5fa" x="420" y="668" width="190" height="27" rx="4"/>
+  <text class="value" x="1130" y="689">$0.069015</text>
+  <text class="label" x="90" y="744">Gemini 3.6 Flash</text>
+  <rect fill="#60a5fa" x="420" y="723" width="381" height="27" rx="4"/>
+  <text class="value" x="1130" y="744">$0.486699</text>
+  <text class="group" x="60" y="834">DeepSeek</text>
+  <text class="label" x="90" y="875">DeepSeek V3.2</text>
+  <rect fill="#c084fc" x="420" y="854" width="80" height="27" rx="4"/>
+  <text class="value" x="1130" y="875">$0.022567</text>
+  <text class="label" x="90" y="930">DeepSeek V4 Flash</text>
+  <rect fill="#c084fc" x="420" y="909" width="48" height="27" rx="4"/>
+  <text class="value" x="1130" y="930">$0.016322</text>
+  <text class="label" x="90" y="985">DeepSeek V4 Pro</text>
+  <rect fill="#c084fc" x="420" y="964" width="89" height="27" rx="4"/>
+  <text class="value" x="1130" y="985">$0.024889</text>
+  <line class="grid" x1="60" y1="895" x2="1140" y2="895"/>
+  <text class="note" x="60" y="928">Local runs have no OpenRouter JSONL cost record and are intentionally excluded.</text>
+  <text class="note" x="60" y="956">† Gemma 3 was an earlier, non-equivalent comparison.</text>
+  <text class="note" x="60" y="984">Source: each completed case study’s OPENROUTER_USAGE.jsonl.</text>
 </svg>
