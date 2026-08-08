@@ -5,17 +5,17 @@ date = "2026-08-07"
 target_dir = "automation/case-studies/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management"
 
 [providers.text]
-kind = "openai-compatible"
-providerUrl = "http://localhost:11434"
-model = "active"
-timeout_seconds = 300
+kind = "openrouter"
+providerUrl = "https://openrouter.ai/api/v1"
+model = "openai/gpt-5.6-luna"
+timeout_seconds = 900
 retry_attempts = 4
 retry_wait_seconds = 75
 
 [providers.image]
-kind = "openai-compatible"
-providerUrl = "http://localhost:11434"
-model = "unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m"
+kind = "openrouter"
+providerUrl = "https://openrouter.ai/api/v1"
+model = "openai/gpt-5.4-image-2"
 timeout_seconds = 900
 retry_attempts = 4
 retry_wait_seconds = 75
@@ -260,20 +260,12 @@ depends_on = ["lesson"]
 output = "automation/case-studies/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md"
 
 [[steps.inputs]]
-path = "automation/case-studies/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md"
-alias = "draft_index"
-
-[[steps.inputs]]
 step = "lesson"
 alias = "lesson"
 
 [[steps.inputs]]
 path = "automation/case-studies/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
 alias = "context"
-
-[[steps.inputs]]
-path = "automation/case-studies/openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md"
-alias = "seed"
 
 [[steps]]
 id = "newsletter_email"

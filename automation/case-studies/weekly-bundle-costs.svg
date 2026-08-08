@@ -14,14 +14,7 @@
     .bar-openai { fill: #10b981; }
     .bar-google { fill: #60a5fa; }
     .bar-deepseek { fill: #c084fc; }
-    .bar-partial { fill: url(#partial); }
   </style>
-  <defs>
-    <pattern id="partial" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <rect width="8" height="8" fill="#10b981"/>
-      <rect width="3" height="8" fill="#111827"/>
-    </pattern>
-  </defs>
   <rect class="bg" width="1200" height="1070" rx="18"/>
 
   <text class="title" x="60" y="62">SteadyBurn weekly bundle: recorded model cost</text>
@@ -51,8 +44,8 @@
   <rect class="bar-openai" x="420" y="317" width="511" height="27" rx="4"/>
   <text class="value" x="1130" y="338">$1.228162</text>
   <text class="label" x="90" y="393">GPT-5.6 Luna</text>
-  <rect class="bar-partial" x="420" y="372" width="9" height="27" rx="4"/>
-  <text class="value" x="1130" y="393">$0.021337*</text>
+  <rect class="bar-openai" x="420" y="372" width="15" height="27" rx="4"/>
+  <text class="value" x="1130" y="393">$0.035006</text>
 
   <text class="group" x="60" y="474">Google</text>
   <text class="label" x="90" y="515">Gemma 3 12B</text>
@@ -81,6 +74,6 @@
 
   <line class="grid" x1="60" y1="947" x2="1140" y2="947"/>
   <text class="note" x="60" y="980">Local baseline: Gemma 4 E4B text + local Qwen image; no provider-reported API charge.</text>
-  <text class="note" x="60" y="1008">* Luna total excludes a manually retried hero cover whose usage was not logged. † Gemma 3 was an earlier, non-equivalent comparison.</text>
+  <text class="note" x="60" y="1008">Gemma 3 was an earlier, non-equivalent comparison.</text>
   <text class="note" x="60" y="1035">Sources: each case study’s MODEL_COMPARISON.md and OPENROUTER_USAGE.jsonl.</text>
 </svg>

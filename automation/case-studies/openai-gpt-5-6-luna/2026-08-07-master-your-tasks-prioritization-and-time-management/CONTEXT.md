@@ -1,82 +1,82 @@
 ## Title
-Finish the Work That Matters First
+Get Your Three Most Important Tasks Done First
 
 ## Subtitle
-Tame your task list, protect your best work hours, and make steady progress on what moves your life forward.
+Tame your task list, protect your best work hours, and finish what moves your goals forward.
 
 ## Promise
-Complete your top three priority tasks on at least five of the next seven days.
+For seven days, choose three priority tasks each morning and complete at least two before lower-priority work.
 
 ## Motivations
-- Finish important work before small tasks take over.
-- Make daily progress on personal and work goals.
-- Keep fewer unfinished tasks hanging over each day.
-- Use time blocks that match your energy and responsibilities.
-- Build a clear system for choosing what to do, delay, delegate, or drop.
+- Finish important work before deadlines create a crisis.
+- Make steady progress on major goals each week.
+- Spend less time sorting tasks during the day.
+- Know exactly what to work on next.
+- Leave work with fewer unfinished priority tasks.
 
 ## Challenges & Sacrifices
-- You must sort a long list while emails, calls, and requests keep arriving.
-- You may need to say no or hand off tasks that others could handle.
-- You must protect focused work time from messages, meetings, and distractions.
-- You may need to start important work before it feels urgent.
-- You must review unfinished tasks and break large projects into smaller actions.
+- Emails, messages, and small requests interrupt planned work.
+- An unclear task list makes every item seem equally important.
+- Major projects take time, while quick chores offer easy wins.
+- Meetings and other people’s requests take over prime work hours.
+- Choosing priorities may mean saying no, delaying errands, or delegating tasks.
 
 ## Frustrations
-- You stay busy all day but finish little that truly matters.
+- You stay busy all day but finish little that matters.
+- Your most important project keeps moving to tomorrow.
+- Urgent requests control your schedule before you review your own goals.
 - Your task list grows faster than you can clear it.
-- Urgent requests keep pushing your important goals to tomorrow.
-- You forget tasks, miss details, or search through scattered notes.
-- You end the day unsure what to work on first.
+- You end the day unsure what you should have done first.
 
 ## Transformations
 - From staying busy without progress to completing work that supports your main goals.
-- From facing an endless task list to handling a short, ranked set of actions.
-- From reacting to every urgent request to protecting time for important work.
-- From losing tasks across apps and notes to keeping one trusted task list.
-- From ending each day without direction to starting the next day with a clear first move.
+- From delaying the same major project to giving it protected time and visible progress.
+- From reacting to every urgent request to sorting urgent tasks from important ones.
+- From carrying a growing task list to keeping a short, ranked plan.
+- From ending the day uncertain to reviewing clear results and setting tomorrow’s first tasks.
 
 ## Choice
-You can keep letting the loudest request choose your schedule, then carry unfinished priorities into tomorrow. Or you can take control by capturing every task, choosing your top three, protecting time for them, and reviewing the results each day. The second path gives important work a place on your calendar instead of leaving it to chance.
+You can keep treating every request as equal and let the loudest task control your day. The cost is repeated delays, crowded schedules, and important work that never gets enough time. Or you can choose a short ranked list, protect time for the work that matters, and decide what to delay, delegate, or remove. That choice starts with three clear priorities before the day begins.
 
 ## Actionable VERB
-TRIAGE
+FILTER
 
 ## Model
-### T — Track Every Task
-Capture work, errands, requests, and ideas in one trusted planner or digital list. Do not rely on memory, loose notes, or open browser tabs. Empty your head before choosing what deserves your time.
+**F — Find every task**
+Capture all work, errands, calls, messages, and personal duties in one place. Use a notebook, planner, or digital list. Do not trust memory or scattered notes. A complete list gives you something real to sort.
 
-### R — Rank by Impact
-Review the full list and ask, “If I could finish only three tasks today, which three would create the most useful result?” Mark those as your big rocks. Separate urgent tasks from important tasks, and label lower-value work for later, delegation, or removal.
+**I — Identify what matters**
+Review each task and ask, “Does this support a key goal, duty, or deadline?” Mark tasks as urgent, important, both, or neither. Choose the three tasks that would create the greatest useful result if completed today. These are your big rocks.
 
-### I — Isolate the Big Rocks
-Choose a clear finish line for each priority task. “Work on the report” is too broad; “Draft the report summary” is clear. Break large tasks into the next physical action so you know exactly how to begin.
+**L — Limit today’s list**
+Keep the three big rocks at the center of the day. Place other tasks into a second list for later. Delete tasks that no longer matter, postpone tasks with no real deadline, and delegate tasks someone else can handle. A shorter list makes the order clear.
 
-### A — Assign Time
-Place the three priority tasks into specific time blocks. Put the hardest or most important task in your best work period. Group smaller tasks, such as calls or email, into one block instead of letting them interrupt the whole day.
+**T — Time-block the priorities**
+Put each big rock into a specific time block, preferably during your best work hours. Give each task a start time and a clear stopping point. Break large tasks into smaller actions. Use focused sprints, such as 25 minutes of work followed by a 5-minute break, when useful.
 
-### G — Guard Focus
-Treat each priority block like an appointment. Silence alerts, close unrelated tabs, and tell others when you are unavailable. Use a focused sprint, such as 25 minutes of work followed by a short break, and return to the task until the block ends.
+**E — Execute in order**
+Start with the first big rock before checking minor tasks. Silence alerts, close unrelated tabs, and keep the task visible. Work until the task is complete or the time block ends. Then move to the next priority instead of choosing whatever request appears next.
 
-### E — Examine and Adjust
-At the end of the day, mark completed tasks and move unfinished work with a new rank and time block. Remove tasks that no longer matter. If a task keeps moving forward, make it smaller, delegate it, or decide that it is not a priority. Repeat the process tomorrow so your list stays useful and your most important work keeps moving.
+**R — Review and reset**
+At the end of the day, mark completed tasks and record what remains. Move unfinished work to tomorrow only after checking its importance again. Note what caused delays, then adjust the next day’s time blocks, task size, or boundaries. Repeat the process until your list reflects your real priorities.
 
 ## Action Steps Summary
-1. **Capture and Rank:** Put every task in one place, then choose the three tasks with the greatest impact. This cuts clutter and gives the day a clear order.
-2. **Block and Guard:** Schedule your big rocks during your best work hours and defend those blocks from distractions. This turns priorities into completed work.
-3. **Review and Reset:** Check results, adjust unfinished tasks, and prepare the next list. This keeps your system current and prevents small tasks from taking over.
+1. **Capture and Cut:** Gather every task, then remove, delay, or delegate work that does not belong today. This creates a clear list instead of a crowded one.
+2. **Block and Begin:** Choose three big rocks and schedule them during your best hours. Starting with them protects progress before interruptions take over.
+3. **Finish and Reset:** Work with fewer distractions, mark results, and review unfinished tasks each evening. This keeps tomorrow’s priorities visible and realistic.
 
 ## FAQ
-### Why do I work all day but still feel behind?
-You may be choosing tasks by urgency instead of impact. Pick your top three important tasks before handling lower-value work.
+**Why do I work all day but still miss my important tasks?**
+You may be treating every task as equal. Choose three high-impact tasks before starting smaller work.
 
-### How do I choose between several important tasks?
-Ask which task supports your main goal, prevents the biggest problem, or creates the most useful result. Rank that task first.
+**How do I know whether a task is truly urgent?**
+Ask whether it needs action now because of a real deadline or consequence. If not, it may be important without being urgent.
 
-### What should I do when everything feels urgent?
-Sort tasks by deadline and consequence. Handle true emergencies first, then return to important work that supports your long-term goals.
+**What should I do when new requests arrive?**
+Write them down instead of switching immediately. Check them against your three priorities, then schedule, delegate, or decline them.
 
-### How can I stop forgetting tasks?
-Use one trusted task list and capture each request as soon as it appears. Review the list every morning or the night before.
+**What if I cannot finish all three priority tasks?**
+Complete the first one before moving down the list. If needed, split a large task into a smaller finished step and schedule the rest.
 
-### What if I cannot finish my top three tasks?
-Check whether the tasks are too large, poorly defined, or blocked by distractions. Break them into smaller actions, reschedule them, delegate them, or remove them if they no longer matter.
+**How can I stop my task list from becoming too long?**
+Review it daily and weekly. Remove tasks that no longer matter, delay low-value work, and give each remaining task a clear place on your schedule.

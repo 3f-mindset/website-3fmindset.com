@@ -1,51 +1,45 @@
 # Asset
 
 - Title: Master Your Tasks: Prioritization and Time Management
+- Slug: master-your-tasks-prioritization-and-time-management
 - Dimensions: 1536px x 1152px
 - Aspect ratio: 4:3
-- Output format: PNG or JPEG
-- Asset type: Editorial article cover image
+- Output format: png or jpeg
+- Cover purpose: Editorial article cover about choosing three priorities, protecting the best work hours, and directing attention toward meaningful work before interruptions take over.
 
 # Image Prompt
 
-Create a 4:3 editorial article cover illustration for “Master Your Tasks: Prioritization and Time Management,” rendered as a PNG or JPEG.
+Create a clean, object-centered vintage pulp illustration for an editorial article cover in a 4:3 aspect ratio, rendered as a png or jpeg. Show one decisive, immediately readable central action drawn from the story’s real tension: a simple work-gloved hand firmly pulling a heavy iron furnace gate or lever so a bright contained stream of heat is redirected toward one central glowing forge block on a sturdy workbench. The action should communicate filtering distractions, ranking priorities, protecting useful energy, and beginning the important task before smaller demands take over.
 
-Show one clear decisive moment from the lesson’s real conflict: a focused worker’s hand firmly pulling a heavy iron gate lever to protect a bright furnace from a chaotic stream of small ringing bells, incoming arrows, and scattered sparks trying to enter. The furnace represents the important work that must receive the strongest effort; show three clearly separated, large glowing fuel stones already arranged inside the furnace as the only meaningful objects being protected. Keep the person simple and subordinate, with the hand, lever, furnace opening, and three fuel stones forming a simple triangular arrangement between the main subject, primary tool or force, and support surface. Emphasize invention, action, readiness, pressure, and visual clarity. Show the exact decisive moment of the gate closing while the central furnace glows brightly.
+Use one dominant focal point with strong subject separation. Arrange the scene as a simple triangular composition between the gloved hand and lever, the bright controlled heat or glowing forge block, and the solid workbench support surface. Place the brightest glow and highest-contrast area at the center of the composition. A cold coffee mug may sit small and secondary at the far edge of the workbench as the story’s pressure image, clearly subordinate to the decisive furnace action. Keep the hand and figure simple, readable, and fully subordinate to the central action; do not show a detailed face or busy human scene. Make the exact moment of directing the heat unmistakable.
 
-Place the brightest glow and highest-contrast area at the center of the composition, around the furnace opening and lever mechanism. Keep most of the image in readable midtones so the worker, lever, furnace, and fuel stones remain fully visible. Use a plain, solid muted blue-gray or warm beige background with minimal detail. Keep the background secondary, free of competing focal points, and avoid realistic environments. Simplify any sparks, smoke, heat, or motion effects into bold, stylized shapes.
+Keep the background plain, solid-color, and minimally detailed, with only enough simplified furnace structure to explain the action. Use a clean object-centered vintage pulp illustration style with visual reference from pulp magazines, comic books, and illustrated advertisements from the 1940s-1950s. Include a visible halftone dot pattern for a printed look, bold black linework, thick prominent outlines, cross-hatching, and ink-based shading for depth. Use a limited, muted, slightly desaturated palette of earthy browns, beiges, faded blues, warm grays, ochres, and restrained reds, with a controlled warm amber glow at the center. Make the image feel aged, printed, hand-illustrated, and nostalgic rather than modern or painterly.
 
-Use a clean, object-centered vintage pulp illustration style with visual reference from pulp magazines, comic books, and illustrated advertisements from the 1940s–1950s. Include a visible halftone dot pattern for a printed look, bold black linework with thick prominent outlines, cross-hatching and ink-based shading for depth, and a limited, muted, slightly desaturated palette of earthy browns, beiges, faded blues, warm grays, ochres, and restrained reds. Make the image aged, printed, hand-illustrated, and nostalgic rather than modern or painterly. Use a dynamic composition with tension, movement, and impact while retaining one dominant focal point and strong subject separation. Bright, readable illustration lighting; no heavy noir mood and no gloomy atmosphere.
-
-No words, captions, typography, labels, signage, or readable marks anywhere in the image. Do not use a worksheet, paper artifact, page, document, blueprint sheet, floating form layout, masked worksheet render, or any document-like object as the centerpiece. Do not depict an elaborate setting, scenic vista, cluttered workshop, decorative architecture, crowded environment, or complex background storytelling. No photography, modern photorealism, neon cyberpunk aesthetics, explicit solarpunk influences, intricate engraving effects, realistic environments, or UI mockups.
+Use dynamic composition with tension, movement, and impact while keeping the image clear at thumbnail size. Prioritize bright, readable illustration lighting over mood; keep one clear center of brightness, most of the image in midtones rather than deep shadow, and the subject fully visible. Simplify any heat, smoke, or environmental effects into stylized shapes. No words, captions, typography, labels, signage, or readable marks anywhere in the image. Do not use a worksheet, paper artifact, page, document, blueprint sheet, form layout, masked worksheet render, or document-like object as the centerpiece. No CTA framing or download language.
 
 # Negative Prompt
 
-No text, words, captions, typography, labels, signage, logos, readable marks, letters, numbers, charts, calendars, schedules, screens, apps, interface elements, UI mockups, worksheets, paper, notebooks, pages, documents, forms, blueprints, printed pages, floating panels, download imagery, CTA framing, or campaign graphics. No worksheet or document-like object as the central subject. No crowded office, busy workshop, scenic vista, architecture, clutter, excessive props, symbolic collage, competing focal points, visual noise, elaborate environment, realistic background storytelling, or multiple unrelated scenes. No photographic rendering, modern photorealism, glossy digital art, painterly realism, neon cyberpunk, explicit solarpunk, heavy noir, deep shadows obscuring the subject, gloomy atmosphere, intricate engraving, fine etching, ornate detail, or muddy low-contrast lighting. No exaggerated anatomy, complex facial detail, dominant human portrait, or person overpowering the central action. No illegible pseudo-text or decorative marks. Keep the background plain, the action exact, the central glow clear, and the subject fully readable at thumbnail size.
+Photography, photorealism, modern photorealism, painterly rendering, glossy 3D art, CGI, neon cyberpunk aesthetics, explicit solarpunk influences, heavy noir mood, gloomy atmosphere, deep black shadows obscuring the subject, intricate engraving effects, realistic environments, elaborate workshops, scenic vistas, decorative architecture, crowded environments, excessive props, clutter, visual noise, competing focal points, complex background storytelling, multiple people, detailed faces, busy office scenes, phones, computer screens, UI mockups, dashboards, calendars, worksheets, paper artifacts, pages, documents, reports, notebooks, planners, blueprint sheets, forms, floating form layouts, document-like objects, stationery as centerpiece, posters, signs, logos, brand marks, readable text, illegible pseudo-text, captions, labels, typography, speech bubbles, CTA elements, download imagery, arrows, infographic layouts, symbolic clutter, multiple equal focal points, uncontrolled flames, realistic smoke, dramatic fog, harsh atmospheric darkness, tiny unreadable details.
 
 # Required On-Image Copy
 
-There should be no on-image copy at all. Do not include any words, captions, typography, labels, signage, logos, numbers, or readable marks.
+There should be no on-image copy at all: no words, no captions, no typography, no labels, no signage, no logos, and no readable marks.
 
 # Visual Checklist
 
-- 4:3 aspect ratio
-- Dimensions: 1536px x 1152px
-- PNG or JPEG output
-- One dominant focal point: the closing gate, lever, and glowing furnace
-- Decisive action clearly shows protecting important work from distractions
-- Three glowing fuel stones visibly arranged inside the furnace
-- Simple triangular arrangement between the central action, lever or force, and furnace support surface
-- Brightest glow and highest contrast at the center
-- Strong subject separation and immediate thumbnail readability
-- Plain, solid-color, minimally detailed background
-- Clean object-centered vintage pulp illustration style
-- 1940s–1950s pulp magazine, comic book, and illustrated advertisement influence
-- Visible halftone dots
-- Bold black linework and thick prominent outlines
-- Cross-hatching and ink-based shading
-- Limited muted, slightly desaturated earthy palette
-- Bright readable lighting with mostly midtones
-- Dynamic tension, movement, pressure, and impact
-- No on-image copy or readable marks
-- No document, worksheet, page, form, blueprint, or UI centerpiece
-- No photography or modern photorealism
+- 4:3 composition at 1536px x 1152px.
+- Final asset rendered as png or jpeg.
+- One dominant central action: pulling the furnace gate or lever to direct heat.
+- The central action clearly represents filtering and prioritizing attention.
+- Simple triangular arrangement: hand and lever, directed heat or forge block, workbench.
+- Brightest glow and highest contrast centered on the controlled heat and forge block.
+- Cold coffee mug included only as a small secondary pressure detail, never as the centerpiece.
+- Plain, solid-color, minimally detailed background.
+- Clean object-centered vintage pulp illustration style.
+- 1940s-1950s pulp magazine, comic book, and illustrated advertisement influence.
+- Visible halftone dots, bold black linework, thick outlines, cross-hatching, and ink shading.
+- Limited muted palette: earthy browns, beiges, faded blues, warm grays, ochres, and restrained reds.
+- Bright readable lighting with mostly midtones and fully visible subject.
+- Dynamic tension and movement without clutter.
+- No worksheet, document, page, paper artifact, blueprint, form, UI, or document-like centerpiece.
+- No text or on-image copy of any kind.
