@@ -60,6 +60,36 @@ OPENROUTER_API_KEY=... make burn-run BURN_PROVIDER=openrouter \
   CODEX_BURN_MODEL=openai/gpt-4.1
 ```
 
+## Compare OpenAI Models Through OpenRouter
+
+`scripts/compare-openrouter-openai-models.py` runs a specified production pipeline
+once per `openai/...` model in isolated Git worktrees. Every worktree starts from the
+same committed base and writes to the normal letter directory on its own branch, so
+each PR is a direct generated-content diff rather than mixed alternatives in one
+working directory. The selected pipeline must exist in the base revision.
+
+Review the planned branches and text-only steps first:
+
+```sh
+python scripts/compare-openrouter-openai-models.py --dry-run \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml --models \
+  openai/gpt-4.1 openai/gpt-4o
+```
+
+Run and commit a comparison branch per model:
+
+```sh
+OPENROUTER_API_KEY=... python scripts/compare-openrouter-openai-models.py \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
+  --models openai/gpt-4.1 openai/gpt-4o --commit --push
+```
+
+The harness rejects non-OpenAI model IDs and excludes image/audio stages. Generated
+outputs include `MODEL_COMPARISON.md`, recording the model, base revision, timestamp,
+and pipeline stages. Worktrees remain in a sibling
+`website-3fmindset.com-model-comparisons` directory for review and are never
+overwritten.
+
 OpenAI-compatible local/network server, such as vLLM or llama.cpp:
 
 ```sh
