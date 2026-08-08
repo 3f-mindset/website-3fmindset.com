@@ -90,6 +90,32 @@ and pipeline stages. Worktrees remain in a sibling
 `website-3fmindset.com-model-comparisons` directory for review and are never
 overwritten.
 
+## Representative Weekly Automation Cost
+
+The following is a representative end-to-end run for the 2026-08-07 weekly letter,
+"Master Your Tasks: Prioritization and Time Management." Each comparison generated
+the context and the standard text pipeline, then rendered one hero cover with
+`openai/gpt-5.4-image-2`. Costs are the provider-reported OpenRouter amounts recorded
+at run time; they are examples, not price commitments.
+
+| Writing model | Text generation | Hero cover | Recorded total |
+| --- | ---: | ---: | ---: |
+| `openai/gpt-4.1` | $0.184258 | $0.025406 | $0.209664 |
+| `openai/gpt-5.4` | $0.461757 | $0.008912 | $0.470669 |
+| `openai/gpt-5.5` | $1.218690 | $0.009472 | $1.228162 |
+| `google/gemini-3.6-flash` | $0.478587 | $0.008112 | $0.486699 |
+| `google/gemini-3.5-flash-lite` | $0.054309 | $0.014706 | $0.069015 |
+| `deepseek/deepseek-v4-pro` | $0.016049 | $0.008840 | $0.024889 |
+| `deepseek/deepseek-v4-flash` | $0.008122 | $0.008200 | $0.016322 |
+| `deepseek/deepseek-v3.2` | $0.013471 | $0.009096 | $0.022567 |
+| `openai/gpt-5.6-luna` | $0.021337 | not recorded | at least $0.021337 |
+
+The Luna cover succeeded only after a manual retry, but that retry did not have usage
+logging enabled. Its recorded figure therefore covers text generation only and should
+not be used as a complete weekly-run estimate. The other rows include the complete
+recorded text and hero-cover cost. Optional promo-image and landing-page tracks were
+disabled, so enabling either will add model calls and cost.
+
 OpenAI-compatible local/network server, such as vLLM or llama.cpp:
 
 ```sh
