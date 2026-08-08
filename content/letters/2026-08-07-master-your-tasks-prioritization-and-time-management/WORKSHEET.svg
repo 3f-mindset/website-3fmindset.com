@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Master Your Tasks: Prioritization and Time Management</title>
+  <desc id="desc">Landscape worksheet on a white background with a strong title, the TRIAGE process, six fillable task-prioritization sections, and closing execution commitments.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 26px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">MASTER YOUR TASKS: PRIORITIZATION AND TIME MANAGEMENT</text>
+  <text class="sub" x="40" y="96">Choose what matters, protect the time, and review the result.</text>
+
+  <rect class="mini" x="700" y="30" width="360" height="82"/>
+  <text class="label" x="720" y="54">TARGET</text>
+  <text class="small" x="720" y="74">Complete your top three priority tasks</text>
+  <text class="small" x="720" y="90">on at least five of the next seven days.</text>
+
+  <text class="verb" x="470" y="142">TRIAGE</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="320" height="175"/>
+  <text class="letter" x="60" y="222">T</text>
+  <text class="label" x="105" y="204">TRACK EVERY TASK</text>
+  <text class="small" x="105" y="224">Capture the full load in one trusted place.</text>
+  <text class="tiny" x="105" y="242">Name concrete work, errands, requests, and ideas.</text>
+  <text class="tiny" x="60" y="268">TRUSTED LIST / LOCATION</text>
+  <line class="fillline" x1="60" y1="280" x2="330" y2="280"/>
+  <text class="tiny" x="60" y="304">TASK INVENTORY</text>
+  <line class="fillline" x1="60" y1="316" x2="330" y2="316"/>
+  <line class="fillline" x1="60" y1="340" x2="330" y2="340"/>
+
+  <rect class="box" x="390" y="180" width="320" height="175"/>
+  <text class="letter" x="410" y="222">R</text>
+  <text class="label" x="455" y="204">RANK BY IMPACT</text>
+  <text class="small" x="455" y="224">Choose exactly three big rocks for today.</text>
+  <text class="tiny" x="455" y="242">Separate important work from urgent noise.</text>
+  <text class="tiny" x="410" y="268">1. BIG ROCK + WHY</text>
+  <line class="fillline" x1="410" y1="280" x2="680" y2="280"/>
+  <text class="tiny" x="410" y="304">2. BIG ROCK + WHY</text>
+  <line class="fillline" x1="410" y1="316" x2="680" y2="316"/>
+  <text class="tiny" x="410" y="340">3. BIG ROCK + WHY</text>
+
+  <rect class="box" x="740" y="180" width="320" height="175"/>
+  <text class="letter" x="760" y="222">I</text>
+  <text class="label" x="805" y="204">ISOLATE THE BIG ROCKS</text>
+  <text class="small" x="805" y="224">Give each priority a clear finish line.</text>
+  <text class="tiny" x="805" y="242">Write the next physical action, not a vague project.</text>
+  <text class="tiny" x="760" y="268">ROCK 1 FINISH LINE / FIRST ACTION</text>
+  <line class="fillline" x1="760" y1="280" x2="1030" y2="280"/>
+  <text class="tiny" x="760" y="304">ROCK 2 FINISH LINE / FIRST ACTION</text>
+  <line class="fillline" x1="760" y1="316" x2="1030" y2="316"/>
+  <text class="tiny" x="760" y="340">ROCK 3 FINISH LINE / FIRST ACTION</text>
+
+  <rect class="box" x="40" y="375" width="320" height="175"/>
+  <text class="letter" x="60" y="417">A</text>
+  <text class="label" x="105" y="399">ASSIGN TIME</text>
+  <text class="small" x="105" y="419">Put all three priorities into real time blocks.</text>
+  <text class="tiny" x="105" y="437">Match the hardest work to your best energy.</text>
+  <text class="tiny" x="60" y="463">ROCK 1 / START–END / RESULT</text>
+  <line class="fillline" x1="60" y1="475" x2="330" y2="475"/>
+  <text class="tiny" x="60" y="499">ROCK 2 / START–END / RESULT</text>
+  <line class="fillline" x1="60" y1="511" x2="330" y2="511"/>
+  <text class="tiny" x="60" y="535">ROCK 3 / START–END / RESULT</text>
+
+  <rect class="box" x="390" y="375" width="320" height="175"/>
+  <text class="letter" x="410" y="417">G</text>
+  <text class="label" x="455" y="399">GUARD FOCUS</text>
+  <text class="small" x="455" y="419">Protect each block like an appointment.</text>
+  <text class="tiny" x="455" y="437">Silence alerts, close tabs, and capture interruptions.</text>
+  <text class="tiny" x="410" y="463">FOCUS RHYTHM</text>
+  <line class="fillline" x1="410" y1="475" x2="680" y2="475"/>
+  <text class="tiny" x="410" y="499">BIGGEST DISTRACTION</text>
+  <line class="fillline" x1="410" y1="511" x2="680" y2="511"/>
+  <text class="tiny" x="410" y="535">BOUNDARY / PROTECTION I WILL USE</text>
+
+  <rect class="box" x="740" y="375" width="320" height="175"/>
+  <text class="letter" x="760" y="417">E</text>
+  <text class="label" x="805" y="399">EXAMINE AND ADJUST</text>
+  <text class="small" x="805" y="419">Review results; decide what moves, shrinks, or ends.</text>
+  <text class="tiny" x="805" y="437">Do not carry unfinished work forward automatically.</text>
+  <text class="tiny" x="760" y="463">1 / 2 / 3 STATUS: COMPLETE · PARTIAL · UNTOUCHED</text>
+  <line class="fillline" x1="760" y1="475" x2="1030" y2="475"/>
+  <text class="tiny" x="760" y="499">NEXT RANK + NEW TIME BLOCK</text>
+  <line class="fillline" x1="760" y1="511" x2="1030" y2="511"/>
+  <text class="tiny" x="760" y="535">ADJUST / DELEGATE / REMOVE:</text>
+
+  <rect class="mini" x="40" y="580" width="1020" height=" ninety"/>
+  <text class="label" x="60" y="606">TODAY'S DECISION</text>
+  <text class="small" x="60" y="628">The three results that matter most are:</text>
+  <line class="fillline" x1="60" y1="646" x2="1030" y2="646"/>
+  <line class="fillline" x1="60" y1="670" x2="1030" y2="670"/>
+  <text class="tiny" x="60" y="691">Everything else is marked for later, delegation, or removal.</text>
+
+  <rect class="mini" x="40" y="710" width="315" height="98"/>
+  <text class="num" x="60" y="746">1</text>
+  <text class="label" x="95" y="734">CAPTURE</text>
+  <text class="tiny" x="95" y="754">My trusted place for every task:</text>
+  <line class="fillline" x1="95" y1="770" x2="335" y2="770"/>
+  <text class="tiny" x="95" y="792">One list reduces mental noise.</text>
+
+  <rect class="mini" x="392" y="710" width="315" height="98"/>
+  <text class="num" x="412" y="746">2</text>
+  <text class="label" x="447" y="734">PROTECT</text>
+  <text class="tiny" x="447" y="754">My first protected block begins at:</text>
+  <line class="fillline" x1="447" y1="770" x2="687" y2="770"/>
+  <text class="tiny" x="447" y="792">Boundary I will communicate:</text>
+
+  <rect class="mini" x="745" y="710" width="315" height="98"/>
+  <text class="num" x="765" y="746">3</text>
+  <text class="label" x="800" y="734">REPEAT</text>
+  <text class="tiny" x="800" y="754">Days I completed all three priorities:</text>
+  <line class="fillline" x1="800" y1="770" x2="1040" y2="770"/>
+  <text class="tiny" x="800" y="792">Target: 5 of the next 7 days.</text>
+</svg>
