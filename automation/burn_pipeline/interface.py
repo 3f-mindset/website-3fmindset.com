@@ -984,20 +984,12 @@ depends_on = ["lesson"]
 output = "{target_dir_string}/index.md"
 
 [[steps.inputs]]
-path = "{target_dir_string}/index.md"
-alias = "draft_index"
-
-[[steps.inputs]]
 step = "lesson"
 alias = "lesson"
 
 [[steps.inputs]]
 path = "{target_dir_string}/CONTEXT.md"
 alias = "context"
-
-[[steps.inputs]]
-path = "{target_dir_string}/SEED.md"
-alias = "seed"
 
 [[steps]]
 id = "newsletter_email"

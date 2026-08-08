@@ -260,20 +260,12 @@ depends_on = ["lesson"]
 output = "content/letters/YYYY-MM-DD-slug/index.md"
 
 [[steps.inputs]]
-path = "content/letters/YYYY-MM-DD-slug/index.md"
-alias = "draft_index"
-
-[[steps.inputs]]
 step = "lesson"
 alias = "lesson"
 
 [[steps.inputs]]
 path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
-
-[[steps.inputs]]
-path = "content/letters/YYYY-MM-DD-slug/SEED.md"
-alias = "seed"
 
 [[steps]]
 id = "newsletter_email"
