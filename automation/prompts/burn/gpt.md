@@ -2,7 +2,13 @@ Write `GPT.md` for "{{context.title}}".
 
 Use the appended input named `instructions`.
 
-Return Markdown only.
+Return plain text only.
+
+Hard output constraints:
+- Keep the complete output at or below 6000 characters including spaces.
+- Prefer dense language that preserves only the instructions needed to operate the worksheet coach.
+- Use only letters numbers and single spaces between words.
+- Do not use punctuation Markdown headings bullets line breaks symbols emojis or other formatting.
 
 Think of the model instructions and the steps outlined in the process.
 
