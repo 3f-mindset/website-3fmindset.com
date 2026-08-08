@@ -7,6 +7,7 @@ import tempfile
 import re
 import base64
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -163,6 +164,7 @@ class ChatCompletionsAdapter:
             raise RuntimeError(f"Unexpected LLM response shape: {data}") from exc
         if not isinstance(content, str):
             raise RuntimeError(f"Unexpected LLM content type: {type(content).__name__}")
+        record_usage(data, endpoint="chat/completions", requested_model=model)
         return GeneratedArtifact(text=content)
 
     def _resolve_model(self, client: httpx.Client, headers: dict[str, str]) -> str:
@@ -263,6 +265,7 @@ class ImageGenerationAdapter:
             raise RuntimeError(f"Unexpected image response shape: {data}") from exc
         if not isinstance(encoded, str) or not encoded.strip():
             raise RuntimeError(f"Image response did not include b64_json: {data}")
+        record_usage(data, endpoint="images/generations", requested_model=str(payload["model"]))
         return GeneratedArtifact(binary=base64.b64decode(encoded))
 
     def _post_with_retries(
@@ -293,6 +296,24 @@ class ImageGenerationAdapter:
         if last_error:
             raise last_error
         raise RuntimeError("Unexpected retry state")
+
+
+def record_usage(data: dict[str, Any], *, endpoint: str, requested_model: str) -> None:
+    """Append provider-reported usage when a comparison run requests it."""
+    destination = os.environ.get("BURN_USAGE_LOG")
+    usage = data.get("usage")
+    if not destination or not isinstance(usage, dict):
+        return
+    entry = {
+        "recorded_at": datetime.now(timezone.utc).isoformat(),
+        "endpoint": endpoint,
+        "model": data.get("model") or requested_model,
+        "usage": usage,
+    }
+    path = Path(destination)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(entry, ensure_ascii=True) + "\n")
 
 
 def parse_image_brief(markdown: str) -> tuple[str, str | None, str | None]:
