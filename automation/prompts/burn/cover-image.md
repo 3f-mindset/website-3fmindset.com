@@ -1,15 +1,13 @@
 Write `COVER_PROMPT.md` for "{{context.title}}".
 
-Use the appended inputs named `context`, `lesson`, and `banner`.
+Use the appended inputs named `context` and `long_form`.
 
 Return Markdown only.
-
-This file belongs to the marketing-assets phase.
 
 Create a downstream image-generation prompt for an editorial `4:3` article cover image that fits the lesson directly rather than reusing the worksheet as the central subject.
 
 The prompt you write must direct the image generator to create a cover asset that:
-- uses a thematic central subject or decisive action pulled from the lesson's real tension
+- uses a thematic central subject or decisive action pulled from the long-form letter's real tension
 - will ultimately be rendered as a `png` or `jpeg`
 - reads immediately at thumbnail size
 - keeps one dominant focal point with strong subject separation
@@ -36,7 +34,7 @@ Style requirements to include:
 - no UI mockups
 
 Main subject requirements:
-- choose one thematic subject, tool, or decisive action that fits the lesson's conflict about testing old beliefs and replacing them with proof
+- choose one thematic subject, tool, or decisive action that fits the long-form letter's conflict
 - prefer a single readable central scene over symbolic clutter
 - if a person is used, keep the figure simple, readable, and fully subordinate to the clarity of the central action
 - do not use the worksheet, paper artifact, page, document, form layout, masked worksheet render, or any document-like object as the centerpiece
@@ -69,9 +67,8 @@ Text requirements:
 - no readable marks
 
 Source material guidance:
-- use the `Title`, `Promise`, `Choice`, `Actionable VERB`, and the strongest pressure image from the lesson
-- use the banner brief only for broad campaign continuity, not for repeating the banner composition
-- derive the central subject from the lesson's real conflict, such as false rules, testing assumptions, breaking inherited limits, evidence replacing fear, or a man confronting the mechanism of his old story
+- use the `Title`, `Promise`, `Choice`, and `Actionable VERB` from `context`, plus the strongest pressure image from `long_form`
+- derive the central subject from the long-form letter's real conflict rather than from campaign assets
 
 Output shape:
 - `# Asset`

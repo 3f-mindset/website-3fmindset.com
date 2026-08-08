@@ -29,6 +29,10 @@ model = "AUDIO_MODEL_NAME"
 voice = "direct, pragmatic, masculine, concrete"
 audience = "men who need structure, ownership, and steady action"
 
+[tracks]
+promo_assets = false
+landing_page = false
+
 [[steps]]
 id = "lesson"
 format = "markdown"
@@ -74,10 +78,6 @@ depends_on = ["instructions"]
 output = "content/letters/YYYY-MM-DD-slug/GPT.md"
 
 [[steps.inputs]]
-path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
-alias = "context"
-
-[[steps.inputs]]
 step = "instructions"
 alias = "instructions"
 
@@ -87,14 +87,6 @@ format = "svg"
 prompt_file = "automation/prompts/burn/worksheet-svg.md"
 depends_on = ["lesson", "instructions"]
 output = "content/letters/YYYY-MM-DD-slug/WORKSHEET.svg"
-
-[[steps.inputs]]
-path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
-alias = "context"
-
-[[steps.inputs]]
-step = "lesson"
-alias = "lesson"
 
 [[steps.inputs]]
 step = "instructions"
@@ -115,7 +107,8 @@ alias = "worksheet"
 id = "promo"
 format = "markdown"
 prompt_file = "automation/prompts/burn/promo-image.md"
-depends_on = ["worksheet_masked"]
+depends_on = ["worksheet_masked", "index", "cover_image"]
+tracks = ["promo_assets"]
 output = "content/letters/YYYY-MM-DD-slug/PROMO_PROMPT.md"
 
 [[steps.inputs]]
@@ -132,6 +125,7 @@ format = "png"
 modality = "image"
 prompt_file = "automation/prompts/burn/render-image.md"
 depends_on = ["promo"]
+tracks = ["promo_assets"]
 output = "content/letters/YYYY-MM-DD-slug/promo.png"
 
 [[steps.inputs]]
@@ -142,7 +136,8 @@ alias = "asset_prompt"
 id = "banner"
 format = "markdown"
 prompt_file = "automation/prompts/burn/banner-image.md"
-depends_on = ["worksheet_masked", "promo"]
+depends_on = ["worksheet_masked", "promo", "index", "cover_image"]
+tracks = ["promo_assets"]
 output = "content/letters/YYYY-MM-DD-slug/BANNER_PROMPT.md"
 
 [[steps.inputs]]
@@ -163,6 +158,7 @@ format = "png"
 modality = "image"
 prompt_file = "automation/prompts/burn/render-image.md"
 depends_on = ["banner"]
+tracks = ["promo_assets"]
 output = "content/letters/YYYY-MM-DD-slug/banner.png"
 
 [[steps.inputs]]
@@ -173,7 +169,7 @@ alias = "asset_prompt"
 id = "cover"
 format = "markdown"
 prompt_file = "automation/prompts/burn/cover-image.md"
-depends_on = ["lesson", "banner"]
+depends_on = ["index"]
 output = "content/letters/YYYY-MM-DD-slug/COVER_PROMPT.md"
 
 [[steps.inputs]]
@@ -181,12 +177,8 @@ path = "content/letters/YYYY-MM-DD-slug/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
-step = "lesson"
-alias = "lesson"
-
-[[steps.inputs]]
-step = "banner"
-alias = "banner"
+step = "index"
+alias = "long_form"
 
 [[steps]]
 id = "cover_image"
@@ -205,6 +197,7 @@ id = "page_copy"
 format = "markdown"
 prompt_file = "automation/prompts/burn/page-copy.md"
 depends_on = ["promo", "banner"]
+tracks = ["landing_page"]
 output = "content/letters/YYYY-MM-DD-slug/PAGE_COPY.md"
 
 [[steps.inputs]]
@@ -224,6 +217,7 @@ id = "landing_page"
 format = "html"
 prompt_file = "automation/prompts/burn/landing-page-html.md"
 depends_on = ["banner", "page_copy"]
+tracks = ["landing_page"]
 output = "content/letters/YYYY-MM-DD-slug/LANDING_PAGE.html"
 
 [[steps.inputs]]
@@ -243,6 +237,7 @@ id = "worksheet_page"
 format = "markdown"
 prompt_file = "automation/prompts/burn/worksheet-page-prototype.md"
 depends_on = ["promo", "page_copy"]
+tracks = ["landing_page"]
 output = "content/letters/YYYY-MM-DD-slug/WORKSHEET_PAGE.md"
 
 [[steps.inputs]]

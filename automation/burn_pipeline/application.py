@@ -86,10 +86,26 @@ class BurnPipeline:
         return ""
 
     def run_pipeline(self, spec: PipelineSpec, force: bool) -> None:
-        steps_by_id = {step.id: step for step in spec.steps}
-        step_order = {step.id: index for index, step in enumerate(spec.steps)}
+        steps = [
+            step for step in spec.steps
+            if all(spec.tracks.get(track, True) for track in step.tracks)
+        ]
+        steps_by_id = {step.id: step for step in steps}
+        step_order = {step.id: index for index, step in enumerate(steps)}
+        disabled_dependencies = {
+            step.id: dependency
+            for step in steps
+            for dependency in step.depends_on
+            if dependency not in steps_by_id
+        }
+        if disabled_dependencies:
+            details = ", ".join(
+                f"{step_id} -> {dependency}"
+                for step_id, dependency in sorted(disabled_dependencies.items())
+            )
+            raise ValueError(f"Enabled step depends on a disabled step: {details}")
         state: dict[str, dict[str, str]] = {}
-        pending = list(spec.steps)
+        pending = list(steps)
         current_provider_key: tuple[str, ...] | None = None
 
         while pending:

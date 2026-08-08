@@ -76,6 +76,7 @@ class StepSpec(BaseModel):
     modality: GenerationModality = GenerationModality.TEXT
     inputs: list[InputSource] = Field(default_factory=list)
     depends_on: list[str] = Field(default_factory=list)
+    tracks: list[str] = Field(default_factory=list)
 
     @field_validator("inputs", mode="before")
     @classmethod
@@ -95,6 +96,7 @@ class PipelineSpec(BaseModel):
     context: BurnContext = Field(default_factory=BurnContext)
     variables: dict[str, Any] = Field(default_factory=dict)
     providers: dict[GenerationModality, "ProviderConfig"] = Field(default_factory=dict)
+    tracks: dict[str, bool] = Field(default_factory=dict)
     steps: list[StepSpec]
 
 

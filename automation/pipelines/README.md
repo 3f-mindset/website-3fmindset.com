@@ -177,6 +177,11 @@ prompt/spec files such as `PROMO_PROMPT.md`, which are intended to feed downstre
 `png/jpeg` asset generation rather than pretending the text pipeline can write raster
 images directly.
 
+Promo-image assets and landing-page assets are optional tracks and are disabled in new
+production plans. Enable promo assets only with `--enable-track promo_assets`; enable
+the landing-page track with both `--enable-track promo_assets --enable-track landing_page`.
+The promo track waits for the final long-form letter and rendered cover image.
+
 ## Model Registry
 
 The pipeline maintains `automation/pipelines/model-registry.json` as the registry of

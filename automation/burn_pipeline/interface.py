@@ -125,13 +125,15 @@ def main() -> None:
             target_dir=args.target_dir,
             variables=parse_key_value_pairs(args.var),
         )
+        spec = apply_track_overrides(spec, args.enable_track)
         selected_step = None
         if args.step_id:
             selected_step = next((candidate for candidate in spec.steps if candidate.id == args.step_id), None)
             if selected_step is None:
                 parser.error(f"Unknown step id: {args.step_id}")
         if args.dry_run:
-            for step in ([selected_step] if selected_step is not None else spec.steps):
+            steps = [selected_step] if selected_step is not None else enabled_steps(spec)
+            for step in steps:
                 print_step_plan(
                     step.id,
                     [describe_input(input_source) for input_source in step.inputs],
@@ -140,6 +142,11 @@ def main() -> None:
             return
         pipeline = build_pipeline(args, cwd, files, spec=spec)
         if selected_step is not None:
+            if not is_step_enabled(selected_step, spec.tracks):
+                parser.error(
+                    f"Step '{selected_step.id}' belongs to a disabled track. "
+                    "Enable it with --enable-track."
+                )
             pipeline.generate_step(
                 step=selected_step,
                 context=spec.context,
@@ -151,7 +158,7 @@ def main() -> None:
             print(f"Wrote pipeline step output: {selected_step.id}")
             return
         pipeline.run_pipeline(spec=spec, force=args.force)
-        print(f"Wrote {len(spec.steps)} pipeline step output(s)")
+        print(f"Wrote {len(enabled_steps(spec))} pipeline step output(s)")
         return
 
     if args.command == "render-prompt":
@@ -284,6 +291,12 @@ def build_parser() -> argparse.ArgumentParser:
     add_context_args(run)
     run.add_argument("--pipeline", required=True)
     run.add_argument("--step-id", default="")
+    run.add_argument(
+        "--enable-track",
+        action="append",
+        default=[],
+        help="Enable an optional pipeline track. Repeatable.",
+    )
     run.add_argument("--target-dir", default="")
     run.add_argument("--force", action="store_true")
     run.add_argument("--dry-run", action="store_true")
@@ -335,6 +348,22 @@ def apply_context_overrides(
         values["context"]["target_dir"] = target_dir
     values["variables"] = {**values.get("variables", {}), **variables}
     return PipelineSpec.model_validate(values)
+
+
+def apply_track_overrides(spec: PipelineSpec, enabled_tracks: list[str]) -> PipelineSpec:
+    if not enabled_tracks:
+        return spec
+    values = spec.model_dump()
+    values["tracks"] = {**values.get("tracks", {}), **{track: True for track in enabled_tracks}}
+    return PipelineSpec.model_validate(values)
+
+
+def is_step_enabled(step, tracks: dict[str, bool]) -> bool:
+    return all(tracks.get(track, True) for track in step.tracks)
+
+
+def enabled_steps(spec: PipelineSpec):
+    return [step for step in spec.steps if is_step_enabled(step, spec.tracks)]
 
 
 def build_pipeline(
@@ -724,6 +753,10 @@ model = "AUDIO_MODEL_NAME"
 voice = "direct, pragmatic, masculine, concrete"
 audience = "men who need structure, ownership, and steady action"
 
+[tracks]
+promo_assets = false
+landing_page = false
+
 [[steps]]
 id = "lesson"
 format = "markdown"
@@ -769,10 +802,6 @@ depends_on = ["instructions"]
 output = "{target_dir_string}/GPT.md"
 
 [[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-
-[[steps.inputs]]
 step = "instructions"
 alias = "instructions"
 
@@ -782,14 +811,6 @@ format = "svg"
 prompt_file = "automation/prompts/burn/worksheet-svg.md"
 depends_on = ["lesson", "instructions"]
 output = "{target_dir_string}/WORKSHEET.svg"
-
-[[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-
-[[steps.inputs]]
-step = "lesson"
-alias = "lesson"
 
 [[steps.inputs]]
 step = "instructions"
@@ -810,7 +831,8 @@ alias = "worksheet"
 id = "promo"
 format = "markdown"
 prompt_file = "automation/prompts/burn/promo-image.md"
-depends_on = ["worksheet_masked"]
+depends_on = ["worksheet_masked", "index", "cover_image"]
+tracks = ["promo_assets"]
 output = "{target_dir_string}/PROMO_PROMPT.md"
 
 [[steps.inputs]]
@@ -827,6 +849,7 @@ format = "png"
 modality = "image"
 prompt_file = "automation/prompts/burn/render-image.md"
 depends_on = ["promo"]
+tracks = ["promo_assets"]
 output = "{target_dir_string}/promo.png"
 
 [[steps.inputs]]
@@ -837,7 +860,8 @@ alias = "asset_prompt"
 id = "banner"
 format = "markdown"
 prompt_file = "automation/prompts/burn/banner-image.md"
-depends_on = ["worksheet_masked", "promo"]
+depends_on = ["worksheet_masked", "promo", "index", "cover_image"]
+tracks = ["promo_assets"]
 output = "{target_dir_string}/BANNER_PROMPT.md"
 
 [[steps.inputs]]
@@ -858,6 +882,7 @@ format = "png"
 modality = "image"
 prompt_file = "automation/prompts/burn/render-image.md"
 depends_on = ["banner"]
+tracks = ["promo_assets"]
 output = "{target_dir_string}/banner.png"
 
 [[steps.inputs]]
@@ -868,7 +893,7 @@ alias = "asset_prompt"
 id = "cover"
 format = "markdown"
 prompt_file = "automation/prompts/burn/cover-image.md"
-depends_on = ["lesson", "banner"]
+depends_on = ["index"]
 output = "{target_dir_string}/COVER_PROMPT.md"
 
 [[steps.inputs]]
@@ -876,12 +901,8 @@ path = "{target_dir_string}/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
-step = "lesson"
-alias = "lesson"
-
-[[steps.inputs]]
-step = "banner"
-alias = "banner"
+step = "index"
+alias = "long_form"
 
 [[steps]]
 id = "cover_image"
@@ -900,6 +921,7 @@ id = "page_copy"
 format = "markdown"
 prompt_file = "automation/prompts/burn/page-copy.md"
 depends_on = ["promo", "banner"]
+tracks = ["landing_page"]
 output = "{target_dir_string}/PAGE_COPY.md"
 
 [[steps.inputs]]
@@ -919,6 +941,7 @@ id = "landing_page"
 format = "html"
 prompt_file = "automation/prompts/burn/landing-page-html.md"
 depends_on = ["banner", "page_copy"]
+tracks = ["landing_page"]
 output = "{target_dir_string}/LANDING_PAGE.html"
 
 [[steps.inputs]]
@@ -938,6 +961,7 @@ id = "worksheet_page"
 format = "markdown"
 prompt_file = "automation/prompts/burn/worksheet-page-prototype.md"
 depends_on = ["promo", "page_copy"]
+tracks = ["landing_page"]
 output = "{target_dir_string}/WORKSHEET_PAGE.md"
 
 [[steps.inputs]]

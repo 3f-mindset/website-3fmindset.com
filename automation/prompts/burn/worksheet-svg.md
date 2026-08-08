@@ -1,6 +1,6 @@
 Design `WORKSHEET.svg` for "{{context.title}}".
 
-Use the appended inputs named `context`, `lesson`, and `instructions`.
+Use the appended input named `instructions`.
 
 Return a complete raw SVG document only. Do not wrap it in a code block.
 
@@ -10,22 +10,17 @@ The SVG file format, page size, typography classes, and full-page worksheet inte
 The internal worksheet layout is not fixed.
 
 Model source of truth:
-- Treat `context` as the binding source for the worksheet action model.
-- Extract the exact `## Actionable VERB` and the complete `## Model` from `context`.
-- The large centered verb heading must use that exact `Actionable VERB`.
-- Every letter in the verb must appear visibly as a model letter marker.
-- Every model step from `## Model` must receive its own actionable fillable area.
-- Preserve repeated letters as separate steps when the verb repeats a letter.
-- Do not rename, replace, combine, summarize, or skip any model letter.
-- Do not build the worksheet from the three-step `Action Steps Summary`; that summary may only support a footer recap.
-- If `lesson`, `instructions`, and `context` disagree about the verb or step sequence, `context` wins.
+- Treat `instructions` as the binding source for the worksheet process.
+- Extract the exact named steps and their order from `instructions`.
+- Every process step must receive its own actionable fillable area.
+- Do not rename, replace, combine, summarize, or skip any process step.
 
 The model has full creative authority to adapt the internal worksheet composition to the chosen verb and process.
 That includes:
 - changing the number of content blocks
 - changing the layout order
-- changing the arrangement of the letter sections
-- changing how the action model is distributed across the page
+- changing the arrangement of the process sections
+- changing how the process is distributed across the page
 - changing the final reflection and footer structure
 - changing how fillable areas are shaped
 
@@ -49,11 +44,11 @@ Hard constraints:
 Content mapping requirements:
 - Use the actual SteadyBurn number if it is available from the inputs. If not, use `SBXX`.
 - Use the topic as the large title.
-- Use the topic subtitle or lesson framing as the subtitle.
-- Use the `Choice` content as the top-right intro box.
-- Use the actionable verb/model from `context` as the large centered verb heading.
-- Use the verb letters and full process steps from `context` as the primary driver of the worksheet architecture.
-- The number of content blocks must expand or contract to fit the full verb and model from `context`.
+- Use a concise process framing as the subtitle.
+- Use the first process step as the top-right intro box when appropriate.
+- Use the named process as the large centered heading.
+- Use the full process steps from `instructions` as the primary driver of the worksheet architecture.
+- The number of content blocks must expand or contract to fit the full process.
 - The order of blocks may change if the process becomes clearer that way.
 - The footer structure may change if the content needs a different closing pattern.
 - Use short box labels, one short instruction line, one short helper line, and clear fillable lines or numbered slots where appropriate.
@@ -77,8 +72,8 @@ Do not:
 - output prose before or after the SVG
 
 Creative authority rule:
-- You may redesign the internal worksheet composition completely for each new verb.
-- You may change block count, order, and grouping only if every model letter remains visible and every model step still has its own fillable area.
+- You may redesign the internal worksheet composition completely for each new process.
+- You may change block count, order, and grouping only if every process step remains visible and has its own fillable area.
 - You may make the page asymmetrical, modular, linear, radial, laddered, or staged if it still prints cleanly and remains easy to fill out by hand.
 - Creativity is encouraged inside the page. Sloppiness is not.
 
