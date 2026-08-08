@@ -2,7 +2,7 @@
 title = "Master Your Tasks: Prioritization and Time Management"
 slug = "master-your-tasks-prioritization-and-time-management"
 date = "2026-08-07"
-target_dir = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management"
+target_dir = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management"
 
 [providers.text]
 kind = "openai-compatible"
@@ -37,18 +37,18 @@ landing_page = false
 id = "lesson"
 format = "markdown"
 prompt_file = "automation/prompts/burn/lesson.md"
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md"
 alias = "seed"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md"
 alias = "draft_index"
 
 [[steps]]
@@ -56,18 +56,18 @@ id = "instructions"
 format = "markdown"
 prompt_file = "automation/prompts/burn/instructions.md"
 depends_on = ["lesson"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md"
 
 [[steps.inputs]]
 step = "lesson"
 alias = "lesson"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md"
 alias = "seed"
 
 [[steps]]
@@ -75,7 +75,7 @@ id = "gpt"
 format = "markdown"
 prompt_file = "automation/prompts/burn/gpt.md"
 depends_on = ["instructions"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md"
 
 [[steps.inputs]]
 step = "instructions"
@@ -86,7 +86,7 @@ id = "worksheet"
 format = "svg"
 prompt_file = "automation/prompts/burn/worksheet-svg.md"
 depends_on = ["lesson", "instructions"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg"
 
 [[steps.inputs]]
 step = "instructions"
@@ -97,7 +97,7 @@ id = "worksheet_masked"
 format = "svg"
 prompt_file = "automation/prompts/burn/worksheet-masked-svg.md"
 depends_on = ["worksheet"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg"
 
 [[steps.inputs]]
 step = "worksheet"
@@ -109,10 +109,10 @@ format = "markdown"
 prompt_file = "automation/prompts/burn/promo-image.md"
 depends_on = ["worksheet_masked", "index", "cover_image"]
 tracks = ["promo_assets"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/PROMO_PROMPT.md"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/PROMO_PROMPT.md"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -126,7 +126,7 @@ modality = "image"
 prompt_file = "automation/prompts/burn/render-image.md"
 depends_on = ["promo"]
 tracks = ["promo_assets"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/promo.png"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/promo.png"
 
 [[steps.inputs]]
 step = "promo"
@@ -138,10 +138,10 @@ format = "markdown"
 prompt_file = "automation/prompts/burn/banner-image.md"
 depends_on = ["worksheet_masked", "promo", "index", "cover_image"]
 tracks = ["promo_assets"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/BANNER_PROMPT.md"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/BANNER_PROMPT.md"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -159,7 +159,7 @@ modality = "image"
 prompt_file = "automation/prompts/burn/render-image.md"
 depends_on = ["banner"]
 tracks = ["promo_assets"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/banner.png"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/banner.png"
 
 [[steps.inputs]]
 step = "banner"
@@ -170,10 +170,10 @@ id = "cover"
 format = "markdown"
 prompt_file = "automation/prompts/burn/cover-image.md"
 depends_on = ["index"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -186,7 +186,7 @@ format = "png"
 modality = "image"
 prompt_file = "automation/prompts/burn/render-image.md"
 depends_on = ["cover"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png"
 
 [[steps.inputs]]
 step = "cover"
@@ -198,10 +198,10 @@ format = "markdown"
 prompt_file = "automation/prompts/burn/page-copy.md"
 depends_on = ["promo", "banner"]
 tracks = ["landing_page"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/PAGE_COPY.md"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/PAGE_COPY.md"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -218,10 +218,10 @@ format = "html"
 prompt_file = "automation/prompts/burn/landing-page-html.md"
 depends_on = ["banner", "page_copy"]
 tracks = ["landing_page"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/LANDING_PAGE.html"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/LANDING_PAGE.html"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -238,10 +238,10 @@ format = "markdown"
 prompt_file = "automation/prompts/burn/worksheet-page-prototype.md"
 depends_on = ["promo", "page_copy"]
 tracks = ["landing_page"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_PAGE.md"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_PAGE.md"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
 alias = "context"
 
 [[steps.inputs]]
@@ -257,14 +257,14 @@ id = "index"
 format = "markdown"
 prompt_file = "automation/prompts/burn/index.md"
 depends_on = ["lesson"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md"
 
 [[steps.inputs]]
 step = "lesson"
 alias = "lesson"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
 alias = "context"
 
 [[steps]]
@@ -272,7 +272,7 @@ id = "newsletter_email"
 format = "markdown"
 prompt_file = "automation/prompts/burn/newsletter-email.md"
 depends_on = ["index", "lesson", "instructions", "gpt"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md"
 
 [[steps.inputs]]
 step = "index"
@@ -291,7 +291,7 @@ step = "gpt"
 alias = "gpt"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
 alias = "context"
 
 [[steps]]
@@ -299,12 +299,12 @@ id = "community_post"
 format = "markdown"
 prompt_file = "automation/prompts/burn/community-post.md"
 depends_on = ["index"]
-output = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md"
+output = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md"
 
 [[steps.inputs]]
 step = "index"
 alias = "index"
 
 [[steps.inputs]]
-path = "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
+path = "automation/case-studies/local-models/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md"
 alias = "context"
