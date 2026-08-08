@@ -38,6 +38,25 @@ OPENAI_API_KEY=... uv run burn-pipeline --provider openai --model gpt-4.1 run \
   --force
 ```
 
+OpenRouter (OpenAI-compatible API):
+
+```sh
+OPENROUTER_API_KEY=... uv run burn-pipeline --provider openrouter \
+  --model openai/gpt-4.1 run \
+  --pipeline automation/pipelines/burn-poc.toml \
+  --force
+```
+
+`openrouter` defaults to `https://openrouter.ai/api/v1` and `OPENROUTER_API_KEY`.
+Use any OpenRouter model identifier (for example, `openai/gpt-4.1`).
+
+The Make targets support the same provider:
+
+```sh
+OPENROUTER_API_KEY=... make burn-run BURN_PROVIDER=openrouter \
+  CODEX_BURN_MODEL=openai/gpt-4.1
+```
+
 OpenAI-compatible local/network server, such as vLLM or llama.cpp:
 
 ```sh

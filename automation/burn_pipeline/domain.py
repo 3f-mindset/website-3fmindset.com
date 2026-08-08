@@ -35,6 +35,7 @@ class ProviderKind(str, Enum):
     CODEX_CLI = "codex-cli"
     OPENAI = "openai"
     OPENAI_COMPATIBLE = "openai-compatible"
+    OPENROUTER = "openrouter"
 
 
 class BurnContext(BaseModel):
@@ -139,11 +140,20 @@ class ProviderConfig(BaseModel):
     kind: ProviderKind = ProviderKind.OPENAI_COMPATIBLE
     model: str | None = None
     base_url: str | None = None
-    api_key_env: str = "OPENAI_API_KEY"
+    api_key_env: str | None = None
     command: str = "codex"
     timeout_seconds: float | None = None
     retry_attempts: int = 4
     retry_wait_seconds: float = 75.0
+
+    @model_validator(mode="after")
+    def apply_provider_defaults(self) -> "ProviderConfig":
+        if self.kind == ProviderKind.OPENROUTER:
+            self.base_url = self.base_url or "https://openrouter.ai/api/v1"
+            self.api_key_env = self.api_key_env or "OPENROUTER_API_KEY"
+        else:
+            self.api_key_env = self.api_key_env or "OPENAI_API_KEY"
+        return self
 
 
 class GenerateCommand(BaseModel):

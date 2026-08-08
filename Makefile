@@ -12,8 +12,8 @@ CODEX_BURN_SLUG ?= $(BURN_STATE_SLUG)
 CODEX_BURN_MODEL ?= active
 
 BURN_PROVIDER ?= openai-compatible
-BURN_BASE_URL ?= http://localhost:11434
-BURN_API_KEY_ENV ?= OPENAI_API_KEY
+BURN_BASE_URL ?= $(if $(filter openrouter,$(BURN_PROVIDER)),https://openrouter.ai/api/v1,http://localhost:11434)
+BURN_API_KEY_ENV ?= $(if $(filter openrouter,$(BURN_PROVIDER)),OPENROUTER_API_KEY,OPENAI_API_KEY)
 BURN_CODEX_BIN ?=
 BURN_TARGET_ROOT ?= content/letters
 

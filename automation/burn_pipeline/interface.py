@@ -22,6 +22,7 @@ from .infrastructure import (
 
 DEFAULT_PROVIDER = ProviderKind.OPENAI_COMPATIBLE.value
 DEFAULT_OPENAI_COMPATIBLE_BASE_URL = "http://localhost:11434"
+DEFAULT_OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 DEFAULT_TEXT_MODEL = "active"
 DEFAULT_IMAGE_MODEL = "unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m"
 
@@ -197,10 +198,17 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--model", default=DEFAULT_TEXT_MODEL, help="Default text model.")
     parser.add_argument(
         "--base-url",
-        default=DEFAULT_OPENAI_COMPATIBLE_BASE_URL,
-        help="Default text OpenAI-compatible API base URL.",
+        default=None,
+        help=(
+            "Default text API base URL. Defaults to http://localhost:11434 for "
+            "openai-compatible and https://openrouter.ai/api/v1 for openrouter."
+        ),
     )
-    parser.add_argument("--api-key-env", default="OPENAI_API_KEY", help="API key environment variable.")
+    parser.add_argument(
+        "--api-key-env",
+        default=None,
+        help="API key environment variable (defaults to OPENROUTER_API_KEY for openrouter).",
+    )
     parser.add_argument("--codex-bin", default="codex", help="Codex CLI executable when using codex-cli.")
     parser.add_argument(
         "--image-provider",
@@ -360,11 +368,12 @@ def resolve_provider_configs(
     *,
     spec: PipelineSpec | None,
 ) -> dict[GenerationModality, ProviderConfig]:
+    text_kind = ProviderKind(args.provider)
     defaults = {
         GenerationModality.TEXT: ProviderConfig(
-            kind=ProviderKind(args.provider),
+            kind=text_kind,
             model=args.model,
-            base_url=args.base_url,
+            base_url=resolve_base_url(text_kind, args.base_url),
             api_key_env=args.api_key_env,
             command=args.codex_bin,
         )
@@ -373,7 +382,7 @@ def resolve_provider_configs(
         defaults[GenerationModality.IMAGE] = ProviderConfig(
             kind=ProviderKind(args.image_provider or args.provider),
             model=args.image_model,
-            base_url=args.image_base_url,
+            base_url=resolve_base_url(ProviderKind(args.image_provider or args.provider), args.image_base_url),
             api_key_env=args.image_api_key_env or args.api_key_env,
             command=args.image_codex_bin or args.codex_bin,
         )
@@ -381,7 +390,7 @@ def resolve_provider_configs(
         defaults[GenerationModality.AUDIO] = ProviderConfig(
             kind=ProviderKind(args.audio_provider or args.provider),
             model=args.audio_model,
-            base_url=args.audio_base_url,
+            base_url=resolve_base_url(ProviderKind(args.audio_provider or args.provider), args.audio_base_url),
             api_key_env=args.audio_api_key_env or args.api_key_env,
             command=args.audio_codex_bin or args.codex_bin,
         )
@@ -396,6 +405,16 @@ def resolve_provider_configs(
     if GenerationModality.AUDIO not in resolved and GenerationModality.TEXT in resolved:
         resolved[GenerationModality.AUDIO] = resolved[GenerationModality.TEXT]
     return resolved
+
+
+def resolve_base_url(kind: ProviderKind, supplied_base_url: str | None) -> str | None:
+    if supplied_base_url:
+        return supplied_base_url
+    if kind == ProviderKind.OPENAI_COMPATIBLE:
+        return DEFAULT_OPENAI_COMPATIBLE_BASE_URL
+    if kind == ProviderKind.OPENROUTER:
+        return DEFAULT_OPENROUTER_BASE_URL
+    return None
 
 
 def merge_provider_config(

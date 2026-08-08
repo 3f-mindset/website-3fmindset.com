@@ -593,9 +593,9 @@ def build_inference(config: ProviderConfig, cwd: Path, modality: GenerationModal
             retry_wait_seconds=config.retry_wait_seconds,
         )
 
-    if config.kind.value == "openai-compatible":
+    if config.kind.value in {"openai-compatible", "openrouter"}:
         if not config.base_url:
-            raise ValueError("--base-url or provider.base_url is required for openai-compatible")
+            raise ValueError(f"--base-url or provider.base_url is required for {config.kind.value}")
         if modality == GenerationModality.IMAGE:
             return OpenAICompatibleImageModel(
                 base_url=config.base_url,
