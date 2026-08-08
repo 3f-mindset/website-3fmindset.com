@@ -311,7 +311,7 @@ class BurnPipeline:
         return (
             step.modality.value,
             provider.kind.value,
-            provider.base_url or "",
+            provider.provider_url or "",
             provider.model or "",
             provider.command or "",
         )

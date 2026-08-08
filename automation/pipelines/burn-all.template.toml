@@ -6,7 +6,7 @@ target_dir = "content/letters/YYYY-MM-DD-slug"
 
 [providers.text]
 kind = "openai-compatible"
-base_url = "http://localhost:11434"
+providerUrl = "http://localhost:11434"
 model = "active"
 timeout_seconds = 300
 retry_attempts = 4
@@ -14,7 +14,7 @@ retry_wait_seconds = 75
 
 [providers.image]
 kind = "openai-compatible"
-base_url = "http://localhost:11434"
+providerUrl = "http://localhost:11434"
 model = "unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m"
 timeout_seconds = 900
 retry_attempts = 4
@@ -22,7 +22,7 @@ retry_wait_seconds = 75
 
 [providers.audio]
 kind = "openai-compatible"
-base_url = "http://localhost:11434"
+providerUrl = "http://localhost:11434"
 model = "AUDIO_MODEL_NAME"
 
 [variables]

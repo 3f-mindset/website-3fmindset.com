@@ -25,6 +25,7 @@ from .domain import (
     ModelRegistry,
     PipelineSpec,
     ProviderConfig,
+    ProviderKind,
     SteadyBurnVerbIndex,
     SteadyBurnVerbIndexEntry,
     VerbTrackingStatus,
@@ -119,19 +120,19 @@ class CodexCliAgent:
             return GeneratedArtifact(text=output_file.read_text(encoding="utf-8"))
 
 
-class OpenAICompatibleLLM:
+class ChatCompletionsAdapter:
     def __init__(
         self,
         *,
-        base_url: str,
-        api_key: str | None,
+        providerUrl: str,
+        apiKey: str | None,
         model: str | None,
         timeout_seconds: float = 300.0,
         retry_attempts: int = 4,
         retry_wait_seconds: float = 75.0,
     ) -> None:
-        self._base_url = normalize_openai_base_url(base_url)
-        self._api_key = api_key
+        self._provider_url = normalize_provider_url(providerUrl)
+        self._api_key = apiKey
         self._model = model
         self._timeout_seconds = timeout_seconds
         self._retry_attempts = max(1, retry_attempts)
@@ -151,7 +152,7 @@ class OpenAICompatibleLLM:
             }
             data = self._post_with_retries(
                 client,
-                f"{self._base_url}/chat/completions",
+                f"{self._provider_url}/chat/completions",
                 headers=headers,
                 payload=payload,
             )
@@ -165,15 +166,15 @@ class OpenAICompatibleLLM:
         return GeneratedArtifact(text=content)
 
     def _resolve_model(self, client: httpx.Client, headers: dict[str, str]) -> str:
-        response = client.get(f"{self._base_url}/models", headers=headers)
+        response = client.get(f"{self._provider_url}/models", headers=headers)
         response.raise_for_status()
         data = response.json()
         models = data.get("data")
         if not isinstance(models, list) or not models:
-            raise RuntimeError(f"Unable to resolve a default model from {self._base_url}/models: {data}")
+            raise RuntimeError(f"Unable to resolve a default model from {self._provider_url}/models: {data}")
         first = models[0]
         if not isinstance(first, dict) or not isinstance(first.get("id"), str) or not first["id"].strip():
-            raise RuntimeError(f"Unexpected model entry from {self._base_url}/models: {first}")
+            raise RuntimeError(f"Unexpected model entry from {self._provider_url}/models: {first}")
         return first["id"].strip()
 
     def _post_with_retries(
@@ -212,19 +213,19 @@ IMAGE_DIMENSIONS_PATTERN = re.compile(
 )
 
 
-class OpenAICompatibleImageModel:
+class ImageGenerationAdapter:
     def __init__(
         self,
         *,
-        base_url: str,
-        api_key: str | None,
+        providerUrl: str,
+        apiKey: str | None,
         model: str | None,
         timeout_seconds: float = 900.0,
         retry_attempts: int = 4,
         retry_wait_seconds: float = 75.0,
     ) -> None:
-        self._base_url = normalize_openai_base_url(base_url)
-        self._api_key = api_key
+        self._provider_url = normalize_provider_url(providerUrl)
+        self._api_key = apiKey
         self._model = model
         self._timeout_seconds = timeout_seconds
         self._retry_attempts = max(1, retry_attempts)
@@ -251,7 +252,7 @@ class OpenAICompatibleImageModel:
         with httpx.Client(timeout=self._timeout_seconds) as client:
             data = self._post_with_retries(
                 client,
-                f"{self._base_url}/images/generations",
+                f"{self._provider_url}/images/generations",
                 headers=headers,
                 payload=payload,
             )
@@ -345,8 +346,8 @@ def is_retryable_http_error(exc: Exception) -> bool:
     return False
 
 
-def normalize_openai_base_url(base_url: str) -> str:
-    normalized = base_url.rstrip("/")
+def normalize_provider_url(provider_url: str) -> str:
+    normalized = provider_url.rstrip("/")
     if normalized.endswith("/v1"):
         return normalized
     return f"{normalized}/v1"
@@ -578,36 +579,22 @@ def build_inference(config: ProviderConfig, cwd: Path, modality: GenerationModal
             raise ValueError("codex-cli is not supported for binary image generation")
         return CodexCliAgent(command=config.command, model=config.model, cwd=cwd)
 
-    if config.kind.value == "openai":
-        if not config.model:
+    if config.kind.value in {"openai", "openai-compatible", "openrouter"}:
+        if config.kind == ProviderKind.OPENAI and not config.model:
             raise ValueError("--model or provider.model is required for openai")
-        api_key = os.environ.get(config.api_key_env)
-        if not api_key:
-            raise ValueError(f"{config.api_key_env} is required for openai")
-        return OpenAICompatibleLLM(
-            base_url=config.base_url or "https://api.openai.com/v1",
-            api_key=api_key,
-            model=config.model,
-            timeout_seconds=config.timeout_seconds or 300.0,
-            retry_attempts=config.retry_attempts,
-            retry_wait_seconds=config.retry_wait_seconds,
-        )
-
-    if config.kind.value in {"openai-compatible", "openrouter"}:
-        if not config.base_url:
-            raise ValueError(f"--base-url or provider.base_url is required for {config.kind.value}")
+        provider_url, api_key = resolve_provider_connection(config)
         if modality == GenerationModality.IMAGE:
-            return OpenAICompatibleImageModel(
-                base_url=config.base_url,
-                api_key=os.environ.get(config.api_key_env),
+            return ImageGenerationAdapter(
+                providerUrl=provider_url,
+                apiKey=api_key,
                 model=config.model,
                 timeout_seconds=config.timeout_seconds or 900.0,
                 retry_attempts=config.retry_attempts,
                 retry_wait_seconds=config.retry_wait_seconds,
             )
-        return OpenAICompatibleLLM(
-            base_url=config.base_url,
-            api_key=os.environ.get(config.api_key_env),
+        return ChatCompletionsAdapter(
+            providerUrl=provider_url,
+            apiKey=api_key,
             model=config.model,
             timeout_seconds=config.timeout_seconds or 300.0,
             retry_attempts=config.retry_attempts,
@@ -615,3 +602,32 @@ def build_inference(config: ProviderConfig, cwd: Path, modality: GenerationModal
         )
 
     raise ValueError(f"Unsupported provider: {config.kind}")
+
+
+def resolve_provider_connection(config: ProviderConfig) -> tuple[str, str | None]:
+    provider_url = config.provider_url or default_provider_url(config.kind)
+    if not provider_url:
+        raise ValueError(f"--provider-url or provider.providerUrl is required for {config.kind.value}")
+    environment_variable = provider_api_key_environment(config.kind)
+    api_key = os.environ.get(environment_variable) if environment_variable else None
+    if config.kind in {ProviderKind.OPENAI, ProviderKind.OPENROUTER} and not api_key:
+        raise ValueError(f"{environment_variable} is required for {config.kind.value}")
+    return provider_url, api_key
+
+
+def default_provider_url(kind: ProviderKind) -> str | None:
+    if kind == ProviderKind.OPENAI:
+        return "https://api.openai.com/v1"
+    if kind == ProviderKind.OPENROUTER:
+        return "https://openrouter.ai/api/v1"
+    if kind == ProviderKind.OPENAI_COMPATIBLE:
+        return "http://localhost:11434"
+    return None
+
+
+def provider_api_key_environment(kind: ProviderKind) -> str | None:
+    if kind == ProviderKind.OPENROUTER:
+        return "OPENROUTER_API_KEY"
+    if kind == ProviderKind.OPENAI:
+        return "OPENAI_API_KEY"
+    return None
