@@ -77,5 +77,5 @@ Output shape:
 - `# Required On-Image Copy`
 - `# Visual Checklist`
 
-Set the dimensions line to `1440px x 1080px`.
+Set the dimensions line to `1536px x 1152px`.
 In `# Required On-Image Copy`, state clearly that there should be no on-image copy at all.
