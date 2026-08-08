@@ -12,15 +12,14 @@ CODEX_BURN_SLUG ?= $(BURN_STATE_SLUG)
 CODEX_BURN_MODEL ?= active
 
 BURN_PROVIDER ?= openai-compatible
-BURN_BASE_URL ?= $(if $(filter openrouter,$(BURN_PROVIDER)),https://openrouter.ai/api/v1,http://localhost:11434)
-BURN_API_KEY_ENV ?= $(if $(filter openrouter,$(BURN_PROVIDER)),OPENROUTER_API_KEY,OPENAI_API_KEY)
+BURN_PROVIDER_URL ?=
 BURN_CODEX_BIN ?=
 BURN_TARGET_ROOT ?= content/letters
 
 BURN_DIR ?= $(if $(BURN_STATE_DIR),$(BURN_STATE_DIR),$(BURN_TARGET_ROOT)/$(CODEX_BURN_DATE)-$(CODEX_BURN_SLUG))
 
 BURN_PIPELINE_CMD = $(PYTHON) scripts/burn-pipeline.py
-BURN_PROVIDER_ARGS = --provider "$(BURN_PROVIDER)" $(if $(CODEX_BURN_MODEL),--model "$(CODEX_BURN_MODEL)",) $(if $(BURN_BASE_URL),--base-url "$(BURN_BASE_URL)",) $(if $(BURN_API_KEY_ENV),--api-key-env "$(BURN_API_KEY_ENV)",) $(if $(BURN_CODEX_BIN),--codex-bin "$(BURN_CODEX_BIN)",)
+BURN_PROVIDER_ARGS = --provider "$(BURN_PROVIDER)" $(if $(CODEX_BURN_MODEL),--model "$(CODEX_BURN_MODEL)",) $(if $(BURN_PROVIDER_URL),--provider-url "$(BURN_PROVIDER_URL)",) $(if $(BURN_CODEX_BIN),--codex-bin "$(BURN_CODEX_BIN)",)
 
 BURN_SEED_FILE = $(BURN_DIR)/SEED.md
 BURN_CONTEXT_FILE = $(BURN_DIR)/CONTEXT.md

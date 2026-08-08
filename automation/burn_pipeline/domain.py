@@ -137,23 +137,22 @@ class SteadyBurnVerbIndex(BaseModel):
 
 
 class ProviderConfig(BaseModel):
+    model_config = ConfigDict(populate_by_name=True)
+
     kind: ProviderKind = ProviderKind.OPENAI_COMPATIBLE
     model: str | None = None
-    base_url: str | None = None
-    api_key_env: str | None = None
+    provider_url: str | None = Field(default=None, alias="providerUrl")
     command: str = "codex"
     timeout_seconds: float | None = None
     retry_attempts: int = 4
     retry_wait_seconds: float = 75.0
 
-    @model_validator(mode="after")
-    def apply_provider_defaults(self) -> "ProviderConfig":
-        if self.kind == ProviderKind.OPENROUTER:
-            self.base_url = self.base_url or "https://openrouter.ai/api/v1"
-            self.api_key_env = self.api_key_env or "OPENROUTER_API_KEY"
-        else:
-            self.api_key_env = self.api_key_env or "OPENAI_API_KEY"
-        return self
+    @model_validator(mode="before")
+    @classmethod
+    def normalize_legacy_provider_url(cls, value: Any) -> Any:
+        if isinstance(value, dict) and "providerUrl" not in value and "provider_url" not in value and "base_url" in value:
+            return {**value, "providerUrl": value["base_url"]}
+        return value
 
 
 class GenerateCommand(BaseModel):

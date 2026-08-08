@@ -49,6 +49,9 @@ OPENROUTER_API_KEY=... uv run burn-pipeline --provider openrouter \
 
 `openrouter` defaults to `https://openrouter.ai/api/v1` and `OPENROUTER_API_KEY`.
 Use any OpenRouter model identifier (for example, `openai/gpt-4.1`).
+Provider configuration uses the generic `providerUrl` field. The runtime selects the
+provider's environment variable and passes only generic `providerUrl` and `apiKey`
+values to the HTTP adapter.
 
 The Make targets support the same provider:
 
@@ -61,7 +64,7 @@ OpenAI-compatible local/network server, such as vLLM or llama.cpp:
 
 ```sh
 uv run burn-pipeline \
-  --base-url http://localhost:11434 \
+  --provider-url http://localhost:11434 \
   --model local-model-name \
   run --pipeline automation/pipelines/burn-poc.toml --force
 ```
@@ -75,17 +78,17 @@ Example:
 ```toml
 [providers.text]
 kind = "openai-compatible"
-base_url = "http://localhost:11434"
+providerUrl = "http://localhost:11434"
 model = "active"
 
 [providers.image]
 kind = "openai-compatible"
-base_url = "http://localhost:11434"
+providerUrl = "http://localhost:11434"
 model = "unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m"
 
 [providers.audio]
 kind = "openai-compatible"
-base_url = "http://localhost:11434"
+providerUrl = "http://localhost:11434"
 model = "AUDIO_MODEL_NAME"
 ```
 
