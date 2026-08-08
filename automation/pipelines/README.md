@@ -108,13 +108,10 @@ at run time; they are examples, not price commitments.
 | `deepseek/deepseek-v4-pro` | $0.016049 | $0.008840 | $0.024889 |
 | `deepseek/deepseek-v4-flash` | $0.008122 | $0.008200 | $0.016322 |
 | `deepseek/deepseek-v3.2` | $0.013471 | $0.009096 | $0.022567 |
-| `openai/gpt-5.6-luna` | $0.021337 | not recorded | at least $0.021337 |
+| `openai/gpt-5.6-luna` | $0.018590 | $0.016416 | $0.035006 |
 
-The Luna cover succeeded only after a manual retry, but that retry did not have usage
-logging enabled. Its recorded figure therefore covers text generation only and should
-not be used as a complete weekly-run estimate. The other rows include the complete
-recorded text and hero-cover cost. Optional promo-image and landing-page tracks were
-disabled, so enabling either will add model calls and cost.
+All rows include complete recorded text and hero-cover cost. Optional promo-image and
+landing-page tracks were disabled, so enabling either will add model calls and cost.
 
 OpenAI-compatible local/network server, such as vLLM or llama.cpp:
 

@@ -1,11 +1,13 @@
 ## Post
 
-You can work all day and still avoid the work that matters.
+A day can become full without becoming useful.
 
-Messages get answered. Small requests get cleared. Easy boxes get checked. Meanwhile, the report, repair, conversation, or next step toward your goal keeps getting carried into tomorrow. When every task feels equally important, the loudest request starts choosing your schedule.
+The messages get answered. The small requests get handled. A few easy tasks disappear from the list. Meanwhile, the report, project, or conversation that actually matters keeps moving to tomorrow. By afternoon, you have proof of activity—but not necessarily progress.
 
-The work ahead is about creating an order of attack. Not building a perfect system or squeezing more activity into the day, but deciding what deserves your best attention before the noise arrives.
+This week, we are looking at the order beneath the busyness: how to recognize what matters, protect your best work hours, and stop letting the loudest request decide what happens next. The lesson and lecture will give you the judgment and context to do that well.
 
-The worksheet will be the practical tool for that decision. You’ll use it to gather the full load, identify your top three priorities, define what “done” means, place the work on your calendar, and review what actually moved. The lesson and lecture will help you use it with better judgment—especially when urgency, interruptions, and other people’s requests compete for your time.
+The worksheet is where that understanding becomes visible. Use it to gather everything competing for your attention, choose your three most important tasks, remove or move what does not belong today, and place the first priority into a real block of time. Do not wait for the list to feel manageable. The point is to make a decision before the day makes one for you.
 
-Complete the worksheet before the group discussion. Bring the choices that felt clear, the priorities you struggled to rank, and any task that kept getting pushed aside. We’ll use the artifact as shared ground for an honest conversation about what you are protecting, what you are postponing, and what your schedule is really serving.
+Complete the worksheet before our group discussion. Bring the choices that were difficult, the task that kept getting delayed, and the interruptions that challenged your order. We will use the worksheet as our shared starting point—not to compare perfect schedules, but to examine what your priorities reveal and what it will take to protect them.
+
+The question is simple: what will receive your best attention before everything else begins to ask for it?

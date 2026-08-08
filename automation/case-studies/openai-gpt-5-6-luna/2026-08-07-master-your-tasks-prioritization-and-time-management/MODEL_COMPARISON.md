@@ -2,19 +2,21 @@
 
 - Model: `openai/gpt-5.6-luna`
 - Provider: OpenRouter
-- Base revision: `ab2135f`
-- Run at (UTC): `2026-08-08T18:55:18.367996+00:00`
-- Provider-reported total cost: `$0.021337`
+- Base revision: `d201b8d`
+- Run type: replacement full production pipeline with promo and landing-page tracks disabled
+- Provider-reported total cost: $0.035006
+- Coverage: complete text and hero-cover usage recorded.
 
 ## Usage Records
 
-- `chat/completions` / `openai/gpt-5.6-luna`: `$0.001121` (1950 input, 1463 output tokens)
-- `chat/completions` / `openai/gpt-5.6-luna`: `$0.001876` (3500 input, 2397 output tokens)
-- `chat/completions` / `openai/gpt-5.6-luna`: `$0.002719` (4570 input, 3580 output tokens)
-- `chat/completions` / `openai/gpt-5.6-luna`: `$0.002733` (3947 input, 3733 output tokens)
-- `chat/completions` / `openai/gpt-5.6-luna`: `$0.002749` (7068 input, 3110 output tokens)
-- `chat/completions` / `openai/gpt-5.6-luna`: `$0.002341` (3468 input, 3179 output tokens)
-- `chat/completions` / `openai/gpt-5.6-luna`: `$0.003028` (5691 input, 3861 output tokens)
-- `chat/completions` / `openai/gpt-5.6-luna`: `$0.001573` (5718 input, 1430 output tokens)
-- `chat/completions` / `openai/gpt-5.6-luna`: `$0.002286` (14350 input, 821 output tokens)
-- `chat/completions` / `openai/gpt-5.6-luna`: `$0.000910` (5156 input, 443 output tokens)
+- `chat/completions` / `openai/gpt-5.6-luna`: $0.001070 (1924 input, 1383 output tokens)
+- `chat/completions` / `openai/gpt-5.6-luna`: $0.001735 (3518 input, 2159 output tokens)
+- `chat/completions` / `openai/gpt-5.6-luna`: $0.002649 (4327 input, 3513 output tokens)
+- `chat/completions` / `openai/gpt-5.6-luna`: $0.001462 (3955 input, 1612 output tokens)
+- `chat/completions` / `openai/gpt-5.6-luna`: $0.002823 (7013 input, 3244 output tokens)
+- `chat/completions` / `openai/gpt-5.6-luna`: $0.002409 (3504 input, 3285 output tokens)
+- `chat/completions` / `openai/gpt-5.6-luna`: $0.002329 (4339 input, 2978 output tokens)
+- `chat/completions` / `openai/gpt-5.6-luna`: $0.001472 (4720 input, 1470 output tokens)
+- `chat/completions` / `openai/gpt-5.6-luna`: $0.001870 (10554 input, 918 output tokens)
+- `chat/completions` / `openai/gpt-5.6-luna`: $0.000772 (4158 input, 420 output tokens)
+- `images/generations` / `openai/gpt-5.4-image-2`: $0.016416 (522 input, 408 output tokens)
