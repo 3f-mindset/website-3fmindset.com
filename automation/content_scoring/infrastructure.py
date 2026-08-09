@@ -58,19 +58,18 @@ class OpenRouterEvaluator:
                         raise httpx.HTTPStatusError("retryable provider status", request=response.request, response=response)
                     response.raise_for_status()
                     data = response.json()
-                    content = data["choices"][0]["message"]["content"]
+                    choice = data["choices"][0]
+                    content = choice["message"]["content"]
                     if not isinstance(content, str):
                         raise ValueError("Evaluator response did not contain text JSON")
                     parsed = json.loads(content)
                     usage = data.get("usage") if isinstance(data.get("usage"), dict) else {}
                     cost = float(usage.get("cost", 0) or 0)
-                    self.telemetry.emit("model_completed", run_id=run_id, stage=stage, case_study=case_study, artifact=artifact, model=model, attempt=attempt, duration_ms=round((time.monotonic() - started) * 1000), cost=cost, usage=usage)
+                    self.telemetry.emit("model_completed", run_id=run_id, stage=stage, case_study=case_study, artifact=artifact, model=model, attempt=attempt, duration_ms=round((time.monotonic() - started) * 1000), cost=cost, usage=usage, finish_reason=choice.get("finish_reason"), response_characters=len(content))
                     return ModelResponse(parsed, cost, usage)
-                except (httpx.TimeoutException, httpx.HTTPStatusError, ValueError, json.JSONDecodeError, KeyError) as exc:
+                except (httpx.TransportError, httpx.HTTPStatusError, ValueError, json.JSONDecodeError, KeyError) as exc:
                     last_error = exc
                     retryable = not isinstance(exc, httpx.HTTPStatusError) or exc.response.status_code in {408, 429, 500, 502, 503, 504}
-                    if isinstance(exc, (ValueError, json.JSONDecodeError)) and attempt >= 2:
-                        retryable = False
                     if not retryable or attempt >= self.attempts:
                         self.telemetry.emit("model_failed", run_id=run_id, stage=stage, case_study=case_study, artifact=artifact, model=model, attempt=attempt, reason=type(exc).__name__)
                         raise RuntimeError(f"{model} {stage} failed: {exc}") from exc

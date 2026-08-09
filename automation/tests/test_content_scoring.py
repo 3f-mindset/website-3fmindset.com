@@ -1,12 +1,16 @@
 from __future__ import annotations
 
+import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import MagicMock, patch
+
+import httpx
 
 from content_scoring.application import EVIDENCE_MODEL, JUDGE_MODEL, TIE_BREAK_MODEL, BudgetExceeded, ContentScorer, discover_case_studies, load_rubric, parse_results
 from content_scoring.domain import CriterionResult, deterministic_metrics, score_artifact
-from content_scoring.infrastructure import ModelResponse, Telemetry
+from content_scoring.infrastructure import ModelResponse, OpenRouterEvaluator, Telemetry
 
 
 RUBRIC = Path(__file__).parents[1] / "content_scoring" / "rubrics" / "steadyburn-v1.json"
@@ -22,6 +26,52 @@ class FakeEvaluator:
 
 
 class ContentScoringTests(unittest.TestCase):
+    def _evaluator_with_responses(self, responses: list[object], attempts: int = 4) -> tuple[OpenRouterEvaluator, Path]:
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        telemetry_path = Path(temporary.name) / "telemetry.jsonl"
+        client = MagicMock()
+        client.post.side_effect = responses
+        context = MagicMock()
+        context.__enter__.return_value = client
+        context.__exit__.return_value = False
+        self.client_patch = patch("content_scoring.infrastructure.httpx.Client", return_value=context)
+        self.client_patch.start()
+        self.addCleanup(self.client_patch.stop)
+        return OpenRouterEvaluator("test-key", Telemetry(telemetry_path), attempts=attempts), telemetry_path
+
+    @staticmethod
+    def _response(content: str, finish_reason: str = "stop") -> httpx.Response:
+        return httpx.Response(
+            200,
+            json={"choices": [{"message": {"content": content}, "finish_reason": finish_reason}], "usage": {"cost": 0.01}},
+            request=httpx.Request("POST", "https://example.test/evaluator"),
+        )
+
+    def test_transport_protocol_errors_are_retried(self) -> None:
+        evaluator, telemetry_path = self._evaluator_with_responses([
+            httpx.RemoteProtocolError("connection reset"),
+            self._response('{"criteria": []}'),
+        ], attempts=2)
+        result = evaluator.complete(model="test", prompt="prompt", schema={}, run_id="run", stage="judge", case_study="case", artifact="index.md")
+        events = [json.loads(line) for line in telemetry_path.read_text(encoding="utf-8").splitlines()]
+        self.assertEqual(result.payload, {"criteria": []})
+        self.assertTrue(any(event["event"] == "retry" and event["reason"] == "RemoteProtocolError" for event in events))
+        self.assertEqual(next(event for event in events if event["event"] == "model_completed")["finish_reason"], "stop")
+
+    def test_malformed_json_uses_the_full_retry_budget(self) -> None:
+        evaluator, telemetry_path = self._evaluator_with_responses([
+            self._response("not json"),
+            self._response("still not json"),
+            self._response("also not json"),
+            self._response('{"criteria": []}'),
+        ])
+        result = evaluator.complete(model="test", prompt="prompt", schema={}, run_id="run", stage="judge", case_study="case", artifact="index.md")
+        events = [json.loads(line) for line in telemetry_path.read_text(encoding="utf-8").splitlines()]
+        retries = [event for event in events if event["event"] == "retry" and event["reason"] == "JSONDecodeError"]
+        self.assertEqual(result.payload, {"criteria": []})
+        self.assertEqual([event["attempt"] for event in retries], [1, 2, 3])
+
     def test_evaluator_stack_uses_only_deepseek_models(self) -> None:
         self.assertEqual(EVIDENCE_MODEL, "deepseek/deepseek-v4-flash")
         self.assertEqual(JUDGE_MODEL, "deepseek/deepseek-v4-pro")
