@@ -47,25 +47,39 @@ uv run python generate_cost_charts.py
 uv run python generate_model_comparison.py
 ~~~
 
-The chart generator uses only the cost values in each OPENROUTER_USAGE.jsonl
-file. It writes [cost-chart-data.json](cost-chart-data.json) plus the linear
-and logarithmic cost SVGs.
-Local runs remain deliberately unpriced because they have no OpenRouter usage
-record.
+The chart generator uses each OpenRouter usage log and adds the local baseline
+at `$0.000000`. It writes [cost-chart-data.json](cost-chart-data.json) plus the
+linear and logarithmic cost SVGs. The log chart labels the zero-cost local bar
+instead of attempting to plot zero on a logarithmic scale.
 
 ## Standard model comparison
 
-`generate_model_comparison.py` compiles the standard editorial suite and the
-recorded bundle cost into [model-comparison.json](model-comparison.json) and an
-interactive [radar-chart dashboard](model-comparison.html). The JSON retains
-every criterion score and deterministic measurement for both primary artifacts.
-The radar uses readable grouped axes: argument, grounding, action, framework,
-readability, voice and closing, and cost efficiency. Cost efficiency is relative
-to the least-expensive scored paid run; raw USD is always shown alongside it.
+`generate_model_comparison.py` compiles the standard editorial suite,
+every metric from `readability-report.json`, and recorded bundle cost into
+[model-comparison.json](model-comparison.json) and an interactive
+[radar-chart dashboard](model-comparison.html). Raw readability values are
+preserved for `LESSON.md`, `index.md`, `INSTRUCTIONS.md`, and the bundle total.
 
-Runs without `CONTENT_SCORE.json` remain visibly marked as awaiting scoring and
-are never assigned inferred editorial values. Local runs stay unpriced until a
-local-cost model is defined.
+The dashboard has three radar views:
+
+- Every individual LLM rubric standard from both primary artifacts.
+- Every bundle-total readability metric from the readability report.
+- A grouped overview for quick comparison.
+
+Readability is min–max normalized only inside the radar so metrics with
+different units can share a chart; the JSON remains the source of truth for raw
+values. Cost is shown as **cost burden**: the local model is exactly `0`, and
+the most expensive recorded bundle is exactly `100`.
+
+Runs without `CONTENT_SCORE.json` remain visibly marked as awaiting LLM quality
+scoring and are never assigned inferred editorial values. They still appear in
+the readability-and-cost radar view.
+
+![Model quality and cost radar](model-comparison-radar.svg)
+
+The embedded snapshot is the grouped overview. Use the interactive
+[radar-chart dashboard](model-comparison.html) to select models, switch between
+the full metric views, and inspect the complete table and source measurements.
 
 ## Content scoring
 

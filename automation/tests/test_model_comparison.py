@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parents[1]
 sys.path.insert(0, str(ROOT / "case-studies"))
-from generate_model_comparison import compile_comparison, dashboard_html  # noqa: E402
+from generate_model_comparison import READABILITY_METRICS, compile_comparison, dashboard_html, radar_svg  # noqa: E402
 
 
 class ModelComparisonTests(unittest.TestCase):
@@ -24,17 +24,23 @@ class ModelComparisonTests(unittest.TestCase):
             rubric = json.loads((rubric_directory / "steadyburn-v1.json").read_text(encoding="utf-8"))
             self._write_study(studies, rubric, "openai/gpt-test", 0.50)
             self._write_study(studies, rubric, "local/gemma-test", None)
+            self._write_readability_report(studies)
 
             data = compile_comparison(studies)
 
             self.assertEqual(len(data["models"]), 2)
             by_model = {item["model"]: item for item in data["models"]}
             paid, local = by_model["openai/gpt-test"], by_model["local/gemma-test"]
-            self.assertEqual(paid["radar"]["cost_efficiency"], 100.0)
-            self.assertIsNone(local["cost_usd"])
-            self.assertIsNone(local["radar"]["cost_efficiency"])
+            self.assertEqual(paid["radar"]["readability"]["cost_burden"], 100.0)
+            self.assertEqual(local["cost_usd"], 0.0)
+            self.assertEqual(local["radar"]["readability"]["cost_burden"], 0.0)
             self.assertEqual(set(paid["criteria"]["index.md"]), {item["id"] for item in rubric["artifacts"]["index.md"]["criteria"]})
+            self.assertEqual(set(paid["radar"]["readability"]), {metric for metric, _label in READABILITY_METRICS} | {"cost_burden"})
+            self.assertEqual(set(paid["readability"]["bundle total"]), {metric for metric, _label in READABILITY_METRICS})
+            self.assertEqual(len(data["axis_sets"]["quality"]), sum(len(item["criteria"]) for item in rubric["artifacts"].values()) + 1)
             self.assertIn("cdn.jsdelivr.net/npm/d3@7", dashboard_html(data))
+            self.assertIn("<svg", radar_svg(data))
+            self.assertIn("GPT Test", radar_svg(data))
 
     def _write_study(self, root: Path, rubric: dict, model: str, cost: float | None) -> None:
         study = root / model.replace("/", "-") / "week"
@@ -49,6 +55,17 @@ class ModelComparisonTests(unittest.TestCase):
         (study / "CONTENT_SCORE.json").write_text(json.dumps({"model": model, "content_score": 80.0, "confidence": 0.9, "artifacts": artifacts}), encoding="utf-8")
         if cost is not None:
             (study / "OPENROUTER_USAGE.jsonl").write_text(json.dumps({"usage": {"cost": cost}}) + "\n", encoding="utf-8")
+
+    def _write_readability_report(self, root: Path) -> None:
+        records = []
+        for index, comparison in enumerate(sorted(root.rglob("MODEL_COMPARISON.md"))):
+            case_study = comparison.parent.relative_to(root).as_posix()
+            records.append({
+                "case_study": case_study,
+                "document": "bundle total",
+                **{metric: float(index + 1) for metric, _label in READABILITY_METRICS},
+            })
+        (root / "readability-report.json").write_text(json.dumps({"records": records}), encoding="utf-8")
 
 
 if __name__ == "__main__":
