@@ -24,6 +24,7 @@ OVERVIEW_AXES = (
 )
 
 COLORS = ("#38bdf8", "#f97316", "#a78bfa", "#34d399", "#facc15", "#fb7185")
+RADAR_LOG_TICKS = (1, 5, 20, 50, 100)
 READABILITY_METRICS = (
     ("characters", "Characters"), ("letters", "Letters"), ("words", "Words"),
     ("sentences", "Sentences"), ("paragraphs", "Paragraphs"), ("syllables", "Syllables"),
@@ -36,6 +37,12 @@ READABILITY_METRICS = (
     ("automated_readability_index", "Automated readability index"), ("smog", "SMOG"),
     ("lexical_diversity", "Lexical diversity"),
 )
+
+
+def radial_fraction(value: float) -> float:
+    """Map the user-facing 0–100 metric to a zero-safe logarithmic radius."""
+    bounded = min(100.0, max(0.0, float(value)))
+    return math.log1p(bounded) / math.log1p(100.0)
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -207,14 +214,14 @@ def dashboard_html(data: dict[str, Any]) -> str:
 <title>{html.escape(title)}</title><script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <style>
 body{{margin:0;background:#0b1020;color:#e5e7eb;font:16px system-ui,sans-serif}}main{{max-width:1200px;margin:auto;padding:32px}}h1{{margin-bottom:6px}}.muted{{color:#a5b4c7}}#controls{{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}}label{{background:#18243a;border-radius:999px;padding:8px 12px;cursor:pointer}}input{{margin-right:6px}}select{{background:#18243a;color:#e5e7eb;border:1px solid #41506d;border-radius:8px;padding:8px}}svg{{width:100%;max-width:760px;background:#111a2d;border-radius:16px}}.axis{{stroke:#41506d;fill:none}}.label{{fill:#cbd5e1;font-size:12px}}.legend{{display:flex;gap:14px;flex-wrap:wrap;margin:12px 0}}.swatch{{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}}table{{width:100%;border-collapse:collapse;margin-top:30px}}th,td{{padding:10px;text-align:left;border-bottom:1px solid #24324b}}th{{color:#a5b4c7}}code{{font-size:12px}}.warning{{padding:12px;background:#3a2b12;border-radius:8px}}
-</style></head><body><main><h1>{html.escape(title)}</h1><p class="muted">Quality view contains every LLM rubric standard. Readability view contains every bundle-total readability metric, normalized only for plotting; raw values remain in JSON. Cost burden is $0 for local and 100 for the most expensive recorded bundle.</p>
+</style></head><body><main><h1>{html.escape(title)}</h1><p class="muted">Quality view contains every LLM rubric standard. Readability view contains every bundle-total readability metric, normalized only for plotting; raw values remain in JSON. Radar radii use a zero-safe logarithmic scale to distinguish lower-range differences. Cost burden is $0 for local and 100 for the most expensive recorded bundle.</p>
 <p><label for="mode">Radar view</label> <select id="mode"><option value="readability">Readability metrics + cost</option><option value="quality">LLM quality standards + cost</option><option value="overview">Grouped overview + cost</option></select></p><div id="controls"></div><div id="legend" class="legend"></div><svg id="radar" viewBox="0 0 760 620" role="img" aria-label="Model quality, readability, and cost radar chart"></svg><div id="table"></div><div id="awaiting"></div>
 <script>const comparison={embedded};
 const axisSets=comparison.axis_sets, models=comparison.models, selected=new Set(models.slice(0,5).map(m=>m.model)); let mode='readability';
-const colors={json.dumps(COLORS)}; const svg=d3.select('#radar'), cx=380, cy=310, radius=220;
-function point(i,value,axes){{const angle=2*Math.PI*i/axes.length-Math.PI/2, r=radius*value/100;return [cx+r*Math.cos(angle),cy+r*Math.sin(angle)]}}
+const colors={json.dumps(COLORS)}, logTicks={json.dumps(RADAR_LOG_TICKS)}; const svg=d3.select('#radar'), cx=380, cy=310, radius=220;
+function point(i,value,axes){{const angle=2*Math.PI*i/axes.length-Math.PI/2, bounded=Math.max(0,Math.min(100,value)), r=radius*Math.log1p(bounded)/Math.log1p(100);return [cx+r*Math.cos(angle),cy+r*Math.sin(angle)]}}
 function complete(model,axes){{return axes.every(axis=>model.radar[mode][axis.id] !== undefined && model.radar[mode][axis.id] !== null)}}
-function draw(){{const axes=axisSets[mode];const visible=models.filter(m=>selected.has(m.model)&&complete(m,axes));svg.selectAll('*').remove();for(let ring=1;ring<=5;ring++){{const v=ring*20;svg.append('path').attr('class','axis').attr('d','M'+axes.map((_,i)=>point(i,v,axes).join(',')).join('L')+'Z')}}axes.forEach((axis,i)=>{{const end=point(i,100,axes);svg.append('line').attr('class','axis').attr('x1',cx).attr('y1',cy).attr('x2',end[0]).attr('y2',end[1]);const label=point(i,114,axes);svg.append('text').attr('class','label').attr('x',label[0]).attr('y',label[1]).attr('text-anchor','middle').text(axis.label)}});visible.forEach((model,index)=>{{const values=axes.map(axis=>model.radar[mode][axis.id]);const d='M'+values.map((v,i)=>point(i,v,axes).join(',')).join('L')+'Z';svg.append('path').attr('d',d).attr('fill',colors[index%colors.length]).attr('fill-opacity',.16).attr('stroke',colors[index%colors.length]).attr('stroke-width',2.5)}});d3.select('#legend').html(visible.map((m,i)=>`<span><i class="swatch" style="background:${{colors[i%colors.length]}}"></i>${{m.display_name}}</span>`).join('') || '<span class="muted">No selected model has all values for this view.</span>');const rows=models.map(m=>`<tr><td>${{m.display_name}}</td><td>${{m.company}}</td><td>${{m.content_score===null?'Awaiting score':m.content_score.toFixed(2)}}</td><td>${{m.cost_source==='local'?'$0.000000 local baseline':'$'+m.cost_usd.toFixed(6)}}</td><td>${{m.confidence===null?'—':m.confidence.toFixed(3)}}</td></tr>`).join('');d3.select('#table').html(`<table><thead><tr><th>Model</th><th>Provider</th><th>Content score</th><th>Bundle cost</th><th>Confidence</th></tr></thead><tbody>${{rows}}</tbody></table>`);}}
+function draw(){{const axes=axisSets[mode];const visible=models.filter(m=>selected.has(m.model)&&complete(m,axes));svg.selectAll('*').remove();for(const v of logTicks){{svg.append('path').attr('class','axis').attr('d','M'+axes.map((_,i)=>point(i,v,axes).join(',')).join('L')+'Z')}}axes.forEach((axis,i)=>{{const end=point(i,100,axes), angle=2*Math.PI*i/axes.length-Math.PI/2, label=[cx+(radius+28)*Math.cos(angle),cy+(radius+28)*Math.sin(angle)];svg.append('line').attr('class','axis').attr('x1',cx).attr('y1',cy).attr('x2',end[0]).attr('y2',end[1]);svg.append('text').attr('class','label').attr('x',label[0]).attr('y',label[1]).attr('text-anchor','middle').text(axis.label)}});visible.forEach((model,index)=>{{const values=axes.map(axis=>model.radar[mode][axis.id]);const d='M'+values.map((v,i)=>point(i,v,axes).join(',')).join('L')+'Z';svg.append('path').attr('d',d).attr('fill',colors[index%colors.length]).attr('fill-opacity',.16).attr('stroke',colors[index%colors.length]).attr('stroke-width',2.5)}});d3.select('#legend').html(visible.map((m,i)=>`<span><i class="swatch" style="background:${{colors[i%colors.length]}}"></i>${{m.display_name}}</span>`).join('') || '<span class="muted">No selected model has all values for this view.</span>');const rows=models.map(m=>`<tr><td>${{m.display_name}}</td><td>${{m.company}}</td><td>${{m.content_score===null?'Awaiting score':m.content_score.toFixed(2)}}</td><td>${{m.cost_source==='local'?'$0.000000 local baseline':'$'+m.cost_usd.toFixed(6)}}</td><td>${{m.confidence===null?'—':m.confidence.toFixed(3)}}</td></tr>`).join('');d3.select('#table').html(`<table><thead><tr><th>Model</th><th>Provider</th><th>Content score</th><th>Bundle cost</th><th>Confidence</th></tr></thead><tbody>${{rows}}</tbody></table>`);}}
 d3.select('#mode').on('change',event=>{{mode=event.target.value;draw()}});d3.select('#controls').selectAll('label').data(models).join('label').html(m=>`<input type="checkbox" ${{selected.has(m.model)?'checked':''}}> ${{m.display_name}}`).on('change',(event,m)=>{{event.target.checked?selected.add(m.model):selected.delete(m.model);draw()}});if(comparison.awaiting_score.length)d3.select('#awaiting').html(`<p class="warning">Awaiting LLM quality score: ${{comparison.awaiting_score.length}} run(s). They remain available in the readability-and-cost view.</p>`);draw();
 </script></main></body></html>"""
 
@@ -230,7 +237,7 @@ def radar_svg(data: dict[str, Any]) -> str:
 
     def point(index: int, value: float) -> tuple[float, float]:
         angle = 2 * math.pi * index / len(axes) - math.pi / 2
-        distance = radius * value / 100
+        distance = radius * radial_fraction(value)
         return center_x + distance * math.cos(angle), center_y + distance * math.sin(angle)
 
     lines = [
@@ -240,14 +247,15 @@ def radar_svg(data: dict[str, Any]) -> str:
         '  <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 28px Arial,sans-serif}.sub,.axis-label,.note{fill:#a5b4c7;font:15px Arial,sans-serif}.grid{fill:none;stroke:#41506d;stroke-width:1}.spoke{stroke:#41506d;stroke-width:1}.legend{fill:#e2e8f0;font:16px Arial,sans-serif}</style>',
         f'  <rect class="bg" width="{width}" height="{height}" rx="18"/>',
         '  <text class="title" x="48" y="58">SteadyBurn model quality and cost</text>',
-        '  <text class="sub" x="48" y="86">0–100 rubric measurements; local cost burden is 0 and the most expensive recorded bundle is 100.</text>',
+        '  <text class="sub" x="48" y="86">Zero-safe logarithmic radial scale; source measurements remain 0–100.</text>',
     ]
-    for ring in range(1, 6):
-        points = " ".join(f"{x:.1f},{y:.1f}" for index in range(len(axes)) for x, y in [point(index, ring * 20)])
+    for ring in RADAR_LOG_TICKS:
+        points = " ".join(f"{x:.1f},{y:.1f}" for index in range(len(axes)) for x, y in [point(index, ring)])
         lines.append(f'  <polygon class="grid" points="{points}"/>')
     for index, axis in enumerate(axes):
         x, y = point(index, 100)
-        label_x, label_y = point(index, 115)
+        label_x = center_x + (radius + 32) * math.cos(2 * math.pi * index / len(axes) - math.pi / 2)
+        label_y = center_y + (radius + 32) * math.sin(2 * math.pi * index / len(axes) - math.pi / 2)
         lines.extend((
             f'  <line class="spoke" x1="{center_x}" y1="{center_y}" x2="{x:.1f}" y2="{y:.1f}"/>',
             f'  <text class="axis-label" x="{label_x:.1f}" y="{label_y:.1f}" text-anchor="middle">{html.escape(axis["label"])}</text>',

@@ -4,42 +4,42 @@
   <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 28px Arial,sans-serif}.sub,.axis-label,.note{fill:#a5b4c7;font:15px Arial,sans-serif}.grid{fill:none;stroke:#41506d;stroke-width:1}.spoke{stroke:#41506d;stroke-width:1}.legend{fill:#e2e8f0;font:16px Arial,sans-serif}</style>
   <rect class="bg" width="1100" height="760" rx="18"/>
   <text class="title" x="48" y="58">SteadyBurn model quality and cost</text>
-  <text class="sub" x="48" y="86">0–100 rubric measurements; local cost burden is 0 and the most expensive recorded bundle is 100.</text>
-  <polygon class="grid" points="430.0,339.0 469.9,358.2 479.7,401.3 452.1,435.9 407.9,435.9 380.3,401.3 390.1,358.2"/>
-  <polygon class="grid" points="430.0,288.0 509.7,326.4 529.4,412.7 474.3,481.9 385.7,481.9 330.6,412.7 350.3,326.4"/>
-  <polygon class="grid" points="430.0,237.0 549.6,294.6 579.2,424.0 496.4,527.8 363.6,527.8 280.8,424.0 310.4,294.6"/>
-  <polygon class="grid" points="430.0,186.0 589.5,262.8 628.9,435.4 518.5,573.8 341.5,573.8 231.1,435.4 270.5,262.8"/>
+  <text class="sub" x="48" y="86">Zero-safe logarithmic radial scale; source measurements remain 0–100.</text>
+  <polygon class="grid" points="430.0,351.7 459.9,366.1 467.3,398.5 446.6,424.5 413.4,424.5 392.7,398.5 400.1,366.1"/>
+  <polygon class="grid" points="430.0,291.0 507.4,328.3 526.5,412.0 473.0,479.2 387.0,479.2 333.5,412.0 352.6,328.3"/>
+  <polygon class="grid" points="430.0,221.8 561.5,285.1 594.0,427.4 503.0,541.6 357.0,541.6 266.0,427.4 298.5,285.1"/>
+  <polygon class="grid" points="430.0,172.8 599.8,254.5 641.8,438.3 524.3,585.7 335.7,585.7 218.2,438.3 260.2,254.5"/>
   <polygon class="grid" points="430.0,135.0 629.4,231.0 678.6,446.7 540.6,619.7 319.4,619.7 181.4,446.7 230.6,231.0"/>
   <line class="spoke" x1="430" y1="390" x2="430.0" y2="135.0"/>
-  <text class="axis-label" x="430.0" y="96.8" text-anchor="middle">Argument</text>
+  <text class="axis-label" x="430.0" y="103.0" text-anchor="middle">Argument</text>
   <line class="spoke" x1="430" y1="390" x2="629.4" y2="231.0"/>
-  <text class="axis-label" x="659.3" y="207.2" text-anchor="middle">Grounding</text>
+  <text class="axis-label" x="654.4" y="211.1" text-anchor="middle">Grounding</text>
   <line class="spoke" x1="430" y1="390" x2="678.6" y2="446.7"/>
-  <text class="axis-label" x="715.9" y="455.3" text-anchor="middle">Action</text>
+  <text class="axis-label" x="709.8" y="453.9" text-anchor="middle">Action</text>
   <line class="spoke" x1="430" y1="390" x2="540.6" y2="619.7"/>
-  <text class="axis-label" x="557.2" y="654.2" text-anchor="middle">Framework</text>
+  <text class="axis-label" x="554.5" y="648.6" text-anchor="middle">Framework</text>
   <line class="spoke" x1="430" y1="390" x2="319.4" y2="619.7"/>
-  <text class="axis-label" x="302.8" y="654.2" text-anchor="middle">Readability</text>
+  <text class="axis-label" x="305.5" y="648.6" text-anchor="middle">Readability</text>
   <line class="spoke" x1="430" y1="390" x2="181.4" y2="446.7"/>
-  <text class="axis-label" x="144.1" y="455.3" text-anchor="middle">Voice &amp; closing</text>
+  <text class="axis-label" x="150.2" y="453.9" text-anchor="middle">Voice &amp; closing</text>
   <line class="spoke" x1="430" y1="390" x2="230.6" y2="231.0"/>
-  <text class="axis-label" x="200.7" y="207.2" text-anchor="middle">Cost burden</text>
-  <polygon points="430.0,155.6 609.4,246.9 659.5,442.4 539.5,617.4 326.7,604.4 196.1,443.4 230.6,231.0" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-width="2.5"/>
+  <text class="axis-label" x="205.6" y="211.1" text-anchor="middle">Cost burden</text>
+  <polygon points="430.0,139.6 624.9,234.6 674.4,445.8 540.4,619.3 321.0,616.4 184.6,446.0 230.6,231.0" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-width="2.5"/>
   <circle cx="760" cy="185" r="6" fill="#38bdf8"/>
   <text class="legend" x="776" y="190">GPT 5.5 — $1.228162</text>
-  <polygon points="430.0,155.2 611.9,244.9 670.3,444.9 534.6,607.1 326.4,605.2 199.0,442.7 353.6,329.1" fill="#f97316" fill-opacity="0.16" stroke="#f97316" stroke-width="2.5"/>
+  <polygon points="430.0,139.5 625.5,234.1 676.8,446.3 539.3,617.0 320.9,616.5 185.3,445.8 271.4,263.5" fill="#f97316" fill-opacity="0.16" stroke="#f97316" stroke-width="2.5"/>
   <circle cx="760" cy="227" r="6" fill="#f97316"/>
   <text class="legend" x="776" y="232">GPT 5.4 — $0.470669</text>
-  <polygon points="430.0,162.2 611.4,245.3 665.4,443.7 532.3,602.5 327.5,602.9 211.0,440.0 427.3,387.9" fill="#a78bfa" fill-opacity="0.16" stroke="#a78bfa" stroke-width="2.5"/>
+  <polygon points="430.0,141.2 625.3,234.2 675.7,446.1 538.8,615.9 321.2,616.0 188.2,445.2 393.5,360.9" fill="#a78bfa" fill-opacity="0.16" stroke="#a78bfa" stroke-width="2.5"/>
   <circle cx="760" cy="269" r="6" fill="#a78bfa"/>
   <text class="legend" x="776" y="274">Deepseek V4 Flash — $0.016322</text>
-  <polygon points="430.0,173.0 611.9,244.9 670.3,444.9 532.6,603.1 330.4,596.8 204.3,441.5 424.3,385.5" fill="#34d399" fill-opacity="0.16" stroke="#34d399" stroke-width="2.5"/>
+  <polygon points="430.0,143.8 625.5,234.1 676.8,446.3 538.9,616.0 321.9,614.6 186.5,445.6 371.8,343.6" fill="#34d399" fill-opacity="0.16" stroke="#34d399" stroke-width="2.5"/>
   <circle cx="760" cy="311" r="6" fill="#34d399"/>
   <text class="legend" x="776" y="316">GPT 5.6 Luna — $0.035006</text>
-  <polygon points="430.0,169.0 614.4,242.9 667.0,444.1 528.7,595.0 334.1,589.1 210.0,440.2 351.0,327.0" fill="#facc15" fill-opacity="0.16" stroke="#facc15" stroke-width="2.5"/>
+  <polygon points="430.0,142.8 626.0,233.7 676.1,446.2 537.9,614.1 322.8,612.7 187.9,445.3 270.0,262.4" fill="#facc15" fill-opacity="0.16" stroke="#facc15" stroke-width="2.5"/>
   <circle cx="760" cy="353" r="6" fill="#facc15"/>
   <text class="legend" x="776" y="358">Gemini 3.6 Flash — $0.486699</text>
-  <polygon points="430.0,186.0 619.4,239.0 670.3,444.9 532.3,602.5 331.0,595.6 213.5,439.4 418.8,381.1" fill="#fb7185" fill-opacity="0.16" stroke="#fb7185" stroke-width="2.5"/>
+  <polygon points="430.0,147.2 627.2,232.8 676.8,446.3 538.8,615.9 322.0,614.3 188.8,445.1 348.4,324.9" fill="#fb7185" fill-opacity="0.16" stroke="#fb7185" stroke-width="2.5"/>
   <circle cx="760" cy="395" r="6" fill="#fb7185"/>
   <text class="legend" x="776" y="400">Gemini 3.5 Flash Lite — $0.069015</text>
   <text class="note" x="48" y="708">Cost burden is relative: the local baseline is 0 and the most expensive recorded bundle is 100.</text>
