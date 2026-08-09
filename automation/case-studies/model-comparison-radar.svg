@@ -4,7 +4,7 @@
   <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 28px Arial,sans-serif}.sub,.axis-label,.note{fill:#a5b4c7;font:15px Arial,sans-serif}.grid{fill:none;stroke:#41506d;stroke-width:1}.spoke{stroke:#41506d;stroke-width:1}.legend{fill:#e2e8f0;font:16px Arial,sans-serif}</style>
   <rect class="bg" width="1100" height="760" rx="18"/>
   <text class="title" x="48" y="58">SteadyBurn model quality and cost</text>
-  <text class="sub" x="48" y="86">0–100 rubric measurements; cost efficiency is relative to the least-expensive scored paid run.</text>
+  <text class="sub" x="48" y="86">0–100 rubric measurements; local cost burden is 0 and the most expensive recorded bundle is 100.</text>
   <polygon class="grid" points="430.0,339.0 469.9,358.2 479.7,401.3 452.1,435.9 407.9,435.9 380.3,401.3 390.1,358.2"/>
   <polygon class="grid" points="430.0,288.0 509.7,326.4 529.4,412.7 474.3,481.9 385.7,481.9 330.6,412.7 350.3,326.4"/>
   <polygon class="grid" points="430.0,237.0 549.6,294.6 579.2,424.0 496.4,527.8 363.6,527.8 280.8,424.0 310.4,294.6"/>
@@ -23,10 +23,10 @@
   <line class="spoke" x1="430" y1="390" x2="181.4" y2="446.7"/>
   <text class="axis-label" x="144.1" y="455.3" text-anchor="middle">Voice &amp; closing</text>
   <line class="spoke" x1="430" y1="390" x2="230.6" y2="231.0"/>
-  <text class="axis-label" x="200.7" y="207.2" text-anchor="middle">Cost efficiency</text>
-  <polygon points="430.0,183.4 614.4,242.9 662.9,443.2 531.2,600.2 340.6,575.7 247.8,431.6 230.6,231.0" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-width="2.5"/>
+  <text class="axis-label" x="200.7" y="207.2" text-anchor="middle">Cost burden</text>
+  <polygon points="430.0,183.4 614.4,242.9 662.9,443.2 531.2,600.2 340.6,575.7 247.8,431.6 427.5,388.0" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-width="2.5"/>
   <circle cx="760" cy="185" r="6" fill="#38bdf8"/>
   <text class="legend" x="776" y="190">Gemma 4 31B — $0.015143</text>
-  <text class="note" x="48" y="708">Local runs remain unpriced and are available in the dashboard table, but cannot receive a cost-efficiency axis.</text>
+  <text class="note" x="48" y="708">Cost burden is relative: the local baseline is 0 and the most expensive recorded bundle is 100.</text>
   <text class="note" x="48" y="734">Source: CONTENT_SCORE.json and OPENROUTER_USAGE.jsonl in each case-study directory.</text>
 </svg>

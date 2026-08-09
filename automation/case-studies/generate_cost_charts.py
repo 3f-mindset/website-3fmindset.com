@@ -41,6 +41,7 @@ class Run:
     text_cost: float
     image_cost: float
     costs_by_model: dict[str, float]
+    cost_source: str
 
 
 def company_for(model: str) -> str:
@@ -58,6 +59,13 @@ def display_name(model: str) -> str:
         return DISPLAY_NAMES[model]
     words = model.split("/", 1)[-1].replace("-it", "").replace("-", " ").split()
     return " ".join(word.upper() if word in {"gpt", "v"} else word.capitalize() for word in words)
+
+
+def model_from_comparison(path: Path) -> str:
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.lower().startswith("- model:") or line.lower().startswith("- text model:"):
+            return line.split(":", 1)[1].strip().strip(chr(96))
+    return path.parent.name
 
 
 def natural_key(value: str) -> tuple[object, ...]:
@@ -79,6 +87,7 @@ def cost_for(record: dict[str, object]) -> float:
 
 def discover_runs(root: Path) -> list[Run]:
     runs = []
+    seen: set[Path] = set()
     for usage_path in sorted(root.rglob("OPENROUTER_USAGE.jsonl")):
         records = [json.loads(line) for line in usage_path.read_text(encoding="utf-8").splitlines() if line.strip()]
         if not records:
@@ -100,6 +109,25 @@ def discover_runs(root: Path) -> list[Run]:
             text_cost=total - image_cost,
             image_cost=image_cost,
             costs_by_model=dict(sorted(costs.items())),
+            cost_source="openrouter",
+        ))
+        seen.add(usage_path.parent.resolve())
+    for comparison_path in sorted(root.rglob("MODEL_COMPARISON.md")):
+        study_root = comparison_path.parent.resolve()
+        if study_root in seen:
+            continue
+        model = model_from_comparison(comparison_path)
+        runs.append(Run(
+            model=model,
+            company=company_for(model),
+            display_name=display_name(model),
+            case_study=study_root.relative_to(root).as_posix(),
+            calls=0,
+            total_cost=0.0,
+            text_cost=0.0,
+            image_cost=0.0,
+            costs_by_model={},
+            cost_source="local",
         ))
     return sorted(runs, key=sort_key)
 
@@ -135,10 +163,15 @@ def chart(runs: list[Run], logarithmic: bool) -> str:
     chart_bottom = 160 + len(runs) * 55 + max(0, len(groups) - 1) * 35
     height, graph_x, graph_width = chart_bottom + 150, 420, 520
     maximum = nice_max(max(run.total_cost for run in runs))
-    minimum = 10 ** math.floor(math.log10(min(run.total_cost for run in runs)))
+    positive_costs = [run.total_cost for run in runs if run.total_cost > 0]
+    minimum = 10 ** math.floor(math.log10(min(positive_costs)))
     if logarithmic:
         tick_values = ticks_log(minimum, maximum)
         def scale(value: float) -> float:
+            if value <= 0:
+                return 0
+            if maximum == minimum:
+                return graph_width
             return graph_width * (math.log10(value) - math.log10(minimum)) / (math.log10(maximum) - math.log10(minimum))
         title, subtitle = "SteadyBurn weekly bundle: recorded model cost (log scale)", "base-10 logarithmic scale in USD"
     else:
@@ -167,13 +200,13 @@ def chart(runs: list[Run], logarithmic: bool) -> str:
             lines.extend([
                 f'  <text class="label" x="90" y="{y}">{html.escape(run.display_name)}</text>',
                 f'  <rect fill="{COMPANY_COLORS.get(company, "#d1d5db")}" x="{graph_x}" y="{y - 21}" width="{max(4, scale(run.total_cost)):.0f}" height="27" rx="4"/>',
-                f'  <text class="value" x="1130" y="{y}">{money(run.total_cost)}{marker}</text>',
+                f'  <text class="value" x="1130" y="{y}">{money(run.total_cost)}{" local baseline" if run.cost_source == "local" else marker}</text>',
             ])
             y += 55
         y += 35
     lines.extend([
         f'  <line class="grid" x1="60" y1="{chart_bottom + 5}" x2="1140" y2="{chart_bottom + 5}"/>',
-        f'  <text class="note" x="60" y="{chart_bottom + 38}">Local runs have no OpenRouter JSONL cost record and are intentionally excluded.</text>',
+        f'  <text class="note" x="60" y="{chart_bottom + 38}">Local baseline is $0.000000. On log scale it is shown as a labelled zero-length bar.</text>',
         f'  <text class="note" x="60" y="{chart_bottom + 66}">† Gemma 3 was an earlier, non-equivalent comparison.</text>',
         f'  <text class="note" x="60" y="{chart_bottom + 94}">Source: each completed case study’s OPENROUTER_USAGE.jsonl.</text>',
         "</svg>",
@@ -192,7 +225,7 @@ def main() -> int:
     (root / "weekly-bundle-costs.svg").write_text(chart(runs, logarithmic=False), encoding="utf-8")
     (root / "weekly-bundle-costs-log.svg").write_text(chart(runs, logarithmic=True), encoding="utf-8")
     (root / "cost-chart-data.json").write_text(json.dumps({"generated_at": datetime.now(timezone.utc).isoformat(), "runs": [asdict(run) for run in runs]}, indent=2) + "\n", encoding="utf-8")
-    print(f"Processed {len(runs)} OpenRouter usage logs.")
+    print(f"Processed {len(runs)} case-study cost records.")
     return 0
 
 
