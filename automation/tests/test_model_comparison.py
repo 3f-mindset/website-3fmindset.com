@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parents[1]
 sys.path.insert(0, str(ROOT / "case-studies"))
-from generate_model_comparison import compile_comparison, dashboard_html  # noqa: E402
+from generate_model_comparison import compile_comparison, dashboard_html, radar_svg  # noqa: E402
 
 
 class ModelComparisonTests(unittest.TestCase):
@@ -35,6 +35,8 @@ class ModelComparisonTests(unittest.TestCase):
             self.assertIsNone(local["radar"]["cost_efficiency"])
             self.assertEqual(set(paid["criteria"]["index.md"]), {item["id"] for item in rubric["artifacts"]["index.md"]["criteria"]})
             self.assertIn("cdn.jsdelivr.net/npm/d3@7", dashboard_html(data))
+            self.assertIn("<svg", radar_svg(data))
+            self.assertIn("GPT Test", radar_svg(data))
 
     def _write_study(self, root: Path, rubric: dict, model: str, cost: float | None) -> None:
         study = root / model.replace("/", "-") / "week"

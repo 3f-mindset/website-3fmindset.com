@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import math
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -139,6 +140,61 @@ d3.select('#controls').selectAll('label').data(models).join('label').html((m,i)=
 </script></main></body></html>"""
 
 
+def radar_svg(data: dict[str, Any]) -> str:
+    """Render a Markdown-embeddable snapshot of the interactive radar chart."""
+    axes = data["radar_axes"]
+    models = [
+        model for model in sorted(data["models"], key=lambda item: item["content_score"], reverse=True)
+        if all(model["radar"].get(axis["id"]) is not None for axis in axes)
+    ][:6]
+    width, height, center_x, center_y, radius = 1100, 760, 430, 390, 255
+
+    def point(index: int, value: float) -> tuple[float, float]:
+        angle = 2 * math.pi * index / len(axes) - math.pi / 2
+        distance = radius * value / 100
+        return center_x + distance * math.cos(angle), center_y + distance * math.sin(angle)
+
+    lines = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title description">',
+        '  <title id="title">SteadyBurn model quality and cost comparison</title>',
+        '  <desc id="description">A radar chart summarizing the scored, priced case studies. The interactive dashboard contains the complete comparison.</desc>',
+        '  <style>.bg{fill:#0b1020}.title{fill:#f8fafc;font:700 28px Arial,sans-serif}.sub,.axis-label,.note{fill:#a5b4c7;font:15px Arial,sans-serif}.grid{fill:none;stroke:#41506d;stroke-width:1}.spoke{stroke:#41506d;stroke-width:1}.legend{fill:#e2e8f0;font:16px Arial,sans-serif}</style>',
+        f'  <rect class="bg" width="{width}" height="{height}" rx="18"/>',
+        '  <text class="title" x="48" y="58">SteadyBurn model quality and cost</text>',
+        '  <text class="sub" x="48" y="86">0–100 rubric measurements; cost efficiency is relative to the least-expensive scored paid run.</text>',
+    ]
+    for ring in range(1, 6):
+        points = " ".join(f"{x:.1f},{y:.1f}" for index in range(len(axes)) for x, y in [point(index, ring * 20)])
+        lines.append(f'  <polygon class="grid" points="{points}"/>')
+    for index, axis in enumerate(axes):
+        x, y = point(index, 100)
+        label_x, label_y = point(index, 115)
+        lines.extend((
+            f'  <line class="spoke" x1="{center_x}" y1="{center_y}" x2="{x:.1f}" y2="{y:.1f}"/>',
+            f'  <text class="axis-label" x="{label_x:.1f}" y="{label_y:.1f}" text-anchor="middle">{html.escape(axis["label"])}</text>',
+        ))
+    for index, model in enumerate(models):
+        color = COLORS[index % len(COLORS)]
+        points = " ".join(
+            f"{x:.1f},{y:.1f}" for axis_index, axis in enumerate(axes)
+            for x, y in [point(axis_index, float(model["radar"][axis["id"]]))]
+        )
+        legend_y = 190 + index * 42
+        lines.extend((
+            f'  <polygon points="{points}" fill="{color}" fill-opacity="0.16" stroke="{color}" stroke-width="2.5"/>',
+            f'  <circle cx="760" cy="{legend_y - 5}" r="6" fill="{color}"/>',
+            f'  <text class="legend" x="776" y="{legend_y}">{html.escape(model["display_name"])} — {money(model["cost_usd"])}</text>',
+        ))
+    if not models:
+        lines.append('  <text class="note" x="48" y="150">No scored paid case studies are available yet.</text>')
+    lines.extend((
+        '  <text class="note" x="48" y="708">Local runs remain unpriced and are available in the dashboard table, but cannot receive a cost-efficiency axis.</text>',
+        '  <text class="note" x="48" y="734">Source: CONTENT_SCORE.json and OPENROUTER_USAGE.jsonl in each case-study directory.</text>',
+        '</svg>',
+    ))
+    return "\n".join(lines) + "\n"
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).parent)
@@ -147,6 +203,7 @@ def main(argv: list[str] | None = None) -> int:
     data = compile_comparison(root)
     (root / "model-comparison.json").write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
     (root / "model-comparison.html").write_text(dashboard_html(data), encoding="utf-8")
+    (root / "model-comparison-radar.svg").write_text(radar_svg(data), encoding="utf-8")
     print(f"Compiled {len(data['models'])} scored model runs; {len(data['awaiting_score'])} await scoring.")
     return 0
 

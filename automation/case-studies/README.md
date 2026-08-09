@@ -67,6 +67,12 @@ Runs without `CONTENT_SCORE.json` remain visibly marked as awaiting scoring and
 are never assigned inferred editorial values. Local runs stay unpriced until a
 local-cost model is defined.
 
+![Model quality and cost radar](model-comparison-radar.svg)
+
+The embedded snapshot shows every scored, priced case study. Use the interactive
+[radar-chart dashboard](model-comparison.html) to select models and inspect the
+complete table and source measurements.
+
 ## Content scoring
 
 The root uv command content-score evaluates index.md and INSTRUCTIONS.md using
