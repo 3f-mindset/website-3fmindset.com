@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parents[1]
 sys.path.insert(0, str(ROOT / "case-studies"))
-from generate_model_comparison import READABILITY_METRICS, compile_comparison, dashboard_html, radar_svg  # noqa: E402
+from generate_model_comparison import READABILITY_METRICS, compile_comparison, dashboard_html, radar_svg, radial_fraction  # noqa: E402
 
 
 class ModelComparisonTests(unittest.TestCase):
@@ -31,16 +31,26 @@ class ModelComparisonTests(unittest.TestCase):
             self.assertEqual(len(data["models"]), 2)
             by_model = {item["model"]: item for item in data["models"]}
             paid, local = by_model["openai/gpt-test"], by_model["local/gemma-test"]
-            self.assertEqual(paid["radar"]["readability"]["cost_burden"], 100.0)
+            self.assertEqual(paid["radar_raw"]["readability"]["cost_burden"], 100.0)
             self.assertEqual(local["cost_usd"], 0.0)
-            self.assertEqual(local["radar"]["readability"]["cost_burden"], 0.0)
+            self.assertEqual(local["radar_raw"]["readability"]["cost_burden"], 0.0)
+            self.assertEqual(local["radar"]["readability"]["cost_burden"], 15.0)
             self.assertEqual(set(paid["criteria"]["index.md"]), {item["id"] for item in rubric["artifacts"]["index.md"]["criteria"]})
             self.assertEqual(set(paid["radar"]["readability"]), {metric for metric, _label in READABILITY_METRICS} | {"cost_burden"})
             self.assertEqual(set(paid["readability"]["bundle total"]), {metric for metric, _label in READABILITY_METRICS})
             self.assertEqual(len(data["axis_sets"]["quality"]), sum(len(item["criteria"]) for item in rubric["artifacts"].values()) + 1)
+            self.assertIn("letter_simplicity", {axis["id"] for axis in data["axis_sets"]["overview"]})
+            self.assertIn("instructions_economy", {axis["id"] for axis in data["axis_sets"]["overview"]})
             self.assertIn("cdn.jsdelivr.net/npm/d3@7", dashboard_html(data))
+            self.assertIn("Math.log1p", dashboard_html(data))
             self.assertIn("<svg", radar_svg(data))
+            self.assertIn("within-dimension rank", radar_svg(data))
             self.assertIn("GPT Test", radar_svg(data))
+
+    def test_logarithmic_radar_scale_is_zero_safe_and_expands_low_values(self) -> None:
+        self.assertEqual(radial_fraction(0), 0)
+        self.assertEqual(radial_fraction(100), 1)
+        self.assertGreater(radial_fraction(10), 0.1)
 
     def _write_study(self, root: Path, rubric: dict, model: str, cost: float | None) -> None:
         study = root / model.replace("/", "-") / "week"
