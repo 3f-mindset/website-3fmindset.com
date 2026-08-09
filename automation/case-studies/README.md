@@ -51,3 +51,20 @@ file. It writes [cost-chart-data.json](cost-chart-data.json) plus the linear
 and logarithmic cost SVGs.
 Local runs remain deliberately unpriced because they have no OpenRouter usage
 record.
+
+## Content scoring
+
+The root uv command content-score evaluates index.md and INSTRUCTIONS.md using
+the versioned SteadyBurn rubric. It combines deterministic measurements with
+structured OpenRouter evidence extraction, repeated adjudication, and an
+independent uncertainty tie-breaker.
+
+~~~
+uv run content-score --case-study automation/case-studies/MODEL/RUN --max-cost 5
+~~~
+
+Use --strict to make every required rubric criterion an eligibility gate. Normal
+runs retain required failures as visible penalties; the Grade 6 reading-level
+ceiling remains a hard gate in both modes. The scorer writes CONTENT_SCORE.json
+and CONTENT_SCORE.md beside the case study, emits ignored JSONL telemetry, and
+reuses ignored cache entries for unchanged artifact hashes.
