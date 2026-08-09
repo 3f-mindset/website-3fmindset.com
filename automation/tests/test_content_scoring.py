@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from content_scoring.application import BudgetExceeded, ContentScorer, discover_case_studies, load_rubric, parse_results
+from content_scoring.application import EVIDENCE_MODEL, JUDGE_MODEL, TIE_BREAK_MODEL, BudgetExceeded, ContentScorer, discover_case_studies, load_rubric, parse_results
 from content_scoring.domain import CriterionResult, deterministic_metrics, score_artifact
 from content_scoring.infrastructure import ModelResponse, Telemetry
 
@@ -22,13 +22,19 @@ class FakeEvaluator:
 
 
 class ContentScoringTests(unittest.TestCase):
-    def test_fk_grade_is_always_an_eligibility_gate(self) -> None:
+    def test_evaluator_stack_uses_only_deepseek_models(self) -> None:
+        self.assertEqual(EVIDENCE_MODEL, "deepseek/deepseek-v4-flash")
+        self.assertEqual(JUDGE_MODEL, "deepseek/deepseek-v4-pro")
+        self.assertEqual(TIE_BREAK_MODEL, "deepseek/deepseek-v4-pro")
+
+    def test_fk_grade_is_retained_as_a_measurement_only(self) -> None:
         rubric = load_rubric(RUBRIC).artifacts["index.md"]
         metrics = deterministic_metrics(" ".join(["Institutionalization"] * 300) + ".")
         results = [CriterionResult(item.id, 100, True, 1, (), "") for item in rubric.criteria]
-        scored = score_artifact(rubric, metrics, results, strict=False)
+        scored = score_artifact(rubric, metrics, results)
         self.assertGreater(metrics.fk_grade, 6)
-        self.assertFalse(scored.eligible)
+        self.assertEqual(scored.final_score, 100)
+        self.assertNotIn("eligible", scored.as_dict())
 
     def test_required_and_preferred_penalties_are_distinct(self) -> None:
         rubric = load_rubric(RUBRIC).artifacts["index.md"]
@@ -37,15 +43,8 @@ class ContentScoringTests(unittest.TestCase):
         for item in rubric.criteria:
             passed = item.id not in {"perspective_shift", "qualification_nuance"}
             results.append(CriterionResult(item.id, 100 if passed else 0, passed, 1, (), ""))
-        scored = score_artifact(rubric, metrics, results, strict=False)
+        scored = score_artifact(rubric, metrics, results)
         self.assertEqual(scored.penalties, 21)
-        self.assertTrue(scored.eligible)
-
-    def test_strict_mode_turns_required_failure_into_ineligibility(self) -> None:
-        rubric = load_rubric(RUBRIC).artifacts["index.md"]
-        metrics = deterministic_metrics("A man checks his alarm. He chooses a better action.")
-        results = [CriterionResult(item.id, 100, item.id != "decision", 1, (), "") for item in rubric.criteria]
-        self.assertFalse(score_artifact(rubric, metrics, results, strict=True).eligible)
 
     def test_discovery_requires_both_primary_artifacts(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
@@ -64,7 +63,7 @@ class ContentScoringTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             telemetry = Telemetry(root / "telemetry.jsonl")
-            scorer = ContentScorer(root, load_rubric(RUBRIC), FakeEvaluator({}), telemetry, 0.01, False, False, False)
+            scorer = ContentScorer(root, load_rubric(RUBRIC), FakeEvaluator({}), telemetry, 0.01, False, False)
             scorer.spent = 0.01
             with self.assertRaises(BudgetExceeded):
                 scorer._call(model="test", prompt="", schema={}, stage="test", case_study="case", artifact="index.md")
@@ -76,11 +75,11 @@ class ContentScoringTests(unittest.TestCase):
         self.assertEqual(result[criteria[0].id].evidence, ())
         self.assertEqual(result[criteria[0].id].confidence, 0.7)
 
-    def test_optional_tie_break_failure_keeps_terra_score(self) -> None:
+    def test_optional_tie_break_failure_keeps_deepseek_judge_score(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             telemetry = Telemetry(root / "telemetry.jsonl")
-            telemetry.emit("tie_break_fallback", run_id="test", case_study="case", artifact="index.md", model="sonnet", reason="RuntimeError")
+            telemetry.emit("tie_break_fallback", run_id="test", case_study="case", artifact="index.md", model="deepseek/deepseek-v4-pro", reason="RuntimeError")
             self.assertIn("tie_break_fallback", (root / "telemetry.jsonl").read_text(encoding="utf-8"))
 
 

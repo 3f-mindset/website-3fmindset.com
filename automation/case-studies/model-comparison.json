@@ -1,0 +1,155 @@
+{
+  "schema_version": "model-comparison-v1",
+  "generated_at": "2026-08-09T12:31:33.632797+00:00",
+  "rubric_version": "steadyburn-v1",
+  "radar_axes": [
+    {
+      "id": "argument",
+      "label": "Argument"
+    },
+    {
+      "id": "grounding",
+      "label": "Grounding"
+    },
+    {
+      "id": "action",
+      "label": "Action"
+    },
+    {
+      "id": "framework",
+      "label": "Framework"
+    },
+    {
+      "id": "readability",
+      "label": "Readability"
+    },
+    {
+      "id": "voice",
+      "label": "Voice & closing"
+    },
+    {
+      "id": "cost_efficiency",
+      "label": "Cost efficiency"
+    }
+  ],
+  "models": [
+    {
+      "model": "google/gemma-4-31b-it",
+      "display_name": "Gemma 4 31B",
+      "company": "Google",
+      "case_study": "google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management",
+      "content_score": 75.71,
+      "confidence": 0.875,
+      "cost_usd": 0.01514341,
+      "categories": {
+        "index.md": {
+          "argument": 87.17,
+          "grounding": 92.5,
+          "closure": 71.83,
+          "action": 93.67,
+          "readability": 85.0
+        },
+        "INSTRUCTIONS.md": {
+          "argument": 74.83,
+          "framework": 91.5,
+          "readability": 76.67,
+          "voice": 74.75
+        }
+      },
+      "criteria": {
+        "index.md": {
+          "perspective_shift": 94.0,
+          "argument_progression": 91.0,
+          "concrete_opening": 98.0,
+          "psychological_interpretation": 84.0,
+          "behavioral_grounding": 92.0,
+          "practical_philosophy": 88.0,
+          "intellectual_depth": 74.0,
+          "qualification_nuance": 55.0,
+          "personal_responsibility": 91.0,
+          "perspective_progression": 92.0,
+          "decision": 93.0,
+          "prescribed_action": 97.0,
+          "concrete_abstract_balance": 89.0,
+          "everyday_realism": 91.0,
+          "intellectual_simplicity": 89.0,
+          "sentence_rhythm": 86.0,
+          "semantic_economy": 80.0,
+          "anti_motivational": 76.0,
+          "anti_therapy": 93.0,
+          "anti_preacher": 62.0,
+          "anti_guru": 70.0,
+          "closing_strength": 75.0
+        },
+        "INSTRUCTIONS.md": {
+          "perspective_shift": 90.0,
+          "argument_progression": 92.0,
+          "psychological_interpretation": 62.0,
+          "practical_philosophy": 83.0,
+          "intellectual_depth": 38.0,
+          "personal_responsibility": 84.0,
+          "framework_lands": 95.0,
+          "unique_action": 90.0,
+          "action_relevance": 94.0,
+          "behavioral_grounding": 87.0,
+          "intellectual_simplicity": 76.0,
+          "sentence_rhythm": 78.0,
+          "semantic_economy": 76.0,
+          "anti_motivational": 68.0,
+          "anti_therapy": 85.0,
+          "anti_preacher": 74.0,
+          "anti_guru": 72.0
+        }
+      },
+      "measurements": {
+        "index.md": {
+          "fk_grade": 8.07,
+          "words": 989,
+          "sentences": 64,
+          "average_sentence_words": 15.45,
+          "sentence_length_stddev": 7.25,
+          "concrete_opening": true,
+          "action_signals": 5,
+          "framework_signals": 2,
+          "late_you_ratio": 1.0,
+          "repeated_sentence_ratio": 0.0
+        },
+        "INSTRUCTIONS.md": {
+          "fk_grade": 8.5,
+          "words": 653,
+          "sentences": 44,
+          "average_sentence_words": 14.84,
+          "sentence_length_stddev": 6.38,
+          "concrete_opening": false,
+          "action_signals": 10,
+          "framework_signals": 4,
+          "late_you_ratio": 0.5,
+          "repeated_sentence_ratio": 0.0
+        }
+      },
+      "radar": {
+        "argument": 81.0,
+        "grounding": 92.5,
+        "action": 93.67,
+        "framework": 91.5,
+        "readability": 80.84,
+        "voice": 73.29,
+        "cost_efficiency": 100.0
+      }
+    }
+  ],
+  "awaiting_score": [
+    "deepseek-deepseek-v3-2/2026-08-07-master-your-tasks-prioritization-and-time-management",
+    "deepseek-deepseek-v4-flash/2026-08-07-master-your-tasks-prioritization-and-time-management",
+    "deepseek-deepseek-v4-pro/2026-08-07-master-your-tasks-prioritization-and-time-management",
+    "google-gemini-3-5-flash-lite/2026-08-07-master-your-tasks-prioritization-and-time-management",
+    "google-gemini-3-6-flash/2026-08-07-master-your-tasks-prioritization-and-time-management",
+    "google-gemma-3-12b-it/2026-08-07-master-your-tasks-prioritization-and-time-management",
+    "google-gemma-4-26b-a4b-it/2026-08-07-master-your-tasks-prioritization-and-time-management",
+    "local-models/2026-08-07-master-your-tasks-prioritization-and-time-management",
+    "openai-gpt-4-1/2026-08-07-master-your-tasks-prioritization-and-time-management",
+    "openai-gpt-5-4/2026-08-07-master-your-tasks-prioritization-and-time-management",
+    "openai-gpt-5-5/2026-08-07-master-your-tasks-prioritization-and-time-management",
+    "openai-gpt-5-6-luna/2026-08-07-master-your-tasks-prioritization-and-time-management"
+  ]
+}

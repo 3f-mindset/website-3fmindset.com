@@ -1,10 +1,9 @@
 {
-  "schema_version": "content-score-v1",
+  "schema_version": "content-score-v3",
   "rubric_version": "steadyburn-v1",
   "model": "google/gemma-4-31b-it",
   "case_study": "/mnt/c/Users/Dave/Documents/_code/momentum-institute/website-3fmindset.com-main-publish/automation/case-studies/google-gemma-4-31b-it/2026-08-07-master-your-tasks-prioritization-and-time-management",
   "content_score": 75.71,
-  "eligible": false,
   "confidence": 0.875,
   "artifacts": {
     "index.md": {
@@ -12,7 +11,6 @@
       "base_score": 86.32,
       "penalties": 0.0,
       "final_score": 86.32,
-      "eligible": false,
       "confidence": 0.901,
       "metrics": {
         "fk_grade": 8.07,
@@ -279,7 +277,6 @@
       "base_score": 80.1,
       "penalties": 15.0,
       "final_score": 65.1,
-      "eligible": false,
       "confidence": 0.849,
       "metrics": {
         "fk_grade": 8.5,

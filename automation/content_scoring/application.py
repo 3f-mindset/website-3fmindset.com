@@ -10,10 +10,10 @@ from .domain import ARTIFACTS, ArtifactRubric, ArtifactScore, CaseStudy, Criteri
 from .infrastructure import ModelResponse, Telemetry
 
 
-LUNA = "openai/gpt-5.6-luna"
-TERRA = "openai/gpt-5.6-terra"
-SONNET = "anthropic/claude-sonnet-5"
-SCHEMA_VERSION = "content-score-v2"
+EVIDENCE_MODEL = "deepseek/deepseek-v4-flash"
+JUDGE_MODEL = "deepseek/deepseek-v4-pro"
+TIE_BREAK_MODEL = JUDGE_MODEL
+SCHEMA_VERSION = "content-score-v4"
 
 
 class EvaluatorPort(Protocol):
@@ -108,9 +108,9 @@ class BudgetExceeded(RuntimeError):
 
 
 class ContentScorer:
-    def __init__(self, root: Path, rubric: Rubric, evaluator: EvaluatorPort | None, telemetry: Telemetry, max_cost: float, strict: bool, resume: bool, force: bool) -> None:
+    def __init__(self, root: Path, rubric: Rubric, evaluator: EvaluatorPort | None, telemetry: Telemetry, max_cost: float, resume: bool, force: bool) -> None:
         self.root, self.rubric, self.evaluator, self.telemetry = root, rubric, evaluator, telemetry
-        self.max_cost, self.strict, self.resume, self.force = max_cost, strict, resume, force
+        self.max_cost, self.resume, self.force = max_cost, resume, force
         self.spent, self.run_id, self.cache = 0.0, uuid.uuid4().hex, root / ".content-score-cache"
 
     def _call(self, **kwargs: Any) -> ModelResponse:
@@ -125,17 +125,17 @@ class ContentScorer:
     def score_artifact(self, study: CaseStudy, artifact: str) -> ArtifactScore:
         rubric = self.rubric.artifacts[artifact]
         metrics = deterministic_metrics(study.texts[artifact])
-        cache_name = f"{study.source_hash()}-{artifact}-{self.rubric.version}-{SCHEMA_VERSION}-{LUNA}-{TERRA}-{SONNET}".replace("/", "_")
+        cache_name = f"{study.source_hash()}-{artifact}-{self.rubric.version}-{SCHEMA_VERSION}-{EVIDENCE_MODEL}-{JUDGE_MODEL}-{TIE_BREAK_MODEL}".replace("/", "_")
         cache_path = self.cache / f"{cache_name}.json"
         if self.resume and not self.force and cache_path.exists():
             self.telemetry.emit("cache_hit", run_id=self.run_id, case_study=study.identifier, artifact=artifact)
             return artifact_score_from_dict(json.loads(cache_path.read_text(encoding="utf-8")))
         if self.evaluator is None:
-            return score_artifact(rubric, metrics, [CriterionResult(item.id, 0, False, 0, (), "Dry run") for item in rubric.criteria], self.strict)
-        evidence = self._call(model=LUNA, prompt=evidence_prompt(artifact, study.texts[artifact], rubric.criteria), schema=evidence_schema(), stage="evidence", case_study=study.identifier, artifact=artifact).payload
+            return score_artifact(rubric, metrics, [CriterionResult(item.id, 0, False, 0, (), "Dry run") for item in rubric.criteria])
+        evidence = self._call(model=EVIDENCE_MODEL, prompt=evidence_prompt(artifact, study.texts[artifact], rubric.criteria), schema=evidence_schema(), stage="evidence", case_study=study.identifier, artifact=artifact).payload
         passes = []
         for sequence in range(3):
-            reply = self._call(model=TERRA, prompt=judge_prompt(artifact, study.texts[artifact], rubric, metrics.as_dict(), evidence), schema=score_schema(), stage=f"judge_{sequence + 1}", case_study=study.identifier, artifact=artifact)
+            reply = self._call(model=JUDGE_MODEL, prompt=judge_prompt(artifact, study.texts[artifact], rubric, metrics.as_dict(), evidence), schema=score_schema(), stage=f"judge_{sequence + 1}", case_study=study.identifier, artifact=artifact)
             passes.append(parse_results(reply.payload, rubric.criteria, study.texts[artifact]))
         merged: dict[str, CriterionResult] = {}
         disputed: list[Criterion] = []
@@ -148,7 +148,7 @@ class ContentScorer:
                 disputed.append(criterion)
         if disputed:
             try:
-                reply = self._call(model=SONNET, prompt=judge_prompt(artifact, study.texts[artifact], rubric, metrics.as_dict(), evidence, tuple(disputed)), schema=score_schema(), stage="tie_break", case_study=study.identifier, artifact=artifact)
+                reply = self._call(model=TIE_BREAK_MODEL, prompt=judge_prompt(artifact, study.texts[artifact], rubric, metrics.as_dict(), evidence, tuple(disputed)), schema=score_schema(), stage="tie_break", case_study=study.identifier, artifact=artifact)
                 merged.update(parse_results(reply.payload, tuple(disputed), study.texts[artifact]))
             except RuntimeError as exc:
                 self.telemetry.emit(
@@ -156,13 +156,13 @@ class ContentScorer:
                     run_id=self.run_id,
                     case_study=study.identifier,
                     artifact=artifact,
-                    model=SONNET,
+                    model=TIE_BREAK_MODEL,
                     reason=type(exc).__name__,
                 )
-        result = score_artifact(rubric, metrics, [merged[item.id] for item in rubric.criteria], self.strict)
+        result = score_artifact(rubric, metrics, [merged[item.id] for item in rubric.criteria])
         cache_path.parent.mkdir(parents=True, exist_ok=True)
         cache_path.write_text(json.dumps(result.as_dict(), indent=2) + "\n", encoding="utf-8")
-        self.telemetry.emit("artifact_scored", run_id=self.run_id, case_study=study.identifier, artifact=artifact, score=result.final_score, eligible=result.eligible, cost=round(self.spent, 6))
+        self.telemetry.emit("artifact_scored", run_id=self.run_id, case_study=study.identifier, artifact=artifact, score=result.final_score, cost=round(self.spent, 6))
         return result
 
     def score_study(self, study: CaseStudy) -> dict[str, Any]:
@@ -171,7 +171,6 @@ class ContentScorer:
             "schema_version": SCHEMA_VERSION, "rubric_version": self.rubric.version,
             "model": study.model, "case_study": study.identifier,
             "content_score": round(sum(item.final_score for item in artifacts.values()) / 2, 2),
-            "eligible": all(item.eligible for item in artifacts.values()),
             "confidence": round(sum(item.confidence for item in artifacts.values()) / 2, 3),
             "artifacts": {name: item.as_dict() for name, item in artifacts.items()},
             "evaluator_cost": round(self.spent, 6),
@@ -184,20 +183,20 @@ def artifact_score_from_dict(data: dict[str, Any]) -> ArtifactScore:
     metric = deterministic_metrics("")
     metrics = type(metric)(**data["metrics"])
     criteria = tuple(CriterionResult(**item) for item in data["criteria"])
-    return ArtifactScore(data["artifact"], data["base_score"], data["penalties"], data["final_score"], data["eligible"], data["confidence"], metrics, criteria)
+    return ArtifactScore(data["artifact"], data["base_score"], data["penalties"], data["final_score"], data["confidence"], metrics, criteria)
 
 
 def write_study_report(root: Path, payload: dict[str, Any]) -> None:
     (root / "CONTENT_SCORE.json").write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-    lines = [f"# Content Score: {payload['content_score']:.2f}", "", f"- Model: {payload['model']}", f"- Eligible: {payload['eligible']}", f"- Confidence: {payload['confidence']:.3f}", ""]
+    lines = [f"# Content Score: {payload['content_score']:.2f}", "", f"- Model: {payload['model']}", f"- Confidence: {payload['confidence']:.3f}", ""]
     for name, artifact in payload["artifacts"].items():
-        lines.extend([f"## {name}", "", f"- Score: {artifact['final_score']:.2f}", f"- Base: {artifact['base_score']:.2f}", f"- Penalties: {artifact['penalties']:.2f}", f"- FK Grade: {artifact['metrics']['fk_grade']}", ""])
+        lines.extend([f"## {name}", "", f"- Score: {artifact['final_score']:.2f}", f"- Base: {artifact['base_score']:.2f}", f"- Penalties: {artifact['penalties']:.2f}", f"- FK Grade: {artifact['metrics']['fk_grade']} (measurement; reference target <= 6)", ""])
     (root / "CONTENT_SCORE.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def write_aggregate(root: Path, reports: list[dict[str, Any]], run_id: str, spent: float) -> None:
     ordered = sorted(reports, key=lambda item: item["content_score"], reverse=True)
     (root / "content-score-report.json").write_text(json.dumps({"run_id": run_id, "evaluator_cost": round(spent, 6), "reports": ordered}, indent=2) + "\n", encoding="utf-8")
-    lines = ["# Content Score Report", "", "| Model | Score | Eligible | Confidence |", "| --- | ---: | --- | ---: |"]
-    lines.extend(f"| {item['model']} | {item['content_score']:.2f} | {item['eligible']} | {item['confidence']:.3f} |" for item in ordered)
+    lines = ["# Content Score Report", "", "| Model | Score | Confidence |", "| --- | ---: | ---: |"]
+    lines.extend(f"| {item['model']} | {item['content_score']:.2f} | {item['confidence']:.3f} |" for item in ordered)
     (root / "content-score-report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")

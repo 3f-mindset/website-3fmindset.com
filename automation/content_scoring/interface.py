@@ -12,7 +12,6 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Score SteadyBurn case-study content.")
     parser.add_argument("--root", type=Path, default=Path("automation/case-studies"))
     parser.add_argument("--case-study", type=Path, action="append")
-    parser.add_argument("--strict", action="store_true")
     parser.add_argument("--resume", action="store_true", default=True)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
@@ -29,12 +28,12 @@ def main(argv: list[str] | None = None) -> int:
     requested = [path.resolve() for path in args.case_study] if args.case_study else None
     studies = discover_case_studies(root, requested)
     if not studies:
-        raise SystemExit("No eligible case studies found.")
+        raise SystemExit("No complete case studies found.")
     api_key = os.environ.get("OPENROUTER_API_KEY")
     if not args.dry_run and not api_key:
         raise SystemExit("OPENROUTER_API_KEY is required unless --dry-run is used.")
     evaluator = None if args.dry_run else OpenRouterEvaluator(api_key, telemetry)
-    scorer = ContentScorer(root, rubric, evaluator, telemetry, args.max_cost, args.strict, args.resume, args.force)
+    scorer = ContentScorer(root, rubric, evaluator, telemetry, args.max_cost, args.resume, args.force)
     telemetry.emit("run_started", run_id=scorer.run_id, case_studies=len(studies), max_cost=args.max_cost, dry_run=args.dry_run)
     reports = []
     failures = []

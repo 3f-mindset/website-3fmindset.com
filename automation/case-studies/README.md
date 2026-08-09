@@ -44,6 +44,7 @@ or updating that PR:
 cd automation/case-studies
 uv run python analyze_readability.py
 uv run python generate_cost_charts.py
+uv run python generate_model_comparison.py
 ~~~
 
 The chart generator uses only the cost values in each OPENROUTER_USAGE.jsonl
@@ -52,19 +53,34 @@ and logarithmic cost SVGs.
 Local runs remain deliberately unpriced because they have no OpenRouter usage
 record.
 
+## Standard model comparison
+
+`generate_model_comparison.py` compiles the standard editorial suite and the
+recorded bundle cost into [model-comparison.json](model-comparison.json) and an
+interactive [radar-chart dashboard](model-comparison.html). The JSON retains
+every criterion score and deterministic measurement for both primary artifacts.
+The radar uses readable grouped axes: argument, grounding, action, framework,
+readability, voice and closing, and cost efficiency. Cost efficiency is relative
+to the least-expensive scored paid run; raw USD is always shown alongside it.
+
+Runs without `CONTENT_SCORE.json` remain visibly marked as awaiting scoring and
+are never assigned inferred editorial values. Local runs stay unpriced until a
+local-cost model is defined.
+
 ## Content scoring
 
 The root uv command content-score evaluates index.md and INSTRUCTIONS.md using
 the versioned SteadyBurn rubric. It combines deterministic measurements with
 structured OpenRouter evidence extraction, repeated adjudication, and an
-independent uncertainty tie-breaker.
+independent uncertainty tie-breaker. Evidence extraction uses DeepSeek V4 Flash;
+all adjudication and tie-break calls use DeepSeek V4 Pro.
 
 ~~~
 uv run content-score --case-study automation/case-studies/MODEL/RUN --max-cost 5
 ~~~
 
-Use --strict to make every required rubric criterion an eligibility gate. Normal
-runs retain required failures as visible penalties; the Grade 6 reading-level
-ceiling remains a hard gate in both modes. The scorer writes CONTENT_SCORE.json
-and CONTENT_SCORE.md beside the case study, emits ignored JSONL telemetry, and
-reuses ignored cache entries for unchanged artifact hashes.
+Scores are measurements, not qualification gates. Required-criterion misses
+remain visible as score penalties, and FK Grade is reported beside each
+artifact with Grade 6 as a reference target only. The scorer writes
+CONTENT_SCORE.json and CONTENT_SCORE.md beside the case study, emits ignored
+JSONL telemetry, and reuses ignored cache entries for unchanged artifact hashes.

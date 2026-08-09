@@ -69,7 +69,6 @@ class ArtifactScore:
     base_score: float
     penalties: float
     final_score: float
-    eligible: bool
     confidence: float
     metrics: DeterministicMetrics
     criteria: tuple[CriterionResult, ...]
@@ -80,7 +79,6 @@ class ArtifactScore:
             "base_score": self.base_score,
             "penalties": self.penalties,
             "final_score": self.final_score,
-            "eligible": self.eligible,
             "confidence": self.confidence,
             "metrics": self.metrics.as_dict(),
             "criteria": [asdict(item) for item in self.criteria],
@@ -166,11 +164,10 @@ def deterministic_metrics(markdown: str) -> DeterministicMetrics:
     )
 
 
-def score_artifact(rubric: ArtifactRubric, metrics: DeterministicMetrics, results: list[CriterionResult], strict: bool) -> ArtifactScore:
+def score_artifact(rubric: ArtifactRubric, metrics: DeterministicMetrics, results: list[CriterionResult]) -> ArtifactScore:
     by_id = {result.id: result for result in results}
     category_scores: dict[str, list[float]] = {name: [] for name in rubric.categories}
     penalties = 0.0
-    eligible = metrics.fk_grade <= 6
     penalized_groups: set[str] = set()
     for criterion in rubric.criteria:
         result = by_id.get(criterion.id)
@@ -178,8 +175,6 @@ def score_artifact(rubric: ArtifactRubric, metrics: DeterministicMetrics, result
             result = CriterionResult(criterion.id, 0.0, False, 0.0, (), "Missing evaluator result")
         category_scores[criterion.category].append(result.score)
         if not result.passed:
-            if strict and criterion.required:
-                eligible = False
             group = criterion.penalty_group or criterion.id
             if group not in penalized_groups:
                 penalties += 15.0 if criterion.required else 6.0
@@ -195,7 +190,6 @@ def score_artifact(rubric: ArtifactRubric, metrics: DeterministicMetrics, result
         base_score=round(base, 2),
         penalties=round(penalties, 2),
         final_score=round(final, 2),
-        eligible=eligible,
         confidence=round(confidence, 3),
         metrics=metrics,
         criteria=tuple(results),
