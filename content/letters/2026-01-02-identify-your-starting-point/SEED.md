@@ -1,21 +1,8 @@
-# Steady Burn Week 1: Identify Your Starting Point
-
-- **Phase:** 1 — Identify the Blade
-- **Release:** 2026-01-02
-
-## Core aim
-
-This seed translates the identify your starting point curriculum theme into one direct weekly practice. The work must be concrete, honest, and measurable—not another idea left in a notebook.
-
-## Empowering action
-
-Identify your roles, habits, strengths, weaknesses, and current reality without excuses.
-
-## Worksheet outcome
-
-Name the current reality, the standard for this week, the first action, and the proof that it was completed.
-
-## Journal prompt
-
-> Which parts of my life am I proud of, and which most need to change?
-
+Week 1: Identify Your Starting Point
+Lecture: Every forging process begins with knowing the metal. This week, we take stock of who you are right now. Speak plainly about your current life – your roles, your habits, your fears, and your hopes. As men, we often charge forward without pausing to assess our starting point. But a warrior must know his current strengths and weaknesses before he can sharpen his blade. In this introductory session, emphasize the importance of brutal honesty and personal accountability. This isn’t about beating yourself up – it’s about establishing a baseline. You’re looking at the raw, unshaped metal of your life. A blade can’t be forged if you don’t first identify the raw material. By acknowledging exactly where you stand, you set the stage for genuine growth. Face the facts of your life like a man: directly and without excuses. This is your launching point for the journey ahead.
+Action: Write a no-nonsense self-assessment of your life as it stands today. Be honest and specific.
+Steps to Take:
+1. List Your Roles and Habits: Write down the major roles you fulfill (e.g. father, husband, professional, son) and a typical day’s habits. Identify which habits make you proud and which you know are holding you back.
+2. Assess Strengths and Weaknesses: Clearly outline your personal strengths (your “sharp edges”) and weaknesses (areas where you feel “dull” or lacking). For each strength, note how it benefits you. For each weakness, note how it impacts your life. This isn’t for shame – it’s for truth.
+3. State Your Feelings Candidly: Describe how you feel about your life right now. Are you fulfilled, frustrated, lost, motivated? Putting your feelings into words is an act of courage and clarity. No one else is judging this – it’s for you to see the unfiltered picture.
+Reflection: “Which aspects of my current life am I proud of, and which aspects do I most want to change? What does this reveal about who I am right now?”
