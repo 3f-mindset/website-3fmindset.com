@@ -1,21 +1,8 @@
-# Steady Burn Week 13: Grit
-
-- **Phase:** 2 — Ground in Mastery
-- **Release:** 2026-03-27
-
-## Core aim
-
-This seed translates the grit curriculum theme into one direct weekly practice. The work must be concrete, honest, and measurable—not another idea left in a notebook.
-
-## Empowering action
-
-Complete one necessary task you have been avoiding, regardless of mood.
-
-## Worksheet outcome
-
-Name the current reality, the standard for this week, the first action, and the proof that it was completed.
-
-## Journal prompt
-
-> What does follow-through teach me about who I am?
-
+Week 13: Embrace Discipline – Do it Regardless
+Lecture: This week we confront the backbone of mastery: discipline. All the plans and goals in the world mean nothing without the discipline to execute them consistently. Speak in a no-excuses, almost military tone (but supportive): a man must sometimes do what needs to be done especially when he doesn’t feel like it. Define discipline as the ability to keep commitments to yourself, to push through discomfort, and to maintain focus on your long-term benefit over short-term impulse. Use straightforward examples: getting up early to train when you’d rather sleep, saying no to temptations that violate your goals, completing that tedious task at work instead of procrastinating. Emphasize that discipline is a muscle – the more you exercise it, the stronger it gets. Also clarify that discipline equals freedom in the long run; by disciplining yourself, you gain control over your destiny rather than being controlled by whims[2]. Encourage participants to share a situation where discipline paid off for them. This week’s practice is about deliberately doing something hard or sticking to a routine because it’s the right thing, not because you feel like it. Mastery is forged in those uncomfortable moments.
+Action: Choose one task or commitment that you tend to avoid and execute it with full discipline this week, no excuses. Prove to yourself that your will is stronger than your mood.
+Steps to Take:
+1. Identify Your “Discipline Test”: Pick a specific action that you know is good for you but you often avoid or delay. It might be something like waking up an hour earlier to work on a side project, completing a lingering chore each evening, sticking to your diet plan every day, or engaging in a tough conversation you’ve put off. This is your test of discipline for the week.
+2. Set Non-Negotiable Rules: Make a clear rule for yourself regarding this action (e.g., “I will get up at 6 AM every weekday and hit the gym,” or “I will not play video games until I have read for 30 minutes,” or “I will put $50 into savings account on payday before spending on leisure”). Write it down and treat it like a promise or an order you must obey. Anticipate your usual excuses and mentally prepare to dismiss them.
+3. Follow Through Relentlessly: When the moment of truth arrives each day – when it’s time to perform your chosen task – act immediately. Don’t negotiate with yourself, don’t wait for motivation. Feel resistance and do it anyway. After completing it, acknowledge the small victory. If one day you fail, own it without self-pity and resolve that tomorrow the rule will be kept. The goal is to prove to yourself that you are capable of self-command. By the end of the week, you should feel your discipline muscle getting stronger, ready to handle bigger challenges.
+Reflection: “Describe a moment this week when you wanted to quit or give in, but disciplined yourself to push through. How did it feel afterward, and what does that teach me about my potential strength?”
