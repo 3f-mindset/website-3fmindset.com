@@ -1,21 +1,8 @@
-# Steady Burn Week 21: Resourcefulness
-
-- **Phase:** 3 — Navigate the Fire
-- **Release:** 2026-05-22
-
-## Core aim
-
-This seed translates the resourcefulness curriculum theme into one direct weekly practice. The work must be concrete, honest, and measurable—not another idea left in a notebook.
-
-## Empowering action
-
-Solve one constraint with the tools, relationships, and time already available.
-
-## Worksheet outcome
-
-Name the current reality, the standard for this week, the first action, and the proof that it was completed.
-
-## Journal prompt
-
-> What solution becomes visible when I stop waiting for ideal conditions?
-
+Week 21: Adapt and Overcome – Flexibility in Adversity
+Lecture: In the midst of fire, metal becomes malleable – it bends so it doesn’t break. This week’s focus is on adaptability – the ability to adjust your approach when circumstances change or obstacles appear. A rigid tree snaps in a storm; a flexible one survives. Speak about the importance of having goals and plans, but not marrying them so tightly that you can’t pivot when needed. Life is unpredictable; resilience often comes down to creativity and adaptability. Use an encouraging tone: adapting doesn’t mean giving up your goals, it means finding a new way to reach them when the old way gets blocked. Share a story (personal or historical) of someone who changed strategy mid-stream and succeeded (such as an entrepreneur who pivoted business ideas or a soldier adapting to battlefield surprises). Emphasize keeping the end goal in sight but being open-minded about the path. This week, each man will practice adapting by intentionally changing something in his routine or by tackling a problem in a new way, learning to become more comfortable with change and uncertainty.
+Action: When faced with a challenge or an unexpected change this week, consciously practice flexibility: alter your approach, try a new strategy, or adjust your attitude to overcome it.
+Steps to Take:
+1. Identify a Stuck Point: Think of an area in your life where you feel stalled or a plan that isn’t unfolding as expected. It could be not making progress on a fitness goal, a project at work hitting roadblocks, or even a parenting tactic not yielding results. Acknowledge that doing more of the same might not help – it’s time to try something different.
+2. Brainstorm Alternatives: Take that situation and brainstorm at least two alternate approaches. For example, if your workout routine is stale and you’re not improving, maybe try a different training program or join a group class for a change. If communication with a colleague isn’t working, experiment with a different communication style or medium. Essentially, play out a “plan B” or “plan C” without pride or attachment to plan A.
+3. Implement the Pivot: Put the new approach into practice immediately. Don’t wait for the perfect moment – make a flexible move now. As you do, pay attention to the results and also to your own feelings. Often, just proving that you can change course on the fly builds confidence for future adversity. If the new strategy doesn’t work, you’ve lost nothing – go back to brainstorming and try another tack. The key habit here is not freezing or stubbornly ramming against a wall, but rather flowing around obstacles like water. By week’s end, you should have at least one instance where you adapted instead of resisted, and you’ll likely see a better outcome or a valuable lesson from it.
+Reflection: “Recall a situation this week or in the past where I had to change my approach on the fly. What did I do, and what was the outcome? How can I cultivate a mindset that sees change and unexpected obstacles not as threats, but as chances to get creative and find new solutions?”
