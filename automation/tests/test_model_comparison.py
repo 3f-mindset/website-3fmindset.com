@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).parents[1]
-sys.path.insert(0, str(ROOT / "case-studies"))
+sys.path.insert(0, str(ROOT.parent / "docs" / "model-comparisons"))
 from generate_model_comparison import READABILITY_METRICS, compile_comparison, dashboard_html, radar_svg, radial_fraction  # noqa: E402
 
 
@@ -17,7 +17,7 @@ class ModelComparisonTests(unittest.TestCase):
     def test_compiles_every_dimension_and_cost_without_inventing_local_cost(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             workspace = Path(temporary)
-            studies = workspace / "case-studies"
+            studies = workspace / "model-comparisons"
             rubric_directory = workspace / "content_scoring" / "rubrics"
             rubric_directory.mkdir(parents=True)
             shutil.copyfile(ROOT / "content_scoring" / "rubrics" / "steadyburn-v1.json", rubric_directory / "steadyburn-v1.json")

@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).parents[1]
-sys.path.insert(0, str(ROOT / "case-studies"))
+sys.path.insert(0, str(ROOT.parent / "docs" / "model-comparisons"))
 from generate_cost_charts import chart, discover_runs  # noqa: E402
 
 

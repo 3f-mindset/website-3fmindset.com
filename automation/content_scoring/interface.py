@@ -10,7 +10,7 @@ from .infrastructure import OpenRouterEvaluator, Telemetry
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Score SteadyBurn case-study content.")
-    parser.add_argument("--root", type=Path, default=Path("automation/case-studies"))
+    parser.add_argument("--root", type=Path, default=Path("docs/model-comparisons"))
     parser.add_argument("--case-study", type=Path, action="append")
     parser.add_argument("--resume", action="store_true", default=True)
     parser.add_argument("--force", action="store_true")
