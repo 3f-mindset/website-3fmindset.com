@@ -1,21 +1,8 @@
-# Steady Burn Week 17: Stoic Resilience
-
-- **Phase:** 3 — Navigate the Fire
-- **Release:** 2026-04-24
-
-## Core aim
-
-This seed translates the stoic resilience curriculum theme into one direct weekly practice. The work must be concrete, honest, and measurable—not another idea left in a notebook.
-
-## Empowering action
-
-Separate what you control from what you do not and act on the first controllable step.
-
-## Worksheet outcome
-
-Name the current reality, the standard for this week, the first action, and the proof that it was completed.
-
-## Journal prompt
-
-> Where am I wasting strength fighting what I cannot command?
-
+Week 17: Stand Your Ground – Dealing with Conflict
+Lecture: Conflict is a fire that can either forge relationships and character or burn them to ashes. This week, we focus on handling conflict with integrity and courage. Many men either explode in anger or retreat in avoidance when faced with confrontation. The aim here is to train a balanced response: stand your ground, speak truth, but do so with respect and control. Use a firm, instructional tone: avoiding necessary conflict only breeds resentment and weakness, while uncontrolled rage destroys trust and respect. A true warrior handles conflict directly and honorably. Discuss practical strategies: using “I” statements, actively listening to the other side, keeping voice calm and firm, and knowing your desired outcome. Emphasize boundaries – a man must not be a doormat; addressing conflict is often about setting healthy boundaries. Encourage participants to share any current conflict (at work, home, etc.) they’re struggling with, and guide them to reframe it as an opportunity to practice courage and communication. This week’s action is to engage in a constructive confrontation or to have a tough conversation they’ve been avoiding.
+Action: Identify a conflict or tough conversation you’ve been avoiding, and address it directly this week – calmly and firmly, without aggression or retreat.
+Steps to Take:
+1. Prepare Your Message: Clarify the issue at hand and what you need to communicate. Write down the key points you want to convey, focusing on facts and your honest feelings (e.g., “When X happens, I feel Y, and I need Z”). Steer away from blaming and toward solving. Knowing what you want from the conversation (an apology, a change in behavior, a compromise) will give you direction.
+2. Initiate the Conversation: Schedule a time to talk with the person involved, or if it’s an on-the-spot scenario, resolve not to back down next time it occurs. When the conflict discussion begins, remember to stay calm and respectful but assertive. Maintain eye contact, speak clearly, and listen to their perspective too. If emotions flare (on either side), take a breath – literally pause and breathe to keep composure.
+3. Hold Your Boundary or Point: Whether the other person reacts well or poorly, commend yourself for stepping up. If they respond reasonably, work together to find a solution. If they attack or deflect, don’t sink to insults – reiterate your main point and what you need. It might or might not resolve perfectly, but the victory is that you faced it. After it’s over, reflect on what went well and what you could improve in your approach to conflict. Each conflict faced is training for the next.
+Reflection: “How did I handle the conflict or tough conversation this week? What did I do well, and what could I do better next time to stand my ground while still respecting the other person and myself?”
