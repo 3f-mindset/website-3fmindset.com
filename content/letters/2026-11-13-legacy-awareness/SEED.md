@@ -1,27 +1,8 @@
-# Steady Burn Week 46: Legacy Awareness
-
-- **Phase:** 6 — Install the Furnace
-- **Release:** 2026-11-13
-
-## Core idea
-
-Legacy is built in ordinary repetitions. Every promise kept, modelled response, and standard tolerated teaches people what a man believes matters.
-
-## Empowering action
-
-Identify one legacy signal you are sending now and deliberately strengthen or correct it this week.
-
-## Steps
-
-1. Name the people most shaped by your conduct.
-2. Ask what your present habits teach them.
-3. Choose one behavior that better reflects the legacy you intend.
-4. Repeat it visibly and consistently this week.
-
-## Worksheet outcome
-
-Map audience, current signal, desired legacy, and one visible corrective action.
-
-## Journal prompt
-
-> If the people closest to me copied my daily conduct, what kind of life would they learn to build?
+Week 46: Reflect on Your Journey – The Story of Transformation
+Lecture: As we enter the final phase, it’s time to reflect on the entire journey. This week is about looking back to Week 1 and seeing the narrative of how you’ve changed. Speak in a proud, almost ceremonial tone: “You are not the same man who started this journey. Let’s take stock of your metamorphosis.” Guide participants to compare their mindset, habits, and confidence now vs a year ago. Discuss highs and lows – key turning points, toughest weeks, biggest breakthroughs. Encourage storytelling: each man should be able to articulate his own “hero’s journey” of the past year. This reflection consolidates lessons learned and builds confidence – if they overcame X, they can face future Y. The Action: write a reflection (maybe a letter to your past self or a journal entry summarizing the journey). Optionally share it with the group or someone close. This gives perspective and gratitude – and it’s effectively the first draft of the “story” they’ll carry forward about how they became who they are. Recognizing this growth sets the stage for defining their identity (next week).
+Action: Take time to reflect deeply on the past 45 weeks. Write a narrative of your transformation – how did you feel and who were you at the start, what challenges did you overcome, what key habits or changes made the biggest difference, and who are you now as a result? Be honest about struggles and proud of progress. This could be a private journal entry, a letter to your past or future self, or even a short essay/story. The point is to acknowledge your growth and cement the story of what you have achieved. If comfortable, share highlights of your story with a trusted person or the group, as a way of celebrating and owning it. Notice the themes that emerge – these will inform how you see your new identity.
+Steps to Take:
+1. Set Aside Reflection Time: Choose a quiet hour this week with no distractions. Maybe revisit your notes/journal from early weeks to remind yourself where you started (values defined, fears listed, etc.). Mentally walk through each phase remembering key accomplishments (“that week I confronted my boss…”, “that month I finally ran 5k…”, “I remember hitting a wall around week 20 and pushing through…” etc.).
+2. Write Your Story: Start from before Week 1: Who were you and what pain points or hopes did you have? Then narrate the journey, phase by phase or just flowing: pivotal moments, supportive characters (maybe mention someone who helped or mentored you), big wins, and also setbacks you handled. Emphasize how you responded – that’s where your character grew. End with who you are now – describe yourself, perhaps using some powerful adjectives (disciplined, confident, compassionate, etc.) that are true now. Also mention what you’ve learned about life and yourself. This is essentially your personal legend of the past year.
+3. Extract Themes and Lessons: Read what you wrote. What stands out? Maybe you see a theme of perseverance, or discovering your self-worth, or the importance of structure, etc. Jot down the top 2-3 lessons or values that define your story. These themes are likely core to your identity (e.g., “I learned I can accomplish anything I commit to,” or “I found out my purpose is to help others through example,” etc.). Share your story or these lessons with someone – speaking it reinforces it. Feel the pride and also perhaps humility (no journey is without help or mistakes). This reflection isn’t the end – but it closes a chapter in your life. You now have a clear before-and-after picture. As we proceed to naming the flame, you’ll use this hard-earned knowledge to define your future path.
+Reflection: “How would I describe the man I was 1 year ago, and how do I describe myself now? What were the most significant changes or events in my year of transformation? What lessons did I learn about my strengths, weaknesses, and values? If I had to tell someone the story of my growth in a few sentences, what would I say? How does reflecting on this journey make me feel about challenges I’ll face in the future?”
