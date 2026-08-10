@@ -1,13 +1,2 @@
-# Steady Burn Phase 1: Identify the Blade
-
-- **Weeks:** Weeks 1–7
-- **Phase start:** 2026-01-02
-
-## Phase purpose
-
-Strip away false layers to identify values, strengths, passions, limiting beliefs, and the identity a man chooses to forge.
-
-## Instructor direction
-
-Keep the phase grounded in action. Each week should give the man a clear practice, visible proof of follow-through, and an honest reflection that carries into the next week.
-
+Phase 1: Identify the Blade (Weeks 1–7)
+Phase Overview: In the first phase, we focus on identifying “the blade”, which represents the man’s core identity and purpose. Just as a bladesmith selects the raw steel before forging a sword, a man must understand his raw material – his values, strengths, passions, and the beliefs that shape him. Over these seven weeks, participants will strip away false layers and discover the essence of who they are. The instructor should foster honest self-reflection and discussion. By the end of Phase 1, each man will have a clearer picture of the “blade” he’s working with – the identity he will forge and refine in the coming months.
