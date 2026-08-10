@@ -1,27 +1,8 @@
-# Steady Burn Week 33: Purposeful Scheduling
-
-- **Phase:** 5 — Temper through Structure
-- **Release:** 2026-08-14
-
-## Core idea
-
-An unscheduled priority is a wish competing with everything else. This week teaches the man to give his work, family, training, recovery, and quiet time a deliberate place before other people claim every open hour.
-
-## Empowering action
-
-Build one purposeful seven-day calendar that assigns time to the commitments you say matter most.
-
-## Steps
-
-1. List the non-negotiable roles and commitments for the coming week.
-2. Block the fixed obligations first, then place the essential work, training, family, and recovery blocks.
-3. Leave margin for reality; a packed calendar is not a disciplined calendar.
-4. Review the plan every evening and reset without drama when the day changes.
-
-## Worksheet outcome
-
-Create a role-to-calendar map, protected blocks, margin, and a Friday review time.
-
-## Journal prompt
-
-> What does my calendar reveal about what I actually serve, and what must I schedule if I want my stated priorities to become real?
+Week 33: Systems for Goals – From Vision to Action Steps
+Lecture: Structure is crucial for big goals too. This week, we implement goal-setting and tracking systems. Many men have goals but no system, so they flounder. A goal without a plan is just a wish. Speak encouragingly: “Let’s turn your dreams into projects with deadlines.” Revisit earlier identity and purpose discussions; now it’s about breaking long-term goals (yearly or monthly) into concrete short-term targets and actions. Introduce techniques like S.M.A.R.T goals (Specific, Measurable, Achievable, Relevant, Time-bound) and backward planning (start from the end goal and define milestones backward to present). Discuss using tools like goal charts, progress logs, or habit trackers for daily progress. Encourage each man to pick one significant goal (if they haven’t already) – e.g., run a marathon, get a promotion, write a book, improve a relationship – and structure it: what’s the sub-goal this quarter, this month, this week? Emphasize reviewing goals regularly (weekly check-ins or monthly reviews) as part of their structure. The Action: formalize one goal with a written plan and timeline, and start executing the first steps now.
+Action: Select one meaningful medium or long-term goal. Write it down in S.M.A.R.T. format, then break it into smaller milestones and tasks. Set a deadline for each milestone. This week, accomplish the first task or milestone on that plan. Establish a routine (e.g., weekly review every Sunday) to track progress on this goal and adjust as needed.
+Steps to Take:
+1. Define the Goal Clearly: Write your goal in specific terms. For example, “Lose 20 lbs by June 30” or “Save $5,000 for emergency fund by year-end” or “Launch my side business website by March 1.” Ensure it’s measurable and time-bound like these examples. If it’s more qualitative (like improve relationship with sibling), define what success looks like (e.g., have a weekly phone call for 3 months).
+2. Identify Milestones: Break the goal into chunks. Ask: what needs to happen by halfway to the deadline? What about quarter-way? List key milestones. For the weight example: maybe 5 lbs lost by end of Feb, 10 lbs by end of March, etc. For the website: design done by Jan 31, content written by Feb 15, site live by Mar 1. These give you interim targets.
+3. List Actions and Start: Under each milestone, list tasks or habits needed. For weight: action might be “Gym 4x/week, meal prep Sundays, track calories daily.” For savings: “Automate $500 monthly transfer, cut dining out to 1x/week,” etc. Now schedule or integrate these actions into your weekly structure (we’ve set up scheduling now – put these tasks in!). This week, focus on hitting the first mini-target or simply executing the actions for week one. Additionally, decide on a goal review ritual: for instance, every Sunday evening, review progress – weight lost, dollars saved, pages written – whatever applies. If off track, adjust plan (maybe goal was too ambitious, or actions need tweaking). If on track, maybe push a bit more or just celebrate and stay consistent. By consistently working your system, you transform a lofty goal into a series of achievable steps. This structural approach dramatically increases the odds you’ll reach the finish line[5].
+Reflection: “What long-term goal did I structure into a plan, and what milestone or task did I complete this week towards it? How does having a clear roadmap for this goal change my confidence or motivation about achieving it? How will I keep myself accountable to this plan in the coming weeks?”
