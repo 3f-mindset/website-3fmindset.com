@@ -1,21 +1,8 @@
-# Steady Burn Week 3: Sharpen Your Edge
-
-- **Phase:** 1 — Identify the Blade
-- **Release:** 2026-01-16
-
-## Core aim
-
-This seed translates the sharpen your edge curriculum theme into one direct weekly practice. The work must be concrete, honest, and measurable—not another idea left in a notebook.
-
-## Empowering action
-
-Inventory your strengths and deliberately use one underused strength this week.
-
-## Worksheet outcome
-
-Name the current reality, the standard for this week, the first action, and the proof that it was completed.
-
-## Journal prompt
-
-> Which strength can create positive momentum when I use it on purpose?
-
+Week 3: Identify Your Strengths – Sharpen Your Edge
+Lecture: Every blade has an edge – that part which cuts the best. In the context of personal identity, your “edge” is made up of your strengths, talents, and skills. This week, we focus on what you’re already good at and what comes naturally to you. Too often, men dwell on their shortcomings and forget to leverage their God-given or hard-earned strengths. Speak in a confident, affirmative tone: recognizing your strengths isn’t arrogance, it’s strategy. A warrior knows what weapon he wields best. Whether it’s physical strength, analytical thinking, creativity, empathy, or persistence – identifying these allows you to lean into them and stand out. Encourage participants to share skills or traits they’re proud of (this might feel awkward for some, but push through it with direct facilitation). By sharpening these edges, you can cut through challenges more effectively.
+Action: Inventory and celebrate your key strengths, then plan one way to use a top strength more deliberately this week.
+Steps to Take:
+1. Make a Strengths List: Write down at least five strengths, talents, or positive qualities you know you possess. If this is hard, consider feedback you’ve received from bosses, friends, or family – what do people rely on you for? In what areas do you outperform others or feel in your element?
+2. Validate with Examples: For each strength on your list, jot a brief example of it in action. (E.g., “Problem-solving – fixed the production issue at work under pressure,” or “Empathy – helped my friend through a tough time last month.”) Real examples reinforce that these strengths are real and part of your identity.
+3. Deploy Your Edge: Choose one strength that you haven’t been fully utilizing lately, and deliberately put it to use in the coming days. For instance, if you’re a good listener but have been distant at home, make time to have a deep conversation with your spouse or friend this week. If you’re physically strong but have skipped challenging workouts, push yourself in the gym. Actively using your edge will sharpen it.
+Reflection: “Which of my strengths do I value most, and how can I apply it more in my daily life to create positive momentum?”
