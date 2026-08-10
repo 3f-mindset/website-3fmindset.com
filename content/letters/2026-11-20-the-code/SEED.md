@@ -1,27 +1,8 @@
-# Steady Burn Week 47: The Code
-
-- **Phase:** 6 — Install the Furnace
-- **Release:** 2026-11-20
-
-## Core idea
-
-A code is a set of standards that remains standing when comfort, fear, and convenience argue against it. It makes a man’s decisions less dependent on the moment.
-
-## Empowering action
-
-Draft and test a personal code of five to seven standards you are prepared to carry into the next season.
-
-## Steps
-
-1. Review the values and hard-won lessons from the year.
-2. Write each standard as a behavioral commitment.
-3. Test it against a difficult real-life scenario.
-4. Remove anything vague, performative, or impossible to remember.
-
-## Worksheet outcome
-
-Produce a concise code with scenario tests and a daily reading cue.
-
-## Journal prompt
-
-> What standards will I uphold when no one is watching and no one can force me to do it?
+Week 47: Forge Your Code – Define Your Core Values and Principles (Revisited)
+Lecture: In Week 2, we identified values; now, after all you’ve experienced, it’s time to forge your personal code of honor – the non-negotiable principles you will live by. These may have evolved or clarified. This week, you essentially compile your “rules for life” that define the man you are. Speak in a resolute, empowering tone: “A man’s code is his internal compass – let’s ensure yours is clear and true.” Encourage men to select 5-10 core values/principles and write them as active statements (e.g., “I honor my word” or “Family first, always” or “I seek growth over comfort”). They can draw from earlier values, lessons from reflection (e.g., they learned integrity or compassion deeply), and new convictions formed. Discuss the importance of having a code: it guides decisions, keeps you stable in chaos, and signals to others what you stand for. Also mention that a code can be refined over time, but this is their current creed. The action: write down your personal code of conduct – your flame’s name in terms of values. Possibly create something like “Tenets of [Name]” listing each with a brief description. And share it or display it prominently (maybe framing it or keeping it in wallet). Living by a self-chosen code gives confidence and consistency – you know who you are and what you stand for.
+Action: Articulate your Personal Code of Honor. Identify your most essential values or principles (ideally 5-10) that you commit to uphold. Write each as a clear, affirmative statement. For example: “Integrity – I always keep my promises and tell the truth,” “Respect – I treat others and myself with respect at all times,” “Discipline – I do what is necessary even when it’s hard,” etc. Take time to get the wording right so it resonates deeply. This code is the name of your blade – what you stand for. When finished, read it aloud to yourself. Place it somewhere accessible (journal, phone, or a document you can review often). This week, whenever facing a decision or challenge, refer to your code: it should guide your action. Notice if living by your explicit code brings a sense of clarity or pride.
+Steps to Take:
+1. Gather Your Values: Use Week 2’s values list as a starting point, but also consider values you’ve discovered or strengthened (maybe “accountability” became huge for you, or “empathy” if you learned its power). Also include any key principles learned (like “growth mindset” or “service”). List more than you need, then pare down to the most vital ones – the ones you’d defend at great cost.
+2. Formulate Statements: For each chosen value, write it as a guiding principle. Make it active and first person. If the value is broad (like “family” or “health”), clarify what you will do: e.g., “Family – I prioritize quality time and am present with my loved ones, no matter what.” If “health – I maintain my body through regular exercise and balanced nutrition, knowing it’s the foundation of my life.” The code should be actionable, not just abstract words. Aim for brevity but clarity.
+3. Review and Commit: Look at the code as a whole. Does it reflect the best version of you? Is anything missing or redundant? Tweak until it feels solid and inspiring. Now commit to it: sign it like a personal declaration if you want. Share it with someone you trust (“These are the principles I intend to live by”). That adds accountability. Use it: in the coming days, maybe a situation tests “patience” or “courage” from your code – consciously act in line with your code and see the difference. The code acts like a personal law. Of course, you’re human and might slip, but now you have a clear standard to correct to. As you carry this forward, periodically reviewing or even memorizing your code ensures your flame – your identity – burns true and bright, guided by chosen ideals.
+Reflection: “What core principles did I include in my personal code, and why are they important to me? How does having a written code make me feel about my decisions and behavior? Describe a situation (even a small one) this week where referring to my code guided me to act in alignment with my values. How will I keep these principles at the forefront of my life from now on?”
