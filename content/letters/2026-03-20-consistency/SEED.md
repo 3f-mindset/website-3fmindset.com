@@ -1,21 +1,8 @@
-# Steady Burn Week 12: Consistency
-
-- **Phase:** 2 — Ground in Mastery
-- **Release:** 2026-03-20
-
-## Core aim
-
-This seed translates the consistency curriculum theme into one direct weekly practice. The work must be concrete, honest, and measurable—not another idea left in a notebook.
-
-## Empowering action
-
-Choose one small habit and make it too clear to negotiate for seven days.
-
-## Worksheet outcome
-
-Name the current reality, the standard for this week, the first action, and the proof that it was completed.
-
-## Journal prompt
-
-> Where have I confused intensity with consistency?
-
+Week 12: Build Strong Habits (Consistency is King)
+Lecture: Mastery isn’t built in a day – it’s the product of consistent habits. This week, we zoom out to the meta-skill of habit formation. The goal is to help each man consciously build positive habits (and break bad ones) to reinforce everything he’s striving for. Drive home a key truth: nearly 40% of our daily actions are habitual[1], done without thinking, so if we engineer those habits to be good ones, our life will run in the right direction on autopilot. Use a pragmatic tone: there’s nothing mystical about habits; they’re loops we can reprogram with repetition and reward. Introduce simple habit-building strategies – like starting small, anchoring new habits to existing routines (e.g., do 20 pushups after brushing teeth), and tracking progress. Also mention eliminating “keystone” bad habits that drag you down. The mantra here: Consistency is king. A mediocre plan done daily trumps a perfect plan done occasionally. Encourage the group to share one habit they really want to instill and brainstorm how to make it stick. By intentionally crafting habits, participants ground their progress in daily reality instead of fleeting motivation.
+Action: Choose one positive habit to build (or a bad habit to break) this week, and implement a specific strategy to ensure it sticks – track it, schedule it, and tie it to an existing routine.
+Steps to Take:
+1. Identify Priority Habit: Decide on one high-impact habit you want to establish (or eliminate). It should be specific and meaningful. For example: “Drink 2 liters of water daily” (build) or “No phone after 10 PM” (break). If building, phrase it as a positive action; if breaking, decide what you will do instead of the bad habit’s time or trigger.
+2. Use the Habit Loop: Apply the cue-routine-reward framework. Choose a cue (trigger) for your new habit – perhaps something you already do. For instance, “right after I finish lunch (cue), I will take a 10-minute walk (new habit).” Decide on a simple reward for completing it – even a mental pat on the back or tracking streak on a chart/app gives a dopamine hit. If breaking a habit, identify the cue that leads to the bad habit and plan to insert a different routine when that cue happens (e.g., when stressed at work (cue), do 3 deep breaths instead of smoking (old habit)).
+3. Track Daily: Keep a visible scorecard of your success. Mark an X on a calendar or use a habit-tracking app for every day you execute the new habit (or successfully avoid the bad one). The aim is to build a streak. If you slip, don’t quit – analyze why, adjust if needed, and get back on the path immediately. Consistency over time is what will wire this behavior into your brain. Remember, each repeat is hammering the steel, making that habit stronger.
+Reflection: “What is helping me stick to my new habit, and what temptations or obstacles make it hard? How can I adjust my environment or routine to make this habit even more automatic?”
