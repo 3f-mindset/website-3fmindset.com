@@ -1,27 +1,8 @@
-# Steady Burn Week 48: Mission Clarity
-
-- **Phase:** 7 — Name Your Flame
-- **Release:** 2026-11-27
-
-## Core idea
-
-The final phase begins by naming the mission that gives a man’s discipline direction. A mission is not a slogan; it is a plain statement of what he is here to build, protect, and serve.
-
-## Empowering action
-
-Write a one-sentence mission statement and use it to judge one real decision this week.
-
-## Steps
-
-1. Review values, strengths, responsibilities, and the people you serve.
-2. Write three possible mission statements in plain language.
-3. Test each against sacrifice, not applause.
-4. Choose one and apply it to a current decision.
-
-## Worksheet outcome
-
-Create a mission draft, refinement test, and decision filter.
-
-## Journal prompt
-
-> What am I willing to organize my life around when comfort is no longer the goal?
+Week 48: Craft Your Mission Statement – Naming Your Purpose
+Lecture: Now, with values set, we articulate mission – the overarching purpose or driving goal of your life moving forward. This is essentially “naming the flame” in terms of direction: a concise statement of what you’re here to do or the impact you intend to make. Speak in an inspirational, visionary tone: “What is the fire inside you ultimately for? Put it into words – this is your mission.” Guide them to think about their roles (father, professional, community member) and passions, and how those combine into a mission. A mission statement is like a north star when making big choices. It could be as simple as “To be a leader who brings out the best in others” or very specific like “To improve healthcare access in my community through my work” – whatever resonates as deeply meaningful. Emphasize it should be authentic and motivating to them, not what they think it “should” be. The action: write your personal mission statement (1-3 sentences max). Polished, powerful wording if possible. Then share it (with family, hang it on wall) and let it inform your future plans. This names your flame in the sense of declaring what light you aim to shine in the world.
+Action: Write your personal mission statement. Ask yourself, “What is my life’s main purpose or the mark I want to leave?” Consider your passions, values, and strengths – how can they serve something beyond just yourself? It might be about family (e.g., “To raise my children to be confident, kind adults by being a loving example”), career or creative impact (“To bring beauty into the world through art that inspires others”), or community (“To uplift my community by mentoring youth toward positive paths”). It’s personal, no wrong answers. Write it, refine the wording until it gives you goosebumps or at least a sense of rightness. Then document it somewhere you'll see often. This week, mention it to at least one person (speaking it solidifies it). Reflect on how aligning daily actions with this mission can guide your next chapters.
+Steps to Take:
+1. Identify Your “Why” in Wider Terms: Look back at Week 38 (driving force) – that was about motivation. Now elevate that into a broader purpose. Think of what you want your life to ultimately stand for or contribute. Sometimes phrasing like “To [action] [who/what] [outcome]” helps. E.g., “To help others break through their limits so they can live their best lives,” or “To continuously grow and share wisdom, creating a legacy of positivity for those around me.” Don’t worry about perfect words yet, just concept.
+2. Hone the Wording: Aim for one sentence if you can, two if needed. It should be specific enough to be meaningful but broad enough to guide across different roles. You might try starting with verbs like “To serve, to create, to inspire, to build, to nurture, to lead…” See what connects. Ensure it aligns with your values (if one of your top values is adventure, maybe your mission involves exploring/expanding boundaries). Ensure it’s aspirational but authentic – not something you think sounds impressive but don’t actually care deeply about.
+3. Live With It and Share: Write the statement neatly (could even make a small poster or phone lock-screen). Read it daily in the morning. Notice if it energizes you or if any part feels off – you can tweak it over time. Share it: tell your spouse or a friend, “I’ve realized my mission is…”. Observe their reaction too (sometimes they’ll say “that sounds just like you” which confirms it). Use the mission when planning goals – ask “Does this align with my mission?” Going forward, this statement is the title of your story, the name of your flame. It can evolve, but right now it’s what you declare your life is about. Owning that gives you a sense of clarity and resolve that many people never have.
+Reflection: “What is my personal mission statement? How did I arrive at these words, and what do they mean to me? In what ways does this mission reflect who I truly am and aspire to be? How can I incorporate my mission into my everyday decision-making and long-term planning, so that I consistently move in the direction of fulfilling it?”
