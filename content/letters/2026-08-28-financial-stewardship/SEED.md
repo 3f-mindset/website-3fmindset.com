@@ -1,27 +1,8 @@
-# Steady Burn Week 35: Financial Stewardship
-
-- **Phase:** 5 — Temper through Structure
-- **Release:** 2026-08-28
-
-## Core idea
-
-Money follows attention or it disappears into neglect. Financial stewardship is the practice of facing the numbers, directing resources on purpose, and refusing to let avoidance make decisions.
-
-## Empowering action
-
-Complete a one-page financial command review and choose one structural move for the next thirty days.
-
-## Steps
-
-1. List income, fixed costs, debt, savings, and recent discretionary spending.
-2. Identify one leak, one obligation, and one priority.
-3. Set a weekly money review and automate or schedule the next right action.
-4. Tell the truth about the habit behind the numbers.
-
-## Worksheet outcome
-
-Build a financial snapshot, one decision, and a recurring review trigger.
-
-## Journal prompt
-
-> What does the way I handle money say about the level of responsibility I am willing to carry?
+Week 35: Boundaries and Guardrails – Protecting Your Structure
+Lecture: As you build structure, you must also defend it. This week we cover setting boundaries – with others and yourself – to prevent derailment. A schedule and plan mean little if you constantly let interruptions, requests, or temptations knock you off course. Use a firm tone: “To protect what matters, you have to learn to say no and set limits.” Discuss common challenges: bosses or colleagues who dump extra work, friends who pressure you to break routines (like drinking when you’re trying to quit, or late nights when you need sleep), family who mean well but interrupt your focus time, or your own tendency to overcommit. Emphasize that boundaries aren’t selfish; they ensure you can meet your priorities and show up better in all areas. Provide examples of polite but assertive ways to say no or negotiate (e.g., “I can’t take that on right now given my current commitments” or “I need an hour of no interruptions, then I’ll help you.”). Also discuss internal guardrails: e.g., not keeping junk food at home, or limiting screen time with apps. The Action: identify one area where a boundary is needed and implement it. It could be telling someone about your non-availability during certain hours, or creating a rule for yourself like no work after 8pm.
+Action: Establish one clear boundary this week to protect your time, energy, or values. Communicate it to those involved (if it’s with others), and enforce it consistently. This could be declining a commitment that overloads you, setting “offline” hours, or removing a personal temptation. Observe the results on your stress and productivity.
+Steps to Take:
+1. Spot Where You’re Overrun: Think of a recent time your plans or well-being were compromised because you didn’t set a boundary. Perhaps you ended up working overtime because you couldn’t say no to a last-minute task, or your neighbor drops in unannounced daily and breaks your routine, or you scroll on phone till 1am. Identify the specific boundary needed (with person X, during time Y, around activity Z).
+2. Define Your Limit or Rule: Be very clear what you will and won’t accept. For example: “After 9pm is personal/family time, I will not respond to work emails then.” Or “I only drink 2 beers max when out with friends, then switch to water,” or “I’m unavailable for social hangouts on Wednesday because that’s study night.” Write it down in one sentence so it’s concrete.
+3. Communicate and Enforce: If others are involved, politely inform them of the new boundary ahead of time. E.g., tell your boss or team, “I have a commitment evenings after 7, so I won’t be checking email past that time.” Or tell friends, “I’m on a health kick, so I’ll head home after two drinks.” If it’s self-imposed, set reminders or use tech (like setting phone to Do Not Disturb after 9). Then, crucially, stick to it. The first time a boundary is tested is key: when someone calls at 10pm for work, you don’t answer (and maybe follow up next day explaining briefly if needed). When a friend pushes you to stay out later, you firmly but kindly decline. You might feel discomfort or guilt initially, but notice how upholding the boundary makes you feel right after – likely relieved and empowered. Over time, people will respect your limits if you consistently enforce them, and you’ll respect yourself more too. Boundaries are the guardrails keeping your structured life from veering off track.
+Reflection: “What boundary did I set and why? How did I communicate and maintain it, and what was the response (from others or internally)? How did protecting this aspect of my life affect my stress levels or sense of control? What other boundaries might I need to establish to safeguard what’s important?”
