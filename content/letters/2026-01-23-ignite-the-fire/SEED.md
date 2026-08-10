@@ -1,21 +1,8 @@
-# Steady Burn Week 4: Ignite the Fire
-
-- **Phase:** 1 — Identify the Blade
-- **Release:** 2026-01-23
-
-## Core aim
-
-This seed translates the ignite the fire curriculum theme into one direct weekly practice. The work must be concrete, honest, and measurable—not another idea left in a notebook.
-
-## Empowering action
-
-Name two passions and protect one hour for one of them this week.
-
-## Worksheet outcome
-
-Name the current reality, the standard for this week, the first action, and the proof that it was completed.
-
-## Journal prompt
-
-> What does full engagement in my passions reveal about my direction?
-
+Week 4: Identify Your Passions – Ignite the Fire
+Lecture: A blade without fire cannot be forged. In a man’s life, passions and interests are the fire that heats your soul and drives you forward. This week, we examine what genuinely excites you and gives you energy. The tone here is enthusiastic but still grounded – we’re not talking about fleeting hobbies for distraction, but passions that give your life flavor and motivation. Discuss why it’s important for a man to know what lights him up: it combats the numb routine that leads to feeling stuck. Whether it’s a career path, a craft, a sport, a cause, or an art form, identifying your passions helps you steer your life toward purpose instead of just obligation. In the group, allow each man to speak about something he loves doing or learning about, and why. The goal is to reconnect (or connect for the first time) with genuine enthusiasm. A man with passion is a man with a furnace burning inside – and that heat will be crucial for the transformations to come.
+Action: Identify at least two passions or interests that energize you, and commit to engaging with one of them this week (even if just for an hour).
+Steps to Take:
+1. Recall Peak Experiences: Think back to moments in your life when you felt deeply alive, engaged, or fulfilled. What were you doing? Who were you with? Often our passions hide in those moments. Make a quick list of activities or topics that consistently draw you in or that you lose track of time doing.
+2. Name Your Passions: From your reflections, name at least two passions or meaningful interests. Don’t judge whether you’re “good” at them or if they’re grand – just identify what genuinely fires you up. It could be playing guitar, coaching kids’ soccer, building a business, cooking, studying history, anything. If it gives you energy and satisfaction, it counts.
+3. Schedule Time for Passion: Choose one of these passions and deliberately make time for it in the next seven days. Treat it like an important appointment. If your passion is something you haven’t done in a while, all the more reason to rekindle it. Whether it’s an hour of practice, reading, or hands-on work – light that spark. Protect this time; consider it fuel for your spirit.
+Reflection: “How do I feel when I’m fully engaged in the things I’m passionate about? What does that feeling tell me about the direction I want my life to move in?”
