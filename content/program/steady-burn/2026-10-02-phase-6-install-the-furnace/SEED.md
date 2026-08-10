@@ -1,16 +1,2 @@
-# Steady Burn Phase 6: Install the Furnace
-
-- **Weeks:** 40–47
-- **Phase start:** 2026-10-02
-
-## Phase purpose
-
-The furnace supplies sustained heat. These eight weeks build the internal and external support required to keep a man moving: energy, recovery, brotherhood, contribution, a coherent story, legacy, and a personal code.
-
-## Throughline
-
-Endurance is not solitary strain. A durable man manages his energy, accepts support, serves beyond himself, and carries standards that keep his fire from going out.
-
-## Instructor direction
-
-Ask for honest audits rather than noble claims. Make every insight concrete through a recovery commitment, accountability rhythm, contribution, or standard that can be observed in a hard week.
+Phase 6: Install the Furnace (Weeks 38–45)
+Phase Overview: In Phase 6, we focus on fueling and sustaining the fire from within. We’ve built structure and faced challenges – now it’s about ensuring you have an internal furnace of motivation, energy, and support to keep you going for the long haul. “Install the Furnace” means integrating sources of passion, drive, and renewal into your life so you don’t burn out. This phase emphasizes purpose (your “why”), passion (what ignites you), energy management (physical and mental), and supportive relationships or communities that act as fuel. The tone is uplifting and revitalizing: after the disciplined grind of structure, this is about stoking enthusiasm and meaning. Instructors should help participants connect daily efforts to a deeper purpose and find joy and strength in the journey. By the end of Phase 6, each man should feel a strong fire in his belly – a combination of clear reasons for why he’s transforming, activities that energize him, habits that recharge him, and people who inspire and hold him up. This internal furnace will power the final phase of solidifying identity and beyond.
