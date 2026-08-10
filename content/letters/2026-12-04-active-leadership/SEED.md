@@ -1,27 +1,8 @@
-# Steady Burn Week 49: Active Leadership
-
-- **Phase:** 7 — Name Your Flame
-- **Release:** 2026-12-04
-
-## Core idea
-
-Leadership is not a title granted by a room. It is the decision to create clarity, take responsibility, and help others move when action is needed.
-
-## Empowering action
-
-Lead one needed conversation, decision, or effort that you have been waiting for someone else to begin.
-
-## Steps
-
-1. Name a place where ambiguity is costing people.
-2. Prepare the facts, desired outcome, and first action.
-3. Speak directly and invite specific participation.
-4. Follow up on the commitment you initiated.
-
-## Worksheet outcome
-
-Define the leadership gap, conversation plan, first action, and follow-up date.
-
-## Journal prompt
-
-> Where am I capable of creating direction but choosing the safety of the sidelines?
+Week 49: Vision for the Future – Goals and Legacy
+Lecture: With mission and identity clear, it’s time to cast your eyes forward and set a vision for your future – both concrete goals and the legacy you want to leave. This week, allow yourself to dream and plan beyond this program. Use an excited, hopeful tone: “The forge is built and the fire is lit – now what will you create with it in the years to come?” Encourage outlining a 1-year, 5-year, even 10-year vision. This includes personal achievements (career, finances, relationships, health milestones) aligned with mission, but also qualities (the kind of man/father/leader you want to be) and impact (how others will benefit). Also discuss legacy: what do you want people to remember about you or what systems you leave (could be raising great kids, building a company, community contributions, etc.). It’s essentially setting long-term targets that give continued direction. The Action: write a vision statement or letter from your future self (e.g., imagining it’s 5 years later and describing your life). Also list key long-term goals (smart style if possible) as stepping stones to that vision. Share or place these where you’ll revisit them regularly. This becomes the roadmap beyond week 52 – ensuring the flame doesn’t die out but continues to forge greater things.
+Action: Create a future vision document. Project yourself into the future – say 5 years from now – and write down what you see in as much detail as possible. Include: What does your typical day look like? What have you accomplished? How do you feel? Who is in your life and how are those relationships? What contributions are you making? Basically, describe your ideal scenario if you continue on this path of growth. Then, identify a few major goals that would make that vision real (e.g., “In 5 years: have my own business running, marriage thriving, completed a marathon, started a community initiative…” etc., tailor to your dreams). Ensure these are measurable where possible and attach rough timelines (1 year, 3 year, etc.). This week, share this vision with someone close or at least speak it out loud to yourself – affirming it. Keep the vision document to revisit monthly and align your shorter-term goals with it.
+Steps to Take:
+1. Dream Freely First: Without worrying about “how,” jot down elements of your ideal future. If everything went right and you put in the work, what do you see? Use categories if helpful: Career/Wealth, Family/Love, Health, Personal Growth, Lifestyle (where do you live, etc.), and Impact (whom do you help). Be specific: e.g., “I live in X city by the mountains, running my own tech firm employing 20 people, earning Y income which allows frequent travel with family. I volunteer coaching kids soccer on weekends. My relationship with my spouse is strong – we have date nights weekly. I’ve written a book about my journey. I wake up each day excited…” etc. Let it be motivating.
+2. Extract Key Goals: Now turn that narrative into a few concrete objectives. For instance, “Own a tech firm” might break down to “Within 2 years, launch my startup; by year 5, have X revenue.” Relationship: “Keep marriage strong – plan at least two getaways a year and weekly dates ongoing.” Fitness: “Complete a marathon by 2024.” Impact: “Start that community center for youth by 5-year mark,” etc. Make sure they align with your mission and values (they should, since those guided the vision). Assign rough deadlines (it’s okay if they adjust later). These goals are like bigger versions of what you set in Phase 5, now oriented to long-term.
+3. Commit to the Vision: Read your future vision out loud. How does it feel? If it doesn’t excite or scare you a bit, maybe it’s too modest – adjust until it does. Share it with a trusted person as a form of commitment (“This is where I see myself in 5 years”). Place a summary or symbolic reminder of it somewhere visible. Use it to drive your next actions: for example, if owning a business is in 5-year plan, perhaps a 6-month goal now is writing a business plan or saving capital. This vision isn’t a strict prophecy but a guiding star. Life can change, but having a vision ensures you’re proactively creating a life rather than just reacting. And legacy: maybe add a line about how people will remember you or what your children will say about you. That often highlights what truly matters in the end. Keep this flame of vision alive – as you accomplish pieces of it, update and expand it. A man with a vision is hard to stop.
+Reflection: “What does my life look like in 5 (or 10) years if I continue on this positive trajectory? What are the most important goals I want to achieve in that timeframe? How do these goals align with my values and mission? How will achieving these change my life and the lives of those around me? When I think about the legacy I want to leave, what comes to mind and what can I do starting now to move toward that?”
