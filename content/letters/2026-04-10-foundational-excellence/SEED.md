@@ -1,21 +1,8 @@
-# Steady Burn Week 15: Foundational Excellence
-
-- **Phase:** 2 — Ground in Mastery
-- **Release:** 2026-04-10
-
-## Core aim
-
-This seed translates the foundational excellence curriculum theme into one direct weekly practice. The work must be concrete, honest, and measurable—not another idea left in a notebook.
-
-## Empowering action
-
-Choose one basic responsibility and raise its standard until it becomes automatic.
-
-## Worksheet outcome
-
-Name the current reality, the standard for this week, the first action, and the proof that it was completed.
-
-## Journal prompt
-
-> Which basic area would strengthen everything else if I did it well?
-
+Week 15: Measure Your Progress and Refine
+Lecture: We cap off the “Ground in Mastery” phase by instilling a habit of self-review and refinement. Mastery isn’t a straight line – it’s a loop of practice, feedback, and adjustment. This week’s lesson is about the importance of measuring your progress in whatever you’re working to master, and adjusting your approach based on what you find. Use a pragmatic tone: a craftsman inspects his work regularly; similarly, a man striving for mastery must pause to evaluate what’s working and what isn’t. Discuss practical ways to measure growth: tracking workouts or diets, journaling mood/energy, reviewing work accomplishments, seeking feedback from trusted friends or colleagues. Emphasize honesty in evaluation – celebrate improvements but also call out where you’re falling short. The point is not to self-criticize endlessly, but to learn and improve. Encourage men to view setbacks or plateaus scientifically, not emotionally: as signals to change strategy, not reasons to quit. By regularly measuring and refining, they will stay on the upward path of mastery rather than stagnating.
+Action: Conduct a personal progress audit in one key area of your life, using real metrics or feedback, and identify one adjustment to make for further improvement.
+Steps to Take:
+1. Choose an Area to Audit: Select one aspect of your development from this phase to evaluate deeply – it could be your fitness journey, a new skill you’ve been practicing, your morning routine consistency, or even your adherence to values. Pick something where progress can be observed or measured.
+2. Gather Data or Feedback: Collect evidence of your progress. This might involve looking at numbers (e.g., weight lifted in the gym now vs. 8 weeks ago, number of pages read, money saved, etc.), reviewing journal entries to gauge changes in mindset, or asking someone you trust for feedback (“Have you noticed any change in me when it comes to X?”). Be objective and specific. For example: “In week 8 I could do 20 pushups, now I can do 35,” or “I missed only 2 of 30 planned morning workouts – 93% adherence.” If the data shows stagnation or regression, note that honestly too.
+3. Identify Adjustment: Based on your audit, decide on one change or tweak to make moving forward. If you’re doing well, how can you challenge yourself more? If you’re lagging, what can you do differently to get on track? For example: “I hit a plateau in weight loss, so I’ll cut out sugary drinks” or “I see I’m improving in skill but slowly – I’ll increase practice time by 10 minutes,” or “I struggled with consistency, so I’ll set an earlier bedtime to improve morning energy.” Implement this refinement immediately as you move into the next phase. This action teaches you that mastery is a continuous process of fine-tuning.
+Reflection: “What did I learn about myself through measuring my progress objectively? How will I use this information to work smarter and continue improving in the next phase of my journey?”
