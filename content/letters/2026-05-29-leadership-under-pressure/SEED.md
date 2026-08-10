@@ -1,21 +1,8 @@
-# Steady Burn Week 22: Leadership Under Pressure
-
-- **Phase:** 3 — Navigate the Fire
-- **Release:** 2026-05-29
-
-## Core aim
-
-This seed translates the leadership under pressure curriculum theme into one direct weekly practice. The work must be concrete, honest, and measurable—not another idea left in a notebook.
-
-## Empowering action
-
-Create clarity for one group or family situation while pressure is high.
-
-## Worksheet outcome
-
-Name the current reality, the standard for this week, the first action, and the proof that it was completed.
-
-## Journal prompt
-
-> How can I become a stabilizing presence when others are uncertain?
-
+Week 22: Persevere Under Pressure – The Power of Persistence
+Lecture: The final week of Navigate the Fire is about perseverance – enduring and pushing through when the heat is on and you’re weary. If adaptability is about changing tactics, perseverance is about not changing the goal and not quitting, despite pain or fatigue. Use a rousing tone, reminiscent of a coach in the last minutes of a game: this is where champions are made – not when things are easy, but when every part of you wants to quit and you choose to keep going. Remind the group of the progress they’ve made and the fires they’ve faced thus far. Frame challenges as the forge that strengthens them each time they persist. Highlight that often success is just on the other side of not giving up – many people fail because they quit moments before a breakthrough. Share a powerful quote or statistic about perseverance (like the fact that most people quit right before momentum would have kicked in). Encourage the men to support each other in persistence. This week’s task is to identify something worthwhile in their life where they’ve been tempted to quit or slack off, and give it an extra, determined push.
+Action: Choose one endeavor where you feel pressure, fatigue, or doubt, and double down your effort this week instead of giving in. Show yourself that you can go the extra mile even when it’s tough.
+Steps to Take:
+1. Select the Struggle: Pinpoint a goal or commitment of yours that’s currently testing your resolve. It might be sticking with a diet or workout plan, a long project at work, repairing a relationship, or even this very program if motivation has dipped. Acknowledge the pressure or exhaustion you feel, but also recall why this goal matters to you.
+2. Make a Grind Plan: Outline a concrete plan to push harder or at least keep steady when you ordinarily might ease up. For example: “I will add one extra workout this week and not miss any,” or “I will spend an additional hour each evening studying for my certification,” or “Even though sales calls suck, I’ll make 5 more calls every day.” Write a simple contract with yourself for this intensified effort, just for this week. Sometimes promising yourself “just one more week” of effort can get you over a hump.
+3. Execute with Grit: Each day, when you hit that moment where you normally think “that’s enough” or “maybe I’ll skip today,” remember your commitment and grind through it. Envision the finish line and literally tell yourself, “Not dead, can’t quit,” or any mantra that resonates. This is about building mental stamina. Keep track of each time you push past your usual stopping point – it’s like adding an extra layer of steel to your blade. At the end of the week, regardless of outcome, you’ll know you gave it everything you have. Often, you’ll find you made significant progress or even achieved a breakthrough because of that final push. But more importantly, you prove to yourself that you are not a quitter.
+Reflection: “What did I discover about my limits by pushing myself to persevere this week? How has my definition of ‘how much I can take’ or ‘how far I can go’ expanded? Describe how it feels to endure and succeed through sheer persistence.”
