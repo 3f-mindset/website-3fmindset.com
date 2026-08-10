@@ -30,3 +30,4 @@ _testmain.go
 resources/_gen/
 __pycache__/
 tmp/
+.env
