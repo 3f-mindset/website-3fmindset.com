@@ -1,13 +1,2 @@
-# Steady Burn Phase 4: Inspect and Refine
-
-- **Weeks:** Weeks 24–31
-- **Phase start:** 2026-06-12
-
-## Phase purpose
-
-Audit the environment, relationships, routines, beliefs, values, skills, and efficiency of the life being built.
-
-## Instructor direction
-
-Keep the phase grounded in action. Each week should give the man a clear practice, visible proof of follow-through, and an honest reflection that carries into the next week.
-
+Phase 4: Inspect the Forge (Weeks 23–30)
+Phase Overview: Having been through the fires of adversity, we now pause to inspect the forge itself – meaning we take a hard look at the environment, systems, and influences that shape us. In this phase, participants will step back and assess their lives from the outside: their surroundings, relationships, habits, and internal beliefs – the “forge” in which their identity has been formed. The goal is to identify what elements of that forge are helping create a strong blade and which are causing flaws or weaknesses. This introspective work ensures that as we continue forging ahead, we do so with awareness and intention. The tone here is thoughtful, honest, and diagnostic. Instructors should guide men to be candid but constructive – this isn’t about blaming others or whining about circumstances, it’s about recognizing how to improve or change the conditions of one’s life for the better. By the end of Phase 4, each man will have a clearer understanding of his context and a plan to optimize his “forge” – meaning his environment and mindset – for continued growth.
