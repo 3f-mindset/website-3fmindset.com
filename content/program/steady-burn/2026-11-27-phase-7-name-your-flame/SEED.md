@@ -1,16 +1,2 @@
-# Steady Burn Phase 7: Name Your Flame
-
-- **Weeks:** 48–52
-- **Phase start:** 2026-11-27
-
-## Phase purpose
-
-The final phase turns a year of evidence into a lifelong direction. Men clarify their mission, practice leadership, declare identity, give thanks, and commit to continuing without the program carrying them.
-
-## Throughline
-
-A named flame is a mission and code strong enough to direct ordinary choices after the calendar ends.
-
-## Instructor direction
-
-Keep the closing work sober and specific. Identity statements must be earned by conduct, gratitude must be direct, and the final vow must include scheduled proof in the next season.
+Phase 7: Name the Flame (Weeks 46–52)
+Phase Overview: In the final phase, we consolidate everything and solidify your transformed identity. Name the Flame is about owning who you have become – giving a name or articulation to your inner fire, and stepping fully into that identity. Just as a master-forged sword might be given a name to reflect its essence, you will define the man you are now. This phase involves reflection on the journey, refining your personal code and mission, envisioning the future, and committing to carry this forward. The tone is triumphant, reflective, and forward-looking. Instructors should celebrate how far the participants have come and encourage them to keep the flame alive beyond the program. By the end of Phase 7, each man will have a clear personal mission statement or creed (naming his flame), a vision for his future, an understanding of his legacy or leadership role, and concrete commitments to maintain his growth and possibly support others. This is the culmination of the 52-week transformation – a graduation into a new level of self-awareness and purpose.
