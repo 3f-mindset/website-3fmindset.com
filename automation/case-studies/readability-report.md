@@ -21,6 +21,8 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | openai/gpt-5.4 | 6852 | 757 | 9.05 | 79.18 | 4.46 | 7.13 | 6.99 | 3.97 | 8.22 | 0.17 |
 | openai/gpt-5.5 | 8510 | 1004 | 8.48 | 80.78 | 4.10 | 6.78 | 6.34 | 3.34 | 7.97 | 0.15 |
 | openai/gpt-5.6-luna | 6319 | 590 | 10.71 | 65.15 | 6.83 | 9.66 | 9.17 | 6.14 | 9.99 | 0.17 |
+| openai/gpt-5.6-sol | 2978 | 311 | 9.58 | 73.85 | 5.34 | 8.03 | 8.32 | 5.15 | 8.86 | 0.24 |
+| openai/gpt-5.6-terra | 3152 | 360 | 8.76 | 74.91 | 4.99 | 7.56 | 7.92 | 4.66 | 8.52 | 0.23 |
 
 ## Per-document measurements
 
@@ -65,6 +67,12 @@ Markdown presentation syntax is removed before one deterministic English syllabl
 | openai/gpt-5.6-luna | LESSON.md | 1412 | 138 | 36 | 10.23 | 72.67 | 5.67 | 8.29 |
 | openai/gpt-5.6-luna | index.md | 2215 | 235 | 69 | 9.43 | 70.85 | 5.72 | 8.56 |
 | openai/gpt-5.6-luna | INSTRUCTIONS.md | 2692 | 217 | 54 | 12.41 | 56.12 | 8.51 | 11.46 |
+| openai/gpt-5.6-sol | LESSON.md | 933 | 108 | 9 | 8.64 | 79.83 | 4.27 | 7.10 |
+| openai/gpt-5.6-sol | index.md | 997 | 116 | 7 | 8.59 | 73.38 | 5.16 | 8.09 |
+| openai/gpt-5.6-sol | INSTRUCTIONS.md | 1048 | 87 | 3 | 12.05 | 68.27 | 6.73 | 9.09 |
+| openai/gpt-5.6-terra | LESSON.md | 887 | 102 | 9 | 8.70 | 77.83 | 4.56 | 7.31 |
+| openai/gpt-5.6-terra | index.md | 1044 | 135 | 7 | 7.73 | 80.76 | 3.92 | 6.69 |
+| openai/gpt-5.6-terra | INSTRUCTIONS.md | 1221 | 123 | 11 | 9.93 | 67.54 | 6.31 | 8.59 |
 
 ## Metric notes
 
