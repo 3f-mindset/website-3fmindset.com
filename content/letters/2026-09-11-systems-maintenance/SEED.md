@@ -1,27 +1,8 @@
-# Steady Burn Week 37: Systems Maintenance
-
-- **Phase:** 5 — Temper through Structure
-- **Release:** 2026-09-11
-
-## Core idea
-
-Structure is living equipment, not a trophy. A system that once worked can become friction when life, roles, or capacity change.
-
-## Empowering action
-
-Inspect one existing system, remove what no longer serves, and reset the next review.
-
-## Steps
-
-1. Choose a system you have stopped trusting or using.
-2. Identify what is working, broken, missing, or excessive.
-3. Simplify it to the minimum standard that still protects the outcome.
-4. Schedule the next maintenance check.
-
-## Worksheet outcome
-
-Run a keep, cut, repair, and review audit for one personal system.
-
-## Journal prompt
-
-> What structure have I abandoned because it became imperfect, and what small repair would make it useful again?
+Week 37: Review and Adjust – Structure as a Living System
+Lecture: As we conclude the Structure phase, the focus is on making your systems sustainable. This week is about conducting a meta-review of the structures you’ve put in place – schedules, habits, accountability, boundaries – and fine-tuning them for the long haul. A structure is not static; life changes, so must your systems. Speak in an encouraging, analytical tone: “Your life is a system – let’s debug and optimize it regularly.” Encourage participants to reflect: Which routines have been working well? Where are the bottlenecks or friction points? Perhaps a schedule needs shifting due to new circumstances, or a habit isn’t yielding desired results and needs modification. Emphasize the importance of periodic self-review (maybe quarterly personal off-sites or monthly check-ins) to keep the structure aligned with goals and reality. The Action: do a structured review of your current routines and systems, celebrate successes, identify one structural element to improve or change, and implement that tweak. Essentially, to instill the practice that structure-building is continuous improvement, not one-and-done.
+Action: Take 30 minutes for a comprehensive personal structure review. Write down the routines and systems you’ve adopted. For each, note if it’s working (keep it), needs adjustment, or isn’t working (revamp or drop it). Identify one specific change to make (a new habit, a different schedule, a new tool) to improve your overall system. Implement that change and mark a date in the future (e.g., one month from now) for your next self-review.
+Steps to Take:
+1. List Your Structures: Make a list of all the key structures in your life now: daily schedule, morning/evening rituals, workout routine, meal plan, task system, accountability check-ins, etc. Also list boundaries set and any tools/apps you rely on. Seeing this, you might be amazed how far you’ve come since the start.
+2. Assess and Celebrate: For each item, quickly evaluate its effectiveness and your adherence. Maybe use a simple code: “++” working great, “+-” works but inconsistent or slight issues, “--” not really working. For “++,” acknowledge it as a win (e.g., “Waking up at 6 AM daily – huge success, feel more productive”). For “+-,” figure out what’s missing (maybe you need to adjust timing, or you’re good on weekdays but falter weekends – note that). For “--,” decide if the structure is poorly designed or maybe not needed. Example: If a particular productivity app isn’t used, maybe your system is fine without it or you need a different one.
+3. Implement an Improvement: Choose one area to improve first. Suppose you realize your evening routine is patchy because you get distracted by TV – you might implement a new boundary like “No TV after 9 PM, replace with reading.” Or you notice you’ve been skipping weekly goal reviews – perhaps set a phone reminder or tie it to something like Sunday coffee. Make a clear plan for this change and do it. Finally, schedule your next review in your calendar: maybe the last Sunday of each month you’ll review habits and goals, or set a 3-month mark as a personal “quarterly review.” This ensures you keep evolving your structure as life evolves. Remember, the goal of structure is to serve you, not enslave you – so it must be adjusted to remain effective and in tune with your aims. You are the engineer of this machine; keep it well-oiled and it will carry you far.
+Reflection: “Looking at all the structures and habits I’ve built, which ones am I most proud of maintaining? Which one structure needs the most adjustment right now, and what exactly will I change about it? How will I make sure to periodically review and refine my life’s systems so I continue to grow rather than plateau?”
