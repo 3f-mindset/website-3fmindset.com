@@ -1,16 +1,2 @@
-# Steady Burn Phase 5: Temper through Structure
-
-- **Weeks:** 32–39
-- **Phase start:** 2026-08-07
-
-## Phase purpose
-
-Tempering gives forged steel flexibility and staying power. These eight weeks turn individual discipline into structures that survive a crowded calendar, low energy, and changing circumstances.
-
-## Throughline
-
-Life systems, scheduling, boundaries, finances, rituals, maintenance, vision, and passion are one assignment: build a life that does not require daily heroics to stay aligned.
-
-## Instructor direction
-
-Keep every practice simple, visible, and repeatable. Challenge men to replace memory, urgency, and mood with a reliable trigger, standard, and review. Structure serves the mission; it must never become another performance.
+Phase 5: Temper Through Structure (Weeks 31–37)
+Phase Overview: With a refined environment and self-awareness, we now introduce structure – the controlled, repeated processes that temper the steel of your character. Just as tempering a blade involves heating and cooling cycles to increase its resilience, implementing structure in your life (schedules, systems, accountability measures) will solidify your gains and make you tougher and more consistent. This phase is about discipline through design: setting up external frameworks that ensure you follow through even when motivation wanes. The tone is practical, system-oriented, and no-nonsense: we’re going to build scaffolding around your aspirations so they don’t collapse. Instructors should emphasize that structure is a form of self-care and freedom – it relieves you from chaos and constant decision fatigue. By the end of Phase 5, each man will have a personalized system for his daily and weekly life, clear goals broken into actionable plans, and accountability methods to keep him on track. This creates stability and momentum moving into the final phases.
