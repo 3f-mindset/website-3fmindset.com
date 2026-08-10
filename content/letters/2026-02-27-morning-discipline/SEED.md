@@ -1,21 +1,8 @@
-# Steady Burn Week 9: Morning Discipline
-
-- **Phase:** 2 — Ground in Mastery
-- **Release:** 2026-02-27
-
-## Core aim
-
-This seed translates the morning discipline curriculum theme into one direct weekly practice. The work must be concrete, honest, and measurable—not another idea left in a notebook.
-
-## Empowering action
-
-Build a simple first-hour routine that proves you own the start of the day.
-
-## Worksheet outcome
-
-Name the current reality, the standard for this week, the first action, and the proof that it was completed.
-
-## Journal prompt
-
-> What changes when I win the first decisions of my day?
-
+Week 9: Build a Morning Routine for Success
+Lecture: Structure starts at sunrise. This week, we drill into the power of a disciplined morning routine. A strong day is built on a strong start. Discuss how the first hour after waking can set the tone for everything else. Use direct language: instead of hitting snooze and stumbling into your day reacting to problems, a man of mastery owns his morning. Whether it’s through exercise, planning, reading, or simple quiet coffee time – a deliberate morning routine grounds you in control and purpose. You might cite examples of successful men known for their morning practices (without fluff – focus on the discipline aspect). Emphasize consistency over intensity: a simple routine done every day beats an elaborate one done rarely. By designing and sticking to a morning plan, participants will experience improved focus and self-mastery. Remind them: Win the morning, win the day.
+Action: Design and commit to a consistent morning routine that primes you for a productive, focused day.
+Steps to Take:
+1. Choose Your Pillar Activities: Decide 2–3 key activities to include in your morning routine that will center and prepare you. Examples: physical exercise or stretching, a few minutes of journaling or planning your day, a healthy breakfast, a cold shower, reading something inspirational or educational, etc. Pick activities that align with your goals (e.g., if physical health is a priority, morning exercise is a must).
+2. Set a Wake-Up Time and Plan: Determine a realistic wake-up time that gives you sufficient time for your routine before daily obligations (work, family, etc.). Calculate backwards to ensure you also get enough sleep. Write down your ideal morning schedule in order (e.g., 6:30 AM wake up, 6:35 stretch, 6:45 run, 7:15 shower, 7:30 review task list...). Preparing this plan the night before is part of the battle.
+3. Execute and Refine: Follow your planned routine every morning this week. Treat it as non-negotiable – this is an appointment with yourself. If you slip, get back on track immediately the next day (no all-or-nothing thinking). Notice how it affects your mood and productivity. At week’s end, adjust any part of the routine that isn’t working (too rushed, not effective, etc.), but keep the core structure. The goal is to engrain a morning habit that gives you a daily edge.
+Reflection: “After consistently following my morning routine, how did it impact my mood and effectiveness throughout the day? What difference does a disciplined morning make in how I feel as a man in charge?”
