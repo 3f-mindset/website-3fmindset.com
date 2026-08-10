@@ -1,13 +1,2 @@
-# Steady Burn Phase 3: Navigate the Fire
-
-- **Weeks:** Weeks 16–23
-- **Phase start:** 2026-04-17
-
-## Phase purpose
-
-Test the developing identity under controlled pressure through conflict, resilience, adaptability, failure, leadership, and calculated risk.
-
-## Instructor direction
-
-Keep the phase grounded in action. Each week should give the man a clear practice, visible proof of follow-through, and an honest reflection that carries into the next week.
-
+Phase 3: Navigate the Fire (Weeks 16–22)
+Phase Overview: In Phase 3, the heat is turned up. Navigate the Fire is about facing adversity, challenges, and discomfort – and coming out stronger. Just as raw steel must be thrust into the flames to harden, you will confront the “fires” in your life: fear, conflict, failure, and change. The focus is on developing resilience, courage, and adaptability. This phase will push participants out of comfort zones deliberately. The tone is motivating but uncompromising: life will test you; this training will ensure you’re ready. A blade that never faces the flame stays weak and brittle[3] – so we won’t shy away from hardships. Instructors should create a supportive environment for men to share their struggles and triumphs in facing fears or challenges. By the end of Phase 3, each man should feel more confident in his ability to handle whatever life throws at him, having proven to himself that he can walk through the fire without burning out.
