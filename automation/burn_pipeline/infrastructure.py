@@ -12,11 +12,7 @@ from pathlib import Path
 from typing import Any
 
 import httpx
-
-try:
-    import tomllib
-except ModuleNotFoundError:  # pragma: no cover - Python < 3.11
-    import tomli as tomllib
+import yaml
 
 from .domain import (
     DevelopedModelEntry,
@@ -375,7 +371,9 @@ def normalize_provider_url(provider_url: str) -> str:
 
 
 def load_pipeline_spec(path: Path) -> PipelineSpec:
-    data = tomllib.loads(path.read_text(encoding="utf-8"))
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise ValueError(f"Pipeline YAML must contain a mapping at the root: {path}")
     return PipelineSpec.model_validate(data)
 
 

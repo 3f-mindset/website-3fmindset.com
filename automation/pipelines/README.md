@@ -34,7 +34,7 @@ OpenAI API:
 
 ```sh
 OPENAI_API_KEY=... uv run burn-pipeline --provider openai --model gpt-4.1 run \
-  --pipeline automation/pipelines/burn-poc.toml \
+  --pipeline automation/pipelines/burn-poc.yaml \
   --force
 ```
 
@@ -43,7 +43,7 @@ OpenRouter (OpenAI-compatible API):
 ```sh
 OPENROUTER_API_KEY=... uv run burn-pipeline --provider openrouter \
   --model openai/gpt-4.1 run \
-  --pipeline automation/pipelines/burn-poc.toml \
+  --pipeline automation/pipelines/burn-poc.yaml \
   --force
 ```
 
@@ -72,7 +72,7 @@ Review the planned branches and text-only steps first:
 
 ```sh
 python scripts/compare-openrouter-openai-models.py --dry-run \
-  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml --models \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.yaml --models \
   openai/gpt-4.1 openai/gpt-4o
 ```
 
@@ -80,7 +80,7 @@ Run and commit a comparison branch per model:
 
 ```sh
 OPENROUTER_API_KEY=... python scripts/compare-openrouter-openai-models.py \
-  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.yaml \
   --models openai/gpt-4.1 openai/gpt-4o --commit --push
 ```
 
@@ -119,30 +119,60 @@ OpenAI-compatible local/network server, such as vLLM or llama.cpp:
 uv run burn-pipeline \
   --provider-url http://localhost:11434 \
   --model local-model-name \
-  run --pipeline automation/pipelines/burn-poc.toml --force
+  run --pipeline automation/pipelines/burn-poc.yaml --force
 ```
 
 Pipeline files can now declare separate providers for `text`, `image`, and `audio`.
 That lets the writing steps use one model while future raster-generation or audio steps
 use different models or endpoints.
 
+Each step may optionally override the model used for that step. Resolution is:
+
+1. `model` on the step.
+2. `model` on the provider for that step's modality.
+3. The CLI default (`--model`, `--image-model`, or `--audio-model`).
+4. The first model advertised by an OpenAI-compatible provider when no model is set.
+
+For example, this keeps the text provider's model as the default while sending the
+lesson and worksheet copy to a specialist model:
+
+```yaml
+providers:
+  text:
+    kind: openrouter
+    providerUrl: https://openrouter.ai/api/v1
+    model: openai/gpt-4.1
+
+steps:
+  - id: lesson
+    format: markdown
+    prompt_file: automation/prompts/burn/lesson.md
+    output: tmp/lesson.md
+    model: anthropic/claude-sonnet-4
+  - id: instructions
+    format: markdown
+    prompt_file: automation/prompts/burn/instructions.md
+    output: tmp/instructions.md
+    depends_on:
+      - lesson
+```
+
 Example:
 
-```toml
-[providers.text]
-kind = "openai-compatible"
-providerUrl = "http://localhost:11434"
-model = "active"
-
-[providers.image]
-kind = "openai-compatible"
-providerUrl = "http://localhost:11434"
-model = "unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m"
-
-[providers.audio]
-kind = "openai-compatible"
-providerUrl = "http://localhost:11434"
-model = "AUDIO_MODEL_NAME"
+```yaml
+providers:
+  text:
+    kind: openai-compatible
+    providerUrl: http://localhost:11434
+    model: active
+  image:
+    kind: openai-compatible
+    providerUrl: http://localhost:11434
+    model: unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m
+  audio:
+    kind: openai-compatible
+    providerUrl: http://localhost:11434
+    model: AUDIO_MODEL_NAME
 ```
 
 Current SteadyBurn steps still run as `text` unless a future step explicitly sets another modality.
@@ -169,7 +199,7 @@ This creates:
 
 - `content/letters/YYYY-MM-DD-slug/SEED.md`
 - `content/letters/YYYY-MM-DD-slug/index.md`
-- `content/letters/YYYY-MM-DD-slug/pipeline.toml`
+- `content/letters/YYYY-MM-DD-slug/pipeline.yaml`
 
 Fill `SEED.md` with the inspiration, scenes, constraints, and worksheet intent.
 That seed document is the first human input to the workflow.
@@ -191,7 +221,7 @@ python scripts/burn-pipeline.py seed-production \
 ```
 
 That route generates `CONTEXT.md` first, derives the final title and slug from it,
-then writes `SEED.md`, `CONTEXT.md`, `index.md`, and `pipeline.toml` into the final
+then writes `SEED.md`, `CONTEXT.md`, `index.md`, and `pipeline.yaml` into the final
 letter folder. After that, `CONTEXT.md` becomes the primary source of truth for the
 rest of the pipeline.
 
@@ -235,26 +265,25 @@ is written back into the registry so future Content Crusher prompts can forbid i
 
 ## Step Dependencies And Composable Inputs
 
-Pipeline TOML files support ordered dependencies, direct file inputs, and references
+Pipeline YAML files support ordered dependencies, direct file inputs, and references
 to prior step outputs. Steps also support `modality = "text" | "image" | "audio"`,
 though the current content pipeline defaults every step to `text`:
 
-```toml
-[[steps]]
-id = "c"
-format = "markdown"
-prompt_file = "automation/prompts/burn/c.md"
-depends_on = ["a", "b"]
-modality = "text"
-output = "tmp/c.md"
-
-[[steps.inputs]]
-step = "a"
-alias = "first_pass"
-
-[[steps.inputs]]
-path = "tmp/b.md"
-alias = "second_source"
+```yaml
+steps:
+  - id: c
+    format: markdown
+    prompt_file: automation/prompts/burn/c.md
+    depends_on:
+      - a
+      - b
+    modality: text
+    output: tmp/c.md
+    inputs:
+      - step: a
+        alias: first_pass
+      - path: tmp/b.md
+        alias: second_source
 ```
 
 Prompt templates can reference runtime values with `{{...}}`, for example:
@@ -271,7 +300,7 @@ Use prompt rendering to inspect what one step will see before calling a model:
 
 ```sh
 uv run burn-pipeline render-prompt \
-  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.yaml \
   --step-id lesson
 ```
 
@@ -279,6 +308,6 @@ Backup path:
 
 ```sh
 python scripts/burn-pipeline.py render-prompt \
-  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.yaml \
   --step-id lesson
 ```

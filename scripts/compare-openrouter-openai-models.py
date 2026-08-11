@@ -9,7 +9,7 @@ import os
 import re
 import subprocess
 import sys
-import tomllib
+import yaml
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -64,7 +64,7 @@ def main() -> None:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--models", nargs="+", required=True, help="OpenRouter OpenAI model IDs, e.g. openai/gpt-4.1.")
-    parser.add_argument("--pipeline", required=True, help="Committed pipeline TOML to compare.")
+    parser.add_argument("--pipeline", required=True, help="Committed pipeline YAML to compare.")
     parser.add_argument("--base-ref", default="HEAD", help="Committed revision used for every comparison branch.")
     parser.add_argument("--branch-prefix", default=DEFAULT_BRANCH_PREFIX)
     parser.add_argument("--worktree-root", help="Persistent directory for comparison worktrees.")
@@ -78,7 +78,7 @@ def build_parser() -> argparse.ArgumentParser:
 def load_pipeline(path: Path) -> dict:
     if not path.is_file():
         raise SystemExit(f"Pipeline not found: {path}")
-    spec = tomllib.loads(path.read_text(encoding="utf-8"))
+    spec = yaml.safe_load(path.read_text(encoding="utf-8"))
     if "context" not in spec or not spec["context"].get("target_dir"):
         raise SystemExit("Pipeline must define context.target_dir.")
     return spec
@@ -117,21 +117,23 @@ def create_worktree(branch: str, worktree: Path, base_ref: str) -> None:
 
 def write_openrouter_pipeline(worktree: Path, pipeline_path: str, model: str) -> Path:
     source = worktree / pipeline_path
-    content = source.read_text(encoding="utf-8")
-    provider = (
-        "[providers.text]\n"
-        'kind = "openrouter"\n'
-        f'model = "{model}"\n'
-        'base_url = "https://openrouter.ai/api/v1"\n'
-        'api_key_env = "OPENROUTER_API_KEY"\n'
-        "timeout_seconds = 300\nretry_attempts = 4\nretry_wait_seconds = 75\n\n"
-    )
-    replacement = re.compile(r"(?ms)^\[providers\.text\]\n.*?(?=^\[|\Z)").sub(provider, content, count=1)
-    if replacement == content:
+    data = yaml.safe_load(source.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or "providers" not in data or "text" not in data["providers"]:
         raise SystemExit(f"Pipeline has no [providers.text] block: {pipeline_path}")
-    destination = worktree / "tmp" / "model-comparisons" / hashlib.sha256(model.encode()).hexdigest()[:12] / "pipeline.toml"
+    data["providers"]["text"] = {
+        "kind": "openrouter",
+        "model": model,
+        "providerUrl": "https://openrouter.ai/api/v1",
+        "timeout_seconds": 300,
+        "retry_attempts": 4,
+        "retry_wait_seconds": 75,
+    }
+    for step in data.get("steps", []):
+        if step.get("modality", "text") == "text":
+            step["model"] = model
+    destination = worktree / "tmp" / "model-comparisons" / hashlib.sha256(model.encode()).hexdigest()[:12] / "pipeline.yaml"
     destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(replacement, encoding="utf-8")
+    destination.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=False), encoding="utf-8")
     return destination.relative_to(worktree)
 
 

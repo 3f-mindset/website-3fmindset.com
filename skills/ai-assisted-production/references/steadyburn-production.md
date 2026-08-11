@@ -7,7 +7,7 @@ Use these repo locations:
 - `content/letters/`: SteadyBurn letter folders.
 - `automation/prompts/burn/`: prompt templates for the generation harness. Many may be placeholders.
 - `automation/pipelines/burn-all.template.toml`: canonical step order and file mapping.
-- `content/letters/YYYY-MM-DD-slug/pipeline.toml`: per-letter pipeline plans created by `init-production`.
+- `content/letters/YYYY-MM-DD-slug/pipeline.yaml`: per-letter pipeline plans created by `init-production`.
 - `automation/pipelines/model-registry.json`: tracked registry of previously used worksheet models and actionable verbs.
 - `automation/pipelines/steadyburn-verb-index.md`: numbered SteadyBurn series index starting at 1, including confirmed, inferred, and missing verb slots.
 - `content/letters/YYYY-MM-DD-slug/SEED.md`: the intake file that stores the user's inspiration before context generation.
@@ -216,7 +216,7 @@ Inspect the rendered prompt for one step:
 
 ```sh
 uv run burn-pipeline render-prompt \
-  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.yaml \
   --step-id lesson
 ```
 
@@ -224,7 +224,7 @@ Backup path:
 
 ```sh
 python scripts/burn-pipeline.py render-prompt \
-  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.yaml \
   --step-id lesson
 ```
 
@@ -247,7 +247,7 @@ Run the pipeline dry-run:
 
 ```sh
 uv run burn-pipeline run \
-  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.yaml \
   --dry-run
 ```
 
@@ -255,7 +255,7 @@ Backup path:
 
 ```sh
 python scripts/burn-pipeline.py run \
-  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.yaml \
   --dry-run
 ```
 

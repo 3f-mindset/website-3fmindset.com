@@ -54,7 +54,7 @@ Use prompt rendering before generation when you need to inspect or debug a step:
 
 ```sh
 uv run burn-pipeline render-prompt \
-  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.yaml \
   --step-id lesson
 ```
 
@@ -62,7 +62,7 @@ Backup path:
 
 ```sh
 python scripts/burn-pipeline.py render-prompt \
-  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.yaml \
   --step-id lesson
 ```
 
@@ -70,7 +70,7 @@ Run the full pipeline when the context-first letter folder is ready:
 
 ```sh
 uv run burn-pipeline run \
-  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.yaml \
   --force
 ```
 
@@ -78,7 +78,7 @@ Backup path:
 
 ```sh
 python scripts/burn-pipeline.py run \
-  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.toml \
+  --pipeline content/letters/YYYY-MM-DD-slug/pipeline.yaml \
   --force
 ```
 

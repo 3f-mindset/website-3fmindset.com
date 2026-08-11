@@ -74,6 +74,7 @@ class StepSpec(BaseModel):
     prompt_file: Path
     output: Path
     modality: GenerationModality = GenerationModality.TEXT
+    model: str | None = None
     inputs: list[InputSource] = Field(default_factory=list)
     depends_on: list[str] = Field(default_factory=list)
     tracks: list[str] = Field(default_factory=list)

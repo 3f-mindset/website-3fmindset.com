@@ -8,13 +8,13 @@ import hashlib
 import re
 import subprocess
 import sys
-import tomllib
+import yaml
 from datetime import datetime, timezone
 from pathlib import Path
 
 
 DEFAULT_PIPELINE = (
-    "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.toml"
+    "content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/pipeline.yaml"
 )
 DEFAULT_BRANCH_PREFIX = "content-model-compare"
 
@@ -72,7 +72,7 @@ def main() -> None:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--models", nargs="+", required=True, help="OpenRouter model IDs; commas are also accepted.")
-    parser.add_argument("--pipeline", default=DEFAULT_PIPELINE, help="Pipeline TOML to compare.")
+    parser.add_argument("--pipeline", default=DEFAULT_PIPELINE, help="Pipeline YAML to compare.")
     parser.add_argument("--base-ref", default="HEAD", help="Committed revision from which each comparison branch starts.")
     parser.add_argument("--branch-prefix", default=DEFAULT_BRANCH_PREFIX)
     parser.add_argument("--worktree-root", help="Directory that will contain the persistent comparison worktrees.")
@@ -93,7 +93,7 @@ def resolve_repo_path(repo_root: Path, value: str) -> Path:
 def load_pipeline(path: Path) -> dict:
     if not path.is_file():
         raise SystemExit(f"Pipeline not found: {path}")
-    data = tomllib.loads(path.read_text(encoding="utf-8"))
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
     if "context" not in data or "target_dir" not in data["context"]:
         raise SystemExit(f"Pipeline must define context.target_dir: {path}")
     return data
@@ -135,23 +135,23 @@ def ensure_new_worktree(branch: str, worktree: Path, base_ref: str) -> None:
 
 def write_openrouter_pipeline(worktree: Path, source_relative: Path, model: str) -> Path:
     source = worktree / source_relative
-    content = source.read_text(encoding="utf-8")
-    provider = (
-        "[providers.text]\n"
-        'kind = "openrouter"\n'
-        f'model = "{model}"\n'
-        'providerUrl = "https://openrouter.ai/api/v1"\n'
-        "timeout_seconds = 300\n"
-        "retry_attempts = 4\n"
-        "retry_wait_seconds = 75\n\n"
-    )
-    pattern = re.compile(r"(?ms)^\[providers\.text\]\n.*?(?=^\[|\Z)")
-    if not pattern.search(content):
+    data = yaml.safe_load(source.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or "providers" not in data or "text" not in data["providers"]:
         raise SystemExit(f"Pipeline has no [providers.text] block: {source_relative}")
-    comparison = pattern.sub(provider, content, count=1)
-    destination = worktree / "tmp" / "model-comparisons" / comparison_branch("run", "pipeline", model) / "pipeline.toml"
+    data["providers"]["text"] = {
+        "kind": "openrouter",
+        "model": model,
+        "providerUrl": "https://openrouter.ai/api/v1",
+        "timeout_seconds": 300,
+        "retry_attempts": 4,
+        "retry_wait_seconds": 75,
+    }
+    for step in data.get("steps", []):
+        if step.get("modality", "text") == "text":
+            step["model"] = model
+    destination = worktree / "tmp" / "model-comparisons" / comparison_branch("run", "pipeline", model) / "pipeline.yaml"
     destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(comparison, encoding="utf-8")
+    destination.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=False), encoding="utf-8")
     return destination.relative_to(worktree)
 
 

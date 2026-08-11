@@ -70,7 +70,11 @@ class BurnPipeline:
             )
         )
         artifact = self._inference_for_step(step).generate(
-            InferenceRequest(prompt=prompt, output_format=step.format)
+            InferenceRequest(
+                prompt=prompt,
+                output_format=step.format,
+                model=self._model_for_step(step),
+            )
         )
         if step.format.is_text:
             content = sanitize_generated_content(artifact.text or "", step.format)
@@ -320,6 +324,12 @@ class BurnPipeline:
         self._inference_cache[modality] = inference
         return inference
 
+    def _model_for_step(self, step: StepSpec) -> str | None:
+        provider = self._providers.get(step.modality)
+        if provider is None:
+            return step.model
+        return step.model or provider.model
+
     def _provider_key_for_step(self, step: StepSpec) -> tuple[str, ...]:
         provider = self._providers.get(step.modality)
         if provider is None:
@@ -328,7 +338,7 @@ class BurnPipeline:
             step.modality.value,
             provider.kind.value,
             provider.provider_url or "",
-            provider.model or "",
+            self._model_for_step(step) or "",
             provider.command or "",
         )
 

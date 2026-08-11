@@ -11,6 +11,7 @@ import re
 import shutil
 import subprocess
 import sys
+import yaml
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -99,31 +100,29 @@ def generate_context(worktree: Path, target: Path, args: argparse.Namespace, mod
 
 
 def write_comparison_pipeline(worktree: Path, target: Path, model: str, image_model: str) -> Path:
-    source = target / "pipeline.toml"
-    content = source.read_text(encoding="utf-8")
-    content = replace_provider(content, "text", model)
-    content = replace_provider(content, "image", image_model)
-    destination = worktree / "tmp" / "model-comparisons" / hashlib.sha256(model.encode()).hexdigest()[:12] / "pipeline.toml"
+    source = target / "pipeline.yaml"
+    data = yaml.safe_load(source.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or "providers" not in data:
+        raise SystemExit(f"Pipeline has no providers block: {source}")
+    data["providers"]["text"] = {
+        "kind": "openrouter",
+        "providerUrl": "https://openrouter.ai/api/v1",
+        "model": model,
+    }
+    data["providers"]["image"] = {
+        "kind": "openrouter",
+        "providerUrl": "https://openrouter.ai/api/v1",
+        "model": image_model,
+    }
+    for step in data.get("steps", []):
+        if step.get("modality", "text") == "text":
+            step["model"] = model
+        elif step.get("modality") == "image":
+            step["model"] = image_model
+    destination = worktree / "tmp" / "model-comparisons" / hashlib.sha256(model.encode()).hexdigest()[:12] / "pipeline.yaml"
     destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(content, encoding="utf-8")
+    destination.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=False), encoding="utf-8")
     return destination.relative_to(worktree)
-
-
-def replace_provider(content: str, modality: str, model: str) -> str:
-    provider = f'''[providers.{modality}]
-kind = "openrouter"
-providerUrl = "https://openrouter.ai/api/v1"
-model = "{model}"
-timeout_seconds = 900
-retry_attempts = 4
-retry_wait_seconds = 75
-
-'''
-    pattern = re.compile(rf"(?ms)^\[providers\.{modality}\]\n.*?(?=^\[|\Z)")
-    result = pattern.sub(provider, content, count=1)
-    if result == content:
-        raise SystemExit(f"Pipeline has no [providers.{modality}] block")
-    return result
 
 
 def write_manifest(target: Path, model: str, base_ref: str, usage_log: Path) -> None:

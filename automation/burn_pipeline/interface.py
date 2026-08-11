@@ -6,6 +6,8 @@ import re
 from datetime import date, timedelta
 from pathlib import Path
 
+import yaml
+
 from .application import BurnPipeline, step_from_paths
 from .domain import BurnContext, GenerationModality, InputSource, PipelineSpec, ProviderConfig, ProviderKind
 from .infrastructure import (
@@ -287,7 +289,7 @@ def build_parser() -> argparse.ArgumentParser:
     step.add_argument("--force", action="store_true")
     step.add_argument("--dry-run", action="store_true")
 
-    run = subparsers.add_parser("run", help="Run a TOML pipeline plan.")
+    run = subparsers.add_parser("run", help="Run a YAML pipeline plan.")
     add_context_args(run)
     run.add_argument("--pipeline", required=True)
     run.add_argument("--step-id", default="")
@@ -479,7 +481,7 @@ def scaffold_production(
     resolved_slug = slug or slugify(title)
     resolved_date = date_value or default_letter_date().isoformat()
     target = target_dir or Path("content/letters") / f"{resolved_date}-{resolved_slug}"
-    pipeline_path = pipeline_file or target / "pipeline.toml"
+    pipeline_path = pipeline_file or target / "pipeline.yaml"
 
     created: list[Path] = []
     files.write_text(
@@ -576,7 +578,7 @@ def build_index_draft(*, title: str, slug: str, date_value: str, summary: str = 
 date: {date_value}
 slug: "{slug}"
 title: "{title}"
-summary: "{escape_toml_string(summary)}"
+summary: "{escape_quoted_string(summary)}"
 
 series:
   - SteadyBurn
@@ -660,7 +662,7 @@ def seed_production(
     final_slug = slug or slugify(final_title)
     final_summary = extract_markdown_section_value(context_content, "Promise") or "SUMMARY GOES HERE"
     target = target_root / f"{resolved_date}-{final_slug}"
-    pipeline_path = target / "pipeline.toml"
+    pipeline_path = target / "pipeline.yaml"
 
     created: list[Path] = []
     files.write_text(
@@ -722,320 +724,97 @@ def humanize_seed_name(value: str) -> str:
 
 def build_pipeline_template(*, title: str, slug: str, date_value: str, target_dir: Path) -> str:
     target_dir_string = target_dir.as_posix()
-    return f"""[context]
-title = "{escape_toml_string(title)}"
-slug = "{escape_toml_string(slug)}"
-date = "{date_value}"
-target_dir = "{escape_toml_string(target_dir_string)}"
+    def step(
+        step_id: str,
+        output_format: str,
+        prompt_file: str,
+        output: str,
+        *,
+        modality: str | None = None,
+        depends_on: list[str] | None = None,
+        tracks: list[str] | None = None,
+        inputs: list[dict[str, str]] | None = None,
+    ) -> dict[str, object]:
+        value: dict[str, object] = {
+            "id": step_id,
+            "format": output_format,
+            "prompt_file": prompt_file,
+            "output": output,
+        }
+        if modality:
+            value["modality"] = modality
+        if depends_on:
+            value["depends_on"] = depends_on
+        if tracks:
+            value["tracks"] = tracks
+        if inputs:
+            value["inputs"] = inputs
+        return value
 
-[providers.text]
-kind = "openai-compatible"
-providerUrl = "http://localhost:11434"
-model = "active"
-timeout_seconds = 300
-retry_attempts = 4
-retry_wait_seconds = 75
-
-[providers.image]
-kind = "openai-compatible"
-providerUrl = "http://localhost:11434"
-model = "unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m"
-timeout_seconds = 900
-retry_attempts = 4
-retry_wait_seconds = 75
-
-[providers.audio]
-kind = "openai-compatible"
-providerUrl = "http://localhost:11434"
-model = "AUDIO_MODEL_NAME"
-
-[variables]
-voice = "direct, pragmatic, masculine, concrete"
-audience = "men who need structure, ownership, and steady action"
-
-[tracks]
-promo_assets = false
-landing_page = false
-
-[[steps]]
-id = "lesson"
-format = "markdown"
-prompt_file = "automation/prompts/burn/lesson.md"
-output = "{target_dir_string}/LESSON.md"
-
-[[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-
-[[steps.inputs]]
-path = "{target_dir_string}/SEED.md"
-alias = "seed"
-
-[[steps.inputs]]
-path = "{target_dir_string}/index.md"
-alias = "draft_index"
-
-[[steps]]
-id = "instructions"
-format = "markdown"
-prompt_file = "automation/prompts/burn/instructions.md"
-depends_on = ["lesson"]
-output = "{target_dir_string}/INSTRUCTIONS.md"
-
-[[steps.inputs]]
-step = "lesson"
-alias = "lesson"
-
-[[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-
-[[steps.inputs]]
-path = "{target_dir_string}/SEED.md"
-alias = "seed"
-
-[[steps]]
-id = "gpt"
-format = "markdown"
-prompt_file = "automation/prompts/burn/gpt.md"
-depends_on = ["instructions"]
-output = "{target_dir_string}/GPT.md"
-
-[[steps.inputs]]
-step = "instructions"
-alias = "instructions"
-
-[[steps]]
-id = "worksheet"
-format = "svg"
-prompt_file = "automation/prompts/burn/worksheet-svg.md"
-depends_on = ["lesson", "instructions"]
-output = "{target_dir_string}/WORKSHEET.svg"
-
-[[steps.inputs]]
-step = "instructions"
-alias = "instructions"
-
-[[steps]]
-id = "worksheet_masked"
-format = "svg"
-prompt_file = "automation/prompts/burn/worksheet-masked-svg.md"
-depends_on = ["worksheet"]
-output = "{target_dir_string}/WORKSHEET_MASKED.svg"
-
-[[steps.inputs]]
-step = "worksheet"
-alias = "worksheet"
-
-[[steps]]
-id = "promo"
-format = "markdown"
-prompt_file = "automation/prompts/burn/promo-image.md"
-depends_on = ["worksheet_masked", "index", "cover_image"]
-tracks = ["promo_assets"]
-output = "{target_dir_string}/PROMO_PROMPT.md"
-
-[[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-
-[[steps.inputs]]
-step = "worksheet_masked"
-alias = "worksheet_masked"
-
-[[steps]]
-id = "promo_image"
-format = "png"
-modality = "image"
-prompt_file = "automation/prompts/burn/render-image.md"
-depends_on = ["promo"]
-tracks = ["promo_assets"]
-output = "{target_dir_string}/promo.png"
-
-[[steps.inputs]]
-step = "promo"
-alias = "asset_prompt"
-
-[[steps]]
-id = "banner"
-format = "markdown"
-prompt_file = "automation/prompts/burn/banner-image.md"
-depends_on = ["worksheet_masked", "promo", "index", "cover_image"]
-tracks = ["promo_assets"]
-output = "{target_dir_string}/BANNER_PROMPT.md"
-
-[[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-
-[[steps.inputs]]
-step = "worksheet_masked"
-alias = "worksheet_masked"
-
-[[steps.inputs]]
-step = "promo"
-alias = "promo"
-
-[[steps]]
-id = "banner_image"
-format = "png"
-modality = "image"
-prompt_file = "automation/prompts/burn/render-image.md"
-depends_on = ["banner"]
-tracks = ["promo_assets"]
-output = "{target_dir_string}/banner.png"
-
-[[steps.inputs]]
-step = "banner"
-alias = "asset_prompt"
-
-[[steps]]
-id = "cover"
-format = "markdown"
-prompt_file = "automation/prompts/burn/cover-image.md"
-depends_on = ["index"]
-output = "{target_dir_string}/COVER_PROMPT.md"
-
-[[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-
-[[steps.inputs]]
-step = "index"
-alias = "long_form"
-
-[[steps]]
-id = "cover_image"
-format = "png"
-modality = "image"
-prompt_file = "automation/prompts/burn/render-image.md"
-depends_on = ["cover"]
-output = "{target_dir_string}/cover.png"
-
-[[steps.inputs]]
-step = "cover"
-alias = "asset_prompt"
-
-[[steps]]
-id = "page_copy"
-format = "markdown"
-prompt_file = "automation/prompts/burn/page-copy.md"
-depends_on = ["promo", "banner"]
-tracks = ["landing_page"]
-output = "{target_dir_string}/PAGE_COPY.md"
-
-[[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-
-[[steps.inputs]]
-step = "promo"
-alias = "promo"
-
-[[steps.inputs]]
-step = "banner"
-alias = "banner"
-
-[[steps]]
-id = "landing_page"
-format = "html"
-prompt_file = "automation/prompts/burn/landing-page-html.md"
-depends_on = ["banner", "page_copy"]
-tracks = ["landing_page"]
-output = "{target_dir_string}/LANDING_PAGE.html"
-
-[[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-
-[[steps.inputs]]
-step = "banner"
-alias = "banner"
-
-[[steps.inputs]]
-step = "page_copy"
-alias = "page_copy"
-
-[[steps]]
-id = "worksheet_page"
-format = "markdown"
-prompt_file = "automation/prompts/burn/worksheet-page-prototype.md"
-depends_on = ["promo", "page_copy"]
-tracks = ["landing_page"]
-output = "{target_dir_string}/WORKSHEET_PAGE.md"
-
-[[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-
-[[steps.inputs]]
-step = "promo"
-alias = "promo"
-
-[[steps.inputs]]
-step = "page_copy"
-alias = "page_copy"
-
-[[steps]]
-id = "index"
-format = "markdown"
-prompt_file = "automation/prompts/burn/index.md"
-depends_on = ["lesson"]
-output = "{target_dir_string}/index.md"
-
-[[steps.inputs]]
-step = "lesson"
-alias = "lesson"
-
-[[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-
-[[steps]]
-id = "newsletter_email"
-format = "markdown"
-prompt_file = "automation/prompts/burn/newsletter-email.md"
-depends_on = ["index", "lesson", "instructions", "gpt"]
-output = "{target_dir_string}/NEWSLETTER_EMAIL.md"
-
-[[steps.inputs]]
-step = "index"
-alias = "index"
-
-[[steps.inputs]]
-step = "lesson"
-alias = "lesson"
-
-[[steps.inputs]]
-step = "instructions"
-alias = "instructions"
-
-[[steps.inputs]]
-step = "gpt"
-alias = "gpt"
-
-[[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-
-[[steps]]
-id = "community_post"
-format = "markdown"
-prompt_file = "automation/prompts/burn/community-post.md"
-depends_on = ["index"]
-output = "{target_dir_string}/COMMUNITY_POST.md"
-
-[[steps.inputs]]
-step = "index"
-alias = "index"
-
-[[steps.inputs]]
-path = "{target_dir_string}/CONTEXT.md"
-alias = "context"
-"""
+    path_input = lambda path, alias: {"path": f"{target_dir_string}/{path}", "alias": alias}
+    step_input = lambda source, alias: {"step": source, "alias": alias}
+    payload = {
+        "context": {
+            "title": title,
+            "slug": slug,
+            "date": date_value,
+            "target_dir": target_dir_string,
+        },
+        "providers": {
+            "text": {
+                "kind": "openai-compatible",
+                "providerUrl": "http://localhost:11434",
+                "model": "active",
+                "timeout_seconds": 300,
+                "retry_attempts": 4,
+                "retry_wait_seconds": 75,
+            },
+            "image": {
+                "kind": "openai-compatible",
+                "providerUrl": "http://localhost:11434",
+                "model": "unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m",
+                "timeout_seconds": 900,
+                "retry_attempts": 4,
+                "retry_wait_seconds": 75,
+            },
+            "audio": {
+                "kind": "openai-compatible",
+                "providerUrl": "http://localhost:11434",
+                "model": "AUDIO_MODEL_NAME",
+            },
+        },
+        "variables": {
+            "voice": "direct, pragmatic, masculine, concrete",
+            "audience": "men who need structure, ownership, and steady action",
+        },
+        "tracks": {"promo_assets": False, "landing_page": False},
+        "steps": [
+            step("lesson", "markdown", "automation/prompts/burn/lesson.md", f"{target_dir_string}/LESSON.md", inputs=[path_input("CONTEXT.md", "context"), path_input("SEED.md", "seed"), path_input("index.md", "draft_index")]),
+            step("instructions", "markdown", "automation/prompts/burn/instructions.md", f"{target_dir_string}/INSTRUCTIONS.md", depends_on=["lesson"], inputs=[step_input("lesson", "lesson"), path_input("CONTEXT.md", "context"), path_input("SEED.md", "seed")]),
+            step("gpt", "markdown", "automation/prompts/burn/gpt.md", f"{target_dir_string}/GPT.md", depends_on=["instructions"], inputs=[step_input("instructions", "instructions")]),
+            step("worksheet", "svg", "automation/prompts/burn/worksheet-svg.md", f"{target_dir_string}/WORKSHEET.svg", depends_on=["lesson", "instructions"], inputs=[step_input("instructions", "instructions")]),
+            step("worksheet_masked", "svg", "automation/prompts/burn/worksheet-masked-svg.md", f"{target_dir_string}/WORKSHEET_MASKED.svg", depends_on=["worksheet"], inputs=[step_input("worksheet", "worksheet")]),
+            step("promo", "markdown", "automation/prompts/burn/promo-image.md", f"{target_dir_string}/PROMO_PROMPT.md", depends_on=["worksheet_masked", "index", "cover_image"], tracks=["promo_assets"], inputs=[path_input("CONTEXT.md", "context"), step_input("worksheet_masked", "worksheet_masked")]),
+            step("promo_image", "png", "automation/prompts/burn/render-image.md", f"{target_dir_string}/promo.png", modality="image", depends_on=["promo"], tracks=["promo_assets"], inputs=[step_input("promo", "asset_prompt")]),
+            step("banner", "markdown", "automation/prompts/burn/banner-image.md", f"{target_dir_string}/BANNER_PROMPT.md", depends_on=["worksheet_masked", "promo", "index", "cover_image"], tracks=["promo_assets"], inputs=[path_input("CONTEXT.md", "context"), step_input("worksheet_masked", "worksheet_masked"), step_input("promo", "promo")]),
+            step("banner_image", "png", "automation/prompts/burn/render-image.md", f"{target_dir_string}/banner.png", modality="image", depends_on=["banner"], tracks=["promo_assets"], inputs=[step_input("banner", "asset_prompt")]),
+            step("cover", "markdown", "automation/prompts/burn/cover-image.md", f"{target_dir_string}/COVER_PROMPT.md", depends_on=["index"], inputs=[path_input("CONTEXT.md", "context"), step_input("index", "long_form")]),
+            step("cover_image", "png", "automation/prompts/burn/render-image.md", f"{target_dir_string}/cover.png", modality="image", depends_on=["cover"], inputs=[step_input("cover", "asset_prompt")]),
+            step("page_copy", "markdown", "automation/prompts/burn/page-copy.md", f"{target_dir_string}/PAGE_COPY.md", depends_on=["promo", "banner"], tracks=["landing_page"], inputs=[path_input("CONTEXT.md", "context"), step_input("promo", "promo"), step_input("banner", "banner")]),
+            step("landing_page", "html", "automation/prompts/burn/landing-page-html.md", f"{target_dir_string}/LANDING_PAGE.html", depends_on=["banner", "page_copy"], tracks=["landing_page"], inputs=[path_input("CONTEXT.md", "context"), step_input("banner", "banner"), step_input("page_copy", "page_copy")]),
+            step("worksheet_page", "markdown", "automation/prompts/burn/worksheet-page-prototype.md", f"{target_dir_string}/WORKSHEET_PAGE.md", depends_on=["promo", "page_copy"], tracks=["landing_page"], inputs=[path_input("CONTEXT.md", "context"), step_input("promo", "promo"), step_input("page_copy", "page_copy")]),
+            step("index", "markdown", "automation/prompts/burn/index.md", f"{target_dir_string}/index.md", depends_on=["lesson"], inputs=[step_input("lesson", "lesson"), path_input("CONTEXT.md", "context")]),
+            step("newsletter_email", "markdown", "automation/prompts/burn/newsletter-email.md", f"{target_dir_string}/NEWSLETTER_EMAIL.md", depends_on=["index", "lesson", "instructions", "gpt"], inputs=[step_input("index", "index"), step_input("lesson", "lesson"), step_input("instructions", "instructions"), step_input("gpt", "gpt"), path_input("CONTEXT.md", "context")]),
+            step("community_post", "markdown", "automation/prompts/burn/community-post.md", f"{target_dir_string}/COMMUNITY_POST.md", depends_on=["index"], inputs=[step_input("index", "index"), path_input("CONTEXT.md", "context")]),
+        ],
+    }
+    return (
+        "# Pipeline configuration. Add model to any step to override its modality default.\n"
+        + yaml.safe_dump(payload, sort_keys=False, allow_unicode=False)
+    )
 
 
-def escape_toml_string(value: str) -> str:
+def escape_quoted_string(value: str) -> str:
     return value.replace("\\", "\\\\").replace('"', '\\"')
 
 
