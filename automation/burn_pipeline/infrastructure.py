@@ -331,7 +331,14 @@ def parse_image_brief(markdown: str) -> tuple[str, str | None, str | None]:
 
     image_prompt = sections.get("image prompt")
     if not image_prompt:
-        raise ValueError("Image brief is missing a '# Image Prompt' section")
+        # A model may return a useful image brief without preserving the
+        # requested markdown heading. Keep the run moving by passing the
+        # complete non-empty brief through to the image provider rather than
+        # discarding the model's work or failing the entire editorial run.
+        fallback = markdown.strip()
+        if not fallback:
+            raise ValueError("Image brief is empty and has no '# Image Prompt' section")
+        image_prompt = fallback
 
     prompt_parts = [image_prompt]
     required_copy = sections.get("required on-image copy")
