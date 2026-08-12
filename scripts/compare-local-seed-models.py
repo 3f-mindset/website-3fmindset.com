@@ -121,6 +121,10 @@ def main() -> int:
                 "BURN_MAX_TOKENS": os.environ.get("BURN_MAX_TOKENS", "2048"),
                 "BURN_TIMEOUT_SECONDS": os.environ.get("BURN_TIMEOUT_SECONDS", "1800"),
             }
+            if "qwythos" in model.lower():
+                env["BURN_DISABLE_THINKING"] = "1"
+            else:
+                env.pop("BURN_DISABLE_THINKING", None)
             run([sys.executable, "scripts/burn-pipeline.py", "--provider", "openai-compatible",
                  "--provider-url", args.provider_url, "--model", model,
                  "generate-step", "--step-id", "context", "--format", "markdown",

@@ -159,6 +159,8 @@ class ChatCompletionsAdapter:
                     payload["max_tokens"] = int(max_tokens)
                 except ValueError as exc:
                     raise ValueError("BURN_MAX_TOKENS must be an integer") from exc
+            if os.environ.get("BURN_DISABLE_THINKING", "").strip().lower() in {"1", "true", "yes"}:
+                payload["chat_template_kwargs"] = {"enable_thinking": False}
             data = self._post_with_retries(
                 client,
                 f"{self._provider_url}/chat/completions",
