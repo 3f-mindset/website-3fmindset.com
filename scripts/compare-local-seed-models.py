@@ -94,8 +94,8 @@ def main() -> int:
     args = parser.parse_args()
 
     root = Path(git_output(Path.cwd(), "rev-parse", "--show-toplevel"))
-    if git_output(root, "status", "--porcelain"):
-        raise SystemExit("Commit or stash automation-repo changes before running local comparisons.")
+    # Worktrees are created from HEAD, so unrelated dirty files in the source
+    # checkout are intentionally left untouched while the cross-run executes.
     seed = args.seed_file.resolve()
     research = args.research_root.resolve()
     if not seed.is_file():
