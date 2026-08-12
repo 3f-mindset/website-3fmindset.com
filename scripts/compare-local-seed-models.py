@@ -121,7 +121,7 @@ def main() -> int:
                 "BURN_MAX_TOKENS": os.environ.get("BURN_MAX_TOKENS", "2048"),
                 "BURN_TIMEOUT_SECONDS": os.environ.get("BURN_TIMEOUT_SECONDS", "1800"),
             }
-            if "qwythos" in model.lower():
+            if "qwythos" in model.lower() or "qwen3.6" in model.lower() or "qwen3-6" in model.lower():
                 env["BURN_DISABLE_THINKING"] = "1"
             else:
                 env.pop("BURN_DISABLE_THINKING", None)
@@ -143,6 +143,8 @@ def main() -> int:
             target = output_root / safe_model_dir(model) / f"{args.date}-{args.slug}"
             copy_bundle(content_dir, target, model, args.provider_url, generated_pipeline)
             print(f"Published local editorial bundle: {model} -> {target}", flush=True)
+        except Exception as exc:
+            print(f"Local editorial cross-run failed for {model}: {type(exc).__name__}: {exc}", flush=True)
         finally:
             run(["git", "worktree", "remove", "--force", str(worktree)], cwd=root)
             subprocess.run(["git", "branch", "-D", branch], cwd=root, check=False, text=True)

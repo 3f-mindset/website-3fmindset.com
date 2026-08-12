@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import statistics
 import uuid
 from pathlib import Path
@@ -10,9 +11,9 @@ from .domain import ARTIFACTS, ArtifactRubric, ArtifactScore, CaseStudy, Criteri
 from .infrastructure import ModelResponse, Telemetry
 
 
-EVIDENCE_MODEL = "deepseek/deepseek-v4-flash"
-JUDGE_MODEL = "deepseek/deepseek-v4-pro"
-TIE_BREAK_MODEL = JUDGE_MODEL
+EVIDENCE_MODEL = os.environ.get("CONTENT_SCORING_EVIDENCE_MODEL", "deepseek/deepseek-v4-flash")
+JUDGE_MODEL = os.environ.get("CONTENT_SCORING_JUDGE_MODEL", "deepseek/deepseek-v4-pro")
+TIE_BREAK_MODEL = os.environ.get("CONTENT_SCORING_TIE_BREAK_MODEL", JUDGE_MODEL)
 SCHEMA_VERSION = "content-score-v4"
 
 
