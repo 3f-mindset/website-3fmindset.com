@@ -330,8 +330,9 @@ def sanitize_generated_content(content: str, output_format: OutputFormat) -> str
     cleaned = content.strip()
     if cleaned.startswith("```"):
         lines = cleaned.splitlines()
-        if len(lines) >= 3 and lines[-1].strip() == "```":
-            cleaned = "\n".join(lines[1:-1]).strip()
+        if len(lines) >= 2:
+            end = -1 if lines[-1].strip() == "```" else None
+            cleaned = "\n".join(lines[1:end]).strip()
 
     if output_format == OutputFormat.SVG:
         lowered = cleaned.lower()
