@@ -174,6 +174,7 @@ class ContentScorer:
             "content_score": round(sum(item.final_score for item in artifacts.values()) / 2, 2),
             "confidence": round(sum(item.confidence for item in artifacts.values()) / 2, 3),
             "artifacts": {name: item.as_dict() for name, item in artifacts.items()},
+            "evaluator": {"evidence_model": EVIDENCE_MODEL, "judge_model": JUDGE_MODEL, "tie_break_model": TIE_BREAK_MODEL},
             "evaluator_cost": round(self.spent, 6),
         }
         write_study_report(study.root, payload)
