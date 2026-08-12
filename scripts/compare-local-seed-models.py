@@ -116,7 +116,7 @@ def main() -> int:
                  "--slug", args.slug, "--date", args.date, "--force"], cwd=worktree)
             content_dir = worktree / "content" / "letters" / f"{args.date}-{args.slug}"
             shutil.copy2(seed, content_dir / "SEED.md")
-            env = {**os.environ, "BURN_MAX_TOKENS": os.environ.get("BURN_MAX_TOKENS", "4096")}
+            env = {**os.environ, "BURN_MAX_TOKENS": os.environ.get("BURN_MAX_TOKENS", "2048")}
             run([sys.executable, "scripts/burn-pipeline.py", "--provider", "openai-compatible",
                  "--provider-url", args.provider_url, "--model", model,
                  "generate-step", "--step-id", "context", "--format", "markdown",
