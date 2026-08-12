@@ -131,6 +131,12 @@ class ChatCompletionsAdapter:
         self._provider_url = normalize_provider_url(providerUrl)
         self._api_key = apiKey
         self._model = model
+        configured_timeout = os.environ.get("BURN_TIMEOUT_SECONDS")
+        if configured_timeout:
+            try:
+                timeout_seconds = float(configured_timeout)
+            except ValueError as exc:
+                raise ValueError("BURN_TIMEOUT_SECONDS must be numeric") from exc
         self._timeout_seconds = timeout_seconds
         self._retry_attempts = max(1, retry_attempts)
         self._retry_wait_seconds = max(0.0, retry_wait_seconds)
