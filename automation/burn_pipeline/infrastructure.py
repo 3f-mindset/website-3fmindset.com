@@ -147,6 +147,12 @@ class ChatCompletionsAdapter:
                 "messages": [{"role": "user", "content": request.prompt}],
                 "temperature": 0,
             }
+            max_tokens = os.environ.get("BURN_MAX_TOKENS")
+            if max_tokens:
+                try:
+                    payload["max_tokens"] = int(max_tokens)
+                except ValueError as exc:
+                    raise ValueError("BURN_MAX_TOKENS must be an integer") from exc
             data = self._post_with_retries(
                 client,
                 f"{self._provider_url}/chat/completions",
