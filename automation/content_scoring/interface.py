@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 from pathlib import Path
 
@@ -15,6 +16,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--resume", action="store_true", default=True)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--aggregate-existing", action="store_true", help="Rebuild the aggregate report from existing CONTENT_SCORE.json files without calling an evaluator.")
     parser.add_argument("--max-cost", type=float, default=5.0)
     parser.add_argument("--log-level", choices=("INFO", "DEBUG"), default="INFO")
     return parser
@@ -24,6 +26,18 @@ def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     root = args.root.resolve()
     telemetry = Telemetry(root / "scoring-runs" / "telemetry.jsonl", verbose=args.log_level == "DEBUG")
+    if args.aggregate_existing:
+        reports = []
+        for score_path in sorted(root.rglob("CONTENT_SCORE.json")):
+            try:
+                reports.append(json.loads(score_path.read_text(encoding="utf-8")))
+            except (OSError, json.JSONDecodeError):
+                continue
+        if not reports:
+            raise SystemExit("No existing CONTENT_SCORE.json reports found.")
+        write_aggregate(root, reports, "aggregate-existing", 0.0)
+        print(f"Aggregated {len(reports)} existing case studies; evaluator cost $0.000000")
+        return 0
     rubric = load_rubric(Path(__file__).parent / "rubrics" / "steadyburn-v1.json")
     requested = [path.resolve() for path in args.case_study] if args.case_study else None
     studies = discover_case_studies(root, requested)

@@ -122,7 +122,8 @@ def main() -> int:
                 "BURN_TIMEOUT_SECONDS": os.environ.get("BURN_TIMEOUT_SECONDS", "1800"),
             }
             if ("qwythos" in model.lower() or "qwen3.6" in model.lower() or
-                    "qwen3-6" in model.lower() or "gemma-4-12b" in model.lower()):
+                    "qwen3-6" in model.lower() or "qwen3.8" in model.lower() or
+                    "qwen3-8" in model.lower() or "gemma-4-12b" in model.lower()):
                 env["BURN_DISABLE_THINKING"] = "1"
             else:
                 env.pop("BURN_DISABLE_THINKING", None)
