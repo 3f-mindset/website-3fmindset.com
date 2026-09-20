@@ -13,6 +13,7 @@ dependencies = [
 [project.scripts]
 burn-pipeline = "burn_pipeline.interface:main"
 content-score = "content_scoring.interface:main"
+gutenberg-ralph = "gutenberg_ralph.interface:main"
 
 [build-system]
 requires = ["setuptools>=68"]
@@ -20,7 +21,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 package-dir = {"" = "automation"}
-packages = ["burn_pipeline", "content_scoring"]
+packages = ["burn_pipeline", "content_scoring", "gutenberg_ralph"]
 
 [tool.uv]
 package = true

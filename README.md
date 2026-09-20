@@ -2,6 +2,10 @@
 
 This README explains how to add long-form newsletters (central index + individual pages) and static pages (About, Contact, Programs, subpages, and a private mentorship application draft) to this Hugo site.
 
+Agent editorial intake
+
+For new SteadyBurn packages, use [AGENTS.md](AGENTS.md) and the Ralph implementation contract in [automation/gutenberg_ralph/AGENTS.md](automation/gutenberg_ralph/AGENTS.md). Ralph prepares provenance-preserving inputs and delegates generation and artifact linking to the language-model-research operator. Legacy `burn-pipeline` and `content-score` commands remain supported for historical bundles and compatibility work.
+
 Quick Start
 
 - Prereq: Install Hugo (use the extended build if using SCSS). Verify with `hugo version`.
