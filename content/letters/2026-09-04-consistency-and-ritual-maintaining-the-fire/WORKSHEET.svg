@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Consistency and Ritual</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the FORGE action model, and a three step summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">STOP RELYING ON MOTIVATION</text>
+  <text class="sub" x="40" y="96">How to Keep Your Fire Burning Every Day</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="78"/>
+  <text class="label" x="720" y="58">THE TRAP</text>
+  <text class="small" x="720" y="78">Motivation is a feeling; it is hot, bright, and fickle.</text>
+  <text class="small" x="720" y="94">If you build your life on it, your life will wobble.</text>
+
+  <text class="verb" x="444" y="142">FORGE</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="320" height="185"/>
+  <text class="letter" x="60" y="222">F</text>
+  <text class="label" x="105" y="204">FIND YOUR ANCHOR TIME</text>
+  <text class="small" x="105" y="224">Identify the specific time for your ritual.</text>
+  <text class="tiny" x="105" y="242">This time is your anchor. It does not change.</text>
+  <text class="tiny" x="60" y="270">Time:</text><line class="fillline" x1="100" y1="270" x2="330" y2="270"/>
+  <text class="tiny" x="60" y="300">Outcome:</text><line class="fillline" x1="115" y1="300" x2="330" y2="300"/>
+  <line class="fillline" x1="60" y1="330" x2="330" y2="330"/>
+
+  <rect class="box" x="390" y="180" width="320" height="185"/>
+  <text class="letter" x="410" y="222">O</text>
+  <text class="label" x="455" y="204">OUTLINE THREE SIMPLE STEPS</text>
+  <text class="small" x="455" y="224">List 3-5 specific actions for your ritual.</text>
+  <text class="tiny" x="455" y="242">Keep it under 15 minutes. Simplicity is key.</text>
+  <text class="tiny" x="410" y="270">1.</text><line class="fillline" x1="430" y1="270" x2="680" y2="270"/>
+  <text class="tiny" x="410" y="292">2.</text><line class="fillline" x1="430" y1="292" x2="680" y2="292"/>
+  <text class="tiny" x="410" y="314">3.</text><line class="fillline" x1="430" y1="314" x2="680" y2="314"/>
+  <text class="tiny" x="410" y="336">4.</text><line class="fillline" x1="430" y1="336" x2="680" y2="336"/>
+
+  <rect class="box" x="740" y="180" width="320" height="185"/>
+  <text class="letter" x="760" y="222">R</text>
+  <text class="label" x="805" y="204">REPEAT WITHOUT EXCEPTION</text>
+  <text class="small" x="805" y="224">Commit to the repetition. No exceptions.</text>
+  <text class="tiny" x="805" y="242">Define your tracking method and minimum version.</text>
+  <text class="tiny" x="760" y="270">Commitment:</text><line class="fillline" x1="840" y1="270" x2="1030" y2="270"/>
+  <text class="tiny" x="760" y="300">Tracker:</text><line class="fillline" x1="820" y1="300" x2="1030" y2="300"/>
+  <text class="tiny" x="760" y="330">Min. Version:</text><line class="fillline" x1="850" y1="330" x2="1030" y2="330"/>
+
+  <rect class="box" x="40" y="395" width="320" height="185"/>
+  <text class="letter" x="60" y="437">G</text>
+  <text class="label" x="105" y="419">GET VISUAL PROOF</text>
+  <text class="small" x="105" y="439">Establish the feedback loop for your fire.</text>
+  <text class="tiny" x="105" y="457">Make your effort visible to protect it.</text>
+  <text class="tiny" x="60" y="485">Check Time:</text><line class="fillline" x1="140" y1="485" x2="330" y2="485"/>
+  <text class="tiny" x="60" y="515">Location:</text><line class="fillline" x1="130" y1="515" x2="330" y2="515"/>
+  <line class="fillline" x1="60" y1="545" x2="330" y2="545"/>
+
+  <rect class="box" x="390" y="395" width="320" height="185"/>
+  <text class="letter" x="410" y="437">E</text>
+  <text class="label" x="455" y="419">EVALUATE AND ADJUST</text>
+  <text class="small" x="455" y="439">Plan your weekly maintenance review.</text>
+  <text class="tiny" x="455" y="457">A system that does not adapt will break.</text>
+  <text class="tiny" x="410" y="485">Review Time:</text><line class="fillline" x1="495" y1="485" x2="680" y2="485"/>
+  <text class="tiny" x="410" y="515">Key Question:</text><line class="fillline" x1="495" y1="515" x2="680" y2="515"/>
+  <text class="tiny" x="410" y="545">Adjustment:</text><line class="fillline" x1="490" y1="545" x2="680" y2="545"/>
+
+  <rect class="mini" x="740" y="395" width="320" height="185"/>
+  <text class="label" x="760" y="425">WEEKLY TRACKER</text>
+  <text class="small" x="760" y="445">Mark an X for each day you complete the ritual.</text>
+  <text class="tiny" x="760" y="465">Keep the chain unbroken.</text>
+  
+  <line class="soft" x1="760" y1="480" x2="1040" y2="480"/>
+  <text class="tiny" x="760" y="495">Mon</text><line class="fillline" x1="800" y1="495" x2="840" y2="495"/>
+  <text class="tiny" x="850" y="495">Tue</text><line class="fillline" x1="890" y1="495" x2="930" y2="495"/>
+  <text class="tiny" x="940" y="495">Wed</text><line class="fillline" x1="980" y1="495" x2="1020" y2="495"/>
+  
+  <line class="soft" x1="760" y1="520" x2="1040" y2="520"/>
+  <text class="tiny" x="760" y="535">Thu</text><line class="fillline" x1="800" y1="535" x2="840" y2="535"/>
+  <text class="tiny" x="850" y="535">Fri</text><line class="fillline" x1="890" y1="535" x2="930" y2="535"/>
+  <text class="tiny" x="940" y="535">Sat</text><line class="fillline" x1="980" y1="535" x2="1020" y2="535"/>
+  <text class="tiny" x="760" y="565">Sun</text><line class="fillline" x1="800" y1="565" x2="840" y2="565"/>
+
+  <rect class="box" x="40" y="620" width="1020" height="150"/>
+  <text class="sub" x="65" y="655">THE WEEKLY COMMITMENT</text>
+  <text class="small" x="65" y="680">My keystone ritual is:</text><line class="fillline" x1="185" y1="680" x2="1025" y2="680"/>
+  <text class="small" x="65" y="710">I will protect it because:</text><line class="fillline" x1="205" y1="710" x2="1025" y2="710"/>
+  <text class="small" x="65" y="740">If I miss, I will restart on:</text><line class="fillline" x1="220" y1="740" x2="500" y2="740"/>
+  <text class="small" x="560" y="740">Tracker location:</text><line class="fillline" x1="660" y1="740" x2="1025" y2="740"/>
+</svg>
