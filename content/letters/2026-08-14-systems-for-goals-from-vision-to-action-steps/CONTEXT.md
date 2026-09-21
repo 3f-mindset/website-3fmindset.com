@@ -63,21 +63,21 @@ STRUCTURE
 
 ## Action Steps Summary
 
-1. Perform a complete brain dump.
-2. Mark tasks as important, supporting, or disposable.
-3. Choose three big rocks for the day.
-4. Reserve one or more protected focus blocks.
-5. End each day with a five-minute review and a clean decision about carryover.
+1. Write one meaningful SMART goal.
+2. Work backward from the deadline to define milestones.
+3. List the actions beneath the first milestone.
+4. Schedule and complete the first action.
+5. Establish a weekly review and adjustment ritual.
 
 ## FAQ
 
 ### What if everything feels important?
 
-Ask what carries a real consequence this week and what moves a stated goal forward. If the answer is still “everything,” choose the task with the highest cost of delay and name what will wait.
+Ask what success means, when it must happen, and what evidence will prove progress. If the goal is still broad, define the next milestone and first action.
 
 ### What if my work is controlled by other people?
 
-You may not control every request, but you can clarify deadlines, negotiate order, and protect the small amount of time you do control.
+You may not control every condition, but you can clarify milestones, schedule the next action, and review the evidence you do control.
 
 ### Do I need a special app?
 

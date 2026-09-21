@@ -10,7 +10,7 @@ He has meaningful goals but no structure that turns them into dated milestones a
 
 ## Reader
 
-Men who have goals, responsibilities, and too many open loops. He tends to react to the loudest request, confuse motion with progress, and protect low-value tasks because they are easy to finish.
+Men who have goals, responsibilities, and too many unfinished intentions. He tends to react to the loudest request, confuse motion with progress, and protect low-value tasks because they are easy to finish.
 
 ## Promise
 

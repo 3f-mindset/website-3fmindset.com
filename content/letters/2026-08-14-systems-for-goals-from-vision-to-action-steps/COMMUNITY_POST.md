@@ -1,9 +1,9 @@
 # Community Post
 
-Most men do not need more tasks. They need a better order.
+Most men do not need more inspiration. They need a better goal system.
 
-This week we are testing SORT: Survey the full load, Order it by consequence, Reserve time for the big rocks, and Terminate what does not deserve prime attention.
+This week we are testing STRUCTURE: Specify the goal, Track the milestones, Route the actions, Use a weekly review, Complete the first step, and Tell the truth.
 
-Before the conversation, write down every open loop in your head. Then answer one question: if you could move only three things forward tomorrow, which three would make the day count?
+Before the conversation, write one meaningful goal and a deadline. Then answer one question: what milestone must be true next, and what is the first action you can schedule?
 
 Bring those three to the group. We will talk about what gets your best attention, what keeps stealing it, and what you are willing to let wait.

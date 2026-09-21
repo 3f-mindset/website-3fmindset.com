@@ -1,12 +1,12 @@
 ---
-title: "Sort Your Day"
+title: "Structure Your Goal"
 layout: worksheet
-summary: "A seven-day worksheet for choosing, protecting, and completing the work that matters."
+summary: "A goal-roadmap worksheet for defining milestones, scheduling the first action, and reviewing evidence."
 draft: false
 ---
 
-# Sort Your Day
+# Structure Your Goal
 
-Use the SORT worksheet to capture your full load, choose three big rocks, reserve focused time, and make a decision about everything else.
+Use the STRUCTURE worksheet to define one goal, map the milestones, schedule the first action, and set the weekly review.
 
-Download the worksheet and complete one page for each of the next seven days.
+Download the worksheet and complete it before the next weekly review.

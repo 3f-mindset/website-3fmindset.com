@@ -1,16 +1,18 @@
 # Newsletter Email
 
-**Subject:** Your list is not your leader
+**Subject:** Turn the goal into a route
 
-This week we are working on the quiet problem behind a crowded day: you have plenty of motion, but the important work keeps waiting.
+This week we are working on the quiet problem behind abandoned goals: you have a real ambition, but no dated route from vision to action.
 
-Week 32 introduces SORT:
+Week 33 introduces STRUCTURE:
 
-- **Survey** the full load.
-- **Order** it by consequence.
-- **Reserve** time for the three big rocks.
-- **Terminate** what should be cut, deferred, delegated, or batched.
+- **Specify** one meaningful SMART goal.
+- **Track** dated milestones and evidence.
+- **Route** the next actions into your calendar.
+- **Use review** to adjust the system.
+- **Complete** the first action.
+- **Tell the truth** about what happened.
 
-You do not need a new app or a new personality. You need one honest decision before the day begins. Open the letter, complete the worksheet, and run the experiment for seven days.
+You do not need a new app or a new personality. You need one goal, one first action, and a weekly review. Open the letter, complete the worksheet, and put the first action on the calendar.
 
-Your task list is not your leader. You are.
+The goal is yours. Give it a structure strong enough to survive your mood.

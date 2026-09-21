@@ -6,22 +6,22 @@ Master the work that matters.
 
 ## Subhead
 
-Use SORT to turn a crowded task list into three clear priorities, protected focus time, and honest decisions about what can wait.
+Use STRUCTURE to turn one meaningful goal into dated milestones, scheduled actions, and a weekly review.
 
 ## Body
 
-You do not need another productivity app. You need a better decision before the day begins.
+You do not need another productivity app. You need a goal concrete enough to execute and review.
 
-This week’s SteadyBurn packet gives you a simple system to Survey the full load, Order the work by consequence, Reserve time for the important things, and Terminate the tasks that do not deserve your best attention.
+This week’s SteadyBurn packet gives you a simple system to Specify one goal, Track milestones, Route actions into the calendar, Use a weekly review, Complete the first step, and Tell the truth about the evidence.
 
-Run it for seven days. Keep the evidence.
+Complete the first action this week. Keep the evidence.
 
 ## CTA
 
-Start the seven-day priority experiment
+Start the goal roadmap
 
 ## Objections
 
 - “My schedule is controlled by other people.” Start by protecting one block and negotiating one deadline.
-- “Everything is important.” Choose the task with the highest cost of delay.
+- “The goal is too broad.” Define the next milestone and first action.
 - “I cannot keep another system.” Use paper and five minutes.

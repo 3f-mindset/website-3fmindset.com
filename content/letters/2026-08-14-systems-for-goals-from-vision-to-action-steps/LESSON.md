@@ -1,44 +1,46 @@
 # THE LESSON
 
-You do not have a task problem first. You have a decision problem.
+You do not have a motivation problem first. You have a structure problem.
 
-When every request enters your day with the same weight, the loudest thing wins. A notification, a coworker’s delay, a minor errand, and the work tied to your future all compete for the same attention. You stay active, but the important work keeps moving to tomorrow.
+A meaningful goal stays vague when it has no deadline, milestones, or visible next action. You can want the result sincerely and still spend the week on whatever is easiest to react to.
 
-That is not structure. That is surrender with a calendar.
+That is not a character flaw. It is a system that has not been built yet.
 
-Your list should help you choose. It should show the work that matters, the work that supports it, and the work that can wait or disappear. A full list can make you feel responsible while hiding the fact that you have made no real decision.
+This week, choose one medium- or long-term goal and turn it into a project. The goal is not to create a perfect plan. The goal is to make the next honest action visible.
 
-The answer is not to cram more into the day. The answer is to sort the day before the day sorts you.
+The answer is not to wait for motivation. The answer is to give the goal a route before the week fills itself.
 
 # THE SYSTEM
 
-This is the Anvil phase of SteadyBurn: structure turns intention into something that can take pressure. Prioritization is not about becoming a machine. It is about putting your best attention where your values and responsibilities actually require it.
+This is the Anvil phase of SteadyBurn: structure turns intention into something that can take pressure. Goal structure is not about becoming a machine. It is about giving an important outcome a route that can survive a hard week.
 
-Use the SORT system:
+Use the STRUCTURE system:
 
-1. **Survey.** Capture every open loop. Get it out of your head.
-2. **Order.** Identify what has consequence and what moves the mission forward.
-3. **Reserve.** Give the top work a protected place on the calendar.
-4. **Terminate.** Cut, defer, delegate, or batch the work that does not deserve prime attention.
+1. **Specify.** Write the goal as a concrete, measurable, time-bound outcome.
+2. **Track.** Define quarter-way, halfway, and final milestones with evidence for each.
+3. **Route.** List the actions beneath the milestones and schedule the first one this week.
+4. **Use review.** Set a weekly check-in to inspect progress and adjust the plan.
+5. **Complete.** Execute the first task before the plan becomes another document.
+6. **Tell the truth.** Record what happened and respond to the evidence without quitting the goal.
 
 The point is not to predict a perfect day. The point is to make a clear decision, act on it, and review the evidence.
 
 # THE COMPONENT
 
-## The Three Big Rocks
+## The Goal Roadmap
 
-Each evening or morning, choose three tasks that would make the day count. They must be concrete enough to finish or advance. “Work on business” is fog. “Send the proposal to the client” is a rock.
+Write the outcome in SMART terms. “Get healthier” is a direction. “Lose 20 pounds by June 30 through four weekly workouts and a tracked meal plan” can be tested.
 
-Put the first rock in your strongest available block. Silence the phone. Close the unrelated tabs. Work until the block ends or the rock is moved forward. Then do the next important thing before you spend your best energy on easy maintenance.
+Work backward from the deadline. Name what must be true halfway to the finish line, then at the quarter-way point. Under each milestone, list the actions or habits that create it. Put the first action on the calendar now.
 
-Not every task gets finished. That is not failure. A mature system makes an honest trade. If a task does not fit, decide: move it, hand it off, batch it, or remove it. Do not let it remain on the list as a quiet accusation.
+Choose a weekly review ritual. On Sunday evening, for example, record the evidence: weight, dollars saved, pages written, workouts completed, applications sent, or conversations held. If you are off track, adjust the action or the timeline. If you are on track, keep the system stable and continue.
 
-For the next seven days, finish each day with five questions:
+At the end of this week, answer five questions:
 
-- What were my three rocks?
-- Which one moved?
-- What stole attention?
-- What will I cut, delegate, or defer tomorrow?
-- Does tomorrow’s calendar show what I claim matters?
+- What goal did I formalize?
+- What milestone or first task did I complete?
+- What evidence shows movement?
+- What blocked the plan, and what will I change?
+- When is the next review?
 
-Your task list is not your leader. You are. Sort the work, protect the important thing, and let the rest earn its place.
+Your goal plan is not your leader. You are. Build the route, take the first step, and review the evidence.

@@ -1,9 +1,9 @@
 # Pipeline configuration. Add model to any step to override its modality default.
 context:
-  title: 'Master Your Tasks: Prioritization and Time Management'
-  slug: master-your-tasks-prioritization-and-time-management
-  date: '2026-08-07'
-  target_dir: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management
+  title: 'Systems for Goals – From Vision to Action Steps'
+  slug: systems-for-goals-from-vision-to-action-steps
+  date: '2026-08-14'
+  target_dir: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps
 providers:
   text:
     kind: openai-compatible
@@ -33,31 +33,31 @@ steps:
 - id: lesson
   format: markdown
   prompt_file: automation/prompts/burn/lesson.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/LESSON.md
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/LESSON.md
   inputs:
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/CONTEXT.md
     alias: context
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/SEED.md
     alias: seed
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/index.md
     alias: draft_index
 - id: instructions
   format: markdown
   prompt_file: automation/prompts/burn/instructions.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/INSTRUCTIONS.md
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/INSTRUCTIONS.md
   depends_on:
   - lesson
   inputs:
   - step: lesson
     alias: lesson
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/CONTEXT.md
     alias: context
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/SEED.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/SEED.md
     alias: seed
 - id: gpt
   format: markdown
   prompt_file: automation/prompts/burn/gpt.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/GPT.md
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/GPT.md
   depends_on:
   - instructions
   inputs:
@@ -66,7 +66,7 @@ steps:
 - id: worksheet
   format: svg
   prompt_file: automation/prompts/burn/worksheet-svg.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET.svg
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/WORKSHEET.svg
   depends_on:
   - lesson
   - instructions
@@ -76,7 +76,7 @@ steps:
 - id: worksheet_masked
   format: svg
   prompt_file: automation/prompts/burn/worksheet-masked-svg.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_MASKED.svg
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/WORKSHEET_MASKED.svg
   depends_on:
   - worksheet
   inputs:
@@ -85,7 +85,7 @@ steps:
 - id: promo
   format: markdown
   prompt_file: automation/prompts/burn/promo-image.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/PROMO_PROMPT.md
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/PROMO_PROMPT.md
   depends_on:
   - worksheet_masked
   - index
@@ -93,14 +93,14 @@ steps:
   tracks:
   - promo_assets
   inputs:
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/CONTEXT.md
     alias: context
   - step: worksheet_masked
     alias: worksheet_masked
 - id: promo_image
   format: png
   prompt_file: automation/prompts/burn/render-image.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/promo.png
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/promo.png
   modality: image
   depends_on:
   - promo
@@ -112,7 +112,7 @@ steps:
 - id: banner
   format: markdown
   prompt_file: automation/prompts/burn/banner-image.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/BANNER_PROMPT.md
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/BANNER_PROMPT.md
   depends_on:
   - worksheet_masked
   - promo
@@ -121,7 +121,7 @@ steps:
   tracks:
   - promo_assets
   inputs:
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/CONTEXT.md
     alias: context
   - step: worksheet_masked
     alias: worksheet_masked
@@ -130,7 +130,7 @@ steps:
 - id: banner_image
   format: png
   prompt_file: automation/prompts/burn/render-image.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/banner.png
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/banner.png
   modality: image
   depends_on:
   - banner
@@ -142,18 +142,18 @@ steps:
 - id: cover
   format: markdown
   prompt_file: automation/prompts/burn/cover-image.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/COVER_PROMPT.md
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/COVER_PROMPT.md
   depends_on:
   - index
   inputs:
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/CONTEXT.md
     alias: context
   - step: index
     alias: long_form
 - id: cover_image
   format: png
   prompt_file: automation/prompts/burn/render-image.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/cover.png
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/cover.png
   modality: image
   depends_on:
   - cover
@@ -163,14 +163,14 @@ steps:
 - id: page_copy
   format: markdown
   prompt_file: automation/prompts/burn/page-copy.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/PAGE_COPY.md
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/PAGE_COPY.md
   depends_on:
   - promo
   - banner
   tracks:
   - landing_page
   inputs:
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/CONTEXT.md
     alias: context
   - step: promo
     alias: promo
@@ -179,14 +179,14 @@ steps:
 - id: landing_page
   format: html
   prompt_file: automation/prompts/burn/landing-page-html.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/LANDING_PAGE.html
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/LANDING_PAGE.html
   depends_on:
   - banner
   - page_copy
   tracks:
   - landing_page
   inputs:
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/CONTEXT.md
     alias: context
   - step: banner
     alias: banner
@@ -195,14 +195,14 @@ steps:
 - id: worksheet_page
   format: markdown
   prompt_file: automation/prompts/burn/worksheet-page-prototype.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/WORKSHEET_PAGE.md
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/WORKSHEET_PAGE.md
   depends_on:
   - promo
   - page_copy
   tracks:
   - landing_page
   inputs:
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/CONTEXT.md
     alias: context
   - step: promo
     alias: promo
@@ -211,18 +211,18 @@ steps:
 - id: index
   format: markdown
   prompt_file: automation/prompts/burn/index.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/index.md
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/index.md
   depends_on:
   - lesson
   inputs:
   - step: lesson
     alias: lesson
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/CONTEXT.md
     alias: context
 - id: newsletter_email
   format: markdown
   prompt_file: automation/prompts/burn/newsletter-email.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/NEWSLETTER_EMAIL.md
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/NEWSLETTER_EMAIL.md
   depends_on:
   - index
   - lesson
@@ -237,16 +237,16 @@ steps:
     alias: instructions
   - step: gpt
     alias: gpt
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/CONTEXT.md
     alias: context
 - id: community_post
   format: markdown
   prompt_file: automation/prompts/burn/community-post.md
-  output: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/COMMUNITY_POST.md
+  output: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/COMMUNITY_POST.md
   depends_on:
   - index
   inputs:
   - step: index
     alias: index
-  - path: content/letters/2026-08-07-master-your-tasks-prioritization-and-time-management/CONTEXT.md
+  - path: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps/CONTEXT.md
     alias: context
