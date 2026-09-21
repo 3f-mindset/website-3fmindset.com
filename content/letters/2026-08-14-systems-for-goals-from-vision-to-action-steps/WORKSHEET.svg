@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Turn Your Big Goal Into a Plan You Can Start Today</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the AUDIT action model, and a finish and act footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="66">TURN YOUR BIG GOAL INTO A PLAN</text>
+  <text class="title" x="40" y="98">YOU CAN START TODAY</text>
+  <text class="sub" x="40" y="124">From Vision to Action Steps</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="112"/>
+  <text class="letter" x="720" y="74">A</text>
+  <text class="label" x="765" y="58">ASSIGN ONE GOAL</text>
+  <text class="small" x="765" y="78">Write one goal with a number and deadline.</text>
+  <text class="tiny" x="765" y="94">No categories, feelings, or someday.</text>
+  <line class="fillline" x1="720" y1="114" x2="1030" y2="114"/>
+  <line class="fillline" x1="720" y1="134" x2="1030" y2="134"/>
+
+  <text class="verb" x="550" y="176" text-anchor="middle">AUDIT</text>
+  <line class="line" x1="40" y1="190" x2="1060" y2="190"/>
+
+  <rect class="box" x="40" y="210" width="500" height="230"/>
+  <text class="letter" x="60" y="252">U</text>
+  <text class="label" x="105" y="234">UNPACK THE GOAL INTO MILESTONES</text>
+  <text class="small" x="105" y="254">Break the goal into 3 to 5 smaller targets.</text>
+  <text class="tiny" x="105" y="272">Each checkpoint must be yes or no.</text>
+  <text class="tiny" x="60" y="300">1.</text><line class="fillline" x1="80" y1="300" x2="510" y2="300"/>
+  <text class="tiny" x="60" y="328">2.</text><line class="fillline" x1="80" y1="328" x2="510" y2="328"/>
+  <text class="tiny" x="60" y="356">3.</text><line class="fillline" x1="80" y1="356" x2="510" y2="356"/>
+  <text class="tiny" x="60" y="384">4.</text><line class="fillline" x1="80" y1="384" x2="510" y2="384"/>
+  <text class="tiny" x="60" y="412">5.</text><line class="fillline" x1="80" y1="412" x2="510" y2="412"/>
+
+  <rect class="box" x="560" y="210" width="500" height="230"/>
+  <text class="letter" x="580" y="252">D</text>
+  <text class="label" x="625" y="234">DATE EACH MILESTONE</text>
+  <text class="small" x="625" y="254">Put a deadline next to every target.</text>
+  <text class="tiny" x="625" y="272">A milestone without a date is a wish.</text>
+  <text class="tiny" x="580" y="298">1 date:</text><line class="fillline" x1="635" y1="298" x2="1030" y2="298"/>
+  <text class="tiny" x="580" y="322">2 date:</text><line class="fillline" x1="635" y1="322" x2="1030" y2="322"/>
+  <text class="tiny" x="580" y="346">3 date:</text><line class="fillline" x1="635" y1="346" x2="1030" y2="346"/>
+  <text class="tiny" x="580" y="370">4 date:</text><line class="fillline" x1="635" y1="370" x2="1030" y2="370"/>
+  <text class="tiny" x="580" y="394">5 date:</text><line class="fillline" x1="635" y1="394" x2="1030" y2="394"/>
+  <text class="tiny" x="580" y="420">First task:</text><line class="fillline" x1="650" y1="420" x2="1030" y2="420"/>
+
+  <rect class="box" x="40" y="460" width="500" height="230"/>
+  <text class="letter" x="60" y="502">I</text>
+  <text class="label" x="105" y="484">INSERT THE ACTIONS INTO YOUR WEEK</text>
+  <text class="small" x="105" y="504">List tasks or habits that move each milestone.</text>
+  <text class="tiny" x="105" y="522">Give each action a day and a time.</text>
+  <text class="tiny" x="60" y="550">M1:</text><line class="fillline" x1="95" y1="550" x2="510" y2="550"/>
+  <text class="tiny" x="60" y="578">M2:</text><line class="fillline" x1="95" y1="578" x2="510" y2="578"/>
+  <text class="tiny" x="60" y="606">M3:</text><line class="fillline" x1="95" y1="606" x2="510" y2="606"/>
+  <text class="tiny" x="60" y="634">M4:</text><line class="fillline" x1="95" y1="634" x2="510" y2="634"/>
+  <text class="tiny" x="60" y="662">M5:</text><line class="fillline" x1="95" y1="662" x2="510" y2="662"/>
+
+  <rect class="box" x="560" y="460" width="500" height="230"/>
+  <text class="letter" x="580" y="502">T</text>
+  <text class="label" x="625" y="484">TRACK AND ADJUST WEEKLY</text>
+  <text class="small" x="625" y="504">Set a short, fixed weekly review.</text>
+  <text class="tiny" x="625" y="522">Check completed, missed, and numbers.</text>
+  <text class="tiny" x="580" y="550">Review:</text><line class="fillline" x1="650" y1="550" x2="1030" y2="550"/>
+  <text class="tiny" x="580" y="578">Completed:</text><line class="fillline" x1="650" y1="578" x2="1030" y2="578"/>
+  <text class="tiny" x="580" y="606">Missed:</text><line class="fillline" x1="650" y1="606" x2="1030" y2="606"/>
+  <text class="tiny" x="580" y="634">Numbers:</text><line class="fillline" x1="650" y1="634" x2="1030" y2="634"/>
+  <text class="tiny" x="580" y="662">Adjust one:</text><line class="fillline" x1="650" y1="662" x2="1030" y2="662"/>
+
+  <rect class="mini" x="40" y="705" width="1020" height="58"/>
+  <text class="label" x="60" y="728">FINISH AND ACT</text>
+  <text class="small" x="60" y="748">I will complete the first task on:</text>
+  <line class="fillline" x1="60" y1="758" x2="1030" y2="758"/>
+
+  <rect class="mini" x="40" y="775" width="315" height="55"/>
+  <text class="num" x="60" y="808">1</text>
+  <text class="label" x="95" y="798">ONE GOAL</text>
+  <text class="tiny" x="95" y="814">Number and deadline.</text>
+
+  <rect class="mini" x="392" y="775" width="315" height="55"/>
+  <text class="num" x="412" y="808">2</text>
+  <text class="label" x="447" y="798">DATED MILESTONES</text>
+  <text class="tiny" x="447" y="814">Checkpoints with dates.</text>
+
+  <rect class="mini" x="745" y="775" width="315" height="55"/>
+  <text class="num" x="765" y="808">3</text>
+  <text class="label" x="800" y="798">WEEKLY REVIEW</text>
+  <text class="tiny" x="800" y="814">Adjust one action.</text>
+</svg>
