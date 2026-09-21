@@ -107,7 +107,7 @@ def main() -> None:
         pipeline = build_pipeline(args, cwd, files)
         content = pipeline.generate_step(
             step=step,
-            context=BurnContext(title=args.title, slug=args.slug, date=args.date),
+            context=BurnContext(title=args.title, slug=args.slug, date=args.date, model=args.model),
             force=args.force,
             variables=parse_key_value_pairs(args.var),
         )
@@ -124,6 +124,7 @@ def main() -> None:
             title=args.title,
             slug=args.slug,
             date=args.date,
+            model=args.model,
             target_dir=args.target_dir,
             variables=parse_key_value_pairs(args.var),
         )
@@ -170,6 +171,7 @@ def main() -> None:
             title=args.title,
             slug=args.slug,
             date=args.date,
+            model=args.model,
             target_dir=args.target_dir,
             variables=parse_key_value_pairs(args.var),
         )
@@ -274,6 +276,7 @@ def build_parser() -> argparse.ArgumentParser:
     seed_production_parser.add_argument("--title", default="")
     seed_production_parser.add_argument("--slug", default="")
     seed_production_parser.add_argument("--date", default="")
+    seed_production_parser.add_argument("--model", default="", help="Authoritative master-sheet model metadata for this bundle.")
     seed_production_parser.add_argument("--target-root", default="content/letters")
     seed_production_parser.add_argument("--context-prompt-file", default="automation/prompts/burn/context.md")
     seed_production_parser.add_argument("--force", action="store_true")
@@ -328,6 +331,7 @@ def add_context_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--title", default="")
     parser.add_argument("--slug", default="")
     parser.add_argument("--date", default="")
+    parser.add_argument("--model", default="", help="Authoritative master-sheet model metadata for this bundle.")
 
 
 def apply_context_overrides(
@@ -336,6 +340,7 @@ def apply_context_overrides(
     title: str,
     slug: str,
     date: str,
+    model: str,
     target_dir: str,
     variables: dict[str, str],
 ) -> PipelineSpec:
@@ -346,6 +351,8 @@ def apply_context_overrides(
         values["context"]["slug"] = slug
     if date:
         values["context"]["date"] = date
+    if model:
+        values["context"]["model"] = model
     if target_dir:
         values["context"]["target_dir"] = target_dir
     values["variables"] = {**values.get("variables", {}), **variables}
@@ -650,6 +657,7 @@ def seed_production(
             title=provisional_title,
             slug=provisional_slug,
             date=resolved_date,
+            model=args.model,
             target_dir=str(temp_output.parent.as_posix()),
         ),
         force=True,

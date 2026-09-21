@@ -3,6 +3,7 @@ context:
   title: 'Systems for Goals – From Vision to Action Steps'
   slug: systems-for-goals-from-vision-to-action-steps
   date: '2026-08-14'
+  model: AUDIT
   target_dir: content/letters/2026-08-14-systems-for-goals-from-vision-to-action-steps
 providers:
   text:

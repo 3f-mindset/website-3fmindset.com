@@ -209,7 +209,8 @@ To turn a real seed document into a final letter folder with generated `CONTEXT.
 ```sh
 uv run burn-pipeline seed-production \
   --seed-file path/to/seed.md \
-  --date 2026-07-10
+  --date 2026-07-10 \
+  --model AUDIT
 ```
 
 Backup path:
@@ -217,13 +218,19 @@ Backup path:
 ```sh
 python scripts/burn-pipeline.py seed-production \
   --seed-file path/to/seed.md \
-  --date 2026-07-10
+  --date 2026-07-10 \
+  --model AUDIT
 ```
 
 That route generates `CONTEXT.md` first, derives the final title and slug from it,
 then writes `SEED.md`, `CONTEXT.md`, `index.md`, and `pipeline.yaml` into the final
 letter folder. After that, `CONTEXT.md` becomes the primary source of truth for the
 rest of the pipeline.
+
+The master-sheet model is authoritative loop metadata. Pass it with `--model` during
+the pre-bundle context/spec build; it is preserved in `BurnContext`, `CONTEXT.md`,
+`SPEC.md`, `spec.yaml`, and downstream prompts. Do not infer or rename it from the
+week topic.
 
 The generated pipeline now also includes a marketing-assets phase. That phase emits
 prompt/spec files such as `PROMO_PROMPT.md`, which are intended to feed downstream

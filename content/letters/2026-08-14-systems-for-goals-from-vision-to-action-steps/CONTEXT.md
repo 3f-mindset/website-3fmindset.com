@@ -1,5 +1,11 @@
 # CONTENT CRUSHER Response
 
+## Loop Metadata
+
+**Master-sheet model:** AUDIT
+
+This model value is authoritative production metadata from the master sheet. Preserve it exactly in the pre-bundle context and spec details; do not infer or rename it from the topic.
+
 ## Title
 
 Systems for Goals – From Vision to Action Steps
