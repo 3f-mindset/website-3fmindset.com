@@ -56,6 +56,7 @@ def main() -> None:
             title=args.title,
             slug=args.slug,
             date_value=args.date,
+            model=args.authoritative_model,
             target_root=Path(args.target_root),
             context_prompt_file=Path(args.context_prompt_file),
             force=args.force,
@@ -276,7 +277,12 @@ def build_parser() -> argparse.ArgumentParser:
     seed_production_parser.add_argument("--title", default="")
     seed_production_parser.add_argument("--slug", default="")
     seed_production_parser.add_argument("--date", default="")
-    seed_production_parser.add_argument("--model", default="", help="Authoritative master-sheet model metadata for this bundle.")
+    seed_production_parser.add_argument(
+        "--authoritative-model",
+        dest="authoritative_model",
+        default="",
+        help="Authoritative master-sheet lesson model metadata for this bundle.",
+    )
     seed_production_parser.add_argument("--target-root", default="content/letters")
     seed_production_parser.add_argument("--context-prompt-file", default="automation/prompts/burn/context.md")
     seed_production_parser.add_argument("--force", action="store_true")
@@ -623,6 +629,7 @@ def seed_production(
     title: str,
     slug: str,
     date_value: str,
+    model: str,
     target_root: Path,
     context_prompt_file: Path,
     force: bool,
@@ -657,7 +664,7 @@ def seed_production(
             title=provisional_title,
             slug=provisional_slug,
             date=resolved_date,
-            model=args.model,
+            model=model,
             target_dir=str(temp_output.parent.as_posix()),
         ),
         force=True,
