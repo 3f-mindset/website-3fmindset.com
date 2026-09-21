@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">SBXX Worksheet, Boundaries and Guardrails</title>
+  <desc id="desc">Landscape worksheet on a white background with large title, introduction, fillable sections built around the SPEED action model, and a three step summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+
+  <text class="tiny" x="40" y="34">SBXX</text>
+  <text class="title" x="40" y="70">STOP LETTING OTHER PEOPLE'S URGENCY RUIN YOUR PLAN</text>
+  <text class="sub" x="40" y="96">Boundaries and Guardrails: Protecting Your Structure</text>
+
+  <rect class="mini" x="700" y="34" width="360" height="78"/>
+  <text class="label" x="720" y="58">THE LEAK</text>
+  <text class="small" x="720" y="78">You are not lazy. You are leaking energy through</text>
+  <text class="small" x="720" y="94">every open door. Find the crack and seal it.</text>
+
+  <text class="verb" x="444" y="142">SPEED</text>
+  <line class="line" x1="40" y1="154" x2="1060" y2="154"/>
+
+  <rect class="box" x="40" y="180" width="320" height="185"/>
+  <text class="letter" x="60" y="222">S</text>
+  <text class="label" x="105" y="204">SPOT THE LEAK</text>
+  <text class="small" x="105" y="224">Identify the specific moment you lost control.</text>
+  <text class="tiny" x="105" y="242">Be specific. Name the exact action that broke your plan.</text>
+  <line class="fillline" x1="60" y1="270" x2="330" y2="270"/>
+  <line class="fillline" x1="60" y1="300" x2="330" y2="300"/>
+  <line class="fillline" x1="60" y1="330" x2="330" y2="330"/>
+
+  <rect class="box" x="390" y="180" width="320" height="185"/>
+  <text class="letter" x="410" y="222">P</text>
+  <text class="label" x="455" y="204">PICK YOUR LIMIT</text>
+  <text class="small" x="455" y="224">Define the new rule in one clear sentence.</text>
+  <text class="tiny" x="455" y="242">Make it actionable, measurable, and simple.</text>
+  <line class="fillline" x1="410" y1="270" x2="680" y2="270"/>
+  <line class="fillline" x1="410" y1="300" x2="680" y2="300"/>
+  <line class="fillline" x1="410" y1="330" x2="680" y2="330"/>
+
+  <rect class="box" x="740" y="180" width="320" height="185"/>
+  <text class="letter" x="760" y="222">E</text>
+  <text class="label" x="805" y="204">EXPLAIN IT CLEARLY</text>
+  <text class="small" x="805" y="224">Tell the people involved. State the fact.</text>
+  <text class="tiny" x="805" y="242">Do not apologize too much. Just announce the limit.</text>
+  <text class="tiny" x="760" y="268">Who:</text><line class="fillline" x1="790" y1="268" x2="1030" y2="268"/>
+  <text class="tiny" x="760" y="292">Say:</text><line class="fillline" x1="790" y1="292" x2="1030" y2="292"/>
+  <text class="tiny" x="760" y="316">Tone:</text><line class="fillline" x1="790" y1="316" x2="1030" y2="316"/>
+  <text class="tiny" x="760" y="340">When:</text><line class="fillline" x1="790" y1="340" x2="1030" y2="340"/>
+
+  <rect class="box" x="40" y="395" width="320" height="185"/>
+  <text class="letter" x="60" y="437">E</text>
+  <text class="label" x="105" y="419">ENFORCE IT DAILY</text>
+  <text class="small" x="105" y="439">Plan your specific action for the test moment.</text>
+  <text class="tiny" x="105" y="457">Use tools and physical cues, not just willpower.</text>
+  <line class="fillline" x1="60" y1="485" x2="330" y2="485"/>
+  <line class="fillline" x1="60" y1="515" x2="330" y2="515"/>
+  <line class="fillline" x1="60" y1="545" x2="330" y2="545"/>
+
+  <rect class="box" x="390" y="395" width="320" height="185"/>
+  <text class="letter" x="410" y="437">D</text>
+  <text class="label" x="455" y="419">DOUBLE DOWN ON WINS</text>
+  <text class="small" x="455" y="439">Review after 7 days. Did it work?</text>
+  <text class="tiny" x="455" y="457">If yes, keep it. If no, adjust slightly. Pick next area.</text>
+  <text class="tiny" x="410" y="485">Energy:</text><line class="fillline" x1="460" y1="485" x2="680" y2="485"/>
+  <text class="tiny" x="410" y="515">Control:</text><line class="fillline" x1="460" y1="515" x2="680" y2="515"/>
+  <text class="tiny" x="410" y="545">Next:</text><line class="fillline" x1="460" y1="545" x2="680" y2="545"/>
+
+  <rect class="mini" x="40" y="610" width="1020" height="88"/>
+  <text class="label" x="60" y="636">FINAL COMMAND</text>
+  <text class="small" x="60" y="660">Your refractory lining is restored. The specific boundary you will defend this week is:</text>
+  <line class="fillline" x1="60" y1="684" x2="1030" y2="684"/>
+
+  <rect class="mini" x="40" y="725" width="315" height="82"/>
+  <text class="num" x="60" y="760">1</text>
+  <text class="label" x="95" y="748">SPOT &amp; PICK</text>
+  <text class="tiny" x="95" y="768">Find the leak and define the limit.</text>
+  <text class="tiny" x="95" y="784">Be specific. Make it a rule, not a wish.</text>
+
+  <rect class="mini" x="392" y="725" width="315" height="82"/>
+  <text class="num" x="412" y="760">2</text>
+  <text class="label" x="447" y="748">EXPLAIN &amp; ENFORCE</text>
+  <text class="tiny" x="447" y="768">Tell them and stick to it daily.</text>
+  <text class="tiny" x="447" y="784">Use tools. Do not rely on memory.</text>
+
+  <rect class="mini" x="745" y="725" width="315" height="82"/>
+  <text class="num" x="765" y="760">3</text>
+  <text class="label" x="800" y="748">DOUBLE DOWN</text>
+  <text class="tiny" x="800" y="768">Review results and adjust.</text>
+  <text class="tiny" x="800" y="784">Build the system that works for you.</text>
+</svg>
