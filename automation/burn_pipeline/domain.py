@@ -42,7 +42,6 @@ class BurnContext(BaseModel):
     title: str = ""
     slug: str = ""
     date: str = ""
-    model: str = ""
     target_dir: str = ""
 
 

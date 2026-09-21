@@ -1,8 +1,5 @@
 Write `CONTEXT.md` for "{{context.title}}".
 
-Master-sheet model metadata: `{{context.model}}`.
-Preserve this model exactly in the generated context and spec details. It is authoritative production metadata from the master sheet, not a suggestion to invent or rename.
-
 Use the appended input named `seed`.
 
 If there is no topic provided directly in this prompt, use existing content from the inputs above and start your response by referencing what topic is being discussed first.
@@ -13,9 +10,8 @@ Developed model registry:
 {{registry.entries_markdown}}
 
 Hard constraints:
-- Use the supplied master-sheet model exactly as the `Actionable VERB` / model name for this production.
-- Do not invent a replacement model when `{{context.model}}` is supplied.
-- Do not reuse any verb already in the registry unless the supplied master-sheet model requires it; authoritative sheet metadata wins.
+- Choose a brand new `Actionable VERB` and model name for this production.
+- Do not reuse any verb already in the registry.
 - Forbidden verbs: {{registry.used_verbs_csv}}
 - MUST NOT USE `ANCHOR` AS MODEL.
 - If a close variation would look like a reuse to a human reader, do not use it.
@@ -61,6 +57,6 @@ Use this exact response template and fill every part:
 Additional requirements:
 - Limit the response to a 7th grade reading level.
 - Keep the language specific to this week's idea, not generic content-marketing copy.
-- Let the seed document's actual topic, tension, and promise determine the model breakdown, while the supplied master-sheet model determines the model name.
+- Let the seed document's actual topic, tension, and promise determine the model name and the model breakdown.
 - Make the promise tangible and the frustrations recognizable.
 - Write FAQ entries that answer the most likely hesitations without getting soft or defensive.

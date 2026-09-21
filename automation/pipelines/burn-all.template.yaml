@@ -6,21 +6,21 @@ context:
 providers:
   text:
     kind: openai-compatible
-    providerUrl: http://localhost:11435
+    providerUrl: http://localhost:11434
     model: active
     timeout_seconds: 300
     retry_attempts: 4
     retry_wait_seconds: 75
   image:
     kind: openai-compatible
-    providerUrl: http://localhost:11435
+    providerUrl: http://localhost:11434
     model: unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m
     timeout_seconds: 900
     retry_attempts: 4
     retry_wait_seconds: 75
   audio:
     kind: openai-compatible
-    providerUrl: http://localhost:11435
+    providerUrl: http://localhost:11434
     model: AUDIO_MODEL_NAME
 variables:
   voice: direct, pragmatic, masculine, concrete

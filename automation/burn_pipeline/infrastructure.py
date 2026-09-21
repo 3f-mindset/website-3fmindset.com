@@ -661,7 +661,7 @@ def default_provider_url(kind: ProviderKind) -> str | None:
     if kind == ProviderKind.OPENROUTER:
         return "https://openrouter.ai/api/v1"
     if kind == ProviderKind.OPENAI_COMPATIBLE:
-        return "http://localhost:11435"
+        return "http://localhost:11434"
     return None
 
 
