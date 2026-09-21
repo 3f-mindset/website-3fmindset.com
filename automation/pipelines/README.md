@@ -17,9 +17,11 @@ infrastructure layer.
 
 ## Providers
 
-Default text provider: OpenAI-compatible inference at `http://localhost:11434`.
+Default text provider: OpenAI-compatible inference at `http://localhost:11435`.
 Default text model: `active`.
-Default image provider: OpenAI-compatible inference at `http://localhost:11434`.
+Default image provider: OpenAI-compatible inference at `http://localhost:11435`.
+
+For same-machine Wiggum runs, `localhost:11435` is intentional: `llama-swap` listens on container port `8080` and publishes host port `11435`. The externally available/Tailscale endpoint may use port `11434`; that external port is a different route and is not the local default.
 Default image model: `unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m`.
 
 ```sh
@@ -117,7 +119,7 @@ OpenAI-compatible local/network server, such as vLLM or llama.cpp:
 
 ```sh
 uv run burn-pipeline \
-  --provider-url http://localhost:11434 \
+  --provider-url http://localhost:11435 \
   --model local-model-name \
   run --pipeline automation/pipelines/burn-poc.yaml --force
 ```
@@ -163,15 +165,15 @@ Example:
 providers:
   text:
     kind: openai-compatible
-    providerUrl: http://localhost:11434
+    providerUrl: http://localhost:11435
     model: active
   image:
     kind: openai-compatible
-    providerUrl: http://localhost:11434
+    providerUrl: http://localhost:11435
     model: unsloth-qwen-image-2512-gguf-qwen-image-2512-q4-k-m
   audio:
     kind: openai-compatible
-    providerUrl: http://localhost:11434
+    providerUrl: http://localhost:11435
     model: AUDIO_MODEL_NAME
 ```
 
@@ -209,7 +211,8 @@ To turn a real seed document into a final letter folder with generated `CONTEXT.
 ```sh
 uv run burn-pipeline seed-production \
   --seed-file path/to/seed.md \
-  --date 2026-07-10
+  --date 2026-07-10 \
+  --model AUDIT
 ```
 
 Backup path:
@@ -217,13 +220,19 @@ Backup path:
 ```sh
 python scripts/burn-pipeline.py seed-production \
   --seed-file path/to/seed.md \
-  --date 2026-07-10
+  --date 2026-07-10 \
+  --model AUDIT
 ```
 
 That route generates `CONTEXT.md` first, derives the final title and slug from it,
 then writes `SEED.md`, `CONTEXT.md`, `index.md`, and `pipeline.yaml` into the final
 letter folder. After that, `CONTEXT.md` becomes the primary source of truth for the
 rest of the pipeline.
+
+The master-sheet model is authoritative loop metadata. Pass it with `--model` during
+the pre-bundle context/spec build; it is preserved in `BurnContext`, `CONTEXT.md`,
+`SPEC.md`, `spec.yaml`, and downstream prompts. Do not infer or rename it from the
+week topic.
 
 The generated pipeline now also includes a marketing-assets phase. That phase emits
 prompt/spec files such as `PROMO_PROMPT.md`, which are intended to feed downstream
