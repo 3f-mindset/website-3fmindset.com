@@ -209,7 +209,9 @@ class ChatCompletionsAdapter:
                     )
                 response.raise_for_status()
                 return response.json()
-            except (httpx.ReadTimeout, httpx.ConnectError, httpx.HTTPStatusError) as exc:
+            except httpx.ReadTimeout:
+                raise
+            except (httpx.ConnectError, httpx.HTTPStatusError) as exc:
                 last_error = exc
                 if not is_retryable_http_error(exc) or attempt >= self._retry_attempts:
                     raise
@@ -298,7 +300,9 @@ class ImageGenerationAdapter:
                     )
                 response.raise_for_status()
                 return response.json()
-            except (httpx.ReadTimeout, httpx.ConnectError, httpx.HTTPStatusError) as exc:
+            except httpx.ReadTimeout:
+                raise
+            except (httpx.ConnectError, httpx.HTTPStatusError) as exc:
                 last_error = exc
                 if not is_retryable_http_error(exc) or attempt >= self._retry_attempts:
                     raise
@@ -377,7 +381,7 @@ def is_no_copy_instruction(lines: list[str]) -> bool:
 
 
 def is_retryable_http_error(exc: Exception) -> bool:
-    if isinstance(exc, (httpx.ReadTimeout, httpx.ConnectError)):
+    if isinstance(exc, httpx.ConnectError):
         return True
     if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code in {502, 503, 504}:
         return True

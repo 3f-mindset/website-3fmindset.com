@@ -3,7 +3,9 @@ from __future__ import annotations
 import os
 import unittest
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import Mock, patch
+
+import httpx
 
 from burn_pipeline.application import BurnPipeline
 from burn_pipeline.domain import (
@@ -14,11 +16,47 @@ from burn_pipeline.domain import (
     ProviderKind,
     StepSpec,
 )
-from burn_pipeline.infrastructure import ChatCompletionsAdapter, build_inference
+from burn_pipeline.infrastructure import ChatCompletionsAdapter, ImageGenerationAdapter, build_inference
 from burn_pipeline.interface import build_parser, resolve_provider_configs
 
 
 class OpenRouterProviderTests(unittest.TestCase):
+    def test_chat_read_timeout_is_not_retried(self) -> None:
+        adapter = ChatCompletionsAdapter(
+            providerUrl="https://example.test/v1",
+            apiKey=None,
+            model="test-model",
+            retry_attempts=4,
+            retry_wait_seconds=75,
+        )
+        client = Mock()
+        client.post.side_effect = httpx.ReadTimeout("timed out")
+
+        with patch("burn_pipeline.infrastructure.time.sleep") as sleep:
+            with self.assertRaises(httpx.ReadTimeout):
+                adapter._post_with_retries(client, "https://example.test/v1/chat/completions", headers={}, payload={})
+
+        client.post.assert_called_once()
+        sleep.assert_not_called()
+
+    def test_image_read_timeout_is_not_retried(self) -> None:
+        adapter = ImageGenerationAdapter(
+            providerUrl="https://example.test/v1",
+            apiKey=None,
+            model="test-model",
+            retry_attempts=4,
+            retry_wait_seconds=75,
+        )
+        client = Mock()
+        client.post.side_effect = httpx.ReadTimeout("timed out")
+
+        with patch("burn_pipeline.infrastructure.time.sleep") as sleep:
+            with self.assertRaises(httpx.ReadTimeout):
+                adapter._post_with_retries(client, "https://example.test/v1/images/generations", headers={}, payload={})
+
+        client.post.assert_called_once()
+        sleep.assert_not_called()
+
     def test_step_model_overrides_modality_default(self) -> None:
         requests = []
 
