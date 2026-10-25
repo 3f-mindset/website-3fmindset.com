@@ -65,10 +65,10 @@ Then use a next-week recalibration worksheet modeled on `static/worksheets/seaso
 
 ## Constraints and assumptions
 
-- `ASSUMPTION:` Each worksheet should be a single-page landscape SVG, 1100×850, matching the linked snapshot’s format and the season-design series.
-- `ASSUMPTION:` The next sequence filename is `static/worksheets/season-design/06_domain_vision_edges.svg`.
-- `ASSUMPTION:` Add the companion as `static/worksheets/season-design/07_weekly_domain_plan.svg` rather than modifying existing `03_weekly_container.svg`; the original remains unchanged and usable.
-- `ASSUMPTION:` Add the end-of-week sheets as `static/worksheets/season-design/08_weekly_role_edge_review.svg` and `static/worksheets/season-design/09_weekly_domain_recalibration.svg`; preserve the existing numbered template files unchanged.
+- `ASSUMPTION:` Each worksheet should be a single-page landscape SVG, 1100×850, matching the linked template format and the crucible-design collection.
+- `ASSUMPTION:` Keep the four new workshop worksheets together in `static/worksheets/crucible-design/`, separate from the existing season-design worksheet sequence.
+- `ASSUMPTION:` The new paths are `06_domain_vision_edges.svg`, `07_weekly_domain_plan.svg`, `08_weekly_role_edge_review.svg`, and `09_weekly_domain_recalibration.svg` within `static/worksheets/crucible-design/`.
+- `ASSUMPTION:` Preserve the existing `season-design/03_weekly_container.svg`, `04_weekly_role_card.svg`, and `05_friction_adjustment.svg` templates unchanged and use them only as design references.
 - `ASSUMPTION:` The weekly plan carries up to three chosen domains from the vision sheet; its Edge prompt is a reminder/selection, not a second nine-Edge lesson.
 - The nine Edge names and framing come from issue #93’s latest comment and the linked 3F Mindset book chapters.
 - Preserve participant agency: domains are examples; visions/goals are self-defined; Edges are a lens, not a scorecard.
@@ -76,9 +76,9 @@ Then use a next-week recalibration worksheet modeled on `static/worksheets/seaso
 ## Ordered implementation plan
 
 1. Update this specification (`docs/specs/2026-10-25-domain-vision-edges-worksheet.md`) to cover the complete vision → plan → review → recalibrate loop. Verify goal, behavior, non-goals, G/W/T criteria, constraints, assumptions, and rollback.
-2. Add `06_domain_vision_edges.svg` and `07_weekly_domain_plan.svg` for vision and planning, then add `08_weekly_role_edge_review.svg` and `09_weekly_domain_recalibration.svg` for review and adjustment. Reuse the corresponding existing templates’ 1100×850 dimensions, accessibility pattern, typography palette, rounded boxes, and printable fill-in layout.
+2. Add the four worksheets under `static/worksheets/crucible-design/`: `06_domain_vision_edges.svg` and `07_weekly_domain_plan.svg` for vision and planning, then `08_weekly_role_edge_review.svg` and `09_weekly_domain_recalibration.svg` for review and adjustment. Reuse the corresponding existing templates’ 1100×850 dimensions, accessibility pattern, typography palette, rounded boxes, and printable fill-in layout.
 3. Validate all added SVGs’ XML, dimensions, text/element bounds; render previews; run the Hugo build to confirm static assets do not break the site.
 
 ## Rollback
 
-Delete the added worksheet SVGs from this PR; retain the spec as rationale/history unless the task is abandoned before implementation. Existing template worksheets `03_weekly_container.svg`, `04_weekly_role_card.svg`, and `05_friction_adjustment.svg` remain untouched.
+Delete the added worksheet SVGs from `static/worksheets/crucible-design/`; retain the spec as rationale/history unless the task is abandoned before implementation. Existing template worksheets in `static/worksheets/season-design/` remain untouched.
