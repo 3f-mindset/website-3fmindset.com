@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">Weekly Domain Recalibration</title>
+    <desc id="desc">A printable worksheet to review one friction event by domain and role, compare intention with action, notice internal response and Edge balance, assess impact, identify structural causes, and choose a bounded next-week adjustment with evidence and a review point.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.3; rx: 8; ry: 8; }
+      .softbox { fill: #f7f7f7; stroke: #111111; stroke-width: 1.4; rx: 14; ry: 14; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.1; fill: none; }
+      .fillline { stroke: #999999; stroke-width: 1.1; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 31px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #111111; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 11.5px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 9.8px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 8.2px; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 19px; font-weight: 700; fill: #111111; }
+      .bigword { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #111111; letter-spacing: 1.4px; }
+      .check { fill: #ffffff; stroke: #111111; stroke-width: 1.2; }
+     </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <text class="title" x="40" y="45">WEEKLY DOMAIN RECALIBRATION</text>
+    <text class="sub" x="40" y="70">Use one friction event to shape a more workable next week</text>
+    <text class="bigword" x="700" y="55">NOTICE → ADJUST</text>
+
+    <rect class="box" x="40" y="88" width="1020" height="76" />
+    <text class="label" x="60" y="113">Purpose</text>
+    <text class="small" x="60" y="132">Domains are where you focus; roles are how you show up; Edges are qualities you bring.</text>
+    <text class="small" x="60" y="149">Review one event from 06 → 07 → 08. Use evidence, not self-judgment; adjust next week only.</text>
+
+    <rect class="softbox" x="750" y="103" width="280" height="45" />
+    <text class="label" x="768" y="122">Week / Date:</text>
+    <line class="fillline" x1="850" y1="122" x2="1012" y2="122" />
+    <text class="label" x="768" y="143">Domain:</text>
+    <line class="fillline" x1="830" y1="143" x2="1012" y2="143" />
+
+    <rect class="box" x="40" y="185" width="330" height="155" />
+    <text class="num" x="60" y="218">1</text>
+    <text class="label" x="92" y="205">ONE FRICTION EVENT</text>
+    <text class="tiny" x="92" y="222">Select one moment from your role / Edge review.</text>
+    <text class="small" x="65" y="252">Role:</text>
+    <line class="fillline" x1="100" y1="252" x2="345" y2="252" />
+    <text class="small" x="65" y="280">What happened? (facts)</text>
+    <line class="fillline" x1="65" y1="308" x2="345" y2="308" />
+    <text class="tiny" x="65" y="329">Keep it specific and free of blame.</text>
+
+    <rect class="box" x="400" y="185" width="320" height="155" />
+    <text class="num" x="420" y="218">2</text>
+    <text class="label" x="452" y="205">INTENDED / ACTUAL</text>
+    <text class="tiny" x="452" y="222">What did you plan, and what occurred?</text>
+    <text class="small" x="425" y="252">Intended action:</text>
+    <line class="fillline" x1="520" y1="252" x2="695" y2="252" />
+    <line class="fillline" x1="425" y1="280" x2="695" y2="280" />
+    <text class="small" x="425" y="308">What I actually did:</text>
+    <line class="fillline" x1="548" y1="308" x2="695" y2="308" />
+    <line class="fillline" x1="425" y1="329" x2="695" y2="329" />
+
+    <rect class="box" x="750" y="185" width="310" height="155" />
+    <text class="num" x="770" y="218">3</text>
+    <text class="label" x="802" y="205">INNER RESPONSE</text>
+    <text class="tiny" x="802" y="222">Notice what arose; treat it as information.</text>
+    <text class="small" x="775" y="252">Feeling / body response:</text>
+    <line class="fillline" x1="775" y1="280" x2="1035" y2="280" />
+    <text class="small" x="775" y="308">Protective story or need:</text>
+    <line class="fillline" x1="775" y1="329" x2="1035" y2="329" />
+
+    <rect class="box" x="40" y="365" width="330" height="175" />
+    <text class="num" x="60" y="398">4</text>
+    <text class="label" x="92" y="385">EDGE REFLECTION</text>
+    <text class="tiny" x="92" y="402">Which quality helped, or felt hard to access?</text>
+    <text class="small" x="65" y="430">Edge that helped:</text>
+    <line class="fillline" x1="160" y1="430" x2="345" y2="430" />
+    <text class="tiny" x="65" y="453">Direction · Craft · Alignment · Stewardship</text>
+    <text class="tiny" x="65" y="477">Adaptation · Service · Legacy · Integration</text>
+    <text class="tiny" x="65" y="501">Expression</text>
+    <text class="small" x="65" y="525">Felt lacking / overused:</text>
+    <line class="fillline" x1="190" y1="525" x2="345" y2="525" />
+
+    <rect class="box" x="400" y="365" width="320" height="175" />
+    <text class="num" x="420" y="398">5</text>
+    <text class="label" x="452" y="385">COST / IMPACT</text>
+    <text class="tiny" x="452" y="402">What did this change for the domain or role?</text>
+    <text class="small" x="425" y="430">Time / capacity:</text>
+    <line class="fillline" x1="520" y1="430" x2="695" y2="430" />
+    <text class="small" x="425" y="456">Progress / quality:</text>
+    <line class="fillline" x1="535" y1="456" x2="695" y2="456" />
+    <text class="small" x="425" y="482">Wellbeing / connection:</text>
+    <line class="fillline" x1="555" y1="482" x2="695" y2="482" />
+    <text class="small" x="425" y="508">Other impact:</text>
+    <line class="fillline" x1="505" y1="508" x2="695" y2="508" />
+    <line class="fillline" x1="425" y1="532" x2="695" y2="532" />
+
+    <rect class="box" x="750" y="365" width="310" height="175" />
+    <text class="num" x="770" y="398">6</text>
+    <text class="label" x="802" y="385">STRUCTURAL CAUSE</text>
+    <text class="tiny" x="802" y="402">What conditions contributed? Check any.</text>
+    <rect class="check" x="775" y="420" width="10" height="10" />
+    <text class="tiny" x="792" y="429">Unclear strike / next action</text>
+    <rect class="check" x="925" y="420" width="10" height="10" />
+    <text class="tiny" x="942" y="429">No scheduled container</text>
+    <rect class="check" x="775" y="444" width="10" height="10" />
+    <text class="tiny" x="792" y="453">Overcommitment</text>
+    <rect class="check" x="925" y="444" width="10" height="10" />
+    <text class="tiny" x="942" y="453">Capacity / recovery</text>
+    <rect class="check" x="775" y="468" width="10" height="10" />
+    <text class="tiny" x="792" y="477">Boundary not clear</text>
+    <rect class="check" x="925" y="468" width="10" height="10" />
+    <text class="tiny" x="942" y="477">Support missing</text>
+    <rect class="check" x="775" y="492" width="10" height="10" />
+    <text class="tiny" x="792" y="501">Edge misapplied / unbalanced</text>
+    <rect class="check" x="925" y="492" width="10" height="10" />
+    <text class="tiny" x="942" y="501">Other</text>
+    <line class="fillline" x1="775" y1="528" x2="1035" y2="528" />
+
+    <rect class="box" x="40" y="565" width="500" height="125" />
+    <text class="num" x="60" y="598">7</text>
+    <text class="label" x="92" y="585">BOUNDED NEXT-WEEK ADJUSTMENT</text>
+    <text class="tiny" x="92" y="602">Keep the same vision; change one workable part of the plan.</text>
+    <text class="small" x="65" y="628">Domain action / role:</text>
+    <line class="fillline" x1="185" y1="628" x2="515" y2="628" />
+    <text class="small" x="65" y="654">Edge cue / practice:</text>
+    <line class="fillline" x1="180" y1="654" x2="515" y2="654" />
+    <text class="small" x="65" y="680">Time container:</text>
+    <line class="fillline" x1="155" y1="680" x2="515" y2="680" />
+
+    <rect class="box" x="570" y="565" width="490" height="125" />
+    <text class="num" x="590" y="598">8</text>
+    <text class="label" x="622" y="585">PROTECT THE ADJUSTMENT</text>
+    <text class="tiny" x="622" y="602">Make the support and limit visible, if relevant.</text>
+    <text class="small" x="595" y="628">Boundary / what I will defer:</text>
+    <line class="fillline" x1="765" y1="628" x2="1035" y2="628" />
+    <text class="small" x="595" y="654">Support / recovery needed:</text>
+    <line class="fillline" x1="755" y1="654" x2="1035" y2="654" />
+    <text class="small" x="595" y="680">When will I do it?</text>
+    <line class="fillline" x1="700" y1="680" x2="1035" y2="680" />
+
+    <rect class="box" x="40" y="715" width="1020" height="95" />
+    <text class="label" x="60" y="740">Evidence / track point:</text>
+    <line class="fillline" x1="200" y1="740" x2="530" y2="740" />
+    <text class="label" x="560" y="740">Review date / moment:</text>
+    <line class="fillline" x1="710" y1="740" x2="1035" y2="740" />
+    <text class="small" x="60" y="775">What will I notice to learn whether this adjustment helped?</text>
+    <line class="fillline" x1="370" y1="775" x2="1035" y2="775" />
+    <text class="tiny" x="60" y="797">A useful review is evidence about the plan—not a verdict on you.</text>
+</svg>

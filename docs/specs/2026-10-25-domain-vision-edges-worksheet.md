@@ -2,7 +2,7 @@
 
 ## Goal
 
-Create a paired planning sequence consistent with the existing season-design worksheets. The first snapshot helps you choose a handful of life domains, form a vision across selected domains, identify the role and action that serve the vision, and use the nine Edges as a reflective lens for coherence and balance. A follow-on weekly worksheet helps you turn the selected domains, roles, and Edges into a realistic week plan.
+Create a four-step planning sequence consistent with the existing season-design worksheets. The domain-vision snapshot helps you choose a handful of life domains, form a vision across selected domains, identify the roles that serve the vision, and use the nine Edges as a reflective lens for coherence and balance. The weekly plan turns selected domains, roles, and Edges into realistic action. The end-of-week review helps you examine how you showed up in those roles and where the Edges helped or were lacking. A friction-based recalibration worksheet uses those insights to deliberately adjust the next week.
 
 ## User-visible behavior
 
@@ -21,10 +21,25 @@ You can then use a companion weekly plan, modeled on `static/worksheets/season-d
 - Give actions visible time containers and protect capacity, restoration, and bounded relationship/community connection.
 - Ask what each commitment is in service to, identify a boundary/refusal/defer decision, and set a review for proof and adjustment.
 
+At the end of the week, you can use a role-and-Edge review modeled on `static/worksheets/season-design/04_weekly_role_card.svg` to:
+
+- Review up to three selected roles from your focus domains using observable evidence of how you showed up, not a judgment of your worth.
+- Identify which Edge(s) helped you meet a role’s responsibility, which felt lacking, and whether a strength became overused.
+- Capture a pattern across the roles and choose one useful repair or next-week action.
+
+Then use a next-week recalibration worksheet modeled on `static/worksheets/season-design/05_friction_adjustment.svg` to:
+
+- Describe a friction point from the role review without judgment and distinguish intention from what actually happened.
+- Notice your internal response, the effect on the domain/role, and the Edge that may need support, development, or tempering.
+- Identify a structural cause (such as capacity, unclear action, missing time container, boundary, recovery, or support) rather than blaming character.
+- Make a bounded adjustment to next week’s domain action, Edge cue, time container, support, or boundary, then name what evidence you will review.
+
 ## Non-goals
 
 - Do not reproduce the full multi-hour workshop agenda or facilitator guide in either worksheet.
-- Do not duplicate the vision worksheet’s full nine-Edge exposition in the weekly sheet; reuse the names and have you select the relevant Edge(s) for the week.
+- Do not duplicate the vision worksheet’s full nine-Edge exposition in the weekly sheets; reuse the names and invite you to select relevant Edge(s) for your role and reflection.
+- Do not turn role review into a score of your worth or prescribe one correct Edge for any role/domain.
+- Do not turn recalibration into a full redesign of your life domains; adjust only the next-week plan using evidence from the prior cycle.
 - Do not prescribe a fixed life-domain taxonomy, a “correct” Edge for any domain, equal effort across domains, or universal numeric goals.
 - Do not modify existing worksheet files or add the new worksheet to site navigation in this task.
 
@@ -40,22 +55,30 @@ You can then use a companion weekly plan, modeled on `static/worksheets/season-d
 8. **Given** you have chosen weekly actions, **when** you complete the weekly plan, **then** you can assign effort intention (establish / maintain or equivalent), schedule visible time containers, and account for capacity/restoration and one bounded relationship/community action.
 9. **Given** you review your week plan before accepting additional demands, **when** you use the alignment/refusal check, **then** you can state what your plan is in service to and record one boundary, refusal, or defer choice.
 10. **Given** the week ends, **when** you use the review section, **then** you can record evidence, effort/capacity learning, and one adjustment for the next cycle. The weekly worksheet uses the same 1100×850 accessible, printable style as the source template `03_weekly_container.svg`.
+11. **Given** you completed a weekly plan, **when** you review how you showed up, **then** you can record up to three focus roles, the evidence of your behavior, and whether you enacted the planned action.
+12. **Given** you review each selected role, **when** you reflect on the Edges, **then** you can identify an Edge that helped, one that felt lacking or needed, and/or a strength that was overused; any self-rating is explicitly nonjudgmental and subordinate to evidence.
+13. **Given** you have reviewed your roles, **when** you close the review, **then** you can name a pattern across roles and choose one repair or next-week action. The review worksheet follows the accessible 1100×850 landscape style of `04_weekly_role_card.svg`.
+14. **Given** the review surfaced friction, **when** you use the recalibration worksheet, **then** you can describe what happened, compare intention with actual behavior, and note your internal response and its effect on your domain/role.
+15. **Given** you identify an Edge difficulty, **when** you recalibrate, **then** you can consider which Edge needs support/development or moderation without labeling yourself as deficient.
+16. **Given** you identify a repeated friction, **when** you choose an adjustment, **then** you can identify a structural cause (e.g., time, capacity, unclear action, recovery, support, or boundary) and choose a concrete next-week change to the domain action, Edge cue, container, support, or boundary.
+17. **Given** you have chosen the next-week change, **when** you close the recalibration worksheet, **then** you can name evidence to track and a review point. The recalibration worksheet follows the accessible 1100×850 landscape style of `05_friction_adjustment.svg`.
 
 ## Constraints and assumptions
 
 - `ASSUMPTION:` Each worksheet should be a single-page landscape SVG, 1100×850, matching the linked snapshot’s format and the season-design series.
 - `ASSUMPTION:` The next sequence filename is `static/worksheets/season-design/06_domain_vision_edges.svg`.
 - `ASSUMPTION:` Add the companion as `static/worksheets/season-design/07_weekly_domain_plan.svg` rather than modifying existing `03_weekly_container.svg`; the original remains unchanged and usable.
+- `ASSUMPTION:` Add the end-of-week sheets as `static/worksheets/season-design/08_weekly_role_edge_review.svg` and `static/worksheets/season-design/09_weekly_domain_recalibration.svg`; preserve the existing numbered template files unchanged.
 - `ASSUMPTION:` The weekly plan carries up to three chosen domains from the vision sheet; its Edge prompt is a reminder/selection, not a second nine-Edge lesson.
 - The nine Edge names and framing come from issue #93’s latest comment and the linked 3F Mindset book chapters.
 - Preserve participant agency: domains are examples; visions/goals are self-defined; Edges are a lens, not a scorecard.
 
 ## Ordered implementation plan
 
-1. Update this specification (`docs/specs/2026-10-25-domain-vision-edges-worksheet.md`) to cover both the vision snapshot and its weekly follow-through. Verify goal, behavior, non-goals, G/W/T criteria, constraints, assumptions, and rollback.
-2. Add `static/worksheets/season-design/06_domain_vision_edges.svg` for the domain-vision exercise and `static/worksheets/season-design/07_weekly_domain_plan.svg` for weekly follow-through. Reuse the relevant templates’ 1100×850 dimensions, accessibility pattern, typography palette, rounded boxes, and printable fill-in layout.
-3. Validate both SVGs’ XML, dimensions, text/element bounds; render previews; run the Hugo build to confirm static assets do not break the site.
+1. Update this specification (`docs/specs/2026-10-25-domain-vision-edges-worksheet.md`) to cover the complete vision → plan → review → recalibrate loop. Verify goal, behavior, non-goals, G/W/T criteria, constraints, assumptions, and rollback.
+2. Add `06_domain_vision_edges.svg` and `07_weekly_domain_plan.svg` for vision and planning, then add `08_weekly_role_edge_review.svg` and `09_weekly_domain_recalibration.svg` for review and adjustment. Reuse the corresponding existing templates’ 1100×850 dimensions, accessibility pattern, typography palette, rounded boxes, and printable fill-in layout.
+3. Validate all added SVGs’ XML, dimensions, text/element bounds; render previews; run the Hugo build to confirm static assets do not break the site.
 
 ## Rollback
 
-Delete the added worksheet SVG(s) from this PR; retain the spec as rationale/history unless the task is abandoned before implementation. Existing worksheets, especially `03_weekly_container.svg`, remain untouched.
+Delete the added worksheet SVGs from this PR; retain the spec as rationale/history unless the task is abandoned before implementation. Existing template worksheets `03_weekly_container.svg`, `04_weekly_role_card.svg`, and `05_friction_adjustment.svg` remain untouched.
