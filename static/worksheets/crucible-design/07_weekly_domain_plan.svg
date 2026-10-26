@@ -22,7 +22,7 @@
   <text class="label" x="790" y="50">WEEK OF:</text>
   <line class="fillline" x1="860" y1="50" x2="1055" y2="50"/>
   <rect class="softbox" x="40" y="88" width="1020" height="58"/>
-  <text class="small" x="60" y="111">Carry forward up to three domains from your vision sheet. Domains are where you focus; Edges are qualities you bring.</text>
+  <text class="small" x="60" y="111">Carry forward up to three domains from Visionary Domains. Domains are where you focus; Edges are qualities you bring.</text>
   <text class="small" x="60" y="130">Choose a small action that fits your week. Your effort intention is about the work, not your worth.</text>
 
   <rect class="box" x="40" y="163" width="1020" height="275"/>
@@ -54,5 +54,5 @@
   <line class="fillline" x1="410" y1="705" x2="735" y2="705"/><line class="fillline" x1="410" y1="733" x2="735" y2="733"/>
   <line class="fillline" x1="760" y1="705" x2="1035" y2="705"/><line class="fillline" x1="760" y1="733" x2="1035" y2="733"/>
   <rect class="softbox" x="40" y="778" width="1020" height="45"/>
-  <text class="label" x="60" y="805">SEQUENCE</text><text class="small" x="145" y="805">Choose domains → name role and Edge → schedule a strike → protect capacity → review and adjust.</text>
+  <text class="label" x="60" y="805">SEQUENCE</text><text class="small" x="145" y="805">Visionary Domains → Weekly Domain Plan → Weekly Domain Blotter (optional) → Weekly Role Review → Weekly Recalibration</text>
 </svg>

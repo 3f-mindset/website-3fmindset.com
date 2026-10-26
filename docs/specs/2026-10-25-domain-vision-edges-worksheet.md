@@ -88,6 +88,8 @@ At month-end, use a monthly review modeled on `static/worksheets/season-design/0
 25. **Given** you use the blotter by hand, **when** recording the week's evidence, **then** the strike-name area and seven weekday cells are clearly separated, each day has a distinct usable mark area, and row/column rules do not cross labels or writing prompts.
 26. **Given** you have one, two, or three active strikes, **when** you use the tracker and weekly reflection areas, **then** the layout gives useful writing room at each scale, with enough space for short evidence and one friction moment without making decorative whitespace or repeated instructions dominate.
 27. **Given** you scan the page, **when** moving through planning, daily tracking, and handoff, **then** the page has a clear visual hierarchy and balanced whitespace: the daily grid is primary, the evidence/friction reflection is secondary, and the 08 → 09 → fresh 07 handoff is concise and easy to find.
+28. **Given** any crucible-design worksheet refers to another sheet, **when** a participant reads its visible text or accessible title/description, **then** it identifies the companion by its title—not a sequence number or numeric shorthand.
+29. **Given** any crucible-design worksheet is opened, **when** its title is read, **then** the title is context-appropriate, adjective-first, and uses the agreed sheet name: `Visionary Domains`, `Weekly Domain Plan`, `Weekly Domain Blotter`, `Weekly Role Review`, `Weekly Recalibration`, or `Monthly Domain Review`.
 
 ## Constraints and assumptions
 
@@ -96,6 +98,8 @@ At month-end, use a monthly review modeled on `static/worksheets/season-design/0
 - `ASSUMPTION:` The new paths are `06_domain_vision_edges.svg`, `07_weekly_domain_plan.svg`, `08_weekly_role_edge_review.svg`, and `09_weekly_domain_recalibration.svg` within `static/worksheets/crucible-design/`.
 - `ASSUMPTION:` Add `10_monthly_domain_review.svg` to `static/worksheets/crucible-design/` as the monthly companion; it aggregates evidence and sets next-month focus but does not replace the long-term vision sheet.
 - `ASSUMPTION:` Add the optional tracker as `static/worksheets/crucible-design/07a_weekly_domain_blotter.svg`, keeping it adjacent to worksheet 07 without renumbering or displacing existing worksheets 08–10.
+- `ASSUMPTION:` Keep existing worksheet filenames unchanged for path compatibility; remove sequence-number references from sheet content and refer to companion sheets by their agreed titles. Preserve meaningful numbers within worksheet content (for example, counts, days, Edge names, and activity steps); “remove number references” means worksheet sequence identifiers, not all numeric content.
+- `ASSUMPTION:` Use the adjective-first titles `Visionary Domains`, `Weekly Domain Plan`, `Weekly Domain Blotter`, `Weekly Role Review`, `Weekly Recalibration`, and `Monthly Domain Review` for the SVG `<title>` elements and matching visible page titles.
 - `ASSUMPTION:` Preserve the existing `season-design/03_weekly_container.svg`, `04_weekly_role_card.svg`, and `05_friction_adjustment.svg` templates unchanged and use them only as design references.
 - `ASSUMPTION:` The weekly plan carries up to three chosen domains from the vision sheet; its Edge prompt is a reminder/selection, not a second nine-Edge lesson.
 - The nine Edge names and framing come from issue #93’s latest comment and the linked 3F Mindset book chapters.
@@ -106,7 +110,8 @@ At month-end, use a monthly review modeled on `static/worksheets/season-design/0
 1. Update this specification (`docs/specs/2026-10-25-domain-vision-edges-worksheet.md`) to cover the vision → plan → optional daily tracking → weekly review → recalibrate → monthly review loop. Verify goal, behavior, non-goals, G/W/T criteria, constraints, assumptions, and rollback.
 2. Add the six worksheets under `static/worksheets/crucible-design/`: `06_domain_vision_edges.svg`, `07_weekly_domain_plan.svg`, `07a_weekly_domain_blotter.svg`, `08_weekly_role_edge_review.svg`, `09_weekly_domain_recalibration.svg`, and `10_monthly_domain_review.svg`. Reuse corresponding source templates’ accessible 1100×850 dimensions, typography, restrained palette, rounded boxes, and printable fill-in layout.
 3. Refine `07a_weekly_domain_blotter.svg` for handwritten usability and whitespace balance; validate its XML, dimensions, text/element bounds and rendered preview.
-4. Validate all added SVGs’ XML, dimensions, text/element bounds; render previews; run the Hugo build to confirm static assets do not break the site.
+4. Remove worksheet sequence-number references from all crucible-design sheet content, replace them with agreed sheet titles, and update each visible/accessibility title to the agreed adjective-first name.
+5. Validate all added SVGs’ XML, dimensions, text/element bounds, titles, and cross-references; render previews; run the Hugo build to confirm static assets do not break the site.
 
 ## Rollback
 
