@@ -85,6 +85,9 @@ At month-end, use a monthly review modeled on `static/worksheets/season-design/0
 22. **Given** you have planned up to three strikes on worksheet 07, **when** you use the optional blotter during the week, **then** you can record daily status against those planned domain/role strikes using clear non-scoring marks and summarize evidence without a worth judgment.
 23. **Given** you finish tracking the week, **when** you use worksheets 08 and 09, **then** the blotter prompts you to bring its evidence and one friction moment into the recap/recalibration, and to transfer the bounded adjustment into a new copy of worksheet 07 for the next week.
 24. **Given** you print or view the blotter, **when** using it alongside the crucible-design worksheets, **then** it is an accessible, legible 1100×850 landscape SVG with explicit title/description, printable writing space, and the same restrained visual style.
+25. **Given** you use the blotter by hand, **when** recording the week's evidence, **then** the strike-name area and seven weekday cells are clearly separated, each day has a distinct usable mark area, and row/column rules do not cross labels or writing prompts.
+26. **Given** you have one, two, or three active strikes, **when** you use the tracker and weekly reflection areas, **then** the layout gives useful writing room at each scale, with enough space for short evidence and one friction moment without making decorative whitespace or repeated instructions dominate.
+27. **Given** you scan the page, **when** moving through planning, daily tracking, and handoff, **then** the page has a clear visual hierarchy and balanced whitespace: the daily grid is primary, the evidence/friction reflection is secondary, and the 08 → 09 → fresh 07 handoff is concise and easy to find.
 
 ## Constraints and assumptions
 
@@ -102,7 +105,8 @@ At month-end, use a monthly review modeled on `static/worksheets/season-design/0
 
 1. Update this specification (`docs/specs/2026-10-25-domain-vision-edges-worksheet.md`) to cover the vision → plan → optional daily tracking → weekly review → recalibrate → monthly review loop. Verify goal, behavior, non-goals, G/W/T criteria, constraints, assumptions, and rollback.
 2. Add the six worksheets under `static/worksheets/crucible-design/`: `06_domain_vision_edges.svg`, `07_weekly_domain_plan.svg`, `07a_weekly_domain_blotter.svg`, `08_weekly_role_edge_review.svg`, `09_weekly_domain_recalibration.svg`, and `10_monthly_domain_review.svg`. Reuse corresponding source templates’ accessible 1100×850 dimensions, typography, restrained palette, rounded boxes, and printable fill-in layout.
-3. Validate all added SVGs’ XML, dimensions, text/element bounds; render previews; run the Hugo build to confirm static assets do not break the site.
+3. Refine `07a_weekly_domain_blotter.svg` for handwritten usability and whitespace balance; validate its XML, dimensions, text/element bounds and rendered preview.
+4. Validate all added SVGs’ XML, dimensions, text/element bounds; render previews; run the Hugo build to confirm static assets do not break the site.
 
 ## Rollback
 
