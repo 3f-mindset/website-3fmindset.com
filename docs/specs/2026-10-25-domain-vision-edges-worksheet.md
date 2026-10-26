@@ -2,7 +2,7 @@
 
 ## Goal
 
-Create a five-step planning sequence consistent with the existing season-design worksheets. The domain-vision snapshot helps you choose a handful of life domains, form a vision across selected domains, identify the roles that serve the vision, and use the nine Edges as a reflective lens for coherence and balance. The weekly plan turns selected domains, roles, and Edges into realistic action. The end-of-week review helps you examine how you showed up in those roles and where the Edges helped or were lacking. A friction-based recalibration worksheet uses those insights to deliberately adjust the next week. A monthly review consolidates evidence and recurring patterns across weeks so you can intentionally carry, change, or defer priorities for the next month.
+Create a five-step planning sequence consistent with the existing season-design worksheets, with an optional daily blotter between weekly planning and review. The domain-vision snapshot helps you choose a handful of life domains, form a vision across selected domains, identify the roles that serve the vision, and use the nine Edges as a reflective lens for coherence and balance. The weekly plan turns selected domains, roles, and Edges into realistic action; the blotter can track daily evidence for those planned strikes. The end-of-week review helps you examine how you showed up in those roles and where the Edges helped or were lacking. A friction-based recalibration worksheet uses those insights to deliberately adjust the next week, then informs a fresh copy of the weekly plan. A monthly review consolidates evidence and recurring patterns across weeks so you can intentionally carry, change, or defer priorities for the next month.
 
 ## User-visible behavior
 
@@ -20,6 +20,12 @@ You can then use a companion weekly plan, modeled on `static/worksheets/season-d
 - Assign an effort intention that distinguishes establishing new ground from maintaining progress, without treating the rating as personal worth.
 - Give actions visible time containers and protect capacity, restoration, and bounded relationship/community connection.
 - Ask what each commitment is in service to, identify a boundary/refusal/defer decision, and set a review for proof and adjustment.
+
+Between planning and review, you can use an optional weekly blotter, inspired by `static/worksheets/weekly-blotter.svg`, to:
+
+- Track daily evidence for the up-to-three domain/role strikes chosen on worksheet 07, without treating the tracker as a score of personal worth.
+- Carry the actual marks and a selected friction moment into worksheet 08's recap and worksheet 09's recalibration; after recalibration, make a fresh copy of worksheet 07 for the next week's plan.
+- Use straightforward marks (for example, done / partial / not done) and a weekly summary; no point weighting, universal target, or generic Core/Build/Sharpen/Maintain-to-domain mapping is required.
 
 At the end of the week, you can use a role-and-Edge review modeled on `static/worksheets/season-design/04_weekly_role_card.svg` to:
 
@@ -51,6 +57,7 @@ At month-end, use a monthly review modeled on `static/worksheets/season-design/0
 - Do not treat the monthly review as a mandatory restart or a full rewrite of your vision; keep what remains meaningful and revise priorities only when evidence or your season calls for it.
 - Do not prescribe a fixed life-domain taxonomy, a “correct” Edge for any domain, equal effort across domains, or universal numeric goals.
 - Do not modify existing worksheet files or add the new worksheet to site navigation in this task.
+- Do not make the blotter a prerequisite for the weekly planning/review cycle, or duplicate worksheet 08's role/Edge interpretation and worksheet 09's structural recalibration.
 
 ## Acceptance criteria
 
@@ -75,6 +82,9 @@ At month-end, use a monthly review modeled on `static/worksheets/season-design/0
 19. **Given** you review the month’s role/Edge evidence, **when** you identify patterns, **then** you can name Edges that repeatedly helped, felt lacking, or were overused and reflect on capacity, restoration, relief, responsibility, and agency without grading your worth.
 20. **Given** you plan the next month, **when** you complete the monthly review, **then** you can choose what to carry, change, or defer, define up to three domain/role priorities and an outcome or milestone, and name a supporting rhythm/boundary and visible action.
 21. **Given** you close the monthly review, **when** you carry the plan forward, **then** you can set a review point and translate next-month priorities into the next weekly planning cycle. The monthly worksheet follows the accessible 1100×850 landscape style of `02_monthly.svg`.
+22. **Given** you have planned up to three strikes on worksheet 07, **when** you use the optional blotter during the week, **then** you can record daily status against those planned domain/role strikes using clear non-scoring marks and summarize evidence without a worth judgment.
+23. **Given** you finish tracking the week, **when** you use worksheets 08 and 09, **then** the blotter prompts you to bring its evidence and one friction moment into the recap/recalibration, and to transfer the bounded adjustment into a new copy of worksheet 07 for the next week.
+24. **Given** you print or view the blotter, **when** using it alongside the crucible-design worksheets, **then** it is an accessible, legible 1100×850 landscape SVG with explicit title/description, printable writing space, and the same restrained visual style.
 
 ## Constraints and assumptions
 
@@ -82,6 +92,7 @@ At month-end, use a monthly review modeled on `static/worksheets/season-design/0
 - `ASSUMPTION:` Keep the four new workshop worksheets together in `static/worksheets/crucible-design/`, separate from the existing season-design worksheet sequence.
 - `ASSUMPTION:` The new paths are `06_domain_vision_edges.svg`, `07_weekly_domain_plan.svg`, `08_weekly_role_edge_review.svg`, and `09_weekly_domain_recalibration.svg` within `static/worksheets/crucible-design/`.
 - `ASSUMPTION:` Add `10_monthly_domain_review.svg` to `static/worksheets/crucible-design/` as the monthly companion; it aggregates evidence and sets next-month focus but does not replace the long-term vision sheet.
+- `ASSUMPTION:` Add the optional tracker as `static/worksheets/crucible-design/07a_weekly_domain_blotter.svg`, keeping it adjacent to worksheet 07 without renumbering or displacing existing worksheets 08–10.
 - `ASSUMPTION:` Preserve the existing `season-design/03_weekly_container.svg`, `04_weekly_role_card.svg`, and `05_friction_adjustment.svg` templates unchanged and use them only as design references.
 - `ASSUMPTION:` The weekly plan carries up to three chosen domains from the vision sheet; its Edge prompt is a reminder/selection, not a second nine-Edge lesson.
 - The nine Edge names and framing come from issue #93’s latest comment and the linked 3F Mindset book chapters.
@@ -89,8 +100,8 @@ At month-end, use a monthly review modeled on `static/worksheets/season-design/0
 
 ## Ordered implementation plan
 
-1. Update this specification (`docs/specs/2026-10-25-domain-vision-edges-worksheet.md`) to cover the complete vision → plan → weekly review → recalibrate → monthly review loop. Verify goal, behavior, non-goals, G/W/T criteria, constraints, assumptions, and rollback.
-2. Add the five worksheets under `static/worksheets/crucible-design/`: `06_domain_vision_edges.svg`, `07_weekly_domain_plan.svg`, `08_weekly_role_edge_review.svg`, `09_weekly_domain_recalibration.svg`, and `10_monthly_domain_review.svg`. Reuse the corresponding existing templates’ 1100×850 dimensions, accessibility pattern, typography palette, rounded boxes, and printable fill-in layout.
+1. Update this specification (`docs/specs/2026-10-25-domain-vision-edges-worksheet.md`) to cover the vision → plan → optional daily tracking → weekly review → recalibrate → monthly review loop. Verify goal, behavior, non-goals, G/W/T criteria, constraints, assumptions, and rollback.
+2. Add the six worksheets under `static/worksheets/crucible-design/`: `06_domain_vision_edges.svg`, `07_weekly_domain_plan.svg`, `07a_weekly_domain_blotter.svg`, `08_weekly_role_edge_review.svg`, `09_weekly_domain_recalibration.svg`, and `10_monthly_domain_review.svg`. Reuse corresponding source templates’ accessible 1100×850 dimensions, typography, restrained palette, rounded boxes, and printable fill-in layout.
 3. Validate all added SVGs’ XML, dimensions, text/element bounds; render previews; run the Hugo build to confirm static assets do not break the site.
 
 ## Rollback
