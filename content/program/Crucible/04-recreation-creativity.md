@@ -2,7 +2,7 @@
 title: "Recreation & creativity — Nine-Edge Matrix"
 showToc: true
 draft: false
-slug: "recreation-creativity"
+slug: "04-recreation-creativity"
 ---
 
 ## Applying the nine Edges across the candidate life domains

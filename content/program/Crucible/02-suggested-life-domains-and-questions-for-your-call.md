@@ -2,7 +2,7 @@
 title: "Suggested life domains and questions for your call"
 showToc: true
 draft: false
-slug: "suggested-life-domains-and-questions-for-your-call"
+slug: "02-suggested-life-domains-and-questions-for-your-call"
 ---
 
 ## Suggested life domains and questions for your call

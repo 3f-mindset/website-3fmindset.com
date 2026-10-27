@@ -2,7 +2,7 @@
 title: "Meaning, values & personal growth — Nine-Edge Matrix"
 showToc: true
 draft: false
-slug: "meaning-values-personal-growth"
+slug: "04-meaning-values-personal-growth"
 ---
 
 ## Applying the nine Edges across the candidate life domains

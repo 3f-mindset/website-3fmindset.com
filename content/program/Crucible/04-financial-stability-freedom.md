@@ -2,7 +2,7 @@
 title: "Financial stability & freedom — Nine-Edge Matrix"
 showToc: true
 draft: false
-slug: "financial-stability-freedom"
+slug: "04-financial-stability-freedom"
 ---
 
 ## Applying the nine Edges across the candidate life domains

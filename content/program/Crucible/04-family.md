@@ -2,7 +2,7 @@
 title: "Family — Nine-Edge Matrix"
 showToc: true
 draft: false
-slug: "family"
+slug: "04-family"
 ---
 
 ## Applying the nine Edges across the candidate life domains

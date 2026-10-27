@@ -2,7 +2,7 @@
 title: "Work & contribution — Nine-Edge Matrix"
 showToc: true
 draft: false
-slug: "work-contribution"
+slug: "04-work-contribution"
 ---
 
 ## Applying the nine Edges across the candidate life domains

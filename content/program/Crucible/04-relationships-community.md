@@ -2,7 +2,7 @@
 title: "Relationships & community — Nine-Edge Matrix"
 showToc: true
 draft: false
-slug: "relationships-community"
+slug: "04-relationships-community"
 ---
 
 ## Applying the nine Edges across the candidate life domains

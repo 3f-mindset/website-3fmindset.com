@@ -2,7 +2,7 @@
 title: "Home & daily life — Nine-Edge Matrix"
 showToc: true
 draft: false
-slug: "home-daily-life"
+slug: "04-home-daily-life"
 ---
 
 ## Applying the nine Edges across the candidate life domains

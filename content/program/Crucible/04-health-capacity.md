@@ -2,7 +2,7 @@
 title: "Health & capacity — Nine-Edge Matrix"
 showToc: true
 draft: false
-slug: "health-capacity"
+slug: "04-health-capacity"
 ---
 
 ## Applying the nine Edges across the candidate life domains

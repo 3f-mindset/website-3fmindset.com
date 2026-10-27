@@ -2,7 +2,7 @@
 title: "Working the Crucible: vision → strike → evidence → review → recalibration"
 showToc: true
 draft: false
-slug: "working-the-crucible-vision-strike-evidence-review-recalibration"
+slug: "05-working-the-crucible-vision-strike-evidence-review-recalibration"
 ---
 
 ## Working the Crucible: vision → strike → evidence → review → recalibration

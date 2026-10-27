@@ -2,7 +2,7 @@
 title: "Use the Edges as a lens across your domains"
 showToc: true
 draft: false
-slug: "use-the-edges-as-a-lens-across-your-domains"
+slug: "03-use-the-edges-as-a-lens-across-your-domains"
 ---
 
 ## Use the Edges as a lens across your domains

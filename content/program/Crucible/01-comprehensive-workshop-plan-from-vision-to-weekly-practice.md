@@ -2,7 +2,7 @@
 title: "Comprehensive workshop plan: From Vision to Weekly Practice"
 showToc: true
 draft: false
-slug: "comprehensive-workshop-plan-from-vision-to-weekly-practice"
+slug: "01-comprehensive-workshop-plan-from-vision-to-weekly-practice"
 ---
 
 ## Comprehensive workshop plan: From Vision to Weekly Practice
