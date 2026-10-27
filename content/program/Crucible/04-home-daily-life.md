@@ -28,5 +28,3 @@ Edge chapters: [Direction](https://github.com/3f-mindset/book/blob/main/Draft/9%
 ### How to use this without turning it into a scorecard
 
 Do not assess all 72 combinations at once. Choose up to three domains, then scan the nine Edges for each one. For each domain, note one Edge that feels well-formed for you, one that may be brittle/dull or overused, and one small action you can test. Use each Edge as a lens and read it in your domain’s real-world context. You do not need to give every Edge equal prominence or make an immediate change in every domain.
-
-Source comment: Applying the nine Edges across the candidate life domains.

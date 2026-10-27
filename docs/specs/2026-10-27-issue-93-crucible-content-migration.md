@@ -20,7 +20,7 @@ Readers can browse the complete substance of each issue comment as a separate Ma
 1. **Given** issue #93 has five comments, **when** the Crucible content is inspected, **then** there are Markdown pages for comments 1, 2, 3, and 5, each preserving the full comment body.
 2. **Given** comment 4 contains eight candidate life domains, **when** it is migrated, **then** it has eight separate domain pages, each containing that domain's complete nine-Edge matrix and relevant introductory/usage guidance without combining matrices from other domains.
 3. **Given** the pages are viewed as website content, **when** Markdown is rendered, **then** frontmatter matches existing program conventions and headings, links, lists, and tables remain valid Markdown.
-4. **Given** a reader opens a migrated page, **when** they read its content, **then** the page contains no added source-attribution link to issue #93; hyperlinks that were part of the original comment remain.
+4. **Given** a reader opens a migrated page, **when** they read its content, **then** the page contains no added source-attribution links or plain-text source-attribution lines; hyperlinks that were part of the original comment remain.
 5. **Given** the work is added to PR #95, **when** the PR changes are inspected, **then** only the migration spec and these new content pages are added; existing unrelated untracked/working changes are preserved.
 
 ## Constraints and assumptions
@@ -31,14 +31,14 @@ Readers can browse the complete substance of each issue comment as a separate Ma
 - `ASSUMPTION:` For the matrix split, the first page includes comment-level introduction and the last page includes the final usage guidance; every domain's page includes its own full nine-row matrix and the original column explanations.
 - `ASSUMPTION:` Use descriptive kebab-case page paths based on the original comment titles/domain names. Add ordinary Hugo frontmatter (`title`, `showToc`, `draft`, `slug`) modeled on the existing `content/program/curriculum/index.md` page.
 - Number page filenames by source comment progression: comment 1 uses `01-`, comment 2 `02-`, comment 3 `03-`, all eight domain pages from comment 4 use `04-<domain>-`, and comment 5 uses `05-`. Keep each frontmatter slug aligned with its numbered filename.
-- The content comment title and body from issue #93 are the source of truth at migration time; preserve hyperlinks that were part of each original comment, but do not add source-attribution links to the migrated pages.
+- The content comment title and body from issue #93 are the source of truth at migration time; preserve hyperlinks that were part of each original comment, but do not add source-attribution links or lines to the migrated pages.
 
 ## Ordered plan
 
 1. Fetch the exact five comment bodies and retain their titles/order as provenance.
 2. Add this spec and create the `Crucible` content directory.
 3. Convert comments 1, 2, 3, and 5 into one numbered Markdown page apiece; split comment 4 into eight numbered `04-` pages aligned with its eight domain sections, preserving every matrix row and relevant shared guidance.
-4. Check page count, title/frontmatter, absence of added source-attribution links, completeness against the comment bodies, Markdown table structure, and diff scope.
+4. Check page count, title/frontmatter, absence of added source-attribution links/lines, completeness against the comment bodies, Markdown table structure, and diff scope.
 5. Run the repository's appropriate site/content validation, then commit and push the PR branch and verify PR #95 includes the changes.
 
 ## Rollback
