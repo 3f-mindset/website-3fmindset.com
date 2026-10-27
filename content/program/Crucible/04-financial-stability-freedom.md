@@ -26,5 +26,3 @@ Edge chapters: [Direction](https://github.com/3f-mindset/book/blob/main/Draft/9%
 | Expression | You hide or posture; you avoid financial conversations until conflict or use money to signal status and control. | You are sharing some needs or ideas more readily than others; comfort and clarity may depend on the situation. (for example, depending on the season or circumstances). | You speak about money clearly and without unnecessary shame; you discuss expectations, negotiate, ask questions, and plan with relevant people. |
 
 Source comment: Applying the nine Edges across the candidate life domains.
-
-Source: [Financial stability & freedom — Nine-Edge Matrix](https://github.com/3f-mindset/website-3fmindset.com/issues/93#issuecomment-6403318737)

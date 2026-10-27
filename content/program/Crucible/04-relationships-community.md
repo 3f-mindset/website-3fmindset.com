@@ -26,5 +26,3 @@ Edge chapters: [Direction](https://github.com/3f-mindset/book/blob/main/Draft/9%
 | Expression | You fear being seen or need constant reassurance; you hide affection or make every interaction a bid for validation. | You are sharing some needs or ideas more readily than others; comfort and clarity may depend on the situation. (for example, depending on the season or circumstances). | You let care, needs, and appreciation become visible; you initiate contact, speak directly, and show warmth. |
 
 Source comment: Applying the nine Edges across the candidate life domains.
-
-Source: [Relationships & community — Nine-Edge Matrix](https://github.com/3f-mindset/website-3fmindset.com/issues/93#issuecomment-6403318737)

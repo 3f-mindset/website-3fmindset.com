@@ -79,5 +79,3 @@ For each priority domain, record:
 - Use effort ratings as a planning aid, not a score of your personal worth.
 - Distinguish a bounded act of connection from taking on an open-ended role.
 - Defer or adapt any exercise that does not fit your circumstances.
-
-Source: [Comprehensive workshop plan: From Vision to Weekly Practice](https://github.com/3f-mindset/website-3fmindset.com/issues/93#issuecomment-6149587664)

@@ -26,5 +26,3 @@ Edge chapters: [Direction](https://github.com/3f-mindset/book/blob/main/Draft/9%
 | Expression | You hide needs or feel defined by them; you conceal distress until crisis or make health the only thing others see. | You are sharing some needs or ideas more readily than others; comfort and clarity may depend on the situation. (for example, depending on the season or circumstances). | You acknowledge your needs without embarrassment; you communicate symptoms, limits, preferences, and requests for support. |
 
 Source comment: Applying the nine Edges across the candidate life domains.
-
-Source: [Health & capacity — Nine-Edge Matrix](https://github.com/3f-mindset/website-3fmindset.com/issues/93#issuecomment-6403318737)

@@ -26,5 +26,3 @@ Edge chapters: [Direction](https://github.com/3f-mindset/book/blob/main/Draft/9%
 | Expression | You hide until perfect or depend on applause; you never ship or perform confidence the work cannot support. | You are sharing some needs or ideas more readily than others; comfort and clarity may depend on the situation. (for example, depending on the season or circumstances). | You trust your work enough to let it be seen and judged; you communicate ideas, share results, and make your contribution legible. |
 
 Source comment: Applying the nine Edges across the candidate life domains.
-
-Source: [Work & contribution — Nine-Edge Matrix](https://github.com/3f-mindset/website-3fmindset.com/issues/93#issuecomment-6403318737)

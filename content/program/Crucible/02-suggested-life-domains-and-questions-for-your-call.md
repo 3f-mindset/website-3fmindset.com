@@ -29,5 +29,3 @@ These are prompts, not universal categories. You may combine family with relatio
 - What would you be able to point to as evidence of your progress?
 
 After you explore, narrow your list to **three active-focus domains** for this planning cycle. Keep the others visible as maintenance or “not this cycle,” rather than treating them as unimportant. This keeps your choices at the center and connects domain selection to the Oct 13 discussion of roles, effort, and milestones.
-
-Source: [Suggested life domains and questions for your call](https://github.com/3f-mindset/website-3fmindset.com/issues/93#issuecomment-6402836641)

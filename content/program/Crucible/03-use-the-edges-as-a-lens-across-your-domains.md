@@ -32,5 +32,3 @@ For example, in **work & contribution**, you might have plenty of craft and dire
 Once you have a draft vision for several domains, ask yourself: **Do these visions form a coherent whole—or does one domain’s vision depend on neglecting another?** Which Edges might help you reconcile the tension? Direction may clarify what you want to prioritize; adaptation may help you fit the plan to real constraints; stewardship may surface responsibilities you cannot simply ignore. You do not need equal effort in every domain; look for coherence and sustainability across your overall direction.
 
 Treat this as a reflection layer—not another set of domains or a required scorecard. Keep your workshop focused on choosing a handful of life domains and forming a vision in each, then use the nine Edges to examine how you will embody that vision and where you may be out of balance.
-
-Source: [Use the Edges as a lens across your domains](https://github.com/3f-mindset/website-3fmindset.com/issues/93#issuecomment-6403059794)

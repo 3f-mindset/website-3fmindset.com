@@ -86,5 +86,3 @@ After several weekly cycles, use [Monthly Domain Review](https://github.com/3f-m
 ## Repeat the loop
 
 Visionary Domains gives direction; Weekly Domain Plan chooses the strike; Weekly Domain Blotter can record daily evidence; Weekly Role Review examines how you showed up; Weekly Recalibration changes one workable condition; and Monthly Domain Review helps you carry, change, or defer priorities. Return to the compass when your season changes, but you do not need to redefine your domains every time a week gets difficult. Let the Crucible shape the work through evidence and deliberate adjustment—not through a score of your worth.
-
-Source: [Working the Crucible: vision → strike → evidence → review → recalibration](https://github.com/3f-mindset/website-3fmindset.com/issues/93#issuecomment-6403696106)

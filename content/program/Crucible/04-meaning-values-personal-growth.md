@@ -26,5 +26,3 @@ Edge chapters: [Direction](https://github.com/3f-mindset/book/blob/main/Draft/9%
 | Expression | You fear speaking or need to be seen as enlightened; you suppress meaning or turn expression into preaching and performance. | You are sharing some needs or ideas more readily than others; comfort and clarity may depend on the situation. (for example, depending on the season or circumstances). | You voice what you are learning while staying open; you articulate beliefs and questions without forcing agreement. |
 
 Source comment: Applying the nine Edges across the candidate life domains.
-
-Source: [Meaning, values & personal growth — Nine-Edge Matrix](https://github.com/3f-mindset/website-3fmindset.com/issues/93#issuecomment-6403318737)
