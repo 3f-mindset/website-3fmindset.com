@@ -31,14 +31,14 @@ Readers can browse the complete substance of each issue comment as a separate Ma
 - `ASSUMPTION:` For the matrix split, the first page includes comment-level introduction and the last page includes the final usage guidance; every domain's page includes its own full nine-row matrix and the original column explanations.
 - `ASSUMPTION:` Use descriptive kebab-case page paths based on the original comment titles/domain names. Add ordinary Hugo frontmatter (`title`, `showToc`, `draft`, `slug`) modeled on the existing `content/program/curriculum/index.md` page.
 - Number page filenames by source comment progression: comment 1 uses `01-`, comment 2 `02-`, comment 3 `03-`, all eight domain pages from comment 4 use `04-<domain>-`, and comment 5 uses `05-`. Keep each frontmatter slug aligned with its numbered filename.
-- The content comment title and body from issue #93 are the source of truth at migration time; preserve hyperlinks that were part of each original comment, but do not add source-attribution links or lines to the migrated pages.
+- `ASSUMPTION:` Preserve the issue comments' practical guidance and domain/Edge examples, but omit references to the book, links to book material, and added source-attribution links or lines from the published pages.
 
 ## Ordered plan
 
 1. Fetch the exact five comment bodies and retain their titles/order as provenance.
 2. Add this spec and create the `Crucible` content directory.
 3. Convert comments 1, 2, 3, and 5 into one numbered Markdown page apiece; split comment 4 into eight numbered `04-` pages aligned with its eight domain sections, preserving every matrix row and relevant shared guidance.
-4. Check page count, title/frontmatter, absence of added source-attribution links/lines, completeness against the comment bodies, Markdown table structure, and diff scope.
+4. Check page count, title/frontmatter, absence of book references and added source-attribution links/lines, completeness of the practical guidance and matrices, Markdown table structure, and diff scope.
 5. Run the repository's appropriate site/content validation, then commit and push the PR branch and verify PR #95 includes the changes.
 
 ## Rollback

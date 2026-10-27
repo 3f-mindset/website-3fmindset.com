@@ -12,7 +12,7 @@ Keep **life domains** and **Edges** as two different lenses in your workshop:
 - **Domains** answer: *Where in your life are you looking?*
 - **Edges** answer: *What quality of character does this area call for—and how well is it developed or balanced in you?*
 
-The book frames the Edges as capacities that work together, rather than isolated strengths to maximize. See [The Geometry of the Blade](https://github.com/3f-mindset/book/blob/main/Draft/8%20The%20Geometry%20of%20the%20Blade%20%5B7%5D.md) and the individual chapters: [Direction](https://github.com/3f-mindset/book/blob/main/Draft/9%20The%20Edge%20of%20Direction%20%5B8%5D.md), [Craft](https://github.com/3f-mindset/book/blob/main/Draft/10%20The%20Edge%20of%20Craft%20%5B9%5D.md), [Alignment](https://github.com/3f-mindset/book/blob/main/Draft/11%20The%20Edge%20of%20Alignment%20%5B10%5D.md), [Stewardship](https://github.com/3f-mindset/book/blob/main/Draft/12%20The%20Edge%20of%20Stewardship%20%5B11%5D.md), [Adaptation](https://github.com/3f-mindset/book/blob/main/Draft/13%20The%20Edge%20of%20Adaptation%20%5B12%5D.md), [Service](https://github.com/3f-mindset/book/blob/main/Draft/14%20The%20Edge%20of%20Service%20%5B13%5D.md), [Legacy](https://github.com/3f-mindset/book/blob/main/Draft/15%20The%20Edge%20of%20Legacy%20%5B14%5D.md), [Integration](https://github.com/3f-mindset/book/blob/main/Draft/16%20The%20Edge%20of%20Integration%20%5B15%5D.md), and [Expression](https://github.com/3f-mindset/book/blob/main/Draft/17%20The%20Edge%20of%20Expression%20%5B16%5D.md).
+The nine Edges are capacities that work together, rather than isolated strengths to maximize.
 
 ### Check the Edges within each priority domain
 

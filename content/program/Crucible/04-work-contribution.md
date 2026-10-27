@@ -7,9 +7,7 @@ slug: "04-work-contribution"
 
 ## Applying the nine Edges across the candidate life domains
 
-Use these as applications of the book’s Edge concepts to candidate domains, not as prescriptions from the book. Red — brittle/dull describes an Edge that is weak or unused, or has become rigid, excessive, or distorted. Yellow — mixed/in progress describes a nonjudgmental, context-dependent or developing expression, not a score or diagnosis. Green — strong/sharp describes an Edge that is formed, useful, and responsive—not turned up to maximum. For each domain, compare what you experience internally with what you do or show externally.
-
-Edge chapters: [Direction](https://github.com/3f-mindset/book/blob/main/Draft/9%20The%20Edge%20of%20Direction%20%5B8%5D.md) · [Craft](https://github.com/3f-mindset/book/blob/main/Draft/10%20The%20Edge%20of%20Craft%20%5B9%5D.md) · [Alignment](https://github.com/3f-mindset/book/blob/main/Draft/11%20The%20Edge%20of%20Alignment%20%5B10%5D.md) · [Stewardship](https://github.com/3f-mindset/book/blob/main/Draft/12%20The%20Edge%20of%20Stewardship%20%5B11%5D.md) · [Adaptation](https://github.com/3f-mindset/book/blob/main/Draft/13%20The%20Edge%20of%20Adaptation%20%5B12%5D.md) · [Service](https://github.com/3f-mindset/book/blob/main/Draft/14%20The%20Edge%20of%20Service%20%5B13%5D.md) · [Legacy](https://github.com/3f-mindset/book/blob/main/Draft/15%20The%20Edge%20of%20Legacy%20%5B14%5D.md) · [Integration](https://github.com/3f-mindset/book/blob/main/Draft/16%20The%20Edge%20of%20Integration%20%5B15%5D.md) · [Expression](https://github.com/3f-mindset/book/blob/main/Draft/17%20The%20Edge%20of%20Expression%20%5B16%5D.md)
+Use these as applications of the nine Edges to candidate domains. Red — brittle/dull describes an Edge that is weak or unused, or has become rigid, excessive, or distorted. Yellow — mixed/in progress describes a nonjudgmental, context-dependent or developing expression, not a score or diagnosis. Green — strong/sharp describes an Edge that is formed, useful, and responsive—not turned up to maximum. For each domain, compare what you experience internally with what you do or show externally.
 
 ### Work & contribution
 
