@@ -1,81 +1,66 @@
 ---
-title: "Comprehensive workshop plan: From Vision to Weekly Practice"
+title: "Crucible progression: From Vision to Monthly Review"
 showToc: true
 draft: false
 slug: "01-comprehensive-workshop-plan-from-vision-to-weekly-practice"
 ---
 
-## Comprehensive workshop plan: From Vision to Weekly Practice
+## Crucible progression: From Vision to Monthly Review
 
-**Purpose:** Translate your longer-term vision into focused roles, measurable goals, and sustainable weekly actions, while making intentional room for relationships and community. This synthesizes the Oct 6 and Oct 13 Crucible conversations; it is not a verbatim facilitator guide.
+Crucible is a standalone product for current clients. No prior program, including IGNITION, is required. The opening foundations—clarifying vision, protecting space for what matters, and cutting distractions—belong to Crucible even when they overlap with material participants may have encountered elsewhere.
 
-**Audience:** You, as you work through your life domains, roles, goals, and weekly accountability.
+The Crucible is a standard progression through the material. Its order stays the same whether you use a recording for self-study, work 1:1, or participate in a group. The amount of time spent on each part can vary; there is no prescribed session length.
 
-**Suggested duration:** 2 hours (allow 2.5 hours if you want more reflection and sharing).
+## Opening foundations
 
-**Materials:** Vision/role worksheet, calendar, goal-and-milestone worksheet, effort-rating scale, and pen or digital notes.
+Begin by clarifying what matters in this season, making room for it, and identifying distractions or commitments that compete with it. These foundations prepare you to choose a workable vision and act on it. They are part of Crucible, not prerequisites from another product.
 
-### Prepare
-- Review the [Oct 6 call](https://app.fireflies.ai/view/01M3ND1FQRK49EHJEDRC4ZJ5HT) and [Oct 13 call](https://app.fireflies.ai/view/01M4BCDQ4R0PDJ1QBRQXJVJMPB).
-- Prepare the worksheets below. Treat example metrics from the calls as examples only—not recommended targets.
-- Choose domains that matter to you, and share only what you are comfortable sharing.
+## The six-stage sequence
 
-### Agenda
+### 1. Vision — Visionary Domains
 
-**1. Arrive and name your current season — 10 min**
-Name what is holding your attention and what season you are in.
-- Ask yourself: What is going well? What feels unresolved or is asking for attention?
-- **Your output:** A short statement of your current season and a central tension or opportunity.
+Choose up to three active domains for this cycle. For each, describe the longer-term direction you want, the role you want to embody, and visible evidence or a next action. Use the eight domain matrix pages as examples to prompt reflection; they are references, not eight required worksheets. Keep other domains in maintenance or defer them without labeling them unimportant.
 
-**2. Select domains for this cycle — 15 min**
-List relevant life domains, then choose up to three for active development in the upcoming cycle. Mark other domains as maintenance or intentionally deferred; this is a current-cycle choice, not a permanent ranking.
-- Ask yourself: What deserves focused attention now? What can I maintain? What would it cost me to advance everything at once?
-- **Your output:** A prioritized domain list with active-growth and maintenance areas identified.
+**Output:** A focused vision across up to three domains, connected to roles, evidence, and an initial action.
 
-**3. Define your roles and the version of yourself you want to embody — 20 min**
-For each priority domain, name the roles you hold and select the role(s) you want to develop. Describe what a strong version of you in each role would do, embody, or make possible.
-- Ask yourself: What roles belong here? What does a “5” version of me look like in this role? Which roles need active effort versus maintenance?
-- **Your output:** A role definition and observable description of success for each focus role.
+### 2. Weekly Domain Plan
 
-**4. Write your longer-term vision — 20 min**
-Write a concrete, vivid description of the future you want in each focus domain. Be specific while keeping your own definition of success.
-- Ask yourself: If this is going well over the longer term, what would I see, experience, or be able to point to? Why does this matter to me?
-- **Your output:** A short vision statement for each priority domain.
+Translate the vision into realistic weekly strikes. Connect each action to its domain, role, and relevant Edge; give it a time container; and account for capacity, recovery, support, and boundaries. Name what the plan is in service to and what you will decline, defer, or protect.
 
-**5. Translate your vision into goals, strategy, tactics, and milestones — 25 min**
-For each focus domain, work from your vision toward an outcome, an approach, specific actions, and intermediate evidence of progress. Distinguish the goal (result), strategy (approach), and tactics (actions).
-- Ask yourself: What outcome would demonstrate progress? What is my next milestone? What actions can I take this week?
-- **Your output:** At least one measurable or observable goal, a strategy, initial tactics, and a milestone for each focus domain.
+**Output:** A usable plan for the coming week, sized to actual conditions.
 
-**6. Plan one cycle and rate your effort — 15 min**
-Choose a short cycle (suggested: one week). Assign effort ratings to your priority roles/actions using a scale you define. Establishing new ground may require a higher effort rating, while maintaining established progress may require less; your ratings describe effort, not your worth.
-- Ask yourself: Where do I need a deliberate “5” push? What is already in maintenance? Is this plan sustainable alongside my existing commitments?
-- **Your output:** A weekly action plan with effort ratings and protected calendar time.
+### 3. Evidence — optional Weekly Domain Blotter
 
-**7. Check alignment, boundaries, and sustainable connection — 15 min**
-Review your proposed commitments by asking “What is this in service to?” Notice seductions, defaults, or requests that may pull you away from your aims. Choose one bounded relationship or community action—such as a short check-in or scheduled conversation—without assuming ongoing responsibility. Decide what to accept, decline, defer, or renegotiate, and acknowledge any meaningful trade-offs.
-- Ask yourself: What connection matters to me this cycle? What is a realistic way for me to show up? What capacity limit or boundary will make it sustainable? What trade-off am I choosing, and what might I feel about it?
-- **Your output:** One bounded connection action, one boundary or decision, and an acknowledged trade-off if applicable.
+Notice what happened during the week and what conditions shaped it. The Weekly Domain Blotter is an optional way to record daily evidence; a calendar, notes, or memory may also inform the review. Evidence is for learning about the plan and circumstances, not scoring yourself.
 
-**8. Close and schedule your review — 10 min**
-Name one next action and schedule a review at the end of your selected cycle.
-- At review, ask yourself: What moved forward? What did I learn about my effort or capacity? Where did friction or delay appear? What should I continue, change, or stop next cycle?
-- **Your output:** A review date and a commitment to recalibrate rather than treat this cycle’s priorities as permanent.
+**Output:** Observations about actions, partial progress, interruptions, support, or friction.
 
-### Your take-home worksheet
-For each priority domain, record:
-1. The domain and its status this cycle (active growth / maintenance / deferred).
-2. The role(s) you want to develop and what success in each role looks like.
-3. Your longer-term vision and why it matters to you.
-4. Your goal / outcome, strategy, tactics, and next milestone.
-5. This week’s actions, effort ratings, and calendar blocks.
-6. Your alignment check: “What is this in service to?”
-7. One bounded relationship/community action and any boundary you need.
-8. Trade-offs or emotions you want to acknowledge.
-9. Your review date and questions about progress, learning, friction, and next-cycle adjustment.
+### 4. Weekly Role Review
 
-### Design notes
-- Keep your goals and metrics self-defined. The calls mention examples such as $5,000/month and A1C 5.6; these are not universal targets or advice.
-- Use effort ratings as a planning aid, not a score of your personal worth.
-- Distinguish a bounded act of connection from taking on an open-ended role.
-- Defer or adapt any exercise that does not fit your circumstances.
+Review how you participated in up to three roles using observable evidence. Notice which qualities helped, what felt difficult to access, and whether a strength became overused. Look for a useful pattern without turning the review into a judgment of your worth.
+
+**Output:** A grounded account of the week and a role or pattern to carry into recalibration.
+
+### 5. Weekly Recalibration
+
+Choose a friction point from the review and distinguish what you intended from what happened. Consider structural conditions such as time, capacity, recovery, boundaries, or support. Make a bounded adjustment to the next weekly plan rather than redesigning your whole life.
+
+**Output:** One workable adjustment, with the support or boundary and evidence that will help you learn whether it fits.
+
+### 6. Monthly Domain Review — every fourth weekly cycle
+
+With every fourth weekly cycle, complete the Monthly Domain Review **in addition to** the regular weekly planning, evidence, role review, and recalibration sequence. Compare the month’s direction with calendar and weekly evidence; decide what to carry, change, or defer; and bring those priorities into the next weekly plan. The monthly review does not replace any weekly worksheet.
+
+**Output:** Up to three next-month priorities, a supporting rhythm or boundary, a visible first action, and a review point.
+
+## How the sequence works in each format
+
+- **Recorded self-study:** Follow the same order with the worksheets and reflection prompts. Pause or revisit material as needed; the sequence remains unchanged.
+- **1:1:** Work through the same stages with a coach. Use structured reflection and sharing to make decisions and complete the relevant worksheet.
+- **Group:** Follow the same stages with structured sharing expected. Establish a group confidentiality agreement for personal reflections shared in the session.
+
+## Carry the cycle forward
+
+After recalibration, start the next Weekly Domain Plan with the bounded adjustment and the evidence you want to notice. Repeat the weekly sequence; on every fourth weekly cycle, add the Monthly Domain Review. Return to Vision when your season or circumstances change, not simply because a week was difficult.
+
+Across all stages, domains are self-defined, Edges are a lens rather than a scorecard, and actions should fit real capacity. Adapt the work to circumstances while keeping the progression intact.

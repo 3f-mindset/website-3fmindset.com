@@ -1,11 +1,11 @@
 ---
-title: "Suggested life domains and questions for your call"
+title: "Choosing Domains for Your Crucible Vision"
 showToc: true
 draft: false
 slug: "02-suggested-life-domains-and-questions-for-your-call"
 ---
 
-## Suggested life domains and questions for your call
+## Choosing Domains for Your Crucible Vision
 
 Use these as candidate domains—not a required taxonomy—and choose, combine, or rename them. This gives you enough range to uncover your priorities without turning the discussion into an exhaustive life-area inventory.
 
@@ -28,4 +28,4 @@ These are prompts, not universal categories. You may combine family with relatio
 - Which role within this domain do you want to strengthen?
 - What would you be able to point to as evidence of your progress?
 
-After you explore, narrow your list to **three active-focus domains** for this planning cycle. Keep the others visible as maintenance or “not this cycle,” rather than treating them as unimportant. This keeps your choices at the center and connects domain selection to the Oct 13 discussion of roles, effort, and milestones.
+After you explore, choose **up to three active-focus domains** for this planning cycle. Keep the others visible as maintenance or “not this cycle,” rather than treating them as unimportant. The eight domain matrix pages are examples to consult during Vision; they are not required worksheets, and you can choose a different domain or combine examples. The chosen domains carry forward into Visionary Domains and then the Weekly Domain Plan.

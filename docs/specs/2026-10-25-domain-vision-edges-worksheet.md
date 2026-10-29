@@ -2,7 +2,7 @@
 
 ## Goal
 
-Create a five-step planning sequence consistent with the existing season-design worksheets, with an optional daily blotter between weekly planning and review. The domain-vision snapshot helps you choose a handful of life domains, form a vision across selected domains, identify the roles that serve the vision, and use the nine Edges as a reflective lens for coherence and balance. The weekly plan turns selected domains, roles, and Edges into realistic action; the blotter can track daily evidence for those planned strikes. The end-of-week review helps you examine how you showed up in those roles and where the Edges helped or were lacking. A friction-based recalibration worksheet uses those insights to deliberately adjust the next week, then informs a fresh copy of the weekly plan. A monthly review consolidates evidence and recurring patterns across weeks so you can intentionally carry, change, or defer priorities for the next month.
+Create the worksheets for a fixed six-stage Crucible progression, with an optional daily blotter between weekly planning and review. The Vision stage helps you choose up to three active life domains, form a vision, identify the roles that serve it, and use the nine Edges as a reflective lens for coherence and balance. The Weekly Domain Plan turns selected domains, roles, and Edges into realistic action; the optional blotter can track daily evidence for those planned strikes. The Weekly Role Review helps you examine how you showed up and where the Edges helped or were lacking. Weekly Recalibration uses those insights to adjust the next week, then informs a fresh Weekly Domain Plan. With every fourth weekly cycle, Monthly Domain Review consolidates evidence and recurring patterns alongside the regular weekly worksheets so you can intentionally carry, change, or defer priorities for the next month. The same sequence applies to recorded self-study, 1:1, and group delivery; pacing may vary and no fixed duration is prescribed.
 
 ## User-visible behavior
 
@@ -40,13 +40,15 @@ Then use a next-week recalibration worksheet modeled on `static/worksheets/seaso
 - Identify a structural cause (such as capacity, unclear action, missing time container, boundary, recovery, or support) rather than blaming character.
 - Make a bounded adjustment to next week’s domain action, Edge cue, time container, support, or boundary, then name what evidence you will review.
 
-At month-end, use a monthly review modeled on `static/worksheets/season-design/02_monthly.svg` to:
+With every fourth weekly cycle, use a monthly review modeled on `static/worksheets/season-design/02_monthly.svg`, in addition to the regular weekly worksheets, to:
 
 - Review your calendar and weekly evidence across up to three focus domains and their roles; distinguish what you intended from how you actually spent time and showed up.
 - Notice which Edges repeatedly helped, felt lacking, or became overused across the month, without scoring yourself or trying to optimize every Edge.
 - Review how capacity, restoration, relief, responsibility, and agency affected your ability to act on the vision.
 - Choose what to carry forward, change, or defer for next month, including a domain/role focus, a clear outcome or milestone, a supporting rhythm/boundary, and one visible action.
 - Set a monthly review point and carry the chosen priorities into the next weekly planning cycle.
+
+The recurring cadence is: Weekly Domain Plan → evidence (optionally using Weekly Domain Blotter) → Weekly Role Review → Weekly Recalibration, then repeat with the adjusted plan. With every fourth weekly cycle, complete Monthly Domain Review in addition to those weekly worksheets; it does not replace weekly planning, review, or recalibration.
 
 ## Non-goals
 
@@ -78,7 +80,7 @@ At month-end, use a monthly review modeled on `static/worksheets/season-design/0
 15. **Given** you identify an Edge difficulty, **when** you recalibrate, **then** you can consider which Edge needs support/development or moderation without labeling yourself as deficient.
 16. **Given** you identify a repeated friction, **when** you choose an adjustment, **then** you can identify a structural cause (e.g., time, capacity, unclear action, recovery, support, or boundary) and choose a concrete next-week change to the domain action, Edge cue, container, support, or boundary.
 17. **Given** you have chosen the next-week change, **when** you close the recalibration worksheet, **then** you can name evidence to track and a review point. The recalibration worksheet follows the accessible 1100×850 landscape style of `05_friction_adjustment.svg`.
-18. **Given** you have completed several weekly cycles, **when** you conduct a monthly review, **then** you can compare your vision and priorities with calendar/weekly evidence across domains and roles.
+18. **Given** you reach every fourth weekly cycle, **when** you conduct the monthly review alongside the normal weekly worksheets, **then** you can compare your vision and priorities with calendar/weekly evidence across domains and roles.
 19. **Given** you review the month’s role/Edge evidence, **when** you identify patterns, **then** you can name Edges that repeatedly helped, felt lacking, or were overused and reflect on capacity, restoration, relief, responsibility, and agency without grading your worth.
 20. **Given** you plan the next month, **when** you complete the monthly review, **then** you can choose what to carry, change, or defer, define up to three domain/role priorities and an outcome or milestone, and name a supporting rhythm/boundary and visible action.
 21. **Given** you close the monthly review, **when** you carry the plan forward, **then** you can set a review point and translate next-month priorities into the next weekly planning cycle. The monthly worksheet follows the accessible 1100×850 landscape style of `02_monthly.svg`.
@@ -90,6 +92,9 @@ At month-end, use a monthly review modeled on `static/worksheets/season-design/0
 27. **Given** you scan the page, **when** moving through planning, daily tracking, and handoff, **then** the page has a clear visual hierarchy and balanced whitespace: the daily grid is primary, the evidence/friction reflection is secondary, and the 08 → 09 → fresh 07 handoff is concise and easy to find.
 28. **Given** any crucible-design worksheet refers to another sheet, **when** a participant reads its visible text or accessible title/description, **then** it identifies the companion by its title—not a sequence number or numeric shorthand.
 29. **Given** any crucible-design worksheet is opened, **when** its title is read, **then** the title is context-appropriate, adjective-first, and uses the agreed sheet name: `Visionary Domains`, `Weekly Domain Plan`, `Weekly Domain Blotter`, `Weekly Role Review`, `Weekly Recalibration`, or `Monthly Domain Review`.
+30. **Given** participants use Crucible in recorded self-study, 1:1, or group delivery, **when** they progress through the materials, **then** the same order is maintained: Vision, Weekly Domain Plan, Evidence, Weekly Role Review, Weekly Recalibration, and Monthly Domain Review; no fixed duration is required.
+31. **Given** participants begin Vision, **when** selecting domains, **then** they may choose up to three active domains and use the eight domain matrix pages as optional examples, not required worksheets.
+32. **Given** participants reach the fourth weekly cycle, **when** they complete Monthly Domain Review, **then** they complete it in addition to the normal weekly worksheets.
 
 ## Constraints and assumptions
 
@@ -102,7 +107,9 @@ At month-end, use a monthly review modeled on `static/worksheets/season-design/0
 - `ASSUMPTION:` Use the adjective-first titles `Visionary Domains`, `Weekly Domain Plan`, `Weekly Domain Blotter`, `Weekly Role Review`, `Weekly Recalibration`, and `Monthly Domain Review` for the SVG `<title>` elements and matching visible page titles.
 - `ASSUMPTION:` Preserve the existing `season-design/03_weekly_container.svg`, `04_weekly_role_card.svg`, and `05_friction_adjustment.svg` templates unchanged and use them only as design references.
 - `ASSUMPTION:` The weekly plan carries up to three chosen domains from the vision sheet; its Edge prompt is a reminder/selection, not a second nine-Edge lesson.
-- The nine Edge names and framing come from issue #93’s latest comment and the linked 3F Mindset book chapters.
+- `ASSUMPTION:` Crucible is a standalone product for current clients; IGNITION is not a prerequisite. Vision, protecting space, and cutting distractions may be used as opening foundations even if a participant has encountered those themes elsewhere.
+- `ASSUMPTION:` Sequence is invariant across recorded self-study, 1:1, and group delivery; delivery pace and duration vary. The eight domain matrices are Vision-stage references, not required worksheets.
+- The nine Edge names and framing are part of the Crucible framework.
 - Preserve participant agency: domains are examples; visions/goals are self-defined; Edges are a lens, not a scorecard.
 
 ## Ordered implementation plan

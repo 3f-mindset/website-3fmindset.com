@@ -1,13 +1,13 @@
 ---
-title: "Working the Crucible: vision → strike → evidence → review → recalibration"
+title: "Working the Crucible: Vision → Weekly Practice → Monthly Review"
 showToc: true
 draft: false
 slug: "05-working-the-crucible-vision-strike-evidence-review-recalibration"
 ---
 
-## Working the Crucible: vision → strike → evidence → review → recalibration
+## Working the Crucible: Vision → Weekly Practice → Monthly Review
 
-Use these worksheets as one repeating practice for the ongoing Crucible—not as a one-time planning exercise or a scorecard. The Crucible image is practical: keep the direction visible, bring the right quality to the work, test the plan against the heat of real conditions, then use what happened to shape a more workable next strike. “Domain” means an area of life you choose to focus on; “role” means how you participate there; an “Edge” is a quality of character you bring to that role. Edges are a lens for reflection, not domains to add or scores to optimize.
+Use these worksheets as the fixed six-stage Crucible progression, not as a one-time planning exercise or a scorecard. In the first pass, establish Vision and make the first Weekly Domain Plan. Then repeat the weekly stages—plan, notice evidence, review roles, and recalibrate—using what happened to shape a more workable next strike. Every fourth weekly cycle, complete Monthly Domain Review in addition to the regular weekly worksheets. “Domain” means an area of life you choose to focus on; “role” means how you participate there; an “Edge” is a quality of character you bring to that role. Edges are a lens for reflection, not domains to add or scores to optimize.
 
 Use only as many spaces as are useful. The worksheets allow you to leave unused rows blank; the Weekly Domain Blotter is optional; you can revise a plan as conditions change. Describe evidence about the plan and circumstances, never a verdict on your worth.
 
@@ -72,7 +72,7 @@ Use [Weekly Recalibration](https://github.com/3f-mindset/website-3fmindset.com/b
 
 ## Monthly Domain Review
 
-After several weekly cycles, use [Monthly Domain Review](https://github.com/3f-mindset/website-3fmindset.com/blob/feat/domain-vision-edges-worksheet/static/worksheets/crucible-design/10_monthly_domain_review.svg) to step back from the heat of a single week. Draw on Visionary Domains, Weekly Domain Plan, Weekly Domain Blotter when used, Weekly Role Review, Weekly Recalibration, your calendar, and your own notes. This is a checkpoint, not a mandatory restart or a demand to rewrite a vision that still matters.
+With every fourth weekly cycle, use [Monthly Domain Review](https://github.com/3f-mindset/website-3fmindset.com/blob/feat/domain-vision-edges-worksheet/static/worksheets/crucible-design/10_monthly_domain_review.svg) to step back from the heat of a single week. Complete it in addition to that cycle’s Weekly Domain Plan, evidence gathering, Weekly Role Review, and Weekly Recalibration. Draw on Visionary Domains, the Weekly Domain Blotter when used, your calendar, and your own notes. This is a checkpoint, not a replacement for weekly work, a mandatory restart, or a demand to rewrite a vision that still matters.
 
 - **“Month”** names the month you are reviewing. **“Weeks … through …”** bounds the weekly cycles or dates you considered; choose the span that matches your evidence rather than forcing a fixed number of weeks.
 - **Aim & Domain Evidence:** In **“Domain(s) in focus,”** name the areas whose direction you are reviewing. In **“What time/actions aligned?”** compare the intended focus with calendar entries and actual actions. In **“Gap or meaningful progress,”** record a notable difference, movement, or change in conditions. Treat calendar time as evidence, not a complete measure of meaning or care.
@@ -85,4 +85,4 @@ After several weekly cycles, use [Monthly Domain Review](https://github.com/3f-m
 
 ## Repeat the loop
 
-Visionary Domains gives direction; Weekly Domain Plan chooses the strike; Weekly Domain Blotter can record daily evidence; Weekly Role Review examines how you showed up; Weekly Recalibration changes one workable condition; and Monthly Domain Review helps you carry, change, or defer priorities. Return to the compass when your season changes, but you do not need to redefine your domains every time a week gets difficult. Let the Crucible shape the work through evidence and deliberate adjustment—not through a score of your worth.
+The fixed order is Visionary Domains → Weekly Domain Plan → Evidence (optionally using Weekly Domain Blotter) → Weekly Role Review → Weekly Recalibration → Monthly Domain Review. Repeat the weekly stages in order, adding Monthly Domain Review every fourth weekly cycle without replacing any weekly worksheet. Return to Vision when your season changes, but you do not need to redefine your domains every time a week gets difficult. Let the Crucible shape the work through evidence and deliberate adjustment—not through a score of your worth.
