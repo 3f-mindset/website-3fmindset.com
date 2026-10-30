@@ -1,0 +1,24 @@
+---
+title: "Family — Nine-Edge Matrix"
+showToc: true
+draft: false
+slug: "04-family"
+---
+
+## Applying the nine Edges across the candidate life domains
+
+Use these as applications of the nine Edges to candidate domains. Red — brittle/dull describes an Edge that is weak or unused, or has become rigid, excessive, or distorted. Yellow — mixed/in progress describes a nonjudgmental, context-dependent or developing expression, not a score or diagnosis. Green — strong/sharp describes an Edge that is formed, useful, and responsive—not turned up to maximum. For each domain, compare what you experience internally with what you do or show externally.
+
+### Family
+
+| Edge | Red — brittle/dull — internal; external | Yellow — mixed/in progress — internal; external | Green — strong/sharp — internal; external |
+|---|---|---|---|
+| Direction | You feel pulled by inherited scripts or reject every obligation; you drift through roles or impose a rigid ideal on family members. | You are still clarifying what matters in this area; some choices follow a priority, while others are shaped by immediate demands. (for example, depending on the season or circumstances). | You can name the family life you want to build; you prioritize practices and commitments that serve it. |
+| Craft | You feel you should instinctively know what to do or avoid trying; you repeat poor habits or withdraw from family work. | You are building confidence through practice; some routines feel workable, while others still need learning or support. (for example, depending on the season or circumstances). | You accept care, parenting, partnership, and repair require learning; you practice dependable routines, communication, and support. |
+| Alignment | You feel torn between obligation and resentment; you perform while withholding care or enforce ideals without listening. | You are weighing your values against real constraints; some choices feel congruent, while others remain unsettled. (for example, depending on the season or circumstances). | Your family role fits your values and commitments; you keep promises and speak honestly about what you can provide. |
+| Stewardship | You feel solely responsible or disengaged from shared care; you overmanage everyone or let necessary needs deteriorate. | You are tending this area unevenly; a few resources or responsibilities are managed intentionally, while others need attention. (for example, depending on the season or circumstances). | You see people, time, and household capacity as needing care; you maintain dependable structures and distribute responsibility fairly. |
+| Adaptation | Change feels like loss of control or an excuse to abandon commitments; you demand old arrangements persist or become unreliable as needs change. | You are adjusting to changing circumstances; some responses fit the new situation, while others still reflect the old one. (for example, depending on the season or circumstances). | You accept family members and seasons change; you adjust roles and expectations as needs shift. |
+| Service | You equate love with sacrifice or treat family needs as intrusions; you martyr yourself and foster dependence or refuse necessary support. | You are finding a workable balance between contributing and respecting capacity; what feels appropriate may vary by situation. (for example, depending on the season or circumstances). | You care for family without erasing yourself; you contribute to real needs and maintain boundaries. |
+| Legacy | You feel trapped by the past or obsess over a perfect family legacy; you repeat harmful patterns or place impossible expectations on the next generation. | You are noticing longer-term effects, though immediate needs still shape some choices and patterns are continuing to develop. (for example, depending on the season or circumstances). | You recognize repeated patterns shape those who follow; you model repair, responsibility, and values worth carrying forward. |
+| Integration | You feel swallowed by family or split off from it; you neglect other domains for family or use independence to avoid responsibilities. | You are connecting this area to some parts of your life more clearly than others; you are working out a sustainable fit. | You hold family identity alongside other parts of yourself; you balance family care with work, health, relationships, and growth. |
+| Expression | You hide vulnerability or dominate the story; you rely on silence, criticism, or grand gestures instead of clear everyday expression. | You are sharing some needs or ideas more readily than others; comfort and clarity may depend on the situation. (for example, depending on the season or circumstances). | You express affection, appreciation, expectations, and hurt; you initiate honest conversations and make care visible. |

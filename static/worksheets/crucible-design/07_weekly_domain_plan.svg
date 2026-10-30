@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img" aria-labelledby="title desc">
+  <title id="title">Weekly Domain Plan</title>
+  <desc id="desc">A printable weekly planning worksheet for carrying up to three chosen domains, roles, and relevant Edges into concrete scheduled actions, with capacity, boundaries, and end-of-week learning.</desc>
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .softbox { fill: #f7f7f7; stroke: #111111; stroke-width: 1.4; rx: 14; ry: 14; }
+      .fillline { stroke: #999999; stroke-width: 1.1; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 31px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #111111; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 10px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 8.5px; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 700; fill: #111111; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1100" height="850"/>
+  <text class="title" x="40" y="45">WEEKLY DOMAIN PLAN</text>
+  <text class="sub" x="40" y="70">Turn your chosen visions into this week's strikes</text>
+  <text class="label" x="790" y="50">WEEK OF:</text>
+  <line class="fillline" x1="860" y1="50" x2="1055" y2="50"/>
+  <rect class="softbox" x="40" y="88" width="1020" height="58"/>
+  <text class="small" x="60" y="111">Carry forward up to three domains from Visionary Domains. Domains are where you focus; Edges are qualities you bring.</text>
+  <text class="small" x="60" y="130">Choose a small action that fits your week. Your effort intention is about the work, not your worth.</text>
+
+  <rect class="box" x="40" y="163" width="1020" height="275"/>
+  <text class="num" x="60" y="194">1</text>
+  <text class="label" x="92" y="183">THREE FOCUS STRIKES</text>
+  <text class="tiny" x="92" y="200">Leave any row blank if fewer than three domains are active this week.</text>
+  <text class="tiny" x="65" y="222">DOMAIN</text><text class="tiny" x="250" y="222">ROLE / VISION LINK</text><text class="tiny" x="465" y="222">RELEVANT EDGE</text><text class="tiny" x="620" y="222">ONE CONCRETE ACTION</text><text class="tiny" x="850" y="222">TIME / CONTAINER</text><text class="tiny" x="980" y="222">EFFORT</text>
+  <line class="fillline" x1="65" y1="271" x2="230" y2="271"/><line class="fillline" x1="250" y1="271" x2="445" y2="271"/><line class="fillline" x1="465" y1="271" x2="600" y2="271"/><line class="fillline" x1="620" y1="271" x2="830" y2="271"/><line class="fillline" x1="850" y1="271" x2="960" y2="271"/><text class="tiny" x="980" y="253">□ ESTABLISH</text><text class="tiny" x="980" y="269">□ MAINTAIN</text>
+  <line class="fillline" x1="65" y1="342" x2="230" y2="342"/><line class="fillline" x1="250" y1="342" x2="445" y2="342"/><line class="fillline" x1="465" y1="342" x2="600" y2="342"/><line class="fillline" x1="620" y1="342" x2="830" y2="342"/><line class="fillline" x1="850" y1="342" x2="960" y2="342"/><text class="tiny" x="980" y="324">□ ESTABLISH</text><text class="tiny" x="980" y="340">□ MAINTAIN</text>
+  <line class="fillline" x1="65" y1="413" x2="230" y2="413"/><line class="fillline" x1="250" y1="413" x2="445" y2="413"/><line class="fillline" x1="465" y1="413" x2="600" y2="413"/><line class="fillline" x1="620" y1="413" x2="830" y2="413"/><line class="fillline" x1="850" y1="413" x2="960" y2="413"/><text class="tiny" x="980" y="395">□ ESTABLISH</text><text class="tiny" x="980" y="411">□ MAINTAIN</text>
+  <text class="tiny" x="65" y="242">1</text><text class="tiny" x="65" y="313">2</text><text class="tiny" x="65" y="384">3</text>
+
+  <rect class="box" x="40" y="455" width="490" height="155"/>
+  <text class="num" x="60" y="486">2</text><text class="label" x="92" y="475">CONTAIN THE WEEK</text>
+  <text class="small" x="65" y="506">Capacity I can realistically give these strikes:</text><line class="fillline" x1="65" y1="529" x2="505" y2="529"/>
+  <text class="small" x="65" y="553">Restoration / recovery I will protect:</text><line class="fillline" x1="65" y1="576" x2="505" y2="576"/>
+  <text class="small" x="65" y="598">Bounded relationship / community action:</text><line class="fillline" x1="285" y1="598" x2="505" y2="598"/>
+
+  <rect class="box" x="550" y="455" width="510" height="155"/>
+  <text class="num" x="570" y="486">3</text><text class="label" x="602" y="475">ALIGNMENT &amp; CHOICE</text>
+  <text class="small" x="575" y="506">What is this plan in service to?</text><line class="fillline" x1="575" y1="530" x2="1035" y2="530"/>
+  <text class="small" x="575" y="557">One boundary, refusal, or defer decision:</text><line class="fillline" x1="575" y1="581" x2="1035" y2="581"/>
+  <text class="tiny" x="575" y="600">Choose what fits your priorities and capacity; you may revise the plan.</text>
+
+  <rect class="box" x="40" y="628" width="1020" height="132"/>
+  <text class="num" x="60" y="660">4</text><text class="label" x="92" y="649">WEEK-END EVIDENCE &amp; LEARNING</text>
+  <text class="tiny" x="65" y="677">What evidence did I notice?</text><text class="tiny" x="410" y="677">What did I learn about effort or capacity?</text><text class="tiny" x="760" y="677">What will I adjust next cycle?</text>
+  <line class="fillline" x1="65" y1="705" x2="385" y2="705"/><line class="fillline" x1="65" y1="733" x2="385" y2="733"/>
+  <line class="fillline" x1="410" y1="705" x2="735" y2="705"/><line class="fillline" x1="410" y1="733" x2="735" y2="733"/>
+  <line class="fillline" x1="760" y1="705" x2="1035" y2="705"/><line class="fillline" x1="760" y1="733" x2="1035" y2="733"/>
+  <rect class="softbox" x="40" y="778" width="1020" height="45"/>
+  <text class="label" x="60" y="805">SEQUENCE</text><text class="small" x="145" y="805">Visionary Domains → Weekly Domain Plan → Weekly Domain Blotter (optional) → Weekly Role Review → Weekly Recalibration</text>
+</svg>
