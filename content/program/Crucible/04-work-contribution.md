@@ -1,0 +1,24 @@
+---
+title: "Work & contribution — Nine-Edge Matrix"
+showToc: true
+draft: false
+slug: "04-work-contribution"
+---
+
+## Applying the nine Edges across the candidate life domains
+
+Use these as applications of the nine Edges to candidate domains. Red — brittle/dull describes an Edge that is weak or unused, or has become rigid, excessive, or distorted. Yellow — mixed/in progress describes a nonjudgmental, context-dependent or developing expression, not a score or diagnosis. Green — strong/sharp describes an Edge that is formed, useful, and responsive—not turned up to maximum. For each domain, compare what you experience internally with what you do or show externally.
+
+### Work & contribution
+
+| Edge | Red — brittle/dull — internal; external | Yellow — mixed/in progress — internal; external | Green — strong/sharp — internal; external |
+|---|---|---|---|
+| Direction | You feel pulled by every opportunity or cling to a title as identity; you scatter effort or remain in work that no longer serves your aim. | You are still clarifying what matters in this area; some choices follow a priority, while others are shaped by immediate demands. (for example, depending on the season or circumstances). | You can name the contribution you want your work to make; you choose projects and boundaries that move toward it. |
+| Craft | You fear incompetence or assume talent should suffice; you avoid feedback, ship careless work, or confuse busyness with skill. | You are building confidence through practice; some routines feel workable, while others still need learning or support. (for example, depending on the season or circumstances). | You are willing to be a learner and do the reps; you improve quality, judgment, and reliability through practice. |
+| Alignment | You rationalize contradictions or become rigidly self-righteous; you claim values you do not practice or refuse sound work because it is not ideologically pure. | You are weighing your values against real constraints; some choices feel congruent, while others remain unsettled. (for example, depending on the season or circumstances). | You reconcile what you do with what you say matters; your methods, promises, and treatment of people match your principles. |
+| Stewardship | You feel indispensable or disengaged from responsibility; you burn out and neglect work, or hoard authority and control. | You are tending this area unevenly; a few resources or responsibilities are managed intentionally, while others need attention. (for example, depending on the season or circumstances). | You recognize attention, energy, and tools are finite; you pace effort, maintain systems, and protect capacity for important work. |
+| Adaptation | Change feels threatening or every trend feels mandatory; you cling to obsolete methods or pivot so often nothing compounds. | You are adjusting to changing circumstances; some responses fit the new situation, while others still reflect the old one. (for example, depending on the season or circumstances). | You respond to new information without losing purpose; you revise methods when customers, technology, or conditions change. |
+| Service | You work only for status or feel obligated to satisfy everyone; you produce self-serving work or accept endless demands without discernment. | You are finding a workable balance between contributing and respecting capacity; what feels appropriate may vary by situation. (for example, depending on the season or circumstances). | You care about the real need your work meets; you make something useful and respond to those affected by it. |
+| Legacy | You focus only on immediate wins or on being remembered; you externalize costs or chase prestige instead of durable work. | You are noticing longer-term effects, though immediate needs still shape some choices and patterns are continuing to develop. (for example, depending on the season or circumstances). | You notice work shapes people and systems over time; you build trust, standards, and knowledge others can carry forward. |
+| Integration | Work feels split from your identity or must define all of it; you achieve by damaging other domains or keep conflicting roles in silos. | You are connecting this area to some parts of your life more clearly than others; you are working out a sustainable fit. | You hold ambition, skill, ethics, capacity, and service together; your output is effective without violating the rest of your life or values. |
+| Expression | You hide until perfect or depend on applause; you never ship or perform confidence the work cannot support. | You are sharing some needs or ideas more readily than others; comfort and clarity may depend on the situation. (for example, depending on the season or circumstances). | You trust your work enough to let it be seen and judged; you communicate ideas, share results, and make your contribution legible. |
