@@ -27,7 +27,7 @@ Make the website repository a caller and publication owner for Gutenberg-generat
 3. **Required inputs.** Before creating the output directory, the wrapper validates a caller-owned source file/directory, focus brief, title/date/slug, provider/model settings, API-key environment, and required image model settings. Missing inputs fail without mutating `content/`.
 4. **Caller-owned output.** A successful invocation calls the pinned generator from the website working tree and writes the bundle to `content/letters/<date>-<slug>`. An existing/non-empty destination is refused; no existing content is overwritten.
 5. **Rendering and publication.** The wrapper runs or clearly instructs the author to run the website-owned lesson/worksheet PDF/JPG rendering scripts after generation. Site publication remains a normal website PR; merging committed content triggers the existing Hugo/Pages workflow.
-6. **No runtime fetch.** The Pages workflow still builds the already committed `content/` tree only. It does not invoke Gutenberg generation, call provider APIs, or select the latest Gutenberg revision.
+6. **No runtime fetch.** The Pages workflow still builds the already committed `content/` tree only. It does not invoke Gutenberg generation, call provider APIs, or select the latest Gutenberg revision. Its CI checkout initializes only the Hugo theme submodule, not the private generator submodule used by local caller scripts.
 7. **Preservation.** Existing `content/**`, Hugo rendering inputs, `new-letter.sh` public destination conventions, and Pages workflow permissions/concurrency/manual dispatch remain intact except for the thin caller wrappers and submodule declaration. The pre-existing untracked edge-domain spec remains untouched.
 8. **Verification.** `bash -n` passes for wrappers; mocked invocation tests prove caller-relative output, required inputs, non-overwrite behavior, pinned generator path and model flags. `hugo --minify` succeeds on the existing site without generated content or live provider calls.
 
@@ -50,7 +50,7 @@ Make the website repository a caller and publication owner for Gutenberg-generat
 1. Pin the Gutenberg generator source in `.gitmodules` at the reviewed feature commit.
 2. Replace local scaffold/placeholder behavior in `new-burn.sh` and `new-letter.sh` with thin argument validation plus an invocation of the pinned Gutenberg CLI. Ensure checks happen before directory creation and refuse overwrites.
 3. Keep website-owned PDF/JPG helper scripts unchanged; update `README.md`/`docs/README.md` with the generation handoff and manual render steps.
-4. Add mocked wrapper tests and verify exact submodule SHA, protected content tree, workflow diff, and Hugo production build.
+4. Add mocked wrapper tests and verify exact submodule SHA, protected content tree, workflow permissions/concurrency/manual dispatch, theme-only submodule checkout, and Hugo production build.
 
 ## Rollback
 
