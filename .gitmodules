@@ -1,3 +1,6 @@
 [submodule "themes/hugo-PaperMod"]
 	path = themes/hugo-PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "tools/gutenberg"]
+	path = tools/gutenberg
+	url = https://github.com/3f-mindset/3f-gutenberg.git
