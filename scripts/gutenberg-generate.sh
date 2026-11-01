@@ -11,7 +11,7 @@ if [[ "$CALLER_DIR" != "$SCRIPT_DIR" ]]; then
 fi
 
 usage() {
-  printf 'Usage: %s --source PATH [--source PATH ...] --brief TEXT --title TITLE [--date YYYY-MM-DD] [--slug SLUG] --provider PROVIDER --model MODEL --image-provider PROVIDER --image-model MODEL [--profile PROFILE] [--batch]\n' "${0##*/}" >&2
+  printf 'Usage: %s --source PATH [--source PATH ...] --brief TEXT --title TITLE [--date YYYY-MM-DD] [--slug SLUG] [--provider PROVIDER] [--model MODEL] [--provider-url URL] [--image-provider PROVIDER] [--image-model MODEL] [--image-provider-url URL] [--profile PROFILE] [--batch|--no-batch]\n' "${0##*/}" >&2
 }
 
 DATE="$DEFAULT_DATE"
@@ -22,10 +22,11 @@ PROVIDER=""
 MODEL=""
 IMAGE_PROVIDER=""
 IMAGE_MODEL=""
+PROVIDER_URL=""
+IMAGE_PROVIDER_URL=""
 PROFILE="steadyburn-profile-v1"
-BATCH=false
+BATCH_MODE=""
 SOURCES=()
-EXTRA_ARGS=()
 
 while (($#)); do
   case "$1" in
@@ -48,12 +49,18 @@ while (($#)); do
         --model) MODEL="$value" ;;
         --image-provider) IMAGE_PROVIDER="$value" ;;
         --image-model) IMAGE_MODEL="$value" ;;
+        --provider-url) PROVIDER_URL="$value" ;;
+        --image-provider-url) IMAGE_PROVIDER_URL="$value" ;;
         --profile) PROFILE="$value" ;;
-        *) EXTRA_ARGS+=("$option" "$value") ;;
+        *) ;;
       esac
       ;;
     --batch)
-      BATCH=true
+      BATCH_MODE=true
+      shift
+      ;;
+    --no-batch)
+      BATCH_MODE=false
       shift
       ;;
     -h|--help)
@@ -68,8 +75,8 @@ while (($#)); do
   esac
 done
 
-if ((${#SOURCES[@]} == 0)) || [[ -z "$BRIEF" || -z "$TITLE" || -z "$PROVIDER" || -z "$MODEL" || -z "$IMAGE_PROVIDER" || -z "$IMAGE_MODEL" ]]; then
-  printf 'Source, brief, title, text provider/model, and image provider/model are required.\n' >&2
+if ((${#SOURCES[@]} == 0)) || [[ -z "$BRIEF" || -z "$TITLE" ]]; then
+  printf 'Source, brief, and title are required.\n' >&2
   usage
   exit 2
 fi
@@ -93,52 +100,33 @@ for source in "${SOURCES[@]}"; do
   fi
 done
 
-case "$PROVIDER" in
-  openrouter) TEXT_KEY=OPENROUTER_API_KEY ;;
-  openai) TEXT_KEY=OPENAI_API_KEY ;;
-  openai-compatible) TEXT_KEY="" ;;
-  *) printf 'Unsupported text provider: %s\n' "$PROVIDER" >&2; exit 2 ;;
-esac
-case "$IMAGE_PROVIDER" in
-  openrouter) IMAGE_KEY=OPENROUTER_API_KEY ;;
-  openai) IMAGE_KEY=OPENAI_API_KEY ;;
-  openai-compatible) IMAGE_KEY="" ;;
-  *) printf 'Unsupported image provider: %s\n' "$IMAGE_PROVIDER" >&2; exit 2 ;;
-esac
-if [[ -n "$TEXT_KEY" && -z "${!TEXT_KEY:-}" ]]; then
-  printf '%s is required for text provider %s.\n' "$TEXT_KEY" "$PROVIDER" >&2
-  exit 2
-fi
-if [[ -n "$IMAGE_KEY" && -z "${!IMAGE_KEY:-}" ]]; then
-  printf '%s is required for image provider %s.\n' "$IMAGE_KEY" "$IMAGE_PROVIDER" >&2
-  exit 2
-fi
-if [[ "$BATCH" == true && "$PROVIDER" != "openrouter" ]]; then
-  printf 'Batch mode is supported only with the openrouter text provider.\n' >&2
-  exit 2
-fi
-
 DESTINATION="content/letters/$DATE-$SLUG"
 if [[ -e "$DESTINATION" || -L "$DESTINATION" ]]; then
   printf 'Refusing existing destination: %s\n' "$DESTINATION" >&2
   exit 2
 fi
 
-COMMAND=(uv run --no-project --with 'httpx>=0.27' --with 'PyYAML>=6' --
+COMMAND=(uv run --no-project --with 'httpx>=0.27' --with 'PyYAML>=6' --with 'python-dotenv>=1.0,<2' --
   python -m gutenberg_ralph.interface generate
   --profile "$PROFILE"
   --output "$DESTINATION"
   --brief "$BRIEF"
   --title "$TITLE"
   --slug "$SLUG"
-  --date "$DATE"
-  --provider "$PROVIDER"
-  --model "$MODEL"
-  --image-provider "$IMAGE_PROVIDER"
-  --image-model "$IMAGE_MODEL")
+  --date "$DATE")
+for option in provider model provider-url image-provider image-provider-url image-model; do
+  case "$option" in
+    provider) value="$PROVIDER" ;;
+    model) value="$MODEL" ;;
+    provider-url) value="$PROVIDER_URL" ;;
+    image-provider) value="$IMAGE_PROVIDER" ;;
+    image-provider-url) value="$IMAGE_PROVIDER_URL" ;;
+    image-model) value="$IMAGE_MODEL" ;;
+  esac
+  if [[ -n "$value" ]]; then COMMAND+=("--$option" "$value"); fi
+done
 for source in "${SOURCES[@]}"; do COMMAND+=(--source "$source"); done
-COMMAND+=("${EXTRA_ARGS[@]}")
-if [[ "$BATCH" == true ]]; then COMMAND+=(--batch); fi
+if [[ "$BATCH_MODE" == true ]]; then COMMAND+=(--batch); elif [[ "$BATCH_MODE" == false ]]; then COMMAND+=(--no-batch); fi
 
 PYTHONPATH="$SCRIPT_DIR/tools/gutenberg/ralph${PYTHONPATH:+:$PYTHONPATH}" "${COMMAND[@]}"
 printf 'Generated %s\nRun the website renderers as needed:\n  uv run scripts/build-the-burn-lesson-pdf.py --markdown-file %s/LESSON.md\n  uv run scripts/build-the-burn-worksheet-pdf.py %s/WORKSHEET.svg\n' "$DESTINATION" "$DESTINATION" "$DESTINATION"
