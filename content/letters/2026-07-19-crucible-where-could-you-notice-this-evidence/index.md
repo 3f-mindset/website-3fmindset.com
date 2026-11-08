@@ -3,7 +3,7 @@ date: 2026-07-19
 slug: "crucible-where-could-you-notice-this-evidence"
 title: "Evidence can pass unseen"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - awareness
   - evidence
