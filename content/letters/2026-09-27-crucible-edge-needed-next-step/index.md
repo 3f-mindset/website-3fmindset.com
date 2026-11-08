@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-09-27
 slug: "crucible-edge-needed-next-step"
 title: "The quality the moment asks for"
 draft: false
