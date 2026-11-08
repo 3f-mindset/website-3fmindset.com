@@ -3,7 +3,7 @@ date: 2026-04-19
 slug: "crucible-more-true-here"
 title: "The shape of what you want"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - vision
   - values
