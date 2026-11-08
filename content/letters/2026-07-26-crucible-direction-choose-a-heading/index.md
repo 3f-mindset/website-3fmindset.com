@@ -3,7 +3,7 @@ date: 2026-07-26
 slug: "crucible-direction-choose-a-heading"
 title: "The cost of an unchosen heading"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - attention
   - direction
