@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-09-13
 slug: "crucible-integration-parts-of-life-identity"
 title: "The parts that do not speak"
 draft: false
