@@ -3,7 +3,7 @@ date: 2026-07-05
 slug: "crucible-one-small-action-useful-evidence"
 title: "Let action ask a question"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - action
   - evidence
