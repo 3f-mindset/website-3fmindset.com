@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-07-19
 slug: "crucible-where-could-you-notice-this-evidence"
 title: "Evidence can pass unseen"
 draft: false
