@@ -3,7 +3,7 @@ date: 2026-10-04
 slug: "crucible-quality-already-available"
 title: "What you can already bring"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - reflection
   - strengths
