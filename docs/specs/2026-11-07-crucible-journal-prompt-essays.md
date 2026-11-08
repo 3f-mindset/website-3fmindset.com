@@ -6,7 +6,7 @@ Turn every bullet prompt in sections 1–3 of `content/program/Crucible/06-journ
 
 ## User-visible behavior
 
-Readers encounter one essay per source bullet: seven from section 1; six from section 2; six from longer-term vision; five from role; four from visible proof/action; nine from the individual Edge prompts; and six from “Then choose only the useful reflection” (43 total). Each essay title is the first internal heading promoted to the page title. Each essay is a distinct, reflective 5–10 minute read that helps readers see the stakes of avoidance, the possibilities of reflection, and their own answer without prescribing that answer. The essays are backdated in source order, one per consecutive Sunday from 2026-01-11 through 2026-11-01.
+Readers encounter one essay per source bullet: seven from section 1; six from section 2; six from longer-term vision; five from role; four from visible proof/action; nine from the individual Edge prompts; and six from “Then choose only the useful reflection” (43 total). Each essay title is the first internal heading promoted to the page title. Each essay is a distinct, reflective 5–10 minute read that helps readers see the stakes of avoidance, the possibilities of reflection, and their own answer without prescribing that answer. Any single essay should stand alone: it supplies enough context to understand its question as a way to clarify personal standards toward a vision, notice drift, and choose direction. The explanation must be specific to that question, not repeated boilerplate. The essays are backdated in source order, one per consecutive Sunday from 2026-01-11 through 2026-11-01.
 
 Each essay is added as a dated Crucible blog entry under `content/letters/` and is submitted in a PR containing exactly one essay file. Every source bullet must be represented once; no essay combines or splits a bullet.
 
@@ -28,6 +28,7 @@ Each essay is added as a dated Crucible blog entry under `content/letters/` and 
 5. **Given** an essay is added, **when** the PR is inspected, **then** it has standard letter frontmatter and its PR contains exactly one new essay; the first series PR may also include this related spec, and no PR combines essays.
 6. **Given** all PRs are submitted, **when** their files are compared with the source inventory, **then** there is exactly one separate PR for each of the 43 bullets and none for prompts outside sections 1–3.
 7. **Given** the 43 articles are dated, **when** their publication dates are reviewed in source order, **then** each date is a distinct Sunday, one week apart from 2026-01-11 through 2026-11-01, and the date matches its date-prefixed letter directory.
+8. **Given** a reader encounters any one letter on its own, **when** he reads it without the worksheet or the other letters, **then** it makes clear what the specific question helps him examine, why that matters to the quality and direction of his life, and how reflection can reveal drift from or movement toward a vision; it provides sufficient context without relying on shared boilerplate or prior program knowledge.
 
 ## Constraints and assumptions
 
@@ -35,6 +36,7 @@ Each essay is added as a dated Crucible blog entry under `content/letters/` and 
 - `ASSUMPTION:` Backdate in source-prompt order, assigning one consecutive Sunday per article from 2026-01-11 (first prompt) through 2026-11-01 (last prompt), the 43 Sundays preceding the current date 2026-11-08. Set the frontmatter date and directory date prefix to the same Sunday; these are historical publication dates, not future scheduled dates.
 - Article title is the text of its first internal `##` heading, moved to frontmatter; remove that heading from the body and remove any opening paragraph that merely restates the source prompt or meta-explains the exercise/prompt. Preserve independent narrative hooks; do not remove an opening paragraph solely because it is first.
 - Preserve a compound source prompt as one article when it is represented by one source bullet.
+- Each letter is independently understandable and earns the reader's attention by explaining the role of its specific question in setting standards toward a vision and moving from drift toward direction. Make that framing concrete in a way unique to the question; do not paste the same generic explanation into every letter.
 - Titles and bodies contain no em dash glyphs (`—`); restructure sentences naturally instead of substituting punctuation mechanically.
 - `ASSUMPTION:` If a bullet has no interrogative sentence (the vision-writing instruction in section 3), its opening instruction supplies the title concept.
 - Each essay is 800–1,300 words and should be a separate, self-contained piece rather than a chapter that depends on another essay.
