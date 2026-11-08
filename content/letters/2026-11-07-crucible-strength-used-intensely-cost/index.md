@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-strength-used-intensely-cost"
-title: "When Does Your Greatest Strength Start Working Against You?"
+title: "When a strength stops serving"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - balance
   - boundaries
 ---
-
-## When a strength stops serving
-
-Is a strength being used so intensely that it creates a cost? What would balance look like? The question is subtle because strengths are often praised, and praise can make it difficult to notice when a useful quality has become the only tool you reach for. Persistence can help you finish important work. Taken past its fit, it can keep you pushing through conditions that need to change. Care can sustain a relationship. Without limits, it can become an assumption that you must carry everything.
 
 The quality itself is not the problem. Context and degree matter. A strength that serves one role may crowd out another. The question invites you to notice not only what you can do, but what happens when you do it repeatedly, intensely, or without support.
 
@@ -39,5 +35,7 @@ Thoughtful attention can preserve a strength by freeing it from the demand to do
 That choice can improve the texture of ordinary life. There may be more room for recovery, for other people’s initiative, and for qualities that have been crowded out. Your contribution may become more trustworthy because it is not built on silent depletion. You could feel less trapped by the reputation you have earned and more able to bring your judgment to the question of what is appropriate now.
 
 No universal threshold tells you when a strength has become too intense. The same effort may be reasonable in one season and costly in another. Your responsibilities, health, relationships, and available support all matter. An honest answer may be that you can continue for now but need a review point; it may be that a pattern needs to change; it may be that the cost is real but not yours alone to solve.
+
+A useful check is to notice whether the strength still feels chosen. Can you pause it when circumstances call for something else, or does the familiar response arrive before you have considered the situation? That question does not make the quality suspect. It shows whether you still have flexibility around it, and where a deliberate boundary could restore choice.
 
 Is a strength being used so intensely that it creates a cost? What would balance look like in your actual circumstances? You do not need to renounce a quality that has helped you. You can ask what it is serving, what it is costing, and whether there is another way to bring it that leaves more of your life intact.
