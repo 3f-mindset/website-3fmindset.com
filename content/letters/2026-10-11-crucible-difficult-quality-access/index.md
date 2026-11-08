@@ -28,6 +28,8 @@ These are not competing explanations. More than one may be true. You might need 
 
 The quality itself may also need translation. “Be confident” is a heavy instruction. A behavior such as asking one clarifying question, stating a preference, or acknowledging uncertainty may be more reachable. “Be adaptable” might mean testing one adjustment rather than abandoning everything that works. A small behavior can create information about what is possible without making the first attempt carry the weight of your whole identity.
 
+When the quality matters to a role or a chosen vision, the answer can become a standard for supported progress rather than a demand for instant mastery. You might decide that, in a particular meeting, your standard is to voice one concern after preparing it and asking for the information you need. Afterwards, consider what helped, what blocked access, and whether the attempt moved you toward the kind of contribution or relationship you want. A repeated gap can reveal drift or an unsupported condition; a small success can show which supports are worth keeping. Either way, you gain a basis for adjusting your direction and next attempt, instead of measuring yourself against an imagined ideal of effortless access.
+
 ## The possibility of supported practice
 
 Thoughtful attention opens a more humane path between resignation and self-pressure. You can treat difficulty as a signal: something about this quality, this role, or this set of conditions deserves examination. That does not guarantee ease or a particular result. It can, however, help you choose a next experiment that is proportionate to what you know.
