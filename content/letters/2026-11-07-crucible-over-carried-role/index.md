@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-over-carried-role"
-title: "Which Role Are You Carrying Too Hard—and What Is It Costing You?"
+title: "The weight can hide inside a valued role"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - approval
   - boundaries
 ---
-
-## The weight can hide inside a valued role
-
-What role are you currently over-carrying, performing for approval, or trying to hold alone? The wording makes room for several kinds of strain. You may be doing more than the role can reasonably ask of one person. You may be acting in a way designed to earn reassurance or avoid disapproval. Or you may have become the sole holder of something that should be shared, discussed, or supported.
 
 The role itself may matter deeply. You might care about being a dependable partner, a capable leader, a present parent, or a loyal friend. The trouble is not necessarily that you care too much. It may be that care has fused with a rule: I must never disappoint, I must prove I deserve my place, I must not need anyone, or I must keep everything from falling apart. A role can then become both meaningful and exhausting, and it may be difficult to separate devotion from fear.
 
