@@ -10,8 +10,6 @@ tags:
   - values
 ---
 
-The question is modest on purpose. It does not ask you to picture a flawless future, a transformed identity, or a life with no friction. It asks you to notice how an ordinary day might feel and function if one chosen part of life were gradually becoming more aligned with what matters to you.
-
 For a man accustomed to solving visible problems, “vision” can sound inflated. You may hear it as a promise to become exceptional or as another standard by which to find yourself lacking. If the future image has to be impressive, it is easy to avoid making one. You can keep working, meeting needs, and responding to what arrives without considering where all that motion is taking you. The absence of a direction can even look like humility: you are not making grand claims, only doing what is necessary.
 
 But refusing to imagine a direction does not protect you from consequences. It leaves more of the steering to urgency, habit, and other people’s priorities. A day can fill with tasks that each make sense on their own while the larger pattern becomes harder to recognize. You may be reliable in many ways and still feel that your attention is being spent without your consent. The cost is not proof that you chose wrongly; it is a reason to ask whether you are choosing at all.
