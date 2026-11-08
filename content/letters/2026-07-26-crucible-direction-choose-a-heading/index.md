@@ -10,7 +10,7 @@ tags:
   - reflection
 ---
 
-When you do not make that distinction, the loudest claim often becomes the organizing principle. Urgency can impersonate importance. Other people's expectations can acquire the force of your own convictions simply because they arrive with a deadline or visible consequence. You may spend a day responding faithfully to what is nearest and still feel strangely absent from the life you meant to inhabit. The day was full, but fullness is not the same as direction.
+When several demands compete, the question is not only what needs doing now, but what deserves your attention and what heading you want your life to take. The answer matters because the pattern of what receives your time and care can shape the quality of the life you are living, not just how much you accomplish. A personal vision or standard gives you a way to weigh those claims: what kind of life are you trying to build, and what belongs in it? Choosing attention by that measure can interrupt the drift toward whatever feels most urgent and help you move toward a direction you have chosen. Without that distinction, the loudest claim often becomes the organizing principle.
 
 This drift can be difficult to notice because it does not always look like failure. You may be competent, dependable, and busy. You may keep many plates from falling. Yet the question of what deserves attention remains unanswered, so the answer is supplied moment by moment by interruption. Over time, your choices may feel less like choices and more like a trail of reactions. You can become tired without being able to say what the tiredness was for.
 
