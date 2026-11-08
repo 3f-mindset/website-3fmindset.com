@@ -3,7 +3,7 @@ date: 2026-08-23
 slug: "crucible-adaptation-change-with-conditions"
 title: "When the old way stops fitting"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - adaptation
   - change
