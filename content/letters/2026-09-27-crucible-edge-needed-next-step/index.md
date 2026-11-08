@@ -28,6 +28,8 @@ The question can also reveal that a quality is not the only missing ingredient. 
 
 Naming the constraint can keep a useful intention from becoming another unrealistic demand.
 
+Once you name an Edge and a behavior, you can use that behavior as a standard for this particular step. If the moment calls for honesty, for example, the standard might be to state the concern clearly rather than hint at it or avoid it. Later, you can ask whether you did that, what the response showed, and whether the next step still points toward the kind of life and role you chose. This is not a score of your character. It is a way to notice drift between an intended direction and a repeated response, then decide whether to return to the standard, revise it, or seek help. The standard remains yours because it comes from the vision you are trying to live, not from a universal rule about which Edge everyone should choose.
+
 ## A next step that belongs to you
 
 Thoughtful attention can make an ordinary action more coherent. You might enter a difficult conversation with a clearer sense of what you want to express. You might revise a piece of work with more care, ask for help before resentment builds, or stop treating a changed circumstance as an obstacle to overpower. No particular Edge guarantees a result. The possibility is that your action becomes more closely related to the person and role you intend to practice.
