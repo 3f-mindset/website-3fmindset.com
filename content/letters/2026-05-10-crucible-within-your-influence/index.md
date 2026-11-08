@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-05-10
 slug: "crucible-within-your-influence"
 title: "A more accurate measure of agency"
 draft: false
