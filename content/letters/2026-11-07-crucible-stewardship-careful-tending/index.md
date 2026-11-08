@@ -10,7 +10,7 @@ tags:
   - care
 ---
 
-## What cannot be replaced by urgency
+## What in Your Life Will Suffer If You Stop Tending It?
 
 Some things matter because they require care over time. A relationship is not sustained by a single generous moment. A capacity can be spent faster than it is restored. An opportunity may need patient attention before it becomes useful. A responsibility can be carried so routinely that you stop noticing what it asks of you. Stewardship is the quality of seeing that something has been entrusted to your attention, without assuming that you own or control every outcome.
 
@@ -22,7 +22,7 @@ The prompt asks what needs careful tending over time, not what you must preserve
 
 ## The hidden cost of neglect and over-carrying
 
-If a responsibility is left unattended, consequences may reach beyond the immediate task. A neglected relationship can acquire misunderstandings that neither person intended. A skill or capacity may become harder to draw on. A resource may be consumed without a clear decision about what it serves. An opportunity can turn into regret—not because you were guaranteed a particular outcome, but because you did not give it the consideration needed to understand its possibilities.
+If a responsibility is left unattended, consequences may reach beyond the immediate task. A neglected relationship can acquire misunderstandings that neither person intended. A skill or capacity may become harder to draw on. A resource may be consumed without a clear decision about what it serves. An opportunity can turn into regret,not because you were guaranteed a particular outcome, but because you did not give it the consideration needed to understand its possibilities.
 
 There is also a quieter cost to neglecting yourself. You may treat rest, health, attention, or emotional capacity as supplies that can always be borrowed from tomorrow. For a while, this may make you appear dependable. But if your way of caring for others depends on ignoring your own limits, the arrangement can eventually become unsustainable. Your care may arrive mixed with resentment, exhaustion, or a sharpness you do not want to bring to the people who matter.
 
@@ -42,7 +42,7 @@ It may also be necessary to acknowledge what cannot be tended by you. You cannot
 
 ## What attention may preserve
 
-Attention can make a relationship more truthful because it gives room for both care and limits. It can make a responsibility more sustainable by clarifying what is actually required. It can help you recognize that an opportunity deserves a considered yes—or a considered no—rather than indefinite postponement. It can also help you appreciate what is already being maintained, instead of seeing only what remains unfinished.
+Attention can make a relationship more truthful because it gives room for both care and limits. It can make a responsibility more sustainable by clarifying what is actually required. It can help you recognize that an opportunity deserves a considered yes,or a considered no,rather than indefinite postponement. It can also help you appreciate what is already being maintained, instead of seeing only what remains unfinished.
 
 There is no single rule for what deserves tending. What seems central in one season may be less important in another. The same responsibility can change as people grow, circumstances shift, and your capacity changes. The Edge is a vocabulary for looking; it is not a demand that every resource, relationship, or possibility receive equal investment.
 
