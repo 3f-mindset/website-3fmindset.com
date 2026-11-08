@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-03-01
 slug: "crucible-the-area-calling-for-attention"
 title: "Notice the quiet insistence"
 draft: false
