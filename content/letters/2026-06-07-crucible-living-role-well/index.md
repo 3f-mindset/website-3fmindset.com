@@ -3,7 +3,7 @@ date: 2026-06-07
 slug: "crucible-living-role-well"
 title: "Give “well” a visible shape"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - roles
   - practice
