@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-the-area-calling-for-attention"
-title: "What Part of Your Life Is Asking Not to Be Ignored?"
+title: "Notice the quiet insistence"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - reflection
   - attention
 ---
-
-## Notice the quiet insistence
-
-What part of life is asking for attention now? The question does not assume that one area is objectively more important than every other. It asks you to notice what is making a claim on your awareness in the season you are actually living. That claim may be loud, like a deadline or a problem that cannot wait. It may be quieter: a relationship that has become mostly logistics, a body you have learned to work around, or a wish that keeps returning when the day finally slows down.
 
 Men are often practiced at responding to what is urgent and less practiced at listening to what is persistent. Urgency supplies a clear instruction: answer, fix, deliver, decide. A quieter need may not come with a deadline or an obvious measure of success. It can be easier to postpone because postponement does not immediately announce a consequence. Yet a life can be shaped by what keeps receiving attention and by what is repeatedly left outside it.
 
