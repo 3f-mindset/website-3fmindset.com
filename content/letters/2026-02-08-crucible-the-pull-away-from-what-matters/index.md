@@ -3,7 +3,7 @@ date: 2026-02-08
 slug: "crucible-the-pull-away-from-what-matters"
 title: "The repeated departure"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - habits
   - attention
