@@ -10,7 +10,7 @@ tags:
   - reflection
 ---
 
-## The cost of an unchosen heading
+## What Deserves Your Attention When Everything Feels Urgent?
 
 Several demands can be legitimate at once. Work may need care, a relationship may be asking for presence, your body may need attention, and a promise may have become urgent. The question is not whether every demand matters equally. It is how you discern what deserves attention here, in this particular part of life, and what might help you choose a heading without pretending the other demands have vanished.
 
@@ -18,7 +18,7 @@ When you do not make that distinction, the loudest claim often becomes the organ
 
 This drift can be difficult to notice because it does not always look like failure. You may be competent, dependable, and busy. You may keep many plates from falling. Yet the question of what deserves attention remains unanswered, so the answer is supplied moment by moment by interruption. Over time, your choices may feel less like choices and more like a trail of reactions. You can become tired without being able to say what the tiredness was for.
 
-There is a cost to that experience beyond lost time. When your attention is continually claimed by competing demands, you may begin to distrust your own sense of priority. Perhaps you tell yourself that you will return to what matters when circumstances settle. But circumstances do not always settle, and the promise of a quieter season can keep you waiting for permission to choose. A direction that is never given room can fade—not because it was unworthy, but because it was rarely allowed to become part of ordinary life.
+There is a cost to that experience beyond lost time. When your attention is continually claimed by competing demands, you may begin to distrust your own sense of priority. Perhaps you tell yourself that you will return to what matters when circumstances settle. But circumstances do not always settle, and the promise of a quieter season can keep you waiting for permission to choose. A direction that is never given room can fade,not because it was unworthy, but because it was rarely allowed to become part of ordinary life.
 
 ## Attention is not a verdict
 
