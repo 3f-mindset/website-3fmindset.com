@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-role-to-practice"
-title: "What Kind of Presence Do You Want to Practice Here?"
+title: "A role is a way of participating"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - identity
   - reflection
 ---
-
-## A role is a way of participating
-
-In this domain, what role do you want to practice or grow into? The question is not asking you to select an impressive label and make it your identity forever. It asks how you want to participate in one area of a life that is already moving. Perhaps the word is father, friend, partner, learner, colleague, maker, neighbor, or something you would name differently. The name matters less than the kind of presence it helps you imagine.
 
 A role is not a performance for an audience. It is a relationship between what matters to you and what you actually do in a particular setting. The role of a friend, for example, might involve listening, telling the truth with care, making room for another person's limits, or asking for help in return. But you do not need to accept any ready-made definition. Your own circumstances and commitments give the word its meaning.
 
