@@ -3,7 +3,7 @@ date: 2026-10-18
 slug: "crucible-strength-used-intensely-cost"
 title: "When a strength stops serving"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - reflection
   - balance
