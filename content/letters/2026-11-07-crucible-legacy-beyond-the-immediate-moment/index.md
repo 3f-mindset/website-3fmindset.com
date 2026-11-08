@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-legacy-beyond-the-immediate-moment"
-title: "What Might Your Choices Make Possible Beyond This Moment?"
+title: "The reach of an ordinary choice"
 draft: false
 categories: letter
 tags:
