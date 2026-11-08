@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-10-25
 slug: "crucible-quality-developing"
 title: "Becoming through practice"
 draft: false
