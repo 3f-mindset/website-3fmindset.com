@@ -10,9 +10,7 @@ tags:
   - choices
 ---
 
-## What Might Your Choices Make Possible Beyond This Moment?
-
-Legacy can sound like a subject reserved for the end of life, a monument, a name remembered. But the question asks about choices and what they may build, pass on, or make possible beyond this immediate moment. Its scale is not necessarily grand. A way of treating people, a capacity someone else can use, a pattern of care, or a possibility kept open can all have a future beyond the moment in which they began.
+A child learns what apology means less from instruction than from watching an adult return after a rupture. Legacy can sound like a subject reserved for the end of life, a monument, a name remembered. Its scale is not necessarily grand. A way of treating people, a capacity someone else can use, a pattern of care, or a possibility kept open can all have a future beyond the moment in which they began.
 
 If you never consider that reach, immediate demands can consume the field of vision. You may choose what brings relief now without noticing what the choice reinforces. A repeated absence can become part of what others expect. A kindness withheld to protect your pride can shape a relationship more than you intended. The habits you normalize in your home or work may be passed along not because you planned it, but because they became the ordinary way things were done.
 
