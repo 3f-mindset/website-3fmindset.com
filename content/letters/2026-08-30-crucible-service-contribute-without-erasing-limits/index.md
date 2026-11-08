@@ -3,7 +3,7 @@ date: 2026-08-30
 slug: "crucible-service-contribute-without-erasing-limits"
 title: "The purpose inside a role"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - service
   - boundaries
