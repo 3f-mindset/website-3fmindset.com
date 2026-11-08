@@ -12,6 +12,8 @@ tags:
 
 This is not an argument for giving every domain equal attention. Equal attention is often impossible and may not be desirable. A season of change, care, or concentrated work can rightly ask more from you in one place. The issue is whether the choice is conscious. Without a look at what must remain cared for, a focus can expand until it consumes sleep, connection, recovery, or basic responsibilities. Then the very effort meant to improve life may make its foundation less steady.
 
+A whole-life vision gives focus a direction and a boundary. It describes not only what you hope to build, but also the kind of person and relationships you want that effort to serve. Standards translate that vision into ordinary expectations: being dependable, keeping a promise, or allowing enough recovery to meet life with patience. If those expectations are never named, the urgent project becomes the default measure of success. Maintenance slips by small increments, then the diminished relationship, health, or responsibility can start to feel normal. Protecting a modest form of care makes the trade visible and helps ambition stay answerable to the life it is meant to improve.
+
 Some men respond by refusing to focus at all. They try to keep every area equally active, fearing that any concentrated effort will make them irresponsible elsewhere. This can produce a permanent background scan: every relationship, task, and possible future held in mind at once. Attention gets spread thin, while nothing receives enough to feel complete. Protection is not the same as constant vigilance. It may mean naming what matters, deciding what adequate care looks like for now, and allowing other things not to become projects.
 
 ## The quiet cost of unattended care
