@@ -10,7 +10,7 @@ tags:
   - practice
 ---
 
-## Trust is made in the work
+## Is Your Work Worthy of the Man You Want to Become?
 
 There is a difference between wanting to contribute and being able to offer work that others can rely on. The difference is not a measure of your worth. It is a question about craft: the skill, quality, or deliberate practice that could make a contribution more trustworthy in the role you have chosen. For a man who wants to be useful, that question can touch both pride and vulnerability.
 
@@ -34,11 +34,11 @@ At the same time, craft should not become a demand for endless self-optimization
 
 The useful inquiry begins with the work itself. What does the role ask of you in an actual situation? Where does the work become uncertain, rushed, or inconsistent? What do others need to be able to count on? There may be a particular skill to learn, a way of preparing, a conversation to have, or a habit of checking your understanding before proceeding. “Get better” is too broad to be useful; a specific friction point can show you where craft lives.
 
-Deliberate practice can be modest and still meaningful. It may mean repeating a portion of the work with attention to one quality, asking for feedback on a defined question, or allowing enough time for review. The point is not the size of the practice but whether it helps you notice what you are doing and what the task requires. Sometimes a better condition—clearer instructions, appropriate tools, collaboration, or recovery—matters more than trying harder.
+Deliberate practice can be modest and still meaningful. It may mean repeating a portion of the work with attention to one quality, asking for feedback on a defined question, or allowing enough time for review. The point is not the size of the practice but whether it helps you notice what you are doing and what the task requires. Sometimes a better condition,clearer instructions, appropriate tools, collaboration, or recovery,matters more than trying harder.
 
 The word “trustworthy” invites you to consider other people without making their approval the only measure. What would help someone experience your contribution as dependable? What would help you trust your own process, even when the outcome is not fully yours to control? These questions can lead to different answers. One person may need to develop a technical capacity. Another may need to be more honest about uncertainty or limits. The right focus depends on the role and its real demands.
 
-It can also be useful to ask whether the standard you are pursuing is appropriate. Perfectionism can masquerade as craft, consuming energy without improving the contribution in a meaningful way. A man might keep revising because he fears judgment, or refuse to finish until every uncertainty has disappeared. Yet trust can depend on timely, clear, proportionate work—not an impossible performance. Care and completion sometimes need to be held together.
+It can also be useful to ask whether the standard you are pursuing is appropriate. Perfectionism can masquerade as craft, consuming energy without improving the contribution in a meaningful way. A man might keep revising because he fears judgment, or refuse to finish until every uncertainty has disappeared. Yet trust can depend on timely, clear, proportionate work,not an impossible performance. Care and completion sometimes need to be held together.
 
 ## A different kind of confidence
 
