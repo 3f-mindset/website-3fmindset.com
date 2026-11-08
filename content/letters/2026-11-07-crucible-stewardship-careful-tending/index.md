@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-stewardship-careful-tending"
-title: "The Hidden Cost of Neglect and Over-Carrying"
+title: "What cannot be replaced by urgency"
 draft: false
 categories: letter
 tags:
