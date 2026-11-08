@@ -38,6 +38,8 @@ You can also distinguish having a voice from having the final word. Speaking hon
 
 Form matters. A clear voice need not be loud. You may choose a private conversation, a written note, a request, a question, or a small creative act. You might say what you know and what remains uncertain. You might set a limit without arguing your case at length. The form that fits depends on the truth, the listener, the stakes, and your own safety.
 
+The Edge question asks what truth, perspective, creativity, or preference needs a clearer voice. Consider it because what stays unexpressed can shape a life just as much as what is said, while others cannot respond to what they cannot know. Your answer can be a standard for a vision where honesty and discernment both have a place: not unfiltered disclosure, but chosen expression that lets you participate in your own life. If you repeatedly suppress a view that matters to that vision, the pattern can reveal drift. Choosing privacy in a risky setting, by contrast, may be fully aligned with it. The distinction rests with your considered purpose and circumstances.
+
 ## The possibility of being more legible
 
 Giving something a clearer voice can make you more legible to yourself and others. You may find that a preference is easier to honor once it has been named. A creative interest may become part of your life rather than a distant image of what you might do someday. A truth can allow a relationship to respond to reality instead of an assumption. None of this guarantees acceptance or ease. It creates a chance for more honest contact.
