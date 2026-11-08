@@ -10,9 +10,7 @@ tags:
   - honesty
 ---
 
-## What Truth Are You Keeping Quiet?
-
-There are things you know, prefer, imagine, or feel that never quite enter the room. Some are left unspoken because the moment is not safe or the listener is not ready. Others remain quiet because you have learned to treat your own perspective as less important than keeping things smooth. The question asks what truth, perspective, creativity, or preference needs a clearer voice. It does not assume that speaking is always the right move; it asks you to notice what silence is doing.
+There are things you know, prefer, imagine, or feel that never quite enter the room. Some are left unspoken because the moment is not safe or the listener is not ready. Others remain quiet because you have learned to treat your own perspective as less important than keeping things smooth. Silence can be a choice, but it can also become a habit that keeps you from being known.
 
 When a meaningful part of you stays hidden by default, the cost can be a narrowing of your life. You may agree outwardly while carrying private resistance. People around you may make decisions without information that matters to them. Your creative impulse may remain an idea you protect from judgment rather than a thing you experience. A preference you never name can become frustration when others fail to guess it. Silence can preserve comfort for a moment while making genuine understanding less possible.
 
@@ -32,7 +30,7 @@ There can be a cost to the people you care about when they must guess. A partner
 
 ## Give the voice a shape
 
-The prompt offers several kinds of expression. A truth may be a fact about what is happening or what you can offer. A perspective may be an interpretation worth testing in conversation. Creativity may need a form, even if it remains private for now. A preference may be simple,what you enjoy, what pace works, what you do not want,yet difficult to state because you are accustomed to accommodating.
+A truth may be a fact about what is happening or what you can offer. A perspective may be an interpretation worth testing in conversation. Creativity may need a form, even if it remains private for now. A preference may seem simple, such as what you enjoy, what pace works, or what you do not want. Even these can be difficult to state when you are accustomed to accommodating.
 
 It may help to ask what the unspoken thing is protecting. Are you trying to preserve a relationship, avoid embarrassment, prevent conflict, or keep an option open? What would speaking risk? What might silence cost? These are not rhetorical questions with a predetermined answer. They make the trade-off visible. In some situations, the protection offered by silence is more important. In others, the cost of remaining unclear may have grown larger than the discomfort of expression.
 
