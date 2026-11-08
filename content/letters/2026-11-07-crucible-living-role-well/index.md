@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-living-role-well"
-title: "If You Lived This Role Well, What Would People Actually See?"
+title: "Give “well” a visible shape"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - practice
   - reflection
 ---
-
-## Give “well” a visible shape
-
-What would you do, say, make, or refrain from doing when you were living this role well? The question asks for something you might recognize in life, not an abstract verdict about whether you are a good man. The word “well” can quickly turn into a demand for excellence. Here it can mean something quieter: participation that feels more aligned with what matters to you, given the actual situation and the limits that are present.
 
 The verbs help. Do, say, make, refrain. A role is not only a belief about yourself; it takes shape in behavior. Yet the list also leaves room for different forms of contribution. Perhaps the role is expressed by completing a task, by naming a truth, by creating something useful, or by not interrupting a process that belongs to someone else. Sometimes what you refrain from doing is as meaningful as what you initiate.
 
