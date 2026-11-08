@@ -3,7 +3,7 @@ date: 2026-03-01
 slug: "crucible-the-area-calling-for-attention"
 title: "Notice the quiet insistence"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - priorities
   - reflection
