@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-direction-choose-a-heading"
-title: "What Deserves Your Attention When Everything Feels Urgent?"
+title: "The cost of an unchosen heading"
 draft: false
 categories: letter
 tags:
