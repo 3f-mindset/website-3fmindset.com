@@ -3,7 +3,7 @@ date: 2026-05-17
 slug: "crucible-over-time-i-want-this-part"
 title: "A sentence that points forward"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - vision
   - reflection
