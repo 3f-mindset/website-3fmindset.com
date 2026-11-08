@@ -3,7 +3,7 @@ date: 2026-08-09
 slug: "crucible-alignment-actions-values-commitments"
 title: "The distance between saying and doing"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - alignment
   - values
