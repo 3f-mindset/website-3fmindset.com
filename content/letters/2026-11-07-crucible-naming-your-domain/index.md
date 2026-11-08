@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-naming-your-domain"
-title: "What Would You Call This Part of Your Life If You Chose Freely?"
+title: "A name is a lens"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - reflection
   - priorities
 ---
-
-## A name is a lens
-
-If you could choose freely, what would you call this domain? A name can seem like a small administrative choice, a heading for a page or a category in a plan. But the words you use shape what you notice. “Work” might mean employment, craft, contribution, livelihood, or the place where you spend most of your waking hours. “Family” might include care, belonging, conflict, history, or obligations that do not fit neatly under one label. Choosing a name gives you a chance to ask what the area means in your life.
 
 Many men inherit labels before they have examined them. A domain may be named by the institution that organizes it, the role others expect them to play, or the standard they have been trying to meet. Those names are not necessarily wrong. They can be useful and familiar. But if you never question them, they can quietly define the boundaries of your attention. You may focus on performance when you meant to consider contribution, or see a relationship only as a duty when you also want to understand its connection and tenderness.
 
