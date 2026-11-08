@@ -10,8 +10,6 @@ tags:
   - reflection
 ---
 
-This question invites you to move from an identity claim toward participation. It does not ask what a perfect man would do under ideal conditions. It asks what this role might call for amid the conditions you actually face. The answer could involve speaking, listening, making something, declining, asking, waiting, or repairing. Sometimes the role may ask for restraint rather than more effort. You are not required to decide before you understand what is happening.
-
 If you never bring the role into a real situation, it can remain a flattering idea or an accusation. You might call yourself committed without seeing how commitment is expressed in your time. You might think you should be more supportive without knowing whether support means advice, practical help, quiet company, or respecting another person's choice. A vague ideal can leave you either congratulating yourself on intention or criticizing yourself for not meeting a standard you never made concrete.
 
 ## What happens when the question stays abstract
