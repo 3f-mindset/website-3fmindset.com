@@ -10,7 +10,7 @@ tags:
   - reflection
 ---
 
-## The distance between saying and doing
+## Do Your Choices Match the Values You Claim?
 
 There is a particular discomfort in noticing that your actions do not match what you say matters. You may value family and be distracted whenever you are with them. You may speak of health while treating your body as an instrument with no needs of its own. You may believe in fairness yet avoid a conversation that would require you to risk approval. Such gaps do not prove that your values are false. They do ask for attention.
 
@@ -46,4 +46,4 @@ When your actions and stated values come into better relationship, you may exper
 
 The possibility is not to become a man who never contradicts himself. Human beings face competing loyalties, limited energy, and changing circumstances. The possibility is to notice when a gap deserves attention before it becomes a settled identity: “I am just someone who never follows through,” or “I cannot live by what I believe.” A gap can be information, even when it points toward difficult choices.
 
-Where do your actions match—or conflict with—your stated values and commitments? You might find a place of congruence worth protecting, a mismatch that asks for repair, or a promise that needs to be reconsidered. The answer is not a rating of your integrity. It is yours to work out in the context of the life you have, with attention both to your intentions and to the effects other people actually live with.
+Where do your actions match,or conflict with,your stated values and commitments? You might find a place of congruence worth protecting, a mismatch that asks for repair, or a promise that needs to be reconsidered. The answer is not a rating of your integrity. It is yours to work out in the context of the life you have, with attention both to your intentions and to the effects other people actually live with.
