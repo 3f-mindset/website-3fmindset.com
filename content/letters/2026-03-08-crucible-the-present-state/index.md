@@ -3,7 +3,7 @@ date: 2026-03-08
 slug: "crucible-the-present-state"
 title: "Begin with what is there"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - reflection
   - awareness
