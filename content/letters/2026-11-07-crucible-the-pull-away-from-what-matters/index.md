@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-the-pull-away-from-what-matters"
-title: "What Keeps Pulling You Away From What Matters?"
+title: "The repeated departure"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - attention
   - reflection
 ---
-
-## The repeated departure
-
-Which distractions, obligations, habits, or unresolved decisions repeatedly pull you away from what matters? The word repeatedly is the doorway. A single interruption is ordinary. A pattern can become a map of the forces that organize your days, even when you did not choose them deliberately.
 
 The pull may be obvious: a phone that fills every pause, a task that always expands, an obligation you keep accepting. Or it may be harder to name. You might become busy whenever a difficult conversation approaches. You might keep researching a decision because choosing would expose you to consequences. You might turn to work when a relationship asks for emotional presence, or disappear into entertainment when your body is asking for rest you do not know how to permit.
 
