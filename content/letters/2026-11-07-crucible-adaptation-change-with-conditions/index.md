@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-adaptation-change-with-conditions"
-title: "Persistence and Rigidity Are Not Opposites"
+title: "When the old way stops fitting"
 draft: false
 categories: letter
 tags:
