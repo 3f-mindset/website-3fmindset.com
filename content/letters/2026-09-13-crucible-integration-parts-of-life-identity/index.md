@@ -38,6 +38,8 @@ Better relationship can involve translation. A value may take a different form i
 
 Sometimes it means setting a boundary between parts. You may need to protect one role from being consumed by another, or create a transition that lets you arrive more fully. A boundary is not necessarily a wall of rejection. It can give each commitment a more honest place, especially when you cannot give every part equal attention at once.
 
+The Edge question asks which parts of your life or identity need a better relationship here, because a specific point of friction makes the whole-life question workable. You can use the answer as a standard for a vision in which your roles and values can coexist without one being erased. That does not mean every role gets equal time or identical expression. It means you can ask whether the way you are arranging them reflects a choice you endorse. If a role repeatedly silences a value you mean to live by, the tension can signal drift; if a deliberate boundary protects what matters, apparent separation may instead serve your direction.
+
 ## A life with more room for the whole person
 
 When parts of life are in better relationship, you may experience less hidden negotiation. You might understand why one role needs to wait, and what you are protecting by making that choice. You may be able to bring a strength into a place where it was absent, or acknowledge a need before it becomes resentment. The result may be coherence, but it need not be perfect harmony.
