@@ -3,7 +3,7 @@ date: 2026-04-26
 slug: "crucible-who-experiences-the-difference"
 title: "The lives touched by a direction"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - relationships
   - responsibility
