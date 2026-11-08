@@ -24,7 +24,7 @@ Many men learn to measure their value by usefulness. Being needed can offer belo
 
 But a role that requires you to disappear may not be sustainable service. If you consistently ignore fatigue, personal commitments, or your own needs, the cost can spread. Your attention may become thin. Your patience may narrow. You may offer help that you later resent, or make promises that your real capacity cannot support. Others might not know the terms you have silently imposed on yourself, yet they experience the consequences when you reach a limit you never communicated.
 
-This does not mean every difficult responsibility is harmful or every boundary is easy. Some seasons ask for extraordinary care. A person may willingly choose a demanding contribution because the stakes are meaningful. The question is not whether service should ever involve sacrifice. It is whether the sacrifice is conscious, proportionate to the role, and possible within the conditions you face,or whether self-erasure has become the unspoken price of being considered good.
+This does not mean every difficult responsibility is harmful or every boundary is easy. Some seasons ask for extraordinary care. A person may willingly choose a demanding contribution because the stakes are meaningful. The question is not whether service should ever involve sacrifice. It is whether the sacrifice is conscious, proportionate to the role, and possible within the conditions you face, or whether self-erasure has become the unspoken price of being considered good.
 
 There may also be structural limits. A workplace, family system, or community can rely on one person’s overextension while leaving the underlying load unchanged. In that situation, personal resilience alone cannot solve the problem. Naming your limits may reveal a need for shared responsibility, resources, or a changed expectation. It is unfair to treat every strain as a failure of individual boundary-setting when the conditions themselves are part of the burden.
 
@@ -45,3 +45,11 @@ When service and limits are considered together, contribution may become more tr
 This possibility is not guaranteed, and it does not resolve every conflict. Someone may be disappointed by a boundary. A need may remain unmet because no one has enough capacity. You may have to choose between legitimate claims. Naming the beneficiary and your limits cannot remove the difficulty, but it can prevent you from disguising it as a simple test of character.
 
 Who or what is served by the role you want to play? How can you contribute without erasing your own limits? Let the questions stay connected, and let your answer remain your own. The Edge does not require you to serve everyone or prove your worth through sacrifice. It offers a way to consider both the good your role might do and the person who must live inside that role.
+
+This prompt concerns service: who benefits, and what can you offer without disappearing from your own life? Roles shape relationships and time. If the beneficiary is unclear, you may perform without knowing whether it helps. Invisible limits can turn contribution into depletion or resentment.
+
+The questions establish a standard connected to the life you want, rather than a demand to be endlessly useful. What presence do you want in family, work, or community? What contribution would be meaningful? Your answer might include care, rest, shared responsibility, and room for development.
+
+Compare that standard with the current arrangement. Are you doing unneeded tasks while avoiding a fitting contribution? Are you saying yes from fear, then withholding strain until resentment? Does the role leave space for health, or depend on you exceeding capacity? These observations identify a pattern, not whether to stay, change, or leave.
+
+With the pattern clearer, move toward your chosen direction. Ask what would help, explain what you can offer, share the load, or renegotiate. Others may be disappointed, and a need may remain. Honest contribution gives everyone a basis for what happens next, without making self-erasure the measure of care.
