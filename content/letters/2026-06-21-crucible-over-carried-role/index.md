@@ -3,7 +3,7 @@ date: 2026-06-21
 slug: "crucible-over-carried-role"
 title: "The weight can hide inside a valued role"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - roles
   - approval
