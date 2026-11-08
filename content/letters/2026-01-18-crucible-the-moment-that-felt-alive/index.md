@@ -3,7 +3,7 @@ date: 2026-01-18
 slug: "crucible-what-was-happening"
 title: "A small scene, not a grand theory"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - reflection
   - meaning
