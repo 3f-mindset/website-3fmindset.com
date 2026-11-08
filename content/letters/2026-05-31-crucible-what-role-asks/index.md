@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-05-31
 slug: "crucible-what-role-asks"
 title: "Bring the role into a real moment"
 draft: false
