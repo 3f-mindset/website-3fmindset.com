@@ -3,7 +3,7 @@ date: 2026-09-06
 slug: "crucible-legacy-beyond-the-immediate-moment"
 title: "The reach of an ordinary choice"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - legacy
   - meaning
