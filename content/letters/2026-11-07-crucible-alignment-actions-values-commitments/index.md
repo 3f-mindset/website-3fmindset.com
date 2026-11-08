@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-alignment-actions-values-commitments"
-title: "Do Your Choices Match the Values You Claim?"
+title: "The distance between saying and doing"
 draft: false
 categories: letter
 tags:
