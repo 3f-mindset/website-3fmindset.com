@@ -10,8 +10,6 @@ tags:
   - reflection
 ---
 
-## Do Your Choices Match the Values You Claim?
-
 There is a particular discomfort in noticing that your actions do not match what you say matters. You may value family and be distracted whenever you are with them. You may speak of health while treating your body as an instrument with no needs of its own. You may believe in fairness yet avoid a conversation that would require you to risk approval. Such gaps do not prove that your values are false. They do ask for attention.
 
 When the distance goes unexamined, it can become ordinary. You explain away one choice, then another, until the explanation itself protects the pattern. A commitment remains in your language but has little presence in your calendar, decisions, or relationships. You may still sincerely believe in it. Yet the people affected by your choices encounter what you do, not only what you intend. The result can be disappointment, confusion, or a gradual loss of confidence in your own promises.
