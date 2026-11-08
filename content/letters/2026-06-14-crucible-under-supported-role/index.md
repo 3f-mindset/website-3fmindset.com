@@ -3,7 +3,7 @@ date: 2026-06-14
 slug: "crucible-under-supported-role"
 title: "Notice the role already in the room"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - roles
   - support
