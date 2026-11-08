@@ -10,7 +10,9 @@ tags:
   - practice
 ---
 
-The Crucible Edges offer language for qualities that can help you inhabit a chosen role: Direction, Craft, Alignment, Stewardship, Adaptation, Service, Legacy, Integration, and Expression. They are not a ranking of men or a checklist you must complete. A quality matters here only if it illuminates your circumstances. Your next step may call for a clearer heading, more careful work, a truthful conversation, or a willingness to change course. The name is less important than the behavior it helps you see.
+## The quality the moment asks for
+
+Which Edge seems needed for the next step? What specific behavior would express it? The question is useful because a quality becomes real in the moment you have to act. It is one thing to admire patience, courage, or care in the abstract. It is another to notice what your actual situation asks of you, and what a small, visible expression might look like.
 
 ## When the question goes unanswered
 
