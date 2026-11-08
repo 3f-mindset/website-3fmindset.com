@@ -10,10 +10,6 @@ tags:
   - reflection
 ---
 
-## What Deserves Your Attention When Everything Feels Urgent?
-
-Several demands can be legitimate at once. Work may need care, a relationship may be asking for presence, your body may need attention, and a promise may have become urgent. The question is not whether every demand matters equally. It is how you discern what deserves attention here, in this particular part of life, and what might help you choose a heading without pretending the other demands have vanished.
-
 When you do not make that distinction, the loudest claim often becomes the organizing principle. Urgency can impersonate importance. Other people's expectations can acquire the force of your own convictions simply because they arrive with a deadline or visible consequence. You may spend a day responding faithfully to what is nearest and still feel strangely absent from the life you meant to inhabit. The day was full, but fullness is not the same as direction.
 
 This drift can be difficult to notice because it does not always look like failure. You may be competent, dependable, and busy. You may keep many plates from falling. Yet the question of what deserves attention remains unanswered, so the answer is supplied moment by moment by interruption. Over time, your choices may feel less like choices and more like a trail of reactions. You can become tired without being able to say what the tiredness was for.
