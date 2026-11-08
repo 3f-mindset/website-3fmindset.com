@@ -12,6 +12,8 @@ tags:
 
 A role is not a performance for an audience. It is a relationship between what matters to you and what you actually do in a particular setting. The role of a friend, for example, might involve listening, telling the truth with care, making room for another person's limits, or asking for help in return. But you do not need to accept any ready-made definition. Your own circumstances and commitments give the word its meaning.
 
+The question is: what role do you want to practice in a domain that matters to you? It is not asking what title you hold or what others expect you to be. It asks what kind of participation belongs in the life you hope to build. A name for that role can become a personal standard for ordinary choices, helping you notice whether your behavior is moving toward your vision or drifting into a pattern you did not choose.
+
 It can feel safer not to ask. If you keep your role vague, you do not have to notice the distance between what you value and how your days are arranged. You can remain generally well-intentioned, hoping that care or responsibility will somehow show up when it is needed. Yet an unnamed role can be shaped by habit, other people's expectations, or the loudest immediate demand. You may find yourself participating in a way you never chose, then wondering why the domain feels thin or strained.
 
 ## The quiet cost of leaving it unnamed
