@@ -3,7 +3,7 @@ date: 2026-09-13
 slug: "crucible-integration-parts-of-life-identity"
 title: "The parts that do not speak"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - integration
   - identity
