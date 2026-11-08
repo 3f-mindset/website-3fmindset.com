@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-stewardship-careful-tending"
-title: "What in Your Life Will Suffer If You Stop Tending It?"
+title: "The Hidden Cost of Neglect and Over-Carrying"
 draft: false
 categories: letter
 tags:
@@ -10,15 +10,13 @@ tags:
   - care
 ---
 
-## What in Your Life Will Suffer If You Stop Tending It?
-
 Some things matter because they require care over time. A relationship is not sustained by a single generous moment. A capacity can be spent faster than it is restored. An opportunity may need patient attention before it becomes useful. A responsibility can be carried so routinely that you stop noticing what it asks of you. Stewardship is the quality of seeing that something has been entrusted to your attention, without assuming that you own or control every outcome.
 
 When careful tending is absent, neglect is not always dramatic. It can look like postponed conversations, small maintenance repeatedly deferred, or an assumption that a person will understand your absence because they know you care. You may keep intending to return to a resource or relationship once the busy season ends. The season stretches, and what depended on attention begins to thin. The loss may be gradual enough that you only recognize it after options have narrowed.
 
 A man may also confuse stewardship with possession. He may try to control the people or outcomes he cares about, believing that vigilance is the same as responsibility. Or he may take on so much that no one else has room to contribute. In either case, care becomes heavy and brittle. What was meant to be tended can become something he manages anxiously, while his own limits disappear from view.
 
-The prompt asks what needs careful tending over time, not what you must preserve at any cost. That distinction matters. Some commitments change; some opportunities pass; some relationships require boundaries or repair rather than unending maintenance. Stewardship includes discernment about what is yours to care for, what can be shared, and what may need to be released.
+Careful tending does not mean preserving something at any cost. That distinction matters. Some commitments change; some opportunities pass; some relationships require boundaries or repair rather than unending maintenance. Stewardship includes discernment about what is yours to care for, what can be shared, and what may need to be released.
 
 ## The hidden cost of neglect and over-carrying
 
