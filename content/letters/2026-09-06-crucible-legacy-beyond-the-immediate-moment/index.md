@@ -36,6 +36,8 @@ These questions are not meant to make you responsible for every future outcome. 
 
 Sometimes what you hope to build is not an achievement but a condition: more room for someone else to choose, a relationship where truth can be spoken, a practice that keeps knowledge available, or a responsibility handled with care. These possibilities may be shared and modest. They might depend on collaboration rather than your individual force. A legacy does not have to be a solo project.
 
+The Edge question asks what you hope your choices build, pass on, or make possible beyond this moment. It matters because an imagined future can expose the effects of repeated ordinary choices that immediate rewards conceal. Your answer can become a standard for your own vision: if you hope to leave people more capable, for example, notice whether your everyday way of helping creates room for their agency. When your time and conduct consistently serve a different end, that gap may reveal drift from the direction you chose, not proof that you have failed. The standard is yours to revise as your understanding changes.
+
 You may discover that what matters most is not what you add, but what you stop transmitting. An inherited expectation, a silence, or a way of handling pressure may no longer deserve to continue through you. Choosing not to repeat something can be difficult work, especially when it once helped you survive or belong. You need not condemn the past in order to decide that a different pattern would be more fitting now.
 
 ## Hold the horizon lightly
