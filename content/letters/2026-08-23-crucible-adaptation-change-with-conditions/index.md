@@ -45,3 +45,11 @@ Attention to adaptation may open a different relationship with effort. Instead o
 It may also soften the shame of revision. A changed plan does not erase the sincerity of the earlier one. You made it with the information and circumstances you had. If those circumstances shift, responsiveness can be a form of care for the purpose, the people involved, and your own capacity. The new approach may still be imperfect. It can be more honest about what is possible now.
 
 What needs to change in response to the conditions, rather than being forced through the old approach? Perhaps the answer concerns a method, a timeline, a role, or the expectation that you can carry something alone. Perhaps the old approach still deserves a chance. Let your reflection remain open to either possibility. Adaptation is not a score for flexibility; it is a lens for seeing whether your way of moving still fits the reality you are meeting.
+
+This prompt explores adaptation as a response to changed conditions, not change for its own sake. Forcing an approach that no longer fits consumes time, energy, trust, and attention; abandoning a meaningful direction at the first discomfort costs continuity. Quality of life is affected by whether your effort responds to reality and serves what matters.
+
+Name the direction you want. It establishes a standard for judging an approach: does this way still support that aim under today's conditions? The standard is a reference point, not a rigid rule.
+
+Look for drift. Are you repeating a plan that depended on missing time or support, or spending more effort for less movement? These signs do not prove the goal is wrong; they tell you to examine the fit. The method may need adjustment, or the original aim may no longer represent your priorities.
+
+Once you see the gap, choose rather than react automatically. A conversation, small trial, revised timeline, or request for help might clarify what works. You may persist with a changed method or reconsider the goal. Either can be responsible when grounded in what you value and what is possible. Adaptation helps you move toward your vision with open eyes, rather than confusing loyalty to an old plan with loyalty to the life it was meant to serve.
