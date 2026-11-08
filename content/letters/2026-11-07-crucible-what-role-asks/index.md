@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-what-role-asks"
-title: "What Does This Role Ask of You When It Counts?"
+title: "Bring the role into a real moment"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - responsibility
   - reflection
 ---
-
-## Bring the role into a real moment
-
-What does this role ask of you in a real situation? A role can sound clear when it remains an idea. “Be a good partner,” “show up as a leader,” or “be a present father” may feel meaningful until the day gets crowded, someone is disappointed, and your own capacity is limited. Then the label alone cannot tell you what to do. A real situation gives the role texture: a particular conversation, choice, responsibility, or boundary.
 
 This question invites you to move from an identity claim toward participation. It does not ask what a perfect man would do under ideal conditions. It asks what this role might call for amid the conditions you actually face. The answer could involve speaking, listening, making something, declining, asking, waiting, or repairing. Sometimes the role may ask for restraint rather than more effort. You are not required to decide before you understand what is happening.
 
