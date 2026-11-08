@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-05-24
 slug: "crucible-role-to-practice"
 title: "A role is a way of participating"
 draft: false
