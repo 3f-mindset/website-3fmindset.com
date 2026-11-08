@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-what-was-happening"
-title: "One Moment Your Life Was Telling You Something"
+title: "A small scene, not a grand theory"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - meaning
   - attention
 ---
-
-## A small scene, not a grand theory
-
-Think of a recent moment when you felt engaged, useful, connected, or quietly proud. What was happening? What mattered in that moment? The first question is not an imperative to manufacture a special memory. It asks you to look for evidence in an ordinary scene, not to define your purpose in a sentence that could fit on a wall.
 
 The moment may not have been impressive. Perhaps you were repairing something, helping a colleague understand a difficult point, listening to a friend without rushing to solve him, or watching a child become absorbed in a discovery. Perhaps you were working alone and felt the satisfaction of doing a task with care. Maybe the feeling lasted only a few minutes. Smallness does not make it unimportant. A brief moment can show you the conditions under which you feel more fully present.
 
@@ -44,6 +40,6 @@ When you take such moments seriously, your picture of a good life can become les
 
 That knowledge can influence choices without dictating them. It may shape what you want to protect, what you are willing to learn, or what you no longer want to call success. It can help you tell the difference between a role that looks valuable and a role in which you can make a contribution that feels real. Still, the final meaning is yours. A scene that matters to you does not need outside validation to count, and it does not obligate you to explain it to anyone.
 
-There is a kind of strength in remembering what has gone right without using it to deny what is hard. It gives difficulty a wider context. Your life is not only a list of problems awaiting your competence. It also contains moments when you were interested, connected, useful, or proud—evidence of what can happen when the conditions and your participation meet in a meaningful way.
+There is a kind of strength in remembering what has gone right without using it to deny what is hard. It gives difficulty a wider context. Your life is not only a list of problems awaiting your competence. It also contains moments when you were interested, connected, useful, or proud, evidence of what can happen when the conditions and your participation meet in a meaningful way.
 
 So return to one recent moment. What was happening? What mattered in it? If the answer is unclear, perhaps the scene deserves another look rather than a verdict. Your own memory may hold a more exact account than any abstract advice could provide. Keep the possibility open: the quality you are seeking may already have appeared briefly, asking not to be chased, but understood.
