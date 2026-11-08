@@ -3,7 +3,7 @@ date: 2026-01-11
 slug: "crucible-what-has-been-taking-up-space"
 title: "The room inside an ordinary day"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - attention
   - reflection

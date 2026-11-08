@@ -8,7 +8,7 @@ Turn every bullet prompt in sections 1–3 of `content/program/Crucible/06-journ
 
 Readers encounter one essay per source bullet: seven from section 1; six from section 2; six from longer-term vision; five from role; four from visible proof/action; nine from the individual Edge prompts; and six from “Then choose only the useful reflection” (43 total). Each essay title is the first internal heading promoted to the page title. Each essay is a distinct, reflective 5–10 minute read that helps readers see the stakes of avoidance, the possibilities of reflection, and their own answer without prescribing that answer. The essays are backdated in source order, one per consecutive Sunday from 2026-01-11 through 2026-11-01.
 
-Each essay is added as a dated letter/blog entry under `content/letters/` and is submitted in a PR containing exactly one essay file. Every source bullet must be represented once; no essay combines or splits a bullet.
+Each essay is added as a dated Crucible blog entry under `content/letters/` and is submitted in a PR containing exactly one essay file. Every source bullet must be represented once; no essay combines or splits a bullet.
 
 ## Non-goals
 
@@ -31,7 +31,7 @@ Each essay is added as a dated letter/blog entry under `content/letters/` and is
 
 ## Constraints and assumptions
 
-- Use the website's existing letter collection under `content/letters/YYYY-MM-DD-<slug>/index.md`; use a Hugo `slug`, `title`, `date`, `draft: false`, `categories: letter`, and relevant tags. Do not invent a cover asset.
+- Use the website's existing content collection under `content/letters/YYYY-MM-DD-<slug>/index.md`; use a Hugo `slug`, `title`, `date`, `draft: false`, `categories: crucible`, and relevant tags. Do not invent a cover asset.
 - `ASSUMPTION:` Backdate in source-prompt order, assigning one consecutive Sunday per article from 2026-01-11 (first prompt) through 2026-11-01 (last prompt), the 43 Sundays preceding the current date 2026-11-08. Set the frontmatter date and directory date prefix to the same Sunday; these are historical publication dates, not future scheduled dates.
 - Article title is the text of its first internal `##` heading, moved to frontmatter; remove that heading from the body and remove any opening paragraph that merely restates the source prompt or meta-explains the exercise/prompt. Preserve independent narrative hooks; do not remove an opening paragraph solely because it is first.
 - Preserve a compound source prompt as one article when it is represented by one source bullet.
