@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-04-05
 slug: "crucible-deliberate-deferral"
 title: "Waiting can be a choice"
 draft: false
