@@ -18,6 +18,8 @@ The point is not to make a promise to the future. It is to notice what you would
 
 ## Why a compass is different from a deadline
 
+The prompt asks you to finish the thought “Over time, I want this part of my life to...” in language you choose. Putting that direction into words matters because it gives you a personal reference point for the quality of life you want, one that can help you notice drift or weigh a choice without turning the future into a guarantee.
+
 A deadline measures arrival at a point. A compass helps orient movement while the terrain is unfolding. The sentence beginning “Over time” belongs to the second kind of language. It emphasizes gradual direction rather than instant transformation. That may sound less decisive than a target, but it can be more honest when circumstances are complex or the desired change depends on more than your effort.
 
 You might write that over time you want this part of your life to include more candor, steadiness, contribution, or room for rest. You might want a relationship to become more mutual, your work to feel more connected to what you value, or your daily life to leave space for something that has been crowded out. The sentence need not be a polished aspiration. It can be provisional and particular, even if you are still discovering what the words mean.
