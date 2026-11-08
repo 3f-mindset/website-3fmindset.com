@@ -3,7 +3,7 @@ date: 2026-11-01
 slug: "crucible-pattern-across-focus-domains"
 title: "Seeing more than one part of life"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - reflection
   - priorities
