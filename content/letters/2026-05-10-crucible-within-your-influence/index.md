@@ -18,6 +18,8 @@ Both positions are exhausting. The first turns disappointment into an indictment
 
 ## The ground between power and helplessness
 
+The question is not whether you can control a whole situation, but which part of the direction you hope for is within your influence, shared with others, or beyond your reach. This matters to the quality of your life because carrying impossible responsibility and surrendering all agency both distort your choices; seeing your actual part helps you choose where to participate by your own standard.
+
 Influence is not binary. Some things are yours to choose; some you can shape with others; some depend on conditions beyond your reach. There may be unclear territory where you need more information. You do not need a perfect map. Notice that different parts call for different responses.
 
 What is yours may include attention, a request, a boundary, the way you prepare, the quality of an effort, or the decision to reconsider a direction. It may also include acknowledging what you cannot carry alone. Shared influence may require another person’s willingness or a change in a system. Naming that fact can protect you from turning a relationship into a private project of self-improvement. Some outcomes are not yours to produce, no matter how carefully you behave.
