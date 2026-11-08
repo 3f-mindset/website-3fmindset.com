@@ -31,7 +31,7 @@ Each essay is added as a dated letter/blog entry under `content/letters/` and is
 ## Constraints and assumptions
 
 - `ASSUMPTION:` Use the website's existing letter collection under `content/letters/YYYY-MM-DD-<slug>/index.md`; date the series `2026-11-07`, the current repository working date, and use a Hugo `slug`, `title`, `date`, `draft: false`, `categories: letter`, and relevant tags. Do not invent a cover asset.
-- Article title is the text of its first internal `##` heading, moved to frontmatter; remove that heading from the body and remove any opening paragraph that merely restates the source prompt.
+- Article title is the text of its first internal `##` heading, moved to frontmatter; remove that heading from the body and remove any opening paragraph that merely restates the source prompt or meta-explains the exercise/prompt. Preserve independent narrative hooks; do not remove an opening paragraph solely because it is first.
 - Preserve a compound source prompt as one article when it is represented by one source bullet.
 - Titles and bodies contain no em dash glyphs (`—`); restructure sentences naturally instead of substituting punctuation mechanically.
 - `ASSUMPTION:` If a bullet has no interrogative sentence (the vision-writing instruction in section 3), its opening instruction supplies the title concept.
