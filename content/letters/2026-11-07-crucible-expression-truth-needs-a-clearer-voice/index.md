@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-expression-truth-needs-a-clearer-voice"
-title: "What Truth Are You Keeping Quiet?"
+title: "What remains unspoken"
 draft: false
 categories: letter
 tags:
