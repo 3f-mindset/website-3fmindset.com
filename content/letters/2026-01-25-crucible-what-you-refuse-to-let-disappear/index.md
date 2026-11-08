@@ -3,7 +3,7 @@ date: 2026-01-25
 slug: "crucible-what-you-refuse-to-let-disappear"
 title: "The quiet fear of losing what matters"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - boundaries
   - values
