@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-adaptation-change-with-conditions"
-title: "What If the Old Way Is the Problem?"
+title: "Persistence and Rigidity Are Not Opposites"
 draft: false
 categories: letter
 tags:
@@ -10,9 +10,7 @@ tags:
   - resilience
 ---
 
-## What If the Old Way Is the Problem?
-
-An approach can be sensible when you choose it and become costly when conditions change. A schedule that once fit may not fit a new responsibility. A way of communicating may fail when the relationship has changed. A plan may depend on energy, time, or support that is no longer available. The question asks what needs to change in response to conditions,not whether you can force the old approach to succeed through sheer insistence.
+An approach can be sensible when you choose it and become costly when conditions change. A schedule that once fit may not fit a new responsibility. A way of communicating may fail when the relationship has changed. A plan may depend on energy, time, or support that is no longer available. When conditions change, the question is what needs to change in response, not whether you can force the old approach to succeed through sheer insistence.
 
 Ignoring that question can make persistence look like strength while it slowly becomes rigidity. You may repeat the same effort, blame yourself when it produces less, and conclude that you need more discipline. The method remains unquestioned because changing it feels like admitting defeat. Meanwhile, the actual conditions receive less attention. Your effort rises, but the fit between effort and reality worsens.
 
