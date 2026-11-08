@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-under-supported-role"
-title: "Which Important Role Is Running on Empty?"
+title: "Notice the role already in the room"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - support
   - boundaries
 ---
-
-## Notice the role already in the room
-
-Which role is already present but under-supported? This question starts somewhere different from ambition. It does not ask you to become a new person or add another responsibility. It asks you to notice a role you are already inhabiting, perhaps quietly, and consider whether the conditions around it allow you to live it with enough care and steadiness.
 
 The role may be obvious to everyone except you. You may be the person others turn to, the one coordinating a family need, the colleague holding knowledge that is rarely acknowledged, or a friend who keeps making space for someone else. Or it may be more private: you are learning, rebuilding capacity, trying to be a more honest partner, or caring for a part of your life that receives little recognition. Being under-supported does not always mean no one cares. It may mean the role has not been named, resourced, shared, or given room.
 
