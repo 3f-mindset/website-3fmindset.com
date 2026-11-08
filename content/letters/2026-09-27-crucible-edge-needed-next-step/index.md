@@ -3,7 +3,7 @@ date: 2026-09-27
 slug: "crucible-edge-needed-next-step"
 title: "The quality the moment asks for"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - reflection
   - personal-growth
