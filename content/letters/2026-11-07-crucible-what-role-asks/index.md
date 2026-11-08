@@ -10,8 +10,6 @@ tags:
   - reflection
 ---
 
-If you never bring the role into a real situation, it can remain a flattering idea or an accusation. You might call yourself committed without seeing how commitment is expressed in your time. You might think you should be more supportive without knowing whether support means advice, practical help, quiet company, or respecting another person's choice. A vague ideal can leave you either congratulating yourself on intention or criticizing yourself for not meeting a standard you never made concrete.
-
 ## What happens when the question stays abstract
 
 Avoiding the real situation often lets the familiar response take over. You may default to fixing because uncertainty makes you uncomfortable, even when the person in front of you wants to be heard. You may stay silent to preserve calm, then carry resentment because the silence did not resolve anything. You may take charge because you are capable, without asking whether this responsibility belongs to you or whether others need room to contribute.
