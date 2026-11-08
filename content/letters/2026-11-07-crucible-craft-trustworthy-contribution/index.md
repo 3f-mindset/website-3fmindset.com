@@ -10,8 +10,6 @@ tags:
   - practice
 ---
 
-## Is Your Work Worthy of the Man You Want to Become?
-
 There is a difference between wanting to contribute and being able to offer work that others can rely on. The difference is not a measure of your worth. It is a question about craft: the skill, quality, or deliberate practice that could make a contribution more trustworthy in the role you have chosen. For a man who wants to be useful, that question can touch both pride and vulnerability.
 
 It is tempting to treat good intentions as enough. You may care about the outcome, feel responsible for it, and still lack a needed skill or a reliable way of working. If that gap remains unnamed, the cost can accumulate quietly. Work may need repeated correction. Others may hesitate to depend on your word. You may find yourself compensating with long hours, confidence, or last-minute effort rather than addressing the part of the work that needs development.
