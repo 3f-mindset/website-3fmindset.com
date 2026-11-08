@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-04-12
 slug: "crucible-ordinary-day-meaningful-direction"
 title: "A direction, not a verdict"
 draft: false
