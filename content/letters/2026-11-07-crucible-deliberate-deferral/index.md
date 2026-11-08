@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-deliberate-deferral"
-title: "When Does Deferring a Priority Become an Honest Choice?"
+title: "Waiting can be a choice"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - responsibility
   - reflection
 ---
-
-## Waiting can be a choice
-
-If you defer this area, what would make that a deliberate choice rather than neglect? The question makes room for a kind of honesty that can be difficult to find: something can matter and still not be the focus right now. A man may have limited time, energy, money, or emotional capacity. He may be caring for others, responding to a demanding season, or waiting for conditions that make action more possible. Deferral does not have to be a declaration that the area is unimportant.
 
 But an unspoken decision can look like waiting while functioning as abandonment. You may tell yourself you will return to a relationship, a health concern, a creative wish, or a practical matter when life settles down. The phrase “when things settle down” can be sincere. It can also remain undefined for so long that the area has no real place in your attention. Without a reason, a boundary, or a point of review, postponement can become the default answer repeated by every new demand.
 
@@ -42,4 +38,4 @@ Some conditions are outside your reach. A deliberate choice does not require com
 
 If you defer this area, what would make that a deliberate choice rather than neglect? What purpose would the pause serve? What, if anything, needs minimal care while it waits? Who should understand the choice, and what might tell you to revisit it? What are you willing to accept as the cost of not focusing here now?
 
-You do not need to turn the answer into a binding contract. A decision can fit the life you have today and need revision when your life changes. Perhaps you will choose to wait, with more clarity about why. Perhaps you will discover that a small action belongs now after all. Either response can be yours. The point is not to eliminate uncertainty, but to make sure the area is not postponed simply because no one—including you—has been willing to look at the choice.
+You do not need to turn the answer into a binding contract. A decision can fit the life you have today and need revision when your life changes. Perhaps you will choose to wait, with more clarity about why. Perhaps you will discover that a small action belongs now after all. Either response can be yours. The point is not to eliminate uncertainty, but to make sure the area is not postponed simply because no one, including you, has been willing to look at the choice.
