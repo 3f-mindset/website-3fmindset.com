@@ -26,6 +26,10 @@ None of these signs proves that a particular domain must become your next projec
 
 ## Let attention become information
 
+The question, “What area of my life is calling for attention?”, is not a demand to fix everything that feels imperfect. It is a standard for choosing where your effort belongs. A standard gives you something to compare your current choices against: not an idealized life, but the direction you want your life to take. Without one, urgency and habit make the choices for you. With one, you can ask whether the way you spend your time is moving you toward a working vision or letting you drift farther from it.
+
+By a working vision, I mean a grounded picture of how you want to live across the parts of life that matter to you: health, relationships, work, home, meaning, and the rest. It is not a promise that every area will be thriving at once. It is a reference point you can revise as circumstances change. The area calling for attention is the place where your lived reality and that direction seem most out of alignment, or where a neglected strength or possibility needs room to grow.
+
 You can begin with what repeatedly comes to mind without forcing an immediate plan. Which area do you notice when you are not occupied with the next demand? What have you been making excuses not to see? Where do you feel a small lift when you imagine giving something more room, and where do you feel dread? These responses are information, not instructions. They can help you separate desire from obligation, and a real need from an inherited expectation.
 
 It may help to describe a recent, ordinary moment rather than label a whole domain. “My health is bad” can contain many different experiences. A scene might reveal that you have been too tired to take a walk, postponing an appointment, or feeling disconnected from your body. “My relationships need work” is broad; recalling the last conversation that felt honest may show what is missing or what remains possible. Concrete attention keeps reflection close to the life you have, instead of sending you toward an idealized version of yourself.
