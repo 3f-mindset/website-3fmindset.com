@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-the-possibilities-of-focus"
-title: "If You Give This Area Your Focus, What Might Change?"
+title: "Consider what attention could make possible"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - priorities
   - reflection
 ---
-
-## Consider what attention could make possible
-
-What might happen if you focus here? The question asks you to imagine a consequence without pretending to predict it. Focus is not magic, and choosing an area does not guarantee the outcome you want. Other people, resources, timing, health, and circumstances all shape what can happen. Still, sustained attention can change what you notice, what you practice, and what choices become available. It is worth considering the possibility before deciding whether the cost is one you want to carry.
 
 A man may avoid this question because imagining a better direction makes the gap with the present more visible. If you let yourself picture a more connected relationship, more sustainable work, or greater care for your capacity, you may also feel the distance between that possibility and the days you have been living. It can seem safer not to hope too clearly. You cannot be disappointed by a picture you refuse to draw.
 
