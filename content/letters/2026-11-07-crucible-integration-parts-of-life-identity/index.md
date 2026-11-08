@@ -10,9 +10,7 @@ tags:
   - balance
 ---
 
-## Which Part of You Is Still Living Outside the Rest of Your Life?
-
-A man can be capable in several roles and still feel divided among them. The worker, partner, friend, parent, maker, and private self may seem to belong to different lives. Each part can make claims on time and attention, while no single view of the whole feels available. Integration asks what parts of your life or identity need to be brought into better relationship here,not to make them identical, but to understand how they can coexist.
+A man can be capable in several roles and still feel divided among them. The worker, partner, friend, parent, maker, and private self may seem to belong to different lives. Each part can make claims on time and attention, while no single view of the whole feels available.
 
 When this question stays untouched, compartmentalization can become a way of living. You may act one way at work and another with people close to you, not because context never matters, but because some part of yourself has been exiled from the rest. A need for rest may be treated as irrelevant to your ambitions. A commitment at home may be invisible to the version of you that accepts more work. A value you claim privately may disappear in the setting where it feels inconvenient.
 
