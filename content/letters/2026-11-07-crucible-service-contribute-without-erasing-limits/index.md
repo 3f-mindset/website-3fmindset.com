@@ -10,7 +10,7 @@ tags:
   - contribution
 ---
 
-## The purpose inside a role
+## Who Benefits From the Way You're Showing Up,and at What Cost?
 
 A role is not only a position you occupy. It is a way your presence affects other people and the things you care about. Asking who or what is served by the role you want to play can bring its purpose into view. Asking how you can contribute without erasing your own limits keeps that purpose from turning into self-abandonment.
 
@@ -26,7 +26,7 @@ Many men learn to measure their value by usefulness. Being needed can offer belo
 
 But a role that requires you to disappear may not be sustainable service. If you consistently ignore fatigue, personal commitments, or your own needs, the cost can spread. Your attention may become thin. Your patience may narrow. You may offer help that you later resent, or make promises that your real capacity cannot support. Others might not know the terms you have silently imposed on yourself, yet they experience the consequences when you reach a limit you never communicated.
 
-This does not mean every difficult responsibility is harmful or every boundary is easy. Some seasons ask for extraordinary care. A person may willingly choose a demanding contribution because the stakes are meaningful. The question is not whether service should ever involve sacrifice. It is whether the sacrifice is conscious, proportionate to the role, and possible within the conditions you face—or whether self-erasure has become the unspoken price of being considered good.
+This does not mean every difficult responsibility is harmful or every boundary is easy. Some seasons ask for extraordinary care. A person may willingly choose a demanding contribution because the stakes are meaningful. The question is not whether service should ever involve sacrifice. It is whether the sacrifice is conscious, proportionate to the role, and possible within the conditions you face,or whether self-erasure has become the unspoken price of being considered good.
 
 There may also be structural limits. A workplace, family system, or community can rely on one person’s overextension while leaving the underlying load unchanged. In that situation, personal resilience alone cannot solve the problem. Naming your limits may reveal a need for shared responsibility, resources, or a changed expectation. It is unfair to treat every strain as a failure of individual boundary-setting when the conditions themselves are part of the burden.
 
