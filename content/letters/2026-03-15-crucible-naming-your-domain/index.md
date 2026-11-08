@@ -3,7 +3,7 @@ date: 2026-03-15
 slug: "crucible-naming-your-domain"
 title: "A name is a lens"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - identity
   - reflection
