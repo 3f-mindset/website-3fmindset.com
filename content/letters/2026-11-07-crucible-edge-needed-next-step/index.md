@@ -12,11 +12,9 @@ tags:
 
 ## The quality the moment asks for
 
-Which Edge seems needed for the next step? What specific behavior would express it? The question is useful because a quality becomes real in the moment you have to act. It is one thing to admire patience, courage, or care in the abstract. It is another to notice what your actual situation asks of you, and what a small, visible expression might look like.
-
 ## When the question goes unanswered
 
-Without this kind of attention, it is easy to choose a next step by default. You may do what is familiar, what earns immediate approval, or what quiets the loudest pressure. A man can remain busy and still avoid the question of how he wants to participate. The work gets done, perhaps, but the way he does it may not fit the role or the direction he says matters.
+Without this kind of attention, it is easy to choose a next step by default. You may do what is familiar, what earns immediate approval, or what quiets the loudest pressure. A man can remain busy and still avoid the question of how he wants to participate. The work gets done, perhaps, but the way he does it may not fit the role or the direction he says matters. A pause to name what matters can reveal whether the next move calls for effort, restraint, or a conversation before any action is wise. It can also help you distinguish urgency from importance.
 
 The cost is not always a visible failure. Sometimes it is friction that accumulates: a conversation handled too quickly, a promise kept at the expense of a necessary boundary, an effort pushed forward after the conditions have changed. Sometimes the missing quality is not a moral deficiency at all. It may be a skill you have not practiced, a resource you do not have, or support that has not been offered. If you skip reflection, these different situations can all get reduced to the same harsh conclusion: try harder.
 
