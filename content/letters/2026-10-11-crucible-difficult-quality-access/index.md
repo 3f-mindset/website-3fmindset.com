@@ -3,7 +3,7 @@ date: 2026-10-11
 slug: "crucible-difficult-quality-access"
 title: "The distance between knowing and reaching"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - reflection
   - support
