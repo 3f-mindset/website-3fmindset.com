@@ -18,7 +18,7 @@ For many men, asking why something matters can feel like an invitation to overth
 
 ## Values, needs, and hopes
 
-## Values, needs, and hopes
+Asking what gives a direction weight means looking beneath its visible outcome to the value, need, or hope that makes it matter to you. That answer can become a standard you chose for yourself, helping you recognize when your effort expresses what matters and when you are following a borrowed measure of success.
 
 A value is not necessarily a slogan you admire. It can be a quality you want your choices to embody: fairness, craft, loyalty, freedom, care, courage, curiosity, or something else entirely. A need may be more immediate and concrete: rest, belonging, safety, support, room to decide. A hope can reach toward a possibility without claiming certainty, such as a more honest relationship, contributing work, or inhabiting your days with less fear. These categories may overlap. You do not need to classify your answer correctly before it counts.
 
@@ -27,8 +27,6 @@ The word “makes” is also important. It does not ask which reason would persu
 Sometimes the answer is not noble in a polished way, and it does not need to be. You may want a quieter life because you are depleted. You may want to learn because you are curious, not because the skill will advance your career. You may want to be more available to someone because you miss them. Plain motivations can be more sustaining than a grand explanation that does not fit your actual experience.
 
 At other times, you may discover that the direction serves a value but conflicts with another. Work can express contribution and compete with presence at home. Independence can protect dignity and make support harder to accept. Loyalty can preserve a commitment and prevent you from acknowledging that its terms have changed. The conflict is not evidence that you are doing reflection badly. It is evidence that human choices often ask us to hold more than one legitimate concern.
-
-## The cost of moving without meaning
 
 ## The cost of moving without meaning
 
@@ -41,8 +39,6 @@ There is a cost to pretending that every direction has to justify itself through
 Reflection can open a more grounded relationship to effort. When you know what a direction serves, you can distinguish between difficulty that belongs to meaningful work and difficulty that signals a poor fit or an unsustainable cost. You may be able to tolerate uncertainty without treating it as proof that the path is wrong. You may revise a goal while keeping faith with the value that first drew you toward it. Or you may realize the value is better served another way.
 
 None of this guarantees an easy choice. A real need can meet real constraints. A value can require a conversation whose outcome is uncertain. A hope can be sincere and still not come true in the form you imagine. The point is not to use meaning as a promise that effort will pay off. It is to let meaning inform the choice you are making, including what you can and cannot control.
-
-## Your reason need not persuade everyone
 
 ## Your reason need not persuade everyone
 
