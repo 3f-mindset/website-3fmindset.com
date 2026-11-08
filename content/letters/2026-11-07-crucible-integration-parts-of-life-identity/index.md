@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-integration-parts-of-life-identity"
-title: "Which Part of You Is Still Living Outside the Rest of Your Life?"
+title: "The parts that do not speak"
 draft: false
 categories: letter
 tags:
