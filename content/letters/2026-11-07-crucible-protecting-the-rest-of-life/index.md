@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-protecting-the-rest-of-life"
-title: "What Could Get Neglected While You Improve One Part of Life?"
+title: "Focus does not erase the rest"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - balance
   - priorities
 ---
-
-## Focus does not erase the rest
-
-What would need to be maintained or protected elsewhere while this area receives focus? The question recognizes that a man’s life is interconnected. Time and energy directed toward one priority come from somewhere, even when the trade is not immediately visible. Choosing a focus can be wise; pretending that everything else can run itself is not a plan. Other areas may not be active projects, but they remain part of the life you are trying to inhabit.
 
 This is not an argument for giving every domain equal attention. Equal attention is often impossible and may not be desirable. A season of change, care, or concentrated work can rightly ask more from you in one place. The issue is whether the choice is conscious. Without a look at what must remain cared for, a focus can expand until it consumes sleep, connection, recovery, or basic responsibilities. Then the very effort meant to improve life may make its foundation less steady.
 
