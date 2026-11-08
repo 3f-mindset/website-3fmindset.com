@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-03-08
 slug: "crucible-the-present-state"
 title: "Begin with what is there"
 draft: false
