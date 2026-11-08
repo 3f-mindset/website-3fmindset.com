@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-09-06
 slug: "crucible-legacy-beyond-the-immediate-moment"
 title: "The reach of an ordinary choice"
 draft: false
