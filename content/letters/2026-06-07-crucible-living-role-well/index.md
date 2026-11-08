@@ -10,7 +10,7 @@ tags:
   - reflection
 ---
 
-The verbs help. Do, say, make, refrain. A role is not only a belief about yourself; it takes shape in behavior. Yet the list also leaves room for different forms of contribution. Perhaps the role is expressed by completing a task, by naming a truth, by creating something useful, or by not interrupting a process that belongs to someone else. Sometimes what you refrain from doing is as meaningful as what you initiate.
+The prompt asks: what would you do, say, make, or refrain from doing when living a role well? The verbs help because a role is not only a belief about yourself; it takes shape in behavior. Yet the list also leaves room for different forms of contribution. Perhaps the role is expressed by completing a task, by naming a truth, by creating something useful, or by not interrupting a process that belongs to someone else. Sometimes what you refrain from doing is as meaningful as what you initiate. This matters to your life because roles put your values into contact with actual people, commitments, and limited time. Reflection can help you compare that visible participation with the direction you want your life to take, notice when habit has pulled you away from it, and choose a more fitting next response.
 
 Without this question, “living the role well” may stay too broad to guide you. You might want to be more present, responsible, or generous, but without a concrete picture those words can become a private standard you never meet. Or you may assume that your role is already clear because you have done it the same way for years. In either case, the domain can continue on autopilot: familiar actions repeated without asking whether they still serve the people and values involved.
 
