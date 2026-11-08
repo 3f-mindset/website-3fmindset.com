@@ -28,6 +28,8 @@ The answer need not be impressive. Perhaps you can stay curious when a plan chan
 
 Reliance is also not the same as self-sufficiency. You may have a quality that helps you ask for support, collaborate, or admit what you do not know. A man can be capable without pretending that capability removes his need for other people. Sometimes what is already available is not a solo solution but a willingness to make a request, receive help, or let another person bring a different perspective.
 
+An answer becomes useful when it helps set a standard for how you want to meet what matters. If steadiness is already reliable in your work, you might choose to bring that same steadiness to a family commitment, while noticing the conditions that make it possible. Then you can look back at real moments: did you use the quality in service of your chosen direction, or did it turn into over-functioning? That evidence can show when you are drifting from the life you want and when the quality needs a boundary or support. The standard is not “always be reliable.” It is a personal, testable way of bringing a proven capacity to the vision you chose, without treating it as an unlimited resource.
+
 ## A fuller account of yourself
 
 Thoughtful attention to what is available can change the tone of a next step. Instead of asking how to eliminate every weakness, you might ask how to bring a real capacity to a meaningful task while making room for what you still need to learn. You can start from evidence without turning it into a verdict about your identity. You can also make a more accurate plan: one that uses your current resources and acknowledges their limits.
