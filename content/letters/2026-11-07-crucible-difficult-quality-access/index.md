@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-difficult-quality-access"
-title: "What If the Quality You Need Is Present but Unsupported?"
+title: "The distance between knowing and reaching"
 draft: false
 categories: letter
 tags:
