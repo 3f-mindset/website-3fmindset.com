@@ -16,7 +16,7 @@ So you might keep the answer abstract. You want things to be better. You want le
 
 ## What the answer can reveal
 
-## What the answer can reveal
+Asking what you want to be more true is a way to name a quality you would choose for your life, not simply a condition you hope to escape. That distinction gives you a personal standard for noticing whether your current patterns are moving toward it or away from it.
 
 “More true” leaves room for a quality that is already present in some form. You do not have to declare that everything is broken before you can want more of what is good. Maybe there are already moments of patience, belonging, purpose, or play, and you wish they were less accidental. Maybe an important conversation happens sometimes, but not often enough for you to trust that you can speak openly. Maybe you already care for your body, your craft, or your relationships, but the way you do it is inconsistent with the respect you want to bring.
 
@@ -28,8 +28,6 @@ You may find a tension beneath it. You can want more independence and more suppo
 
 ## The price of not asking
 
-## The price of not asking
-
 When you never ask what you want to be more true, external definitions can quietly fill the space. A man may pursue the next promotion because it is the visible measure of progress, even when what he misses is time to do careful work. He may try to become more agreeable because conflict feels dangerous, while what he longs for is a relationship where honest disagreement is possible. He may chase a version of fitness shaped by comparison when the more intimate hope is to feel capable and at home in his body.
 
 These examples are not instructions about what your answer should be. They point to the risk of acting without knowing what the action is meant to serve. You can spend years achieving the language of improvement while the actual need remains unnamed. Then disappointment can feel bewildering: you got the result, yet the life did not become what you expected. Sometimes the problem is not that the result was worthless, but that it was asked to answer a different question.
@@ -37,8 +35,6 @@ These examples are not instructions about what your answer should be. They point
 Avoidance can also protect you from a difficult conversation with yourself. If you do not name the desired quality, you do not have to acknowledge how far away it feels, what it might cost, or what cannot be controlled. But silence does not make the distance disappear. It can turn a desire into impatience with yourself or others, or into a generalized sense that something is wrong. Naming what you want may hurt briefly; it can also make the hurt more intelligible.
 
 Attention may open options that were difficult to see while the wish remained vague. You might learn that the direction is not a dramatic life overhaul, but a change in how you participate in one relationship or responsibility. You might notice that the next helpful step is not more force but a clearer request, a boundary, or a change in conditions. You may find that the longing asks you to grieve what cannot be restored, while still deciding what remains possible. None of these outcomes is guaranteed. Reflection does not give you control over other people or circumstances; it gives you a better chance to recognize your own part without claiming responsibility for everything.
-
-## Desire without entitlement
 
 ## Desire without entitlement
 
