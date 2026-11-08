@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-02-01
 slug: "crucible-what-are-you-making-room-for"
 title: "Space is made, not found"
 draft: false
