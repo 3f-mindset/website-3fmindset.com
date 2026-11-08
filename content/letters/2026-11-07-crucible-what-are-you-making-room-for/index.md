@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-what-are-you-making-room-for"
-title: "What Are You Making Room For—and What Must Move?"
+title: "Space is made, not found"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - boundaries
   - reflection
 ---
-
-## Space is made, not found
-
-What are you trying to make room for? The question sounds hopeful, but it carries a practical edge. Room does not usually appear because a man finally becomes more efficient. It appears when something receives time, attention, energy, or permission that another thing previously occupied.
 
 You may be trying to make room for a relationship, a new responsibility, rest, a creative pursuit, a change in health, or a kind of quiet you have not experienced for a while. The answer may be hard to say because wanting it exposes the limits of the life you currently have. If you name the desire, you may have to face that your days are already full, that people rely on you, or that the thing you want cannot be added without changing something else.
 
@@ -44,4 +40,4 @@ There may be grief in that clarity. Making space for one thing means acknowledgi
 
 Room also includes the possibility of surprise. When every hour is preassigned, there is little chance to notice what you did not expect to want. A life with a little unclaimed attention can allow curiosity, honest conversation, and unplanned connection. This is not a guarantee that something wonderful will appear. It is simply a recognition that a person cannot encounter every possibility while treating all available space as already owed.
 
-So what are you trying to make room for? And what would you need to protect, reduce, decline, or stop doing to create that room? The answer may not be a clean subtraction. It may be a negotiation, a change in scale, a request for support, or a decision to wait with intention. Let the question help you see the actual shape of your life. From there, the possibility of choosing begins—not a perfect arrangement, but one that belongs more fully to you.
+So what are you trying to make room for? And what would you need to protect, reduce, decline, or stop doing to create that room? The answer may not be a clean subtraction. It may be a negotiation, a change in scale, a request for support, or a decision to wait with intention. Let the question help you see the actual shape of your life. From there, the possibility of choosing begins, not a perfect arrangement, but one that belongs more fully to you.
