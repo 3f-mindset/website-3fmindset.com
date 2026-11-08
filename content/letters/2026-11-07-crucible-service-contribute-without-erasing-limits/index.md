@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-service-contribute-without-erasing-limits"
-title: "Who Benefits From the Way You're Showing Up—and at What Cost?"
+title: "Who Benefits From the Way You're Showing Up, and at What Cost?"
 draft: false
 categories: letter
 tags:
@@ -10,9 +10,7 @@ tags:
   - contribution
 ---
 
-## Who Benefits From the Way You're Showing Up,and at What Cost?
-
-A role is not only a position you occupy. It is a way your presence affects other people and the things you care about. Asking who or what is served by the role you want to play can bring its purpose into view. Asking how you can contribute without erasing your own limits keeps that purpose from turning into self-abandonment.
+A role is not only a position you occupy. It is a way your presence affects other people and the things you care about. Its purpose matters, but so do the limits of the person carrying it. Service can bring meaning and connection; it can also turn into self-abandonment when contribution is measured only by how much you can endure.
 
 Without the first question, service can become a performance without a clear recipient. You may stay busy, meet expectations, or prove that you are dependable while losing track of what your effort is actually for. A man can work hard in a role and still feel oddly disconnected from its meaning. If the purpose remains unnamed, approval or habit may become the substitute. You keep doing more because stopping would raise the question of whether the work matters in the way you assumed.
 
