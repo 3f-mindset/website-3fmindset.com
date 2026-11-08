@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-the-present-state"
-title: "What Is Really Happening in the Area You Want to Change?"
+title: "Begin with what is there"
 draft: false
 categories: letter
 tags:
@@ -9,10 +9,6 @@ tags:
   - awareness
   - priorities
 ---
-
-## Begin with what is there
-
-What is happening in this area today? The question invites a description before a judgment. That distinction can be harder than it sounds. Many men have learned to summarize a situation quickly: work is a mess, health is slipping, the relationship is fine, the money is bad. A label feels efficient. It can also hide the actual conditions that might help you understand what is going on and what, if anything, you want to do.
 
 Consider the difference between saying “I am failing at home” and describing an evening when you came in late, ate while answering messages, and did not have the conversation you meant to have. The description does not excuse the impact or settle what it means. It gives you something real to examine. A label tends to make the whole self the problem; a concrete account leaves room to notice context, choice, and the next question.
 
