@@ -10,8 +10,6 @@ tags:
   - practice
 ---
 
-## The quality the moment asks for
-
 ## When the question goes unanswered
 
 Without this kind of attention, it is easy to choose a next step by default. You may do what is familiar, what earns immediate approval, or what quiets the loudest pressure. A man can remain busy and still avoid the question of how he wants to participate. The work gets done, perhaps, but the way he does it may not fit the role or the direction he says matters. A pause to name what matters can reveal whether the next move calls for effort, restraint, or a conversation before any action is wise. It can also help you distinguish urgency from importance.
@@ -27,6 +25,8 @@ The second half of the question keeps the first honest. “What specific behavio
 Specificity helps because qualities can be interpreted in ways that excuse almost anything. A man can call silence patience when he is afraid to speak, or call forcefulness courage when he is unwilling to listen. A concrete behavior lets you examine the difference. What would someone be able to observe? What would you do, say, make, or refrain from doing? What would count as a partial expression, rather than a perfect performance?
 
 The question can also reveal that a quality is not the only missing ingredient. Perhaps the behavior is clear but the time, energy, information, or relationship support is absent. That is useful knowledge. It can point toward a request, a changed condition, or a smaller step instead of another demand that you solve everything alone. Agency does not mean control over every outcome. It means seeing what part of the next move is yours, while being truthful about what is not.
+
+Naming the constraint can keep a useful intention from becoming another unrealistic demand.
 
 ## A next step that belongs to you
 
