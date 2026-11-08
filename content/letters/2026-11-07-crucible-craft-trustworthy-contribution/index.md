@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-craft-trustworthy-contribution"
-title: "Is Your Work Worthy of the Man You Want to Become?"
+title: "Trust is made in the work"
 draft: false
 categories: letter
 tags:
