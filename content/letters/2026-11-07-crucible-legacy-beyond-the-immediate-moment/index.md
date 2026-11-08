@@ -10,7 +10,7 @@ tags:
   - choices
 ---
 
-## The reach of an ordinary choice
+## What Might Your Choices Make Possible Beyond This Moment?
 
 Legacy can sound like a subject reserved for the end of life, a monument, a name remembered. But the question asks about choices and what they may build, pass on, or make possible beyond this immediate moment. Its scale is not necessarily grand. A way of treating people, a capacity someone else can use, a pattern of care, or a possibility kept open can all have a future beyond the moment in which they began.
 
