@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-08-16
 slug: "crucible-stewardship-careful-tending"
 title: "What cannot be replaced by urgency"
 draft: false
