@@ -1,5 +1,5 @@
 ---
-date: 2026-11-07
+date: 2026-08-02
 slug: "crucible-craft-trustworthy-contribution"
 title: "Trust is made in the work"
 draft: false
