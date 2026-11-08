@@ -1,7 +1,7 @@
 ---
 date: 2026-11-07
 slug: "crucible-service-contribute-without-erasing-limits"
-title: "Who Benefits From the Way You're Showing Up, and at What Cost?"
+title: "The purpose inside a role"
 draft: false
 categories: letter
 tags:
