@@ -3,7 +3,7 @@ date: 2026-05-24
 slug: "crucible-role-to-practice"
 title: "A role is a way of participating"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - roles
   - identity
