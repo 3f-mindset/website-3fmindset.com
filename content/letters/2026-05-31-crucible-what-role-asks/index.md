@@ -3,7 +3,7 @@ date: 2026-05-31
 slug: "crucible-what-role-asks"
 title: "Bring the role into a real moment"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - roles
   - responsibility
