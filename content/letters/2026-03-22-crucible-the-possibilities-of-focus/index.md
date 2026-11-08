@@ -3,7 +3,7 @@ date: 2026-03-22
 slug: "crucible-the-possibilities-of-focus"
 title: "Consider what attention could make possible"
 draft: false
-categories: letter
+categories: crucible
 tags:
   - focus
   - priorities
