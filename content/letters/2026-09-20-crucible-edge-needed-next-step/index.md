@@ -2,6 +2,10 @@
 date: 2026-09-20
 slug: "crucible-edge-needed-next-step"
 title: "The quality the moment asks for"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

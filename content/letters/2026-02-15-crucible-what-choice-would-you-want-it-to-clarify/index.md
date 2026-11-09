@@ -2,6 +2,10 @@
 date: 2026-02-15
 slug: "crucible-what-choice-would-you-want-it-to-clarify"
 title: "A question beneath the questions"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

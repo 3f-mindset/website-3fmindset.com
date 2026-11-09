@@ -2,6 +2,10 @@
 date: 2026-01-18
 slug: "crucible-what-you-refuse-to-let-disappear"
 title: "The quiet fear of losing what matters"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

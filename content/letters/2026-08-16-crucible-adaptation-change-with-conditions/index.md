@@ -2,6 +2,10 @@
 date: 2026-08-16
 slug: "crucible-adaptation-change-with-conditions"
 title: "When the old way stops fitting"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

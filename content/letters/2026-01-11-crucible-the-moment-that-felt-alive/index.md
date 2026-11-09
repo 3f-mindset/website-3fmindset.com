@@ -2,6 +2,10 @@
 date: 2026-01-11
 slug: "crucible-what-was-happening"
 title: "A small scene, not a grand theory"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

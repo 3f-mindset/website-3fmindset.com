@@ -2,6 +2,10 @@
 date: 2026-02-22
 slug: "crucible-the-area-calling-for-attention"
 title: "Notice the quiet insistence"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

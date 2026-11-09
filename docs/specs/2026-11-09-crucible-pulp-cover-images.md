@@ -44,6 +44,7 @@ Add one generated cover image to each of the 43 published Crucible journal-promp
 11. **Rollout PR scope.** Given the remaining covers are generated, when the rollout PR is inspected, then it contains the 42 remaining cover images and matching frontmatter additions, plus this spec, with no unrelated files or changes to the approved first cover.
 12. **Architecture boundaries.** Given the generator is refactored, when its dependency direction is inspected, then domain and prompt/image rules are independent of file and network I/O; the application use case depends on ports; filesystem and OpenRouter adapters implement those ports; and the CLI is the outer composition root. The root Bash script only sources `.env` and delegates to the CLI.
 13. **Behavior preservation.** Given a caller uses the existing path, prompt, `--force`, and `--dry-run` interface, when the refactored command runs, then prompt composition, output path, frontmatter changes, overwrite protection, provider parameters, errors, and secret handling remain unchanged. Offline tests use fake ports/adapters and make no paid API request.
+14. **Usage reporting.** Given each image response includes provider usage, when the rollout PR is prepared, then its summary reports the sum of captured provider-reported costs and clearly identifies any successful generations whose cost output was not retained. It does not present an estimate as an exact total or include credentials.
 
 ## Shared style prompt
 
@@ -67,7 +68,7 @@ Add a concise scene description grounded in the individual essay. The scene must
 - `ASSUMPTION:` Use `openai/gpt-image-2` through OpenRouter's image API (`https://openrouter.ai/api/v1/images`) because the earlier `openai/gpt-image-1` request returned a model-not-found error and OpenRouter lists `openai/gpt-image-2` with the required 3:2 and PNG parameters.
 - `ASSUMPTION:` Use a 3:2 composition, matching the dimensions of existing letter covers (typically 1536 × 1024), and save the returned PNG without destructive cropping. Verify the actual response dimensions before commit.
 - `ASSUMPTION:` Use `quality: high` for the first review sample; record provider-reported usage/cost in the PR summary without including credentials.
-- Record provider-reported aggregate generation cost in the rollout PR summary without including credentials.
+- Record captured provider-reported generation costs in the rollout PR summary without including credentials; disclose any lost cost output rather than guessing an exact aggregate.
 - `ASSUMPTION:` Group the remaining 42 images into one rollout PR to keep the approved visual system and all related article changes together.
 - The required OpenRouter key must already be available in the caller root `.env`; if it is absent, stop and ask the owner to configure it. Do not search unrelated credential stores, create a key, or substitute another provider.
 - The root Bash entrypoint sources only the root `.env` and delegates to `python3 -m crucible_cover.cli`; Python modules live under `scripts/crucible_cover/`. The key stays in the environment/header and never appears in command arguments or output.
@@ -83,7 +84,7 @@ Add a concise scene description grounded in the individual essay. The scene must
 4. Confirm the approved first sample remains unchanged and the root `.env` contains the valid OpenRouter key.
 5. Use `generate-crucible-cover.sh` on each remaining letter directory, deriving a unique scene from article context and using a custom scene prompt only where it improves relevance. Do not reuse images.
 6. Inspect every PNG's format, dimensions, aspect ratio, absence of visible text, thumbnail readability, and article relevance; verify all 42 cover fields and ensure article text/metadata are otherwise unchanged.
-7. Open one rollout PR for the 42 remaining images and frontmatter additions, report aggregate provider-reported cost, and leave it open for review.
+7. Open one rollout PR for the 42 remaining images and frontmatter additions. Report the captured provider costs, identify any successful generations with uncaptured cost output, make no exact-cost estimate, and leave the PR open for review.
 
 ## Rollback
 

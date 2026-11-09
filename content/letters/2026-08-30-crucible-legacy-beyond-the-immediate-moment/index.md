@@ -2,6 +2,10 @@
 date: 2026-08-30
 slug: "crucible-legacy-beyond-the-immediate-moment"
 title: "The reach of an ordinary choice"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

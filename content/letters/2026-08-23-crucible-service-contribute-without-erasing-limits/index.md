@@ -2,6 +2,10 @@
 date: 2026-08-23
 slug: "crucible-service-contribute-without-erasing-limits"
 title: "The purpose inside a role"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

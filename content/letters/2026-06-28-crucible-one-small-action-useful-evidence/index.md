@@ -2,6 +2,10 @@
 date: 2026-06-28
 slug: "crucible-one-small-action-useful-evidence"
 title: "Let action ask a question"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

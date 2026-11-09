@@ -2,6 +2,10 @@
 date: 2026-10-11
 slug: "crucible-strength-used-intensely-cost"
 title: "When a strength stops serving"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

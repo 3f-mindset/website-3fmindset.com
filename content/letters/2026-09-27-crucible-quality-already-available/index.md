@@ -2,6 +2,10 @@
 date: 2026-09-27
 slug: "crucible-quality-already-available"
 title: "What you can already bring"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

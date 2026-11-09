@@ -2,6 +2,10 @@
 date: 2026-10-25
 slug: "crucible-pattern-across-focus-domains"
 title: "Seeing more than one part of life"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

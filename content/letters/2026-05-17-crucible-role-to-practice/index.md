@@ -2,6 +2,10 @@
 date: 2026-05-17
 slug: "crucible-role-to-practice"
 title: "A role is a way of participating"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

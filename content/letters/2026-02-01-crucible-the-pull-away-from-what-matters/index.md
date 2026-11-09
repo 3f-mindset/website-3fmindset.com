@@ -2,6 +2,10 @@
 date: 2026-02-01
 slug: "crucible-the-pull-away-from-what-matters"
 title: "The repeated departure"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

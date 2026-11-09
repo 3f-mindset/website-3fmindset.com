@@ -2,6 +2,10 @@
 date: 2026-07-12
 slug: "crucible-where-could-you-notice-this-evidence"
 title: "Evidence can pass unseen"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible
