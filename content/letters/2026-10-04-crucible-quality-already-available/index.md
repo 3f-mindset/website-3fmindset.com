@@ -28,7 +28,7 @@ Seeing a strength does not mean you must use it all the time. A person who is he
 
 An honest view of your strengths can help you make plans that fit your life. If you know you can learn by trying, you may not need to wait until you know every answer. If you know you can listen well, you can bring that skill to a talk that matters. If you know you can keep going through hard work, you can use that steadiness for a goal you chose, while still making time to rest.
 
-The point is not to praise yourself without proof. Look at what you have done. Think of a time you helped someone, finished a task, faced a change, or made a repair after a mistake. What did you bring to that moment? It may have been patience, skill, humor, courage, or a wish to understand. It may have been a choice to ask for help. A strength does not have to make you stand out. It only has to be real and useful.
+The point is not to praise yourself without proof. Look at what you have done. Think of a time you helped someone, finished a task, faced a change, or made a repair after a mistake. Notice what you brought to that moment. It may have been patience, skill, humor, courage, or a wish to understand. It may have been a choice to ask for help. A strength does not have to make you stand out. It only has to be real and useful.
 
 It also helps to notice when a quality works best. You may be at your most patient when you are rested. You may be more able to focus when you know what the task is. You may be better at helping when you have room to say no. These facts do not make your strength less true. They show you how to use it in a way that can last.
 
