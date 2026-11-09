@@ -1,5 +1,5 @@
 ---
-date: 2026-10-04
+date: 2026-09-27
 slug: "crucible-quality-already-available"
 title: "What you can already bring"
 draft: false
