@@ -42,6 +42,8 @@ Add one generated cover image to each of the 43 published Crucible journal-promp
 9. **Hugo integration.** Given the first sample is built by Hugo, when the article renders, then the relative cover is found and displayed without altering existing page rendering behavior.
 10. **Script validation.** Given no valid root `.env`, API key, article directory, or prompt can be resolved, when the script runs, then it exits with a clear non-secret error before writing files. `bash -n` passes and help, dry-run, and argument validation can be exercised without making a provider request.
 11. **Tool PR scope.** Given the root script is ready but the image credential is unavailable, when its tool PR is opened, then it contains only this spec and the script; no cover generation or letter frontmatter change is claimed as complete.
+12. **Architecture boundaries.** Given the generator is refactored, when its dependency direction is inspected, then domain and prompt/image rules are independent of file and network I/O; the application use case depends on ports; filesystem and OpenRouter adapters implement those ports; and the CLI is the outer composition root. The root Bash script only sources `.env` and delegates to the CLI.
+13. **Behavior preservation.** Given a caller uses the existing path, prompt, `--force`, and `--dry-run` interface, when the refactored command runs, then prompt composition, output path, frontmatter changes, overwrite protection, provider parameters, errors, and secret handling remain unchanged. Offline tests use fake ports/adapters and make no paid API request.
 
 ## Shared style prompt
 
@@ -66,7 +68,8 @@ Add a concise scene description grounded in the individual essay. The scene must
 - `ASSUMPTION:` Use a 3:2 composition, matching the dimensions of existing letter covers (typically 1536 × 1024), and save the returned PNG without destructive cropping. Verify the actual response dimensions before commit.
 - `ASSUMPTION:` Use `quality: high` for the first review sample; record provider-reported usage/cost in the PR summary without including credentials.
 - The required OpenRouter key must already be available in the caller root `.env`; if it is absent, stop and ask the owner to configure it. Do not search unrelated credential stores, create a key, or substitute another provider.
-- The script is a small Bash wrapper at repository root; it sources only the root `.env` and uses Python's standard library for the HTTPS request, response decoding, PNG validation, and atomic file writes. The key stays in the environment/header and never appears in command arguments or output.
+- The root Bash entrypoint sources only the root `.env` and delegates to `python3 -m crucible_cover.cli`; Python modules live under `scripts/crucible_cover/`. The key stays in the environment/header and never appears in command arguments or output.
+- Keep Clean Architecture/Onion dependency direction: domain rules have no OpenRouter, filesystem, CLI, or environment dependencies; the application orchestrates ports; adapters implement those ports; and the CLI/composition root wires dependencies. Apply SOLID at this scale without adding external dependencies or generic frameworks.
 - `ASSUMPTION:` The optional scene prompt supplements, rather than replaces, the article-derived title and opening context.
 - Preserve all existing untracked files and local changes.
 
@@ -74,7 +77,7 @@ Add a concise scene description grounded in the individual essay. The scene must
 
 1. Confirm the Crucible series inventory, existing cover/frontmatter convention, image-generation endpoint, and the first essay's story-specific visual subject.
 2. Add this spec before generating any image.
-3. Add the root-level script and validate its argument handling, `.env` safety, prompt composition, overwrite protection, and PNG/frontmatter output behavior without a live API call.
+3. Refactor the root entrypoint into a thin `.env`-loading wrapper and a small `scripts/crucible_cover/` package with domain, application, ports, filesystem/OpenRouter adapters, and a CLI composition root; validate the same behavior using offline fakes.
 4. Open a tool PR for the spec and script. The root `.env` key is required before any live image request.
 5. Once the key is available, generate only the first essay's cover through OpenRouter, save it as `cover.png`, and add relative cover frontmatter to the first essay in a separate first-sample review PR.
 6. Inspect the PNG's format, dimensions, aspect ratio, absence of visible text, thumbnail readability, and article relevance; run Markdown validation and Hugo rendering/build checks when available.
