@@ -1,7 +1,7 @@
 ---
 date: 2026-04-12
 slug: "crucible-ordinary-day-meaningful-direction"
-title: "A day that points somewhere"
+title: "A direction, not a verdict"
 draft: false
 categories: crucible
 tags:
