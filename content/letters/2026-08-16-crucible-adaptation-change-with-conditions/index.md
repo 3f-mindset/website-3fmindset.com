@@ -1,5 +1,5 @@
 ---
-date: 2026-08-23
+date: 2026-08-16
 slug: "crucible-adaptation-change-with-conditions"
 title: "When the old way stops fitting"
 draft: false
