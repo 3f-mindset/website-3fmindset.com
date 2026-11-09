@@ -1,5 +1,5 @@
 ---
-date: 2026-06-14
+date: 2026-06-07
 slug: "crucible-under-supported-role"
 title: "Notice the role already in the room"
 draft: false
