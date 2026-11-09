@@ -30,7 +30,7 @@ It is also possible to hide from a hard step by calling every challenge a bad co
 
 ## Read the conditions before choosing
 
-Begin with the point where the plan stopped working. What did you expect to happen? What happened instead? Did your time change? Did you lose a tool, skill, or source of help? Did the goal itself change in meaning? These are facts to look at, not proof that you did something wrong.
+Begin with the point where the plan stopped working. Compare what you expected with what happened instead. Notice whether your time changed, you lost a tool, skill, or source of help, or the goal itself changed in meaning. These are facts to look at, not proof that you did something wrong.
 
 You might find that the plan is sound but too large. A shorter task, a later date, or a clearer place in your day may help. You might learn that the missing part is support, not willpower. Or you may see that the goal no longer fits the life you want. Each answer calls for a different choice. Adapting does not mean keeping every old goal alive.
 
@@ -44,9 +44,9 @@ When you notice a change, you can ask what the situation needs you to see. Maybe
 
 A plan made with the facts you had then was not a lie. If the facts change, your next choice can change too. A new plan may feel strange at first. It can still serve the same care, promise, or hope that led you to the old one. Revising does not erase what you tried. It shows that you are paying attention to the life you have now.
 
-Consider the kind of life you want to build. What matters enough for you to keep moving toward it? How do you want to act when the road changes? These hopes can be a guide, not a strict set of rules. They help you decide whether to keep the goal, change the method, or make a new choice.
+Consider the kind of life you want to build and what matters enough for you to keep moving toward it. Decide how you want to act when the road changes. These hopes can be a guide, not a strict set of rules. They help you decide whether to keep the goal, change the method, or make a new choice.
 
-That is a personal standard: a way of choosing that fits both your values and the truth of your day. You might decide to keep a promise but ask for a slower pace. You might try one change for a week and see what happens. You might talk with someone who shares the work. When you compare your actions with your chosen direction, you can notice drift without treating it as a verdict. Are you repeating a plan that depends on time you do not have? Are you dropping a goal that still matters because the first step feels hard?
+That is a personal standard: a way of choosing that fits both your values and the truth of your day. You might decide to keep a promise but ask for a slower pace. You might try one change for a week and see what happens. You might talk with someone who shares the work. When you compare your actions with your chosen direction, you can notice drift without treating it as a verdict. Notice whether you are repeating a plan that depends on time you do not have or dropping a goal that still matters because the first step feels hard.
 
 The answer should not be chosen by habit alone. A vision can help you tell the difference between staying with what matters and clinging to an old way. It can also help you see when a change is simply escape from effort. What matters is not always the easiest path. The aim is to choose with care, based on what is true and what you hope to build.
 
