@@ -8,7 +8,7 @@ cover:
 
 draft: false
 series:
-  - crucible
+  - "Visionary Prompts"
 tags:
   - values
   - meaning

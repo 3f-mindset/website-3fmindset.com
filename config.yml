@@ -32,8 +32,8 @@ languages:
         - name: Steady Burn Series
           url: series/steadyburn
           weight: 1
-        - name: Reflections
-          url: series/crucible
+        - name: Visionary Prompts
+          url: series/visionary-prompts
           weight: 2
         - name: All Letters
           url: letters
