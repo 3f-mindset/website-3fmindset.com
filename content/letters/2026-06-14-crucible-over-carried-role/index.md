@@ -1,5 +1,5 @@
 ---
-date: 2026-06-21
+date: 2026-06-14
 slug: "crucible-over-carried-role"
 title: "The weight can hide inside a valued role"
 draft: false
