@@ -20,7 +20,7 @@ That drift can be hard to see because it often looks responsible. You answer the
 
 There is no need to treat every duty as a mistake. Some things must stay. Some can change only with help, time, or a hard talk. The point is not to clear your life of all demands. It is to see what those demands are doing to the life you have. A clear picture of what you hope to build can help you tell the difference between what needs care and what has only kept its place through habit.
 
-Think of a vision as a way you want your life to feel and work, not a perfect picture you must reach. It might include being present with your family, making useful work, caring for your body, or having time to learn. You do not need to want the same things as anyone else. When you know what matters to you, you have a way to judge new claims. Does this choice protect what matters, support it, or slowly push it aside?
+Think of a vision as a way you want your life to feel and work, not a perfect picture you must reach. It might include being present with your family, making useful work, caring for your body, or having time to learn. You do not need to want the same things as anyone else. When you know what matters to you, you have a way to judge new claims. You can see whether a choice protects what matters, supports it, or slowly pushes it aside.
 
 That vision can set a standard for your time and care. It may show you that a walk with someone you love deserves a place on the calendar, not just a wish for a less busy week. It may remind you that sleep is part of how you serve others well. It may help you see that one more task is not worth the cost if it leaves you unable to give your best to the people and work you value.
 
@@ -28,7 +28,7 @@ Making room does not always mean saying no. You might need to protect a small pa
 
 These choices have real effects. A change that frees time for one person may shift work to someone else. A promise may need a careful conversation before you change it. A good plan leaves room for those facts. You can be honest about what you want and still care about what others need. The aim is not to win every hour for yourself. It is to shape a life where your deepest duties and hopes can both be seen.
 
-It also helps to choose a small first step. A large promise can sound strong and fail in a crowded week. A clear, modest change gives you a chance to learn. If you protect one evening, what becomes easier? If you ask for help, what can you now do with care? If you stop a repeated task, what do you miss, and what do you gain? What you learn can help you make a better choice next time.
+It also helps to choose a small first step. A large promise can sound strong and fail in a crowded week. A clear, modest change gives you a chance to learn. Protecting one evening may make other things easier. Asking for help may let you do something else with care. Stopping a repeated task may show you what you miss and what you gain. What you learn can help you make a better choice next time.
 
 Now consider this: What are you trying to make room for? What would you need to protect, reduce, decline, or stop doing to create that room?
 
