@@ -34,7 +34,7 @@ You may also find a gap. Perhaps you have said yes to too much and now cannot gi
 
 The aim is not to make every action match every value all the time. People have limits, and choices can pull in more than one direction. The aim is to see what your choices are doing, and to decide what you want to do next. That kind of attention can help you move from drift, where habit or pressure makes the choice, toward direction, where you choose with your values in view.
 
-Now give this a little space. Where do your actions match—or conflict with—your stated values and commitments?
+Now give this a little space. Where do your actions match or conflict with your stated values and commitments?
 
 Your answer may show you something you want to protect. It may point to a choice that is hurting trust, or to a promise that needs a clear talk. It may also show that you are carrying more than you can do, and that your next step is to set a fair limit. Look at what you find beside the life you hope to build. What does it show about the direction your days are taking?
 
