@@ -1,5 +1,5 @@
 ---
-date: 2026-08-09
+date: 2026-08-02
 slug: "crucible-alignment-actions-values-commitments"
 title: "The distance between saying and doing"
 draft: false
