@@ -1,5 +1,5 @@
 ---
-date: 2026-02-08
+date: 2026-02-01
 slug: "crucible-the-pull-away-from-what-matters"
 title: "The repeated departure"
 draft: false
