@@ -2,6 +2,10 @@
 date: 2026-01-04
 slug: "crucible-what-has-been-taking-up-space"
 title: "The room inside an ordinary day"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 categories: crucible
 tags:

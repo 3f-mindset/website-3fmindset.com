@@ -18,7 +18,7 @@ Add one generated cover image to each of the 43 published Crucible journal-promp
 
 - The images share the requested vintage pulp-magazine illustration style, but each one depicts a distinct object or action grounded in its essay's main tension.
 - Images contain no words, captions, typography, labels, signage, or readable marks.
-- The root generation script and this spec can be reviewed in a tool PR. The first-cover review PR contains one image and its cover frontmatter; no other images are generated or added before explicit approval.
+- PR #145 contains this spec, the root generation script, and the first article's one image plus cover frontmatter. No other images are generated or added before explicit approval.
 
 ## Non-goals
 
@@ -41,7 +41,7 @@ Add one generated cover image to each of the 43 published Crucible journal-promp
 8. **Review gate.** Given the first-sample PR is open, when the owner has not yet confirmed the image, then no assets or metadata changes are made to the other 42 Crucible essays. After approval, a separate rollout plan can cover the remaining images.
 9. **Hugo integration.** Given the first sample is built by Hugo, when the article renders, then the relative cover is found and displayed without altering existing page rendering behavior.
 10. **Script validation.** Given no valid root `.env`, API key, article directory, or prompt can be resolved, when the script runs, then it exits with a clear non-secret error before writing files. `bash -n` passes and help, dry-run, and argument validation can be exercised without making a provider request.
-11. **Tool PR scope.** Given the root script is ready but the image credential is unavailable, when its tool PR is opened, then it contains only this spec and the script; no cover generation or letter frontmatter change is claimed as complete.
+11. **First review PR scope.** Given the first sample is added, when PR #145 is reviewed, then it contains only the spec/script and the first article's `cover.png` plus cover frontmatter; no other Crucible letter is changed.
 12. **Architecture boundaries.** Given the generator is refactored, when its dependency direction is inspected, then domain and prompt/image rules are independent of file and network I/O; the application use case depends on ports; filesystem and OpenRouter adapters implement those ports; and the CLI is the outer composition root. The root Bash script only sources `.env` and delegates to the CLI.
 13. **Behavior preservation.** Given a caller uses the existing path, prompt, `--force`, and `--dry-run` interface, when the refactored command runs, then prompt composition, output path, frontmatter changes, overwrite protection, provider parameters, errors, and secret handling remain unchanged. Offline tests use fake ports/adapters and make no paid API request.
 
@@ -78,11 +78,10 @@ Add a concise scene description grounded in the individual essay. The scene must
 1. Confirm the Crucible series inventory, existing cover/frontmatter convention, image-generation endpoint, and the first essay's story-specific visual subject.
 2. Add this spec before generating any image.
 3. Refactor the root entrypoint into a thin `.env`-loading wrapper and a small `scripts/crucible_cover/` package with domain, application, ports, filesystem/OpenRouter adapters, and a CLI composition root; validate the same behavior using offline fakes.
-4. Open a tool PR for the spec and script. The root `.env` key is required before any live image request.
-5. Once the key is available, generate only the first essay's cover through OpenRouter, save it as `cover.png`, and add relative cover frontmatter to the first essay in a separate first-sample review PR.
-6. Inspect the PNG's format, dimensions, aspect ratio, absence of visible text, thumbnail readability, and article relevance; run Markdown validation and Hugo rendering/build checks when available.
-7. Stop after sharing the first-sample PR; wait for explicit approval before generating or changing any of the remaining 42 essays.
+4. Once the key is available, generate only the first essay's cover through OpenRouter, save it as `cover.png`, and add relative cover frontmatter to that essay in PR #145.
+5. Inspect the PNG's format, dimensions, aspect ratio, absence of visible text, thumbnail readability, and article relevance; run Markdown validation and Hugo rendering/build checks when available.
+6. Stop after sharing the updated PR #145; wait for explicit approval before generating or changing any of the remaining 42 essays.
 
 ## Rollback
 
-If the first visual sample is rejected, close the sample PR and remove its new `cover.png` and cover frontmatter. Keep the root script/spec if the owner still wants the generation utility; no other Crucible letter is changed in the review phase.
+If the first visual sample is rejected, remove its new `cover.png` and cover frontmatter from PR #145. Keep the root script/spec if the owner still wants the generation utility; no other Crucible letter is changed in the review phase.

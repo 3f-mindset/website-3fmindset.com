@@ -151,6 +151,7 @@ class FileSystemAdapterTests(unittest.TestCase):
             self.assertEqual(output.name, "cover.png")
             self.assertEqual(output.read_bytes(), _small_png())
             self.assertIn('cover:\n  image: "cover.png"\n  relative: true', markdown)
+            self.assertIn("---\n\nA quiet table", markdown)
             self.assertIn("A quiet table holds a brass compass", markdown)
 
     def test_refuses_existing_cover_without_force(self) -> None:

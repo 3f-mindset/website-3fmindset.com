@@ -102,7 +102,7 @@ class FileSystemArticleRepository:
         updated_frontmatter = (
             frontmatter[:draft.start()] + addition + frontmatter[draft.start():]
         )
-        return f"---\n{updated_frontmatter}\n---\n{article.body}"
+        return f"---\n{updated_frontmatter}\n---\n\n{article.body}"
 
     @staticmethod
     def _atomic_write(path: Path, data: bytes) -> None:
