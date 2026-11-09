@@ -1,5 +1,5 @@
 ---
-date: 2026-03-29
+date: 2026-03-22
 slug: "crucible-protecting-the-rest-of-life"
 title: "Focus does not erase the rest"
 draft: false
