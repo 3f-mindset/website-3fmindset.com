@@ -15,13 +15,13 @@ Write in your own language. Specific memories, scenes, words, and examples are o
 
 Start with the season you are actually in—not the season you think you should be in.
 
-- What has been taking up the most space in your attention lately? What deserves more space than it is getting?
-- Think of a recent moment when you felt engaged, useful, connected, or quietly proud. What was happening? What mattered in that moment?
-- What are you unwilling to let disappear beneath busyness, urgency, or other people’s expectations?
-- What are you trying to make room for? What would you need to protect, reduce, decline, or stop doing to create that room?
-- Which distractions, obligations, habits, or unresolved decisions repeatedly pull you away from what matters? Which are changeable, and which need to be accepted or worked around for now?
-- What responsibilities or relationships must remain cared for even if they are not your active focus this cycle?
-- If this reflection helped you make one honest choice, what choice would you want it to clarify?
+- What has been taking up the most space in your attention lately? What deserves more space than it is getting? [guide](/letters/crucible-what-has-been-taking-up-space/)
+- Think of a recent moment when you felt engaged, useful, connected, or quietly proud. What was happening? What mattered in that moment? [guide](/letters/crucible-what-was-happening/)
+- What are you unwilling to let disappear beneath busyness, urgency, or other people’s expectations? [guide](/letters/crucible-what-you-refuse-to-let-disappear/)
+- What are you trying to make room for? What would you need to protect, reduce, decline, or stop doing to create that room? [guide](/letters/crucible-what-are-you-making-room-for/)
+- Which distractions, obligations, habits, or unresolved decisions repeatedly pull you away from what matters? Which are changeable, and which need to be accepted or worked around for now? [guide](/letters/crucible-the-pull-away-from-what-matters/)
+- What responsibilities or relationships must remain cared for even if they are not your active focus this cycle? [guide](/letters/crucible-care-that-stays-off-center/)
+- If this reflection helped you make one honest choice, what choice would you want it to clarify? [guide](/letters/crucible-what-choice-would-you-want-it-to-clarify/)
 
 ## 2. Choose your focus domains
 
@@ -29,12 +29,12 @@ Choose up to three active-focus domains for this cycle. The examples—health/ca
 
 For each area you might focus on:
 
-- What part of life is asking for attention now? What makes this the right season to focus there?
-- What is happening in this area today? Describe a recent scene or concrete fact rather than giving it a label.
-- If you could choose freely, what would you call this domain? Does it overlap with another area, or should it be kept distinct?
-- What might happen if you focus here? What might it cost in time, energy, money, attention, or another commitment?
-- What would need to be maintained or protected elsewhere while this area receives focus?
-- If you defer this area, what would make that a deliberate choice rather than neglect? What would tell you it is time to revisit it?
+- What part of life is asking for attention now? What makes this the right season to focus there? [guide](/letters/crucible-the-area-calling-for-attention/)
+- What is happening in this area today? Describe a recent scene or concrete fact rather than giving it a label. [guide](/letters/crucible-the-present-state/)
+- If you could choose freely, what would you call this domain? Does it overlap with another area, or should it be kept distinct? [guide](/letters/crucible-naming-your-domain/)
+- What might happen if you focus here? What might it cost in time, energy, money, attention, or another commitment? [guide](/letters/crucible-the-possibilities-of-focus/)
+- What would need to be maintained or protected elsewhere while this area receives focus? [guide](/letters/crucible-protecting-the-rest-of-life/)
+- If you defer this area, what would make that a deliberate choice rather than neglect? What would tell you it is time to revisit it? [guide](/letters/crucible-deliberate-deferral/)
 
 Now select no more than three active focuses. For each, answer the next four sections. Leave any section open when you do not yet know.
 
@@ -42,50 +42,50 @@ Now select no more than three active focuses. For each, answer the next four sec
 
 ### Longer-term vision
 
-- Imagine this part of life moving in a direction that feels meaningful—not perfect. What is different in an ordinary day?
-- What do you want to be more true here? What do you want to be less governed by?
-- Who else might experience the difference? What would they see, hear, or be able to count on?
-- What value, need, or hope makes this direction worth moving toward?
-- Which parts are within your influence? Which outcomes depend on other people or conditions you cannot control?
-- Write a few sentences beginning: “Over time, I want this part of my life to…” Keep it a compass, not a deadline or guarantee.
+- Imagine this part of life moving in a direction that feels meaningful—not perfect. What is different in an ordinary day? [guide](/letters/crucible-ordinary-day-meaningful-direction/)
+- What do you want to be more true here? What do you want to be less governed by? [guide](/letters/crucible-more-true-here/)
+- Who else might experience the difference? What would they see, hear, or be able to count on? [guide](/letters/crucible-who-experiences-the-difference/)
+- What value, need, or hope makes this direction worth moving toward? [guide](/letters/crucible-value-behind-the-direction/)
+- Which parts are within your influence? Which outcomes depend on other people or conditions you cannot control? [guide](/letters/crucible-within-your-influence/)
+- Write a few sentences beginning: “Over time, I want this part of my life to…” Keep it a compass, not a deadline or guarantee. [guide](/letters/crucible-over-time-i-want-this-part/)
 
 ### Role you want to embody
 
-- In this domain, what role do you want to practice or grow into (for example, parent, friend, learner, steward, maker, colleague, partner, or advocate)? Use your own name for it.
-- What does this role ask of you in a real situation? What do you want people to be able to count on you for?
-- What would you do, say, make, or refrain from doing when you were living this role well?
-- Which role is already present but under-supported? Which role might you be ready to promote—give more deliberate attention, responsibility, or room?
-- What role are you currently over-carrying, performing for approval, or trying to hold alone? What might a healthier version look like?
+- In this domain, what role do you want to practice or grow into (for example, parent, friend, learner, steward, maker, colleague, partner, or advocate)? Use your own name for it. [guide](/letters/crucible-role-to-practice/)
+- What does this role ask of you in a real situation? What do you want people to be able to count on you for? [guide](/letters/crucible-what-role-asks/)
+- What would you do, say, make, or refrain from doing when you were living this role well? [guide](/letters/crucible-living-role-well/)
+- Which role is already present but under-supported? Which role might you be ready to promote—give more deliberate attention, responsibility, or room? [guide](/letters/crucible-under-supported-role/)
+- What role are you currently over-carrying, performing for approval, or trying to hold alone? What might a healthier version look like? [guide](/letters/crucible-over-carried-role/)
 
 ### Visible proof or first action
 
-- What could you observe in the world that would suggest movement toward this vision? Name a behavior, conversation, artifact, decision, or change in conditions.
-- What is one small action that could create useful evidence, even if it does not produce the whole outcome?
-- What would count as partial progress? What evidence would challenge your assumption or teach you the direction needs revising?
-- Where could you notice this evidence—in your calendar, a conversation, completed work, a felt change, or someone’s response?
+- What could you observe in the world that would suggest movement toward this vision? Name a behavior, conversation, artifact, decision, or change in conditions. [guide](/letters/crucible-what-could-you-observe-in-the-world/)
+- What is one small action that could create useful evidence, even if it does not produce the whole outcome? [guide](/letters/crucible-one-small-action-useful-evidence/)
+- What would count as partial progress? What evidence would challenge your assumption or teach you the direction needs revising? [guide](/letters/crucible-what-counts-as-partial-progress/)
+- Where could you notice this evidence—in your calendar, a conversation, completed work, a felt change, or someone’s response? [guide](/letters/crucible-where-could-you-notice-this-evidence/)
 
 ### Edges to bring, develop, or balance
 
 Use the nine Edges as a vocabulary for reflection, not as a checklist to complete or a scale to rate. For this domain, which qualities might help you inhabit the chosen role? Which need support or practice? Could a familiar strength be overused? Leave any Edge aside if it does not illuminate the situation.
 
-- **Direction:** What deserves your attention here? What would help you choose a heading when several demands compete?
-- **Craft:** What skill, quality of work, or deliberate practice would make your contribution more trustworthy?
-- **Alignment:** Where do your actions match—or conflict with—your stated values and commitments?
-- **Stewardship:** What resource, responsibility, relationship, or opportunity needs careful tending over time?
-- **Adaptation:** What needs to change in response to the conditions, rather than being forced through the old approach?
-- **Service:** Who or what is served by the role you want to play? How can you contribute without erasing your own limits?
-- **Legacy:** What do you hope your choices build, pass on, or make possible beyond this immediate moment?
-- **Integration:** What parts of your life or identity need to be brought into better relationship here?
-- **Expression:** What truth, perspective, creativity, or preference needs a clearer voice?
+- **Direction:** What deserves your attention here? What would help you choose a heading when several demands compete? [guide](/letters/crucible-direction-choose-a-heading/)
+- **Craft:** What skill, quality of work, or deliberate practice would make your contribution more trustworthy? [guide](/letters/crucible-craft-trustworthy-contribution/)
+- **Alignment:** Where do your actions match—or conflict with—your stated values and commitments? [guide](/letters/crucible-alignment-actions-values-commitments/)
+- **Stewardship:** What resource, responsibility, relationship, or opportunity needs careful tending over time? [guide](/letters/crucible-stewardship-careful-tending/)
+- **Adaptation:** What needs to change in response to the conditions, rather than being forced through the old approach? [guide](/letters/crucible-adaptation-change-with-conditions/)
+- **Service:** Who or what is served by the role you want to play? How can you contribute without erasing your own limits? [guide](/letters/crucible-service-contribute-without-erasing-limits/)
+- **Legacy:** What do you hope your choices build, pass on, or make possible beyond this immediate moment? [guide](/letters/crucible-legacy-beyond-the-immediate-moment/)
+- **Integration:** What parts of your life or identity need to be brought into better relationship here? [guide](/letters/crucible-integration-parts-of-life-identity/)
+- **Expression:** What truth, perspective, creativity, or preference needs a clearer voice? [guide](/letters/crucible-expression-truth-needs-a-clearer-voice/)
 
 Then choose only the useful reflection:
 
-- Which Edge seems needed for the next step? What specific behavior would express it?
-- Which quality is already available and worth relying on?
-- Which quality feels difficult to access, and what practice, support, or condition might help?
-- Is a strength being used so intensely that it creates a cost? What would balance look like?
-- What quality are you developing, and what small evidence would show practice rather than mastery?
-- Across your focus domains, what pattern belongs under “needed,” “balanced,” “overused,” or “developing”?
+- Which Edge seems needed for the next step? What specific behavior would express it? [guide](/letters/crucible-edge-needed-next-step/)
+- Which quality is already available and worth relying on? [guide](/letters/crucible-quality-already-available/)
+- Which quality feels difficult to access, and what practice, support, or condition might help? [guide](/letters/crucible-difficult-quality-access/)
+- Is a strength being used so intensely that it creates a cost? What would balance look like? [guide](/letters/crucible-strength-used-intensely-cost/)
+- What quality are you developing, and what small evidence would show practice rather than mastery? [guide](/letters/crucible-quality-developing/)
+- Across your focus domains, what pattern belongs under “needed,” “balanced,” “overused,” or “developing”? [guide](/letters/crucible-pattern-across-focus-domains/)
 
 ## 4. Look across domains before you commit
 
