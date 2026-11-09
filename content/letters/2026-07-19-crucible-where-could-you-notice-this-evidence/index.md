@@ -30,7 +30,7 @@ This can make a vision more livable. Instead of waiting for a large change to pr
 
 That is how reflection can move a person from drift toward direction. He looks at the life he is living, compares it with the life he chose, and decides what deserves his effort now. The evidence might support the path, raise a concern, or call for a change in the vision itself. A vision belongs to the person who chose it. He is free to learn from what he sees and set a standard that fits what matters to him.
 
-With that in mind, ask yourself: “Where could you notice this evidence—in your calendar, a conversation, completed work, a felt change, or someone’s response?”
+With that in mind, ask yourself: “Where could you notice this evidence, such as in your calendar, a conversation, completed work, a felt change, or someone’s response?”
 
 Let the answer come from the direction you care about, not from a need to prove that you are doing enough. It may point to a place you already pass through each day. It may help you see that you have been watching the wrong thing, or that you need a simpler way to notice. A calendar, a conversation, finished work, a feeling, or another person’s response can each hold a clue. Your answer can connect what you hope for with the choices and moments already in your life.
 
