@@ -15,7 +15,7 @@ class OpenRouterImageGenerator:
         self,
         api_key: str,
         *,
-        model: str = "openai/gpt-image-1",
+        model: str = "openai/gpt-image-2",
         endpoint: str = "https://openrouter.ai/api/v1/images",
         timeout: float = 900,
     ) -> None:

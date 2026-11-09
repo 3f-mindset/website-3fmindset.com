@@ -218,7 +218,7 @@ class OpenRouterAdapterTests(unittest.TestCase):
         self.assertEqual(request.full_url, "https://openrouter.ai/api/v1/images")
         self.assertEqual(request.get_header("Authorization"), "Bearer test-secret")
         payload = json.loads(request.data)
-        self.assertEqual(payload["model"], "openai/gpt-image-1")
+        self.assertEqual(payload["model"], "openai/gpt-image-2")
         self.assertEqual(payload["aspect_ratio"], "3:2")
         self.assertEqual(result.data, image)
         self.assertEqual(result.provider_cost, 0.04)
