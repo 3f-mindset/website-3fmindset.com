@@ -1,5 +1,5 @@
 ---
-date: 2026-03-15
+date: 2026-03-08
 slug: "crucible-naming-your-domain"
 title: "A name is a lens"
 draft: false
