@@ -1,5 +1,5 @@
 ---
-date: 2026-02-01
+date: 2026-01-25
 slug: "crucible-what-are-you-making-room-for"
 title: "A life needs room to grow"
 draft: false
