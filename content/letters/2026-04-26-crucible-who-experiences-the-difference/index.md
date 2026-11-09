@@ -1,7 +1,7 @@
 ---
 date: 2026-04-26
 slug: "crucible-who-experiences-the-difference"
-title: "The people who feel your choices"
+title: "The lives touched by a direction"
 draft: false
 categories: crucible
 tags:
