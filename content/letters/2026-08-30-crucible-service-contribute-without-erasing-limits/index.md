@@ -34,7 +34,7 @@ It can help to name who or what benefits from the role. It may be one person, a 
 
 Then look at what is truly helpful. The part you think you must play may not be the part others need. You may be trying to fix a problem when listening would help more. You may be doing work that someone else could learn to do. You might be holding yourself to a rule that no one asked for. A clear talk can help you understand what people count on you to do.
 
-Limits are easier to see when you connect them to a real role. How much time can you give? What work can you do well? What money, energy, or care is not yours to promise? Is this a short hard season, or does the whole plan need to change? A limit is not a wall against care. It tells others what they can expect from you.
+Limits are easier to see when you connect them to a real role. Name how much time you can give and what work you can do well. Be clear about what money, energy, or care you cannot promise. Notice whether this is a short hard season or whether the whole plan needs to change. A limit is not a wall against care. It tells others what they can expect from you.
 
 Sometimes you may need to share the work, ask for a change, or step back. That can hurt, especially if people have come to depend on you. You may grieve a role that no longer fits. It is better to see the strain clearly than to wait until anger or exhaustion makes the choice for you.
 
@@ -44,9 +44,9 @@ When the purpose and the limits are both clear, your help can be more honest. Pe
 
 This will not make every choice easy. Someone may be upset when you set a limit. A need may still go unmet. You may have to choose between two things that both matter. But naming who benefits and what you can offer keeps a hard choice from becoming a simple claim about your worth.
 
-Think about the life you want to build. What do you want people to feel when they are with you? What do you hope your work makes possible? What must remain cared for in your own life? Your answers can guide a personal standard. Perhaps you want to listen without rushing, finish the work you agreed to do, or tell people early when you need support.
+Think about the life you want to build. Name what you want people to feel when they are with you, what you hope your work makes possible, and what must remain cared for in your own life. These answers can guide a personal standard. Perhaps you want to listen without rushing, finish the work you agreed to do, or tell people early when you need support.
 
-That standard can help you see drift. Are you busy in a role but unsure who it helps? Are you saying yes from fear, then hiding your strain? Does your way of helping leave enough room for health, family, or rest? These are not scores. They are signs that your actions may need a better fit with the person you want to be and the life you hope to create.
+That standard can help you see drift. Notice when you are busy but unsure who it helps, when you say yes from fear and hide your strain, or when helping leaves too little room for health, family, or rest. These are not scores. They are signs that your actions may need a better fit with the person you want to be and the life you hope to create.
 
 You do not need to become useful to everyone. You can choose what matters to you and decide how you want to take part. A role can be meaningful without filling every hour. When you compare your offer with your purpose and limits, you can make a clear next choice. You might ask what is needed, name what you can do, share the load, or take time to think.
 
