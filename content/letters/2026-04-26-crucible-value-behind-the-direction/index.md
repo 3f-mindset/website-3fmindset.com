@@ -1,5 +1,5 @@
 ---
-date: 2026-05-03
+date: 2026-04-26
 slug: "crucible-value-behind-the-direction"
 title: "What gives the direction weight"
 draft: false
