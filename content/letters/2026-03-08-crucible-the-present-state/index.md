@@ -22,7 +22,7 @@ Facts give you something steadier. You can name what took place without turning 
 
 This is not cold record keeping. Your feelings matter, and so do the effects of your choices on other people. The point is to see them as part of the picture, not as proof of a story you have already chosen. You may feel hurt and still not know why someone acted as they did. You may feel proud of your effort and still need to repair a promise you did not keep. A fair look makes room for both.
 
-Once you can see what is happening, you can compare it with the life you want to lead. If you want to be a caring partner, what would care look like on an ordinary evening? If you want to be a steady worker, what would keeping your word look like this week? These standards are not tests of whether you are a good man. They help you see where your actions fit your hopes and where they do not.
+Once you can see what is happening, you can compare it with the life you want to lead. If you want to be a caring partner, care may look like giving your full attention on an ordinary evening. If you want to be a steady worker, keeping your word may mean finishing a task you promised to do this week. These standards are not tests of whether you are a good man. They help you see where your actions fit your hopes and where they do not.
 
 That gap is useful. It tells you where a small change might matter, or where you need help from someone else. It can also show that something is already going well and deserves your time. If you are moving toward your vision, you can keep practicing what works. If you are moving away from it, you can respond before the distance grows. The facts cannot promise an easy answer, but they can keep you from trying to solve the wrong problem.
 
