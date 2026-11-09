@@ -1,5 +1,5 @@
 ---
-date: 2026-10-18
+date: 2026-10-11
 slug: "crucible-strength-used-intensely-cost"
 title: "When a strength stops serving"
 draft: false
