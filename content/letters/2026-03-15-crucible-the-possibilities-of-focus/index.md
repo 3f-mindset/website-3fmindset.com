@@ -1,5 +1,5 @@
 ---
-date: 2026-03-22
+date: 2026-03-15
 slug: "crucible-the-possibilities-of-focus"
 title: "Consider what attention could make possible"
 draft: false
