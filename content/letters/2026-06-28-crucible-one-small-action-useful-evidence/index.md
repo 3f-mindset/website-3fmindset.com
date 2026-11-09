@@ -1,5 +1,5 @@
 ---
-date: 2026-07-05
+date: 2026-06-28
 slug: "crucible-one-small-action-useful-evidence"
 title: "Let action ask a question"
 draft: false
