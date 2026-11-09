@@ -1,5 +1,5 @@
 ---
-date: 2026-04-26
+date: 2026-04-19
 slug: "crucible-who-experiences-the-difference"
 title: "The lives touched by a direction"
 draft: false
