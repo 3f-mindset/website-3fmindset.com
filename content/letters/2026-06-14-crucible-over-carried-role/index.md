@@ -2,6 +2,10 @@
 date: 2026-06-14
 slug: "crucible-over-carried-role"
 title: "The weight can hide inside a valued role"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

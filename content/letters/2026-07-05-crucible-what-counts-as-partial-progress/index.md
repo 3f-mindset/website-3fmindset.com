@@ -2,6 +2,10 @@
 date: 2026-07-05
 slug: "crucible-what-counts-as-partial-progress"
 title: "Leave room between nothing and finished"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

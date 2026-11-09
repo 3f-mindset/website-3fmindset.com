@@ -2,6 +2,10 @@
 date: 2026-10-18
 slug: "crucible-quality-developing"
 title: "Becoming through practice"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

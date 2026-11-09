@@ -2,6 +2,10 @@
 date: 2026-03-08
 slug: "crucible-naming-your-domain"
 title: "A name is a lens"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

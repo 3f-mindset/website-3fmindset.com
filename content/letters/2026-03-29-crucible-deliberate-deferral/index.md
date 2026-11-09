@@ -2,6 +2,10 @@
 date: 2026-03-29
 slug: "crucible-deliberate-deferral"
 title: "Waiting can be a choice"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

@@ -2,6 +2,10 @@
 date: 2026-07-19
 slug: "crucible-direction-choose-a-heading"
 title: "The cost of an unchosen heading"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

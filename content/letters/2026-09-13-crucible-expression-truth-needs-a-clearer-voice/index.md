@@ -2,6 +2,10 @@
 date: 2026-09-13
 slug: "crucible-expression-truth-needs-a-clearer-voice"
 title: "What remains unspoken"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

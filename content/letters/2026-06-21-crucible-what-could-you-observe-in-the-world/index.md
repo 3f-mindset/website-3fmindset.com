@@ -2,6 +2,10 @@
 date: 2026-06-21
 slug: "crucible-what-could-you-observe-in-the-world"
 title: "A direction needs contact with life"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

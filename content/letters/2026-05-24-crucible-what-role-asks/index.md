@@ -2,6 +2,10 @@
 date: 2026-05-24
 slug: "crucible-what-role-asks"
 title: "Bring the role into a real moment"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

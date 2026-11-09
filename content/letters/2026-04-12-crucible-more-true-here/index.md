@@ -2,6 +2,10 @@
 date: 2026-04-12
 slug: "crucible-more-true-here"
 title: "The shape of what you want"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

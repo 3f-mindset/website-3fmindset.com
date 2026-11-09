@@ -2,6 +2,10 @@
 date: 2026-05-10
 slug: "crucible-over-time-i-want-this-part"
 title: "A sentence that points forward"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

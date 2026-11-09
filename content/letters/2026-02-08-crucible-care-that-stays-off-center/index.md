@@ -2,6 +2,10 @@
 date: 2026-02-08
 slug: "crucible-care-that-stays-off-center"
 title: "Focus is not the same as worth"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

@@ -2,6 +2,10 @@
 date: 2026-04-26
 slug: "crucible-value-behind-the-direction"
 title: "What gives the direction weight"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

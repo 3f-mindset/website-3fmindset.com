@@ -2,6 +2,10 @@
 date: 2026-08-09
 slug: "crucible-stewardship-careful-tending"
 title: "What cannot be replaced by urgency"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

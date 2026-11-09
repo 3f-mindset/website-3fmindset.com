@@ -2,6 +2,10 @@
 date: 2026-05-31
 slug: "crucible-living-role-well"
 title: "Give “well” a visible shape"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

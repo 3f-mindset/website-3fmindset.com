@@ -2,6 +2,10 @@
 date: 2026-05-03
 slug: "crucible-within-your-influence"
 title: "A more accurate measure of agency"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

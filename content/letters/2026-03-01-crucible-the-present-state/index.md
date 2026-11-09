@@ -2,6 +2,10 @@
 date: 2026-03-01
 slug: "crucible-the-present-state"
 title: "Begin with what is there"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

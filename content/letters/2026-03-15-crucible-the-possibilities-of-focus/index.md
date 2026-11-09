@@ -2,6 +2,10 @@
 date: 2026-03-15
 slug: "crucible-the-possibilities-of-focus"
 title: "Consider what attention could make possible"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

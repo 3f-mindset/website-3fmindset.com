@@ -2,7 +2,7 @@
 
 ## Goal
 
-Add one generated cover image to each of the 43 published Crucible journal-prompt essays. Start with the first essay, “The room inside an ordinary day” (introduced in PR #102), so the owner can review the visual direction before any other cover is generated. The remaining 42 images must stay unstarted until the owner confirms the first sample.
+Add one generated cover image to each of the 43 published Crucible journal-prompt essays. The owner approved the first sample, “The room inside an ordinary day,” in merged PR #145. Generate the remaining 42 with the same tool/style and submit them in one reviewable rollout PR.
 
 ## User-visible behavior
 
@@ -18,7 +18,7 @@ Add one generated cover image to each of the 43 published Crucible journal-promp
 
 - The images share the requested vintage pulp-magazine illustration style, but each one depicts a distinct object or action grounded in its essay's main tension.
 - Images contain no words, captions, typography, labels, signage, or readable marks.
-- PR #145 contains this spec, the root generation script, and the first article's one image plus cover frontmatter. No other images are generated or added before explicit approval.
+- The approved first cover from PR #145 remains unchanged. The rollout adds one distinct cover to each of the other 42 letters and leaves essay prose, titles, dates, slugs, categories, and links unchanged.
 
 ## Non-goals
 
@@ -27,23 +27,24 @@ Add one generated cover image to each of the 43 published Crucible journal-promp
 - Do not make one generic image and reuse it across essays.
 - Do not generate or commit audio, promo art, banners, thumbnails, or other marketing assets.
 - Do not call OpenAI directly or use an OpenAI API key; image generation routes through OpenRouter using an OpenAI image model.
-- Do not roll out the remaining 42 covers until the owner approves the first sample.
+- Do not regenerate or replace the approved first cover during the rollout.
 
 ## Acceptance criteria
 
 1. **Scope inventory.** Given the 43 Crucible essays on `main`, when the set is inventoried, then every essay is identified once in source-question order and the first review target is `content/letters/2026-01-04-crucible-what-has-been-taking-up-space/`.
-2. **First sample asset.** Given the first-cover review change is prepared, when its cover is reviewed, then it contains one PNG cover for “The room inside an ordinary day,” stored as `cover.png` beside `index.md`, with relative cover frontmatter and no changes to article prose or unrelated files.
+2. **Approved sample preserved.** Given PR #145 is merged and approved, when the rollout is prepared, then the first `cover.png` and its frontmatter remain unchanged.
 3. **Visual style.** Given the first image is generated, when it is reviewed at full size and thumbnail size, then it is a wide, object-centered vintage pulp illustration with visible halftone texture, bold black linework, cross-hatching, a limited muted earthy palette, a dynamic but readable composition, and no words or readable marks.
 4. **Article relevance.** Given the first letter is about attention, crowding, and making room for what matters, when the image is inspected, then it shows one clear article-specific visual idea rather than an unrelated generic cover, a worksheet, or a document.
 5. **Generation route and safety.** Given the image is requested, when the provider call is made, then it uses OpenRouter's image-generation endpoint with the OpenAI model `openai/gpt-image-2`, a 3:2 aspect ratio, and a PNG response. `OPENROUTER_API_KEY` is read from the caller's root `.env` in process and sent only as an Authorization header; it is never printed, logged, committed, or passed as a CLI argument.
 6. **Root script.** Given an author runs `./generate-crucible-cover.sh <letter-directory> [--prompt "scene direction"]`, when the directory contains a valid `index.md`, then the script combines the shared style prompt with the article title/opening context and optional scene direction. With no directory argument, the current directory is accepted only if it contains `index.md`.
 7. **Safe output.** Given OpenRouter returns a valid PNG, when the script completes, then it writes `cover.png` in the letter directory and inserts the relative `cover.image: "cover.png"` metadata without changing the essay text or other frontmatter. Existing images are not overwritten unless `--force` is supplied; an existing incompatible cover declaration is an error.
-8. **Review gate.** Given the first-sample PR is open, when the owner has not yet confirmed the image, then no assets or metadata changes are made to the other 42 Crucible essays. After approval, a separate rollout plan can cover the remaining images.
+8. **Rollout scope.** Given first-sample approval, when the remaining set is generated, then exactly one distinct `cover.png` and relative cover metadata are added to each of the other 42 Crucible letters, with no prose/date/slug/category/link changes.
 9. **Hugo integration.** Given the first sample is built by Hugo, when the article renders, then the relative cover is found and displayed without altering existing page rendering behavior.
 10. **Script validation.** Given no valid root `.env`, API key, article directory, or prompt can be resolved, when the script runs, then it exits with a clear non-secret error before writing files. `bash -n` passes and help, dry-run, and argument validation can be exercised without making a provider request.
-11. **First review PR scope.** Given the first sample is added, when PR #145 is reviewed, then it contains only the spec/script and the first article's `cover.png` plus cover frontmatter; no other Crucible letter is changed.
+11. **Rollout PR scope.** Given the remaining covers are generated, when the rollout PR is inspected, then it contains the 42 remaining cover images and matching frontmatter additions, plus this spec, with no unrelated files or changes to the approved first cover.
 12. **Architecture boundaries.** Given the generator is refactored, when its dependency direction is inspected, then domain and prompt/image rules are independent of file and network I/O; the application use case depends on ports; filesystem and OpenRouter adapters implement those ports; and the CLI is the outer composition root. The root Bash script only sources `.env` and delegates to the CLI.
 13. **Behavior preservation.** Given a caller uses the existing path, prompt, `--force`, and `--dry-run` interface, when the refactored command runs, then prompt composition, output path, frontmatter changes, overwrite protection, provider parameters, errors, and secret handling remain unchanged. Offline tests use fake ports/adapters and make no paid API request.
+14. **Usage reporting.** Given each image response includes provider usage, when the rollout PR is prepared, then its summary reports the sum of captured provider-reported costs and clearly identifies any successful generations whose cost output was not retained. It does not present an estimate as an exact total or include credentials.
 
 ## Shared style prompt
 
@@ -67,6 +68,8 @@ Add a concise scene description grounded in the individual essay. The scene must
 - `ASSUMPTION:` Use `openai/gpt-image-2` through OpenRouter's image API (`https://openrouter.ai/api/v1/images`) because the earlier `openai/gpt-image-1` request returned a model-not-found error and OpenRouter lists `openai/gpt-image-2` with the required 3:2 and PNG parameters.
 - `ASSUMPTION:` Use a 3:2 composition, matching the dimensions of existing letter covers (typically 1536 × 1024), and save the returned PNG without destructive cropping. Verify the actual response dimensions before commit.
 - `ASSUMPTION:` Use `quality: high` for the first review sample; record provider-reported usage/cost in the PR summary without including credentials.
+- Record captured provider-reported generation costs in the rollout PR summary without including credentials; disclose any lost cost output rather than guessing an exact aggregate.
+- `ASSUMPTION:` Group the remaining 42 images into one rollout PR to keep the approved visual system and all related article changes together.
 - The required OpenRouter key must already be available in the caller root `.env`; if it is absent, stop and ask the owner to configure it. Do not search unrelated credential stores, create a key, or substitute another provider.
 - The root Bash entrypoint sources only the root `.env` and delegates to `python3 -m crucible_cover.cli`; Python modules live under `scripts/crucible_cover/`. The key stays in the environment/header and never appears in command arguments or output.
 - Keep Clean Architecture/Onion dependency direction: domain rules have no OpenRouter, filesystem, CLI, or environment dependencies; the application orchestrates ports; adapters implement those ports; and the CLI/composition root wires dependencies. Apply SOLID at this scale without adding external dependencies or generic frameworks.
@@ -78,10 +81,11 @@ Add a concise scene description grounded in the individual essay. The scene must
 1. Confirm the Crucible series inventory, existing cover/frontmatter convention, image-generation endpoint, and the first essay's story-specific visual subject.
 2. Add this spec before generating any image.
 3. Refactor the root entrypoint into a thin `.env`-loading wrapper and a small `scripts/crucible_cover/` package with domain, application, ports, filesystem/OpenRouter adapters, and a CLI composition root; validate the same behavior using offline fakes.
-4. Once the key is available, generate only the first essay's cover through OpenRouter, save it as `cover.png`, and add relative cover frontmatter to that essay in PR #145.
-5. Inspect the PNG's format, dimensions, aspect ratio, absence of visible text, thumbnail readability, and article relevance; run Markdown validation and Hugo rendering/build checks when available.
-6. Stop after sharing the updated PR #145; wait for explicit approval before generating or changing any of the remaining 42 essays.
+4. Confirm the approved first sample remains unchanged and the root `.env` contains the valid OpenRouter key.
+5. Use `generate-crucible-cover.sh` on each remaining letter directory, deriving a unique scene from article context and using a custom scene prompt only where it improves relevance. Do not reuse images.
+6. Inspect every PNG's format, dimensions, aspect ratio, absence of visible text, thumbnail readability, and article relevance; verify all 42 cover fields and ensure article text/metadata are otherwise unchanged.
+7. Open one rollout PR for the 42 remaining images and frontmatter additions. Report the captured provider costs, identify any successful generations with uncaptured cost output, make no exact-cost estimate, and leave the PR open for review.
 
 ## Rollback
 
-If the first visual sample is rejected, remove its new `cover.png` and cover frontmatter from PR #145. Keep the root script/spec if the owner still wants the generation utility; no other Crucible letter is changed in the review phase.
+If a rollout image is unsuitable, remove or replace only that letter's new `cover.png` and cover frontmatter. Keep the approved first cover unchanged and preserve all essay content.

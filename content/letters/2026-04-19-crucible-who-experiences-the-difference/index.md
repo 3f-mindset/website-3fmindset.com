@@ -2,6 +2,10 @@
 date: 2026-04-19
 slug: "crucible-who-experiences-the-difference"
 title: "The lives touched by a direction"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

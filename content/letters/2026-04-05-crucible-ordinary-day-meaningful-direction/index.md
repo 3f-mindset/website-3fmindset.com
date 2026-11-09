@@ -2,6 +2,10 @@
 date: 2026-04-05
 slug: "crucible-ordinary-day-meaningful-direction"
 title: "A direction, not a verdict"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible

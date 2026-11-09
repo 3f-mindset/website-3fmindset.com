@@ -2,6 +2,10 @@
 date: 2026-08-02
 slug: "crucible-alignment-actions-values-commitments"
 title: "The distance between saying and doing"
+cover:
+  image: "cover.png"
+  relative: true
+
 draft: false
 series:
   - crucible
