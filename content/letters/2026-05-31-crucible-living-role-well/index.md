@@ -1,5 +1,5 @@
 ---
-date: 2026-06-07
+date: 2026-05-31
 slug: "crucible-living-role-well"
 title: "Give “well” a visible shape"
 draft: false
