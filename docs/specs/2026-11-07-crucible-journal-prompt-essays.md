@@ -29,11 +29,7 @@ Each essay is added as a dated Crucible blog entry under `content/letters/` and 
 6. **Given** any single essay is read by itself, **when** the reader considers its subject, **then** it provides enough prompt-specific context to understand why the question helps set standards toward a vision and move from drift toward direction, without repetitive boilerplate or reliance on other materials.
 7. **Given** an essay is reviewed, **when** its length and content are checked, **then** it is 800–1,300 words, coherent, specific, humane, and distinct from the other essays; it uses no fabricated first-person or empirical claims and contains no em dash glyphs (`—`) in its title or body.
 8. **Given** the language is reviewed, **when** a fifth-grade reader encounters it, **then** sentences are clear, direct, and made mostly of familiar words, while the ideas remain thoughtful and adult.
-5. **Given** an essay is added, **when** the PR is inspected, **then** it has standard letter frontmatter and its PR contains exactly one new essay; the first series PR may also include this related spec, and no PR combines essays.
-6. **Given** all PRs are submitted, **when** their files are compared with the source inventory, **then** there is exactly one separate PR for each of the 43 bullets and none for prompts outside sections 1–3.
-7. **Given** the 43 articles are dated, **when** their publication dates are reviewed in source order, **then** each date is a distinct Sunday, one week apart from 2026-01-04 through 2026-10-25, and the date matches its date-prefixed letter directory.
-8. **Given** a reader encounters any one letter on its own, **when** he reads it without the worksheet or the other letters, **then** it makes clear what the specific question helps him examine, why that matters to the quality and direction of his life, and how reflection can reveal drift from or movement toward a vision; it provides sufficient context without relying on shared boilerplate or prior program knowledge.
-
+9. **Given** the essay series is merged, **when** a reader uses the vision exercise, **then** each of the 43 source bullets in sections 1–3 ends with a simple `[guide]` link to its matching essay at `/letters/<slug>/`, in the same order as the prompts; bullets without essays are not linked.
 ## Constraints and assumptions
 
 - Use the website's existing content collection under `content/letters/YYYY-MM-DD-<slug>/index.md`; use a Hugo `slug`, `title`, `date`, `draft: false`, `categories: crucible`, and relevant tags. Do not invent a cover asset.
@@ -45,6 +41,7 @@ Each essay is added as a dated Crucible blog entry under `content/letters/` and 
 - Explain how the specific question can help set standards toward a self-chosen vision and move from drift toward direction. Make this explanation concrete and unique to the question; do not paste the same boilerplate into every letter.
 - Write at approximately a fifth-grade reading level with familiar words and clear, direct sentences; preserve thoughtful adult meaning rather than oversimplifying the subject.
 - Titles and bodies contain no em dash glyphs (`—`); restructure sentences naturally instead of substituting punctuation mechanically.
+- After all essay PRs are merged, add the 43 `[guide]` links directly to the vision exercise on `main`, without opening a separate PR, as requested.
 - `ASSUMPTION:` If a bullet has no interrogative sentence (the vision-writing instruction in section 3), its opening instruction supplies the title concept.
 - Each essay is 800–1,300 words and should be a separate, self-contained piece rather than a chapter that depends on another essay.
 - Reuse the existing letter metadata and tone conventions while keeping the Crucible framework's agency-preserving, non-scoring framing.
@@ -57,6 +54,7 @@ Each essay is added as a dated Crucible blog entry under `content/letters/` and 
 3. Draft one article per bullet using an attention-catching title grounded in the prompt, dated letter frontmatter, and the avoidance/possibility/reflection arc.
 4. Verify title-to-source mapping, article arc and prompt placement, standalone context, fifth-grade readability, article count and word lengths, non-repetition, Sunday date mapping, editorial constraints, and Markdown/frontmatter.
 5. Submit each article on its own branch and PR based on current `main`; include this related series spec only with the first essay. Verify each PR has one essay, its source mapping is unique, and no two essay PRs share a post.
+6. After all essay PRs merge, append one `[guide]` link to each matching source bullet in the vision exercise and push that change directly to `main` without a separate PR; verify all 43 links.
 
 ## Rollback
 
