@@ -1,5 +1,5 @@
 ---
-date: 2026-04-19
+date: 2026-04-12
 slug: "crucible-more-true-here"
 title: "The shape of what you want"
 draft: false
