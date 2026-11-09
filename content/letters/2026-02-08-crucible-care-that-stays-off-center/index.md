@@ -3,7 +3,8 @@ date: 2026-02-08
 slug: "crucible-care-that-stays-off-center"
 title: "Focus is not the same as worth"
 draft: false
-categories: crucible
+series:
+  - crucible
 tags:
   - responsibility
   - relationships

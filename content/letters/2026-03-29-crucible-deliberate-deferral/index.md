@@ -3,7 +3,8 @@ date: 2026-03-29
 slug: "crucible-deliberate-deferral"
 title: "Waiting can be a choice"
 draft: false
-categories: crucible
+series:
+  - crucible
 tags:
   - priorities
   - responsibility

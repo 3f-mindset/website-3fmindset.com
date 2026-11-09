@@ -3,7 +3,8 @@ date: 2026-04-05
 slug: "crucible-ordinary-day-meaningful-direction"
 title: "A direction, not a verdict"
 draft: false
-categories: crucible
+series:
+  - crucible
 tags:
   - vision
   - reflection

@@ -3,7 +3,8 @@ date: 2026-02-15
 slug: "crucible-what-choice-would-you-want-it-to-clarify"
 title: "A question beneath the questions"
 draft: false
-categories: crucible
+series:
+  - crucible
 tags:
   - reflection
   - decisions

@@ -3,7 +3,8 @@ date: 2026-08-16
 slug: "crucible-adaptation-change-with-conditions"
 title: "When the old way stops fitting"
 draft: false
-categories: crucible
+series:
+  - crucible
 tags:
   - adaptation
   - change
@@ -18,7 +19,7 @@ That can take a real toll. You may feel tired, angry, or ashamed that you cannot
 
 Still, not every hard moment means you should change course. Learning a new skill is often uncomfortable. A good goal can take time. If you change your plan each time it gets hard, you may never learn what steady effort can do. The useful question is not whether things feel easy. It is whether the way you are working still fits the real conditions and serves something you care about.
 
-## Persistence and rigidity are not opposites
+## Persistence and rigidity
 
 It is easy to think there are only two choices. One is to never quit. The other is to give up and start over. Real life offers more choices. You may keep the reason for a plan and change its size. You may hold on to a promise but set a new time for it. You may continue toward a goal with a different tool, pace, or kind of help.
 

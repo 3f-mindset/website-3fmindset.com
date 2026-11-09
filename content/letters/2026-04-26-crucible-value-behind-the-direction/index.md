@@ -3,7 +3,8 @@ date: 2026-04-26
 slug: "crucible-value-behind-the-direction"
 title: "What gives the direction weight"
 draft: false
-categories: crucible
+series:
+  - crucible
 tags:
   - values
   - meaning

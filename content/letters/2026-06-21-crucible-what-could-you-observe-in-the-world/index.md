@@ -3,7 +3,8 @@ date: 2026-06-21
 slug: "crucible-what-could-you-observe-in-the-world"
 title: "A direction needs contact with life"
 draft: false
-categories: crucible
+series:
+  - crucible
 tags:
   - vision
   - evidence

@@ -3,7 +3,8 @@ date: 2026-06-07
 slug: "crucible-under-supported-role"
 title: "Notice the role already in the room"
 draft: false
-categories: crucible
+series:
+  - crucible
 tags:
   - roles
   - support
@@ -13,7 +14,6 @@ tags:
 Your life is made of many roles. Some are named in public: parent, worker, partner, neighbor. Others are quiet. You may be the person who keeps a family plan from falling apart, the friend who listens, or the one who holds a skill no one else on the team has. There are also roles that are still taking shape, such as learner, maker, or person trying to care for his health. Each one uses time and care. Yet the roles that get the most attention are not always the ones that matter most to the life you want.
 
 When a role gets too little support, it can be hard to see why life feels tight. You may think you are failing at the job, the home, or the promise you made. But the role may ask for more than your share of time, strength, or skill. A task that once seemed small can grow. You agree to help for a short while, then the help becomes part of the plan. No one talks about it again. Soon a piece of work that should be shared rests on you alone.
-
 
 This drift has a cost. Time for rest, friends, health, or work you care about may slowly disappear. You may grow short with people you love, even while you keep showing up for them. You may feel that you have no choice, or that stopping would let everyone down. Some men meet this strain by trying harder. They wake earlier, stay later, and ask less of others. That can keep things moving for a time, but more effort cannot always fix a poor fit between what a role needs and what one person can give.
 

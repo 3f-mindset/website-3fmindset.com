@@ -3,7 +3,8 @@ date: 2026-01-25
 slug: "crucible-what-are-you-making-room-for"
 title: "A life needs room to grow"
 draft: false
-categories: crucible
+series:
+  - crucible
 tags:
   - priorities
   - boundaries

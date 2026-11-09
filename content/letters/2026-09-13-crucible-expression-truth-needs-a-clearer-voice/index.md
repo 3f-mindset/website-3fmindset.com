@@ -3,7 +3,8 @@ date: 2026-09-13
 slug: "crucible-expression-truth-needs-a-clearer-voice"
 title: "What remains unspoken"
 draft: false
-categories: crucible
+series:
+  - crucible
 tags:
   - expression
   - voice

@@ -32,6 +32,9 @@ languages:
         - name: Steady Burn Series
           url: series/steadyburn
           weight: 1
+        - name: Reflections
+          url: series/crucible
+          weight: 2
         - name: All Letters
           url: letters
           weight: 5

@@ -3,7 +3,8 @@ date: 2026-07-26
 slug: "crucible-craft-trustworthy-contribution"
 title: "Trust is made in the work"
 draft: false
-categories: crucible
+series:
+  - crucible
 tags:
   - craft
   - work

@@ -3,7 +3,8 @@ date: 2026-10-18
 slug: "crucible-quality-developing"
 title: "Becoming through practice"
 draft: false
-categories: crucible
+series:
+  - crucible
 tags:
   - practice
   - growth

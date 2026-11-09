@@ -30,9 +30,11 @@ Each essay is added as a dated Crucible blog entry under `content/letters/` and 
 7. **Given** an essay is reviewed, **when** its length and content are checked, **then** it is 800–1,300 words, coherent, specific, humane, and distinct from the other essays; it uses no fabricated first-person or empirical claims and contains no em dash glyphs (`—`) in its title or body.
 8. **Given** the language is reviewed, **when** a fifth-grade reader encounters it, **then** sentences are clear, direct, and made mostly of familiar words, while the ideas remain thoughtful and adult.
 9. **Given** the essay series is merged, **when** a reader uses the vision exercise, **then** each of the 43 source bullets in sections 1–3 ends with a simple `[guide]` link to its matching essay at `/letters/<slug>/`, in the same order as the prompts; bullets without essays are not linked.
+
 ## Constraints and assumptions
 
-- Use the website's existing content collection under `content/letters/YYYY-MM-DD-<slug>/index.md`; use a Hugo `slug`, `title`, `date`, `draft: false`, `categories: crucible`, and relevant tags. Do not invent a cover asset.
+- Use the website's existing content collection under `content/letters/YYYY-MM-DD-<slug>/index.md`; use a Hugo `slug`, `title`, `date`, `draft: false`, `series:
+  - crucible`, and relevant tags. Do not invent a cover asset.
 - Backdate in source-prompt order, assigning one consecutive Sunday per article from 2026-01-04 (first prompt) through 2026-10-25 (last prompt), the first 43 Sundays of 2026. Set the frontmatter date and directory date prefix to the same Sunday; these are historical publication dates, not future scheduled dates.
 - The frontmatter title is the blog title; the original title heading is removed from the body. Later `##` headings may name article sections and need not match the page title. Remove any opening paragraph that merely restates the source prompt or meta-explains the exercise/prompt. Preserve independent narrative hooks; do not remove an opening paragraph solely because it is first.
 - Preserve a compound source prompt as one article when it is represented by one source bullet.
