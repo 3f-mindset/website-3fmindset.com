@@ -1,5 +1,5 @@
 ---
-date: 2026-09-20
+date: 2026-09-13
 slug: "crucible-expression-truth-needs-a-clearer-voice"
 title: "What remains unspoken"
 draft: false
