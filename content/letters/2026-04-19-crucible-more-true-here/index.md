@@ -1,7 +1,7 @@
 ---
 date: 2026-04-19
 slug: "crucible-more-true-here"
-title: "What you want more of"
+title: "The shape of what you want"
 draft: false
 categories: crucible
 tags:
