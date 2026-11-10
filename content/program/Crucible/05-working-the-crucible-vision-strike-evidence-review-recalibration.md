@@ -13,7 +13,7 @@ Use only as many spaces as are useful. The worksheets allow you to leave unused 
 
 ## Visionary Domains
 
-Start with [Visionary Domains](https://github.com/3f-mindset/website-3fmindset.com/blob/feat/domain-vision-edges-worksheet/static/worksheets/crucible-design/06_domain_vision_edges.svg). This is the compass for the cycle: it helps you decide where to direct attention and why before you choose a weekly strike.
+Start with [Visionary Domains](../../../worksheets/crucible-design/06_domain_vision_edges.svg). This is the compass for the cycle: it helps you decide where to direct attention and why before you choose a weekly strike.
 
 - **Flexible examples:** Use the examples—health/capacity, work/contribution, finances, relationships/community, family, meaning/values/growth, recreation/creativity, and home/daily life—as prompts, not a prescribed taxonomy. Rename, combine, replace, or ignore them. Select up to three active focuses for this season; other areas can be maintained or deferred without being dismissed as unimportant.
 - **Each “Focus Domain” entry:** Write the chosen domain on the first line. In **“My longer-term vision here,”** describe the direction you want this part of life to move toward, in your own terms; this is a compass, not a deadline or a promise to control every outcome. In **“Role I want to embody,”** name how you want to participate (for example, the kind of parent, friend, learner, steward, or craftsperson you aim to be). In **“Visible proof or next action,”** note what you could observe in real life that would show movement toward that vision, or a first action that could create such evidence. In **“Edges I need / balance,”** choose qualities that may help you enact the role, qualities that need support, or a strength that may need moderation. There is no correct Edge for a domain.
@@ -23,7 +23,7 @@ Start with [Visionary Domains](https://github.com/3f-mindset/website-3fmindset.c
 
 ## Weekly Domain Plan
 
-Use [Weekly Domain Plan](https://github.com/3f-mindset/website-3fmindset.com/blob/feat/domain-vision-edges-worksheet/static/worksheets/crucible-design/07_weekly_domain_plan.svg) to translate the compass into work this week. The “strike” is the concrete action you intend to take; it should be small enough to attempt in your actual circumstances and connected to a reason that matters.
+Use [Weekly Domain Plan](../../../worksheets/crucible-design/07_weekly_domain_plan.svg) to translate the compass into work this week. The “strike” is the concrete action you intend to take; it should be small enough to attempt in your actual circumstances and connected to a reason that matters.
 
 - **“Week of”** identifies the week covered, so the plan can be compared with the later evidence. Use the same week when transferring planned strikes to the optional blotter and when completing the weekly review.
 - **Each of the three “Focus Strikes” rows:** Leave unused rows blank. In **“Domain,”** name one active area from Visionary Domains. In **“Role / Vision Link,”** connect what you will do to the role you want to embody and the longer-term direction; a few words are enough if the connection is clear. In **“Relevant Edge,”** choose the quality you want to bring to this particular action, rather than trying to activate all nine at once. In **“One Concrete Action,”** write an observable verb-and-outcome commitment, not a broad aspiration. In **“Time / Container,”** give the action a realistic place in the week—such as a time, duration, appointment, or repeatable event—so it has a chance to happen. In **“Effort,”** mark Establish if this is new ground you are trying to create, or Maintain if you are sustaining something already in motion. This describes the work, not your value or discipline.
@@ -36,7 +36,7 @@ Use [Weekly Domain Plan](https://github.com/3f-mindset/website-3fmindset.com/blo
 
 ## Weekly Domain Blotter
 
-The [Weekly Domain Blotter](https://github.com/3f-mindset/website-3fmindset.com/blob/feat/domain-vision-edges-worksheet/static/worksheets/crucible-design/07a_weekly_domain_blotter.svg) is an optional, low-friction evidence log between planning and review. It is not a habit scorecard and does not replace the other worksheets.
+The [Weekly Domain Blotter](../../../worksheets/crucible-design/07a_weekly_domain_blotter.svg) is an optional, low-friction evidence log between planning and review. It is not a habit scorecard and does not replace the other worksheets.
 
 - **“Week of”** should match the corresponding Weekly Domain Plan.
 - **“Planned Domain / Role Strike” rows:** Copy the strike in words from Weekly Domain Plan so you can tell which commitment each row tracks. Include enough of the domain/role/action to recognize it; do not substitute generic categories or assume the rows correspond to fixed kinds of life activity. Use up to three rows and leave the rest blank.
@@ -47,7 +47,7 @@ The [Weekly Domain Blotter](https://github.com/3f-mindset/website-3fmindset.com/
 
 ## Weekly Role Review
 
-At week’s end, use [Weekly Role Review](https://github.com/3f-mindset/website-3fmindset.com/blob/feat/domain-vision-edges-worksheet/static/worksheets/crucible-design/08_weekly_role_edge_review.svg) to examine how you participated in up to three roles. If you used Weekly Domain Blotter, bring its marks as evidence; they are one source, not the whole story.
+At week’s end, use [Weekly Role Review](../../../worksheets/crucible-design/08_weekly_role_edge_review.svg) to examine how you participated in up to three roles. If you used Weekly Domain Blotter, bring its marks as evidence; they are one source, not the whole story.
 
 - **“Week of”** identifies the period being reviewed and should agree with the plan and any blotter.
 - **Each “Domain + Role” panel:** In **“Domain,”** name the area of life; in **“Role,”** name the way you participated there. In **“Observable evidence: what I did / said,”** record concrete behavior, words, or a specific event rather than an identity label such as “I was bad at this.” In **“Planned action happened?”** select Yes, Partly, Not yet, or N/A based on what occurred; N/A is useful when the action no longer applied, not a failure state. In **“Edge(s) that helped,”** identify a quality that was available in your behavior and how it helped the role. In **“Lacking / needed or overused,”** note a quality that was difficult to access, a support the role needed, or a strength used so intensely that it became costly. You may answer only what is useful; do not force an Edge explanation.
@@ -57,7 +57,7 @@ At week’s end, use [Weekly Role Review](https://github.com/3f-mindset/website-
 
 ## Weekly Recalibration
 
-Use [Weekly Recalibration](https://github.com/3f-mindset/website-3fmindset.com/blob/feat/domain-vision-edges-worksheet/static/worksheets/crucible-design/09_weekly_domain_recalibration.svg) when one friction event deserves closer attention. This is a controlled adjustment to the next week, not a redesign of your whole life. Keep the vision as the direction; change one workable part of the conditions or strike.
+Use [Weekly Recalibration](../../../worksheets/crucible-design/09_weekly_domain_recalibration.svg) when one friction event deserves closer attention. This is a controlled adjustment to the next week, not a redesign of your whole life. Keep the vision as the direction; change one workable part of the conditions or strike.
 
 - **“Week / Date”** identifies when the event occurred or the plan period being recalibrated. **“Domain”** names the life area affected.
 - **One Friction Event:** In **“Role,”** name the role involved. In **“What happened? (facts),”** describe one specific event in observable terms—what was scheduled, what occurred, and what changed. Keep interpretation and blame out of the facts line; select the moment from your Weekly Role Review if you completed one.
@@ -72,7 +72,7 @@ Use [Weekly Recalibration](https://github.com/3f-mindset/website-3fmindset.com/b
 
 ## Monthly Domain Review
 
-With every fourth weekly cycle, use [Monthly Domain Review](https://github.com/3f-mindset/website-3fmindset.com/blob/feat/domain-vision-edges-worksheet/static/worksheets/crucible-design/10_monthly_domain_review.svg) to step back from the heat of a single week. Complete it in addition to that cycle’s Weekly Domain Plan, evidence gathering, Weekly Role Review, and Weekly Recalibration. Draw on Visionary Domains, the Weekly Domain Blotter when used, your calendar, and your own notes. This is a checkpoint, not a replacement for weekly work, a mandatory restart, or a demand to rewrite a vision that still matters.
+With every fourth weekly cycle, use [Monthly Domain Review](../../../worksheets/crucible-design/10_monthly_domain_review.svg) to step back from the heat of a single week. Complete it in addition to that cycle’s Weekly Domain Plan, evidence gathering, Weekly Role Review, and Weekly Recalibration. Draw on Visionary Domains, the Weekly Domain Blotter when used, your calendar, and your own notes. This is a checkpoint, not a replacement for weekly work, a mandatory restart, or a demand to rewrite a vision that still matters.
 
 - **“Month”** names the month you are reviewing. **“Weeks … through …”** bounds the weekly cycles or dates you considered; choose the span that matches your evidence rather than forcing a fixed number of weeks.
 - **Aim & Domain Evidence:** In **“Domain(s) in focus,”** name the areas whose direction you are reviewing. In **“What time/actions aligned?”** compare the intended focus with calendar entries and actual actions. In **“Gap or meaningful progress,”** record a notable difference, movement, or change in conditions. Treat calendar time as evidence, not a complete measure of meaning or care.
