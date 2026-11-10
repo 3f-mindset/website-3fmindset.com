@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">SB18 Worksheet, Control the Inner Flame</title>
+    <desc id="desc">Landscape worksheet on a white background with large title, introduction,
+        fillable sections built around the CALIBRATE action model, and a three step summary footer.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+      .heat1 { fill: #f5f5f5; stroke: #111111; stroke-width: 1.5; rx: 14; ry: 14; }
+      .heat2 { fill: #eeeeee; stroke: #111111; stroke-width: 1.5; rx: 14; ry: 14; }
+      .heat3 { fill: #e6e6e6; stroke: #111111; stroke-width: 1.5; rx: 14; ry: 14; }
+      .heat4 { fill: #dddddd; stroke: #111111; stroke-width: 1.5; rx: 14; ry: 14; }
+    </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <text class="small" x="40" y="36">SB18</text>
+    <text class="title" x="40" y="72">CONTROL THE INNER FLAME</text>
+    <text class="sub" x="40" y="101">Managing Anger and Emotion</text>
+
+    <rect class="box" x="690" y="34" width="370" height="82" />
+    <text class="label" x="710" y="58">CHOICE</text>
+    <text class="small" x="710" y="79">Keep calling anger stress and react late, or</text>
+    <text class="small" x="710" y="96">name it early, slow the spike, and respond cleanly.</text>
+
+    <rect class="box" x="40" y="128" width="1020" height="74" />
+    <text class="label" x="62" y="153">PROMPT</text>
+    <text class="small" x="62" y="174">Use this sheet to process one real trigger this week. Track
+        the
+        signal, name the emotion, pause, and choose a measured response.</text>
+    <text class="small" x="62" y="190">The goal is not to erase anger. The goal is to make anger
+        useful.</text>
+
+    <text class="verb" x="405" y="246">CALIBRATE</text>
+    <line class="soft" x1="550" y1="260" x2="550" y2="650" />
+    <circle class="dot" cx="550" cy="286" r="5" />
+    <circle class="dot" cx="550" cy="326" r="5" />
+    <circle class="dot" cx="550" cy="366" r="5" />
+    <circle class="dot" cx="550" cy="406" r="5" />
+    <circle class="dot" cx="550" cy="446" r="5" />
+    <circle class="dot" cx="550" cy="486" r="5" />
+    <circle class="dot" cx="550" cy="526" r="5" />
+    <circle class="dot" cx="550" cy="566" r="5" />
+    <circle class="dot" cx="550" cy="606" r="5" />
+
+    <rect class="heat1" x="40" y="266" width="235" height="86" />
+    <text class="letter" x="58" y="300">C</text>
+    <text class="label" x="94" y="289">Catch the Signal</text>
+    <text class="small" x="94" y="308">What did your body do first?</text>
+    <line class="fillline" x1="58" y1="326" x2="252" y2="326" />
+    <line class="fillline" x1="58" y1="342" x2="252" y2="342" />
+
+    <rect class="heat2" x="300" y="266" width="235" height="86" />
+    <text class="letter" x="318" y="300">A</text>
+    <text class="label" x="354" y="289">Acknowledge Anger</text>
+    <text class="small" x="354" y="308">Write the exact emotion name.</text>
+    <line class="fillline" x1="318" y1="326" x2="512" y2="326" />
+    <line class="fillline" x1="318" y1="342" x2="512" y2="342" />
+
+    <rect class="heat3" x="565" y="266" width="235" height="86" />
+    <text class="letter" x="583" y="300">L</text>
+    <text class="label" x="619" y="289">Limit the Spike</text>
+    <text class="small" x="619" y="308">Which pause did you use?</text>
+    <line class="fillline" x1="583" y1="326" x2="777" y2="326" />
+    <line class="fillline" x1="583" y1="342" x2="777" y2="342" />
+
+    <rect class="heat4" x="825" y="266" width="235" height="86" />
+    <text class="letter" x="843" y="300">I</text>
+    <text class="label" x="879" y="289">Isolate the Cause</text>
+    <text class="small" x="879" y="308">What triggered the heat?</text>
+    <line class="fillline" x1="843" y1="326" x2="1037" y2="326" />
+    <line class="fillline" x1="843" y1="342" x2="1037" y2="342" />
+
+    <rect class="heat4" x="40" y="378" width="235" height="86" />
+    <text class="letter" x="58" y="412">B</text>
+    <text class="label" x="94" y="401">Build a Response</text>
+    <text class="small" x="94" y="420">What clean action fits?</text>
+    <line class="fillline" x1="58" y1="438" x2="252" y2="438" />
+    <line class="fillline" x1="58" y1="454" x2="252" y2="454" />
+
+    <rect class="heat3" x="300" y="378" width="235" height="86" />
+    <text class="letter" x="318" y="412">R</text>
+    <text class="label" x="354" y="401">Release Energy</text>
+    <text class="small" x="354" y="420">Where will the pressure go?</text>
+    <line class="fillline" x1="318" y1="438" x2="512" y2="438" />
+    <line class="fillline" x1="318" y1="454" x2="512" y2="454" />
+
+    <rect class="heat2" x="565" y="378" width="235" height="86" />
+    <text class="letter" x="583" y="412">A</text>
+    <text class="label" x="619" y="401">Assess Outcome</text>
+    <text class="small" x="619" y="420">What changed after control?</text>
+    <line class="fillline" x1="583" y1="438" x2="777" y2="438" />
+    <line class="fillline" x1="583" y1="454" x2="777" y2="454" />
+
+    <rect class="heat1" x="825" y="378" width="235" height="86" />
+    <text class="letter" x="843" y="412">T</text>
+    <text class="label" x="879" y="401">Train the Pattern</text>
+    <text class="small" x="879" y="420">What will you repeat next time?</text>
+    <line class="fillline" x1="843" y1="438" x2="1037" y2="438" />
+    <line class="fillline" x1="843" y1="454" x2="1037" y2="454" />
+
+    <rect class="box" x="300" y="496" width="500" height="118" />
+    <text class="letter" x="324" y="535">E</text>
+    <text class="label" x="365" y="522">Establish Control</text>
+    <text class="small" x="365" y="543">Write the sentence you will use to prove control next time.</text>
+    <line class="fillline" x1="324" y1="565" x2="776" y2="565" />
+    <line class="fillline" x1="324" y1="588" x2="776" y2="588" />
+
+    <rect class="mini" x="40" y="496" width="235" height="118" />
+    <text class="label" x="60" y="520">TRIGGER MAP</text>
+    <text class="small" x="60" y="541">Likely trigger this week:</text>
+    <line class="fillline" x1="60" y1="562" x2="250" y2="562" />
+    <text class="small" x="60" y="586">Early warning sign:</text>
+    <line class="fillline" x1="60" y1="607" x2="250" y2="607" />
+
+    <rect class="mini" x="825" y="496" width="235" height="118" />
+    <text class="label" x="845" y="520">CONTROL SCORE</text>
+    <text class="small" x="845" y="542">Before response, heat level 1 to 10:</text>
+    <line class="fillline" x1="845" y1="563" x2="1035" y2="563" />
+    <text class="small" x="845" y="586">After response, heat level 1 to 10:</text>
+    <line class="fillline" x1="845" y1="607" x2="1035" y2="607" />
+
+    <rect class="box" x="40" y="642" width="1020" height="82" />
+    <text class="label" x="62" y="668">REFLECTION</text>
+    <text class="small" x="62" y="690">Describe one moment where you felt anger rise. What did you
+        call it first, what was it actually, and what changed when you slowed down?</text>
+    <line class="fillline" x1="62" y1="710" x2="1038" y2="710" />
+
+    <rect class="mini" x="40" y="746" width="315" height="70" />
+    <text class="num" x="62" y="786">1</text>
+    <text class="label" x="96" y="775">SPOT IT</text>
+    <text class="tiny" x="96" y="793">Recognize early anger signals before they build.</text>
+
+    <rect class="mini" x="392" y="746" width="315" height="70" />
+    <text class="num" x="414" y="786">2</text>
+    <text class="label" x="448" y="775">SLOW IT</text>
+    <text class="tiny" x="448" y="793">Create a pause with breath, space, or movement.</text>
+
+    <rect class="mini" x="745" y="746" width="315" height="70" />
+    <text class="num" x="767" y="786">3</text>
+    <text class="label" x="801" y="775">USE IT</text>
+    <text class="tiny" x="801" y="793">Choose a clear response instead of reacting late.</text>
+</svg>

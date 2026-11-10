@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11in" height="8.5in" viewBox="0 0 1100 850">
+  <rect width="1100" height="850" fill="#ffffff" />
+
+  <defs>
+    <style>
+      .title{font-family:Arial, Helvetica,
+      sans-serif;font-size:34px;font-weight:700;fill:#111;letter-spacing:0.5px}
+      .subtitle{font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;fill:#111}
+      .body{font-family:Arial, Helvetica, sans-serif;font-size:13px;fill:#111}
+      .small{font-family:Arial, Helvetica, sans-serif;font-size:10px;fill:#111}
+      .tiny{font-family:Arial, Helvetica, sans-serif;font-size:8px;fill:#111}
+      .label{font-family:Arial, Helvetica, sans-serif;font-size:12px;font-weight:700;fill:#111}
+      .step{font-family:Arial, Helvetica, sans-serif;font-size:24px;font-weight:700;fill:#111}
+      .line{stroke:#111;stroke-width:1.5;fill:none}
+      .thin{stroke:#111;stroke-width:1;fill:none}
+      .box{stroke:#111;stroke-width:1.5;fill:none;rx:18;ry:18}
+      .dot{stroke:#111;stroke-width:1;stroke-dasharray:2 4;fill:none}
+    </style>
+  </defs>
+
+  <text x="48" y="58" class="title">SB14 | LEARN FROM THE MASTERS</text>
+  <text x="50" y="88" class="subtitle">MENTORSHIP &amp; KNOWLEDGE WORKSHEET</text>
+
+  <rect x="42" y="110" width="1016" height="70" class="box" />
+  <text x="58" y="132" class="label">MODEL Framework</text>
+  <text x="58" y="150" class="body">Keep guessing alone and repeat mistakes the hard way, or step
+    under a stronger standard and speed up your growth.</text>
+  <text x="58" y="167" class="body">Use this page to choose one source of mastery, extract one
+    lesson, and apply it this week.</text>
+
+  <rect x="42" y="200" width="490" height="170" class="box" />
+  <text x="62" y="230" class="step">M | MAP THE DOMAIN</text>
+  <text x="62" y="248" class="small">Choose one area where growth matters right now.</text>
+  <text x="62" y="272" class="label">Area I want to improve:</text>
+  <line x1="62" y1="286" x2="502" y2="286" class="dot" />
+  <text x="62" y="310" class="label">Why this matters now:</text>
+  <line x1="62" y1="324" x2="502" y2="324" class="dot" />
+  <text x="62" y="342" class="label">What result would prove progress by next week?</text>
+  <line x1="62" y1="364" x2="502" y2="364" class="dot" />
+
+  <rect x="568" y="200" width="490" height="170" class="box" />
+  <text x="588" y="230" class="step">O | OBSERVE A MASTER</text>
+  <text x="588" y="248" class="small">Identify one person whose results you respect.</text>
+  <text x="588" y="272" class="label">Name of mentor / author / expert:</text>
+  <line x1="588" y1="286" x2="1028" y2="286" class="dot" />
+  <text x="588" y="310" class="label">Field of mastery:</text>
+  <line x1="588" y1="324" x2="1028" y2="324" class="dot" />
+  <text x="588" y="348" class="label">What makes this person credible?</text>
+  <line x1="588" y1="362" x2="1028" y2="362" class="dot" />
+
+  <rect x="42" y="390" width="490" height="180" class="box" />
+  <text x="62" y="420" class="step">D | DIRECT CONTACT OR STUDY</text>
+  <text x="62" y="438" class="small">Mark a path, contact or study, then commit with specifics.</text>
+  <rect x="62" y="452" width="12" height="12" class="thin" />
+  <text x="82" y="462" class="label">Contact: What will I send or ask?</text>
+  <line x1="62" y1="476" x2="502" y2="476" class="dot" />
+  <line x1="62" y1="494" x2="502" y2="494" class="dot" />
+  <rect x="62" y="508" width="12" height="12" class="thin" />
+  <text x="82" y="518" class="label">Study: What resource and when will I start?</text>
+  <line x1="62" y1="532" x2="502" y2="532" class="dot" />
+  <line x1="62" y1="550" x2="502" y2="550" class="dot" />
+
+  <rect x="568" y="390" width="490" height="180" class="box" />
+  <text x="588" y="420" class="step">E | EXTRACT THE PRINCIPLE</text>
+  <text x="588" y="438" class="small">Pull one useful lesson from the source.</text>
+  <text x="588" y="462" class="label">Key lesson or principle:</text>
+  <line x1="588" y1="476" x2="1028" y2="476" class="dot" />
+  <line x1="588" y1="494" x2="1028" y2="494" class="dot" />
+  <text x="588" y="518" class="label">What blind spot does this expose in me?</text>
+  <line x1="588" y1="532" x2="1028" y2="532" class="dot" />
+  <line x1="588" y1="550" x2="1028" y2="550" class="dot" />
+
+  <rect x="42" y="590" width="1016" height="170" class="box" />
+  <text x="62" y="620" class="step">L | LIVE THE LESSON</text>
+  <text x="62" y="638" class="small">Turn what you learned into one visible action this week.</text>
+  <text x="62" y="659" class="label">One action I will take immediately:</text>
+  <line x1="62" y1="676" x2="1038" y2="676" class="dot" />
+  <text x="62" y="695" class="label">When will I do it?</text>
+  <line x1="62" y1="714" x2="528" y2="714" class="dot" />
+  <text x="568" y="695" class="label">How will I know I followed through?</text>
+  <line x1="568" y1="714" x2="1038" y2="714" class="dot" />
+  <text x="62" y="733" class="label">Follow-up or accountability check:</text>
+  <line x1="62" y1="752" x2="1038" y2="752" class="dot" />
+
+  <line x1="42" y1="802" x2="1058" y2="802" class="thin" />
+  <text x="48" y="822" class="small">ACTION STEPS SUMMARY:</text>
+  <text x="208" y="822" class="small"><tspan font-weight="700">Define Direction</tspan>: choose one
+    area and one master.</text>
+  <text x="518" y="822" class="small"><tspan font-weight="700">Study with Purpose</tspan>: extract
+    one real principle.</text>
+  <text x="833" y="822" class="small"><tspan font-weight="700">Execute Immediately</tspan>: apply it
+    now.</text>
+</svg>

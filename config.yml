@@ -1,0 +1,204 @@
+baseURL: "https://3fmindset.com/"
+title: 3F Mindset
+pagination:
+  pagerSize: 20
+theme: hugo-PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+cleanDestinationDir: true
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["letters", "series"]
+googleAnalytics: G-TZ0JVYWKWW
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Steady Burn Series
+          url: series/steadyburn
+          weight: 1
+        - name: Visionary Prompts
+          url: series/visionary-prompts
+          weight: 2
+        - name: All Letters
+          url: letters
+          weight: 5
+        - name: Search
+          url: search
+          weight: 10
+        # - name: Tags
+        #   url: tags/
+        #   weight: 10
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+images:
+  formats:
+    - webp
+    - avif
+  resize: x200
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "3F Mindset - Live with Momentum"
+  author: David Mainville
+  # author: ["Me", "You"] # multiple authors
+
+  hideAuthor: true
+  showCTAs: false
+
+  defaultTheme: dark
+  disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  ShowRssButtonInSectionTermList: false
+  ShowAllPagesInArchive: true
+  ShowPageNums: false
+  ShowToc: false
+  # comments: false
+  images: []
+
+  # Controls cover images on list result pages. More specific settings override broader ones.
+  listCovers:
+    default: true
+    home: true
+    section: true
+    term: false
+    taxonomies:
+      tags: false
+      series: true
+      categories: false
+    sections:
+      letters: true
+      marriage: true
+      program: true
+
+  homeInfoParams:
+    Title: "Letters to Help You Focus on What Actually Matters"
+    Content: >
+      _Eliminate energy leaks, and forge a clear identity, even if you feel scattered, exhausted, or stuck, so you can live with confidence, direction, and integrity._
+
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: "From Pressure to Consistent Action"
+    subtitle: "Learn to focus on what actually matters, eliminate energy leaks, and forge a clear identity, even if you feel scattered, exhausted, or stuck, so you can live with confidence, direction, and integrity."
+    imageUrl: "../assets/images/burn.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: The Momentum Map
+    buttons:
+      - name: Show Me How
+        url: program/ignition
+      # - name: Tags
+      #   url: tags
+
+  socialIcons:
+    # - name: github
+    #   title: View Source on Github
+    #   url: "https://github.com/adityatelange/hugo-PaperMod"
+    # - name: Discord
+    #   title: Join discord community
+    #   url: "https://discord.gg/ahpmTvhVmp"
+    # - name: X
+    #   title: Share PaperMod on X/Twitter
+    #   url: "https://x.com/intent/tweet/?text=Checkout%20Hugo%20PaperMod%20%E2%9C%A8%0AA%20fast,%20clean,%20responsive%20Hugo%20theme.&url=https://github.com/adityatelange/hugo-PaperMod&hashtags=Hugo,PaperMod"
+    # - name: KoFi
+    #   title: Buy me a Ko-Fi :)
+    #   url: "https://ko-fi.com/adityatelange"
+
+  # editPost:
+  #   URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+  # label:
+  # iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
+  # text: "Home"
+  # icon: icon.png
+  # iconHeight: 35
+
+  # analytics:
+  #     google:
+  #         SiteVerificationTag: "XYZabc"
+
+  assets:
+    disableHLJS: true
+  #     favicon: "<link / abs url>"
+  #     favicon16x16: "<link / abs url>"
+  #     favicon32x32: "<link / abs url>"
+  #     apple_touch_icon: "<link / abs url>"
+  #     safari_pinned_tab: "<link / abs url>"
+
+  # cover:
+  #     hidden: true # hide everywhere but not in structured data
+  #     hiddenInList: true # hide on list pages and home
+  #     hiddenInSingle: true # hide on single page
+
+  # Search uses literal, case-insensitive text matching rather than fuzzy matching.
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    threshold: 0
+    ignoreLocation: true
+    minMatchCharLength: 1
+    keys: ["title", "permalink", "summary", "content"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+# privacy:
+#   vimeo:
+#     disabled: false
+#     simple: true
+
+#   twitter:
+#     disabled: false
+#     enableDNT: true
+#     simple: true
+
+#   instagram:
+#     disabled: false
+#     simple: true
+
+#   youtube:
+#     disabled: false
+#     privacyEnhanced: true
+
+services:
+  googleAnalytics:
+    ID: G-TZ0JVYWKWW
+  x:
+    disableInlineCSS: true

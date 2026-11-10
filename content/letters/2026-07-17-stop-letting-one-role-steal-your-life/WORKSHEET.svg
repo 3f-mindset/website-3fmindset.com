@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850"
+    role="img" aria-labelledby="title desc">
+
+    <title id="title">SB29 Worksheet, Stop Letting One Role Steal Your Life</title>
+    <desc id="desc">Landscape personal development worksheet on a white background. The worksheet
+        guides
+        students through the seven-step BALANCE process: Break Down Your Roles, Assess Each Area,
+        Locate the
+        Neglected Role, Audit the Overused Role, Name the Boundary, Calendar the Correction, and
+        Evaluate
+        the Effect. A three-step summary appears in the footer.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.4; }
+        .dark {
+        fill: #f4f4f4;
+        }
+
+        .letter {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 31px;
+        font-weight: 700;
+        fill: #111111;
+        }
+
+        .white-label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        fill: #111111;
+        }
+      .light { fill: #f4f4f4; }
+      .label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        fill: #111111;
+      }
+      .small {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        fill: #111111;
+      }
+      .tiny {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9px;
+        fill: #111111;
+      }
+      .title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        fill: #111111;
+      }
+      .subtitle {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        fill: #111111;
+      }
+      .verb {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 27px;
+        font-weight: 700;
+        fill: #111111;
+        letter-spacing: 5px;
+      }
+      .num {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        fill: #111111;
+      }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dash { stroke: #777777; stroke-width: 1.2; stroke-dasharray: 5 4; fill: none; }
+      .arrow { stroke: #111111; stroke-width: 1.5; fill: none; }
+    </style>
+
+        <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="7" refY="4"
+            orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L8,4 L0,8 z" fill="#111111" />
+        </marker>
+    </defs>
+
+    <!-- White background -->
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <!-- Header -->
+    <rect class="dark" x="35" y="30" width="108" height="34" rx="5" />
+    <text class="white-label" x="89" y="51" text-anchor="middle">SB29 WORKSHEET</text>
+
+    <text class="title" x="35" y="96">STOP LETTING ONE ROLE STEAL YOUR LIFE</text>
+    <text class="verb" x="1065" y="96" text-anchor="end">BALANCE</text>
+
+    <line class="line" x1="35" y1="112" x2="1065" y2="112" />
+
+    <!-- Choice introduction -->
+    <rect class="light" x="35" y="128" width="1030" height="70" rx="12" />
+    <text class="label" x="52" y="151">THE CHOICE</text>
+    <text class="small" x="52" y="170">
+        <tspan x="52" dy="0">Keep letting the loudest demand consume your time while health,
+            relationships, rest, or purpose weaken—</tspan>
+        <tspan x="52" dy="16">or inspect your roles, correct the weight, and make one visible change
+            that restores control this week.</tspan>
+    </text>
+
+    <!-- Process direction -->
+    <text class="subtitle" x="35" y="224">Move through the process in order. Use facts, not good
+        intentions.</text>
+    <text class="tiny" x="1065" y="224" text-anchor="end">One neglected role. One overused role. One
+        scheduled correction.</text>
+
+    <!-- Connector path behind cards -->
+    <path class="dash" d="M160 365 H935 V560 H160" />
+    <path class="arrow" d="M278 365 H302" marker-end="url(#arrowhead)" />
+    <path class="arrow" d="M537 365 H561" marker-end="url(#arrowhead)" />
+    <path class="arrow" d="M796 365 H820" marker-end="url(#arrowhead)" />
+    <path class="arrow" d="M935 458 V483" marker-end="url(#arrowhead)" />
+    <path class="arrow" d="M822 560 H798" marker-end="url(#arrowhead)" />
+    <path class="arrow" d="M563 560 H539" marker-end="url(#arrowhead)" />
+
+    <!-- STEP B -->
+    <g aria-label="B, Break Down Your Roles">
+        <rect class="box" x="35" y="245" width="235" height="225" rx="16" />
+        <rect class="dark" x="35" y="245" width="52" height="52" rx="16" />
+        <text class="letter" x="61" y="282" text-anchor="middle">B</text>
+
+        <text class="label" x="100" y="266">BREAK DOWN YOUR ROLES</text>
+        <text class="tiny" x="100" y="283">Name the parts of life you must carry.</text>
+
+        <text class="small" x="51" y="311">Role 1</text>
+        <line class="fillline" x1="97" y1="308" x2="251" y2="308" />
+
+        <text class="small" x="51" y="337">Role 2</text>
+        <line class="fillline" x1="97" y1="334" x2="251" y2="334" />
+
+        <text class="small" x="51" y="363">Role 3</text>
+        <line class="fillline" x1="97" y1="360" x2="251" y2="360" />
+
+        <text class="small" x="51" y="389">Role 4</text>
+        <line class="fillline" x1="97" y1="386" x2="251" y2="386" />
+
+        <text class="small" x="51" y="415">Role 5</text>
+        <line class="fillline" x1="97" y1="412" x2="251" y2="412" />
+
+        <text class="small" x="51" y="441">Role 6</text>
+        <line class="fillline" x1="97" y1="438" x2="251" y2="438" />
+
+        <text class="tiny" x="51" y="458">Examples: health, work, marriage, fatherhood, faith, rest.</text>
+    </g>
+
+    <!-- STEP A1 -->
+    <g aria-label="A, Assess Each Area">
+        <rect class="box" x="294" y="245" width="235" height="225" rx="16" />
+        <rect class="dark" x="294" y="245" width="52" height="52" rx="16" />
+        <text class="letter" x="320" y="282" text-anchor="middle">A</text>
+
+        <text class="label" x="359" y="266">ASSESS EACH AREA</text>
+        <text class="tiny" x="359" y="283">Rate current attention from 1–10.</text>
+
+        <text class="tiny" x="310" y="311">ROLE</text>
+        <text class="tiny" x="431" y="311">SCORE</text>
+        <text class="tiny" x="476" y="311">PROOF</text>
+
+        <line class="fillline" x1="310" y1="330" x2="417" y2="330" />
+        <rect class="mini" x="430" y="317" width="31" height="18" rx="4" />
+        <line class="fillline" x1="472" y1="330" x2="512" y2="330" />
+
+        <line class="fillline" x1="310" y1="358" x2="417" y2="358" />
+        <rect class="mini" x="430" y="345" width="31" height="18" rx="4" />
+        <line class="fillline" x1="472" y1="358" x2="512" y2="358" />
+
+        <line class="fillline" x1="310" y1="386" x2="417" y2="386" />
+        <rect class="mini" x="430" y="373" width="31" height="18" rx="4" />
+        <line class="fillline" x1="472" y1="386" x2="512" y2="386" />
+
+        <line class="fillline" x1="310" y1="414" x2="417" y2="414" />
+        <rect class="mini" x="430" y="401" width="31" height="18" rx="4" />
+        <line class="fillline" x1="472" y1="414" x2="512" y2="414" />
+
+        <line class="fillline" x1="310" y1="442" x2="417" y2="442" />
+        <rect class="mini" x="430" y="429" width="31" height="18" rx="4" />
+        <line class="fillline" x1="472" y1="442" x2="512" y2="442" />
+
+        <text class="tiny" x="310" y="458">Score behavior, not importance or intention.</text>
+    </g>
+
+    <!-- STEP L -->
+    <g aria-label="L, Locate the Neglected Role">
+        <rect class="box" x="553" y="245" width="235" height="225" rx="16" />
+        <rect class="dark" x="553" y="245" width="52" height="52" rx="16" />
+        <text class="letter" x="579" y="282" text-anchor="middle">L</text>
+
+        <text class="label" x="618" y="266">LOCATE THE NEGLECT</text>
+        <text class="tiny" x="618" y="283">Choose the role that cannot keep waiting.</text>
+
+        <text class="small" x="569" y="313">Neglected role:</text>
+        <line class="fillline" x1="569" y1="330" x2="772" y2="330" />
+
+        <text class="small" x="569" y="354">What is weakening?</text>
+        <line class="fillline" x1="569" y1="371" x2="772" y2="371" />
+        <line class="fillline" x1="569" y1="388" x2="772" y2="388" />
+
+        <text class="small" x="569" y="412">One visible action this week:</text>
+        <line class="fillline" x1="569" y1="429" x2="772" y2="429" />
+        <line class="fillline" x1="569" y1="446" x2="772" y2="446" />
+
+        <text class="tiny" x="569" y="459">Avoid: “Do better.” Use: action + duration + day.</text>
+    </g>
+
+    <!-- STEP A2 -->
+    <g aria-label="A, Audit the Overused Role">
+        <rect class="box" x="812" y="245" width="253" height="225" rx="16" />
+        <rect class="dark" x="812" y="245" width="52" height="52" rx="16" />
+        <text class="letter" x="838" y="282" text-anchor="middle">A</text>
+
+        <text class="label" x="877" y="266">AUDIT THE OVERUSE</text>
+        <text class="tiny" x="877" y="283">Find what is taking more than its share.</text>
+
+        <text class="small" x="828" y="313">Oversized role or demand:</text>
+        <line class="fillline" x1="828" y1="330" x2="1048" y2="330" />
+
+        <text class="small" x="828" y="354">Observable pattern:</text>
+        <line class="fillline" x1="828" y1="371" x2="1048" y2="371" />
+        <line class="fillline" x1="828" y1="388" x2="1048" y2="388" />
+
+        <text class="small" x="828" y="412">What is it crowding out?</text>
+        <line class="fillline" x1="828" y1="429" x2="1048" y2="429" />
+        <line class="fillline" x1="828" y1="446" x2="1048" y2="446" />
+
+        <text class="tiny" x="828" y="459">Own the pattern. Do not blame the role or another person.</text>
+    </g>
+
+    <!-- STEP N -->
+    <g aria-label="N, Name the Boundary">
+        <rect class="box" x="812" y="490" width="253" height="190" rx="16" />
+        <rect class="dark" x="812" y="490" width="52" height="52" rx="16" />
+        <text class="letter" x="838" y="527" text-anchor="middle">N</text>
+
+        <text class="label" x="877" y="511">NAME THE BOUNDARY</text>
+        <text class="tiny" x="877" y="528">Set a rule that can be seen and measured.</text>
+
+        <text class="small" x="828" y="563">I will stop or limit:</text>
+        <line class="fillline" x1="828" y1="580" x2="1048" y2="580" />
+
+        <text class="small" x="828" y="604">Day or trigger:</text>
+        <line class="fillline" x1="918" y1="601" x2="1048" y2="601" />
+
+        <text class="small" x="828" y="628">Start / stop time:</text>
+        <line class="fillline" x1="930" y1="625" x2="1048" y2="625" />
+
+        <text class="small" x="828" y="652">What this protects:</text>
+        <line class="fillline" x1="936" y1="649" x2="1048" y2="649" />
+
+        <text class="tiny" x="828" y="669">Weak: “Work less.” Strong: “No email after 7 p.m.”</text>
+    </g>
+
+    <!-- STEP C -->
+    <g aria-label="C, Calendar the Correction">
+        <rect class="box" x="553" y="490" width="235" height="190" rx="16" />
+        <rect class="dark" x="553" y="490" width="52" height="52" rx="16" />
+        <text class="letter" x="579" y="527" text-anchor="middle">C</text>
+
+        <text class="label" x="618" y="511">CALENDAR THE CORRECTION</text>
+        <text class="tiny" x="618" y="528">Turn both decisions into appointments.</text>
+
+        <text class="small" x="569" y="558">Neglected-role action</text>
+        <text class="tiny" x="569" y="576">Day</text>
+        <line class="fillline" x1="595" y1="573" x2="639" y2="573" />
+        <text class="tiny" x="649" y="576">Time</text>
+        <line class="fillline" x1="681" y1="573" x2="724" y2="573" />
+        <text class="tiny" x="734" y="576">Place</text>
+        <line class="fillline" x1="765" y1="573" x2="772" y2="573" />
+
+        <line class="fillline" x1="569" y1="596" x2="772" y2="596" />
+
+        <text class="small" x="569" y="621">Boundary appointment</text>
+        <text class="tiny" x="569" y="639">Day</text>
+        <line class="fillline" x1="595" y1="636" x2="639" y2="636" />
+        <text class="tiny" x="649" y="639">Time</text>
+        <line class="fillline" x1="681" y1="636" x2="724" y2="636" />
+        <text class="tiny" x="734" y="639">Rule</text>
+        <line class="fillline" x1="761" y1="636" x2="772" y2="636" />
+
+        <line class="fillline" x1="569" y1="659" x2="772" y2="659" />
+        <text class="tiny" x="569" y="672">If it has no time, it is still only an idea.</text>
+    </g>
+
+    <!-- STEP E -->
+    <g aria-label="E, Evaluate the Effect">
+        <rect class="box" x="294" y="490" width="235" height="190" rx="16" />
+        <rect class="dark" x="294" y="490" width="52" height="52" rx="16" />
+        <text class="letter" x="320" y="527" text-anchor="middle">E</text>
+
+        <text class="label" x="359" y="511">EVALUATE THE EFFECT</text>
+        <text class="tiny" x="359" y="528">Define what success will look like.</text>
+
+        <text class="small" x="310" y="559">Observable result:</text>
+        <line class="fillline" x1="310" y1="576" x2="512" y2="576" />
+        <line class="fillline" x1="310" y1="593" x2="512" y2="593" />
+
+        <text class="small" x="310" y="617">Evidence I followed through:</text>
+        <line class="fillline" x1="310" y1="634" x2="512" y2="634" />
+        <line class="fillline" x1="310" y1="651" x2="512" y2="651" />
+
+        <text class="tiny" x="310" y="671">Measure what changed in time, behavior, output, or
+            contact.</text>
+    </g>
+    <!-- Center commitment card -->
+    <g aria-label="Weekly Balance Commitment">
+        <rect class="dark" x="35" y="490" width="235" height="190" rx="16" />
+        <text class="white-label" x="52" y="516">WEEKLY BALANCE COMMITMENT</text>
+
+        <text class="tiny" x="52" y="542">I will feed:</text>
+        <line x1="52" y1="557" x2="253" y2="557" stroke="#111111" stroke-width="1" />
+
+        <text class="tiny" x="52" y="579">I will restrain:</text>
+        <line x1="52" y1="594" x2="253" y2="594" stroke="#111111" stroke-width="1" />
+
+        <text class="tiny" x="52" y="616">The calendar will prove it by:</text>
+        <line x1="52" y1="631" x2="253" y2="631" stroke="#111111" stroke-width="1" />
+        <line x1="52" y1="648" x2="253" y2="648" stroke="#111111" stroke-width="1" />
+
+        <text class="tiny" x="52" y="668">Signature / initials</text>
+        <line x1="142" y1="665" x2="253" y2="665" stroke="#111111" stroke-width="1" />
+    </g>
+
+    <!-- Footer summary -->
+    <line class="line" x1="35" y1="704" x2="1065" y2="704" />
+    <text class="label" x="35" y="728">ACTION STEPS SUMMARY</text>
+
+    <g aria-label="Step one, Map the Roles">
+        <circle class="dark" cx="58" cy="766" r="20" />
+        <text class="white-label" x="58" y="770" text-anchor="middle">1</text>
+        <text class="label" x="88" y="756">MAP THE ROLES</text>
+        <text class="tiny" x="88" y="773">List each major life area and score</text>
+        <text class="tiny" x="88" y="786">its current level of attention.</text>
+    </g>
+
+    <g aria-label="Step two, Choose the Shift">
+        <circle class="dark" cx="407" cy="766" r="20" />
+        <text class="white-label" x="407" y="770" text-anchor="middle">2</text>
+        <text class="label" x="437" y="756">CHOOSE THE SHIFT</text>
+        <text class="tiny" x="437" y="773">Feed one neglected role and restrain</text>
+        <text class="tiny" x="437" y="786">one area that has grown too large.</text>
+    </g>
+
+    <g aria-label="Step three, Prove It">
+        <circle class="dark" cx="756" cy="766" r="20" />
+        <text class="white-label" x="756" y="770" text-anchor="middle">3</text>
+        <text class="label" x="786" y="756">PROVE IT</text>
+        <text class="tiny" x="786" y="773">Schedule one action and one boundary.</text>
+        <text class="tiny" x="786" y="786">Let the week reveal the correction.</text>
+    </g>
+
+    <text class="tiny" x="35" y="826">3F STEADY BURN • WEEK 29 • BALANCE IS NOT EQUAL TIME. IT IS
+        THE RIGHT ATTENTION AT THE RIGHT TIME.</text>
+    <text class="tiny" x="1065" y="826" text-anchor="end">NAME: ______________________________ DATE:
+        _______________</text>
+</svg>

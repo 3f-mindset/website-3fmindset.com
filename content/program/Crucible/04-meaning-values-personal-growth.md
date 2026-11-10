@@ -1,0 +1,24 @@
+---
+title: "Meaning, values & personal growth — Nine-Edge Matrix"
+showToc: true
+draft: false
+slug: "04-meaning-values-personal-growth"
+---
+
+## Applying the nine Edges across the candidate life domains
+
+Use these as applications of the nine Edges to candidate domains. Red — brittle/dull describes an Edge that is weak or unused, or has become rigid, excessive, or distorted. Yellow — mixed/in progress describes a nonjudgmental, context-dependent or developing expression, not a score or diagnosis. Green — strong/sharp describes an Edge that is formed, useful, and responsive—not turned up to maximum. For each domain, compare what you experience internally with what you do or show externally.
+
+### Meaning, values & personal growth
+
+| Edge | Red — brittle/dull — internal; external | Yellow — mixed/in progress — internal; external | Green — strong/sharp — internal; external |
+|---|---|---|---|
+| Direction | You chase endless self-improvement or feel adrift; you consume ideas without commitment or adopt aims to please others. | You are still clarifying what matters in this area; some choices follow a priority, while others are shaped by immediate demands. (for example, depending on the season or circumstances). | You orient growth toward a purpose that matters; you choose learning and practices that serve it. |
+| Craft | You expect instant transformation or doubt you can grow; you collect teachings without practice or repeat patterns without reflection. | You are building confidence through practice; some routines feel workable, while others still need learning or support. (for example, depending on the season or circumstances). | You respect that wisdom and character develop through practice; you study, reflect, and apply learning consistently. |
+| Alignment | You rationalize contradictions or become rigidly self-condemning; you preach values without embodying them or apply them without compassion. | You are weighing your values against real constraints; some choices feel congruent, while others remain unsettled. (for example, depending on the season or circumstances). | You seek congruence between belief, value, and conduct; principles guide daily choices and course correction. |
+| Stewardship | You feel empty or anxious about doing growth correctly; you neglect reflection or make practice compulsory performance. | You are tending this area unevenly; a few resources or responsibilities are managed intentionally, while others need attention. (for example, depending on the season or circumstances). | You recognize attention, solitude, and emotional capacity need tending; you protect practices that sustain reflection. |
+| Adaptation | You fear doubt or lack stable commitments; you cling to beliefs against evidence or adopt every framework uncritically. | You are adjusting to changing circumstances; some responses fit the new situation, while others still reflect the old one. (for example, depending on the season or circumstances). | You revise understanding as experience and evidence deepen; you change practices without losing integrity. |
+| Service | You grow only to feel superior or give yourself away to prove goodness; you judge others with insight or serve while neglecting your formation. | You are finding a workable balance between contributing and respecting capacity; what feels appropriate may vary by situation. (for example, depending on the season or circumstances). | You see growth as useful beyond self-image; you use what you learn to contribute with humility. |
+| Legacy | You live only for validation or feel burdened to be profound; values remain slogans or you chase spiritual reputation. | You are noticing longer-term effects, though immediate needs still shape some choices and patterns are continuing to develop. (for example, depending on the season or circumstances). | You consider what values and patterns your life transmits; you embody and share what you hope will continue. |
+| Integration | Your inner life is compartmentalized or one doctrine controls everything; you perform growth in one context while ignoring contradictions elsewhere. | You are connecting this area to some parts of your life more clearly than others; you are working out a sustainable fit. | You bring beliefs, relationships, work, body, and choices into conversation; growth appears in ordinary life. |
+| Expression | You fear speaking or need to be seen as enlightened; you suppress meaning or turn expression into preaching and performance. | You are sharing some needs or ideas more readily than others; comfort and clarity may depend on the situation. (for example, depending on the season or circumstances). | You voice what you are learning while staying open; you articulate beliefs and questions without forcing agreement. |

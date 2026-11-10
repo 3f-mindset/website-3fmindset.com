@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">SB22 Worksheet, Persevere Under Pressure</title>
+    <desc id="desc">Landscape worksheet on a white background with the original worksheet layout
+        preserved, title and GRITSTONE letters visible, with all other content replaced by light
+        grayscale censor blocks.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; fill: #111111; }
+      .c1 { fill: #eeeeee; }
+      .c2 { fill: #e4e4e4; }
+      .c3 { fill: #d8d8d8; }
+      .c4 { fill: #cccccc; }
+      .c5 { fill: #c2c2c2; }
+      .c6 { fill: #b8b8b8; }
+      .censor { rx: 5; ry: 5; }
+    </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <text class="title" x="40" y="52">SB22 | PERSEVERE UNDER PRESSURE</text>
+    <text class="verb" x="815" y="52">GRITSTONE</text>
+    <rect class="censor c2" x="40" y="70" width="250" height="18" />
+
+    <rect class="box" x="40" y="105" width="1020" height="78" />
+    <rect class="censor c3" x="62" y="124" width="88" height="16" />
+    <rect class="censor c1" x="62" y="148" width="880" height="11" />
+    <rect class="censor c2" x="62" y="166" width="760" height="11" />
+    <rect class="censor c1" x="840" y="166" width="150" height="11" />
+
+    <line class="soft" x1="550" y1="195" x2="550" y2="705" />
+    <line class="soft" x1="40" y1="365" x2="1060" y2="365" />
+    <line class="soft" x1="40" y1="535" x2="1060" y2="535" />
+
+    <rect class="box" x="40" y="205" width="320" height="140" />
+    <text class="letter" x="60" y="240">G</text>
+    <rect class="censor c3" x="100" y="217" width="180" height="14" />
+    <rect class="censor c1" x="100" y="241" width="210" height="10" />
+    <rect class="censor c2" x="60" y="266" width="275" height="8" />
+    <rect class="censor c3" x="60" y="290" width="255" height="8" />
+    <rect class="censor c1" x="60" y="314" width="270" height="8" />
+
+    <rect class="box" x="390" y="205" width="320" height="140" />
+    <text class="letter" x="410" y="240">R</text>
+    <rect class="censor c4" x="450" y="217" width="205" height="14" />
+    <rect class="censor c2" x="450" y="241" width="185" height="10" />
+    <rect class="censor c3" x="410" y="266" width="275" height="8" />
+    <rect class="censor c2" x="410" y="290" width="248" height="8" />
+    <rect class="censor c1" x="410" y="314" width="262" height="8" />
+
+    <rect class="box" x="740" y="205" width="320" height="140" />
+    <text class="letter" x="760" y="240">I</text>
+    <rect class="censor c5" x="800" y="217" width="215" height="14" />
+    <rect class="censor c3" x="800" y="241" width="225" height="10" />
+    <rect class="censor c4" x="760" y="266" width="275" height="8" />
+    <rect class="censor c3" x="760" y="290" width="252" height="8" />
+    <rect class="censor c2" x="760" y="314" width="270" height="8" />
+
+    <rect class="box" x="40" y="375" width="320" height="140" />
+    <text class="letter" x="60" y="410">T</text>
+    <rect class="censor c4" x="100" y="387" width="200" height="14" />
+    <rect class="censor c2" x="100" y="411" width="205" height="10" />
+    <rect class="censor c3" x="60" y="436" width="275" height="8" />
+    <rect class="censor c5" x="60" y="460" width="258" height="8" />
+    <rect class="censor c2" x="60" y="484" width="268" height="8" />
+
+    <rect class="box" x="390" y="375" width="320" height="140" />
+    <text class="letter" x="410" y="410">S</text>
+    <rect class="censor c5" x="450" y="387" width="160" height="14" />
+    <rect class="censor c3" x="450" y="411" width="220" height="10" />
+    <rect class="censor c4" x="410" y="436" width="275" height="8" />
+    <rect class="censor c2" x="410" y="460" width="250" height="8" />
+    <rect class="censor c3" x="410" y="484" width="266" height="8" />
+
+    <rect class="box" x="740" y="375" width="320" height="140" />
+    <text class="letter" x="760" y="410">T</text>
+    <rect class="censor c6" x="800" y="387" width="180" height="14" />
+    <rect class="censor c4" x="800" y="411" width="220" height="10" />
+    <rect class="censor c5" x="760" y="436" width="275" height="8" />
+    <rect class="censor c4" x="760" y="460" width="255" height="8" />
+    <rect class="censor c3" x="760" y="484" width="265" height="8" />
+
+    <rect class="box" x="40" y="545" width="320" height="140" />
+    <text class="letter" x="60" y="580">O</text>
+    <rect class="censor c3" x="100" y="557" width="175" height="14" />
+    <rect class="censor c2" x="100" y="581" width="210" height="10" />
+    <rect class="censor c2" x="60" y="606" width="275" height="8" />
+    <rect class="censor c3" x="60" y="630" width="250" height="8" />
+    <rect class="censor c1" x="60" y="654" width="268" height="8" />
+
+    <rect class="box" x="390" y="545" width="320" height="140" />
+    <text class="letter" x="410" y="580">N</text>
+    <rect class="censor c4" x="450" y="557" width="215" height="14" />
+    <rect class="censor c2" x="450" y="581" width="205" height="10" />
+    <rect class="censor c3" x="410" y="606" width="275" height="8" />
+    <rect class="censor c2" x="410" y="630" width="255" height="8" />
+    <rect class="censor c1" x="410" y="654" width="270" height="8" />
+
+    <rect class="box" x="740" y="545" width="320" height="140" />
+    <text class="letter" x="760" y="580">E</text>
+    <rect class="censor c5" x="800" y="557" width="165" height="14" />
+    <rect class="censor c3" x="800" y="581" width="225" height="10" />
+    <rect class="censor c4" x="760" y="606" width="275" height="8" />
+    <rect class="censor c3" x="760" y="630" width="255" height="8" />
+    <rect class="censor c2" x="760" y="654" width="270" height="8" />
+
+    <rect class="mini" x="40" y="720" width="320" height="80" />
+    <rect class="censor c4" x="62" y="734" width="80" height="14" />
+    <rect class="censor c1" x="62" y="760" width="245" height="9" />
+    <rect class="censor c2" x="62" y="780" width="190" height="9" />
+
+    <rect class="mini" x="390" y="720" width="320" height="80" />
+    <rect class="censor c5" x="412" y="734" width="120" height="14" />
+    <rect class="censor c2" x="412" y="760" width="230" height="9" />
+    <rect class="censor c3" x="412" y="780" width="215" height="9" />
+
+    <rect class="mini" x="740" y="720" width="320" height="80" />
+    <rect class="censor c6" x="762" y="734" width="120" height="14" />
+    <rect class="censor c3" x="762" y="760" width="225" height="9" />
+    <rect class="censor c4" x="762" y="780" width="205" height="9" />
+
+    <rect class="censor c2" x="40" y="820" width="360" height="10" />
+</svg>

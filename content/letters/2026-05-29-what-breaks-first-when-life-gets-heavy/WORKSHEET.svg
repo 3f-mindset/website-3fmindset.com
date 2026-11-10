@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">SB22 Worksheet, Persevere Under Pressure</title>
+    <desc id="desc">Landscape worksheet on a white background with large title, introduction,
+        fillable sections built around the GRITSTONE action model, and a three step summary footer.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+    </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <text class="title" x="40" y="52">SB22 | PERSEVERE UNDER PRESSURE</text>
+    <text class="verb" x="815" y="52">GRITSTONE</text>
+    <text class="sub" x="40" y="82">The Power of Persistence</text>
+
+    <rect class="box" x="40" y="105" width="1020" height="78" />
+    <text class="label" x="62" y="132">CHOICE</text>
+    <text class="small" x="62" y="154">You can keep quitting when pressure rises, or you can use
+        this week to prove that discomfort no longer owns your standards.</text>
+    <text class="small" x="62" y="172">Pick one worthwhile struggle, push past your normal exit
+        point, and build proof that you can continue when motivation is gone.</text>
+
+    <line class="soft" x1="550" y1="195" x2="550" y2="705" />
+    <line class="soft" x1="40" y1="365" x2="1060" y2="365" />
+    <line class="soft" x1="40" y1="535" x2="1060" y2="535" />
+
+    <rect class="box" x="40" y="205" width="320" height="140" />
+    <text class="letter" x="60" y="240">G</text>
+    <text class="label" x="100" y="228">GAUGE THE PRESSURE</text>
+    <text class="tiny" x="100" y="246">Where is pressure testing your resolve?</text>
+    <line class="fillline" x1="60" y1="270" x2="335" y2="270" />
+    <line class="fillline" x1="60" y1="294" x2="335" y2="294" />
+    <line class="fillline" x1="60" y1="318" x2="335" y2="318" />
+
+    <rect class="box" x="390" y="205" width="320" height="140" />
+    <text class="letter" x="410" y="240">R</text>
+    <text class="label" x="450" y="228">REMEMBER THE REASON</text>
+    <text class="tiny" x="450" y="246">Why does this struggle still matter?</text>
+    <line class="fillline" x1="410" y1="270" x2="685" y2="270" />
+    <line class="fillline" x1="410" y1="294" x2="685" y2="294" />
+    <line class="fillline" x1="410" y1="318" x2="685" y2="318" />
+
+    <rect class="box" x="740" y="205" width="320" height="140" />
+    <text class="letter" x="760" y="240">I</text>
+    <text class="label" x="800" y="228">INCREASE THE STANDARD</text>
+    <text class="tiny" x="800" y="246">What measurable push will you make this week?</text>
+    <line class="fillline" x1="760" y1="270" x2="1035" y2="270" />
+    <line class="fillline" x1="760" y1="294" x2="1035" y2="294" />
+    <line class="fillline" x1="760" y1="318" x2="1035" y2="318" />
+
+    <rect class="box" x="40" y="375" width="320" height="140" />
+    <text class="letter" x="60" y="410">T</text>
+    <text class="label" x="100" y="398">TRACK THE EXIT POINT</text>
+    <text class="tiny" x="100" y="416">When do you normally stop or retreat?</text>
+    <line class="fillline" x1="60" y1="440" x2="335" y2="440" />
+    <line class="fillline" x1="60" y1="464" x2="335" y2="464" />
+    <line class="fillline" x1="60" y1="488" x2="335" y2="488" />
+
+    <rect class="box" x="390" y="375" width="320" height="140" />
+    <text class="letter" x="410" y="410">S</text>
+    <text class="label" x="450" y="398">STAY IN MOTION</text>
+    <text class="tiny" x="450" y="416">What action keeps you moving before excuses start?</text>
+    <line class="fillline" x1="410" y1="440" x2="685" y2="440" />
+    <line class="fillline" x1="410" y1="464" x2="685" y2="464" />
+    <line class="fillline" x1="410" y1="488" x2="685" y2="488" />
+
+    <rect class="box" x="740" y="375" width="320" height="140" />
+    <text class="letter" x="760" y="410">T</text>
+    <text class="label" x="800" y="398">TEST YOUR LIMITS</text>
+    <text class="tiny" x="800" y="416">Where can you safely push one step further?</text>
+    <line class="fillline" x1="760" y1="440" x2="1035" y2="440" />
+    <line class="fillline" x1="760" y1="464" x2="1035" y2="464" />
+    <line class="fillline" x1="760" y1="488" x2="1035" y2="488" />
+
+    <rect class="box" x="40" y="545" width="320" height="140" />
+    <text class="letter" x="60" y="580">O</text>
+    <text class="label" x="100" y="568">OWN THE STRUGGLE</text>
+    <text class="tiny" x="100" y="586">What is this pressure trying to teach you?</text>
+    <line class="fillline" x1="60" y1="610" x2="335" y2="610" />
+    <line class="fillline" x1="60" y1="634" x2="335" y2="634" />
+    <line class="fillline" x1="60" y1="658" x2="335" y2="658" />
+
+    <rect class="box" x="390" y="545" width="320" height="140" />
+    <text class="letter" x="410" y="580">N</text>
+    <text class="label" x="450" y="568">NORMALIZE THE GRIND</text>
+    <text class="tiny" x="450" y="586">What boring action must become normal?</text>
+    <line class="fillline" x1="410" y1="610" x2="685" y2="610" />
+    <line class="fillline" x1="410" y1="634" x2="685" y2="634" />
+    <line class="fillline" x1="410" y1="658" x2="685" y2="658" />
+
+    <rect class="box" x="740" y="545" width="320" height="140" />
+    <text class="letter" x="760" y="580">E</text>
+    <text class="label" x="800" y="568">EARN THE PROOF</text>
+    <text class="tiny" x="800" y="586">What evidence will show you did not retreat?</text>
+    <line class="fillline" x1="760" y1="610" x2="1035" y2="610" />
+    <line class="fillline" x1="760" y1="634" x2="1035" y2="634" />
+    <line class="fillline" x1="760" y1="658" x2="1035" y2="658" />
+
+    <rect class="mini" x="40" y="720" width="320" height="80" />
+    <text class="label" x="62" y="744">LOCK IN</text>
+    <text class="small" x="62" y="764">Choose one struggle and name the pressure clearly.</text>
+    <text class="small" x="62" y="784">No vague targets. No escape language.</text>
+
+    <rect class="mini" x="390" y="720" width="320" height="80" />
+    <text class="label" x="412" y="744">PUSH THROUGH</text>
+    <text class="small" x="412" y="764">Track the moment you want to stop.</text>
+    <text class="small" x="412" y="784">Move one step past your normal limit.</text>
+
+    <rect class="mini" x="740" y="720" width="320" height="80" />
+    <text class="label" x="762" y="744">FINISH STRONG</text>
+    <text class="small" x="762" y="764">End the week with proof, not excuses.</text>
+    <text class="small" x="762" y="784">Let persistence become identity.</text>
+
+    <text class="tiny" x="40" y="828">STEADY BURN | Week 22 | Stress Test: real world proof under
+        pressure</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg width="1200" height="920" viewBox="0 0 1200 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Placeholder preview of a Weekly Calibration Review</title>
+  <desc>A stylized report interface comparing this week with last week across aim, momentum, values, responsibilities, and friction.</desc>
+  <defs>
+    <linearGradient id="canvas" x1="76" y1="38" x2="1098" y2="884" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B2B2B"/>
+      <stop offset="1" stop-color="#171717"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="256" y1="150" x2="824" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6B56E"/>
+      <stop offset="1" stop-color="#B96F31"/>
+    </linearGradient>
+    <filter id="shadow" x="-80" y="-80" width="1360" height="1080" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="30" stdDeviation="36" flood-color="#000000" flood-opacity=".32"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="920" rx="38" fill="url(#canvas)"/>
+  <circle cx="1086" cy="84" r="220" fill="#D89548" fill-opacity=".08"/>
+  <circle cx="108" cy="850" r="250" fill="#D89548" fill-opacity=".05"/>
+
+  <g filter="url(#shadow)">
+    <rect x="112" y="88" width="976" height="744" rx="24" fill="#F4F0E8"/>
+    <rect x="112" y="88" width="976" height="90" rx="24" fill="#E7E0D4"/>
+    <path d="M112 154H1088V178H112V154Z" fill="#E7E0D4"/>
+
+    <circle cx="164" cy="132" r="10" fill="#CFC4B2"/>
+    <circle cx="194" cy="132" r="10" fill="#CFC4B2"/>
+    <circle cx="224" cy="132" r="10" fill="#CFC4B2"/>
+    <rect x="798" y="114" width="238" height="36" rx="18" fill="#D89548" fill-opacity=".16"/>
+    <text x="917" y="138" text-anchor="middle" fill="#8A572B" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">PRODUCT PREVIEW</text>
+
+    <text x="166" y="234" fill="#272522" font-family="Arial, sans-serif" font-size="24" font-weight="700">WEEKLY CALIBRATION</text>
+    <text x="166" y="274" fill="#777067" font-family="Arial, sans-serif" font-size="18">Week 24 · A comparative reflection</text>
+
+    <rect x="166" y="316" width="530" height="176" rx="18" fill="#FFFFFF"/>
+    <text x="194" y="356" fill="#8A572B" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">MOMENTUM</text>
+    <text x="194" y="397" fill="#272522" font-family="Arial, sans-serif" font-size="25" font-weight="700">Your direction is holding.</text>
+    <text x="194" y="430" fill="#777067" font-family="Arial, sans-serif" font-size="16">Consistent action is replacing the need</text>
+    <text x="194" y="455" fill="#777067" font-family="Arial, sans-serif" font-size="16">to restart each week.</text>
+
+    <rect x="724" y="316" width="312" height="176" rx="18" fill="#252422"/>
+    <text x="752" y="356" fill="#C2B9AC" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">WEEK OVER WEEK</text>
+    <path d="M760 445C796 426 814 434 843 397C872 361 900 425 931 382C954 350 976 360 1002 346" stroke="url(#glow)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1002" cy="346" r="8" fill="#E6B56E"/>
+    <path d="M760 460H1004" stroke="#494641" stroke-width="2"/>
+
+    <rect x="166" y="520" width="870" height="98" rx="16" fill="#E9E2D7"/>
+    <rect x="188" y="542" width="54" height="54" rx="12" fill="#D89548"/>
+    <text x="215" y="576" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="20" font-weight="700">01</text>
+    <text x="264" y="561" fill="#272522" font-family="Arial, sans-serif" font-size="17" font-weight="700">AIM</text>
+    <text x="264" y="588" fill="#6D675F" font-family="Arial, sans-serif" font-size="16">Clearer priorities are creating a more deliberate week.</text>
+
+    <rect x="166" y="636" width="420" height="130" rx="16" fill="#FFFFFF"/>
+    <text x="194" y="674" fill="#8A572B" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">VALUES IN MOTION</text>
+    <rect x="194" y="699" width="92" height="34" rx="17" fill="#EFE7DA"/>
+    <text x="240" y="721" text-anchor="middle" fill="#594A3B" font-family="Arial, sans-serif" font-size="14">Courage</text>
+    <rect x="298" y="699" width="102" height="34" rx="17" fill="#EFE7DA"/>
+    <text x="349" y="721" text-anchor="middle" fill="#594A3B" font-family="Arial, sans-serif" font-size="14">Presence</text>
+    <rect x="412" y="699" width="126" height="34" rx="17" fill="#EFE7DA"/>
+    <text x="475" y="721" text-anchor="middle" fill="#594A3B" font-family="Arial, sans-serif" font-size="14">Stewardship</text>
+
+    <rect x="604" y="636" width="432" height="130" rx="16" fill="#FFFFFF"/>
+    <text x="632" y="674" fill="#8A572B" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">REFLECTIVE QUESTION</text>
+    <text x="632" y="708" fill="#403C37" font-family="Georgia, serif" font-size="17" font-style="italic">What would become possible if this</text>
+    <text x="632" y="734" fill="#403C37" font-family="Georgia, serif" font-size="17" font-style="italic">choice became your new default?</text>
+  </g>
+</svg>

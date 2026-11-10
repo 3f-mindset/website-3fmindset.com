@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+    aria-labelledby="title desc">
+    <title id="title">SB31 Worksheet, Architect Your Day</title>
+    <desc id="desc">Landscape worksheet on a white background with a large title, a choice
+        statement, six fillable sections built around the DESIGN action process, and a three step
+        summary footer.</desc>
+
+    <defs>
+        <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: none; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill:
+      #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill:
+      #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill:
+      #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill:
+      #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill:
+      #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill:
+      #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+    <text class="label" x="45" y="38">SB31 | TEMPER THROUGH STRUCTURE</text>
+    <text class="title" x="45" y="76">ARCHITECT YOUR DAY</text>
+    <text class="verb" x="855" y="76">DESIGN</text>
+
+    <rect class="mini" x="45" y="96" width="1010" height="66" />
+    <text class="label" x="62" y="119">THE CHOICE</text>
+    <text class="small" x="62" y="139">Keep letting urgent requests, loose habits, and distractions
+        decide where your time goes, or create a written plan</text>
+    <text class="small" x="62" y="154">that gives your work, health, family, growth, and rest a
+        clear place before the day begins.</text>
+
+    <rect class="box" x="45" y="182" width="323" height="242" />
+    <text class="letter" x="62" y="222">D</text>
+    <text class="sub" x="105" y="211">DEFINE WHAT MUST FIT</text>
+    <text class="tiny" x="105" y="228">List the real parts of the day before assigning time.</text>
+
+    <text class="label" x="62" y="255">FIXED COMMITMENTS</text>
+    <line class="fillline" x1="62" y1="273" x2="350" y2="273" />
+    <line class="fillline" x1="62" y1="292" x2="350" y2="292" />
+    <line class="fillline" x1="62" y1="311" x2="350" y2="311" />
+
+    <text class="label" x="62" y="337">FLEXIBLE PRIORITIES</text>
+    <line class="fillline" x1="62" y1="355" x2="350" y2="355" />
+    <line class="fillline" x1="62" y1="374" x2="350" y2="374" />
+
+    <text class="tiny" x="62" y="401">Wake time:</text>
+    <line class="fillline" x1="115" y1="401" x2="185" y2="401" />
+    <text class="tiny" x="205" y="401">Target bedtime:</text>
+    <line class="fillline" x1="284" y1="401" x2="350" y2="401" />
+
+    <rect class="box" x="389" y="182" width="322" height="242" />
+    <text class="letter" x="406" y="222">E</text>
+    <text class="sub" x="449" y="211">EXAMINE YOUR BEST HOURS</text>
+    <text class="tiny" x="449" y="228">Match demanding work to the hours that can carry it.</text>
+
+    <text class="label" x="406" y="255">STRONGEST FOCUS WINDOW</text>
+    <line class="fillline" x1="406" y1="273" x2="693" y2="273" />
+
+    <text class="label" x="406" y="298">MOST IMPORTANT TASK</text>
+    <line class="fillline" x1="406" y1="316" x2="693" y2="316" />
+    <line class="fillline" x1="406" y1="335" x2="693" y2="335" />
+
+    <text class="label" x="406" y="361">LOW ENERGY WINDOW</text>
+    <line class="fillline" x1="406" y1="379" x2="540" y2="379" />
+
+    <text class="label" x="559" y="361">BEST USE</text>
+    <line class="fillline" x1="559" y1="379" x2="693" y2="379" />
+    <line class="fillline" x1="559" y1="398" x2="693" y2="398" />
+
+    <rect class="box" x="732" y="182" width="323" height="242" />
+    <text class="letter" x="749" y="222">S</text>
+    <text class="sub" x="792" y="211">SET CLEAR TIME BLOCKS</text>
+    <text class="tiny" x="792" y="228">Give each priority one start time, end time, and purpose.</text>
+
+    <text class="label" x="749" y="255">TIME</text>
+    <text class="label" x="836" y="255">BLOCK PURPOSE</text>
+    <line class="soft" x1="749" y1="264" x2="1038" y2="264" />
+
+    <line class="fillline" x1="749" y1="286" x2="822" y2="286" />
+    <line class="fillline" x1="836" y1="286" x2="1038" y2="286" />
+
+    <line class="fillline" x1="749" y1="312" x2="822" y2="312" />
+    <line class="fillline" x1="836" y1="312" x2="1038" y2="312" />
+
+    <line class="fillline" x1="749" y1="338" x2="822" y2="338" />
+    <line class="fillline" x1="836" y1="338" x2="1038" y2="338" />
+
+    <line class="fillline" x1="749" y1="364" x2="822" y2="364" />
+    <line class="fillline" x1="836" y1="364" x2="1038" y2="364" />
+
+    <line class="fillline" x1="749" y1="390" x2="822" y2="390" />
+    <line class="fillline" x1="836" y1="390" x2="1038" y2="390" />
+
+    <rect class="box" x="45" y="444" width="323" height="242" />
+    <text class="letter" x="62" y="484">I</text>
+    <text class="sub" x="105" y="473">INCLUDE SPACE FOR REAL LIFE</text>
+    <text class="tiny" x="105" y="490">Add buffers, transitions, rest, and a backup response.</text>
+
+    <text class="label" x="62" y="517">BLOCK MOST LIKELY TO RUN LATE</text>
+    <line class="fillline" x1="62" y1="535" x2="350" y2="535" />
+
+    <text class="label" x="62" y="560">BUFFER OR TRANSITION NEEDED</text>
+    <line class="fillline" x1="62" y1="578" x2="350" y2="578" />
+
+    <text class="label" x="62" y="603">PLANNED REST</text>
+    <line class="fillline" x1="62" y1="621" x2="350" y2="621" />
+
+    <text class="label" x="62" y="646">BACKUP RESPONSE</text>
+    <line class="fillline" x1="62" y1="664" x2="350" y2="664" />
+
+    <rect class="box" x="389" y="444" width="322" height="242" />
+    <text class="letter" x="406" y="484">G</text>
+    <text class="sub" x="449" y="473">GO BY THE PLAN</text>
+    <text class="tiny" x="449" y="490">Prepare the environment and record what really happens.</text>
+
+    <text class="label" x="406" y="517">FIRST BLOCK REMINDER</text>
+    <line class="fillline" x1="406" y1="535" x2="693" y2="535" />
+
+    <text class="label" x="406" y="560">MAIN DISTRACTION</text>
+    <line class="fillline" x1="406" y1="578" x2="540" y2="578" />
+
+    <text class="label" x="559" y="560">BARRIER</text>
+    <line class="fillline" x1="559" y1="578" x2="693" y2="578" />
+
+    <text class="label" x="406" y="603">WHAT MUST BE PREPARED TONIGHT</text>
+    <line class="fillline" x1="406" y1="621" x2="693" y2="621" />
+
+    <text class="label" x="406" y="646">FIRST BLOCK THAT CHANGED</text>
+    <line class="fillline" x1="406" y1="664" x2="693" y2="664" />
+
+    <rect class="box" x="732" y="444" width="323" height="242" />
+    <text class="letter" x="749" y="484">N</text>
+    <text class="sub" x="792" y="473">NOTE WHAT NEEDS TO CHANGE</text>
+    <text class="tiny" x="792" y="490">Use evidence from the day to improve the next version.</text>
+
+    <text class="label" x="749" y="517">BEST WORKING BLOCK</text>
+    <line class="fillline" x1="749" y1="535" x2="1038" y2="535" />
+
+    <text class="label" x="749" y="560">BLOCK THAT FAILED</text>
+    <line class="fillline" x1="749" y1="578" x2="1038" y2="578" />
+
+    <text class="label" x="749" y="603">EXACT CAUSE</text>
+    <line class="fillline" x1="749" y1="621" x2="1038" y2="621" />
+
+    <text class="label" x="749" y="646">ONE CHANGE FOR TOMORROW</text>
+    <line class="fillline" x1="749" y1="664" x2="1038" y2="664" />
+
+    <line class="line" x1="45" y1="712" x2="1055" y2="712" />
+
+    <text class="label" x="45" y="738">ACTION STEPS SUMMARY</text>
+
+    <circle class="dot" cx="62" cy="770" r="13" />
+    <text class="small" x="58" y="774" fill="#ffffff">1</text>
+    <text class="label" x="84" y="764">MAP THE DAY</text>
+    <text class="tiny" x="84" y="781">List every duty, goal, need, and fixed event before
+        distractions take the space.</text>
+
+    <circle class="dot" cx="397" cy="770" r="13" />
+    <text class="small" x="393" y="774" fill="#ffffff">2</text>
+    <text class="label" x="419" y="764">PLACE THE HOURS</text>
+    <text class="tiny" x="419" y="781">Give each priority a clear time block based on your real
+        schedule and energy.</text>
+
+    <circle class="dot" cx="742" cy="770" r="13" />
+    <text class="small" x="738" y="774" fill="#ffffff">3</text>
+    <text class="label" x="764" y="764">REVIEW THE RESULTS</text>
+    <text class="tiny" x="764" y="781">Follow the plan, record what happened, and improve the next
+        day with evidence.</text>
+
+    <rect class="mini" x="45" y="801" width="1010" height="30" />
+    <text class="tiny" x="61" y="820">FINAL CHECK: Does every major priority have a real time, a
+        clear purpose, enough space, and one adjustment based on what actually happened?</text>
+</svg>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="850" viewBox="0 0 1100 850" role="img"
+  aria-labelledby="title desc">
+  <title id="title">SB17 Worksheet, Stand Your Ground</title>
+  <desc id="desc">Landscape worksheet on a white background with a large title, choice introduction,
+    five fillable sections built around the SPEAK action model, and a three step summary footer.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .line { stroke: #111111; stroke-width: 2; fill: white; }
+      .soft { stroke: #777777; stroke-width: 1.2; fill: none; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; rx: 18; ry: 18; }
+      .mini { fill: #ffffff; stroke: #111111; stroke-width: 1.5; rx: 12; ry: 12; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #111111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; fill: #111111; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 9px; fill: #111111; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #111111; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; fill: #111111; }
+      .verb { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #111111; letter-spacing: 2px; }
+      .letter { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; fill: #111111; }
+      .num { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .fillline { stroke: #9a9a9a; stroke-width: 1; }
+      .dot { fill: #111111; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1100" height="850" />
+
+  <!-- Header -->
+  <rect class="box" x="34" y="28" width="1032" height="118" />
+  <text class="title" x="58" y="66">SB17 | STAND YOUR GROUND</text>
+  <text class="sub" x="58" y="93">Handle conflict without losing respect</text>
+  <text class="small" x="700" y="58">
+    <tspan x="700" dy="0">Keep avoiding hard conversations and let problems grow,</tspan>
+    <tspan x="700" dy="14">or face them early and take control.</tspan>
+  </text>
+  <text class="small" x="700" y="94">
+    <tspan x="700" dy="0">One path leads to stress, resentment, and lost respect.</tspan>
+    <tspan x="700" dy="14">The other builds strength, clarity, and trust.</tspan>
+  </text>
+
+  <!-- Central verb spine -->
+  <rect class="box" x="486" y="170" width="128" height="528" />
+  <text class="verb" x="550" y="208" text-anchor="middle">SPEAK</text>
+  <line class="soft" x1="550" y1="228" x2="550" y2="680" />
+
+  <!-- Letter nodes -->
+  <circle class="line" cx="550" cy="272" r="26" />
+  <text class="letter" x="550" y="284" text-anchor="middle">S</text>
+
+  <circle class="line" cx="550" cy="360" r="26" />
+  <text class="letter" x="550" y="372" text-anchor="middle">P</text>
+
+  <circle class="line" cx="550" cy="448" r="26" />
+  <text class="letter" x="550" y="460" text-anchor="middle">E</text>
+
+  <circle class="line" cx="550" cy="536" r="26" />
+  <text class="letter" x="550" y="548" text-anchor="middle">A</text>
+
+  <circle class="line" cx="550" cy="624" r="26" />
+  <text class="letter" x="550" y="636" text-anchor="middle">K</text>
+
+  <!-- Connectors -->
+  <line class="soft" x1="524" y1="272" x2="392" y2="272" />
+  <line class="soft" x1="576" y1="360" x2="708" y2="360" />
+  <line class="soft" x1="524" y1="448" x2="392" y2="448" />
+  <line class="soft" x1="576" y1="536" x2="708" y2="536" />
+  <line class="soft" x1="524" y1="624" x2="392" y2="624" />
+
+  <!-- S box -->
+  <rect class="box" x="54" y="188" width="338" height="168" />
+  <text class="sub" x="76" y="214">S | Specify the issue</text>
+  <text class="small" x="76" y="232">Name exactly what happened. Stick to facts, not opinions.</text>
+  <text class="label" x="76" y="257">What happened?</text>
+  <line class="fillline" x1="76" y1="272" x2="368" y2="272" />
+  <line class="fillline" x1="76" y1="287" x2="368" y2="287" />
+  <line class="fillline" x1="76" y1="302" x2="368" y2="302" />
+  <text class="label" x="76" y="327">What pattern keeps repeating?</text>
+  <line class="fillline" x1="76" y1="342" x2="368" y2="342" />
+
+  <!-- P box -->
+  <rect class="box" x="708" y="276" width="338" height="168" />
+  <text class="sub" x="730" y="302">P | Personal impact</text>
+  <text class="small" x="730" y="320">State how it affected you. Keep it simple and honest.</text>
+  <text class="label" x="730" y="345">How did it affect your work, peace, or respect?</text>
+  <line class="fillline" x1="730" y1="360" x2="1022" y2="360" />
+  <line class="fillline" x1="730" y1="375" x2="1022" y2="375" />
+  <line class="fillline" x1="730" y1="390" x2="1022" y2="390" />
+  <text class="label" x="730" y="415">How do you want to say it in one clear sentence?</text>
+  <line class="fillline" x1="730" y1="430" x2="1022" y2="430" />
+
+  <!-- E box -->
+  <rect class="box" x="54" y="364" width="338" height="168" />
+  <text class="sub" x="76" y="390">E | Express the need</text>
+  <text class="small" x="76" y="408">Say what needs to change moving forward.</text>
+  <text class="label" x="76" y="433">What change are you asking for?</text>
+  <line class="fillline" x1="76" y1="448" x2="368" y2="448" />
+  <line class="fillline" x1="76" y1="463" x2="368" y2="463" />
+  <text class="label" x="76" y="488">Best "When X, I feel Y, I need Z" version:</text>
+  <line class="fillline" x1="76" y1="503" x2="368" y2="503" />
+
+  <!-- A box -->
+  <rect class="box" x="708" y="452" width="338" height="168" />
+  <text class="sub" x="730" y="478">A | Allow response</text>
+  <text class="small" x="730" y="496">Let the other person speak. Listen without interrupting.</text>
+  <text class="label" x="730" y="521">What might they say back?</text>
+  <line class="fillline" x1="730" y1="536" x2="1022" y2="536" />
+  <line class="fillline" x1="730" y1="551" x2="1022" y2="551" />
+  <text class="label" x="730" y="576">What will you stay focused on while listening?</text>
+  <line class="fillline" x1="730" y1="591" x2="1022" y2="591" />
+
+  <!-- K box -->
+  <rect class="box" x="54" y="540" width="338" height="168" />
+  <text class="sub" x="76" y="566">K | Keep the boundary</text>
+  <text class="small" x="76" y="584">Restate your point if needed. Stay calm. Do not escalate.</text>
+  <text class="label" x="76" y="609">If they deflect or attack, what line will you repeat?</text>
+  <line class="fillline" x1="76" y1="624" x2="368" y2="624" />
+  <line class="fillline" x1="76" y1="639" x2="368" y2="639" />
+  <text class="label" x="76" y="664">What does a win look like, even if uncomfortable?</text>
+  <line class="fillline" x1="76" y1="679" x2="368" y2="679" />
+
+  <!-- Reflection pocket -->
+  <rect class="mini" x="708" y="632" width="338" height="58" />
+  <text class="label" x="730" y="656">Reflection:</text>
+  <text class="small" x="730" y="672">What did you do well, and what will you tighten next time?</text>
+
+  <!-- Footer summary -->
+  <text class="sub" x="58" y="730">Action steps summary</text>
+
+  <rect class="mini" x="58" y="744" width="312" height="58" />
+  <text class="label" x="76" y="766">1 | Name It</text>
+  <text class="small" x="76" y="782">Call out the issue clearly.</text>
+
+  <rect class="mini" x="394" y="744" width="312" height="58" />
+  <text class="label" x="412" y="766">2 | Say It</text>
+  <text class="small" x="412" y="782">Express your impact and need.</text>
+
+  <rect class="mini" x="730" y="744" width="312" height="58" />
+  <text class="label" x="748" y="766">3 | Hold It</text>
+  <text class="small" x="748" y="782">Stay firm and calm.</text>
+</svg>

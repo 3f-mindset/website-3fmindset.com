@@ -1,0 +1,24 @@
+---
+title: "Financial stability & freedom — Nine-Edge Matrix"
+showToc: true
+draft: false
+slug: "04-financial-stability-freedom"
+---
+
+## Applying the nine Edges across the candidate life domains
+
+Use these as applications of the nine Edges to candidate domains. Red — brittle/dull describes an Edge that is weak or unused, or has become rigid, excessive, or distorted. Yellow — mixed/in progress describes a nonjudgmental, context-dependent or developing expression, not a score or diagnosis. Green — strong/sharp describes an Edge that is formed, useful, and responsive—not turned up to maximum. For each domain, compare what you experience internally with what you do or show externally.
+
+### Financial stability & freedom
+
+| Edge | Red — brittle/dull — internal; external | Yellow — mixed/in progress — internal; external | Green — strong/sharp — internal; external |
+|---|---|---|---|
+| Direction | You may experience money as a vague worry or the only measure of success; you drift financially or pursue wealth without a defined purpose. | You are still clarifying what matters in this area; some choices follow a priority, while others are shaped by immediate demands. (for example, depending on the season or circumstances). | You know what money is meant to support; you set priorities for earning, spending, saving, and giving. |
+| Craft | You feel finance is unknowable; you avoid the numbers, act on guesses, or use simplistic rules for complex choices. | You are building confidence through practice; some routines feel workable, while others still need learning or support. (for example, depending on the season or circumstances). | You are willing to learn practical financial skills; you budget, plan, negotiate, and decide with informed care. |
+| Alignment | You feel shame or rationalize excess; you claim security matters but avoid planning, or pursue money in ways that betray your values. | You are weighing your values against real constraints; some choices feel congruent, while others remain unsettled. (for example, depending on the season or circumstances). | Your financial choices reflect your values; your lifestyle and commitments fit your means and priorities. |
+| Stewardship | You feel scarcity panic or entitlement; you neglect planning or hoard and control every dollar. | You are tending this area unevenly; a few resources or responsibilities are managed intentionally, while others need attention. (for example, depending on the season or circumstances). | You care for resources without worshipping or fearing them; you maintain budgets, obligations, reserves, and records. |
+| Adaptation | Change triggers panic or impulsive escape; you keep an unaffordable plan or lurch into reactive decisions at every fluctuation. | You are adjusting to changing circumstances; some responses fit the new situation, while others still reflect the old one. (for example, depending on the season or circumstances). | You face changing income and conditions without losing perspective; you adjust plans to new realities. |
+| Service | You equate worth with giving or believe resources are only for you; you overgive beyond capacity or refuse all generosity. | You are finding a workable balance between contributing and respecting capacity; what feels appropriate may vary by situation. (for example, depending on the season or circumstances). | You see resources as enabling contribution while honoring limits; you give or share deliberately and sustainably. |
+| Legacy | You discount the future or become consumed by leaving wealth behind; you ignore compounding consequences or sacrifice present life for accumulation alone. | You are noticing longer-term effects, though immediate needs still shape some choices and patterns are continuing to develop. (for example, depending on the season or circumstances). | You consider how today’s choices affect future you and others; you build durable security and pass on useful knowledge or resources. |
+| Integration | Money feels separate from life or dominates it; you optimize finances while damaging relationships or neglect money until it constrains life. | You are connecting this area to some parts of your life more clearly than others; you are working out a sustainable fit. | You see finances connected to health, work, family, and freedom; your plan supports a coherent life, not just a spreadsheet. |
+| Expression | You hide or posture; you avoid financial conversations until conflict or use money to signal status and control. | You are sharing some needs or ideas more readily than others; comfort and clarity may depend on the situation. (for example, depending on the season or circumstances). | You speak about money clearly and without unnecessary shame; you discuss expectations, negotiate, ask questions, and plan with relevant people. |

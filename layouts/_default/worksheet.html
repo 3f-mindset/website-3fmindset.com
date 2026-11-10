@@ -1,0 +1,254 @@
+{{- define "main" -}}
+{{- $worksheet := .Params.worksheet | default dict -}}
+<style>
+    body {
+        background:
+            radial-gradient(circle at 78% 28%, rgba(255, 106, 0, 0.22), transparent 34%),
+            radial-gradient(circle at 22% 82%, rgba(70, 104, 125, 0.18), transparent 32%),
+            linear-gradient(135deg, #050607 0%, #101316 45%, #060708 100%);
+        color: #f4f1ea;
+        overflow-x: hidden;
+    }
+
+    .top-link {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        max-width: none;
+        min-height: 100vh;
+        margin: 0;
+        padding: 24px;
+        display: grid;
+        place-items: center;
+        font-family: "Arial Narrow", Impact, Arial, sans-serif;
+    }
+
+    .worksheet-page {
+        width: 100%;
+        max-width: 1180px;
+        min-height: calc(100vh - 48px);
+        display: grid;
+        place-items: center;
+    }
+
+    .worksheet-page * {
+        box-sizing: border-box;
+    }
+
+    .worksheet-page .hero {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 28px;
+        align-items: center;
+    }
+
+    .worksheet-page .image-wrap {
+        position: relative;
+        border: 1px solid rgba(232, 236, 238, 0.18);
+        background: linear-gradient(145deg, #181d21, #070809);
+        padding: 10px;
+        box-shadow:
+            0 0 44px rgba(255, 111, 0, 0.18),
+            0 22px 70px rgba(0, 0, 0, 0.6);
+    }
+
+    .worksheet-page .image-wrap::before {
+        content: "";
+        position: absolute;
+        inset: -1px;
+        border: 1px solid rgba(255, 111, 0, 0.22);
+        pointer-events: none;
+    }
+
+    .worksheet-page .image-wrap::after {
+        content: "";
+        position: absolute;
+        right: 18px;
+        bottom: 18px;
+        width: 42%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #ff6a00);
+        box-shadow: 0 0 18px rgba(255, 106, 0, 0.85);
+    }
+
+    .worksheet-page .hero-image {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        display: block;
+        object-fit: cover;
+        filter: contrast(1.05) saturate(0.92);
+    }
+
+    .worksheet-page .copy {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+
+    .worksheet-page .eyebrow {
+        font-size: 0.78rem;
+        letter-spacing: 0.22em;
+        color: #f07318;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .worksheet-page h1 {
+        color: white;
+        font-size: clamp(2.65rem, 10vw, 5.8rem);
+        line-height: 0.9;
+        text-transform: uppercase;
+        letter-spacing: -0.04em;
+        max-width: 820px;
+        margin: 0 auto;
+        text-shadow: 0 0 28px rgba(255, 106, 0, 0.12);
+    }
+
+    .worksheet-page .subhead {
+        font-family: Arial, sans-serif;
+        font-size: clamp(1.15rem, 2.4vw, 1.65rem);
+        line-height: 1.35;
+        color: #d9e2e7;
+        max-width: 620px;
+        margin: 0 auto;
+        font-weight: 700;
+    }
+
+    .worksheet-page .benefits {
+        list-style: none;
+        display: grid;
+        gap: 10px;
+        margin: 4px auto 0;
+        padding: 0;
+        width: 100%;
+        max-width: 620px;
+        font-family: Arial, sans-serif;
+    }
+
+    .worksheet-page .benefits li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: left;
+        background: rgba(255, 255, 255, 0.045);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 12px 14px;
+        color: #eef2f3;
+        font-size: 0.96rem;
+        line-height: 1.35;
+    }
+
+    .worksheet-page .benefits span {
+        width: 9px;
+        height: 9px;
+        background: #f07318;
+        box-shadow: 0 0 12px rgba(240, 115, 24, 0.9);
+        flex: 0 0 auto;
+    }
+
+    .worksheet-page form {
+        width: 100%;
+        max-width: 620px;
+        margin: 4px auto 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 12px;
+        background: linear-gradient(145deg, rgba(31, 38, 43, 0.96), rgba(8, 10, 12, 0.96));
+        border: 1px solid rgba(240, 115, 24, 0.35);
+        box-shadow: 0 0 36px rgba(240, 115, 24, 0.16);
+    }
+
+    .worksheet-page input {
+        width: 100%;
+        min-height: 54px;
+        border: 1px solid rgba(221, 230, 235, 0.22);
+        background: #080a0c;
+        color: #ffffff;
+        padding: 0 16px;
+        font-size: 1rem;
+        font-family: Arial, sans-serif;
+        outline: none;
+    }
+
+    .worksheet-page input::placeholder {
+        color: #8d999f;
+    }
+
+    .worksheet-page button {
+        min-height: 54px;
+        border: 0;
+        background: linear-gradient(135deg, #ff7a1a, #c94a08);
+        color: #090909;
+        font-size: 1rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-shadow: 0 0 22px rgba(255, 106, 0, 0.4);
+    }
+
+    .worksheet-page .microcopy {
+        font-family: Arial, sans-serif;
+        color: #aeb8bd;
+        font-size: 0.85rem;
+        margin-top: -4px;
+    }
+
+    @media (min-width: 860px) {
+        .worksheet-page .hero {
+            grid-template-columns: 1.04fr 0.96fr;
+            gap: 54px;
+        }
+
+        .worksheet-page .copy {
+            text-align: left;
+        }
+
+        .worksheet-page h1,
+        .worksheet-page .subhead,
+        .worksheet-page .benefits,
+        .worksheet-page form {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .worksheet-page form {
+            grid-template-columns: 1fr auto;
+        }
+
+        .worksheet-page button {
+            padding: 0 28px;
+        }
+    }
+
+    @media (max-height: 760px) and (min-width: 860px) {
+        .worksheet-page h1 {
+            font-size: clamp(2.6rem, 6vw, 4.7rem);
+        }
+
+        .worksheet-page .subhead {
+            font-size: 1.2rem;
+        }
+
+        .worksheet-page .benefits li {
+            padding: 9px 12px;
+        }
+
+        .worksheet-page form,
+        .worksheet-page input,
+        .worksheet-page button {
+            min-height: 48px;
+        }
+    }
+</style>
+
+<div class="worksheet-page">
+    {{- partial "worksheet/hero.html" (dict "Page" . "Worksheet" $worksheet) -}}
+</div>
+{{- end -}}
