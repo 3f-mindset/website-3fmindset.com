@@ -17,6 +17,7 @@ Add one generated cover image to each of the 43 published Crucible journal-promp
   ```
 
 - The images share the requested vintage pulp-magazine illustration style, but each one depicts a distinct object or action grounded in its essay's main tension.
+- Every future Crucible cover makes a clearly adult man the unmistakable primary/focal figure; any supporting people remain visually secondary and do not rival or displace him.
 - Images contain no words, captions, typography, labels, signage, or readable marks.
 - The approved first cover from PR #145 remains unchanged. The rollout adds one distinct cover to each of the other 42 letters and leaves essay prose, titles, dates, slugs, categories, and links unchanged.
 
@@ -61,7 +62,7 @@ Use the owner's supplied prompt as the shared style direction for every image:
 >
 > These characteristics combine to give the image a distinct, old-timey, illustrative feel, akin to something from a 1940s-1950s comic book or an early 20th-century advertisement. NO WORDS IN THE IMAGE, NO CAPTIONS.
 
-Add a concise scene description grounded in the individual essay. The scene must have one main focal point, simple readable shapes, a secondary uncluttered background, and no text-like marks. The first article's scene concept is a small brass compass in a clear pool of warm light on an ordinary table, with an old rotary phone and a clock at the outer edge suggesting competing demands. The compass is the single focal point; do not add paper or a worksheet.
+Add a concise scene description grounded in the individual essay. The scene must have one main focal point, simple readable shapes, a secondary uncluttered background, and no text-like marks. For future Crucible covers, the unmistakable primary/focal figure must be a clearly adult man; supporting people may appear when relevant but must remain visually secondary and not rival or displace him. Retain the vintage pulp style and no-words/no-readable-marks constraints. The first article's scene concept is a small brass compass in a clear pool of warm light on an ordinary table, with an old rotary phone and a clock at the outer edge suggesting competing demands. The compass is the single focal point; do not add paper or a worksheet.
 
 ## Constraints and assumptions
 

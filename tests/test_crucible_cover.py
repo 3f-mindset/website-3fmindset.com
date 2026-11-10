@@ -113,6 +113,8 @@ class DomainTests(unittest.TestCase):
         self.assertIn("brass compass", prompt)
         self.assertIn("Keep the compass as the central focal point", prompt)
         self.assertIn("No words", prompt)
+        self.assertIn("unmistakable primary/focal figure must be a clearly adult man", prompt)
+        self.assertIn("other people present must remain visually secondary", prompt)
 
     def test_png_dimensions_must_be_three_by_two(self) -> None:
         self.assertEqual(inspect_png(_small_png()), (3, 2))
